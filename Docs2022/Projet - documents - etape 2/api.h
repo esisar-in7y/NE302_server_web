@@ -1,9 +1,9 @@
 // defini un type pour la liste chainee renvoyée en réponse de la requete de recherche dans l'arbre. 
 
 typedef struct _token {
-		void *node;  		// node type opaque pointant vers un noeud de votre structure de données. 
-		struct _token *next; 	// next pointe vers le prochain token. 
-		} _Token;
+	void *node;  		// node type opaque pointant vers un noeud de votre structure de données. 
+	struct _token *next; 	// next pointe vers le prochain token. 
+} _Token;
 
 // Fonction qui retourne un pointeur (type opaque) vers la racine de l'arbre construit. 
 void *getRootTree(); 
