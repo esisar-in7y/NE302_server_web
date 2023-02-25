@@ -8,7 +8,7 @@ for test in tests/testFile/*; do
         if [ "$?" -eq 1 ]; then
             good=$(($good+1))
         else
-            ./bin/http_parse $test mot
+            # ./bin/http_parse $test mot
             echo "./bin/http_parse $test mot"
             echo "$test    Not Valid"
         fi
