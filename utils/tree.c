@@ -31,18 +31,39 @@ tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_st
     node->childs = NULL;
     node->childs_count = 0;
     node->type = type;
-    if(parent==NULL)
+    if(parent==NULL && rootTree==NULL)
     {
         rootTree=node;
     }
     return node;
 }
+void update_length(tree_node* node){
+    if(node!=NULL){
+        int string_length = 0;
+        for (size_t i = 0; i < node->childs_count; i++)
+        {
+            string_length+=node->childs[i]->length_string;
+        }
+        node->length_string=string_length;
+        // printf("update_length:%s:%d\n",tree_node_string[node->type],node->length_string);
+    }
+}
 
+tree_node *tree_node_add_child_node(tree_node *parent,tree_node *node)
+{
+    node->childs = realloc(node->childs, sizeof(tree_node) * (node->childs_count + 1)); //(tree_node *)
+    node->childs[node->childs_count] = node;
+    node->childs_count++;
+    update_length(node->parent);
+    // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
+    return node->childs[node->childs_count - 1];
+}
 tree_node *tree_node_add_child(tree_node *node, char *string, uint16_t start_string, uint16_t length_string, tree_node_type type)
 {
     node->childs = realloc(node->childs, sizeof(tree_node) * (node->childs_count + 1)); //(tree_node *)
     node->childs[node->childs_count] = tree_node_new(string, start_string, length_string, node, type);
     node->childs_count++;
+    update_length(node);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return node->childs[node->childs_count - 1];
 }
@@ -89,12 +110,17 @@ tree_node *tree_node_get_child_by_string(tree_node *node, char *string)
 
 void tree_node_free(tree_node *node)
 {
+    if(node==NULL) return;
     for (uint16_t i = 0; i < node->childs_count; i++)
     {
         tree_node_free(node->childs[i]);
     }
     // printf("free:%s\n",tree_node_string[node->type]);
     // free(node->childs);
+    if(node->parent&&node->parent->childs_count>0){
+        node->parent->childs_count--;
+        node->parent->childs = realloc(node->parent->childs, sizeof(tree_node) * (node->parent->childs_count));
+    }
     free(node);
 }
 

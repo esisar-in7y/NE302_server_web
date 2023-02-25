@@ -1,1 +1,0 @@
-message = debut 2*( ( mot ponct ) / ( nombre separateur ) ) [ ponct ] fin LF

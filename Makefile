@@ -1,5 +1,5 @@
 EXEC = http_parse
-ARGS = tests/better/0005.tst nombre
+ARGS = tests/testFile/test341.txt nombre
 
 CC = gcc
 CFLAGS = -g -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 -D ABNF=1
@@ -21,7 +21,7 @@ LIB_DIRS =
 PHONY := $(EXEC)
 $(EXEC): $(OBJS)
 	@mkdir -p $(OUTDIR)
-	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS)
+	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
 	@mkdir -p $(@D)
