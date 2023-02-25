@@ -1,1 +1,1 @@
-STaRt8-EK	:.fIn
+start8-EK	:.fin

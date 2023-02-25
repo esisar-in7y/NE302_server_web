@@ -1,1 +1,1 @@
-START5	o_.!FiN
+start5	o_.!fin

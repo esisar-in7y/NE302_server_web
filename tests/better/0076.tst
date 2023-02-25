@@ -1,1 +1,1 @@
-STArt12	73	fiN
+start12	73	fin

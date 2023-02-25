@@ -1,1 +1,1 @@
-StARTJ ,0	FIn
+startJ ,0	fin

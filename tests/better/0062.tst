@@ -1,1 +1,1 @@
-STARte :mjCi .ksy	:1 Fin
+starte :mjCi .ksy	:1 fin

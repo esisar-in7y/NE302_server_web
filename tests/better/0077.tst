@@ -1,1 +1,1 @@
-sTArTp-.fkzGk ,1 fIn
+startp-.fkzGk ,1 fin

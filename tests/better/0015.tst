@@ -1,1 +1,1 @@
-Startg	.8 fIn
+startg	.8 fin

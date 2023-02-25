@@ -1,1 +1,1 @@
-starTiO	?SJD ,G-,?Fin
+startiO	?SJD ,G-,?fin

@@ -1,1 +1,1 @@
-stARt3-2	3 :fIn
+start3-2	3 :fin

@@ -1,1 +1,1 @@
-sTaRtG	,If .r	.FIN
+startG	,If .r	.fin

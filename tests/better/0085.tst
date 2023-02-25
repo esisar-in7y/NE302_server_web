@@ -1,1 +1,1 @@
-sTartru :30	68	885-,fiN
+startru :30	68	885-,fin

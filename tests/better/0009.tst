@@ -1,1 +1,1 @@
-sTaRTT ?Avk !j ?.FIn
+startT ?Avk !j ?.fin

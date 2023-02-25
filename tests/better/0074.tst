@@ -1,1 +1,1 @@
-STArT57-IR	..FIN
+start57-IR	..fin

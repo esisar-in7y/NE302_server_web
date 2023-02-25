@@ -1,1 +1,1 @@
-StaRT8 L-.328596763	Fin
+start8 L-.328596763	fin

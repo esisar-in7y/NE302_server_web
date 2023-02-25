@@ -1,1 +1,1 @@
-STArTQi	.9_9	:fIN
+startQi	.9_9	:fin

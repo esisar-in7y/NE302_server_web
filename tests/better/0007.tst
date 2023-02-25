@@ -1,1 +1,1 @@
-sTArtp ,89 93 FIn
+startp ,89 93 fin

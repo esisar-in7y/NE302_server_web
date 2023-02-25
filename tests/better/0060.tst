@@ -1,1 +1,1 @@
-starTJoWP !6_FIN
+startJoWP !6_fin

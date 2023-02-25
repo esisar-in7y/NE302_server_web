@@ -1,1 +1,1 @@
-staRT9	6_hSz !fin
+start9	6_hSz !fin

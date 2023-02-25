@@ -1,1 +1,1 @@
-StART0 UW-,.FIN
+start0 UW-,.fin

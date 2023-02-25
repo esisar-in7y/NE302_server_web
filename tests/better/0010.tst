@@ -1,1 +1,1 @@
-StArt52	99870	xd ::fin
+start52	99870	xd ::fin

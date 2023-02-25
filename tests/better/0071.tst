@@ -1,1 +1,1 @@
-sTArT0 999_FiN
+start0 999_fin

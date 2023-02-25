@@ -1,1 +1,1 @@
-StaRtq	:D	?fIN
+startq	:D	?fin

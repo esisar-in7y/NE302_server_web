@@ -1,1 +1,1 @@
-STARtX_.4	:fIN
+startX_.4	:fin

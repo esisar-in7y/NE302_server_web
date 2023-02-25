@@ -1,1 +1,1 @@
-sTaRt39	Y_!247 ,FiN
+start39	Y_!247 ,fin

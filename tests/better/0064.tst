@@ -1,1 +1,1 @@
-StArtD !06 ,FiN
+startD !06 ,fin

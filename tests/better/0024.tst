@@ -1,1 +1,1 @@
-STarT8	2 8_3694350	ezRL	,FiN
+start8	2 8_3694350	ezRL	,fin
