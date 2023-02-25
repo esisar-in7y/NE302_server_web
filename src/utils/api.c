@@ -46,15 +46,17 @@ char *getElementValue(void *node, int *len)
         return NULL;
     }
     tree_node* tnode = (tree_node *)node;
-    char *str = copy_string(tnode->string, tnode->start_string, tnode->length_string);
+    char *str = copy_sub_str(tnode->string, tnode->start_string, tnode->length_string);
     *len = strlen(str);
     return str;
 }
 void purgeElement(_Token **r){
-    if(r == NULL || *r == NULL){
-        return;
+    _Token *current_token = *r;
+    while (current_token != NULL) {
+        _Token *tmp = current_token;
+        current_token = current_token->next;
+        free(tmp);
     }
-    tree_node_free(*r);
     *r = NULL;
 }
 void purgeTree(void *root){

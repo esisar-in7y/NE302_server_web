@@ -1,5 +1,4 @@
 #include "tree.h"
-#include "api.h"
 #define getName(var) #var
 tree_node* rootTree=NULL;
 int get_type(char *string)
@@ -96,14 +95,6 @@ void tree_node_free(tree_node *node)
     free(node);
 }
 
-void print_sub_str(char *string, int start_index, int end_index)
-{
-    for (int i = start_index; i < end_index && string[i] != '\0'; i++)
-    {
-        printf("%c", string[i]);
-    }
-}
-
 void tree_node_print(tree_node *node, uint16_t level)
 {
     if (node == NULL)
@@ -115,7 +106,7 @@ void tree_node_print(tree_node *node, uint16_t level)
     {
         printf(" ");
     }
-    printf("%s (%u, %u) %d childs %p parent %p \n", tree_node_string[node->type], node->start_string, node->length_string, node->childs_count, node, node->parent);
+    // printf("%s (%u, %u) %d childs %p parent %p \n", tree_node_string[node->type], node->start_string, node->length_string, node->childs_count, node, node->parent);
 
     printf("[%d:%s] = \"", level, tree_node_string[node->type]);
     print_sub_str(node->string, node->start_string, node->length_string);
@@ -139,27 +130,6 @@ void tree_node_print_all(tree_node *node, uint16_t level)
         tree_node_print_all(node->childs[i], level + 1);
     }
 }
-char *copy_string(const char *source,uint16_t start,uint16_t length)
-{
-    char *buffer = malloc(sizeof(char));
-    if (buffer == NULL)
-    {
-        return NULL;
-    }
-    for (size_t i = start;source[i] != '\0' && i < start+length;i++)
-    {
-        buffer = realloc(buffer, (i-start+1)*sizeof(char));
-        if (buffer == NULL)
-        {
-            free(buffer);
-            return NULL;
-        }
-        buffer[i-start] = source[i];
-        buffer[i-start+1] = '\0';
-    }
-    return buffer;
-}
-
 // Path: src/utils/api.c
 #include "api.h"
 void *getRootTree()
