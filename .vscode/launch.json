@@ -7,7 +7,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/bin/http_parse",
       "args": [
-        "${workspaceFolder}/tests/testFile/test0.txt",
+        "${workspaceFolder}/tests/better/0005.tst",
         "nombre"
       ],
       "stopAtEntry": false,

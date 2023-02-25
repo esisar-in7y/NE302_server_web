@@ -122,6 +122,8 @@ typedef struct _tree_node
     struct _tree_node *parent;
     struct _tree_node **childs;
 } tree_node;
+//global variable
+__attribute__((unused)) static tree_node* rootTree=NULL;
 
 tree_node *tree_node_init(char *string);
 tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, tree_node_type type);

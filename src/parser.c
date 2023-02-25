@@ -5,11 +5,14 @@ int parseur(char *req,int bytes)
     printf("size:%d req:%s\n",bytes,req);
     tree_node*root = tree_node_init(req);
     bool rep=validate_message(root);
+    printf("rep:%d\n",rep);
     if(!rep){
         printf("error\n");
         tree_node_free(root);
+        return -1;
     }
-    return (int)rep;
+    tree_node_print_all(root,0);
+    return 0;
 }
 int _get_start(tree_node* node,int lvl){
     int start = 0;
@@ -26,7 +29,7 @@ int _get_start(tree_node* node,int lvl){
     if(tmp>start){
         start=tmp;
     }
-    printf("lvl:%d \n",start);
+    // printf("lvl:%d \n",start);
     return start;
 }
 int get_start(tree_node* node){

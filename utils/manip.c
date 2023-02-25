@@ -21,9 +21,9 @@ char *copy_sub_str(const char *source,uint16_t start,uint16_t length)
 }
 
 
-void print_sub_str(char *string, int start_index, int end_index)
+void print_sub_str(char *string, int start_index, int length)
 {
-    for (int i = start_index; i < end_index && string[i] != '\0'; i++)
+    for (int i = start_index; i < start_index+length && string[i] != '\0'; i++)
     {
         printf("%c", string[i]);
     }

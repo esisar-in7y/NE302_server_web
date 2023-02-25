@@ -1,6 +1,5 @@
 #include "tree.h"
 #define getName(var) #var
-tree_node* rootTree=NULL;
 int get_type(char *string)
 {
     for (unsigned long i = 0; i < sizeof(tree_node_string) / sizeof(char *); i++)
