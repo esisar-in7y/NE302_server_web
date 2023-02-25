@@ -16,4 +16,4 @@ for test in tests/testFile/*; do
     fi
 done
 
-echo "Succeded $good/$total tests."
+echo "Results: $good/$total tests."
