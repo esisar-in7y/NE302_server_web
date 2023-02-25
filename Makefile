@@ -1,88 +1,49 @@
-AUTEURS := Moncorge_Leprat
-# PLUS_FLAGS = -fsanitize=address,leak,undefined -Wall -Wextra -Wshadow -Wdouble-promotion -Wundef -Wconversion
-ARGS ?= -pas
-CC = gcc
 EXEC = http_parse
-DEBUG = yes
-CFLAGS = -Wall -Wextra -O2 -ansi -std=c99  
-#  -pedantic   -fsanitize=address,leak,undefined
-STATICDEFINE = 
-# TEST
-lib = m
+ARGS = tests/better/0005.tst nombre
 
-OBJDIR = obj
-SRCDIR = src/utils
-INCDIR = includes
-LIBDIR = lib
-RESULTDIR = out
-DATADIR = data
-MAIN = main
-# MAIN = test
+CC = gcc
+CFLAGS = -g -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 -D ABNF=1
 
-D ?= 
+IGNORE = tst.c
+OUTDIR = ./bin
+DATADIR = ./data
+SUBDIR = utils src
+DIR_OBJ = ./obj
 
-SRCS=$(wildcard $(SRCDIR)/*.c)
-OBJS= $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
-HEADER =$(wildcard $(INCDIR)/*.h)
+INCS = $(wildcard *.h $(foreach fd, $(SUBDIR), $(fd)/*.h))
+SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
+NODIR_SRC = $(notdir $(SRCS))
+OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
+INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
+LIBS = 
+LIB_DIRS = 
 
-CFLAGS += $(foreach headerdir,$(INCDIR),-I$(headerdir)) 
-CFLAGS += $(foreach librarydir,$(LIBDIR),-L$(librarydir))
-CFLAGS += $(foreach library,$(lib),-l$(library))
-CFLAGS += $(foreach defined,$(D),-D$(defined))
+PHONY := $(EXEC)
+$(EXEC): $(OBJS)
+	@mkdir -p $(OUTDIR)
+	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS)
 
-ifeq ($(DEBUG),yes)
-	CFLAGS += -g
-	CFLAGS += $(foreach defined,$(STATICDEFINE),-D$(defined))
-endif
+$(DIR_OBJ)/%.o: %.c $(INCS)
+	@mkdir -p $(@D)
+	$(CC) -o $@ $(CFLAGS) -c $< $(INC_DIRS)
 
-
-$(EXEC):$(OBJS) $(HEADER)
-	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) $(OBJS) -o $@
-
-
-$(OBJDIR)/%.o: $(SRCDIR)/%.c $(HEADER)
-	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -o $@ -c $< 
-
-.PHONY: clean run create debug tests doc filespas files pasapas test-cli
-
-dev: clean $(EXEC) run
-
+PHONY += clean
 clean:
-	reset
-	@rm -rf $(OBJDIR) $(EXEC) $(RESULTDIR)
+	@reset
+	rm -rf $(OUTDIR)/* $(DATADIR)/* $(DIR_OBJ)/*
+
+PHONY += echoes
+echoes:
+	@echo "INC files: $(INCS)"
+	@echo "SRC files: $(SRCS)"
+	@echo "OBJ files: $(OBJS)"
+	@echo "LIB files: $(LIBS)"
+	@echo "INC DIR: $(INC_DIRS)"
+	@echo "LIB DIR: $(LIB_DIRS)"
+
+.PHONY = $(PHONY)
+
+dev: clean echoes $(EXEC) run
 
 run: $(EXEC)
-	@./$(EXEC) $(ARGS)
-
-valgrind: $(EXEC)
-	@mkdir -p $(RESULTDIR)
-	valgrind --track-origins=yes --leak-check=full ./$(EXEC) tests/labels.s $(RESULTDIR)/bin $(RESULTDIR)/stdout -pas
-
-create: $(EXEC)
-	@mkdir -p {$(DATADIR),$(SRCDIR),$(INCDIR),$(LIBDIR),$(LIBDIR),$(RESULTDIR)}
-
-tests: $(EXEC)
-	@python3 test.py -v
-
-CLITMP := /tmp/emul-mips-test
-test-cli: $(EXEC)
-	@ [ -e ./$(EXEC) ] \
-	  || echo "error: emul-mips does not exist!"; \
-	touch $(CLITMP).in; \
-	rm -f $(CLITMP).out1 $(CLITMP).out2; \
-	./$(EXEC) $(CLITMP).in $(CLITMP).out1 $(CLITMP).out2 \
-	  || echo "error: emul-mips in automatic mode returned $$?!"; \
-	[ -e $(CLITMP).out1 ] \
-	  || echo "error: assembled output file does not exist!"; \
-	[ -e $(CLITMP).out2 ] \
-	  || echo "error: final state output file does not exist!"; \
-	rm -f $(CLITMP).out1 $(CLITMP).out2
-
-tar: clean
-	@ dir=$$(basename "$$PWD") && cd .. && touch $(AUTEURS).tgz && tar --exclude='*.pdf' --exclude='rendus/*' --exclude='docs/*' -czvf $(AUTEURS).tgz "$$dir"
-	@ echo "==="; echo "Created ../$(AUTEURS).tgz"
-
-doc:
-	doxygen doxy_config
+	./$(OUTDIR)/$(EXEC) $(ARGS)

@@ -1,0 +1,1 @@
+STArt12	73	fiN

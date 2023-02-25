@@ -1,0 +1,12 @@
+; DIGIT 1234567890
+nombre = 1*DIGIT
+ponct = "," / "." / "!" / "?" / ":"
+; SP " "
+; HTAB "\t"
+separateur = SP / HTAB / "-" / "_"
+debut = "start"
+fin = "fin"
+; ALPHA azertyuiopqsdfghjklmwxcvnbAZERTYUIOPMLKJHGFDSQWXCVBN
+mot = 1*ALPHA separateur
+; LF "\n"
+message = debut 2*( ( mot ponct ) / ( nombre separateur ) ) [ ponct ] fin LF
