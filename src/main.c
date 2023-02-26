@@ -66,11 +66,13 @@ int main(int argc, char *argv[])
             s = getElementValue(tok->node, &l);
             printf("FOUND [%.*s]\n", l, s);
             tok = tok->next;
+            free(s);
         }
         purgeElement(&r);
         purgeTree(root);
     }
     close(fi);
+    free(addr);
     return (res);
 }
 #endif

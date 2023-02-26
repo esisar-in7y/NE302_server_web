@@ -47,3 +47,10 @@ dev: clean echoes $(EXEC) run
 
 run: $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
+
+valgrind: $(EXEC)
+	valgrind --leak-check=full \
+         --show-leak-kinds=all \
+         --track-origins=yes \
+         --log-file=valgrind-out.txt \
+ 	./$(OUTDIR)/$(EXEC) $(ARGS)

@@ -49,23 +49,23 @@ void update_length(tree_node* node){
     }
 }
 
-tree_node *tree_node_add_child_node(tree_node *parent,tree_node *node)
+void tree_node_add_child_node(tree_node *parent,tree_node *node)
 {
-    node->childs = realloc(node->childs, sizeof(tree_node) * (node->childs_count + 1)); //(tree_node *)
-    node->childs[node->childs_count] = node;
-    node->childs_count++;
-    update_length(node->parent);
+    parent->childs = realloc(parent->childs, sizeof(tree_node) * (parent->childs_count + 1)); //(tree_node *)
+    parent->childs[node->childs_count] = node;
+    parent->childs_count++;
+    update_length(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
-    return node->childs[node->childs_count - 1];
+    return;
 }
-tree_node *tree_node_add_child(tree_node *node, char *string, uint16_t start_string, uint16_t length_string, tree_node_type type)
+tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, tree_node_type type)
 {
-    node->childs = realloc(node->childs, sizeof(tree_node) * (node->childs_count + 1)); //(tree_node *)
-    node->childs[node->childs_count] = tree_node_new(string, start_string, length_string, node, type);
-    node->childs_count++;
-    update_length(node);
+    parent->childs_count++;
+    parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count); //(tree_node *)
+    parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, type);
+    update_length(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
-    return node->childs[node->childs_count - 1];
+    return parent->childs[parent->childs_count - 1];
 }
 
 tree_node *tree_node_find_type(tree_node *node, int _type,_Token **r)
@@ -107,21 +107,52 @@ tree_node *tree_node_get_child_by_string(tree_node *node, char *string)
     }
     return NULL;
 }
+int find_node_index(tree_node *node)
+{
+    if (node->parent == NULL)
+    {
+        return -1;
+    }
+    for (uint16_t i = 0; i < node->parent->childs_count; i++)
+    {
+        if (node->parent->childs[i] == node)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
 
 void tree_node_free(tree_node *node)
 {
     if(node==NULL) return;
-    for (uint16_t i = 0; i < node->childs_count; i++)
+    while (node->childs_count > 0)
     {
-        tree_node_free(node->childs[i]);
+        tree_node_free(node->childs[0]);
     }
     // printf("free:%s\n",tree_node_string[node->type]);
     // free(node->childs);
-    if(node->parent&&node->parent->childs_count>0){
-        node->parent->childs_count--;
-        node->parent->childs = realloc(node->parent->childs, sizeof(tree_node) * (node->parent->childs_count));
+    if(node->parent && node->parent->childs_count>0){
+        tree_node* parent=node->parent;
+        int index=find_node_index(node);
+        printf("free:%s:%d childs:%d\n",tree_node_string[node->type],index,parent->childs_count);
+        free(parent->childs[index]);
+        for (uint16_t i = index; i < parent->childs_count-1; i++)
+        {
+            parent->childs[i]=parent->childs[i+1];
+        }
+        parent->childs_count--;
+        if(parent->childs_count==0){
+            free(parent->childs);
+            parent->childs=NULL;
+        }else{
+            parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count);
+        }
+        update_length(parent);
+    }else{
+        free(node);
+        rootTree=NULL;
     }
-    free(node);
 }
 
 void tree_node_print(tree_node *node, uint16_t level)

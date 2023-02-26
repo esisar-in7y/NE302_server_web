@@ -58,9 +58,8 @@ void purgeElement(_Token **r){
     *r = NULL;
 }
 void purgeTree(void *root){
-    if(root == NULL){
-        return;
-    }
+    if(root == NULL) return;
+    printf("purgeTree:\n");
     tree_node_free(root);
     root = NULL;
 }
