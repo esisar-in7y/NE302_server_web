@@ -135,7 +135,7 @@ void tree_node_free(tree_node *node)
     if(node->parent && node->parent->childs_count>0){
         tree_node* parent=node->parent;
         int index=find_node_index(node);
-        printf("free:%s:%d childs:%d\n",tree_node_string[node->type],index,parent->childs_count);
+        // printf("free:%s:%d childs:%d\n",tree_node_string[node->type],index,parent->childs_count);
         free(parent->childs[index]);
         for (uint16_t i = index; i < parent->childs_count-1; i++)
         {
