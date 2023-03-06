@@ -101,18 +101,18 @@ __attribute__((unused)) static char* tree_node_string[]={
     "digit"
 };
 
-typedef enum
-{
-    nombre=0,
-    ponct,
-    separateur,
-    debut,
-    fin,
-    mot,
-    message,
-    alpha,
-    digit
-} tree_node_type;
+// typedef enum
+// {
+//     nombre=0,
+//     ponct,
+//     separateur,
+//     debut,
+//     fin,
+//     mot,
+//     message,
+//     alpha,
+//     digit
+// } tree_node_type;
 #endif
 typedef struct _tree_node
 {
@@ -120,7 +120,8 @@ typedef struct _tree_node
     uint16_t length_string;
     uint16_t childs_count;
     char *string;
-    tree_node_type type;
+    // tree_node_type type;
+    int type;
     struct _tree_node *parent;
     struct _tree_node **childs;
 } tree_node;
@@ -128,8 +129,8 @@ typedef struct _tree_node
 __attribute__((unused)) static tree_node* rootTree=NULL;
 
 tree_node *tree_node_init(char *string);
-tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, tree_node_type type);
-tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, tree_node_type type);
+tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char* type);//tree_node_type type
+tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, const char* type); //tree_node_type type
 tree_node *tree_node_get_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string);
 tree_node *tree_node_get_child_by_index(tree_node *node, uint16_t index);
 tree_node *tree_node_get_child_by_string(tree_node *node, char *string);
@@ -137,7 +138,7 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node);
 void tree_node_free(tree_node *node);
 void tree_node_print(tree_node *node, uint16_t level);
 void tree_node_print_all(tree_node *node, uint16_t level);
-int get_type(char* string);
+int get_type_index(char* string);
 void update_length_parents(tree_node* node);
 tree_node *tree_node_find_type(tree_node *node, int _type,_Token **r);
 int get_start(tree_node* node);

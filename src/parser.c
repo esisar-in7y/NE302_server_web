@@ -21,11 +21,11 @@ tree_node* validate_number(tree_node* parent){
         printf("not a number:%c\n",parent->string[index]);
         return NULL;
     }
-    tree_node* node_nombre=tree_node_add_child(parent,parent->string,index,0,nombre);
-    tree_node_add_child(node_nombre,parent->string,index,1,digit);
+    tree_node* node_nombre=tree_node_add_child(parent,parent->string,index,0,"nombre");
+    tree_node_add_child(node_nombre,parent->string,index,1,"digit");
     index++;
     while(isdigit(parent->string[index])){
-        tree_node_add_child(node_nombre,parent->string,index,1,digit);
+        tree_node_add_child(node_nombre,parent->string,index,1,"digit");
         index++;
     }
     return node_nombre;
@@ -40,7 +40,7 @@ tree_node* validate_ponct(tree_node *parent){
     case '!':
     case '?':
     case ':':
-        return tree_node_add_child(parent, parent->string, index, 1, ponct);
+        return tree_node_add_child(parent, parent->string, index, 1, "ponct");
     default:
         return NULL;
     }
@@ -54,7 +54,7 @@ tree_node* validate_separateur(tree_node *parent){
     case '\t':
     case '-':
     case '_':
-        return tree_node_add_child(parent, parent->string, index, 1, separateur);
+        return tree_node_add_child(parent, parent->string, index, 1, "separateur");
     default:
         return NULL;
     }
@@ -63,7 +63,7 @@ tree_node* validate_separateur(tree_node *parent){
 tree_node* validate_debut(tree_node *parent){
     int index = get_start(parent);
     if(strncasecmp(parent->string+index,"start",5)==0){
-        return tree_node_add_child(parent, parent->string, index, 5, debut);
+        return tree_node_add_child(parent, parent->string, index, 5, "debut");
     }
     return NULL;
 }
@@ -71,7 +71,7 @@ tree_node* validate_debut(tree_node *parent){
 tree_node* validate_fin(tree_node *parent){
     int index = get_start(parent);
     if(strncasecmp(parent->string+index,"fin",3)==0){
-        return tree_node_add_child(parent, parent->string, index, 3, fin);
+        return tree_node_add_child(parent, parent->string, index, 3, "fin");
     }
     return NULL;
 }
@@ -79,17 +79,17 @@ tree_node* validate_fin(tree_node *parent){
 tree_node* validate_mot(tree_node *parent){
     int index = get_start(parent);
     printf("mot:%s\n",parent->string+index);
-    tree_node* node_mot=tree_node_add_child(parent, parent->string, index, 2, mot);
+    tree_node* node_mot=tree_node_add_child(parent, parent->string, index, 2, "mot");
     if(!isalpha(parent->string[index])){
         printf("alpha !ok\n");
         tree_node_free(node_mot);
         return NULL;
     }
-    tree_node_add_child(node_mot, parent->string, index, 1, alpha);
+    tree_node_add_child(node_mot, parent->string, index, 1, "alpha");
     index++;
     while (isalpha(parent->string[index]))
     {
-        tree_node_add_child(node_mot, parent->string, index, 1, alpha);
+        tree_node_add_child(node_mot, parent->string, index, 1, "alpha");
         index++;
     }
     

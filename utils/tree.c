@@ -1,6 +1,6 @@
 #include "tree.h"
 #define getName(var) #var
-int get_type(char *string)
+int get_type_index(char *string)
 {
     for (unsigned long i = 0; i < sizeof(tree_node_string) / sizeof(char *); i++)
     {
@@ -17,11 +17,11 @@ tree_node *tree_node_init(char *string)
     #if ABNF==0
         return tree_node_new(string, 0, strlen(string), NULL, HTTP_message);
     #elif ABNF==1
-        return tree_node_new(string, 0, 0, NULL, message);//strlen(string)
+        return tree_node_new(string, 0, 0, NULL, "message");//strlen(string)
     #endif
 }
 
-tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, tree_node_type type)
+tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char* type) //tree_node_type type)
 {
     tree_node *node = (tree_node *)malloc(sizeof(tree_node));
     node->string = string;
@@ -30,7 +30,7 @@ tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_st
     node->parent = parent;
     node->childs = NULL;
     node->childs_count = 0;
-    node->type = type;
+    node->type = get_type_index(type);
     if(parent==NULL && rootTree==NULL)
     {
         rootTree=node;
@@ -67,11 +67,11 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node)
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return;
 }
-tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, tree_node_type type)
+tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, const char* type) //tree_node_type type)
 {
     parent->childs_count++;
     parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count); //(tree_node *)
-    parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, type);
+    parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, get_type_index(type));
     update_length_parents(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return parent->childs[parent->childs_count - 1];
