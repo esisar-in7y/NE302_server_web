@@ -14,7 +14,7 @@
 #if TST==0
 int main(int argc, char *argv[])
 {
-    int res, i, fi;
+    int res, fi;
     char *p = NULL, *addr;
 
     struct stat st;
