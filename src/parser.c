@@ -134,13 +134,11 @@ tree_node* validate_number_separateur(tree_node *parent){
 bool validate_message(tree_node *parent){
     if(validate_debut(parent)!=NULL){
         printf("debut ok\n");
-        for (size_t i = 0; i < 2; i++)
-        {
-            if(validate_mot_ponct(parent)!=NULL) continue;
-            if(validate_number_separateur(parent)!=NULL) continue;
-            return false;
+        int i=0;
+        while (validate_number_separateur(parent)!=NULL || validate_mot_ponct(parent)!=NULL){
+            i++;
         }
-        while (validate_number_separateur(parent)!=NULL || validate_mot_ponct(parent)!=NULL);
+        if(i<2) return false;
         validate_ponct(parent);//optional
         if(validate_fin(parent)!=NULL){
             printf("fin ok\n");

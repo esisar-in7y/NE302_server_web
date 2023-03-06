@@ -43,9 +43,9 @@ echoes:
 
 .PHONY = $(PHONY)
 
-dev: echoes $(EXEC) run
+dev: clean echoes $(EXEC) run
 
-tests: $(EXEC)
+tests: clean $(EXEC)
 	@echo "Running tests..."
 	@./tests.sh
 
