@@ -1,5 +1,5 @@
 EXEC = http_parse
-ARGS = tests/testFile/test341.txt nombre
+ARGS = tests/testFile/test1.txt nombre
 
 CC = gcc
 CFLAGS = -g -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 -D ABNF=1
@@ -45,6 +45,10 @@ echoes:
 
 dev: clean echoes $(EXEC) run
 
+tests: clean $(EXEC)
+	@echo "Running tests..."
+	@./tests.sh
+
 run: $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
 
@@ -52,5 +56,5 @@ leaks: $(EXEC)
 	valgrind --leak-check=full \
 		--show-leak-kinds=all \
 		--track-origins=yes \
-		--log-file=valgrind-out.txt -s \
+		--log-file=valgrind_out.txt -s \
 		./$(OUTDIR)/$(EXEC) $(ARGS)

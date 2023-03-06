@@ -14,27 +14,6 @@ int parseur(char *req,int bytes)
     }
     return 1;
 }
-int _get_start(tree_node* node,int lvl){
-    int start = 0;
-    int tmp=0;
-    for(int i = 0; i < node->childs_count; i++){
-        if(node->childs[i]){
-            tmp=_get_start(node->childs[i],lvl+1);
-            if(tmp>start){
-                start=tmp;
-            }
-        }
-    }
-    tmp=node->start_string+(lvl>0?node->length_string:0);
-    if(tmp>start){
-        start=tmp;
-    }
-    // printf("lvl:%d \n",start);
-    return start;
-}
-int get_start(tree_node* node){
-    return _get_start(node,0);
-}
 // nombre = 1*DIGIT 
 tree_node* validate_number(tree_node* parent){
     int index=get_start(parent);
@@ -173,29 +152,3 @@ bool validate_message(tree_node *parent){
     }
     return false;
 }
-
-
-// bool validateRequest(char *req)
-// {
-//     tree_node *head_tree = tree_node_init(req);
-//     bool res = validateHttpMessage(head_tree);
-//     if (!res)
-//         tree_node_free(head_tree);
-
-//     return res;
-// }
-// bool validateHttpMessage(tree_node *node)
-// {
-//     bool res = false;
-//     if (validateStartLine(node))
-//     {
-//         if (validateHeaders(node))
-//         {
-//             if (validateBody(node))
-//             {
-//                 res = 1;
-//             }
-//         }
-//     }
-//     return res;
-// }

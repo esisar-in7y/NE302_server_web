@@ -17,7 +17,7 @@ tree_node *tree_node_init(char *string)
     #if ABNF==0
         return tree_node_new(string, 0, strlen(string), NULL, HTTP_message);
     #elif ABNF==1
-        return tree_node_new(string, 0, strlen(string), NULL, message);
+        return tree_node_new(string, 0, 0, NULL, message);//strlen(string)
     #endif
 }
 
@@ -37,15 +37,24 @@ tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_st
     }
     return node;
 }
-void update_length(tree_node* node){
-    if(node!=NULL){
+
+int get_start(tree_node* node){
+    return node->start_string+node->length_string;
+}
+
+void update_length_parents(tree_node* node){
+    tree_node* parent = node;
+    while (parent!=NULL)
+    {
         int string_length = 0;
-        for (size_t i = 0; i < node->childs_count; i++)
+        for (size_t i = 0; i < parent->childs_count; i++)
         {
-            string_length+=node->childs[i]->length_string;
+            string_length+=parent->childs[i]->length_string;
         }
-        node->length_string=string_length;
-        // printf("update_length:%s:%d\n",tree_node_string[node->type],node->length_string);
+        parent->length_string=string_length;
+        tree_node_print_all(parent,0);
+        printf("newlen:%d\n",parent->length_string);
+        parent=parent->parent;
     }
 }
 
@@ -54,7 +63,7 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node)
     parent->childs = realloc(parent->childs, sizeof(tree_node) * (parent->childs_count + 1)); //(tree_node *)
     parent->childs[node->childs_count] = node;
     parent->childs_count++;
-    update_length(parent);
+    update_length_parents(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return;
 }
@@ -63,7 +72,7 @@ tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_s
     parent->childs_count++;
     parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count); //(tree_node *)
     parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, type);
-    update_length(parent);
+    update_length_parents(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return parent->childs[parent->childs_count - 1];
 }
@@ -131,7 +140,6 @@ void tree_node_free(tree_node *node)
         tree_node_free(node->childs[0]);
     }
     // printf("free:%s\n",tree_node_string[node->type]);
-    // free(node->childs);
     if(node->parent && node->parent->childs_count>0){
         tree_node* parent=node->parent;
         int index=find_node_index(node);
@@ -148,7 +156,7 @@ void tree_node_free(tree_node *node)
         }else{
             parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count);
         }
-        update_length(parent);
+        update_length_parents(parent);
     }else{
         free(node);
         rootTree=NULL;
@@ -190,6 +198,8 @@ void tree_node_print_all(tree_node *node, uint16_t level)
         tree_node_print_all(node->childs[i], level + 1);
     }
 }
+
+
 // Path: src/utils/api.c
 #include "../src/api.h"
 void *getRootTree()
