@@ -62,7 +62,6 @@ tree_node* validate_ponct(tree_node *parent){
     case '?':
     case ':':
         return tree_node_add_child(parent, parent->string, index, 1, ponct);
-
     default:
         return NULL;
     }
@@ -156,7 +155,6 @@ tree_node* validate_number_separateur(tree_node *parent){
 bool validate_message(tree_node *parent){
     if(validate_debut(parent)!=NULL){
         printf("debut ok\n");
-
         for (size_t i = 0; i < 2; i++)
         {
             if(validate_mot_ponct(parent)!=NULL) continue;
