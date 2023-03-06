@@ -138,7 +138,7 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node);
 void tree_node_free(tree_node *node);
 void tree_node_print(tree_node *node, uint16_t level);
 void tree_node_print_all(tree_node *node, uint16_t level);
-int get_type_index(char* string);
+int get_type_index(const char* string);
 void update_length_parents(tree_node* node);
 tree_node *tree_node_find_type(tree_node *node, int _type,_Token **r);
 int get_start(tree_node* node);

@@ -1,6 +1,6 @@
 #include "tree.h"
 #define getName(var) #var
-int get_type_index(char *string)
+int get_type_index(const char *string)
 {
     for (unsigned long i = 0; i < sizeof(tree_node_string) / sizeof(char *); i++)
     {
@@ -71,7 +71,7 @@ tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_s
 {
     parent->childs_count++;
     parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count); //(tree_node *)
-    parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, get_type_index(type));
+    parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, type);
     update_length_parents(parent);
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return parent->childs[parent->childs_count - 1];

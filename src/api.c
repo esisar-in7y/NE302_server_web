@@ -24,7 +24,7 @@ _Token *searchTree(void *start, char *name)
         start = getRootTree();
     }
     _Token *r = NULL;
-    tree_node_find_type(start, get_type(name),&r);
+    tree_node_find_type(start, get_type_index(name),&r);
     return r;
 }
 char *getElementTag(void *node, int *len)
