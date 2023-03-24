@@ -439,16 +439,17 @@ tree_node* field_content(tree_node* parent) {
         return NULL;
     }
     index = get_start(parent);
-    tree_node* tmp_parent = tree_node_add_child(parent, parent->string, index, 1, "tmp");
-    if (!at_least_x(tmp_parent, SP, 1) && !at_least_x(tmp_parent, HTAB, 1)) {
-        tree_node_free(tmp_parent);
+    tree_node* tmp = tree_node_new(parent->string, index, 1, NULL,"tmp");
+    if (!at_least_x(tmp, SP, 1) && !at_least_x(tmp, HTAB, 1)) {
+        tree_node_free(tmp);
         return node_field_content;
     }
     if (field_vchar(node_field_content) == NULL) {
-        tree_node_free(tmp_parent);
+        tree_node_free(tmp);
         return node_field_content;
     }
-    move_childs(tmp_parent, node_field_content);
+    move_childs(tmp, node_field_content);
+    tree_node_free(tmp);
     return node_field_content;
 }
 
@@ -456,8 +457,7 @@ tree_node* field_content(tree_node* parent) {
 tree_node* field_value(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_field_value = tree_node_add_child(parent, parent->string, index, 1, "field_value");
-    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL)
-        ;
+    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL);
     return node_field_value;
 }
 
