@@ -1,7 +1,7 @@
 #include "../utils/global.h"
 #include "../utils/tree.h"
 #include "api.h"
-/* This file was automatically generated.  Do not edit! */
+
 tree_node *HTTP_message(tree_node *parent);
 tree_node *start_line(tree_node *parent);
 tree_node *request_line(tree_node *parent);
