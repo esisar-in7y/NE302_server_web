@@ -805,36 +805,38 @@ tree_node* qdtext(tree_node* parent) {
         obs_text(node_qdtext)) {
         return node_qdtext;
     }
-    if(parent->string[index] == '!'){
+    if (parent->string[index] == '!') {
         tree_node_add_child(node_qdtext, parent->string, index, 1, "!");
         return node_qdtext;
     }
-    if(parent->string[index] >= 0x23 && parent->string[index] <= 0x5B){
+    if (parent->string[index] >= 0x23 && parent->string[index] <= 0x5B) {
         tree_node_add_child(node_qdtext, parent->string, index, 1, "%x23-5B");
         return node_qdtext;
     }
-    if(parent->string[index] >= 0x5D && parent->string[index] <= 0x7E){
+    if (parent->string[index] >= 0x5D && parent->string[index] <= 0x7E) {
         tree_node_add_child(node_qdtext, parent->string, index, 1, "%x5D-7E");
         return node_qdtext;
     }
     tree_node_free(node_qdtext);
     return NULL;
 }
-// cookie_value = ( DQUOTE *cookie_octet DQUOTE ) / *cookie_octet 
+// cookie_value = ( DQUOTE *cookie_octet DQUOTE ) / *cookie_octet
 tree_node* cookie_value(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_cookie_value = tree_node_add_child(parent, parent->string, index, 0, "cookie_value");
     tree_node* tmp = tree_node_add_child(parent, parent->string, index, 0, "tmp");
     if (DQUOTE(tmp)) {
-        while (cookie_octet(tmp)!=NULL);
+        while (cookie_octet(tmp) != NULL)
+            ;
         if (DQUOTE(tmp) == NULL) {
             tree_node_free(tmp);
             return NULL;
         }
-        move_childs(tmp,node_cookie_value);
+        move_childs(tmp, node_cookie_value);
         return node_cookie_value;
     }
-    while (cookie_octet(node_cookie_value)!=NULL);
+    while (cookie_octet(node_cookie_value) != NULL)
+        ;
     return node_cookie_value;
 }
 
@@ -847,7 +849,7 @@ tree_node* cookie_pair(tree_node* parent) {
         return NULL;
     }
     tree_node_add_child(node_cookie_pair, parent->string, get_start(node_cookie_pair), 1, "=");
-    if(cookie_value(node_cookie_pair) == NULL){
+    if (cookie_value(node_cookie_pair) == NULL) {
         tree_node_free(node_cookie_pair);
         return NULL;
     }
@@ -876,7 +878,7 @@ tree_node* cookie_string(tree_node* parent) {
 tree_node* Cookie_header(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_Cookie_header = tree_node_add_child(parent, parent->string, index, 0, "Cookie_header");
-    if (strncmp(parent->string + index, "Cookie:", 7) != 0) { 
+    if (strncmp(parent->string + index, "Cookie:", 7) != 0) {
         tree_node_free(node_Cookie_header);
         return NULL;
     }
@@ -915,7 +917,8 @@ tree_node* quoted_string(tree_node* parent) {
         tree_node_free(node_quoted_string);
         return NULL;
     }
-    while (qdtext(node_quoted_string) != NULL || quoted_pair(node_quoted_string) != NULL);
+    while (qdtext(node_quoted_string) != NULL || quoted_pair(node_quoted_string) != NULL)
+        ;
     if (DQUOTE(node_quoted_string) == NULL) {
         tree_node_free(node_quoted_string);
         return NULL;
@@ -994,7 +997,8 @@ tree_node* Content_Length(tree_node* parent) {
         tree_node_free(node_Content_Length);
         return NULL;
     }
-    while (DIGIT(node_Content_Length));
+    while (DIGIT(node_Content_Length))
+        ;
     return node_Content_Length;
 }
 // Content_Length_header = "Content-Length:" OWS Content_Length OWS
@@ -1018,7 +1022,8 @@ tree_node* Content_Length_header(tree_node* parent) {
 tree_node* Connection(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_Connection = tree_node_add_child(parent, parent->string, index, 0, "Connection");
-    while (parent->string[get_end(node_Connection)] == ',' && OWS(node_Connection));
+    while (parent->string[get_end(node_Connection)] == ',' && OWS(node_Connection))
+        ;
     if (connection_option(node_Connection) == NULL) {
         tree_node_free(node_Connection);
         return NULL;
@@ -1055,11 +1060,11 @@ tree_node* Transfert_encoding(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_Transfert_encoding = tree_node_add_child(parent, parent->string, index, 0, "Transfert_encoding");
     bool end = false;
-    while(!end){
-        tree_node* tmp=tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL,"tmp");
-        if(parent->string[get_end(tmp)] == ','){
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL, "tmp");
+        if (parent->string[get_end(tmp)] == ',') {
             tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
-            if(OWS(tmp) != NULL){
+            if (OWS(tmp) != NULL) {
                 move_childs(tmp, node_Transfert_encoding);
                 tree_node_free(tmp);
                 continue;
@@ -1067,20 +1072,20 @@ tree_node* Transfert_encoding(tree_node* parent) {
         }
         end = true;
     }
-    if(transfert_coding(node_Transfert_encoding)==NULL){
+    if (transfert_coding(node_Transfert_encoding) == NULL) {
         tree_node_free(node_Transfert_encoding);
         return NULL;
     }
     end = false;
-    while(!end){
-        tree_node* tmp=tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL,"tmp");
-        if(OWS(tmp) != NULL){
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL, "tmp");
+        if (OWS(tmp) != NULL) {
             tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
-            if(parent->string[get_end(tmp)] == ','){
-                tree_node* tmp2=tree_node_new(parent->string, get_end(tmp), 1, NULL,"tmp");
-                if(OWS(tmp2) != NULL || transfert_coding(tmp2) != NULL){
+            if (parent->string[get_end(tmp)] == ',') {
+                tree_node* tmp2 = tree_node_new(parent->string, get_end(tmp), 1, NULL, "tmp");
+                if (OWS(tmp2) != NULL || transfert_coding(tmp2) != NULL) {
                     move_childs(tmp, node_Transfert_encoding);
-                }else{
+                } else {
                     tree_node_free(tmp2);
                 }
                 move_childs(tmp2, node_Transfert_encoding);
@@ -1153,7 +1158,7 @@ tree_node* transfer_extension(tree_node* parent) {
         tree_node_free(node_transfer_extension);
         return NULL;
     }
-    tree_node* tmp=tree_node_new(parent->string, get_end(node_transfer_extension), 1, NULL,"tmp");
+    tree_node* tmp = tree_node_new(parent->string, get_end(node_transfer_extension), 1, NULL, "tmp");
     if (parent->string[get_end(tmp)] == '=') {
         tree_node_add_child(tmp, parent->string, get_end(node_transfer_extension), 1, "=");
         if (token(tmp) == NULL && quoted_string(tmp) == NULL) {
@@ -1161,7 +1166,7 @@ tree_node* transfer_extension(tree_node* parent) {
             return NULL;
         }
     }
-    move_childs(tmp,node_transfer_extension);
+    move_childs(tmp, node_transfer_extension);
     tree_node_free(tmp);
     return node_transfer_extension;
 }
@@ -1176,7 +1181,7 @@ tree_node* header_field(tree_node* parent) {
         Cookie_header(node_header_field) != NULL ||
         Transfer_Encoding_header(node_header_field) != NULL ||
         Expect_header(node_header_field) != NULL ||
-        Host_header(node_header_field) != NULL ||) {
+        Host_header(node_header_field) != NULL) {
         return node_header_field;
     }
     if (field_name(node_header_field) != NULL) {
@@ -1211,7 +1216,7 @@ tree_node* HTTP_name(tree_node* parent) {
 tree_node* HTTP_version(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_HTTP_version = tree_node_add_child(parent, parent->string, index, 0, "HTTP_version");
-    if (HTTP_name(node_HTTP_version) == NULL || 
+    if (HTTP_name(node_HTTP_version) == NULL ||
         parent->string[get_end(node_HTTP_version)] != '/') {
         tree_node_free(node_HTTP_version);
         return NULL;
@@ -1242,7 +1247,8 @@ tree_node* absolute_path(tree_node* parent) {
         tree_node_free(node_absolute_path);
         return NULL;
     }
-    while (parent->string[get_end(node_absolute_path)] == '/' && segment(node_absolute_path)!=NULL);
+    while (parent->string[get_end(node_absolute_path)] == '/' && segment(node_absolute_path) != NULL)
+        ;
     return node_absolute_path;
 }
 
@@ -1307,12 +1313,11 @@ tree_node* HTTP_message(tree_node* parent) {
         tree_node_free(node_HTTP_message);
         return NULL;
     }
-    while (header_field(node_HTTP_message) != NULL && CRLF(node_HTTP_message) != NULL);
-    if (CRLF(node_HTTP_message) == NULL) {
-        tree_node_free(node_HTTP_message);
-        return NULL;
-    }
-    if (message_body(node_HTTP_message) != NULL) {
+    while (header_field(node_HTTP_message) != NULL && CRLF(node_HTTP_message) != NULL)
+        ;
+    if (
+        CRLF(node_HTTP_message) == NULL ||
+        message_body(node_HTTP_message) != NULL) {
         tree_node_free(node_HTTP_message);
         return NULL;
     }
