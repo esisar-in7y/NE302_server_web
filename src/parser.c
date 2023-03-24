@@ -147,6 +147,46 @@ bool validate_message(tree_node* parent) {
     return false;
 }
 
+tree_node* check_sa(tree_node* parent, char _char) {
+    if (parent->string[get_start(parent)] == _char) {
+        return tree_node_add_child(parent, parent->string, get_start(parent), 1, &_char);
+    }
+    return NULL;
+}
+tree_node* bloc_chain(tree_node* parent, tree_node* (**f)(tree_node* parent), int f_num) {
+    tree_node* tmp = tree_node_new(parent->string, get_start(parent), 0, NULL, "tmp");
+    bool good = false;
+    for (int i = 0; !good && i < f_num; i++) {
+        if ((*(f + i))(tmp) != NULL) {
+            good = true;
+        }
+    }
+    if (good) {
+        move_childs(tmp, parent);
+        tree_node_free(tmp);
+        return parent;
+    } else {
+        tree_node_free(tmp);
+        return NULL;
+    }
+}
+bool at_least_x(tree_node* parent, tree_node* (*func)(tree_node*), int x) {
+    int count = 0;
+    while (func(parent) != NULL) {
+        count++;
+    }
+    return count >= x;
+}
+
+// CRLF = CR LF
+tree_node* CRLF(tree_node* parent) {
+    int index = get_start(parent);
+    if (parent->string[index] == '\r' && parent->string[index + 1] == '\n') {
+        return tree_node_add_child(parent, parent->string, index, 2, "CRLF");
+    }
+    return NULL;
+}
+
 // message_body = *OCTET
 tree_node* message_body(tree_node* parent) {
     int index = get_start(parent);
@@ -163,7 +203,7 @@ tree_node* obs_text(tree_node* parent) {
 }
 
 // vchar = %x21-7E
-tree_node* vchar(tree_node* parent) {
+tree_node* VCHAR(tree_node* parent) {
     int index = get_start(parent);
     if (0x21 < parent->string[index] && parent->string[index] < 0x7E) {
         return tree_node_add_child(parent, parent->string, index, 1, "vchar");
@@ -313,36 +353,21 @@ tree_node* HEXDIG(tree_node* parent) {
     }
     return NULL;
 }
-int at_least_x(tree_node* parent, tree_node* (*func)(tree_node*), int x) {
-    int count = 0;
-    while (func(parent) != NULL) {
-        count++;
-    }
-    return count >= x;
-}
 
 // IPvFuture = "v" 1*HEXDIG "." 1*( unreserved / sub-delims / ":" )
 tree_node* IPvFuture(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_IPvFuture = tree_node_add_child(parent, parent->string, index, 1, "IPvFuture");
-    if (parent->string[index] != 'v') {
-        tree_node_free(node_IPvFuture);
-        return NULL;
-    }
-    index++;
-    int start_index = index;
-    if (!at_least_x(node_IPvFuture, HEXDIG, 1)) {
-        tree_node_free(node_IPvFuture);
-        return NULL;
-    }
-    index = get_start(node_IPvFuture);
-    if (parent->string[index] != '.') {
-        tree_node_free(node_IPvFuture);
-        return NULL;
-    }
-    index++;
-    start_index = index;
-    if (!at_least_x(node_IPvFuture, unreserved, 1) && !at_least_x(node_IPvFuture, sub_delims, 1) && parent->string[index] != ':') {
+    if (
+        !check_sa(node_IPvFuture, 'v') ||
+        !at_least_x(node_IPvFuture, HEXDIG, 1) ||
+        !check_sa(node_IPvFuture, '.') ||
+        (
+            !at_least_x(node_IPvFuture, unreserved, 1) &&
+            !at_least_x(node_IPvFuture, sub_delims, 1) && 
+            parent->string[index] != ':'
+            )
+        ){
         tree_node_free(node_IPvFuture);
         return NULL;
     }
@@ -418,7 +443,16 @@ tree_node* SP(tree_node* parent) {
     }
     return NULL;
 }
-
+//field_vchar = VCHAR / obs_text
+tree_node* field_vchar(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_field_vchar = tree_node_add_child(parent, parent->string, index, 1, "field_vchar");
+    if (VCHAR(node_field_vchar) == NULL) {
+        tree_node_free(node_field_vchar);
+        return NULL;
+    }
+    return node_field_vchar;
+}
 // HTAB = %x09
 tree_node* HTAB(tree_node* parent) {
     int index = get_start(parent);
@@ -540,6 +574,40 @@ tree_node* ALPHA(tree_node* parent) {
     if ((parent->string[index] >= 'A' && parent->string[index] <= 'Z') || (parent->string[index] >= 'a' && parent->string[index] <= 'z')) {
         return tree_node_add_child(parent, parent->string, index, 1, "ALPHA");
     }
+    return NULL;
+}
+// uri_host = host 
+tree_node* uri_host(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_uri_host = tree_node_add_child(parent, parent->string, index, 1, "uri_host");
+    if (host(node_uri_host) == NULL) {
+        tree_node_free(node_uri_host);
+        return NULL;
+    }
+    return node_uri_host;
+}
+// obs_fold = CRLF 1*( SP / HTAB )
+tree_node* obs_fold(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_obs_fold = tree_node_add_child(parent, parent->string, index, 1, "obs_fold");
+    if (CRLF(node_obs_fold) == NULL) {
+        tree_node_free(node_obs_fold);
+        return NULL;
+    }
+    index = get_start(node_obs_fold);
+    while (parent->string[index] == ' ' || parent->string[index] == '\t') {
+        index++;
+    }
+    return node_obs_fold;
+}
+// host = IP_literal / IPv4address / reg_name
+tree_node* host(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_host = tree_node_add_child(parent, parent->string, index, 1, "host");
+    if (IP_literal(node_host) != NULL || IPv4address(node_host) != NULL || reg_name(node_host) != NULL) {
+        return node_host;
+    }
+    tree_node_free(node_host);
     return NULL;
 }
 
@@ -782,7 +850,7 @@ tree_node* qdtext(tree_node* parent) {
         obs_text(node_qdtext)) {
         return node_qdtext;
     }
-    if (check_sa(node_qdtext, "!")) {
+    if (check_sa(node_qdtext, '!')) {
         return node_qdtext;
     }
     if (parent->string[index] >= 0x23 && parent->string[index] <= 0x5B) {
@@ -821,7 +889,7 @@ tree_node* cookie_value(tree_node* parent) {
 tree_node* cookie_pair(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_cookie_pair = tree_node_add_child(parent, parent->string, index, 0, "cookie_pair");
-    if (cookie_name(node_cookie_pair) == NULL || parent->string[get_end(node_cookie_pair)] != '=') {
+    if (cookie_name(node_cookie_pair) == NULL || parent->string[get_start(node_cookie_pair)] != '=') {
         tree_node_free(node_cookie_pair);
         return NULL;
     }
@@ -832,7 +900,18 @@ tree_node* cookie_pair(tree_node* parent) {
     }
     return node_cookie_pair;
 }
-
+// IP_literal    = "[" ( IPv6address / IPvFuture  ) "]"
+tree_node* IP_literal(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_IP_literal = tree_node_add_child(parent, parent->string, index, 0, "IP_literal");
+    if (check_sa(node_IP_literal, '[') &&
+        (IPv6address(node_IP_literal) || IPvFuture(node_IP_literal)) &&
+        check_sa(node_IP_literal, ']')) {
+        return node_IP_literal;
+    }
+    tree_node_free(node_IP_literal);
+    return NULL;
+}
 // cookie_string = cookie_pair *( ";" SP cookie_pair )
 tree_node* cookie_string(tree_node* parent) {
     int index = get_start(parent);
@@ -843,8 +922,8 @@ tree_node* cookie_string(tree_node* parent) {
     }
     bool end = false;
     while (!end) {
-        tree_node* tmp = tree_node_new(parent->string, get_end(node_cookie_string), 0, NULL, "tmp");
-        if (check_sa(tmp, ";") &&
+        tree_node* tmp = tree_node_new(parent->string, get_start(node_cookie_string), 0, NULL, "tmp");
+        if (check_sa(tmp, ';') &&
             SP(node_cookie_string) &&
             cookie_pair(node_cookie_string)) {
             move_childs(tmp, node_cookie_string);
@@ -910,11 +989,11 @@ tree_node* quoted_string(tree_node* parent) {
 tree_node* parameter(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_parameter = tree_node_add_child(parent, parent->string, index, 0, "parameter");
-    if (token(node_parameter) == NULL || parent->string[get_end(node_parameter)] != '=') {
+    if (token(node_parameter) == NULL || parent->string[get_start(node_parameter)] != '=') {
         tree_node_free(node_parameter);
         return NULL;
     }
-    tree_node_add_child(node_parameter, parent->string, get_end(node_parameter), 1, "=");
+    tree_node_add_child(node_parameter, parent->string, get_start(node_parameter), 1, "=");
     if (token(node_parameter) || quoted_string(node_parameter)) {
         return node_parameter;
     }
@@ -925,21 +1004,24 @@ tree_node* parameter(tree_node* parent) {
 tree_node* media_type(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_media_type = tree_node_add_child(parent, parent->string, index, 0, "media_type");
-    if (type(node_media_type) == NULL || parent->string[get_end(node_media_type)] != '/') {
+    if (type(node_media_type) == NULL || parent->string[get_start(node_media_type)] != '/') {
         tree_node_free(node_media_type);
         return NULL;
     }
-    tree_node_add_child(node_media_type, parent->string, get_end(node_media_type), 1, "/");
+    tree_node_add_child(node_media_type, parent->string, get_start(node_media_type), 1, "/");
     if (subtype(node_media_type) == NULL) {
         tree_node_free(node_media_type);
         return NULL;
     }
-    while (OWS(node_media_type) && parent->string[get_end(node_media_type)] == ';' && OWS(node_media_type)) {
-        tree_node_add_child(node_media_type, parent->string, get_end(node_media_type), 1, ";");
-        if (parameter(node_media_type) == NULL) {
-            tree_node_free(node_media_type);
-            return NULL;
+    bool end = false;
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_start(node_media_type), 0, NULL, "tmp");
+        if (OWS(tmp) && check_sa(tmp, ';') && OWS(tmp) && parameter(tmp)) {
+            move_childs(tmp, node_media_type);
+        } else {
+            end = true;
         }
+        tree_node_free(tmp);
     }
     return node_media_type;
 }
@@ -999,21 +1081,28 @@ tree_node* Content_Length_header(tree_node* parent) {
     }
     return node_Content_Length_header;
 }
+
 // Connection = *( "," OWS ) connection_option *( OWS "," [ OWS connection_option ] )
 tree_node* Connection(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_Connection = tree_node_add_child(parent, parent->string, index, 0, "Connection");
-    while (parent->string[get_end(node_Connection)] == ',' && OWS(node_Connection))
+    tree_node* tmp = tree_node_new(parent->string, get_start(node_Connection), 0, NULL, "tmp");
+    while (check_sa(node_Connection, ',') && OWS(node_Connection))
         ;
     if (connection_option(node_Connection) == NULL) {
         tree_node_free(node_Connection);
         return NULL;
     }
-    while (OWS(node_Connection) && parent->string[get_end(node_Connection)] == ',' && OWS(node_Connection)) {
-        tree_node_add_child(node_Connection, parent->string, get_end(node_Connection), 1, ",");
-        if (connection_option(node_Connection) == NULL) {
-            tree_node_free(node_Connection);
-            return NULL;
+    bool end = false;
+    while (!end) {
+        if (OWS(tmp) && check_sa(tmp, ',') && OWS(tmp) && connection_option(tmp)) {
+            if (connection_option(node_Connection) == NULL) {
+                tree_node_free(node_Connection);
+                return NULL;
+            }
+            move_childs(tmp, node_Connection);
+        } else {
+            end = true;
         }
     }
     return node_Connection;
@@ -1036,45 +1125,14 @@ tree_node* Connection_header(tree_node* parent) {
     }
     return node_Connection_header;
 }
-// Transfert_encoding = *( "," OWS ) transfer_coding *( OWS "," [ OWS transfer_coding ] )
-tree_node* Transfert_encoding(tree_node* parent) {
+// BWS = *( SP / HTAB )
+tree_node* BWS(tree_node* parent) {
     int index = get_start(parent);
-    tree_node* node_Transfert_encoding = tree_node_add_child(parent, parent->string, index, 0, "Transfert_encoding");
-    bool end = false;
-    while (!end) {
-        tree_node* tmp = tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL, "tmp");
-        if (parent->string[get_end(tmp)] == ',') {
-            tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
-            if (OWS(tmp) != NULL) {
-                move_childs(tmp, node_Transfert_encoding);
-                tree_node_free(tmp);
-                continue;
-            }
-        }
-        end = true;
-    }
-    if (transfert_coding(node_Transfert_encoding) == NULL) {
-        tree_node_free(node_Transfert_encoding);
-        return NULL;
-    }
-    end = false;
-    while (!end) {
-        tree_node* tmp = tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL, "tmp");
-        if (OWS(tmp) != NULL) {
-            if (parent->string[get_end(tmp)] == ',') {
-                tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
-                move_childs(tmp, node_Transfert_encoding);
-                if (OWS(tmp) != NULL && transfert_coding(tmp) != NULL) {
-                    move_childs(tmp, node_Transfert_encoding);
-                }
-                tree_node_free(tmp);
-                continue;
-            }
-        }
-        end = true;
-    }
+    tree_node* node_BWS = tree_node_add_child(parent, parent->string, index, 0, "BWS");
+    while (check_sa(node_BWS, ' ') || check_sa(node_BWS, '\t'))
+        ;
+    return node_BWS;
 }
-
 // transfer_parameter = token BWS "=" BWS ( token / quoted_string )
 tree_node* transfer_parameter(tree_node* parent) {
     int index = get_start(parent);
@@ -1084,12 +1142,12 @@ tree_node* transfer_parameter(tree_node* parent) {
         return NULL;
     }
     if (BWS(node_transfer_parameter) == NULL ||
-        parent->string[get_end(node_transfer_parameter)] != '=' ||
+        parent->string[get_start(node_transfer_parameter)] != '=' ||
         BWS(node_transfer_parameter) == NULL) {
         tree_node_free(node_transfer_parameter);
         return NULL;
     }
-    tree_node_add_child(node_transfer_parameter, parent->string, get_end(node_transfer_parameter), 1, "=");
+    tree_node_add_child(node_transfer_parameter, parent->string, get_start(node_transfer_parameter), 1, "=");
     if (BWS(node_transfer_parameter) == NULL) {
         tree_node_free(node_transfer_parameter);
         return NULL;
@@ -1101,6 +1159,75 @@ tree_node* transfer_parameter(tree_node* parent) {
     return node_transfer_parameter;
 }
 
+// transfer_extension = token [ "=" ( token / quoted_string ) ]
+tree_node* transfer_extension(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_transfer_extension = tree_node_add_child(parent, parent->string, index, 0, "transfer_extension");
+    if (token(node_transfer_extension) == NULL) {
+        tree_node_free(node_transfer_extension);
+        return NULL;
+    }
+    tree_node* tmp = tree_node_new(parent->string, get_start(node_transfer_extension), 1, NULL, "tmp");
+    if (parent->string[get_start(tmp)] == '=') {
+        tree_node_add_child(tmp, parent->string, get_start(node_transfer_extension), 1, "=");
+        if (token(tmp) == NULL && quoted_string(tmp) == NULL) {
+            tree_node_free(node_transfer_extension);
+            return NULL;
+        }
+    }
+    move_childs(tmp, node_transfer_extension);
+    tree_node_free(tmp);
+    return node_transfer_extension;
+}
+// Transfer_Encoding_header = "Transfer-Encoding" ":" OWS Transfer_Encoding OWS
+tree_node* Transfer_Encoding_header(tree_node* parent) {
+    tree_node* node_Transfer_Encoding_header = tree_node_add_child(parent, parent->string, get_start(parent), 0, "Transfer_Encoding_header");
+    if (strncmp(parent->string + get_start(node_Transfer_Encoding_header), "Transfer-Encoding", 17) != 0) {
+        tree_node_free(node_Transfer_Encoding_header);
+        return NULL;
+    }
+    tree_node_add_child(node_Transfer_Encoding_header, parent->string, get_start(node_Transfer_Encoding_header), 17, "Transfer-Encoding");
+    if (
+        check_sa(node_Transfer_Encoding_header, ':') == NULL ||
+        OWS(node_Transfer_Encoding_header) == NULL ||
+        Transfert_encoding(node_Transfer_Encoding_header) == NULL ||
+        OWS(node_Transfer_Encoding_header) == NULL) {
+        tree_node_free(node_Transfer_Encoding_header);
+        return NULL;
+    }
+    return node_Transfer_Encoding_header;
+}
+// header_field =  Connection_header / Content_Length_header / Content_Type_header / Cookie_header / Transfer_Encoding_header / Expect_header / Host_header / ( field_name ":" OWS field_value OWS )
+tree_node* header_field(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_header_field = tree_node_add_child(parent, parent->string, index, 0, "header_field");
+    if (
+        Connection_header(node_header_field) != NULL ||
+        Content_Length_header(node_header_field) != NULL ||
+        Content_Type_header(node_header_field) != NULL ||
+        Cookie_header(node_header_field) != NULL ||
+        Transfer_Encoding_header(node_header_field) != NULL ||
+        Expect_header(node_header_field) != NULL ||
+        Host_header(node_header_field) != NULL) {
+        return node_header_field;
+    }
+    if (field_name(node_header_field) != NULL) {
+        if (parent->string[get_start(node_header_field)] != ':') {
+            tree_node_free(node_header_field);
+            return NULL;
+        }
+        tree_node_add_child(node_header_field, parent->string, get_start(node_header_field), 1, ":");
+        if (OWS(node_header_field) == NULL ||
+            field_value(node_header_field) == NULL ||
+            OWS(node_header_field) == NULL) {
+            tree_node_free(node_header_field);
+            return NULL;
+        }
+        return node_header_field;
+    }
+    tree_node_free(node_header_field);
+    return NULL;
+}
 // transfert_coding = "chunked" / "compress" / "deflate" / "gzip" / transfer_extension
 tree_node* transfert_coding(tree_node* parent) {
     int index = get_start(parent);
@@ -1127,58 +1254,6 @@ tree_node* transfert_coding(tree_node* parent) {
     }
     return node_transfert_coding;
 }
-
-// transfer_extension = token [ "=" ( token / quoted_string ) ]
-tree_node* transfer_extension(tree_node* parent) {
-    int index = get_start(parent);
-    tree_node* node_transfer_extension = tree_node_add_child(parent, parent->string, index, 0, "transfer_extension");
-    if (token(node_transfer_extension) == NULL) {
-        tree_node_free(node_transfer_extension);
-        return NULL;
-    }
-    tree_node* tmp = tree_node_new(parent->string, get_end(node_transfer_extension), 1, NULL, "tmp");
-    if (parent->string[get_end(tmp)] == '=') {
-        tree_node_add_child(tmp, parent->string, get_end(node_transfer_extension), 1, "=");
-        if (token(tmp) == NULL && quoted_string(tmp) == NULL) {
-            tree_node_free(node_transfer_extension);
-            return NULL;
-        }
-    }
-    move_childs(tmp, node_transfer_extension);
-    tree_node_free(tmp);
-    return node_transfer_extension;
-}
-// header_field =  Connection_header / Content_Length_header / Content_Type_header / Cookie_header / Transfer_Encoding_header / Expect_header / Host_header / ( field_name ":" OWS field_value OWS )
-tree_node* header_field(tree_node* parent) {
-    int index = get_start(parent);
-    tree_node* node_header_field = tree_node_add_child(parent, parent->string, index, 0, "header_field");
-    if (
-        Connection_header(node_header_field) != NULL ||
-        Content_Length_header(node_header_field) != NULL ||
-        Content_Type_header(node_header_field) != NULL ||
-        Cookie_header(node_header_field) != NULL ||
-        Transfer_Encoding_header(node_header_field) != NULL ||
-        Expect_header(node_header_field) != NULL ||
-        Host_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (field_name(node_header_field) != NULL) {
-        if (parent->string[get_end(node_header_field)] != ':') {
-            tree_node_free(node_header_field);
-            return NULL;
-        }
-        tree_node_add_child(node_header_field, parent->string, get_end(node_header_field), 1, ":");
-        if (OWS(node_header_field) == NULL ||
-            field_value(node_header_field) == NULL ||
-            OWS(node_header_field) == NULL) {
-            tree_node_free(node_header_field);
-            return NULL;
-        }
-        return node_header_field;
-    }
-    tree_node_free(node_header_field);
-    return NULL;
-}
 // HTTP_name = %x48.54.54.50
 tree_node* HTTP_name(tree_node* parent) {
     int index = get_start(parent);
@@ -1195,17 +1270,17 @@ tree_node* HTTP_version(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_HTTP_version = tree_node_add_child(parent, parent->string, index, 0, "HTTP_version");
     if (HTTP_name(node_HTTP_version) == NULL ||
-        parent->string[get_end(node_HTTP_version)] != '/') {
+        parent->string[get_start(node_HTTP_version)] != '/') {
         tree_node_free(node_HTTP_version);
         return NULL;
     }
-    tree_node_add_child(node_HTTP_version, parent->string, get_end(node_HTTP_version), 1, "/");
+    tree_node_add_child(node_HTTP_version, parent->string, get_start(node_HTTP_version), 1, "/");
     if (DIGIT(node_HTTP_version) == NULL ||
-        parent->string[get_end(node_HTTP_version)] != '.') {
+        parent->string[get_start(node_HTTP_version)] != '.') {
         tree_node_free(node_HTTP_version);
         return NULL;
     }
-    tree_node_add_child(node_HTTP_version, parent->string, get_end(node_HTTP_version), 1, ".");
+    tree_node_add_child(node_HTTP_version, parent->string, get_start(node_HTTP_version), 1, ".");
     if (DIGIT(node_HTTP_version) == NULL) {
         tree_node_free(node_HTTP_version);
         return NULL;
@@ -1233,7 +1308,7 @@ tree_node* origin_form(tree_node* parent) {
         tree_node_free(node_origin_form);
         return NULL;
     }
-    tree_node* tmp = tree_node_new(parent->string, get_end(node_origin_form), 0, NULL, "tmp");
+    tree_node* tmp = tree_node_new(parent->string, get_start(node_origin_form), 0, NULL, "tmp");
     if (check_sa(tmp, '?') && query(tmp)) {
         move_childs(tmp, node_origin_form);
         tree_node_free(tmp);
@@ -1294,10 +1369,42 @@ tree_node* HTTP_message(tree_node* parent) {
     }
     return node_HTTP_message;
 }
-
-tree_node* check_sa(tree_node* parent, char _char) {
-    if (parent->string[get_end(parent)] == _char) {
-        return tree_node_add_child(parent, parent->string, get_end(parent), 1, _char);
+// Transfert_encoding = *( "," OWS ) transfer_coding *( OWS "," [ OWS transfer_coding ] )
+tree_node* Transfert_encoding(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_Transfert_encoding = tree_node_add_child(parent, parent->string, index, 0, "Transfert_encoding");
+    bool end = false;
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_start(node_Transfert_encoding), 1, NULL, "tmp");
+        if (parent->string[get_start(tmp)] == ',') {
+            tree_node_add_child(tmp, parent->string, get_start(tmp), 1, ",");
+            if (OWS(tmp) != NULL) {
+                move_childs(tmp, node_Transfert_encoding);
+                tree_node_free(tmp);
+                continue;
+            }
+        }
+        end = true;
     }
-    return NULL;
+    if (transfert_coding(node_Transfert_encoding) == NULL) {
+        tree_node_free(node_Transfert_encoding);
+        return NULL;
+    }
+    end = false;
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_start(node_Transfert_encoding), 1, NULL, "tmp");
+        if (OWS(tmp) != NULL) {
+            if (parent->string[get_start(tmp)] == ',') {
+                tree_node_add_child(tmp, parent->string, get_start(tmp), 1, ",");
+                move_childs(tmp, node_Transfert_encoding);
+                if (OWS(tmp) != NULL && transfert_coding(tmp) != NULL) {
+                    move_childs(tmp, node_Transfert_encoding);
+                }
+                tree_node_free(tmp);
+                continue;
+            }
+        }
+        end = true;
+    }
+    return node_Transfert_encoding;
 }
