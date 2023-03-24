@@ -1050,6 +1050,101 @@ tree_node* Connection_header(tree_node* parent) {
     }
     return node_Connection_header;
 }
+// Transfert_encoding = *( "," OWS ) transfer_coding *( OWS "," [ OWS transfer_coding ] )
+tree_node* Transfert_encoding(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_Transfert_encoding = tree_node_add_child(parent, parent->string, index, 0, "Transfert_encoding");
+    bool end = false;
+    while(!end){
+        tree_node* tmp=tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL,"tmp");
+        if(parent->string[get_end(tmp)] == ','){
+            tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
+            if(OWS(tmp) != NULL){
+                move_childs(tmp, node_Transfert_encoding);
+                tree_node_free(tmp);
+                continue;
+            }
+        }
+        end = true;
+    }
+    if(transfert_coding(node_Transfert_encoding)==NULL){
+        tree_node_free(node_Transfert_encoding);
+        return NULL;
+    }
+    end = false;
+    while(!end){
+        tree_node* tmp=tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL,"tmp");
+        if(OWS(tmp) != NULL){
+            tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
+            if(parent->string[get_end(tmp)] == ','){
+                tree_node* tmp2=tree_node_new(parent->string, get_end(tmp), 1, NULL,"tmp");
+                if(OWS(tmp2) != NULL || transfert_coding(tmp2) != NULL){
+                    move_childs(tmp, node_Transfert_encoding);
+                }else{
+                    tree_node_free(tmp2);
+                }
+                move_childs(tmp2, node_Transfert_encoding);
+                tree_node_free(tmp2);
+                continue;
+            }
+        }
+        end = true;
+    }
+}
+
+// transfer_parameter = token BWS "=" BWS ( token / quoted_string )
+tree_node* transfer_parameter(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_transfer_parameter = tree_node_add_child(parent, parent->string, index, 0, "transfer_parameter");
+    if (token(node_transfer_parameter) == NULL) {
+        tree_node_free(node_transfer_parameter);
+        return NULL;
+    }
+    if (BWS(node_transfer_parameter) == NULL ||
+        parent->string[get_end(node_transfer_parameter)] != '=' ||
+        BWS(node_transfer_parameter) == NULL) {
+        tree_node_free(node_transfer_parameter);
+        return NULL;
+    }
+    tree_node_add_child(node_transfer_parameter, parent->string, get_end(node_transfer_parameter), 1, "=");
+    if (BWS(node_transfer_parameter) == NULL) {
+        tree_node_free(node_transfer_parameter);
+        return NULL;
+    }
+    if (token(node_transfer_parameter) == NULL && quoted_string(node_transfer_parameter) == NULL) {
+        tree_node_free(node_transfer_parameter);
+        return NULL;
+    }
+    return node_transfer_parameter;
+}
+
+// transfert_coding = "chunked" / "compress" / "deflate" / "gzip" / transfer_extension
+tree_node* transfert_coding(tree_node* parent) {
+    int index = get_start(parent);
+    tree_node* node_transfert_coding = tree_node_add_child(parent, parent->string, index, 0, "transfert_coding");
+    if (strncmp(parent->string + index, "chunked", 7) == 0) {
+        tree_node_add_child(node_transfert_coding, parent->string, index, 7, "chunked");
+        return node_transfert_coding;
+    }
+    if (strncmp(parent->string + index, "compress", 8) == 0) {
+        tree_node_add_child(node_transfert_coding, parent->string, index, 8, "compress");
+        return node_transfert_coding;
+    }
+    if (strncmp(parent->string + index, "deflate", 7) == 0) {
+        tree_node_add_child(node_transfert_coding, parent->string, index, 7, "deflate");
+        return node_transfert_coding;
+    }
+    if (strncmp(parent->string + index, "gzip", 4) == 0) {
+        tree_node_add_child(node_transfert_coding, parent->string, index, 4, "gzip");
+        return node_transfert_coding;
+    }
+    if (transfer_extension(node_transfert_coding) == NULL) {
+        tree_node_free(node_transfert_coding);
+        return NULL;
+    }
+    return node_transfert_coding;
+}
+
 // transfer_extension = token [ "=" ( token / quoted_string ) ]
 tree_node* transfer_extension(tree_node* parent) {
     int index = get_start(parent);
@@ -1058,7 +1153,7 @@ tree_node* transfer_extension(tree_node* parent) {
         tree_node_free(node_transfer_extension);
         return NULL;
     }
-    tree_node* tmp=tree_node_add_child(node_transfer_extension, parent->string, get_end(node_transfer_extension), 0, "tmp");
+    tree_node* tmp=tree_node_new(parent->string, get_end(node_transfer_extension), 1, NULL,"tmp");
     if (parent->string[get_end(tmp)] == '=') {
         tree_node_add_child(tmp, parent->string, get_end(node_transfer_extension), 1, "=");
         if (token(tmp) == NULL && quoted_string(tmp) == NULL) {
@@ -1066,32 +1161,22 @@ tree_node* transfer_extension(tree_node* parent) {
             return NULL;
         }
     }
-    move_childs(node_transfer_extension, tmp);
+    move_childs(tmp,node_transfer_extension);
+    tree_node_free(tmp);
     return node_transfer_extension;
 }
 // header_field =  Connection_header / Content_Length_header / Content_Type_header / Cookie_header / Transfer_Encoding_header / Expect_header / Host_header / ( field_name ":" OWS field_value OWS )
 tree_node* header_field(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_header_field = tree_node_add_child(parent, parent->string, index, 0, "header_field");
-    if (Connection_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Content_Length_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Content_Type_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Cookie_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Transfer_Encoding_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Expect_header(node_header_field) != NULL) {
-        return node_header_field;
-    }
-    if (Host_header(node_header_field) != NULL) {
+    if (
+        Connection_header(node_header_field) != NULL ||
+        Content_Length_header(node_header_field) != NULL ||
+        Content_Type_header(node_header_field) != NULL ||
+        Cookie_header(node_header_field) != NULL ||
+        Transfer_Encoding_header(node_header_field) != NULL ||
+        Expect_header(node_header_field) != NULL ||
+        Host_header(node_header_field) != NULL ||) {
         return node_header_field;
     }
     if (field_name(node_header_field) != NULL) {

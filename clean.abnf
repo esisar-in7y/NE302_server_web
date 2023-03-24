@@ -1,39 +1,20 @@
-HTTP-message = start-line *( header-field CRLF ) CRLF [ message-body ]
-start-line = request-line 
-request-line = method SP request-target SP HTTP-version CRLF
 
-request-target = origin-form 
-origin-form = absolute-path [ "?" query ]
-absolute-path = 1*( "/" segment )
-HTTP-version = HTTP-name "/" DIGIT "." DIGIT
-HTTP-name = %x48.54.54.50 ; HTTP
-header-field =  Connection-header / Content-Length-header / Content-Type-header / Cookie-header / Transfer-Encoding-header / Expect-header / Host-header / ( field-name ":" OWS field-value OWS ) 
-Connection-header = "Connection" ":" OWS Connection OWS
-Connection = *( "," OWS ) connection-option *( OWS "," [ OWS connection-option ] )
-Content-Length-header = "Content-Length" ":" OWS Content-Length OWS
-Content-Length = 1*DIGIT
-Content-Type-header = "Content-Type" ":" OWS Content-Type OWS
-Content-Type = media-type
-media-type = type "/" subtype *( OWS ";" OWS parameter )
-parameter = token "=" ( token / quoted-string )
-quoted-string = DQUOTE *( qdtext / quoted-pair ) DQUOTE
-qdtext = HTAB / SP / "!" / %x23-5B ; '#'-'[' / %x5D-7E ; ']'-'~' / obs-text
-quoted-pair = "\" ( HTAB / SP / VCHAR / obs-text )
-Cookie-header = "Cookie:" OWS cookie-string OWS
-cookie-string = cookie-pair *( ";" SP cookie-pair )
-cookie-pair       = cookie-name "=" cookie-value
-cookie-value      = ( DQUOTE *cookie-octet DQUOTE ) / *cookie-octet 
-cookie-octet      = %x21 / %x23-2B / %x2D-3A / %x3C-5B / %x5D-7E
+
+
+
+
+
+
 Transfer-Encoding-header = "Transfer-Encoding" ":" OWS Transfer-Encoding OWS
 Transfer-Encoding = *( "," OWS ) transfer-coding *( OWS "," [ OWS transfer-coding ] )
 transfer-coding = "chunked" / "compress" / "deflate" / "gzip" / transfer-extension
 transfer-extension = token *( OWS ";" OWS transfer-parameter )
 transfer-parameter = token BWS "=" BWS ( token / quoted-string )
-Expect-header = "Expect" ":" OWS Expect OWS
+
 
 host          = IP-literal / IPv4address / reg-name
 IP-literal    = "[" ( IPv6address / IPvFuture  ) "]"
-IPv6address   =                            6( h16 ":" ) ls32
+IPv6address= +                           6( h16 ":" ) ls32
               /                       "::" 5( h16 ":" ) ls32
               / [               h16 ] "::" 4( h16 ":" ) ls32
               / [ h16 *1( ":" h16 ) ] "::" 3( h16 ":" ) ls32
@@ -41,7 +22,7 @@ IPv6address   =                            6( h16 ":" ) ls32
               / [ h16 *3( ":" h16 ) ] "::"    h16 ":"   ls32
               / [ h16 *4( ":" h16 ) ] "::"              ls32
               / [ h16 *5( ":" h16 ) ] "::"              h16
-              / [ h16 *6( ":" h16 ) ] "::"
+             + / [ h16 *6( ":" h16 ) ] "::"
 
 
 
