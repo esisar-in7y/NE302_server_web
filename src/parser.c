@@ -353,11 +353,9 @@ tree_node* IPvFuture(tree_node* parent) {
 tree_node* dec_octet(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_dec_octet = tree_node_add_child(parent, parent->string, index, 1, "dec_octet");
-    if (parent->string[index] == '2') {
-        tree_node_add_child(node_dec_octet, parent->string, index, 1, "2");
+    if (check_sa(node_dec_octet, '2')) {
         index++;
-        if (parent->string[index] == '5') {
-            tree_node_add_child(node_dec_octet, parent->string, index, 1, "5");
+        if (check_sa(node_dec_octet, '5')) {
             index++;
             if (parent->string[index] >= '0' && parent->string[index] <= '5') {
                 tree_node_add_child(node_dec_octet, parent->string, index, 1, "0-5");
@@ -379,8 +377,7 @@ tree_node* dec_octet(tree_node* parent) {
         tree_node_free(node_dec_octet);
         return NULL;
     }
-    if (parent->string[index] == '1') {
-        tree_node_add_child(node_dec_octet, parent->string, index, 1, "1");
+    if (check_sa(node_dec_octet, '1')) {
         index++;
         if (isdigit(parent->string[index]) != 0) {
             tree_node_add_child(node_dec_octet, parent->string, index, 1, "DIGIT");
@@ -439,7 +436,7 @@ tree_node* field_content(tree_node* parent) {
         return NULL;
     }
     index = get_start(parent);
-    tree_node* tmp = tree_node_new(parent->string, index, 1, NULL,"tmp");
+    tree_node* tmp = tree_node_new(parent->string, index, 1, NULL, "tmp");
     if (!at_least_x(tmp, SP, 1) && !at_least_x(tmp, HTAB, 1)) {
         tree_node_free(tmp);
         return node_field_content;
@@ -457,7 +454,8 @@ tree_node* field_content(tree_node* parent) {
 tree_node* field_value(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_field_value = tree_node_add_child(parent, parent->string, index, 1, "field_value");
-    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL);
+    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL)
+        ;
     return node_field_value;
 }
 
@@ -465,9 +463,7 @@ tree_node* field_value(tree_node* parent) {
 tree_node* pct_encoded(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_pct_encoded = tree_node_add_child(parent, parent->string, index, 1, "pct_encoded");
-    if (parent->string[index] == '%') {
-        tree_node_add_child(node_pct_encoded, parent->string, index, 1, "%");
-        index++;
+    if (check_sa(node_pct_encoded, '%')) {
         if (
             HEXDIG(node_pct_encoded) == NULL ||
             HEXDIG(node_pct_encoded) == NULL) {
@@ -484,21 +480,11 @@ tree_node* pct_encoded(tree_node* parent) {
 tree_node* pchar(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_pchar = tree_node_add_child(parent, parent->string, index, 1, "pchar");
-    if (unreserved(node_pchar) != NULL) {
-        return node_pchar;
-    }
-    if (pct_encoded(node_pchar) != NULL) {
-        return node_pchar;
-    }
-    if (sub_delims(node_pchar) != NULL) {
-        return node_pchar;
-    }
-    if (parent->string[index] == ':') {
-        tree_node_add_child(node_pchar, parent->string, index, 1, ":");
-        return node_pchar;
-    }
-    if (parent->string[index] == '@') {
-        tree_node_add_child(node_pchar, parent->string, index, 1, "@");
+    if (unreserved(node_pchar) != NULL ||
+        pct_encoded(node_pchar) != NULL ||
+        sub_delims(node_pchar) != NULL ||
+        check_sa(node_pchar, ':') ||
+        check_sa(node_pchar, '@')) {
         return node_pchar;
     }
     tree_node_free(node_pchar);
@@ -520,11 +506,9 @@ tree_node* query(tree_node* parent) {
     tree_node* node_query = tree_node_add_child(parent, parent->string, index, 1, "query");
     bool end = false;
     while (!end) {
-        if (pchar(node_query) != NULL) {
-        } else if (parent->string[index] == '/') {
-            tree_node_add_child(node_query, parent->string, index, 1, "/");
-        } else if (parent->string[index] == '?') {
-            tree_node_add_child(node_query, parent->string, index, 1, "?");
+        if (pchar(node_query) != NULL ||
+            check_sa(node_query, '/') ||
+            check_sa(node_query, '?')) {
         } else {
             end = true;
         }
@@ -583,15 +567,8 @@ tree_node* Host(tree_node* parent) {
 tree_node* OWS(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_OWS = tree_node_add_child(parent, parent->string, index, 1, "OWS");
-    while (parent->string[index] == ' ' || parent->string[index] == '\t') {
-        if (parent->string[index] == ' ') {
-            tree_node_add_child(node_OWS, parent->string, index, 1, " ");
-        }
-        if (parent->string[index] == '\t') {
-            tree_node_add_child(node_OWS, parent->string, index, 1, "\t");
-        }
-        index++;
-    }
+    while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL)
+        ;
     return node_OWS;
 }
 
@@ -805,8 +782,7 @@ tree_node* qdtext(tree_node* parent) {
         obs_text(node_qdtext)) {
         return node_qdtext;
     }
-    if (parent->string[index] == '!') {
-        tree_node_add_child(node_qdtext, parent->string, index, 1, "!");
+    if (check_sa(node_qdtext, "!")) {
         return node_qdtext;
     }
     if (parent->string[index] >= 0x23 && parent->string[index] <= 0x5B) {
@@ -824,7 +800,7 @@ tree_node* qdtext(tree_node* parent) {
 tree_node* cookie_value(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_cookie_value = tree_node_add_child(parent, parent->string, index, 0, "cookie_value");
-    tree_node* tmp = tree_node_add_child(parent, parent->string, index, 0, "tmp");
+    tree_node* tmp = tree_node_new(parent->string, index, 0, NULL, "tmp");
     if (DQUOTE(tmp)) {
         while (cookie_octet(tmp) != NULL)
             ;
@@ -833,6 +809,7 @@ tree_node* cookie_value(tree_node* parent) {
             return NULL;
         }
         move_childs(tmp, node_cookie_value);
+        tree_node_free(tmp);
         return node_cookie_value;
     }
     while (cookie_octet(node_cookie_value) != NULL)
@@ -864,13 +841,17 @@ tree_node* cookie_string(tree_node* parent) {
         tree_node_free(node_cookie_string);
         return NULL;
     }
-    while (parent->string[get_end(node_cookie_string)] == ';') {
-        tree_node_add_child(node_cookie_string, parent->string, get_end(node_cookie_string), 1, ";");
-        if (SP(node_cookie_string) == NULL ||
-            cookie_pair(node_cookie_string) == NULL) {
-            tree_node_free(node_cookie_string);
-            return NULL;
+    bool end = false;
+    while (!end) {
+        tree_node* tmp = tree_node_new(parent->string, get_end(node_cookie_string), 0, NULL, "tmp");
+        if (check_sa(tmp, ";") &&
+            SP(node_cookie_string) &&
+            cookie_pair(node_cookie_string)) {
+            move_childs(tmp, node_cookie_string);
+        } else {
+            end = true;
         }
+        tree_node_free(tmp);
     }
     return node_cookie_string;
 }
@@ -1080,16 +1061,13 @@ tree_node* Transfert_encoding(tree_node* parent) {
     while (!end) {
         tree_node* tmp = tree_node_new(parent->string, get_end(node_Transfert_encoding), 1, NULL, "tmp");
         if (OWS(tmp) != NULL) {
-            tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
             if (parent->string[get_end(tmp)] == ',') {
-                tree_node* tmp2 = tree_node_new(parent->string, get_end(tmp), 1, NULL, "tmp");
-                if (OWS(tmp2) != NULL || transfert_coding(tmp2) != NULL) {
+                tree_node_add_child(tmp, parent->string, get_end(tmp), 1, ",");
+                move_childs(tmp, node_Transfert_encoding);
+                if (OWS(tmp) != NULL && transfert_coding(tmp) != NULL) {
                     move_childs(tmp, node_Transfert_encoding);
-                } else {
-                    tree_node_free(tmp2);
                 }
-                move_childs(tmp2, node_Transfert_encoding);
-                tree_node_free(tmp2);
+                tree_node_free(tmp);
                 continue;
             }
         }
@@ -1238,16 +1216,11 @@ tree_node* HTTP_version(tree_node* parent) {
 tree_node* absolute_path(tree_node* parent) {
     int index = get_start(parent);
     tree_node* node_absolute_path = tree_node_add_child(parent, parent->string, index, 0, "absolute_path");
-    if (parent->string[get_end(node_absolute_path)] != '/') {
+    if (check_sa(node_absolute_path, '/') == NULL || segment(node_absolute_path) == NULL) {
         tree_node_free(node_absolute_path);
         return NULL;
     }
-    tree_node_add_child(node_absolute_path, parent->string, get_end(node_absolute_path), 1, "/");
-    if (segment(node_absolute_path) == NULL) {
-        tree_node_free(node_absolute_path);
-        return NULL;
-    }
-    while (parent->string[get_end(node_absolute_path)] == '/' && segment(node_absolute_path) != NULL)
+    while (check_sa(node_absolute_path, '/') && segment(node_absolute_path) != NULL)
         ;
     return node_absolute_path;
 }
@@ -1260,12 +1233,10 @@ tree_node* origin_form(tree_node* parent) {
         tree_node_free(node_origin_form);
         return NULL;
     }
-    if (parent->string[get_end(node_origin_form)] == '?') {
-        tree_node_add_child(node_origin_form, parent->string, get_end(node_origin_form), 1, "?");
-        if (query(node_origin_form) == NULL) {
-            tree_node_free(node_origin_form);
-            return NULL;
-        }
+    tree_node* tmp = tree_node_new(parent->string, get_end(node_origin_form), 0, NULL, "tmp");
+    if (check_sa(tmp, '?') && query(tmp)) {
+        move_childs(tmp, node_origin_form);
+        tree_node_free(tmp);
     }
     return node_origin_form;
 }
@@ -1322,4 +1293,11 @@ tree_node* HTTP_message(tree_node* parent) {
         return NULL;
     }
     return node_HTTP_message;
+}
+
+tree_node* check_sa(tree_node* parent, char _char) {
+    if (parent->string[get_end(parent)] == _char) {
+        return tree_node_add_child(parent, parent->string, get_end(parent), 1, _char);
+    }
+    return NULL;
 }
