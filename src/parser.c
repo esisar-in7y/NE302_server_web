@@ -1216,10 +1216,6 @@ tree_node* HTTP_version(tree_node* parent) {
         tree_node_free(node_HTTP_version);
         return NULL;
     }
-    if () {
-        tree_node_free(node_HTTP_version);
-        return NULL;
-    }
     tree_node_add_child(node_HTTP_version, parent->string, get_end(node_HTTP_version), 1, "/");
     if (DIGIT(node_HTTP_version) == NULL ||
         parent->string[get_end(node_HTTP_version)] != '.') {
