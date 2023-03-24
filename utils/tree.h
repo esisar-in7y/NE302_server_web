@@ -142,4 +142,5 @@ int get_type_index(const char* string);
 void update_length_parents(tree_node* node);
 tree_node *tree_node_find_type(tree_node *node, int _type,_Token **r);
 int get_start(tree_node* node);
+void move_childs(tree_node* node,tree_node* new_parent);
 #endif

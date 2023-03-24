@@ -162,6 +162,16 @@ void tree_node_free(tree_node *node)
         rootTree=NULL;
     }
 }
+void move_childs(tree_node* node,tree_node* new_parent){
+    for (uint16_t i = 0; i < node->childs_count; i++)
+    {
+        tree_node_add_child(new_parent,node->childs[i]->string,node->childs[i]->start_string,node->childs[i]->length_string,tree_node_string[node->childs[i]->type]);
+        tree_node_free(node->childs[i]);
+    }
+    node->childs_count=0;
+    free(node->childs);
+    node->childs=NULL;
+}
 
 void tree_node_print(tree_node *node, uint16_t level)
 {

@@ -58,3 +58,9 @@ leaks: $(EXEC)
 		--track-origins=yes \
 		--log-file=valgrind_out.txt -s \
 		./$(OUTDIR)/$(EXEC) $(ARGS)
+
+abnf:
+	gcc -g -o obj/manip.o -c utils/manip.c
+	gcc -g -o obj/abnf.o -c utils/abnf.c
+	gcc -g -o obj/abnf_test.o obj/abnf.o obj/manip.o
+	./obj/abnf_test.o
