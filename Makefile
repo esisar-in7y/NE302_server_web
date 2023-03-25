@@ -1,6 +1,6 @@
 EXEC = http_parse
 # ARGS = tests/testFile/test1.txt nombre
-ARGS = Docs2022/Projet\ -\ documents\ -\ etape\ 2/arbres/get1_ Connection_header
+ARGS = Docs2022/Projet\ -\ documents\ -\ etape\ 2/arbres/get9_ Connection_header
 
 CC = gcc
 CFLAGS = -fcoroutines -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 

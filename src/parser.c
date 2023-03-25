@@ -208,7 +208,6 @@ tree_node* obs_text(tree_node* parent) {
 // vchar = %x21-7E
 tree_node* VCHAR(tree_node* parent) {
     int index = get_start(parent);
-    printf("vchar=>%c\n", parent->string[index]);
     if (0x21 <= parent->string[index] && parent->string[index] <= 0x7E) {
         return tree_node_add_child(parent, parent->string, index, 1, "vchar");
     }
@@ -1207,34 +1206,6 @@ tree_node* start_line(tree_node* parent) {
     }
     return node_start_line;
 }
-// HTTP_message = start_line *( header_field CRLF ) CRLF [ message_body ]
-tree_node* HTTP_message(tree_node* parent) {
-    tree_node* node_HTTP_message = tree_node_add_node(parent, "HTTP_message");
-    if (start_line(node_HTTP_message) == NULL) {
-        tree_node_free(node_HTTP_message);
-        return NULL;
-    }
-    bool end = false;
-    while (!end) {
-        tree_node* node_tmp = tree_node_tmp(node_HTTP_message);
-        if (header_field(node_tmp) != NULL) {
-            if (CRLF(node_tmp) != NULL) {
-                move_childs(node_tmp, node_HTTP_message);
-            } else {
-                end = true;
-            }
-        } else {
-            end = true;
-        }
-        tree_node_free(node_tmp);
-    }
-    if (CRLF(node_HTTP_message) == NULL) {
-        tree_node_free(node_HTTP_message);
-        return NULL;
-    }
-    message_body(node_HTTP_message);
-    return node_HTTP_message;
-}
 // Transfert_encoding = *( "," OWS ) transfer_coding *( OWS "," [ OWS transfer_coding ] )
 tree_node* Transfert_encoding(tree_node* parent) {
     tree_node* node_Transfert_encoding = tree_node_add_node(parent, "Transfert_encoding");
@@ -1268,4 +1239,33 @@ tree_node* Transfert_encoding(tree_node* parent) {
         tree_node_free(node_tmp);
     }
     return node_Transfert_encoding;
+}
+
+// HTTP_message = start_line *( header_field CRLF ) CRLF [ message_body ]
+tree_node* HTTP_message(tree_node* parent) {
+    tree_node* node_HTTP_message = tree_node_add_node(parent, "HTTP_message");
+    if (start_line(node_HTTP_message) == NULL) {
+        tree_node_free(node_HTTP_message);
+        return NULL;
+    }
+    bool end = false;
+    while (!end) {
+        tree_node* node_tmp = tree_node_tmp(node_HTTP_message);
+        if (header_field(node_tmp) != NULL) {
+            if (CRLF(node_tmp) != NULL) {
+                move_childs(node_tmp, node_HTTP_message);
+            } else {
+                end = true;
+            }
+        } else {
+            end = true;
+        }
+        tree_node_free(node_tmp);
+    }
+    if (CRLF(node_HTTP_message) == NULL) {
+        tree_node_free(node_HTTP_message);
+        return NULL;
+    }
+    message_body(node_HTTP_message);
+    return node_HTTP_message;
 }
