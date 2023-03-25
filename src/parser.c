@@ -465,7 +465,8 @@ tree_node* field_content(tree_node* parent) {
     }
     tree_node* node_tmp = tree_node_tmp(node_field_content);
     if (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL) {
-        while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL);
+        while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL)
+            ;
         if (field_vchar(node_tmp) != NULL) {
             move_childs(node_tmp, node_field_content);
         }
@@ -1015,18 +1016,11 @@ tree_node* Connection_header(tree_node* parent) {
     tree_node_print_all(getRootTree(), 0);
     tree_node_print(getRootTree(), 0);
     tree_node* node_Connection_header = tree_node_add_node(parent, "Connection_header");
-    if (check_sa(node_Connection_header, "Connection:") != NULL) {
-        printf("check_sa(node_Connection_header, \"Connection:\") != NULL\n");
-        if(OWS(node_Connection_header) != NULL) {
-            printf("OWS(node_Connection_header) != NULL\n");
-            if(Connection(node_Connection_header) != NULL) {
-                printf("Connection(node_Connection_header) != NULL\n");
-                if(OWS(node_Connection_header) != NULL) {
-                    printf("OWS(node_Connection_header) != NULL\n");
-                    return node_Connection_header;
-                }
-            }
-        }
+    if (check_sa(node_Connection_header, "Connection:") != NULL &&
+        OWS(node_Connection_header) != NULL &&
+        Connection(node_Connection_header) != NULL &&
+        OWS(node_Connection_header) != NULL) {
+        return node_Connection_header;
     }
     // if (check_sa(node_Connection_header, "Connection:") != NULL &&
     //     OWS(node_Connection_header) != NULL &&
