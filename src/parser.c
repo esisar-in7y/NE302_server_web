@@ -456,7 +456,8 @@ tree_node* HTAB(tree_node* parent) {
     }
     return NULL;
 }
-// field_content = field_vchar [ 1*( SP / HTAB ) field_vchar ]
+// field_content = field_vchar *( *( SP / HTAB ) field_vchar )
+//le prof est tres intelligent il a un qi superieur a celui d'un escargot
 tree_node* field_content(tree_node* parent) {
     tree_node* node_field_content = tree_node_add_node(parent, "field_content");
     if (field_vchar(node_field_content) == NULL) {
@@ -464,13 +465,10 @@ tree_node* field_content(tree_node* parent) {
         return NULL;
     }
     tree_node* node_tmp = tree_node_tmp(node_field_content);
-    if (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL) {
-        while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL)
-            ;
-        if (field_vchar(node_tmp) != NULL) {
-            move_childs(node_tmp, node_field_content);
-        }
+    while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL){
+        field_vchar(node_tmp);
     }
+    move_childs(node_tmp, node_field_content);
     tree_node_free(node_tmp);
     return node_field_content;
 }
@@ -478,8 +476,7 @@ tree_node* field_content(tree_node* parent) {
 // field_value = *( field_content / obs_fold )
 tree_node* field_value(tree_node* parent) {
     tree_node* node_field_value = tree_node_add_node(parent, "field_value");
-    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL)
-        ;
+    while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL);
     return node_field_value;
 }
 
@@ -1013,8 +1010,8 @@ tree_node* Connection(tree_node* parent) {
 
 // Connection_header = "Connection" ":" OWS Connection OWS
 tree_node* Connection_header(tree_node* parent) {
-    tree_node_print_all(getRootTree(), 0);
-    tree_node_print(getRootTree(), 0);
+    // tree_node_print_all(getRootTree(), 0);
+    // tree_node_print(getRootTree(), 0);
     tree_node* node_Connection_header = tree_node_add_node(parent, "Connection_header");
     if (check_sa(node_Connection_header, "Connection:") != NULL &&
         OWS(node_Connection_header) != NULL &&
@@ -1246,6 +1243,9 @@ tree_node* HTTP_message(tree_node* parent) {
     while (!end) {
         tree_node* node_tmp = tree_node_tmp(node_HTTP_message);
         if (header_field(node_tmp) != NULL) {
+            tree_node_print_all(node_tmp, 0);
+            tree_node_print(node_tmp, 0);
+            printf("YESUISLA\n");
             if (CRLF(node_tmp) != NULL) {
                 move_childs(node_tmp, node_HTTP_message);
             } else {
