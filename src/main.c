@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
         _Token *r, *tok;
         void *root = NULL;
         root = getRootTree();
+        printf("root=%p\n", root);
         r = searchTree(root, p);
         tok = r;
         while (tok)

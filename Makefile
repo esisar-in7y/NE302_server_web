@@ -1,8 +1,10 @@
 EXEC = http_parse
-ARGS = tests/testFile/test1.txt nombre
+# ARGS = tests/testFile/test1.txt nombre
+ARGS = Docs2022/Projet\ -\ documents\ -\ etape\ 2/arbres/get1_ Connection_header
 
 CC = gcc
-CFLAGS = -g -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 -D ABNF=1
+CFLAGS = -fcoroutines -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 
+# -D ABNF=1
 
 IGNORE = tst.c
 OUTDIR = ./bin

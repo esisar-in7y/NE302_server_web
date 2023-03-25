@@ -7,8 +7,8 @@
       "request": "launch",
       "program": "${workspaceFolder}/bin/http_parse",
       "args": [
-        "${workspaceFolder}/tests/testFile/test341.txt",
-        "nombre"
+        "${workspaceFolder}/Docs2022/Projet - documents - etape 2/arbres/get1_",
+        "Connection_header"
       ],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",

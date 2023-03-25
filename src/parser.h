@@ -77,7 +77,7 @@ tree_node *message_body(tree_node *parent);
 tree_node *CRLF(tree_node *parent);
 bool at_least_x(tree_node *parent,tree_node *(*func)(tree_node *),int x);
 tree_node *bloc_chain(tree_node *parent,tree_node *(**f)(tree_node *parent),int f_num);
-tree_node *check_sa(tree_node *parent,char _char);
+tree_node *check_sa(tree_node *parent,char* chars);
 tree_node *validate_number_separateur(tree_node *parent);
 tree_node *validate_mot_ponct(tree_node *parent);
 tree_node *validate_mot(tree_node *parent);

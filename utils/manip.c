@@ -14,7 +14,21 @@ char *copy_sub_str(const char *source, uint16_t start, uint16_t length) {
 
 void print_sub_str(char *string, int start_index, int length) {
     for (int i = start_index; i < start_index + length && string[i] != '\0'; i++) {
-        printf("%c", string[i]);
+        switch (string[i])
+        {
+        case '\r':
+            printf("\\R");
+            break;
+        case '\n':
+            printf("\\N");
+            break;
+        case '\t':
+            printf("\\T");
+            break;
+        default:
+            printf("%c", string[i]);
+            break;
+        }
     }
 }
 
