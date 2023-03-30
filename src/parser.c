@@ -21,7 +21,7 @@ void debug(tree_node* node_tmp) {
     print_sub_str(node_tmp->string, 0, middle);
     printf(RED);
     print_sub_str(node_tmp->string, middle, strlen(node_tmp->string)-middle);
-    printf("\n");
+    printf(RESET "\n");
 }
 // nombre = 1*DIGIT
 tree_node* validate_number(tree_node* parent) {
