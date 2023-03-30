@@ -696,7 +696,7 @@ tree_node* IPv6address(tree_node* parent) {
         }
         count++;
     }
-    if (count > 6) {
+    if (count > 8) {
         tree_node_free(node_IPv6address);
         return NULL;
     }
