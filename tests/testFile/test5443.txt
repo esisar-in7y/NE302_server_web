@@ -1,13 +1,9 @@
-F /Z//)HY%86niAKy/p%51y%76:%45B/uc%6Ac//cO//@%CA%A5v~1_p*/N/D'+%63_!q;/.d(1%71, HTTP/2.8
-!mMcOla|:l	   BÚ  ◊—	  		 	 		 			 ö[%  			 	 	 	 „ı°	 		 Nu		;ã
-Transfer-Encoding:  eD$U	 ;		!JmV=	 	 		"«on"		;.				 =  	  "\’\‰C" ;	  ..Cn4U="";	 J^44l*  	= "M\É";    		    		mIAeqA=""	 	;l = 	"";dTb1U=     "7" 	 		; 4vL8AVDZUuY$	 		 =							  	 	  		"¶˙∫€[Ü"	;'7VVne 	 	 	=					 "\C∫" 	
-Transfer-Encoding:   	 	#|Y2Jx	,				 ,	XF9;		  v^ 		 =  "Ï" ;!&d|*^M7ZWyKp7	=		 	  		 g			;			 		 h5-h^	= "\r‘ê\ \”R≠\"\$"		;  		 h^d7WE4^8tL0#	=   "!\L";	 	  	9tbya=			   				z	;i.pe 	=			 			  ""	     	,		6 		   		  ;	 QgeD^=  	  "\ﬁ\h\G\V" 		;    	5 =	Mm^9ubr	 	 ;   KH	= X			 	,h	 	,7.,,	,	'y7 			
-Host:    	 	    239.238.9.114			  
-Transfer-Encoding:  	,dP+W;  			VI-A%UDs=	 		 ""	,	
-rIQO7l1XshDYhY&:ò     	 ØÚ‰©		  		æS  	 	"ÑßK·¡√ îñ	ó	Ì
-Connection:,		 	 ,,			,st4+L 
-Transfer-Encoding:   ,	  				   				     	,		  ,,	   	,,	 	    , 	  	 		,,,,	, 				, ,	 		  ,	 		 	g 	   		 	 		,I6-_ ;P   	   	 		 			=	 	  MZDR-7BU;	 		vysWCUqT= 	cD	;		 	 Qvc		=& ,	 compress	 	 				,    	 	 	  lP 		   ;k!MYU2_6    =  	"\}ÕÀ\ÕU",	  	
-Accept:			  v/V	  ; 		0a="" 	  	 	  ;3ooa`J=">" 	,  	  	  							  		  
-Host:			:333 
+mq /%71Sh&/z_z%2Bj/t%62gH.w/%CANTtm2f'/7%C0e%9BT%FB!/f/:/)/rng=%314Lq%4F/B/z1w?7 HTTP/6.4
+6$YdJ: 	n		  	 Î*	%			 	   			  
+&fnd2S#7LbJe'ds9ZjGBoW:ß	  	  	D 	  €k™		4´ 		 ﬂú 	JÃ%Ï ïìÿ	 	 }	 
+Transfer-Encoding:			 KMe	;%AshE=		 			  	 			 					"\Ë";	Nlr=	  cH0 ;2uK'M*KpG$		=	   "Æ" 	 	; 	  U =	"\Í˘"	   	; 	  		 |	 	  	=	 		 "≠»\	\@ﬁ" 	  ;2~6	= "\$mIA\ä" 	  ,#b7	  			   
+Content-Type:   n/9r 	; 	I4="\%ªÏ\‰\ı«\\ë(\ÙŒ\Z"  	
+n%4:	  	  		 	  		 	 
+Host:  		[021::EE:5F8:8:9E5:186.219.0.87]:
 
-ÅX1¯
+h

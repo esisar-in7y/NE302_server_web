@@ -1,12 +1,4 @@
-A /i_?@ HTTP/9.2
-Transfer-Encoding: 		   	 	  ,i|eM; 	 	 -g+  	=	D; 			9ex0#uB$E.1bg$21=|y5vc#q50vJW 	 	;  W0tmt= "\¶â"	  		;			n 		= 		 	 dn ;K_mpJd`7a' =		"",chunked	,	   		CCD`_zWaLrPg ,			0!Co	   ;^=	   "\3\t"  		;  	wJ7oWp'=  	 ""	,
-Host:	 		  	  	 [A:01F::C1:60F:3:9.19.252.115]
-Host: 	 255.180.207.27:49875
-Content-Length:	783	  	
-Cookie:  &Pl=a 			
-Host:	[::C:B2:36.229.204.6]:931
-y:
-	  b ¡øñ		 }	 		 	 
-Referer:	 	 				  
-Host: 	67.212.252.77    
+9 /ci//!4%10NTXU1E%B1%D8s/j/%DA9%E1I96E/tG/z?%30I%25t5-%0EK?8_ HTTP/7.8
+Connection:, , , , 		 ' , 			8.fGOrtBTBXH'^D
+Cookie:	ypefR-9=O	 
 

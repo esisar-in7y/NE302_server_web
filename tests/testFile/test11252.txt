@@ -1,5 +1,0 @@
-N /fi@ HTTP/9.8
-#ZLab: 	  	  	
-Transfer-Encoding: ,			gzip	
-
-â,3

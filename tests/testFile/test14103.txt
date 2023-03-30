@@ -1,3 +1,0 @@
-6 /? HTTP/9.0
-Content-Type:		 		 5u/K   ;	 		 		 $="\u\шл\+"  		
-

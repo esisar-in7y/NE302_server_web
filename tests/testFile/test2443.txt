@@ -1,6 +1,7 @@
-9l# /6bzA/(%88R=cO%23%FD/%D3lL/*a HTTP/0.3
-Accept-Charset:  		R				;q=0.	    	   		   	  	 	 	   , 			1&				
-Host:[v3D398.=Z4b.]  	
-Uu^wGkGt-:		 		
-Referer:	 	xi4tNq5O:l%28ixx
+'G /g1HK%FDHmv/Z?w-v HTTP/2.6
+.k~K5fEh!D:  
+Y3tf#:-Ý HÂ 	£	    
+Transfer-Encoding:deflate 	,,	  
+Host:		 [::A:8:149.255.251.4]			
+Host:     	 	245.236.0.12:71
 

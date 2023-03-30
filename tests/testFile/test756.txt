@@ -1,12 +1,3 @@
-34.5 /0ks/7Z2W/PZ?E, HTTP/8.7
-Transfer-Encoding: 	,Ah;			 	 ^rUZ$sfh$`#avb7b%!L		 =	  		 		 ""			, 	 ,izTKgVA~	 	;  AeTL			  =	 	"e";N6W9Pt0EZ*			 =	yF+GX6;   	  B$+1Kh	  			="\…†*í¼"; 					#NlaDb=	"\n\K"			
-Cookie: 	 	  `a^6|="s" 
-Referer: 		  	 	r3CQWmuJV://0.206.253.158/%06?f:   					 
-Host: 8.96.250.230
-Host:			[0E:23:0::3:240.228.212.211]		
-Host:[40:C4A0::F4EE:10:4A3:82.232.23.0]	  
-r:						 ý	  Ê5 !ØW		)j			
-qi: 		 	 			  			
-Accept-Language:, 	 XZms-n-0L7ttNt-nu-s-m 	 	 ;q=0	 , 	pY;q=0	 	
+- //%B56G/ZuKq/S~Wvocy HTTP/2.0
+Host:[81F1::D:8]:59
 
-õ

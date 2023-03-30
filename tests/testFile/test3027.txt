@@ -1,13 +1,2 @@
-hC /H?@S HTTP/2.5
-b:ƒ ¨	 
-Q.buNo$: 	þ 	#æ 	bv       GrR=Á 	 ¤o	 	
-Accept-Charset:	,	, ol	
-Accept-Charset:  ,,,		,		 	    	 	 	 		 ,, 			`'  	,	  	 	   	,		 LAXE*PCw3	
-Connection:	   			 		,   L ,U, ,4Mj*-x  	, f#zmv 	
-User-Agent:		B		 	(\†\ã?\ã\L( \•)) (\‹³)		  	   	 g-H  D-N/zT`# (\Á)	   	  		(\w) 		 	 	
-User-Agent:					QucXK!QHW!AX   ((\?)Ð^\ˆ)	 	 						   	  (2()\uŒ\ìÀ\o\~) 		  	 	 		(È©ÿ\	(ªô\A\Ú®)(.\À\ž\‘R\)\Ù\ŽM•¡\$)ËJ)		  ((\¤)\î(\W))  	
-Content-Type:	 					 G!ma`/B;  	L_9G+1Y="²\nƒµ"	 ; 	    	 	d="\¥G"   		 		;.8QS1Mlrza="\Ú\Î\K\Þ"	 		; 			    	 		wLb1="" 	  
-Accept-Encoding: 
-hPQW-:à 	 	  	í  		 
+IPKd //BjK?Rc HTTP/4.2
 
-ù%=

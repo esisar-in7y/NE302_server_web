@@ -1,12 +1,4 @@
-FzF /7L/%63/97%FDJi4iQAuyt/ES/:N+7iE%58*a//9?M- HTTP/7.9
-Referer: 	K:ISp%0BZug/W/;/sM%9F/W/~?	 	 			  
-Host:	  		  [::252.249.9.11]   	 	
-Accept:	  
-Connection:    		,4	 , 			  		m8p',w^_Uld%C  	 		 		, ,
-Connection:		,	   	  	 ,,,	   GNvoF
-Accept-Charset:YZGY9H
-Content-Type:	!9drKs/Sz42oGMMM9n|r9D 	 ;U!G="/Ï\o\´j\ù"  ;  		   	  	UYO="Â"  ;	j^93q="T~s\…"	  ;	    +=Sb1a5N	 ;	  			u=""
-Accept-Encoding:  	  					 	 		  	
-Content-Type:  	x/J_1;r+cn#="\∑bp\π" 	;T="\π" 		;       	&LAYd=""; 			 		N=""	;01="";	UoNYH#$n=""
-#|yhi':		  ˙ "¯
+Qs /;y%48%EDB%8D%29ox//1Bv/X0!uQ2/./3Ub.x%B6/%0E4_ HTTP/2.8
+Content-Length: 	768367 				    		 
+Host:[::1:2A9:1F:4:F:4.97.44.21]:
 

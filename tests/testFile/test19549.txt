@@ -1,4 +1,0 @@
-yp /if%17pG-%C6G7'80t/%F5Mz(s.Q/Az= HTTP/1.2
-Host:  		 [0:53::F7:C9E2:E:28.162.254.89]:44177
-Referer: 			  		MI://121DAHk@[v1.l]:214	 			
-

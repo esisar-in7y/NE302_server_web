@@ -1,6 +1,0 @@
-ZO'+G /4(:?*%56 HTTP/2.1
-Connection:			 		 	  	A!0bn%l 	 	, t|4O4Svop	 	  , 	  		,ECG&^U  
-Accept-Encoding:bnHNg,		 	 	Gj~N8cH		;  	q=1.  	 ,*6k	;q=0.		 		 	
-Accept-Language:   ,,   	,	,,, 	 	 	,		, 	 	   	, ,   		W-9
-Transfer-Encoding: 	 		 	  			   ,		,,		,9 ,, ,~			  , yO	;B=     		"" 	 ;i8 		= 	 ""		   			; !5Rx*`=  "\&\¤"	;   MJ--_TD	 			 	 		    	= "i`"	 	 			 	 
-

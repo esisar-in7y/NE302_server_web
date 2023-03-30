@@ -1,14 +1,2 @@
-T5 /K%F6q6?%D6?//%A4A HTTP/4.2
-Referer:   		  	 	     	 		  	    %69I/oz/h!/3%ABgiJ?WU  
-Accept-Encoding: 	*		 	  ;q=0		  			 			, 			 		,MMD 	,, 	  		  			a4PP' ,8.X 	 , 				TZWvxs 		 ,.wNbVH9K| 	  	
-Host:		 		[7B::652:F4:2:B:6:ABB]:5755175 	    
-Referer: //@[D:4BE::E:9F:47]/n+6/w%DD//ey'9wZ//n%85//FNi-,/N/W?T%42Px%52(T	  
-Accept-Language:	fdJKaX-Ta8jx 	 
-Host:	[v1071.4fS~RLD~S]	
-Connection:'	
-Accept-Charset:  ,		,	,	 ^vv.F#*TQs1h		  	  		;     q=0.02 ,,
-Accept-Encoding:	  	  		      	 Y ;q=0 ,,9soO$5'd^|%09ph		      			;q=1 		 	  	, 	  	  	'CrRaUZdgE; 		 		 q=1.  , 			    	  Wk	  ;q=0. 		,jcJ`;  q=0.1				, 7k	 
-Host:	55.152.157.8
-Content-Type:	 	 			 		 Z/o3sO9$#YR4G	;k^rJAKl="†Í\[\ùmÑ\Ž"	  
-Referer: 8/C/5yEN.%38f
+_OQu8 /%97.QEh,m/lp7Tb_9L%63M;gI/, HTTP/1.4
 

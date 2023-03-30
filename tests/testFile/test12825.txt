@@ -1,3 +1,0 @@
-~ //?+BA HTTP/1.5
-Transfer-Encoding:	1M3qK 	, 
-

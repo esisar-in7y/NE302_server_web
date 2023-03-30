@@ -1,5 +1,6 @@
-dA!n`k /8S1A9/%D6WrDRw//%44%7E? HTTP/3.2
-Transfer-Encoding:			 	  ,		 		,   	,,	 , 	 	    	  0| 	   	 	 ,  DXOI,	
-User-Agent:Hty/mG	   	   (\8\ã)	()		(\¹) 	(²(\+)\˜Ö\V’()(ï\ì\º)\þ;\2¦) (`\Í\X\J\5Ã(\´))	 	
-Host: 		248.204.7.255:06	 	
+P4hML /:o,/ HTTP/3.5
+W:	  			  	 	    		  	  
+Host:	 	 [::B:52:AF9:E:0]:969
+Transfer-Encoding:	 5				 ;4e7 =  "¾'Ïë\Ò"	 ;	 d=	 	 	"Aþ\å";   		Vn =		X8,  
+Expect: 100-continue
 

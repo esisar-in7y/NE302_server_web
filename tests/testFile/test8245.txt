@@ -1,5 +1,2 @@
-L /%14%81/v/pQ//B/m%D7@R////9@7~%9B%ED/X HTTP/7.7
-hpY:|ÃñØ8 —KC˙			 						„Œ ùﬂ		ã`Ñ	‰É  ﬂœ		Bê  		:   	  			 	  	
-Accept-Charset: 		Z 			 ; 	  	q=0, 		 	 q4	 	,		 		 	i	; q=0.439	,		   	     
-Transfer-Encoding:	 ,   					 	 	  N%Xl 		 	;gkXb6RG-yn.q=	"´" 	 	;  	 	 qIo ="∆\vKô\p\°\¢"	;l`APH&		=6~G2^rvC*Sv.n1   		 ;	TL  		=				"˝€\c—\1¥AE\e\≠±-"		 	 ;IDiJ`xg	="Á"	, 	  , 			  
+r / HTTP/5.1
 

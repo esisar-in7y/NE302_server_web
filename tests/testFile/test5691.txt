@@ -1,8 +1,4 @@
-K_%$1SN /6y? HTTP/4.1
-Content-Type:		 ^KZkQ/x 
-Connection:,		,	 	,	,	,			,4
-Expect:100-continue 	 		   			 		
-Accept:	 	*/*  ; _G`7~#h="\7\ƒ\Ãz\¸Êµ€"		 	 ;				  iJq3="\ôš\ "; g4^`eR=g'^uY			;q=1	 ,  	 	
-gR:		 	vÏ*	Vó		õ 
-*iF8:ý µs 	ˆ			 	  
+U7_j|8Q /%F2%AF6/=8M/Z/4Lu%55;I8i/)?e41&U7%A9P?jJ HTTP/1.0
+Connection: ,		  ,  	, 	 	 	   , 	,		 ,  ,		,  	o 	  	 ,  ,			  	 	   
+ATF`: 	 Õ„QW æ)þ 	 ¨®¯Y 	w0	  			   
 

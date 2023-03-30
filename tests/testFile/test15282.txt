@@ -1,5 +1,0 @@
-^1 /3W(/cLc%F8P7P HTTP/7.1
-Cookie:	 	%*=w_B'i5; MyRB%z6l="X^TN&2E"; SU9N="9:"; KW=v4M  	 	 
-Referer: E4    	  				
-Host:	 	 3.12.86.253
-

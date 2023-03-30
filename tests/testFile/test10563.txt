@@ -1,4 +1,0 @@
-o /1-/?' HTTP/5.0
-Accept-Language: 				*	; 			q=0.  	 	 	,	i-E-6k-9P 	 ;q=0 		  	   	
-Content-Length:28  	
-

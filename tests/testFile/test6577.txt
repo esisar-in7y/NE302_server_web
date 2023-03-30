@@ -1,10 +1,4 @@
-6MDV8xk //p/w==H/S HTTP/4.4
-Accept-Charset:	 q;    	 	   		q=0.0		,,	3gn 			 	
-User-Agent:				jq/j (\:B(\q\k\ê)§\Jˇ)	 	(q(\’J\•“\ \û-)w) 	 (ß)	 (\n<)				
-Accept-Language: ,     ,  		  		,	,	 	,,				 		,		,,   	 ,,,	 		      				,   , ,,		 BCWD-I-t-T ;   	 	q=0.  			 
-Host:  215.236.12.124
-Accept: 	 	  D_P/M  		; 			i.hQ="/ÛoÿÓ¸<É\WtÓ\""	;CLi%="\ ki\ÎäÕÏÏ" 	 ; ^H="Ú";q=0. 	
-Accept-Language: ,	kHH-M-s-X-rv-K-0q-HF-0  	 	  ;	q=0.98,	 	J-Gb 	,M;		   			  	q=0.434	 	,g	  		; q=1		
-7Wk:   >
-Accept-Language:,	  otv-g-9JsYrrH-BRv-Fb-x-r0-8K-k-2b-myR	; 		 q=0	 ,	*	  ,     	 
+30IOt+J|4 /8/;$%F4lu HTTP/3.6
+Host:	 	  				 	
+Connection:			 	 			 	    	 		,-SRtm83cTKI8C ,	  SPl  	  
 

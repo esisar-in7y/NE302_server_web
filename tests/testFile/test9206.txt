@@ -1,10 +1,8 @@
-F /IH%71UD%91wh6%04/k?K%B30 HTTP/5.5
-Referer:  	 //[vA9B873D.ruA]:27397872051827860610440/%6Au$WwV/G/R?%93Z%22,	  
-Accept-Charset:	  		,   IjRh		 	;			 	q=0	,y		 		    	  ;q=0.,	
-Transfer-Encoding: 	  	  	   	  	  		, 	 		 ,		   	 	vGmw^j  		 , 		 	 ,,			  , 		c			; 	  	  6hX	     =	""		 ; .	 =	  	   "Ûµ¨böŸÈ≤\Íëc" ;				e4		=	 	  	""	; ~A#a = "jˇ\≈K"			;	 	 	WC^9mLR%a		 	  = 	  		t8	 			 ;	 	 	Ide%wYkKn= CpJ  ;	 		eSs				=		 ")R\æ\‡‡‹";u	=	"º\}\ãÌ"		 	 	  		,+IQ		, 	u			  ,zvQ ,
-Accept-Language: 	sY-r-h-HC-C 	; 		 	 q=0	 	  	 	,	
-Host:[::FB85:24.253.31.230]
-Connection:		,,	b_
-Connection:		 0b3		
+aE|ERb /fSSzZcP2%D0%E2//?V HTTP/5.1
+1&:	l≈ˆ		  	  ˝¥ ©P
+Transfer-Encoding:,	,	I4+Vq	  ; MRn 			 =		 "°\˛*\H" 
+LfI-5$:		  	 	   
+Host:	151.245.56.8:8					 
+jf:  	  				 			  
+TE':  	§¡¯ç  						  µÄ	 qÅ 			 œ
 
-∂K

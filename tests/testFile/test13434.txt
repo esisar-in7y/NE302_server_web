@@ -1,7 +1,0 @@
-Ij`v /:/%CB3@6%BBCZYbc/-zGA!? HTTP/8.1
-Referer: 	   		//236.224.187.234/jd	
-User-Agent: 	L/T 
-Expect:100-continue	 		  	    	
-Referer:		 //[v4A.!b7-,]/1Yv%87pN%93%E9%0E9+SeuC_/W_tD/
-Host:[::FF:0D:1:1:7C36]:67			 	  	
-

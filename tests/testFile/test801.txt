@@ -1,8 +1,2 @@
-H66tZsn /./Pt/S%56saH%9A%14eTY/q;sZ:1o%A7eh?2tP-Z?.%1D HTTP/7.1
-Connection:	 fTi5&  ,		 		`76l  	,   	 		 ,   
-Transfer-Encoding: 			 ,  	 ,gzip,  
-Content-Type:Ru/91
-B:    		î]			÷	   
-Content-Type:	 		 		rS5$2L/T	 ;	    		 	`=OJM	; 	IA="ëﬂÂ‡\æiò\#J" 	;6b="\1lÃ\y" 	;  5&`="m"		 	  	 ;			hu1&D9="\Q\j";	  |rq2="Ë" 				    			
-Referer:  	
+`_NErwF&T /T%32%76t$f/:r/O8L%AF@/dE%8DZ/F6/7/%6CPJ/d/c%EB/e%593/r HTTP/2.2
 

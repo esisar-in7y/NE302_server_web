@@ -1,5 +1,2 @@
-d2 /H~,m6D? HTTP/2.6
-Host:		157.53.97.233:6
-User-Agent:	 E/_8		 			
-Referer: 	 	hbo:/?	 
+nN /%33UbDo/?H HTTP/0.3
 

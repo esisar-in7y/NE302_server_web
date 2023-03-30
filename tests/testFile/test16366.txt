@@ -1,4 +1,0 @@
-& /C6::A HTTP/0.9
-Connection:				, 		,vG.Nna+D9VXy  ,		
-Host:  		 	 	 252.6.53.51: 	 
-

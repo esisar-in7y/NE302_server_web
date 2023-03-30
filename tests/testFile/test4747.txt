@@ -1,12 +1,3 @@
-4 //C//P%93 HTTP/9.2
-Transfer-Encoding:	,,	,,			, ,,		,  9wF  	 	 	;	HdL=Q	;		T  	  		   =		"‡"	,		 U_'&	; 	`Hq ="\„È\â\R"; NK9u  	 	 =				"C",		s						,	I 	, w$8Z	 
-Accept-Charset: ,		*
-Connection:  XK^_ ,Fmi, 			 E&## 		,	,MIquiY1	, 	BJ  	,	
-`^GrxOQ:	ý­ú	ò' 	 c  
-Accept-Language:	     	  		  WU-N-D-50;		q=0.53 			,		
-X:   	®Dˆ 	   		 
-Accept-Charset:,,		 	, dD*1V3F	  ;		q=0.306 	 	 		,  gV_;	q=0	 	 	, 		 	,	MrNwTd  	 ; 	q=0,	 ,  	iHg0v8KI&zotio		 			;q=0. ,	
-Accept-Language:   	     	 	,, ,	 	Y;	 		 			    	 	  		q=0  	,* 		 	 
-Host:	[::6:6:2:30:30C7:207.234.41.5]:8
-Host:		234.253.158.182	
+%I^ /Cjf/p$//hZm%2C5x//c/%4Ee~=7o%B0'KgJK:1o/n/kF=oi HTTP/5.3
+Host:	 254.253.148.220:		 	
 

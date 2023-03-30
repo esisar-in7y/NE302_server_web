@@ -1,12 +1,3 @@
-e /w!-LGV1cw~/$%38Z%B0PUCA//C!r-q-$//S/7%3Ev(&J HTTP/9.4
-Connection:,		 		,		,	 	`J*8$	, 		 ,  ,	,	  	  		,,			,	  			    	 	t		,		 
-Accept: 0V#/LG6;|="≤\M\æ" ; 		T#Sq%tl=N1b		 			;_WK&dZ="\OV\o";t'=I 	 	 ;vj="aã\U\Ï\tÒ˝Ñu" ; 		  F="" ;	WoxhfE6xiULA="\ß" 	  ;		  	M="“ê"	;	  	   	  E_-w=""   ;q=0.	, 			c/* 	;	 f7ru~5c~e=""	 	; i3P19="\˚ù\U"  			;q=0	 				 		,
-Transfer-Encoding:,,	 		,  	0C0rdiI		  		 		 	 	,	 		 	,  				 	 			  6		;    UZ ="w"  	;	 L%lD	 		 		=  		"\bàù" 		  ;   		WC=o  	,    	 	,		 compress, gzip, 		 deflate 	 	
-o+T#g: 		n			 –œ	 	  
-Host:	[::97:1.230.6.145]: 		 		
-User-Agent:	 4    ((\l‚\∑)\•\ú(\îÑ)\1\¨\-)	 O!| 		 (\j\P›\íÍ(^\È~)) 			 		([∂\á\ä\W) 		   	 		 				(ï\¥) ()      	 		()	(\í(\]\†©Õ\\\˛π\~)())		
-Host:	  				 	N,SL
-User-Agent:     Jz#/Kh 	  		 	   
-Accept-Language:		,			,	 R-y-5  ;	 	 	 	 	 	 	   q=0			 , 		 l-IURr-G-2 ;  q=0				 	 	   ,	 ,  	   uAO-J-vfMl-P-hSZ-p5-p-z-sN-xR-G-6-k-0Q   	 ;  	q=1
-Referer: //A@$=U7f://?			   	   	 
+Z /%2F/v HTTP/8.5
 
+ˇ

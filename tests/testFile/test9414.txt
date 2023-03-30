@@ -1,17 +1,10 @@
-uQRzO ///%70g HTTP/4.7
-Host: 	  	 	 				151.244.39.35 	  
-b~:	 	 
-Host:	[::9137:0:B:8:8A:217.3.25.4]:			 		    	 	 
-Accept-Charset: 	 			 		 		OUvJ   , 	  ,		 lp~-		 ;  q=0,  	y		 ,, ,		 9~KRS^W!5		,	  	, 	 	    ,y ;	 	    			q=0 , 	vw7WH ;			q=0.5	  	,,	 	&GiIokZ ;q=0,	F 	  ;		q=0.,  ,	,U8O8fNG 	, 	I3DajG,   			 	 jnV;	q=1	 	 , ILethlGQ7 		 	 ;	q=1.		, 	  ,	lHBC6  	 ;  	 q=0	  ,	 		 		 			,c'I' 		,za2mc	   ,		 	 , 				 ,#,	*				
-User-Agent:^u/o ()	(gN\%\`) (™Ñ)  
-Accept-Charset: 	 			 	 ,,g
-Accept-Language: Y-N-UC-T	  	;  	q=0,	S-nmy0D      		 			 ,   M-z-oTS-U 	;q=1.0			 ,,	 	,	 OI 	, 	g-6dGF-M   	  	 ;	  q=0	,  	 *	,   
-Host: [8::40:183.116.197.223]:79670
-Accept: 	  	   	 		 	 r/g7;*A-Fa02="í.\ú¦" ; 		 E="\@ˆRn\Æ'"	 		 	 , 			 		 	 	   BazJ/* 	  	;	  	&Xo="5"
-Referer:	 		 	 	//E'%EC@[vBC764..zS2-_'C]/	
-Referer:	 	 	 	/?
-Accept-Charset:, ~Zs		,	  `i*7 		   ;q=1,,    					 ,	  
-Referer: 		  				  	//[1:D85::6.245.231.58]/whb8C/:h/73/%71uF/D=/6/P%9F);GL=C-fdn/X/U9%DC/0?%21i  
-Host: 	7.148.94.44:943370 		  	  
-Accept-Charset:			 				   	,	,   		 			 ,		,  		, , , 	 	,,	,	,				,  	 		 		 , 	e	 	,			L'm;		 				 q=0  			,  		 ,  Y%F	 
+T /8c/ HTTP/3.8
+DbSxJ|V$:				T[£ 	›
+Transfer-Encoding: ,			u*		  ;	 _|VG34t= "ŽTªÅ\£”D\›×\„\¾8\Œ™"	  		  ;					b.pa.wu'xj		="\·\ÜÜ\ù",  	2	 	  ;		vYRZClmj+vJ=		 "" ;	  rx=QJu4G!6'fE 		 	; 		 	 	5g_+-av			=	"\ˆ\÷";lcA=  "\«)" 	 
+Content-Type:		 				W/k!					;lt="" ;		  !v9_pe="\]·Ó"  ; m=6s
+&OtX: 
+Host:  	 113.207.216.254:74040	
+Transfer-Encoding:  ,		 	 	j;		 	  	 	8RdxS  =			"\s\•é"  	,	  	  , 	o		  	 	 	;u~CL			=	 	 Qny74g6Qjg'wEi&gy 	 		 ;	$Noz	 	 =  			   	 	"" 	  		  	   			 		;	 LL-%jrxT =		 ""	;w	  = h  				;  		!P=  ""	, ,				
+Host:	[v3.;g*c*p*]		     	
 
+Ÿc

@@ -1,4 +1,0 @@
-YnU- //?f HTTP/5.5
-Transfer-Encoding:,	 ,deflate  ,					  	
-Accept-Charset:  	,	,	 	, 		  ,  Q 		, 		 ,					 					 	,	  			,	 ,X     			;q=0,,		
-

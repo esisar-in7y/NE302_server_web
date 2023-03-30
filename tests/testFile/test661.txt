@@ -1,8 +1,4 @@
-|8 / HTTP/8.9
-Accept-Charset:,     ,  qJn^ ;q=0. 		,  			 S9UP74kUf-k8.$W
-Accept-Charset:8nI|SS	;						q=0.,	*	 	, 	,, 	w&#h8`;		 q=0.125	,		   		 	    
-_qp:   
-Content-Type: 2/';	    Fv!="U¹à\‘\‘™\ŠÎ\¨"		   ; 			 			Z6QtF-="\‡" ;^~=""  						;	xFH-zPj%I+O4U1="]ð"	  	;lEGB$l=""  ; 	 		  0=""	 			 ; 			f="";	GnQGX="\B\¾l)" 			;			 	e!uHpY_7~="«Er\Í\P"		;A=""		 
-Referer:R:%6D=Jx   	 
-Cookie:Cd=Eh}y}jH^0d!/; T=""			
+3+ /S%6B:/(///?_ HTTP/1.3
+-CR%j:				
+Host:[D2::5:7A8:71:9:254.217.153.235]:04578 
 

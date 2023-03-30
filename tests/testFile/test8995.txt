@@ -1,18 +1,2 @@
-3R /(/SCGH5r-%24vD/?r HTTP/5.5
-Content-Length:		9
-Connection:	 		 		 ,    ,!,     *			,MgEZ2xz  
-Content-Type:	 H/.  ;N="\ÒoG"			 ;	 	 			y=""			  				 	   		 	 	 		; 			 	lA=""  ;	 		  	   	 	 	 			 CS="¤\í\"\ÕJ" 	 	
-Accept-Language:			, 	, 		,,		  	  ,  ,  	,    ,			,	  f;	 q=1.	
-Host:  38.5.2.42  		 
-Cookie:	 	 					 		kf=Is; HOamk="R"; rcO-pO={; 7g6id=R9T9Hk16*m%s{3S~+fmQ=	
-Transfer-Encoding:	g+z; 			   	 	X_Z7 	 	 		="\@\H–" 	 	 		 	  	,	 		  
-Host:		   	   	   				 		
-Transfer-Encoding:	 			,	 N;			KS^L=	kH;9="\â\øÍ\Î\¯ý";    	pxquJO'-F|6 =		"\¾"  ; 		VC 			=		Z.X;		    ^^h4rZM$511	=	"Ï"  		,			   , 	
-Referer:    		 	 	//lT%4D+@[AAE:02:7:9F:2:2:225.0.98.245]:/cR_%AE)D7	
-Host:237.224.243.5   		 	   
-User-Agent:				 1	  	
-User-Agent:		FaXo 	         ((\d’¤-^)(_)(\3#\(&)\•()]2ð\á(pZÊY)¼\•)   (\M(\o\9†\™))				 	(¬(=\Z\‰)\`ÌZ\ºG(Ï)!)	
-Connection:  ,,	 ,zutw,  	 			B 
-Content-Type:	o~lLn/n92im_;	*J0O="";F=iMSB;0="\Ý\>Nz";	gDWV2$="Q\=\ø+‚‹\a†\¤¨Ò"
-Referer:   	s4CLLf-90GV://%DAS@9.8.1.226 
+jYqp6G /FY1F%68//,f6%68T-v HTTP/5.9
 

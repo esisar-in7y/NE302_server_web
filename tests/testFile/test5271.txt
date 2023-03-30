@@ -1,14 +1,2 @@
-G /u/%39S%B38z.%93?dI1 HTTP/0.0
-Accept:		
-Referer:   f:.F/Y/wZ99Xc*y/R%77UNlkQIbn//gQ%A7r?C?S5%CDhWv.t
-Accept-Language:,  		, 	,, q-vRGF-KAm;  q=1.
-L:ç®		 Df9ÈQ   –˜J  	Ákö		 	 Ö? .©		a? Å	
-Connection: 			VI 		,,, ,	 		,  	,		
-User-Agent:		 	 !OL`/W-1RSF
-Content-Type:		 				191/v	
-Host:[::9B:0F0:EB3A:0.118.92.70] 
-~L!3#T:	  	  	
-Transfer-Encoding:	 			, , 	.f;	 	dS'k+o_`ia`yfw   	=	"\≤\(\ó";  	 			AGt&pA`="XU\i\iùlÒ\…\ƒ"	  			,	,	 	WKyQilOp3_8Qm6 ;a!VQj	 	 	=  "—\q"				 	 	 	,gLtqUo_VNdsj;	   				    	 2l%a="Ù\Ø"	 		; Z 	 =		"."	 		;xc 	= 		"\Ï&\v"; z_~EjN="Äæ\Î\œ"   ;	 WM= "\¨\K"  					 ;		~*oX|zqu	=  		 %bH`o%m,  	 			,#iX5ATyD;		  E=	"ﬂv\‹e\r"; 2IVaElB+  	 	 =		""    	 ;		  ~	  		 =			"Ø>" 	  ;  	's= 		 			KxV%&FHeA%  	, 	   	PI 		 		 ,	 jcC^3EsfqaWWrv		 ;c =	    "" 	;	8z~j+	 		  =	  F3XJ	;	 sS					="\ü\Í";			$D		 ="\ù" ;				  	    			 &k="Ü"
-K:	  
+i% / HTTP/9.8
 
-

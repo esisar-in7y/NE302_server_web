@@ -1,14 +1,0 @@
-c /or HTTP/2.6
-Cookie: 	^hdq="&&$<m@ak?AL"; wn=""; y=""; n="_"	 	 
-Host:[E:8:8::A47B:21:8.220.38.95]:13987 		 	 
-Accept-Charset: 	  ,, 	 ZwSb;q=1., 		
-Referer:E:%0F%7AN,E?%6CY	  
-Accept-Language:	,	T		;q=0.26, 		,	 		    ,  		 A-u-86P-p-M-WkDdt7Pd-sNTIQ  ;q=0		,		,,	 	   			,	  O,			
-Transfer-Encoding: 	,  	 		 , 		  			  ,  	  ,		-iN	;	h	="\+\i\πa ―\S"			  	;#u*H`G=  			   "\K\‹\–Σ\¬\9\”\Δ"				;	 		'*j= 									 "\ª\°	\”" 		 	   	 	;	j-=	   	 "_\Λ\―•\ "   ;   	qx!p1'6  =	"κ\ϋ\½βα" ,	  ,KPY	 ; 		 	PBv!2	=	"\Χ\Δ"	 	  			;			hY   =	"\ΐ"	;U6n	     			 		 =	 	 "\¤";EP=""	 , ,   ,	  deflate 	   ,	 	 	 F|nV,	
-Host:	 [F2:4A4D:0:F5C:33:1E67:231.9.205.255]:1
-Referer: 		 a0OcjoimWxyo:%B5%49@B%A0	 		  
-Referer:	 	cbtd:m-z%62-?'%81 	   
-Host:	[vDD097E0.R5l]	
-User-Agent: Jb  	
-
-px¥

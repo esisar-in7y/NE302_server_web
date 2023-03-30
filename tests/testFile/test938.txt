@@ -1,5 +1,4 @@
-r`yEXa /%FFEGP/tLp/ee/~%080Y? HTTP/3.0
-Accept-Encoding: 	  q	;	  	q=0  	   		 ,
-Host:	 		       		 :3817  	 	 
-
+nE6F /RS%D7C%37!/T/Fx:F%C2%56 HTTP/4.2
+Host: 	[::268:860:E:223.1.241.208]
+Host:	 	  	4.252.72.125:94 		  
 

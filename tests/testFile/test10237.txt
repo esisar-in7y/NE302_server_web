@@ -1,5 +1,0 @@
-Xy&v /? HTTP/3.0
-Host: 			  251.254.11.253:2877	 
-Accept-Language: 	 , 	 	Djg-6-SgtY-1zkGq1uK-m-uI-rWf-L-3uK;		q=0,q-Pe9-Y-BjLm-G-gTtI-z-ue-N	 	 ,Pu-ef ,  	O  ;	q=0				
-
-|—

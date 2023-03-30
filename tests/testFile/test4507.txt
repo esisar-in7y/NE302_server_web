@@ -1,8 +1,6 @@
-VjF /h?%4Cd%14HwjB%9D HTTP/7.2
-Host:[::2:AC:237.251.138.251]:937062
-User-Agent:			 X 
-Accept-Charset:	,Qz	  	 ;	q=1.00 ,x! 		 	     ;	q=0,	   , q8Y  	 ;	q=1.00	 ,     		 
-uIV165Eh&J: ö		z	 	 	
-Accept:	 	  C/* 	;i6="\ý"      ;o=""	,  		 	
-Referer:	  i&/wK/Mgm 	
+$ /CJ/%DDE*/~%88/;t9a//1bZ&Aies,Jrlo?I HTTP/6.3
+Host:	250.1.88.252 		
+Cookie:	 	8iRK="p"; UD$="`PfwV"; f="g&rj"; 1&="3%"	 		  
+a:					  	
+Host:c	  	
 

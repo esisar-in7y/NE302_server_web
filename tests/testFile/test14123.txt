@@ -1,4 +1,0 @@
-P| /%18%EB/ HTTP/2.2
-Accept:	 	 	
-User-Agent: 			qiu 		
-

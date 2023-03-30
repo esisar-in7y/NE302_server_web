@@ -1,7 +1,5 @@
-j //?%EF HTTP/2.9
-Accept:	yZ/*	;	q=0.777  	 ,
-Referer: 	p4qvMuZ://+c%99%75dS=F/A+A!%8C%0F8db?LH-dh8%A1   	
-Referer:		 LF  		 
-Accept-Charset: 				~ 		;  	 q=0.58 	 	, 			 jX	  ,  ,-8PzHdy 
+H8 /%84_!/x/%7B//Ys/(W!/H HTTP/2.3
+Host: 	[9::17.128.72.254]:420
+Host: [v75.8]:2233 	 
 
-S򰱕jtｇN
+^

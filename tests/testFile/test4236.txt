@@ -1,18 +1,7 @@
-2-vYRzhFU-Va+axU% /LTGm.(,/)%B2e!%F3? HTTP/4.8
-Tpil:2Ÿ 	’ 		
-Content-Type:	  	 	   	 	Boia&`/uXXoYfKN		 			 
-Host:	   		 :8
-Transfer-Encoding:cQl 	;	~  	      							   	 =	  	""   	, 	   0bu$    	 	 		  ,IZxy; 	  	xq&-		  =  	 	""	;_  	=%u 	 ;7		 	=	  	 ""; 		Z=	"\|"	 	  			   ;	 kK4cY 	  = "\‡J\˙\≥e\’~\"vÄ∂\¥\©%",zRYs%sk8i,			  
-Connection:		, ,,			    	   		, 		    	   	  	 	,		  , 				    	  x~o1jfRi+nv,	,	8   	, 		PEsJ|p,^#C2 	 ,+y,
-Content-Type: _/+  
-Host:    			  fCtl;:3607	 
-Transfer-Encoding:	,		N  	;	6O="" ;+!JxxN									 =	 	 "\O/\˜¯\ƒ\Z\∞" ;sR5!2# =Mw	; a				  = 		 2; 	    Zd&R3lx5Rja#g =""			 ,    	,2$x	   	;mcq	= "ë\¡"	  ;	   E-^=	"YÂ\O÷Åü:\T"; 		o.	 		= 		"≤Û"	;h9g			 =H5v			 	; 	 ExSc^ =	   	  		 "\Á"					 	    ; 		 	   ghB~qU'	= "\iù\òó\’Ã"	  
-Accept-Charset: 	,							 	 	 	 ,		 		,	, ,	 	HXpa|%;		q=0.4, 682		 	 , 		  SXe  	; 	q=0	
-User-Agent:VtP				 	  			  	  ((µ)()\f#?)		 	()	((\ª\◊\F\°)\ò)  
-d:≠{ã  	 Gÿ≥	 		 	 		  		  			œ˜		 			»à ¢
-Accept-Charset:	 	  ,, 		 	 	,			,	 ,	   ,	,,				  	,	   	,	  Y	 		 ;q=0.
-k:  
-Referer:						 	   	 	%36i9a/oY%0D!B//jY/2/%A8dt?$~m*!	
-Referer:		/N2e%9B7?S 
-Referer:h? 	
+9Q /R/)%4A///X/%EB/8v'F5%DF%53%D7%1F?,o%4F HTTP/2.6
+iW:	¨O		àQr	›l  	ú˛ÿ	 	   ©ä	 		
+Content-Type:u/g3`fP9;		 	 gl="\"∑•&µ"	 	 	;	~="\õ\ª-\≈\Â\Ú"   ; 	H=".©"		 	 			;	 `r="\n\Æ\Î\Ø\Õ ⁄'\S“$\1ù";	1=~PR	;			  	fF="\nÕ"    		  	 ;		   h="";	  &=UPY   		   ; 		  				9#="\J¸≥˙\9Oç\˘"  ;	RPAI|Ub28="" 	;L="Ö\‘\p\d" 	 			; 	O="}" 	;D_d="\¯"	   		 ;	 `JZr*=57N 			 	 
+Host: I%0CTr5LRb6S:768
+Host:		 234.69.102.2	  
+SS:	  	
 

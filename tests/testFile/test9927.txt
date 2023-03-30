@@ -1,3 +1,8 @@
-b!q /J%84?vm%3B1 HTTP/1.9
-Host:[A82C:A:2:C:0A:5:200.9.98.252]
+lv //St? HTTP/9.2
+I:	 ‰ 	  ŸA  			    	 SE	
+Connection:  ,  ,	 	 				  ,	M ,	  	V&CPrzLCca-  
+#: 	<î 	ß­	   	ž7   			 		 		»ªë					   #	
+Cookie:   					WH+=; .wD="HI2"; %.sK="="; 0plTx=RBr?; I6w=">e#:hP["; 0="o"      		
+Host: 	 	 		[48:D:52::45:252.127.247.112] 				 
+Transfer-Encoding:		     			 , eU ;		 X^xf7	 	=	"ì" ;  !wHT5wObItBp8I-VP	=  		 	  		 "{" ;Ps+WFd'	 = 	"\m2ˆg\þ½Ò†"	
 

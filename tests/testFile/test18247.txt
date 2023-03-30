@@ -1,6 +1,0 @@
-G%y /iL HTTP/4.8
-Content-Type: 		u1w/!Eq
-Accept-Encoding:    	Sto	;  	  	 		 			q=0.05 	 	
-Host:	   	  209.200.221.168:2
-
-Ò

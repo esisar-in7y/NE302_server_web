@@ -1,7 +1,9 @@
-F /5r%FFH/Pn//u%FD%9Ak%03R%80G%35A%E6m%15Le%43 HTTP/7.2
-Transfer-Encoding:z0dgrYC,			, 	
-Transfer-Encoding:	  	 	 		,	tu2U	 ;  Iuq	 	 	 		  	 	 =	"\™\xt£" 	 		;	   t	 =	 	 		   	"" ;Kh=	""   ;	2Y_  	 ="ã\]2\Û¥\ž\Ò;" ;	  1ah			= 	  "€¬å"	 ; 	 	m|  	 				 =	   "Æ\ëY\¢‚"			;   	 		0			=_&bO 	;		 	92 				 	= 		"",	 Oc7T4EJ	 			 	  	 ;	KZaCZC~u+`f%8		=  					"\â"	 ;-	= "";	 			 			$nO =y
-User-Agent:  W$-Nq/z6P  ((\%­F\+)N)
-Accept-Language:    ,			   	 	,	h-IWps 	,			 	 Y-X6-XkW-xE-t92-v-3-e  	 			 		 			; 	q=0
-Accept:		  	  				
+fR7 /89y/J3_/=//Wc%91/%8D$%36.M/-/%6FrauqE_4/Olq//5%73%15%FC//:oM%30uv HTTP/3.3
+Transfer-Encoding:,	 , 	  		~Kwv; Rip#			 =  "1\ÆE¾S";					 8|fQE=  			 "£(\¦w\Ñ kI3\£"				 	 	 				  	 ,	Z 	 	;	`IYVBH=""	  		 		 ; 		 h=			  		 		"" 	;O1ijIS="\Ç";		 	 	  	 		 *	 		 =		   "2³"	 			 ; Xgmpxn_'nC6  		="y§"; f9#8c5$	=	"\Ž\*"	 ;c 		=	 "\¬‹"    	 					; 	 	 niPtRwti$wO		 		 =	"\?\ðP\ÚJ\z\Y!" 		,
+Host:oY1Cf
+Connection:   		,	 	, ,, 			i	, uQw*ZfAs#*wI			  		, ,		, ZM 		  	 		
+Host:  cv	
+Transfer-Encoding: , 	,  , 	 	D$tfb	 , 	 
+Host:	  [C::5A:EDC:22:13.8.233.56]   
+Host:		 		r;!5'ucmG%88i%D6KO2:85959		 
 

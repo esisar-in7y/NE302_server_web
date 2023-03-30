@@ -1,9 +1,7 @@
-N1'#t&VrX //u=/h/=/%AF%17w/46u6*o/w/~'FE$N%434SRU+/y/vh7%18(u HTTP/5.5
-Transfer-Encoding:	 ,   		  		,	 			   				,			 ,					  , 		 ,		   chunked  				, 3+O9			  		;wS		 =	"\l"		 ;	   		||pC	 		=  			"\ÜR\Å\ó`\®™0\•" , , 
-Transfer-Encoding:   		  	 ,	compress		 ,   		 	     deflate		  ,	,	 			   		 F7Y_kr3lJNORL  	  	 ; 		   g%=    		  jgZmG~	 ;O			=	"\rM\	"; pVtu'cN				= 			""		;L		  = 	 				    "‡4\‰\b"     ;`= "",	!.	 		  ; 	n 			   = ""	; TZM 	=	""     ;	9&f8= 	 			 "?I\Ì"
-User-Agent:		qLE4^/_r	(‹\ñ.ˇ(\m\ê\%\Ÿ)(\·\!\ƒ\@\+;\U\0\')(K\UŒ)(\±\N\»\:))			 	(\˚(\˝?ó\Q)(\ü\ë))		 	
-Cookie: 	uW!="(_J"; W0H%hDI*pvG="tIa(E<66o*bz!"; 6BG=""	    
-Host:  40.16.1.99:76
-Accept-Encoding: O   	;q=1.00 	,	Jy7FOSe,  	iy~;q=0.	    	 				 ,  		 	  i'B9Up6a		 	   ;		 q=0.	    , 	 identity , 	
-Cookie: 5J.dgO$="*"
+.H0Y /-s%A8P HTTP/1.5
+Transfer-Encoding:		, 	,  	 		wW+ 		 ;	  	z =   ""					 	,,	 |1   ;ycf*B=	""			;	 				  	 ci9 =						 			Py;  `  =    	  "" 	;	   9V51 =	")[\é\∑\j\º";Bm  	   =	"\ˆ",	 	,		 	 qw+wVLh ; 	baZ4Sw=		 "\ÅË¡√Ë"	 		 
+Host: [::C:57:B7:1E:158.2.230.5]  	
+Host:	  		   	Y%D9%85	  		
+Host: 		[::13CA:2:7:91:8.9.97.251]:355	
+BU|: 	¬‡ 		
 

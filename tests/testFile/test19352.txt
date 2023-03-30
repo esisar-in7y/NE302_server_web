@@ -1,5 +1,0 @@
-Y|p#S%b /%7Dq!/3+/9p/ HTTP/3.2
-Accept-Language: 		,,	 	,	 					 		 jL-QmAc3-I1lu-n-V-no-pL ; 	q=0 ,	  			zNZ-PT-TP-o; 	q=0.		 	 ,DP-rmdT7; 		q=0 , 			 			 nu	; q=1.000	 	 	,	 	   			  	,			 	     	 	BIMW  	  	 	;		 		q=0     ,	kd-8QJBmSRQ-w-0-q-vn-Rd-ceG0f7E9-I-XZu8r-27-Lp-c-N1	  ;	q=0.714 		
-Host:			  253.250.93.22:3	
-Referer://[F::D:9.252.234.225]?h=1%092%50W,=%E1C%37%F9
-

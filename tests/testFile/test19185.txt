@@ -1,5 +1,0 @@
-DUS /%C5&q/_ HTTP/8.1
-Accept-Encoding:sk1.Tc*	;	  q=0  
-Host:   	
-Transfer-Encoding:	,		  ,Si		 	,RqV	   			, 	,	compress	
-

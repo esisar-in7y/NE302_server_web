@@ -1,5 +1,0 @@
-V /%6C%3A= HTTP/1.2
-Host:	[::9:A:F:89.79.255.239]:
-Accept-Language:	,, 	 	iUN-9M-W-J-ye-1B-YG-E-T-K-S-X-d-Q-nAC-I-J-W-6-8k2KZ9S7;q=0. 	 		,	 w-D6-M-1-2qLOv-t-w			,     		 		 ,
-
-

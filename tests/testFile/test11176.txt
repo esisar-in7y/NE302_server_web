@@ -1,6 +1,0 @@
-6o8e|Lv //5?Bt_35_%A9jC HTTP/7.3
-Expect:		 	100-continue 
-Accept-Language: 		,,,	  	,, 	 ,h-CDhK  ; q=0.	   			
-Host:[93E9::DA2:94E:255.99.10.170]:
-
-

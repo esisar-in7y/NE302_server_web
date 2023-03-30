@@ -1,11 +1,9 @@
-#Y2ZxUi /TCHv%32///%7Fq/-/EN?QdQ=t HTTP/3.7
-Host: 	g:1  
-Accept:    		
-Accept: 	  		^J_/*  ,WH./*		;q=0,
-Transfer-Encoding:	 	,    ,,	 		 		*hnZ  						; 		+b= 		""	  	; 	    	P3= "\Â\∫"   ;		Qe#N!-!csjF7 	=	"\s\[ØB\Ò\T\ü"		 ,N9 		;	JY	 =""   	   		;5 =C   ;o~WF 	 	="ù"	 	 	 					  	 	  		 ;	 o   =    	   "Ω"	
-Transfer-Encoding: 	 ,  		compress	,  	  	 	4sEXx  	;	  		 		  		  		  yR= 	"\@"	 ;	      		  	DP		="\]˛\£\Õé\˛\ñ\›"		
-Content-Type:		 x-FF+E$/Shas		  	 	;  			 1="\°";	#AoLH=N;L*T#_&="";	 H="\ö" 	 	;	  	 |="πs\WèÈ>_	◊" ;	O="\Ñ\NÖ";   %tx5a="™Æ\≠…\‘\+\d◊\û\Åp/f" 	
-Host:255.2.0.251: 	 			 
-Accept-Language:	  		,	 	  RJ-W0			
-Referer:py:/?
+UqxQEfO / HTTP/6.2
+Host:		  [5:5B:A71D:8A::7B:221.166.0.251]  
+Content-Type:		     #/NU  		;  			  I="Œ\Ë"	 	;	   		  	 	 			  FBG%=T	  ;  7O="è"	    ;   ah59jg9="\V¥\Ì"; 		   	  		k=""
+Connection:	 	 , 		,,  	,, 		 		 	,		 		QoYI		 , 		 		 ,, 
+Content-Type: 	-ai_QS9/^ykbv 		 ;		   		  sP!w6Q=""  	 
+Content-Type:E%l+N/3	;   	fN'u="£\∆\d";  	 	$TB=D	 ;6=$fTI	 		 	  			;J="\>∂\B" 	 			  ;8Y9xJp3="¨\´˙\¢"	 		; H2L3&5ABu="\∞"		  ;	d="£\è\Ó\z\ \t"	 ;		 	29VX^vbV!qZ5Y9Qv^="\í\D\)\æ”\pSå·"	;	 	   	  	  t=x	 ;j$=Ap 	 ;  MWS'i=""  		 ;	 	6L_^U=j; S="";	DdusoB~~#="‰" ;	'C="∏\C\…\#\ÓIÁ\ê	"		 	;		 x6d="\€\h" 
+Host:	 	%01j3W%A1B+om)5gk6'o-$:91 			
+Content-Type: 	         Sf.5/h.fsS	;mOD="W"  ;		_A="ÜM\O"	  ;  `tx$Mvexi=",\4\Æ\ÿ\¬W"; Pof="ˇ\"\˘\8\,\6û\å$"   
 

@@ -1,9 +1,2 @@
-*L~ /%8DO%23;~%F9t?- HTTP/0.8
-Referer: 		 M:/H///%08kP9/mCF)//fE%7Cp			  		
-Host: 	 [08D::C:62.4.56.1]:2 	  	
-Accept-Charset: ,	 	,			  	,  	t;			 q=0	 		  	 		
-Accept-Encoding:  	   	#f-NP		  	 	  	 	
-Transfer-Encoding:,deflate,,	   , ,' , 	 tJK0B		 ;adHnb=  ""  	;	w			  	 =  	 ""  			 		;B	 		=  	 	")v\¬‰\*"				;		 qjUArWxl'Lz-y8LmMv	 				=  "\˜",3F;				 				V			=	 	"\`"			 ; r&u 	 	 		="c" ;	H =	"a";7Z0N6`hx= "Î=\AH"	 ;  		  ENean.   =	 	"z\Ÿ™"	;bn			 	   =		"\5"	  
-Transfer-Encoding:Be*	  	,	 	   	 	 	deflate
-Host:	 y:
+W /td+?Y%DA!W HTTP/5.3
 

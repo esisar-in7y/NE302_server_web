@@ -1,8 +1,0 @@
-0P /T HTTP/7.2
-Referer:				?hbZ9%4D
-Referer:q:B:B7H5i%15/V-/'aDJ4K%F23%98   			
-Host:[0::239.78.5.5]:	    
-Connection:~	  	  		
-.'mCV:ù    &Â		ü%P	 h  			
-Cookie:		 				 FlE6=}	 
-

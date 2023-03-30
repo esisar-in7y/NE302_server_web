@@ -1,4 +1,2 @@
-J0&BB /d$L;qL)F/?bn HTTP/3.7
-Referer:	/g?%FByR1r7E			  
-Accept:						B/-;			mU8i="\é\Òç"  ;RDJ="á\,‰~" 			    ;	  	 					e7Jwh="" 	  ;	GCW="";  B3sQ=e	;	 			 			q=0 		  ,		,			 		 			 	 , 	 			 	 		YhjAt7m/*		 	 ;P="ºQ\‡\‘Ø\4U\¿Ô\n\ú—\µ\’\¸";	   f="÷";qhLy&="\`<Ê\›∂\Õ\ä"  ;   SGCW~="\YÍT\ê\Õ"		 	;  q=0.,	  V/*;	 		'=E` 	;xa3="Q\g\üûc" 	;C^=""			   	 ;	 Ptc=~   ;      q=0 
+t / HTTP/4.9
 

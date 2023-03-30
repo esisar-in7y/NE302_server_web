@@ -1,6 +1,4 @@
-1 / HTTP/6.4
-Cookie:		q=7]2K; rJ=M; K*N3^="yL6S"; uhvKFfi1YEl5T$="]$2"; ^P$=w'FHb$7$cAn 		  		   	   	
-Referer: DszTDFE://$@192.253.170.89:/%AE(/QOz%3EuY/
-Expect:  100-continue	 	 	 	 	 	
-Cookie: J6P=""; %ho=""; +M7o=(; s$CNgm6Yx=; jNN^=^Su; C6o^z="h@~{O(gR"; DXBld=""; IwAH="`k"; nzfvoK="6d}er^N8"  
+z5Ek7 /v%C1F/L+CB HTTP/7.3
+Connection:,,	 ,	,	 	,		 								 		   |N-9W	 	 ,	 	 	 ,  		 14Q		 	,		   ,		Jt*Ix*		, 	,hY7h,  pM'd,e8a4,	 				, 	,
+Host:		1.46.88.4 
 

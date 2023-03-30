@@ -1,9 +1,0 @@
-tVcFw / HTTP/0.9
-Referer:  	//[40:27C3:640E:8EE:5:1:87.59.94.214]:5425613/09%01/zh?zbT	 		
-Host:84.247.4.205
-Accept-Encoding: 	
-Host:   	  	[A::A:250.207.252.254] 
-Accept-Charset:s0
-Accept-Charset:			,	   ,,,	  ,  	, kY-i-x.r4'arOP1c	,GDRrBZi-uNG;  	q=0 
-
-¶

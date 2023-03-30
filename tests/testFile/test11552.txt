@@ -1,6 +1,0 @@
-L /tc//%BB/ HTTP/8.0
-Connection:  		 ,	    	 	,  st9RJwb1k% 	  		 			
-Accept:	
-Cookie:			`iM^-oNX0EZB=3+eMi; m="1J}2H!obZYddsK(c='0Y{"; wpb="r~Z"; S="#<|_"
-Referer:	  		 		 		 	/
-

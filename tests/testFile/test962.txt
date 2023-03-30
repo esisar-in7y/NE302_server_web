@@ -1,8 +1,7 @@
-we ///DrOcL+V HTTP/8.3
-Expect: 	  100-continue
-Cookie:8s=""; i2Su="cT?oO"
-Referer:		 		 ~%56ZiY/8amUt///?I3c 			  
-Content-Type:95/fcG*z+; 	 L&JRXWnrm#tI=""	 	;					  *="\3\¼"
-Content-Type:  h4clkV/|io4		 	  
-_:				    		å  	 µh		ª  		
+Ui /;'8yh HTTP/4.2
+qK:	r	of 	  					0vš €rþ	
+Connection:			 		    ,	,			  ,,	,		,	   	 	   	9.KP  	  	   		 		 		 ,2tBFZzIZSnM				 
+Content-Type:  BgUY5j'/R9`tr5`|oYfUgq0*;  	  	 			 eQVcJL-sdAW="\X\)\¢Î\Ô¨\f\€"			
+Host:	 			 	[::22:E0:27.41.245.3]		  	 			
+GnAP-#:ž		 		  	 Œ# 	   	  	~		
 

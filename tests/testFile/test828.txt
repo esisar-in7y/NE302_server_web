@@ -1,12 +1,3 @@
-_ /?%D32Ze? HTTP/7.1
-Host: 			  [v15D.8]
-Accept-Encoding: uj 
-Host: 		 		m;:01	
-JC8d`55cs%VIhk0Y:ž
-Host:	[vFEFD.~a)SXG]
-Accept-Charset:,	  	,	 	,cQ_; 		  	 q=0.	  	
-Accept: 		 	 9m0/* 		
-User-Agent:	  	  	   XC4Uo			    		(=) (\nƒÌõ)  	 ((¾Õ)\=\×é(p)(É\üÿþ\(\Ä\:š)\ì())	(C\þ)		rvAw%6p/e					 	 ()
-Transfer-Encoding:,8pHkc;Zg`$u0=  	    "" 	 ;!8 					 = ""	;'X8 = 			"",	    u	 ,	   	 	 	,H8d			  	    		 	 ;	   GN3	  			=    "\î"		  ,		 p					;0nQL="\~\é\ñ"		 ;	 		g= "\4¿\Ü^\–",  y82v^b`Xo~		 				;		  	YYSL$	  = 			 	"ò"		 ;			 	 0*QE%4 =	 	     	H91;M=	"3{\V\sño\Þ"	   ,+Ii      ;  zK	  =	"\:i\k\­"; 		 	 9_+nyk 			=	"\p\ß€²"					;w8Pf'3=  		 		 			x`lX	;	7C 	 	  	  =			 "<\F\á"	; 	Pjb	 =	 			 		 "" ;				 pG4EvOc8j 	   	   = 	 		"¿", compress 
-Host:  	 50.6.68.175  	
+i //'Z:0%76%3D%E9Ok%B0 HTTP/0.6
+Cookie:	&=k|^O4  	  
 

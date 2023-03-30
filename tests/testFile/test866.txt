@@ -1,4 +1,3 @@
-~ / HTTP/6.7
-Transfer-Encoding:	  ,, 	  	 , 					  ,, 	      	, 	,				          	  	 	      		  chunked  	 		 		 	 	,,		  		 			
-Accept-Charset:			 	PmMyDFsMD5^risw 	  	 				;q=0.8				,, ,Gg628		 					    		 	,	  		 	9+, 		 					X9	;			q=0.868 		 	,,		  	  ,		 cV1ql	;	q=1				,bmO7		 	,,	 		
+F /?ZfaK HTTP/5.8
+Host:		  			   			 	 	[9::E:0:DFF2:3C55]  	
 

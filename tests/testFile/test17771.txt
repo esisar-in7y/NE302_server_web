@@ -1,4 +1,0 @@
-J /%1FP/ HTTP/2.1
-Accept-Language: 	AN 	 	;				 	q=1.,r-I-BK7-B-9   ;q=0			
-
-l

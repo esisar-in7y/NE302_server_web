@@ -1,11 +1,9 @@
-` /cfSi%0FJ/UP HTTP/5.5
-Host:		   	 	 								 	 		Q:7063517255 	
-Accept-Language:	  		p-o-pImm-X-q, 	 	 	C;q=0.914	,	 agl-3-0-Wd-n-S1U-lUL-h-9q-yht-gT  ;	q=1	 	 	  	  	 	  	, 	 	b-iR 		  ;		 		q=0 , *			,		E-Y-6-W-Fj	  	, 			       	E-W-l8J-c-N-ap 		,
-Connection:,	 				 	     & 	  , 	
-Transfer-Encoding:j'z	;6cI=			  		"ßøÉ"	 			 	 ;	XA  = "\ğ"  ; B 	 ="VŒ\a'š\ô\‚\T\>\¨" ;	 			 	y	=	 "\í\ßx\ã\ìúhòË"; 	   ss-Y4 = 	  "eˆ$4Uèú\<\!\î\¸"	;   +L 		=	""				
-Transfer-Encoding: 	,,     	, ,			 	 ,	 X		 			;		yh="\ì\‹F´Y\!\Å";  	 Nbv`   		 =   		  	    Ldes 					;	.f-8f'ub.3UG$#=   dtN96#!Hp'l7qbT ,  	 					 	 	 	 		N%; L_ka 	    	 		=		  		"Ê\!\:\Âp\=<W"	 ; 	PtpZy* = 	 	_JrBAa	 	 			; 				^_ENJvSm=  ""			, `53JgHBB_		 		;2xbqV2 	 				=	"\FhIÉ"     	 ;	 		   tWd=				DypaR%ta-		  			  		   				;	fc`ix	= 	 	""		;	  		1b4m=  		qMpO#PRTH
-Host:		1.94.148.3 	 
-Accept-Charset:	,	 	 	 Du+O&LF$%cKY   	  	 ;q=1,     		,utR, 	 
-Host:	[03::5D:C:33A:334:47.231.3.255]
-Accept:		 	Z/j   ;.OLOOHJ8="Ë\•\U(\ú\4­ûO";ArJE="¢"	 		   	    ; JWc3=3BH	,	 	
+sL /bH? HTTP/1.4
+%SnPQjYBpB: 		  ¢	 	 			 ‡	
+Content-Type: 	 	  +mYL*0#YKT/J$	 	
+Content-Type:	RZT/B%mb				;	2="\È\³\à"	;rSX="l\e¤\«";	 	  $d=X+; Y+.t8="ò" ;		n="";		    	 o=""	      		 		;    6=""; 		tEM="?ù\Æ\|"	 	
+Cookie: A5P&S="TP"; 6="."; W=_; 28PXhI=a; CnYvv#r=#X$9; *=~T!	
+Host:  [v1.LGI8X!y]:8 	
+Qq:				 
+Cookie:V~="qUIj2W-C"
 

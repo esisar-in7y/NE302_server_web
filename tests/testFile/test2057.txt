@@ -1,7 +1,3 @@
-1sVi$9ZYRG /o*//%0E%72/sk1%09/mJ%91%416?g%92s$! HTTP/1.3
-Host:50.8.252.198			 		
-Referer:	 xSXj8UzoW:%A3/C$/v4%CE//@%478/?l%F2
-Cookie:n3HR!MEuhf="sKFi"; es5qC="_ov](v:6f4P>6Al"; -0=; -xa=)	 			     
-User-Agent:	  bQ~uqVgoeGQ&/F	 (\1®\∫ÍN\ó)	()		 	 	
-Transfer-Encoding:, ,   	,8Y 	 	; 	  		  k_G	="®\R‚\[";	 yO+qQu` 		  = 	   "Â" 	 	 	; 'R="";     	 ~cN=	"\B"		 	 ;V`l=    "K\y°í˘\È"	 	 	,,7;	     	e		 ="\¥Å" 
+wiGP /t?W%EB HTTP/4.2
+Host:0.241.32.252 	
 

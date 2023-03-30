@@ -1,14 +1,2 @@
-tQbky6KtwCb.nyj / HTTP/4.0
-Accept: 	G/Kdsz	 ;	  &6=""	 ;		  3~`!nseVSN0L="\{\\Ó"	; 	q=0 	 ,B8/*	  ;b="e\%\˘÷\h\H\l\‹Ú\X∂\:\	°\Ô"				 ;	   	  &.7="S*"
-Accept:	7NbZE880B_0/* 	  ;	'WCX="ïƒ" 		 ;	NPi5%b="D"  ;_tf`k0="\›"  ; q=0.2 , 	 ZQQPy/*	; C0J*DWmrcMx="\ê%ﬂ\µﬂ."			;	6X="≤";	   q=1.0, '$iqic`g'67/*		;	Q.="\K";			8=Gd~k;	q=0,     c/*		;	5A=""	 ;	97="\ì˝R"   	;			l="\M\q7\äV"; 		  		 		 		 8~br6Mu=^		 ;  q=1,				 W+.'/*;		 		AUjO-zr="" ;	    	  	4H="" 	 	 	  	 	 	 	;	GtSH="úT";	y="d" ;	Rxx="\m\¸\ \´" 	      ,  ,  ,
-Host:231.251.217.221 
-Accept:
-Accept-Language:I;		 	q=0.   ,	 		  n-7-gPPl-Bh-B-oxkJ-cZ-uiK-pYyL-EV-SL6y-8-h-L   			
-d$c:		  		¨æ	 <»K 	hX  	 	  Bx?			 ∑
-Cookie: +^4NS="u3z"; Oj= 
-Accept:				 	 
-w: 		 Î  
-Accept:	g~g/*;gm=mI2`C.ot3	; Wgi7Z="\e2\6\Ÿ";	 	613="¢\fi\3\·ú"	  	 			,	   	    	, ,
-Referer:qaOqmoOneU97+://[::17:3C]//M/%A0d/%8B  		
-Content-Type:^_IZWj6XRMz*_/y0
+^ /?Jn%49:X&vvgD HTTP/7.2
 

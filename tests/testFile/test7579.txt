@@ -1,13 +1,8 @@
-.P /L?GNp%DDFN HTTP/4.7
-User-Agent:	E40&/`8ig8q	 () ((\∞Ò)(\0®)')     	 			 	 	  		 	 	 l`o6	(()\yÈ)	(”\˘)	 		   () 
-0t:	  	 ®~		    
-w:Ã		j 
-Connection:  iJP%c1$R
-Content-Length:	 4 			
-Accept-Language: 	  	 ,,	 	 ,	 	C-Xv			;  q=0		 
-Host:	 			 		   
-Host: 	:3246508	
-User-Agent:			  9d_/7   (\V(\[\I)\‡\B\(\Èﬂ))   	 ()	(\®(\Ω)) 	ADYG/'v	uh
-Host: 	'8jDyc2(0%B8Meg%E2Shm%B9b:77 					  			 
-Referer: 		 	s6://[vB95A65F2.gyVJrCQ]:142//r?%E8c
+-'Rb /Nbrn/T!.Z3%F3%9Cl/krpBS%41 HTTP/2.4
+Transfer-Encoding: ,  			,	  ,  	 		, 	 	,  	G|RL,
+Content-Type: 						 	Fgfb~Q21Wn3O%P_qM/w9y; 	X.0z=&8dvzU	;   _9=9XeK	 					 	 ;	 	  Qo=""		
+Host:		[v6.aY]		
+Content-Type:  5B/XJ09		    				 		   	 	    			 ;6="1¨\`‚0" 		 	 	 ;	 HT1=|Cm  ;  Y+I$^I="\-\Ë≈H\|" 			; 			!8="î\ˇ"	    	;	uE="ú\õZ=˜*\3"		; 		 		  +H|u!xkcl2="D" ;8=*%  	;r|~3r="\tí\‘" 			; gfB="\æ5g"	;E'z36a="··\◊Fo\ÁB\3±B’"; n*jA="qK\°"   ; WX="\qt\61Ê≠ÿ–\Ù√y\2Ê\∞9\¶\în·"
+Content-Type:	 	AB|/E     ; 7=R*mn	; 	  		   cL="Å\	\Jï"				
+Content-Type:U+/$*I		;Y=1zB$			  	  	; 	 	  		  B|tH9Ur="ù" 		 	;jW="∂"		     ;xh0&`Lv="Å";	dTMHb'Z-!eSQ1a9EM=Wo!NmQKc8eO	 	  	 ;	HUpqMJu="9"	 
 

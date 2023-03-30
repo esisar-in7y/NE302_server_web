@@ -1,9 +1,5 @@
-j5| //@!J%38X/ HTTP/5.0
-Accept-Charset: 	, 		 	 		, 		 	 		,5B++;q=0 ,			  		 	 	  	 	
-~b:		 	J				  g˘	¨Ó	:1t 			 ∂ﬂ				 Ë 	 	  		    
-User-Agent: 	 	b!PrmH 							()   ^	  () 		 	()
-Accept-Language:	 ,, 				 	RG-WF-hO-O-y-SQCK-dJ-W-u-5-Y	;	q=0,eB-M
-Accept-Charset:	 		 kFu-qem	 ,  , 		 a		;q=0		 	  
-Cookie:		J=[H-%q; elH=2K9; MJs2whn=mO/.; S=E:M; Qr=r; t=xa?Gch
-Content-Type:d/HjO	 	 		; 		^hAo="\ z∏}\y\û@\Vt\π"
+R // HTTP/4.7
+Host:	 	  	216.105.33.246
+Transfer-Encoding: , ,, ,	 	  , ,	, , 	 			,	  ,,,, , 			,		  			   		,					 	   		 ,	x  	    ,,	  	,	   OU;	 oT1d.'		= 		  	   				"\˜"	      			  	 ;				M%fctY^rz0i`="~(\^" , 	 ,   bUBku~ ; 	%tI~0c1T'~3	 ="T"
 
+ä≥êi¬w

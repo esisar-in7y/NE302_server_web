@@ -1,16 +1,2 @@
-7R` /Uq:?&%A9?(6& HTTP/5.9
-Content-Type:e/+u;	ijD_="\8—\>\™"	;    	 Rtw="";   	   hdI7m1="A\W";     !2Y=SF  	  
-Accept:		 							
-Accept-Encoding:  			 	
-Content-Type:	c4jY+Y&/c_R	  		 ;o~By$xd`="\—&a°";*8="Ö”\£"		   		  	 ;	  		EKO="\küH"  ;			 	N%I="¸" ;   	$1="£\≤\¡\å˜\	\[\ˆ⁄\‰bù\o\≤\™"; 	NBpdCG="\A3·úÊ"	;       		  	vokg2uis="0"				
-Accept-Language:  	,		 		 L-g-Gx-XZ1-Nk-Y-HQ		   	, Co  ;  q=0.1		  ,  V		 ; 	q=0.   ,		
-Content-Type: 	 N/Jv; 	 dWG7r.="}\Ò$ﬂ" 		
-Cookie:~`="9Z"; F%="{J="			 
-Referer:		 			Rv/9:/%39j%532%92%D9M''$M7rA%0D/WA/%4EMw8//D/%9DbBSX(d/zz:/6MW%DAvD,L%B4/*/84/i7UM+-+0/F=/c+GtO//Lj/&//7poaO;/MMOvQ/jqh%5B_4%99W? 		 
-Content-Type: 	$E3|QP/9w  
-Transfer-Encoding:,	,     	 	 , ,			,	,  	  	 		, 		,eu+		 	 		;   mU	 	  					  = 		  	 "ƒ2\˘†\}\ "	 		;  		y =	 "Ãq\ƒ\Î";			 		 				    f+=!;  	 	  %mr		= 			 	"\˛\#\eB"	 		,,	    ,
-Content-Type:   	 T#KbA/Z	
-Host: 			 	   			   	 				 		 	[E6:20:A2:7B5C::219.219.202.67]
-Referer:	2/f//%573EZw,%01/*iovKRd/g~c/8*/X//%9B%D0G%9Fk)wa/MKR/%8BBK/-i/WE~/
-Cookie:	6="}w(?"; T="&:1"; *="hY9"		    	 			 	
+zv'l /,O?p HTTP/1.6
 

@@ -1,9 +1,0 @@
-C6~ /%7D%67*? HTTP/2.2
-Connection:	  ,  ,			,  				  * , ,,	 	,		 		 	,  C^%  	 	   ,    		 				POcv* 	,   ,	 			$NNsNw 	   
-Host:	 	  	 [289:2::5:E3:E:184.116.6.252]		 
-Accept-Language:,    	  	WCfO-H-C ,  hhnK	 			;q=1				 	 	, 	,  	,
-Transfer-Encoding:				 	,,, gzip,mCh  	;			.Kj ="˜\v" 	  	; *u="\/\Ë\	" ; 				   		V=""  , ,  7,		
-User-Agent:			E/Y	 	 		(\})		  
-Cookie:		 &tu=#y4; g=; BKAq1o="+"; S5$jNLCHvKy="ui"; NUlPFJS="<nL?Z4"; 6%Akr&="%#Zv@_P"; s%Pprm=; HH="{v/yx"	
-Host:[93A7:8:9:3:4C6:E:9.134.73.9]  				 	
-

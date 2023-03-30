@@ -1,10 +1,8 @@
-R /X?%56 HTTP/7.1
-Transfer-Encoding:	  		 	 ,	    	,		 	R 		;	 O=	"\<\Òžé \æ",	 	, 		  
-Transfer-Encoding: ,,	,lg0; 	 		    HvHA#V	 		 			="\|\<\ˆá" 		,	E.XJyp  ;	 	 R+^  = 	"æ\-Ü" ;			  		   	 	 y%zbH9	 =	""; 		 	   	  	 	J%2=	 "w\î\#", deflate		 , 	  vS;B		 				 		= "\l\é\àâ", 	, 	   	compress  	,	#%y	  	;  	HIW 	 	= "\ƒ"	  				 	 		; 	 	    		   		  	 	dF%4bCbJtx!p9Cs	=	  "\Q"  ;	 			+dK-="\ú" 		 	;l.&Ve	=		"ù" ;  		lMr^3A!0Ky= 		"Ä\Š"  ;  	 	     		Ec			 =				 "&í'\’"		; 	 zm97	 = 						   			  		 "_nCØ\7ª"  	 	  	;ollA			   		=	 	  "\8c\¸\ê\à×«\}"	;     ^0C	=		 "\Ö" 		   	  	 ; B	="\Ê",gzip		   	,~y|ee ;  QhHD5FjXD!2 	 	= "";	W64J%	 		= 		"â"
-N&2e:  úÔ	  						   1™ô 	Êd   LaV	‚
-Referer:	   	  //a%5Bn%48JU@%4109ZIq/s/%AA+6/mR/hML/gcM/D/K*///$_z%7A8/?Y+_k%8Ao	 
-Transfer-Encoding:	blDs-jkr.2y 	;  		9	=	"\%\”¾\\×"  	;			  zoa=	"\ÿ"  	  	  ; 			 		 	Z			  	= "" 	   	 	;   	 GdvN 	  	   = 	"þ\¼\Þô\ž"	,2l1g 	;	  	xk~ = 	.H	,		, 	 m  ;	f7f	  	=	 "K"	 			 					  	   	;  5fqSZR`KQPEBJ3ouLb%bz 	= 		"§Ï\kû\4?B\¹" 	  , 
-Accept-Charset:		 	 ,  , 			 			 	,  		,	 		,,,, T~; 		q=0.01		 	
-Referer:	  		 	 			 //;%C0*~UsMae$)?%E5G 	 					 
+|U&Fv! /P7=%19D/;? HTTP/4.9
+Transfer-Encoding: 	    	  , 	     	  	 	  	,,	,uC#5AO			;MB  =  ""		 		 ;  		 	.= "\KM\ÈËÉAú\a"   ; 2Pn2V6V				 =""	  		; 	  m*EG    =	 	"ªA\†"	  	,	
+Transfer-Encoding:,	,  , 	, , ,,	   ,,,   		 ,, 	 .'  	;9  =     	 			u+h		 	   ;y'h3 =	"é\í\1ã\AÇ";W3Sh5OK&IjNR		= 			""		 		 	  ;   	i5sv=	 	 	""	 		; 	  	  Uu7= 		    				  	  		 	"\2Ò\Êz";		j&="‰" ;	x	 ="Ïé›\z\j3\ê " 	 ;A	   =ZEwoy0	;aSy%h8fEoh 	 			 		 =		"\2Hµ\k" 	;    		 		   		 mb		=		"\ñ"  ; 	 p1S	   =  "" ;	P 		="\X\J\j";		oap9tV  		=   "ˆ¯"      ;Dm$L	 = 	  			 "\Í\é"	;	te=		"\Ì\è"		; 		  e	 	 	 	=  				"þ\ÅY;\ð\¤\P\¨ü\;"  	 , +5W,	,-8^vz+L 	  	  	;		  	 'L 		  ="\À\b\€^\è\0] õ\_\º" ;l="ùN&" , 	 				 		gzip 
+!1wdBUySW:	 		   		  	 			 			  	9	 	
+Host:[B:D9:5:5F:1:CD:246.101.224.8] 				 	 	
+Host:16.200.254.69	  	 	  
 
-þ
+

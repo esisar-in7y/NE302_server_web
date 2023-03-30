@@ -1,17 +1,7 @@
-D#eUaC /Y%D1+r/)G?%5C HTTP/0.2
-Accept-Language:	 	 ,Sjf-W;	q=0.2,	  	
-Connection:   	 ,	  	 ,  ,		     ,			 ,  RHC 			,h%x	 ,  	'x 	,		fUOYn'O , 	 
-User-Agent:	 			  % (\t) (\A\o\Q\‹\¾Þ\<\Š\á\—\S\N\c\°(\*\Žp)()\we\7)	 			 		  				((h)E)						 (£\ßV)		(…)		(Ãïï(\Â\ë\Á\Å‰\+Ë·â©ç)°…)			()	
-Referer: eZcEy:%E3mXI/-/@P/GXJ&%89%5C%98wk$*//:D2v$%57%C8%45r)ODN:3@b/rR/6M 		
-Host:  		 	[vF.7c]:8  
-Content-Type:A/3	;		 q`="^‘F";	G="\>"		;	KT&'8=""; 0="\¹";	 u*gJA="\¿Ü\o"	
-Accept-Charset:,   	 RM   , ,	  ,									 tCn ; 	q=1		,   X76L!  				  
-Connection:			 ,				   			%WO7_uvIK,7!4nk 
-Accept-Language: 		  		S-DwHWA-J-V-wF-fu-yKX8  
-Transfer-Encoding:	 	  	 			 J ; $4MQv = 	"o\•\È\kà" ; v*kiM9VQ= "µ\*"	,	  	 '	;	U		 ="q\V\é¤÷\$¤\«M\ÎR\'"
-Referer:	 		  	   		   cZXA://56.2.203.9:930//%AA&%2F3Zei?
-Referer://d./(%67/%1D,/%EAr	 	
-Connection:	 ,   		  ,					Yo*wf	, 				, 	,,n8IM%U	 
-Host:[v4C59.2]:	 	 
-P&**Y96k:				  @ 	 		  	EF K	
+Wr /02 HTTP/2.1
+Content-Type:  	 %jOPeA4/5sGikcYcHJAy		; L^3hHo9vjzh="•\2ÇS"  		; 	zS09Vc0="" 			; qx3DOo%Fu="RŽ \Å"	   ; 6q22="\t\­N" 							;yS=0u|  	; 	wMp="\E"	 	 ;	 e="v" ;   				y="“\Ê\‚\ oD¿Þ«" 		  		    		 ;	X.$&="ïÙC4	\ÓA\—"
+Cookie: 	*wvcQ=5		 	   		
+Content-Type:					mMD2wQjtMa*/EtKT;  	 			 	   		 	`Py1="\¯\™\0\µ"  		    ;		 ^Q8e=""	
+Host:202.66.80.222	
+Connection: 	  	 		 3Ubhs^,9 
 

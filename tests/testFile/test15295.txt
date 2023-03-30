@@ -1,4 +1,0 @@
-LtaMY5F9 /z/5zEeS/k//y/5?q HTTP/0.9
-Expect:  	100-continue
-
-_”È9

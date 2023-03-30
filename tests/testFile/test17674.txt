@@ -1,6 +1,0 @@
-!B6 /;/1/2 HTTP/4.5
-Referer:  	wW6qG://j@8.74.8.1/P5Uz?b%DE0@
-Accept-Language:	 	  ,			   	,						 , 	 	   	  	 	, K-Kg-RKL  ;  q=1. , kQ	, 				 	U-W6g-Q-h-X-QA-b-N-zT7-t-4  , 					,,			  , o-KX-nZ-n-5M-w  ; q=1. ,An-01-z   ,  CE-Rma-rKtHo-j9FOIYT-WvRj0bZy-wS52q7 ;  q=0. ,	 	 ,	 	  ,,,, 			  	Mi-kuY-Bdt-8i6V		 	 	 		;	q=0.	,	,K-Z		;  	   q=0
-Transfer-Encoding:		 	 , 		  ,  		  ,,		  	,  ,      				,0k 	    ;*uMD 	=    	"\%y\_\åY\–\¥\Å;"	 		;	 ev8D1oopo 	=    		 				   	"\ú"			 	,, 			 9  	;			  G 	= 	"\‘\Œ" 	  		, 	+5rMg ;	     	Q     			= 	  "\D#\hÉ\b"	 	 ;	 	 	   GAr	 ="m"	;kL1=	   "›\1" 	 	 ;   			$P	 	 	  				 =	"\5"	 ; 	 			  .0=	"Þ" ;     '		 	 	 = 	 	 				 		"qœ"   ;MtCacuwDp``F= bv	,,		,      	,	T23Tga	;		 	b~7riP2  =		  "SÌ\V±\k",	
-f3:	  Œ*´   		
-

@@ -1,5 +1,0 @@
-Gy /0//%AES HTTP/1.4
-Cookie: btPs9=""; 8ACf`D=""; u="="; !+JpW6P-XM=""; Y!GAJcec=JA@g4N{| 	
-Host:158.253.4.15:3065409158121205 
-Accept: 	  	  		   	 
-

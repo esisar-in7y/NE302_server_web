@@ -1,4 +1,2 @@
-X /%3A8TnW%52eo5CWae7G HTTP/1.4
-Host: 	[::22:4:19:E:1.5.7.93]:66 		
+X4 /?js HTTP/9.1
 
-ê|	¶yx¿

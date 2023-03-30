@@ -1,8 +1,6 @@
-Mc| ///Wt/%F6%71J+dC)tA/$DB//@e?;_N HTTP/6.6
-Transfer-Encoding:		,,,	 , 	   ,	 				 		    			 , ,,,  	 	 ,  		 	,	    	,		, 			 			 		  	,     , ,,	 		,  	,  		, 	,		,   , ,		  ,		  ,,			b2wr-MlFam'l*|7R$U`3Rf6!q 			
-Accept-Encoding:   	 	  
-Referer:  (%93-%2E*0//%31/ZJ%11%2Ar~/JGGU?.
-Accept-Language:			 ,	,,  	   	 		  	,  	, 	 			 	  pl-Ub6C;	  q=0   			  	 		 ,* 	 	 	 ,,  				    	,,				,	dlM-Q-a  	   	 , ,		 yqFYeE-hP	,   	oS 		;	q=0	 	 ,		 		mu-Z-h-v-oRr-eDxKv836-7JB  ; 		q=0	    					,,,	 	Gl-nuuj-o;  	q=0.6	 			 		,   ,	 	, ,  ,,			hL-pnt-clx3pl,		,   			 	  	 	 	 	 , 			 		  g-t-A-3h-d-h5-X-GB5-ms-hfw-I-X-a3-2V-C-oI3z	     	,  l-y-KBGVgMJq-c8G-c4c-ZYh-14-m-T9zl-u-e-NZ 	,,	  						   ,	 	 	 sCq  		;q=0.98   	  
+.BSb6 //mB%FDPi'/1%E5%C6%E5;%9B////d%E9//4A HTTP/6.1
+Expect:100-continue 		 
+Connection: 		 ,  +x+M6NH|2rF 		  	 	, , 7j8V	
+Host:[v12FB2.(mfdVnqp6]:75419
 
-
-Њ
+p

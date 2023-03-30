@@ -1,10 +1,2 @@
-k~hU7b&JoMQ /./VkJ%C9/qf/ST)V%79/e HTTP/4.1
-Content-Type:		c-|%sEi/h  	  		 	  ;!="\⁄\[\§Ú"	 		; 	 La4="ñ\MA\’\W\ﬁ" 	  ;  	$kLD="\,"; 	 Lvc%jT^JYwx=~KtHwYa;	 +n="ƒ\‰+'‚"	;  `0|0r="\ï"		 	;	 		 	 		 !9=4 		;	m%wx1="_\D\¡2\è≤\”f"	 			 	 	;  dI=" " 	;  		*#qn=Z	;wr=""	   	 				;			z#="\6{";					  Y!JKeX="˚ºΩ"   		   ;		#g_7~rt7yf=""	;  	 	 	 	 					0=""  	
-Referer: CP9U://3QA%B0xlFfD'I%BF:62699?%08Qt  	
-User-Agent: 	0J3L/2-2BqeSoqq  	 	() 	()			  	 		  		     	  
-Accept-Charset:  ,	   , 				,,		   atQ; q=0.096,	 ,								 *;	q=0.   	  	, E5-cOT  	;q=0.
-Transfer-Encoding:	  	  				 		 					 , 	 deflate	,deflate			  ,		   	 ,   	  	XD`nEa'T	;	Q="≤\(a\Œ"  	 	; 6 	 		= "" 		   
-User-Agent:  zT3iUpn&S3w/3B 	
-Accept-Language: ,							    	,	 , 	,  ,   	S-8n-e-Nj0 	  	  ;q=1,e-xm-S-LHat		 			   	  , dUy   		 	  ; 	q=0
+m /n~/ HTTP/2.2
 
--

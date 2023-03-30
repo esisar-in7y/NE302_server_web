@@ -1,13 +1,5 @@
--6 /Q/O//w.f/*$95_ HTTP/9.1
-#GXrkS0mY: 
-Host:	213.4.150.9:
-Connection: 	,  	,, 	 W'TDf , 	ol66hJ	,  	,
-Transfer-Encoding:	  		,	,	 			,		 ,		      	,		$- 	  ;		  	 	gr4Ix1			= 	 			   		 	 ""   			    	 	 		 	,ZT8yFTC;		cP=		"+",  M		 	 ;	 RETO~Ye12=  fVgT
-Host: 243.252.8.219   	  	 
-Host:	 			iy     		 	  
-User-Agent:		#W*^Kgadl 					 	
-t:		 Õ	
-Referer:	 	 	n://m_@[vB.4]:898?V%22			    	
-Accept: 	 				 	
-Accept-Language:    	Nxtc-7	
+# /-6z/Sqlr5/-g0%7F/ HTTP/3.6
+Connection:	 , 	 , 	  	 		,,  ,			   	 	    	,	   , 			,		,,		 M_      ,	 ,  	,  , 	 	 	 n, 	 		,, 	, 	n,	 	 YjuSj2a	  				 		 		,	  V 		,C_U'$i ,, 	 	 Z  ,  	 K	 	 			 ,  O , 	 T69,	  v#	   	 ,	I 	 				
+Host: 		[E::99:0:8:2ACB:69.125.97.188]
+Host:   [9D::F:AAAD:1983:90:0.2.90.254]		    
 

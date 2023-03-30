@@ -1,9 +1,4 @@
-T /U8e/D%76GWf/i?%AD HTTP/5.9
-Connection:		 w 
-Accept-Charset:	,P+EV7Q6p			 	 	;	q=0 	 , h		;q=1.0,	Y 	 	,  7rW		 			 				        ,	    	   ,	 	
-User-Agent: |34mwC (­ÞYº)					(\ÞŠ) 		
-Host:		  			 [5B1D:1::B5:2:AF:63.254.253.87]:2882		
-Referer:	 	W://@[::9C:191.237.4.225]/xe6&%CEy=FJq:/6hCR/%E4R%AD%A7/~(i/		  
-User-Agent:			 		c#	 			 (›) 	  	
+oJ /1:,%ABS+FLIy//lHm.M?zb HTTP/7.2
+Host:	 		  [::9D9F:0B:B:208.217.214.79]
 
-Â€ç¹“Ýój¡Î}
+Å

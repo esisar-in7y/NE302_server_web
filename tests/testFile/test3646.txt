@@ -1,10 +1,3 @@
-|+r! /@ HTTP/2.3
-Host:[1E:CA:3:B4:A73A:5:8A:4]:6120838
-Accept-Charset: 			  	DmK+#Ig 	,,$59+E	  	 ;q=1.00			,  ,				!Q4F	,						*
-Content-Type: 	uyH0Sl~n/l1*;`!Y="" 	;	!OxSh*zVv5aPk-=""	 	
-Connection:,, 				LNd	   			  ,		 tSb	           	      	,,
-Accept-Language:		 ,,,	   mZo-3IW	;    	q=1.		 			  
-Connection: 	   ,	, ,		 			 ,			  		,iFh8U+ ,  	, 		,  			 p`AJ  		 , ,- ,,2puu'IH*7Fd&~		,	 					  		,, h^bm307Fa6 ,	A	,,   	    , VH%!  ,	  	 ,  	  	,  	  	 	 	 	  	,-K#+ifP~,	
-Referer: D6v1:jI37w%3D%0D%94a+r:O/7E@/x.%47ca_/pB%CCf?p*Do%4AE	
-Content-Type:lZ/``K;4NZHj|="^â?°√\kŒ4∞G";v8GoqNs^+="\¡";	 	 	   	 		K.H_F6b4=6a  	;  3="\7\É•\ß\∑" ; tk=""; d%YHR=S	   	 	 ;   	  	 	 gF*'=48N	  ;		  	 		 jv|iN="kå	\≤\ı\Å#"	 		 ;4J="\≠Ω\u\¯Ä"	 ; FVoFI|g="ì"  	;   	 ~Ba.="≈\≈"		 
+9 /hH%C4/U/?? HTTP/0.8
+Cookie:	 OX&1_="CW%"  			 	
 

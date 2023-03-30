@@ -1,8 +1,4 @@
-F'.YjvhBa /%4E HTTP/1.6
-Referer:qkd6iU:~Wf%FBQ/~.j)=B,S6JosEu%43/yzhuh/!Y=4MZ/hJ/J%8B/%20XTr/bW/g%66%14%FBr/1NM%3BG,	 	
-Host: 	   	 		    56.6.255.233:96297047172						
-Host:		 					[8A:D9::4.26.248.6]:30792669782
-Host:	 	 	[v4C7DF.Rp7o]  	  
-Accept-Charset:,, 		 ,	  	,, M 		 	  			 		 
+io^Xj0 /xiz8/,qIi%E6K// HTTP/3.6
+Q:h 		 	  	 		 
+Host:	 	[8:7:A:C5:D:B:214.100.0.177]:626	  
 
-…ó#>¼G‚(õ]¹

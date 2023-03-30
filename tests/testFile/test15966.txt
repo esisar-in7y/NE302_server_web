@@ -1,7 +1,0 @@
-% /54P~/%1B'$L//o+I!%3Dey29:%39%B4!%50%CD7C%10r?P/WnK=vj4,T=kANMIaU HTTP/9.1
-Connection: ,,		 		 		 			X 	
-Accept-Charset:	,	   ,|0y8-Eb; 	  	 q=1.00    ,	 		  , _7O ;		 		 			q=1.	   , 			  			,  	 	  	    	   	 
-Host:	  [::1]:04204803375140947		 
-Accept-Charset:  	 					 	,	,, 		,,,		 		 !-EfJuW ; 	 	 	 		q=0,   , 		-9.%YxJ&fmq  	 	;	q=1  	 ,	
-Cookie:			xUNbRe8`="`PsL`K" 
-

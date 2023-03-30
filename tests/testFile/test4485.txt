@@ -1,9 +1,5 @@
-z /@/PN?R HTTP/6.2
-Host: 		 	1.252.231.0:
-Cookie:	|=?Z%; 1DVC8oS.=[][#J6e	 		
-Content-Type:	 	 		 	   	  		  	I/S;	2$="\ю"	 
-Transfer-Encoding:  	,,,,q4|I ;		w'a!cO_jUH$Xg  			= 	"O\)\Ф\;\⌠ё" 		 ; 8	  =""   	;		`'i^egJp 	  =	 			 "\Sx" 			 	,, 	 
-Accept:	 				 	   		 
-q1: 	ду		dт     i 		 	 
+-7& /;'I!Qc8/%957=(/(/=L_/ HTTP/4.9
+Host: 		[::14:8F:D:5.6.5.153]:2371
+9qzp:  	g  	 	
+Content-Length:	60600 
 
-Х

@@ -1,2 +1,0 @@
-MJEd /r%1D%CCdy HTTP/1.6
-

@@ -1,6 +1,2 @@
-V /GS/E/%89Q HTTP/7.0
-Connection:,	y , ,jD7ZJi-im,		5		 		 			,   	 	 	~		,	B-sr6
-User-Agent:		5 		 
-Host:  3.3.17.235:60 
+k // HTTP/7.9
 
-ã

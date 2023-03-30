@@ -1,13 +1,7 @@
-wdg /@ HTTP/1.4
-Referer:wJlPRi://%E1hh@225.237.27.81:/?kxY	  	 	 	 		   	 	 	  
-Accept-Encoding:,,	, 	 -u&CZxy^vz, l2h`j247Nuj^SK 	,				   	 ,yG 	
-Host:[6:5F:E::07:4]:97  
-Accept-Language: , ,	 ,,,,  				, ,	 	 , w-H-z 	 ,  , 	   		,,	 , 	  ,	*,		  W-c-0-IsX-m-a ,
-Accept-Charset: 			 		,		  		 	BK	,  	2PJ 	     		   	 			, 		 	  			,qG;     	  	 		 			q=0 	 ,m4727+o	; q=0   	,  P 		 				; q=1 ,			gw	 	  		,	 		 s~L;  q=0	  ,wVL!#!8iUuY 	  
-Accept-Language:  	 	 				,	A-a-5-pHu-JZ  	 	   		 ,  				 ,
-q1P:				ˆš		â 				
-Host: [::5:3:C]: 
-Accept:	 	 	 
-Transfer-Encoding:	, 	  		  	 RJyA; 	 	 *_J = "€\S\ )ðÊu/LŒ";    	tY!lN="\7û"	,~c	 	,				
+%x$JUzW //Bg HTTP/5.2
+Host:   [4:E67:55F:514D:85C:85D:244.25.66.214]	
+Host: 	 	 	 	  		    [vFE.=]:70 			
+Host:	[B:7D5::10A:D3:208.45.250.7]
+DBI:						
+Host:[::D5:2.70.197.0]:344224655939 
 
-(5

@@ -1,8 +1,0 @@
-`$K //a/-1/U,RS;5//U/%57DP%85%44W/@MH%BB HTTP/9.0
-Host:pyP:
-Accept-Charset:	,,,	 		 	,rE 
-Host:					 74.31.182.253:14139
-Transfer-Encoding: 	 L;		 	X#zB  =	elDg^ihScWXf7$q~9; r     				 		  	= 	"3"	   	;ay 	   	 	 	= 	  	  						 "";	!Zn=     	 	""			; 			 		  	   	 R =  		   	 		"J¥Í\Ç\º\P"  	;			0u|hd  		= 		"\æ", 	   	 	 	   	 		
-Referer:	//[::E:60:D:9:9926:252.252.93.9]:43/%88I/2	
-Accept-Language:  		,	 	O, 	 				mjHQ-xXw	  ; 		q=0. 		 
-

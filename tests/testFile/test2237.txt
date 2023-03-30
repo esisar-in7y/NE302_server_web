@@ -1,7 +1,3 @@
-AF_6+Z /BY'? HTTP/5.0
-Host:  		   			238.255.4.1:
-Cookie:		 0="=#zH"; q="]P" 
-Host: 	[vDA3C.wfqH]:7
-Transfer-Encoding:, ,			 ,	, 		,  ,,W%Hl	 		  	  , 	  			 	0  	;  N8P	  	    	=""    ;	%q=	"" 	 ;n7="\ê7"  	 ;  R8X	= 	  	 	""   	;  Y	 	= "2\Ç\W\bA\`" 	;  		6M     		=				"0";  				kN-%i		  	   =  		 		"\@Hh¬Ã×\ÿ\Ò\¡,\)\y\–ß"	; 	   !||oW#xhYdP		=""  		 ; 4~x	  	="ú" ; 					O8U_*=		   			""	
+*6 //O/a HTTP/6.2
+Transfer-Encoding: compress
 
-»

@@ -1,9 +1,0 @@
-X /, HTTP/3.0
-Transfer-Encoding:	,			  ,gzip  , , 	 ,		  compress 
-Transfer-Encoding:,$L3%a			 ; 		   		LQ = 		"" ;   jC^=	">\j†\c" 		   	 			  	 	;			O 		 	 =		Nn4E.	,	 HL;Vq1Y 		  	   		  		=	  	  	 	"\õSà" 	, 
-Host:	 		 	 			 [::3D:7.1.9.114]  
-Connection:   	     	 		 		 	, 			,, 2p 
-Host: [5:BD7:1B::7:5:201.218.35.185]:4	
-+:    		
-Referer:	//233.196.1.81:5789544		
-

@@ -1,8 +1,2 @@
-592d //K@Px/&m%C8T1NEK/B;'%D5%D1j'jL/vU'jh%B3Rz//J%02%22%4D+L/)Dp;*Q&/Y HTTP/0.1
-Referer:	//%66%CB'NM*o*@[vDCE7.J]:91/ 
-Expect: 100-continue 
-User-Agent: 	s	 
-Connection: 			,	    ,	,  	, 			 , , 		 , 	  		  	 	 			,#  		 	
-Connection:				 ,   	 	   			 , 	 			%fZH 	,	 x'Yu	,	   			    	  	   		,
-Referer:	 	   	 lSIO:5BDK/%AFsoS/?k
+XU /y=/1 HTTP/0.4
 

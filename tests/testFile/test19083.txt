@@ -1,7 +1,0 @@
-8 /sCSY/%9D?1 HTTP/3.5
-Host:  	[::6:35:1:0B4]
-Host:      	   		[C::3E7:0:DE8:DA:C8]:54
-Accept-Encoding:	 	 	i5sN*Sk+	
-Host: [4::226.107.4.158]:6 		 
-
-Ù=

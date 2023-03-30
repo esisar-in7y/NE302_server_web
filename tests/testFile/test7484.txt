@@ -1,9 +1,3 @@
-p /fK HTTP/7.4
-Transfer-Encoding: 	 ,  	xj*Imi!gG*A+  ,EX!1z		 		; EJliU = 	"f"				
-Referer: 						  		  		U://:@141.42.5.253:660/O			   
-Connection:		Ajf	    	,  		,		56	, dX^$s| ,	  ,	 ,L&9#H 	  ,	    ng+rgMTm	,
-Connection: 	,	  ,,     ,			 , 		,,	,  	, 		  T  ,,  |e  ,5Q , 		 		,	 	,R 	   	,		,    a*     	  	  		,	0	 		
-Cookie:		7t-=""
-Referer: //Tgr@3.49.144.178/0ToGU%98=/W%F1%F7Oy=?BYt    
+U /'~%06f4Zh.L////?@/lGJ HTTP/8.7
+Content-Type:			    	mIA/w
 
-[{

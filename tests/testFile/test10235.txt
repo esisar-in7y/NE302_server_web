@@ -1,6 +1,0 @@
-kQXi5cSmrf /w%09DY39dQS=9%8F/mDXg~f/k%49GP?MyS%A8f:o HTTP/0.6
-Accept-Encoding:  		
-Transfer-Encoding:		 ,	   ,chunked	 	 			  						, 	 			  ^cxpcG.iYmNvZzk-x0Bv 		 	;  	ksv93.b ="";  			 	  !A6RR1	 						=		 "\mÔ"	 ;  9DqYQg	=  	 "I\Ó£\Rû3“Ï"	;x0kk =			 	 "";	iO 	=""   	  ; 	  		s =  	 	"\_"   	    		;				doMI9M^~MI	 = 		""	
-Host: [::239.137.254.23]:0
-Referer://[169:A2:7E2B:FC:E58:6D:177.83.251.216]:49?an
-

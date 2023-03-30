@@ -1,8 +1,0 @@
-ii|F& /?%E8 HTTP/2.7
-Host:						 	 	238.9.208.61:0242 
-R:				Ï 	Ú1ö	 N 
-IlJ:	 	 Ù	@ ”1		€Ë 	Ë#—			tR`	ö˜` 	 	Zn		6ç	  ±ß9	   			q		 			 	  	
-Accept-Encoding:	+n 		  ;		 		 	 q=1  	 	,	  			,L  ,		 		   ,   ,			c 		 ;	q=0, 	 identity, ,
-Host:     		 					9.205.248.208  	
-Referer:qKS:/%8A/%DD%1Ae:/%F04fF(/3%83y0o%A1%43Y//h44rB/;Gq%BBF%79row//Mh?	
-

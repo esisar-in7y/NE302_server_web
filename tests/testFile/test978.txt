@@ -1,8 +1,2 @@
-7 /6mS2/%72O///~1.&/v/Mkd/Tj*4%4B? HTTP/3.1
-Cookie:^.r=V-; oy|=I; Y~=""; al="F"; Fuy="4m"; j="b"
-Host:				[::C1E:2:2:8B:8:124.42.87.58]
-Cookie: 	 .="4"; R=Q; js'*DZv=EW^; Jl5Q={T#QD  
-Accept-Language:		,		,,			   	,	,  ,,		 	 	 			 	, 	, ,	,			  	 		 	 ,P-x	,	V,	 , GiwlV-R0E-xXX-4-b-0-Z-mCaZ-Ok-X-r; q=0. 	 	,	,	
-User-Agent:  		.%wM.d/p    (\²Y)  	(\L)	 
-Referer:	 	   	  		 					 	 	nE://E*+Ic;B%854@_/D2qrrjl
+A /*0/%F8O?%01-%CF0B%C5Q HTTP/6.3
 

@@ -1,7 +1,0 @@
-q /?.NM-k HTTP/6.6
-Referer:   	 	//+%6D@%B9)/?@%03Mz;vEO%FC$&Ur 
-Host:	  	 	67.254.250.227:184	  	 	 
-Host:[::E:F:6:253:D:3.220.252.1]	 	 
-Accept-Charset:	x ; 	q=1	 ,	  n~h  	 
-Host:180.135.7.1:921
-

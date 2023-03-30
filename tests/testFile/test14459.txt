@@ -1,7 +1,0 @@
-H5EAQ /- HTTP/4.5
-Host:	[::A8:D:A3:45:250.140.13.192]:
-Referer:   		 //nR4v(%6C@[::3F19:CEE:9:E7:C:8.7.0.7]/Cpup//Wi%7E*
-Transfer-Encoding:		, ,		  	,		 ,	 dR+iZmMhe&Yw*_D-q  ;h. 	 	=	 "U", 	,	,		 	yz*PZC  ;  ^U8 =	 "\Y\A"; y		= "" 		  	  	  ;	 		  7*YbCiYT =		"\µ"	   ;	 aFgXa%m*+="\¹J\Á\W!" ; 		 p`T%'4M		  	 = 		"q§\‘‚\v\B" ;		 g6^t~do="™Jà"   
-&: ðÆù	 	UŸ		 ‘
-Cookie:kS4D5r=""; .=
-

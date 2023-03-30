@@ -1,5 +1,0 @@
-bcQ /:%5BG/?@l%56= HTTP/2.7
-Accept-Encoding:		
-Accept:	 	 				  
-Host: 	 			 127.242.4.13:5257
-

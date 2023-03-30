@@ -1,5 +1,0 @@
-BWO //q HTTP/1.1
-Host:	[3:F:F:8::7.9.250.1]:
-Referer:dU://@:7/M	
-
-L-

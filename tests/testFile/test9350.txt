@@ -1,13 +1,5 @@
-| /cR/Z.9/? HTTP/6.6
-Connection:			,		    ,	,	  		    	,   ,		 	#	,	,QK&G7M% ,F'aq14k	,		  , &vSyWz*lz	,Hq 	   	 ,,,	#,,	  j&ZH'$	   	 ,,    ,		K  
-Connection:	  	,	 	 	,		, 		    ,  Q, l    , 		     		 		 		,				.P^WdyekQnI 	
-User-Agent:j/+		  ((\˝\SŒ\t\b)\Æ)	  ()  			((»\ˆ\∫)(\	\)\Ñ)()∂(\·)\Ì\Käe)  	 				 	  	  		 	([\*\y(œ\5¶\§\I\W))	
-Transfer-Encoding:  	 	,04   	 ; 	  ^=		"q\Å"   	
-Accept-Language:	 	,t-bnW-bn-l  			;q=0			  ,	 bV-Yop-C-JvJ5v-d  ;				  		 		 	  	q=0, 	 	 ,, V-c-4UB 	 		 ;  	 		q=0  ,	 	   	M-IYY-WoT6lA-q-UdD-Q-K-6Xk-9		  ; 		q=0.5	,,,	 ,DM
-Host:	[v2E.=]: 	
-Host:  [v99.a-$gMz]:78651
-Accept-Charset:		,   	  	 	 	,  , 	 		 ya ,,  Cb;q=0.		,	WN!g	  	  	   ;	q=1    	,  ,	, 	, 	 8Ay	, 
-Accept-Charset:			,, 	 	  	   	,				 , 	 ,	  			 	 	,	, 		,		 ,  ,								 ,		3dU5  
-Connection:			 ,  		 ,,+3Zj.4Q`5e,		  		,  	   R!nX 		,,	 	 2Q 					 			 	   
+1 //$v%7AT/a%7BRh/%3D HTTP/3.1
+Cookie:	U9B=djb; h8K-="n{R7!hF"; K0=; x=
+qy:	 h
 
-6î
+@ÙA∞l#*îÒ7

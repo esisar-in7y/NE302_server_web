@@ -1,7 +1,5 @@
-`- /*%4B%50/6lRu4 HTTP/1.4
-Accept-Charset:	  				,,Zr ;		q=1	 	 ,	, 6  	   ,	,,Ne		,   M
-Cookie:	 	d=q>; Ml9'!g="*q"; bx8+=[aw!; bwuoFvr$NyZlO6EiM'$=fSgz1; f_G4=; 9="K'nOrQ`1H{_Iu"; rmGA^uRg|q5=j:HO   	
-Host:		[E::ECD:3A6:0C:4.3.3.253]:79337
-t:		  )			
-Referer:       /?i@T		 
+4 /?I HTTP/7.9
+Transfer-Encoding:	  	 				 , 				 	 	 		 	  	,  ,,		 	,, , 	 			,  ,		chunked
+Connection: 	 	  	,		,	    ,,	 	,	,  	, o 
 
+Ó	»

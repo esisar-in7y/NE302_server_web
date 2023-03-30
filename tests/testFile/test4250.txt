@@ -1,7 +1,4 @@
-T /*r/~/E/%B1A HTTP/3.7
-Referer:		//%1AB:6411/J@Dka59Qy%AD/cg%22/$/-G%15a%F5%56? 	 
-Content-Type:		%/W+	 			 ;  		 			 	UA'd="D\6ûz\{ó\lncz" ;dx=""	;  	1L5=i	    ;     o5x$n="}\ıÉÚ\“\e" ; Qa.D="\ÛXL\s\Ş"; P+8+F="\V" 	;	 	N_a="\‹\23"  	  ;			70="«"  	
-Content-Type:  tvvgKjd_/`L 		 	;    %y="\+\|\4";	   				$KBx19%*v=""	 	 		 ; R9o.|O="" 			   	;	 'npC=""    ;G="ö\6\p®H\“ö\ª\ñi\©"	;	  YNM0fM_="~ã" ;	Kf="" 	;%^-g=ftd;H=""			 		 
-Host:	109.99.4.129
-Transfer-Encoding:,, , 	 , 	   	,, ,,	  TE5T68GD0vO|8;			! 	 	 	 	 = "¤•" 		 ;	     v     		=				"eê\œ¤"  
+Ao& /jI4/%786B;//C%5FW3%4C+/3%5B/ HTTP/9.3
+Host:[::A24:9:7.29.1.184]  		
+3i:	„:  v	   		
 

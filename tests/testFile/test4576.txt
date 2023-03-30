@@ -1,9 +1,4 @@
-S /i%E2s*p*/%E2/%B0/20&%0A%BFK%0B%60mo)+5c*m HTTP/3.2
-User-Agent:	  .
-User-Agent:	  T*8&~I	(\š)		 ()	()	
-Accept-Language:	,	  	    		  RG-1u6-AF-4-ZHIX9, 				  	,	J	; q=1.00	,  	,		 	   
-Accept-Encoding: 		 		 	 
-7qyAg|:	   I	 	
-Accept-Charset:,  ,  			 		, 		,  ,   ,		 	    	 ,	 ,   		   ,   	B8	 ;q=1	    	 ,  		 				,, 	  4,		+5H	;q=0.6	 , 		,	k.-%Y%HkShrB%j 	 		;	q=0, 6 	  ;q=0	   	 
-Referer:   		dBizM:/?8%42
+* /X.-%BDaMJ/? HTTP/1.4
+ixUk:		   
 
+â

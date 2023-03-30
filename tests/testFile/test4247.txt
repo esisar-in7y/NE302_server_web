@@ -1,17 +1,3 @@
-B* /3/? HTTP/6.6
-Host:pD  		  
-Accept-Language:	 , 		 	 	,  	   	   ,		 		, 	,		  		 onfeKuX-t-8-A-l-f-GUW-f-n4z8B6-p-vYdm-y-w-XHG-wN-0-e 	,	   H				 	;   		 q=0 	 	    ,,		 	 	 	ji-O-EW96LQ-u , 	 ,	,		   		,  			c-4-Q-1S-D-x-T-m-N		 	 ;	 	q=0 		 		    			  
-Transfer-Encoding:			,, 		,	,   ,, 	chunked	 ,$tmA			 	 	 ; I				 	="Û"	
-Referer: /?%EF$0X	     	    	
-Connection: ,			,Ik`o ,,	 	,   , 	 ,+Ift , 	  sBP3
-Bup: 				   	¶L  J+	  				 	
-Accept:rjEjgoqX#|/* 	  	 	 ;  	$=e			        ; 	VP=""		 	  ;			Le=""	;.U="k",	Mb/-WPOe+M`J;  	  		 	  		 	*V="\z\I\¸"	 	   ;			-LoK0Z="\|"	 	 ;q=0				 , 	  	 	  ,		  	c/DI	,,	,, 
-Cookie:		G=pOd	 
-Transfer-Encoding:deflate	,		 	   	  		 	 qE^%^ExHT			  				  	 ,	 	, ,,		, 		   	  kyOQ7	;    	 			  oQCB2hHx 	= 	  	""  			 	;QBusw= 	 	    	 	 ""	;					    	 		 6Cfn_Zl0mM7wG_~G!* 	 ="0\'ý©Â\Ê\ˆ\œ\÷Õ\@\´\=\«ô6" ; V|THTw = 	""   ;    cFE+EDL.s 		=	 ^J	  ;	|Me!FW5kRm	 		 = "\Õ\Ó",		, 	  		,,			  	 	DKb^om		;	5   		   					  =		  	 "\w\ ÊR" 		  		 ,	  LAr ,Qq-					;	 	  $XqNgc	 =	"{"		 ; 5 	=	"" 		 	,,
-%vv:  				ýâ				6-’ Óc|Û–	Äû’<	  	öAÖF		 		`;_ïr À  ü‹	    	 Þj¹
-Referer: D9oeRI4K1Vt://250.233.9.97/kf/HnT%0A0?VW%04EEJWC	 			 			 
-User-Agent:Nr 		(\i(X1)) +b (e()(’\Í)( ­\¥)(J\r)\ò)  	(\O‹\ß)  		  ((\,\~)\ì\O(\Ù)()(û¹b'\½\È\Ž\6:ž#)p)	 	  				 		((\Ú\ï)ã4l) (S)		  	
-Content-Type:  	  	 vog/MLH					 
-Host:			[v7.Vt2x:L&] 
-Connection:CE
+Dh8A!93|#e //'%37//8,/u%8A~7y0 HTTP/8.6
+Host: 		 [vB.MJ]
 

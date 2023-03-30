@@ -1,11 +1,3 @@
-UV`T /Bpn%33B7%D5TFaHnt/C/h;9JE~'v3=%AA%15)%E0 HTTP/9.9
-Accept-Charset:	 ,  Mg      ;q=0. 	   	,,	 	 , 			 	,	,e6O
-Transfer-Encoding:   	   ,,		   	, 	,	,	 	,,   	 ,  nP&v	 ;%~.g	  =	"\K"	 ; tW=	  -L;*rd 	 		=""	 ;		 	4 	=")BO";	 	K	      = 			   	"cŸ"		;Npb'		= 	 ""   ;		#4eT*U  =	 	     	 		  		 "…\Gù"	     			; 	  	 	Ww8% 	=					q*D	,
-Connection:, 		  	 		,FgX	
-Referer:	 LYNsz,)yL?%50	
-L:	 	
-User-Agent:		 	 		 	2jX4+W9mw			 	 		(J®)   
-Referer:	 		//[3:2BD:C:2D:6:0:251.24.119.105]/
-Content-Type:Gw7lR/sZZnh;	WE8k="" 	  	 				;rR.=""	  	  
+~~ /R/'~o%23/c+?dmi HTTP/9.4
 
-
+(

@@ -1,15 +1,5 @@
-0!r`c /0(/ZQC3b%48,,//%02o2/vdtlc/U;D)w6F%11i//Q%8BGH%EFie.tY/p5p?E=$(%10HL!%CF HTTP/6.3
-Accept:	  			 
-Cookie: 	n`QgH=; BI^="!at_<n2g6"			 	 	
-Accept:	,	, 	 	 		^U!moU/*	;		    	 OmpJ="å" ;XE="£ð\i\\_þ\w\}-"	;   J="Z\R\z"  	     		; 	 $BU=""  ;	n=""  		  	   	 	   		,	 	  I7/*	     	;	`I7#aJ|Lo8=""	 ;	~2NZ7mca="‡\à";			gF!tG.FpZW="\ìà\s±"   ;	 				  		 q=0		  		 	
-Content-Type: _3/WWq5	;#w=""
-Referer:q%80/m/Mj//%14/.%F6_I%C8H%B6%C3'X!h%A9C%6FK/%86e'%EB/,/x//8%0B/P/W$gL_Z%5C/L%51H%97/!/%478 	
-ZT&UxLgDbtTzw:jèç	 			Œ¢ 	 	"		 
-Referer: zdD6G2jPRa://@96.4.2.242/%12////Evf.p//j'K@2tn7q%8ABI%2CdY$*8A%625//)%8D%C2!%A0Iu/sZ/r?I
-Referer: 	KGpVnUX4C://:27097621508300/'/AGQQ68/F5v/x$/=Q%7D/? 		    	 	
-Host:			[vF.aY]:1	
-Host:165.228.253.254:188102					
-Content-Type: 		nk/E  ;a="\‹"; 	IDm="\o\Í\:\â'\'¢§\ê"  ;    xNT="";nZ-$^v=j  	   			 	; 	 			 Riw37=y	;		 			 Jd7$="\É\P^"  		;	C=g7d4W*+z0`EQx	;_*#p%IZaSb!a="\¤\Û\÷B\Z";  _="ª\ä"		; 	 	8zH_P5%="ý•\i"	   ;   		   	 		 Rj="þP¥\Ús¹\Š\>ß"	; 	  s.="+"  	 ;#5=""
-Referer://-3ld@[::0:F588:F]: 	
-Host:  	5.251.212.254:5896
+nw. /Ro);I/P/%DFi7 HTTP/1.6
+Content-Type:	 lhd/2
+Connection:  	 	,   , ,,,,  	,*E+X, 
+Host:  			 :  
 

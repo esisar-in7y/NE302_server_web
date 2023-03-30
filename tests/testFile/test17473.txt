@@ -1,5 +1,0 @@
-0U+#b~Laq / HTTP/1.5
-Host:		  253.225.197.1		 	  
-Host:		[C::9:3E:A:A24:2.3.184.93] 
-Referer: 	VF://h@37.145.3.250//;IU7M%59%DDt,CiT?c%DB 
-

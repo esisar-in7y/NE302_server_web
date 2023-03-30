@@ -1,4 +1,0 @@
-Qwv_G5 / HTTP/7.3
-Accept-Encoding:  
-Accept-Language:CMy-DF
-

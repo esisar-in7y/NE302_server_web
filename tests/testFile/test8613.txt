@@ -1,8 +1,8 @@
-&!02!CfN`t /DS%B3? HTTP/1.3
-lo: 			O 	Vk:S    ³BG	 	©×		 iR	 		÷D							 	 	´ÇQWî	  	 		×÷			§õ~	 		 			  }æ 		Û«		/ª÷	„Â’¨¸ öÆ 	  â’3	ÜÖ	  °¢			 			”
-*1E.:Å 	 		    	 Û8 	 >â	 	 Âè			cCZ	£Œ	wþK 			 	
-Connection:		,,,	 	, 		 			 	    ,	,	V
-Transfer-Encoding:,			, deflate 			 			
-Cookie:2=js8%
-Accept: */*  ; L`=""	  	   ;	 v="-";	 UfO6="\ê"		  		 		  	 	,  	,, 		 		 O/Lzw		 	 		,	   		    	&q&/v	;		 		 			  		q=0.228 	 ,   ,			4/*			  ;		  jF=""		 ;  yH="\!\¼Þ\N\Ö\0­\¨",fj/*;		   	 b="\>\Vã\¾e"				 	  ;		  T%S+B^|z4="U4";g_&="\1-\n!¼"	    ;  	  		U'="D";	  	pWjzQyD="\Ñ" 	 	     ;		 7+="\´" ; 	  	 		q=1.000  	   		
+' ///$71%3247/ HTTP/5.7
+Host:	 	 		  			[::F:D:3:C7:8923:78.251.127.0]:44366    
+Host:50.6.211.198:4	 
+Connection:  	,		 		  	,, 	    	 ,   ,    	   	  	 	  		 		pJfws 	,	,				 	Qu ,	 , 		_QeS	 ,			  J$,			, 			    ,   nCV& 	,   	  5	
+SfU64e.I.OYkS+M:J 		ËuÎ6	 iõ  			  	 Lt¤		h}  î	  						    
+Content-Type:&!/1jL
+R:j						  	 	Õ‡ JF  		 	 			/ 	  
 

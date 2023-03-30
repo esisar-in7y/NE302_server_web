@@ -1,8 +1,3 @@
-UrBb /%94hq?Ni HTTP/4.0
-Accept-Charset: ,^!nx7D.		 ;		 q=0
-User-Agent:		+nU2s/2 				 ID 		(\rPE) 	 (()K) 	 	 ((L)\|³\î)
-Cookie:s=""; 38="3"; xno.=; M1#=; 9rd5NvV=yD0_n; oI="Ctn:"; 4x="gjXsQgX~lf2uRX=Fw>m{"; yS0=8+4 		
-Accept-Encoding:	  	 					
-Host: 	 	   7.254.252.4   	 	
+v^wE1|41- /Q%C3f HTTP/1.9
+Host:		   	  [1D5:509:E::D:240.3.9.214]				  
 
-.#™

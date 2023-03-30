@@ -1,17 +1,3 @@
-M /)pM%BE+??DgoMo HTTP/8.9
-Host:	 252.167.236.7      
-La:d		ÐŒ\]Å		
-7:  		   		  		 	 	
-Referer:	 		 	//i@[v766216.P]/?
-Transfer-Encoding:	    	, 			,~ 	 ; 	 	 	 		f	=	"\óò" 	 ;Oo =	"t\ø\@"						 								  ;n!ix!		  	 =		  "Ø"	;   	q_BIEsDK=		   	  $++iN; B	 	   	 		= "€\˜"  	; +i			  =   			"á\ñ\j\@"  ; 	*~.QS_^ = 				 	  			"^"	 		 		;rFCx =				"í\C\M\	Ñ\t\6"	 	;qVPUA =				"\Ø¹\µ" 			  		  	
-Accept-Language:	 	,	 X-Ss-qHprrmr-1-5-gqW-aX	 ;	q=0.,y  	 	 	    ,
-Connection: ,,,    	 	 		 zZ,	 sK9U3i.u#2D,,	nX7i9	 	,	 8	   	,,`z9vFWUvM	,	 	 	
-Referer: 		W8.:/
-Transfer-Encoding:,j  		;			zpc&	=  	 				 "¶" 		 		;k=	 	 	"$\Z\ÂÓ\KB\—\ö" 		 ;	  37No3QX    =	"\ÏõÇ"	;   			wQ| 		  					= "\g" ;	UHF		= 	 "" ,,		C-!!f~aB&+    	;  		'%gcHU=				 	  "#\i\à"  ;  	5oK-2 	 ="\ï\÷âk\Æ\ä\Ö\/" 	  	  ;	 1# = 	    	 "\P\3\&" ; 	f 	=	   "ß\Ð\O\õE\1˜\&NÉ" ; t^	 		 			= 		 	 "\S\ó\Û"  	 		 ;N&Rlw5gvV    			  ="" 	 		 	;	  	   #m 	 =		 "”´\¡" ;	H3bXS7	   =	"\é\N\Ï"		;PW 	 =		g		;		5Q=  		 ""  ;	AKmF1 	 	 	 	   ="" 	   	 	 	     	
-Bylgj:7Ü 
-Host:247.232.238.137:92628 
-Cookie:I=-z; AtaP3vg0HBeMuUS*~f=p; 3%=:; P9%=lo=$Z5_N; Y_="" 	  	 
-Accept-Encoding: 		 	    
-Connection:		 ,,,	I4zQQ   						 ,	,  	 	,0viVS,	  P,  _w+,	,	 	 	 n4pp	,		,!5D1 		 	,V_0H	 	    	  	, 	 	a  ,,B9,	   Au		 			  , 	   			    
+ox /;u/?_ HTTP/4.5
 
-•
+.u

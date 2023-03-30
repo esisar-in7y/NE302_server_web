@@ -1,16 +1,2 @@
-n /ZOp%E8h/!s8;g/c? HTTP/1.0
-Wfmsw5DX7:Æ	 	◊
-Host:%EA	
-Accept: 	
-Referer:?I%3B	 
-Accept-Encoding:#	; 	 q=1	
-Content-Length:		 	2	
-4fwTDt:   8ˇQ	 		 		 ,
-Expect:	100-continue
-Host:[C7FB::D8:B:F:1:EC2A] 	  
-Content-Type:	 cv/V1p		 ; y`="È\ê\ÇÄÃ"	;	q="FÏ\¥\ı"	
-Host:		[F::33B:B:8:6:7:D]	 		 		
-User-Agent: |Ui 	 		(€\-)
-Accept-Language:,	 					,			, ,	,	 		,, ,,,  	 			,			 	,,m	,J	,   	 ,     	 FA-am1S-O-Vkb ,	 					, 
-Referer:/ 		
+ngMtxLbZ0r /%2A;/(cINcOmx%6AfG?:mj4:A%3B HTTP/7.1
 

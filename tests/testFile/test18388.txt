@@ -1,8 +1,0 @@
-FE1 /f%32/V(q,%21i%7Cm$8P%CF0/dC%86Do%83eD%55X/(/?9%E7%A1!- HTTP/4.3
-Host:	[::176.17.235.200]:4		  		
-Accept-Language:	d  	;q=1.0   	,	 
-Referer:	 Y:/?  	
-Accept-Language: 			  ,	q 	 	  ,	,		, 	  
-Host:			 	[::F:74.161.1.8]:
-Host: 62.251.61.4:1292	  
-

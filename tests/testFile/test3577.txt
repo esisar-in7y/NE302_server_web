@@ -1,6 +1,6 @@
-I /YsE%DC/g@,%EF//%40e(B(/dm/C HTTP/5.0
-User-Agent:	  	   	 		 *d`k47d^Kj/Z 		    4NJ4zEq!/0		  		 (\%(~⁄\vÀ\G\0\Ω))  	
-User-Agent:	   	 ^i%U7$ 						 (\9-) (˜\ø¨ñ–\9(Õ\‹)áﬂ(¡)wK&ú\o\¿Õ\ù)  		 (ﬂ) 	 	 ((\Q)\ì˚)  g'HY'KaSuz4/Cm6|$ 	     (\ÅR(˝\œ\}\ì\9)Ω)     ((\÷))  		  	  (\C(\Ô.æƒÏé)\Ö)
-Host:,:738 		  	
+%W$ /,'AE//f? HTTP/9.8
+Transfer-Encoding:		Vby!	    	;	5Z=	  "" 		 ,	 	 	 ,	 		  		 	 ,	, N&z;3z		  	=   	 7-GcWmx	  ;  I2Xb52  ="" ; 	 	  -=			 		"\/∏\+\;"	 	  			;++	 	 	=	o%0y,-Ak_sOi6u|E  ,		 			,, 			N; LS$			 	= 	 "\ó⁄>\∏\Ô˙" ;			&Xc~4N			  	 	=^--8IDm&I 	 ,deflate 
+Content-Type:	 	 		  	4c/Yz ;  		 	 sC~TA!M4="¡\»jd\3\ª"	;	YI8="Á\G¸≠\ú\à&ô\â\K€"		;p="\/" 				 ; 	 H="à\_0\*í\9\≤";   	 &`="\ù";-3P4="\–" ;	w5+Xc2oo="Ÿ\ˇ";C#vLxu="\¡•±\M\öÆ\ñ" 	  	;	U2o%cMkb="òÊ";		 				 1="·\•N"
+Expect:100-continue	 			  				 				
+Host:	[v136.D]:0399 	
 
-U¢-8

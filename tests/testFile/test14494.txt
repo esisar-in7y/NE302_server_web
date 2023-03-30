@@ -1,7 +1,0 @@
-7 /' HTTP/1.6
-Accept-Language:		,			 ,, 	 	n-TE-BW-xh-Q2S-Zc-h-ETf-px-2q  	;   		  	 	q=1 		,	 TDm 	;		   					q=0.6	
-Transfer-Encoding:, ,		 , ~6		 ;|uP=	  	 		 	   		"È\ì"  			;	L~Hv*Wq		 =  "é"		;S5DDR						=	 	 "\w " 			 			 	;Pj`V=		   	"`-\¥" ;		jP		= 7&POD_HPi2*mv8tyXTXogK  	  	 ; 				+6E			=	"¯\ú"		; 	 	 		  			 K	 		 				 			  		=	 "\,\)" ;		 l!Gyd%N.="ƒ\–¶"		  ;	KT		  	=	   "\~ÄÜ\–" ;	^    =	  "vE\³ø=\#\K" 		;	  .CC_SJEKnp9		   =			 	"\B"  				  ;l6s 		 	  =  ""	 ;	PC+F`  ="\e\X";	%	=	 FA4	, 				 						  	, 	chunked				,	  	  			,S5    ;	 	Iy=    "\¥\w$\7\B"	;j=		"\E€\»Û\z\à\ù\ö"	
-Host:  	   	9.72.144.1:52299   
-Content-Type:	_+kvLL/$+o6`O+1Ie  ; 		  l%=^W*	 					 		;p$="\*\KÒ";	#YzM="C";	   ecl1gJmc=CN	 			 			 	  	 			  ;	V-u3V#s="N®" 	 	
-User-Agent:   	  U1m$ 	 	 	 (\$)	  (\e()) 	 	  T/VWqlLV
-

@@ -1,12 +1,2 @@
-!fu^ /Dx:pA%B7jz!f/z/Maw/jm/& HTTP/4.8
-Referer:   /	 
-Host: 119.3.8.39:	  	   		
-Accept:Uzy7V^/hmn^M	;F="" ;Zo+R8|.=""	 
-Accept-Charset:	 	 					 					BHV2 ,	P1	 	,	 	 	  ,	 YL7N1|7K	;	     	 q=0. 	
-Referer:			 	z.S://wws//eSaa%8Cbxer/j%47/Lk/QU/K)-O//9/v/Tb,%8A)/%6D/99k?PfTQ%5Ap8~    	  	
-N:±
-Accept-Charset:  	 	,, , 	 		 1|al	  	 ,		,  	,   ,
-User-Agent:	  			b&fZscqr&/y	 (r\¥\ß)	 (\õ0¡\h)	 (\±()Î)	 (\@(\∏\≥)\ı9(\≤–4ø¶ü\\“\-\ß\t’\w\‹\Ñˇ\ˇ\ã\˙Ô)\Ã) (\e)  			()    ()  	 (ç)   				    		() 			()	(\û)	 	
-Host: 				 [::452E:3:16.1.6.180]:33
+S4ew /?/ HTTP/4.1
 
-

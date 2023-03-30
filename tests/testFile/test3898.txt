@@ -1,11 +1,4 @@
-HL //k HTTP/7.0
-Host:			  	[0:945E:3::248.5.221.67]:960		   
-Transfer-Encoding:   3	,sxHyY;M			=  	  ""		  ;p	  =   ""	 	  
-Accept:  	  	 	y1/Gc4C		;				 	nm="Y"	; D="\´„“"  ; 	`="\JÌƒ"	 ,	  
-Referer:	 	u5:n4i/%E29pw/.$s///=V/Psi%3D?	 		
-Referer:b://[DCB7:6:283B:0:8C7:D5:00:7]/p4V%02=/%1F?'O9
-Content-Length:79 
-Content-Type:gj/e 	 ;		Sbw%IrCw="\ý\w¬é˜";   	 	    NBankBL*6M=""	  
-User-Agent:  			  K		
+n /=%0D HTTP/4.3
+Host:		 	[vA74.;] 	 	 	
+Host:209.4.223.9
 
-—ë÷“]

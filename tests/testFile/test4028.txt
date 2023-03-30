@@ -1,6 +1,3 @@
-2 / HTTP/2.3
-Transfer-Encoding: 			, ,	chunked,  compress	 	 	 		    
-Accept:  6pYfMNAtcS/*	,							 	Vm9/hR	;	jQZU="";  k8eX="\•|"		;  			D2fB="\†\ºÅ\G\©\¿"		;			  CGsN-KT="\4" ; 9g="" ; Z%=. ;    		  Eu9="\èD"	 ;   	   		Rmj'="\“"	,	*/*		;	 	   	 	 	X="\™"					  	 		;		+1p#ey8_U="Ž\;Y"	 ; yyBTc=""		;  		 			+EnreqdoNi="\{ÉŠ\`c \>";		b-Fa^2|pUn=O
-IG7U:ý    	   		 	 	Ó5	 	 
-^%:	8	 				 			 gØ	 	 'É Ú	   
+ZYa9J //I/%A9%F01/2/p.l?ej HTTP/3.2
 
+t×?ÀBÜy

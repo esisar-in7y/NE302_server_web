@@ -1,8 +1,10 @@
-1 ///%A6g:%CF/%5Er)&Y5GbE&%DA HTTP/1.1
-Host:	j_CCWfp;:80		
-Cookie:4=!; d="S*"; xmKBxxeX=^5; X'="8b5f`"; yv`G#="O&"; 4_="J'"; gCk="47"; lt="tn0p"; P="6<1M"; te61=@Y'; 'QdqbUpc="wk"; pBoh5za=""; fPyL9n#EOXr9r^vc'="`"; V="*p"; ~="@:FZ$/"; N-=}; nqRsMv~=""; OsWbra=zp*-4)Su; 7=Y}; UqwzyO=C; Gy8=b; 3="w:aP"; %2l=gd.; U#BD`-d="x"; zj+==; ^!oKEPi="Y8@u"; W0="rC!c#"; ^Rc="Um"; X~PN%="*%g"; UTo'ZEd=U=`I); R6nGFr+M=8a&ii 
-Cookie: 	Cm=P'; sr&o=&Qm$aJ_4`vh&rB; MHcDZ'=LT; Fc6="c"; gA&5=	
-fm:		   
-Content-Type:   p|Z/k.		 ;	 		 	 	   k="}\˜\`\L\¡\‡\Îù"		  	 	;	 6="\Þì\\äe";	6s="" 	 ; 	$=o 	;	uX~="t"							 	;U="\Ø\^\Óó£Ðo6\f\÷"	; 			!="\r\ #"
+$p|+ //je? HTTP/3.7
+Transfer-Encoding:,, 	 ,,P     ,	r8i+l1P		 	;kj$K= 	 			 "5`\‘"	,	  									X	 ; 	 t!2I	  	   		   =	  				"" 		 		  ;heE_WAY'O				 =		"\°yqÌ\Á"	 	;		 	u  	="\Ü1"					 ;			5P8dw 	 		   	  		  		 =""	 			   
+Connection: 		  	,		 ,		kOogzl%	  		 ,		
+Connection: 	  	 	 , 	  , +ZzU&'IDa 	 	    		 ,  			 iL	 		,, 			%Z4Pz		 	 ,PiZL	
+Transfer-Encoding:  v	;TEL0I	 	  ="9\T\(e\˜‚X¨\oÍ"	 			 ;   rH3-  =		 	 	 "";h3T+ 	  =	""	    ;  ''="À$g" ;gW$Hvf!O#oDm	 =	    		 	   	    	  "\y "  ;  	   ^WY	=  		"ýÆ\é\É\Ìí\’QÔÑ¥";  	   		-a5QMDTba	 					=",\&\_\:#\ù÷\Š"			;	!p	 	=	 	"\r"; 	  *5R'eBw|s+	  	=	"\Ÿ\d" ,    gy;		 N9!l= "œ'y\\8"		  ,	 ,	j2L3x&z;W_2P 	  		   	 				 = 	 		 	 "" 	  	;Dr|g		  =  	"²V";M=  		 	 	 "\ö¶\z\?"	  ;		M+_w 	=  	 "";  	m 					 	   =  					  	  "\|\’\½" ;  		uEf!*.sq# 	 ="ã	ï"	 			;		j =	 		"\N"	,,	 	   		f3zNK#	; mc239u =	 ""	;  	h!	 	 	 				 		  	="",,  ,	qz^z7##C`; 	  #_ln8=	   				 	"\;\{N\b\9Ãs" 	,,  	deflate	,e 	  					 	,0Ar		 ;fPYKwv 	  	  		 =   	  "" ; 	e =  	"æe\¹"  	 	  	 	;-iPj  	 	 =      z 			  		;		e`i= 	"";	AwOTqY3kx2dz			 	  			=	 ""  	,  ,	wIo		 	 , tbrQ	;n*8$l1="\w"	  	 			;	oO'_VaWs="K\Í\‹„" 			
+Transfer-Encoding:				,			 	  	, 	   			,   	lWpUF     ;	  	~qQ  	 		 = 		  	"\µ\9"	,		  n|E|f|gN$E	 ;	 		ex    	=		 	"{Qe1¥" 					 ;	 N.Sv	   = 	 "\‹N\bÿ\/â\&";	 	DKS	 = ""   		 ;L 			=*W-WX, 6; o 	   =	"Ð\ò" 	 ;    	xEtn*53Q= 	 		 		  	 61	; 	  	.		  = "å\K\ \„‡\ß\!" ;Lck ="š‚"; 'D_G		=		 "",  				 	 ,  	 
+Transfer-Encoding:	 ,,  	Ai		  ;		 8HQYtQ0 	  	= "\±k"		 ;V=		  "" 			  ;	Z 	="\Y5\V";  ' =O$ryd4|mvx4u';AX9pt8    	 			 	 		  	  		 		 		 		 = 	     	 	""  	  	;w%`*m 	  		="X"	;		 	 R+ = 	 	 		  	""	  ;	 	AD  		="Ì æT\§‡" ;	  	    s  	= 	"\#\Õ"		;wg+0	=	":ºI"		; 	H		 		 =   K 			;	 		 	Hw$Z7FL  =  	  "\H"	 	 	, 		 ,	uAPpF!n~HTdo		 ;	 8ge=H 					  		 	;	l = 		""	;GUwA	=	 				"\l\~F"; 		 L 	 ="\¢"	  ;	 M	 = 		 sIG!Wq 				 ;	  ileygr7pl=	""		; 		 	  ZpYj`pU9=			  "" 	    	;    fJL  	  	  =  		""			 		 	; 	%h=		"lºj\p×\9l\Y\­\Ó"				; hT= 		 	"\L\"     ; `$	  	  		 	 	="\p\sÈ" 		
+Host:[2::0:B:254.8.20.246]:92	 	 	
+Content-Type: 			ojZG~/!	 ; 		t5KJ0="" 
 
-Å>*

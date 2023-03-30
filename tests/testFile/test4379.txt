@@ -1,5 +1,4 @@
-b /n/R-)?O7%45%EC HTTP/1.9
-Accept-Charset:	,,	,		,,	 			  	 	C, 		 	  
-Transfer-Encoding:	, 	   ,  	 ,,	 ,		 					  			, chunked
+t /I?,DCL&%417ou?4 HTTP/4.1
+Connection:  	   ,	   			 	  				 	 ORq` 
 
-ÈX
+v±Ñ

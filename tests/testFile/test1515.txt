@@ -1,9 +1,7 @@
-w //ZUU-/ HTTP/3.1
-Connection:W,lh53^SduULS ,		 		7s0 	,   	  		
-Accept-Language:  	 y-I-r	, 	 	I-j  	;	 q=0.32	 	 ,	, 	 Mz	 ;  q=0	,	 	 ,	, pJ-0-mgQ-Y-J-i-y,  			, H-Q-kiXR0N	 ;	 q=0	, 
-Host:	 		 	 [::1B3E:8.251.28.214]:9472
-Host:	 	7.61.64.40
-User-Agent:	 -`BV*$wJ/kU	((Å\ç∞)\:(\B\X)˜\√)   	   	(\Ω\¶\%) (¨)	(\›\˘„\S())	 		 (?) (/Y(\√\î\^\ö)\Ñ)  	 			(\õ\)\◊Á()\´˜ì\ü)	 	 ((ú\‚\ùÂá)\¥\=\bV\…	\ws(E#)(S\¶‚\ÀÜ\œ\d\Ó\ã–ñ\ù\ø\©º)\Z(\4°\—M\π)(≥\π∫\˘)\{)		  	 	 		 ()		d+/z	(ê)	(\º∫)	Ak			  		t2/~DH8p9	 	 
-am1Fdbk:{ 			 	˜,F	ò» ÀÉ	ZÈ9∂»U 	  			 S’ 	  	 	 Ûf  ©+0p			    	 	 -u	 			 	 		 	íí					|Ö 	 £≈Ê	Á˝ 						ûŸ						  	
-User-Agent:	sr/kH			 			 4/jg^uE.lg (…\E)	  (\Â) 				'D-#/VS (6Kùe()(\äÌ)())  	 			 
+.hI /@%5C(/2gp/y/a%0F%D6*S/5$Db%AAn? HTTP/8.8
+Connection:,	, ,	  				xTu 						  	 ,2   	 	  ,	 		  	 +,	  zs 		 	   			,, u	   	   	  	,	    
+Host:			250.2.1.226 	  	
+Host:	[::4:1:FA:C2:151.237.9.0] 	 	 			
+Content-Type:   7O6/p 		;8Q="\cvöÌDp\ù\´"		   				 	   	  ;		H=$   		;		1R="" 		;    |I~q1sRu=""	 ;G=""  		;qsU="<\¿\gá\p≥\â\rÁ“†"		
 
+z>≤˚ 

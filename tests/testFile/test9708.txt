@@ -1,12 +1,2 @@
-G /h?D HTTP/3.5
-8u:  E) 0Ã		   		UeËöÖo 	  	 ü
-Content-Type:G%G^/RtfH%24-SpRut		 ;_h*H=.		 		   		 			 ;		 	 		  a-9.="\Y\ð\.\ÉNF\ö~\>ãŠ"	 ;		   		jA7uE="";			 	YG="" 	 	
-Referer:V%A7//E)n/8?=	
-User-Agent:	 o&R	 	 ((\u)\ó(\æ\ïrƒÓ\GÎ­\lÏ\Žâ¿\þ\9\mvƒ)\Ó\=\ñ)  (\†\xæ) 
-Referer:  		  //@5.5.2.254/8jA~g)%15%59/    
-Host: 0.38.20.233
-Accept:  				    			  	
-Transfer-Encoding:	  	   	  ,, F  					 		
-Accept-Language: 	 , T-tSw-Q-y-zN-xu68-s-i-KQW-m-G-Tis-gP-pcF-N-U;q=1.,	D; 		q=1.,	 EMq-Ogd;q=1. ,
-Referer:   ne://c%F65:J%7F@210.216.3.212/X5/J+U_f/X6y,,6/pM/f!/8?	 	 
+S /X/C@?Q HTTP/2.0
 

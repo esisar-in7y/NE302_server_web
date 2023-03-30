@@ -1,15 +1,2 @@
-^$0 /%9CfGG%BBxzl/%4E//M1/6Bcdf%6A%1DT&~?%D6 HTTP/3.8
-Accept-Charset:  		 #  
-Referer:				Q://[7A:31:3060:BD6D:3:8:0.86.4.255]/%47k_%05w	
-Accept-Charset:			,		, 	oH+'63  ;						q=0,  	 	  B			
-9^cy1foS!%Xt*JC^: 	ÜM   _e	Á∞   	    
-C:	   ] 	 ”E		 		 èV	 ≤∞ ë
-User-Agent:-'*ZAs/L      		()		 (O)
-Referer:		 	   //o@[::97:253.236.10.79]
-Accept:	 			  
-Transfer-Encoding: 		,		 		  		   	,			Jd$~;   	CBnxIc#`3E =Y 				; fs05R8khhtvI	=""			  	   		;	|aSl35t-CZ_	   = 		 "ä"	 		 		 ;zq	=	   	 LIAC;ZGK 		  		=    			"+"   	 	; 		97 		 	 =					        "∫";   			 53b 	 ="\ˆ¬•\B›œ%"	;jP%a$4i2		= 	"\jr\ìä\Aóª\{\5\+" 	    ;3^s5XlF&G	=  		 	"»\áN6\l";G`=      	"UN\9ö" 	    	  			;t8K!eaiw9		=  "\ÿË"	; 	|RAzjTR&tbjpehla="\b";		 s-6~&+H 	 	 = 6uTw6o ;	     	-h  = 	 		""	 , 		   	 gzip 		,	 chunked, 	 	  	
-X9:	  ∆						QC	  		 				ı
-^L:   ô	 pä
-DX4VMH:		 	∂    	∫P			   ./ ‹v Õ   
-Cookie: 	 	f*CTvqc5SL`G9WX=""; a="}"; LUy1*i="l.6"; 92x="Y~"; hS= 
+' //I(%4Ad/%60T%54Ax-T(/1IP/?%09l HTTP/7.1
 

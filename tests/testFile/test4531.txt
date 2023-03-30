@@ -1,8 +1,3 @@
-x^ //A%9E/s HTTP/3.6
-Host:[::12:C0:A29D:E5:D:49.161.8.46]:292	  
-User-Agent: #	 	  	  ()  
-Transfer-Encoding:, 	 ,	,    	rHNgW|B0c+Dl%; 		 P="¶\–"  	;O  	 = 		"" ;		Yt	=							 ^ 		 ;TB		 ="ª\»\ð"  ;p="mÁ"	;  '_l~	=  sMcE 	 	   ,,	aX'#Wr_~m4&!;		     	 	K^X`60U|qyTwJV = "i\=", ,,	, 	 
-Host:   [B3:93EB:9C:3:1:3:242.2.6.0]:38 		
-Host: 		29.238.44.68 
-Cookie:H0Gb%wI#="X1bTny"; HiTmy=?olE; I2`^n="lQ>b2pc"; |Z="h:KQ2S8(2!q}yPh"; .=""; oe=:j[R_	
+xC /F HTTP/9.3
 
+Y’

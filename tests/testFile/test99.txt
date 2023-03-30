@@ -1,7 +1,3 @@
-R4-R ///SP&1%75%A9v5Z5%1AY:1hc//%57W/agqB%E4Hi:v%40 HTTP/4.7
-Accept-Charset:	 ,	  	, , X8mQLuRg4N`  ,			  	  		,, , 	  , 		 		  2Jla|uGor9bGTE		  	,, 	  		V#4		;  	 	q=0		,	 ,  	 9  ; 	q=0., 	,	   	    			,, ,  f'L	 	 ,$jI^FF88R	;	q=1.0
-C-P:   	î’ M			 
-Host:242.214.5.240					
-Cookie:	m`k="'"; N=Mp  	 		    		
-Cookie:	  #o="f|<d^>"; 3Z_="S"; 6_eqa$4=i; W=; Ij_'N1I=H(1; LUDE7H="XC|ma+"; f="[T|1s~N=T"; e="VZ"; R="-K&S-.W:[+"; !="s%"; HA%=]u#; 3=Cvs#
+Z0 /2r(!IAOSv=)4S//%DDNxzl%FDmG1%3Co%E9-~%00?.sjn9%EFX$Q HTTP/9.2
+Connection:  	&s1DnlzLS				 				  	 				,	
 

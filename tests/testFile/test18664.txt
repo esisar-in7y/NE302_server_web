@@ -1,4 +1,0 @@
-!m /e%0C8 HTTP/5.7
-Cookie:		1taW=+kYhZ::KH_ 
-
-5

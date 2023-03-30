@@ -1,8 +1,3 @@
-U /uR/J%D8U*,A'l//STMr/E? HTTP/6.1
-Host:  7:33542025		
-Accept:	    	 			 F/`VOd;	 sV="ü"; Vi=-%m0-_	 	 	 	  	     ;	 	 	 q=0.,  ,		
-Host:	[941::152.227.2.3]			 	
-Host:    [E::4:3:0:79.139.31.2]:	 
-UI'SE:		x 			 	   			=öý  
-Accept:			 		 				 	
+u /c/x/ HTTP/3.4
 
+

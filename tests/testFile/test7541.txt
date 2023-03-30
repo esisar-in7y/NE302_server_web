@@ -1,11 +1,3 @@
-em /.lU/Oi HTTP/0.2
-Referer:O3.:/%5D 	 	 		
-Accept-Language:	 	 	 	,		,		 , , ,XByK-n-cX-e  	 			 		,			 			 M-8-K-Dq-M-q4j0-s-Y-ehK-icat-U;q=0.683 
-Accept:	q_/-x		;	 	 					  		+gj="\ç"  	 				 ; R="áµ\µ\¡ƒ\ÿ"		;	6u=""		 ; 	skq%wuC="˙\ì\Ê©\¯\ﬁ"  		;  	 	  	6yK!~~3Goku9="\ì" 		 ;	q=0.		,W7Y+/* ;  CVLm+A~~O-H="=\Á”\√"   	 		 ,	q9noBSGQh/bFjqo3y*_!	   		 ;		4Zyv=""		; Zr="\:\™\f\d"; hre=w		 ;		J_="Å\@\å£\å\kø\|…"	 ;				olq0X%RW$S="\ vÇÊ"   	;w%="\±";g$vdL="ê‡\v"  ;  	+="'\≥Ì˛\Ú"    	 	 	 	;J2="\\";	  			 M2Q="¨\?\E˜\®\ÿ∞C¸≈"  ;	   	#=i7   	;	q=0.0	  			,sas1$iY$uAf_m&/* 	 ; +F-l="" 	 	;	 	 .O="°\ñ" 	 	
-Referer: 	/?-
-Host:[10D:D2::58:D1:A:0.238.57.17] 
-IYQXeLZ: ë∂  5&5	Ö 
-Transfer-Encoding:,	, 						   ,  - 	  	 	 		 		  	 ;0Q~= 		"\ú"		 		 			   ; 	k	 	 =	 		  	 	 							"ßV\Î\∆"	  ;  ss 			=	    			""		;  LnwlM	=  		 	  	  	"v"	;	 cj'  ="™"						      	;		 ~ =  	"\x" 
-Expect:100-continue 		 
-Transfer-Encoding:   	  	 	   	 ,	,		 	,	d	;		 	E	    	 	= 	  "\∞äI\Nˆ"   ;	y20		   	 =	"\ ";ZI =	  	"",	, 		Xc~B	;		 	  		*	=		"k"; y = ","			 	  ;cv6%w			 				=	 	   		   				 		 Ld	,	  			 
+f /m/? HTTP/1.3
+Cookie:dl0!=rlb~; `=""; 04d="0r"; +="hy-l`"				  	
 

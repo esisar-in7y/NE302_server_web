@@ -1,12 +1,8 @@
-NfOEJk /T%F3Z%7D HTTP/8.0
-Transfer-Encoding:  	 		 3R|#s^6H 	 ;	 li	=""	
-Accept-Encoding:   	c	,			,	identity  		;q=0, 	
-Referer:e:Y~		 	
-Accept:  	
-Accept-Charset:	 ,	 	 	,,,,_,   	 y;    q=0	
-Connection:		,		 		  		 		   AbV0I.Q	
-*:	 ßÉ   		 	ù 	 
-Host: 		 [::21C0:9F0:0:3:25.6.74.42]:3987902	 
-Connection:		,				b  	
-M5: 	 Œü	o 
+`n // HTTP/9.9
+Cookie: 	 		  		 pD3`Z.U3e7=""		 		  	  
+MJ2o0*t03:  	 		
+Connection: 		B6x 	, ,		 ,   	 z+oq%1, ,*Lo   				 
+Host: 	[vCE005EC97.G]:	   
+Host:[2:8:C:0:A:90:237.146.0.28]:17599618
+Host: 		[v74.Uc]	 
 

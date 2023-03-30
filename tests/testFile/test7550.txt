@@ -1,12 +1,5 @@
-H //S HTTP/6.5
-Host:	 	 	[::5:6:223.9.3.244]
-Cookie:	#Pw="rRbK"; u60N|0nm=""; 5vxtd=m; u="R]IBqYIRMJ:<D"; *="_"; 4h=; zv="Q"; 4uJ0K=
-~F3%:	
-Referer: t/%D6u/=qo'Oa%72fX8z/nc%5B%3B? 		
-Accept-Language:		 		,		, A; 	q=1.0,   , ,	,	 g		   		; 	q=1.0,	 		* 	   ,  R		  				   
-Content-Type:    F/s		 	   
-Accept-Encoding: 		  	
-Host:	[F:D::9:3:8.14.94.195]    	
-Referer: x:/?%81	 
+N /j/%07gRJ%C7!%B4%15/g?%65 HTTP/2.7
+Host: 		  	 8.224.58.232
+Host:  		201.255.215.86:581		  
 
-¼Ü@np
+%

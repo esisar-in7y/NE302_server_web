@@ -1,7 +1,3 @@
-T& /+eF%46%C2 HTTP/0.1
-User-Agent:		  f~H/nDjt+z	 	
-Accept:						
-_j_:  ‘ 	C  
-Accept:		 				
-Transfer-Encoding:,,	,	 			, ,			   ,	,  	,	 ,, 									 	,O_  ;		 H' 		 ="‰aö\O1◊\M\ß\ù" ;		  8    =	""			  ; 	7WR_=pAg5o	  	 ,  ,   
+3 /s%F4://(,n%04%CAP8Yw9E./x//k:mXeP/=,pBvlV9G~T/g? HTTP/1.1
+Host:	[9::5:E995:C1F8:9:5.106.6.46]:89	
 

@@ -1,5 +1,0 @@
-o /? HTTP/0.9
-7:		ö 	 	 	 
-Transfer-Encoding:	,		,			,		,	 		, , 	 		 ,		 	,	, 	 , deflate,			,				 			5;     	k="w"  
-
-*

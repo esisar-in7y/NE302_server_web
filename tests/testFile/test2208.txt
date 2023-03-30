@@ -1,5 +1,9 @@
-3U /3/X?pZT%29PHN%2CiC6LG? HTTP/1.2
-Accept-Charset:	 ,  		 	 	,	  			  ,	, ,	 	 ,, 	  	 ,	 	  ,	,	   ,		  	  			 	 ,  	   ,,  , 			,		 ,	mE9  ;	  		q=0,		  
-Accept-Encoding:TaH	,K,  wdpDk 	  	 	 ,AN`	,	E 	;	q=0.2 , 		 aU`h5g	; q=0 ,		 6fGO_0~LJ%	;q=0	  
-Content-Type:  ~b/4^*u	;	|an="î²"			 ;	&V&HL0M5oOY="æÊq\."	 ;	i="\™"  
+rIxePCmiv`bs //Rp%89FBz?0,:%26N HTTP/1.9
+Content-Type:2/++&f#pf$&UzHPG			 		 		;  		  f=xtr7zY~J 		      	
+d:  			}¯	Ê» ª_	  
+Cookie: K.b="ZTQ"		 
+Host:		 		 253.255.218.94:83
+Host:  	 						 	[::7:2FA8:228.222.133.3]		    
+Transfer-Encoding: 	  	, dLH..-	 		;fj.~EJt 		 					= "\s" ; Z  	= 		"\—\ñ%";  l	 	 	 		=	 			 		  "\S;\ ”@\x" 			  ;	 A="\T3" ; 	  		X#u				 =   		"~\j"			  		;%o6		=		"f\ü\Ã¬\˜\Q-\óê	"	 	    ,		 ,	r5$!-V1Lt	;	  				  $  =	  "5Å+";	E3_b=	 			vA;  Y 	 	 	 	 =		    	"ùhpÛ\x" 	 ; 	5Bhb="\æ\Ã"	;Pvsx*ol="o"	
+Content-Type: -%~/#%		;eqUj|UM7="";2=df;	 				 7Z*16gbcj=MAB   ;    Cz=""				
 

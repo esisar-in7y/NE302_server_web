@@ -1,14 +1,2 @@
-$ /)/$/w%1F%30o=X9*tU9/%59L*/(n0/P%81s//u/l%91%EE//CtWS%13?M%0C HTTP/7.0
-Accept:  	
-Accept:	z/~|97S.rO_cHsYIR 				 	;   X%MuDx4jtJ6!="¡"  					;q=0.5	   	,2/7RS 		     		 		;				+7f="\Â\á†\è"	 			   	 			 ;5="";		|NI="\„H" ;	q=1.0 		,Bcw~%3H8M/*;Kj^r="" 	;phd1="x˛\À\G\¯\¯\¥"  		; e="\√"; 	 q=0.	 	
-n7xF|!s9:  	 			  	 	 	
-gdY!wu:						»  a 	 	
-User-Agent:   6	()				(a\‚f()\¬)				 	 (()	)			   (Á) 		()		 
-Accept-Encoding:  
-Content-Type:	 v/l0mgxc	 ;6'3="\có\{\{\™"	;QcLZfgw=#	;	 	 Za="_\m≈ˇh\é" 		  	 	 ;p.i="Ωê\+" 	 		 	 	;	 Hs9A="ö\Êi2^›\«" 				  		 	 	  
-Transfer-Encoding:  ,,f^-#Kw   	 	  ;	  	    		zIx="&]1\–\‹O";   	 	 				vm=					h# 		  ;	  %08S="ù",	,	 
-Content-Type:  	hbzLbeQC$/I5F;	!n="\Öa6\Ãk÷Í\_"	 	 	;pLJn=%-S;			   ELiW="\‰\~œ\ÉN\£\bry\¢\Q\üŸ";  		KJ!M~q=rm 	;Uz="r,\•\/\J"	;E="" 		; 	YJXU=""		    ;jFw="≤w\%\·O"	 ;c=""
-Accept-Charset:	,	,	,	, 4^,  hVP%CrBQ
-Transfer-Encoding:   	,      		,,			 ,		 	,  ,	 	 	 ,		,	  	   		, 				  	,	      ,				  ,	,,l$u^6$d	;		 'K=		     	 	 	 		 	"É\ú";	 		  ^T    	=	"\mú", 		 gzip ,
+PD /e)id%42hx%9B%DF7/1 HTTP/6.2
 
-%á

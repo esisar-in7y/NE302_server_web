@@ -1,7 +1,0 @@
-^!z!PUr|4gx^A /.=xg8%2C/4/n_n%5F/g11Z HTTP/7.2
-Host:[::0:3D13:9:6:1.135.62.222] 	
-Transfer-Encoding:	, OJsj   	 		,				 n	 		 	;.j&	 = 			   	   "s"  	;.bl   ="";vEc-  		 =	 "\Ґ\*"	;		QS6#=		   	""  ; *P.q= 2	  	;dZK.Gc=		 	">",		 	 		 	           ,  		 	   		   , 	 					
-Transfer-Encoding: 	 !; 	9J&zYzf		  		=	  "2\о\,\}\ј\¶\д\ґХ Їб" ,chunked  	,		_	;2H5 		     	     ="ЙЏ`уо’Љ\w"	 	  		 ;tOC~TF94BA5Pp-v	=  "a\№" 		 
-User-Agent: 	UA    	(Ў\г\i\‹\щ\№ҐП)	   	() 	0/-U (\Х)		 	  		((а)\Р)  	
-Connection:	,,			,			 	 				,	 ,, ,	&w	, 	$		 		 , ,M_yyk
-

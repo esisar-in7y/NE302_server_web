@@ -1,5 +1,0 @@
-G /: HTTP/3.8
-Connection: 	zR,	  
-Transfer-Encoding:, 	,,		kwD$C, ,	compress	, 				 		gzip
-User-Agent:.eN		 ab%~Dg~h./QH^o  		
-

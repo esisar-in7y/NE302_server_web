@@ -1,2 +1,3 @@
-J /w(pjZ/%2B//TDe7%EAt/g//wEx HTTP/1.7
+Jd /+y?c HTTP/1.8
+Host:		  253.255.245.250: 		
 

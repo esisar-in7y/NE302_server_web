@@ -1,9 +1,3 @@
-QP0 /? HTTP/8.6
-Host:			%59 	
-Transfer-Encoding:		,, 		 ,,			,	&		
-Host:    				7.208.44.230 
-Accept-Language: ,		,,	    		 JEjl  		 ;q=0						 	 	 ,			   Ew-6-AFS	; 				 q=0.40 			   		,			  lt-4-A89Xrbg-J 		  , 	 ES-g6liCVTH-B-J-P-J-f-1-TZ-DM  		,			b-o,   ,,,	
-Host:			72.172.106.204 	
-Referer:		 //d9@206.9.197.129
+- //%CF(O~/ HTTP/0.0
+Host: 252.250.55.70:	  		 	
 
-ð

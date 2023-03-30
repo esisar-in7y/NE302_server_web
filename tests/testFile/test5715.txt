@@ -1,9 +1,6 @@
-r //%B3/l//wG? HTTP/6.6
-Accept-Encoding: 	 	 
-Host: 	 	36.129.253.98:306		 	
-Host:':705		 				 		  	 	
-x:
-Mn:   I   			1	
-User-Agent: 	hait!	 (Æ€\d)	
+L# /P%2B/4Bf9%0Bij?Kscs0%39%4D%06f HTTP/3.0
+Host:		 	 				 53.185.118.228 
+Host:	 		[::004B:6.205.250.247]:			   
+Host:	[::A:C:245.2.6.55]:194482	
 
-M
+iH‹7

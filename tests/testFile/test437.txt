@@ -1,10 +1,2 @@
-XY& /-/gH, HTTP/5.3
-Cookie:hG7^13b#="O"; z="q@VgJ"; RTlC^=""; 2ua$="PB86-`"	
-Referer:aUP-og://27.46.22.7/ou%DAD///o%4F0SbKJ//Y/=///%B6/JwB%E4/%A7Q%DDzzEv.N)(/sgE?	
-Accept-Encoding: 
-Accept:		 				 	  	
-Transfer-Encoding:,	     		,	 	 	 	,	,	,,		 	,,, ,	, ,	   , deflate  ,1o	  ; &	 	    ="\’\4\≥\'¡≥";34		 =	""	 	  		  	;	  	q 	= "\ç\’ˇ"	   		;		MC= 	 	 	  "r\´" 	
-7:	ä				 	
-Host:		k'vVfGx:	
-Accept:	 		
+% /nJu//Af? HTTP/1.9
 

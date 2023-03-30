@@ -1,3 +1,0 @@
-0 /%3C HTTP/8.2
-Transfer-Encoding:chunked			  		,		   
-

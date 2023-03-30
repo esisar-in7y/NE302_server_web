@@ -1,7 +1,0 @@
-s /f+%61/-xK HTTP/7.1
-Transfer-Encoding: 		   	 	o,,,	
-Host:   [DF60:5::229.205.247.1]:4   		
-Referer: KXB:/	 		
-Host:	[::371B:8.251.254.1] 				 
-Transfer-Encoding:	 ,				, 	 ,	 		  	y8,	,	 
-

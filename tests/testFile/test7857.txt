@@ -1,5 +1,2 @@
-_.y /h/. HTTP/1.4
-Connection:Q 	,			  ql^		
-3:  	R  D 
-Content-Type:  		V/7lcoY 		;	 A="" ;	4hS="«\r°\R=\v"			   	 
+LCJ / HTTP/4.5
 

@@ -1,8 +1,2 @@
-P /Jo&%20lQE/%9E/?/9g HTTP/3.4
-Host:28.129.172.11 	
-Accept-Language:t-u 	;	 				q=1   
-nehOd|K9: 	 	 		Ö¤  }ø¾ 	 	KÈ  	
-Content-Type:	 1z|kr5/I
-Accept-Language: 	, 	    ,,	 	,    	 fvluH-X	 	 		 	  	  ;	   q=0 ,	u-S-q  ;		 q=0	 ,rBS-f-ZJMEA-WX1bTazg-J-n-9	  ; 		 	   q=1.000				  	,  ,M-9h-j	 	   	, 	MtWIap-whZ-Ll-z-B-Lq7-Z-H-r9-Sx-2yr;	q=1 ,		w		 	;		  q=1	
-Referer:KR:/ 	
+M~i /- HTTP/7.5
 

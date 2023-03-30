@@ -1,2 +1,3 @@
-H /8%FE1c/*V)d9RmS?7,,n%D5KAtT%CA@u:Sp%7F/xH6 HTTP/6.6
+D /////j(//P/_@? HTTP/5.1
+Host:			[5:EE4::2.247.5.27]		 	
 

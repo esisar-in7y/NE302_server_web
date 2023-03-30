@@ -1,3 +1,0 @@
-rn ///qf//x//? HTTP/2.7
-Host: [7C93::D7:FA:C:A:8]	 		  	 
-

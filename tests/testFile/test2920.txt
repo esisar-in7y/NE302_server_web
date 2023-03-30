@@ -1,15 +1,6 @@
-2A!w|`x //m HTTP/3.5
-Transfer-Encoding:	 .A_YrRqz-	 		
-Accept:  
-Accept-Language:     RGPCRF-8Iv-l-N-gwGb-o-0-n 	, ,	 		 ,,		 	,		,	n-l-fg-M-eQk-D-J-c	     	  	   			 		 ;q=0	  ,	,f		 ;q=0.7	    ,	hS-S-w-4F-q-jIaWr	;q=0.73, q			  , ,			    ,						C-F4 	,	y-Z-i-rSg8Sh	;q=1		,,  	 V-fDDH, 	  	 
-x#9yhKU46J:ž	ˆS		  Õ
-Referer:				  //G%5DJ?U%E5q	
-Referer: 	 	%53 			
-Accept-Charset:			 			  		,  	 		  ,   , 		 		 ,  	 ,, |PGGxt	 		  , 	,h1uq-P_	 ,	,  		 ,	,  q4		;q=1 	,	fv4%C 					 	 			,hnGdg1H8xKe		
-Host:  	 	%F3:6  		 	  
-Host:[::255.72.165.9]
-Referer: ///! 	 
-&A7WCG:		 XE 			
-N:	v …j		 	  	  ¥D	 /	 	 
-Host: 	  	v%42%F7%24_ 
+R /.@zT3/~T? HTTP/4.1
+Connection:, 	,	*RVg2$T		    	   		, 			
+Host:	   	[D:41::4.76.253.255] 
+$-*kr':ˆDÁ
 
+:ö%

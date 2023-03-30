@@ -1,8 +1,4 @@
-#'ml /=/?n HTTP/3.9
-+hD`Yc: ò  	 @6ÿ	 	  !Î				ë)  
-Transfer-Encoding: ,,, &oU	;|V#u9= 	"u"	  	 ;hZZi0	= 				"\s\÷\‚8\8Ë",  qSDW1PH3P	  		  					,		,	   		 		s^	,  compress 	   	,				 
-Referer:		 		/?seA1Q9x%BF
-Accept-Language: 	, 		  , 	zaEAy-1 		;			 q=0  	
-Cookie: 		   	   	ksL=sXl|r; g^="}e9iG)"
-User-Agent: in/qZYb^RPC 				(\e\ÿ)   	  *6/+i    	   		(()\ÆŒ()\Ú\Ó) ((£)|úÚ\v\a\÷) 	  (\Jä) (\+\x\ù(i\›\∆\k)\Øá\Ó\`) (ù\√MŸ«)	5S.SXUkOam  (\P\õ\,\Q()\Å)    	 		  	
+o /J%A9,WNy/%9BY/VO,:1Htt?) HTTP/9.0
+Connection:, 				0%	 	 	 , 6	,  		.x	, 	,     		  	 d  ,,5X  		, 	k6VC$Vx,, 		 	 			 	  		HH!  	   	   	  	    , , 	  	
+Host:  [::3:EE:223.88.224.227]
 

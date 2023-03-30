@@ -1,10 +1,5 @@
-na /y80?%51f HTTP/9.9
-Host:161.104.1.1 
-Connection: 		 ,  	,,,		 ,, 	 	, 	 	   ,,	|0,	   
-Accept-Language:	       	 	,	 		 	 ,	 , 	 ,	 , 	,,, ,	,		  		,,	 ,, 		,			 	J-bG-aH-H9j-U-R-A-k-n-HAc-FB	
-Host:	  [vF.:T2q2)JACh$nvg,0+] 
-G:	 	    		+	
-Pp: 	 	  	 
-Host:	[::3:F:306:0.97.61.8]	
-Host: 	 6.46.22.254
+VS. // HTTP/4.1
+Host:	 252.227.241.236	
+qa:	  	 	
 
+y%&j	

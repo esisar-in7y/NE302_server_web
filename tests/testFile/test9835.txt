@@ -1,15 +1,6 @@
-V|'wz /FV%19/%73n8? HTTP/7.1
-Referer:	    /
-Referer:/Jf/JY-%04I:(l5h%B0uvc%83m%83'y%58%32%FC		 
-Cookie:k="C'u"; ||-8s`w+~qa=k
-Connection: ,, a		,  		  					  				  ^,		t	 , ,L5_DfpqYKQ,  Q					 	,
-Accept-Charset:	 	,						,	,OQC; 				q=0			, 		
-User-Agent:nas_/s 	 k  	&/Q. (Ç(ÛF\¿\È\∫\˜\Ñ)'(\¥s\è)()\H)  	 		  		tr/#			()	P&					  	 	(\î\ÌP\y) 		
-Accept:   	 		  	  
-Referer:					 CZa6aED://4we.+X@[vAF.wBweDp3.k]:93//%B7Rq//h9/s/ok/e.%F1%D8/@%D8?,@m%545%789a-RA0.q%48s   	
-Cookie:				ilWI|=z#1; CEiw%X6MOS=":"; |="3("		   		 		
-Connection:		  ,		 		  , 		$V	  ,	 cY ,				   	
-Host:       		4.166.150.9		
-Host: 241.255.4.2:69		
-Host:[268:8EC8::4:6:45.71.156.252]:	  
+K /tr9%32/r%B6%2EEntY6 HTTP/1.5
+Host:		[::36:7:4:29:0:3:F21]:82
+Cookie:	 	  	 	   9Zn=""; |="Br)E"
+Transfer-Encoding:  ,     		, rGiitt*O^ 	,		chunked,,		 
 
+»Zg

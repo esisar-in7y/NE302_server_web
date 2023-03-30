@@ -1,6 +1,5 @@
-!d /$%D5s3,H_%A7T/?O HTTP/5.8
-Cookie: Opz=7Zw+Ah; 6id-2!R#=""; $_Az=U; C="V"; E$MOO=-1t1V*P; 0T=U!m; Byh9e*=<>/}		
-c:	©£ Uˆ[a		 fJ |
-Transfer-Encoding:	   		 			,,	, ,   	  	 ,				,,,			  		 		 ,  ,, ,	 			,	 ,	 	 ,  , 			 	hJ*itrh	 		 ;		 	%e	  =	  	"\`\Ö\¢{"	 		;	'zW=			 "é&" 	   ;	  	  	S$C#mn3	=	"O" ; 		wm9Mc    =		 "¶\í\1\®\‚\©\µ\˘"	 ; 			'O 					 =	$ 		 				    	 ,			 		% 	;		JABp+	=""	;|m3=					  				"fbÚ\ç \ò}Ú"		  ,  	  			Nh;07  			= 	""  ;XfVgq   =		  ""	,					F9  	
-Accept-Charset:	6f		   		 	;		 	q=0.99 	 				,	   	 mfw^wn's23	   			 ,,J|+_	
+u / HTTP/7.9
+Host::044 	
+Host:	  0.252.61.6	
+Transfer-Encoding:  				  &					;  		 -_BR    	 		 =		"û" 	
 

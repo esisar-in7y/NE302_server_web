@@ -1,14 +1,6 @@
-G /!b:a%05DS%93oYv%FD//VP%02//r/n9h//Mc5@%BA%8DDOwI//HV/Uu%CF%F4%6AP0e&D/cXPwg6-5U%9FC%6A;/HF%09/rNB%B7i4/Hej/ HTTP/9.6
-Accept:					 		 		
-!:£   	   			 	  		 		ﬁN ﬁ—	  £k 		 			 ÎµÛq  
-Accept:	 	    	 
-Host:  [9::F:F763:24:4:52.83.227.248]  
-Expect:100-continue  	 
-Content-Type:$/2B;	 1J_~s74L="\8.";   	  		 		Ip'=M2N^-e4eJN-v7Cz6so%8TiKy4sf 					  	 
-Accept:  	
-Ch#$C2d2Nu:  h	¥Ø	 		/w
-Content-Type:	  ZJ/v%  	 ;	rd0RH*2V="9\©";	     4K23!="\oZ\™\o®ô\O\≈\ˇê<\Ø"	 	     				   			 			;PTL=K  	 			 
-Connection:		 			  		,	 				,	,, ,		 	,~fO'jMwKoCGS   
-Cookie:4hK&3-J=; Yx="["  
+n6FC /T?X%F6sLyJ HTTP/1.9
+Transfer-Encoding: S.uB%hbEVm	, ,		       		U
+Host:  	63.208.251.20:000 
+yE:		
 
-ù¯
+ÏM˛’:∏–Ω`˝Á

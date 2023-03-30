@@ -1,10 +1,5 @@
-1_ /S/(?_ HTTP/0.1
-Referer:cqk://Q@K:315487/ok~8c/%7Fi%84%523//I///JSv/?  
-Connection:	 	   	  ,	,		  				, ,Q4Q7rh%VR	,		,	 , W	,, 	   6BzC 	 ,Rm  	 	   ,			 	 	 _	 	 ,GM#'36_x 		, 			 a5o7F69
-Connection:,, ,	,	, 			EeL	  , 	6     	,  	v!srp#`FOG		  	   		 	 	, , %t5V%|AG0r1 		 	 	
-Accept-Charset:		 ,	 		 $^L      ;  	 q=0			 				 ,  ,,   , iB 					; 	    q=0.
-Accept-Encoding:	  
-Cookie:	 	  amEdg="wp"; 0=".8"	
-Referer:	  	//[::1:B0:8:5F:8A:242.160.229.6]//J!5/////%06ufZ'6/A7O%11	
-Transfer-Encoding: ,	    ,	chunked   	,		    ' 	 ,  	, 	,wY	; 	'o6	 =	"\—p";YIn=  		 		   		     "\á©\k\K\^\F•1\-\£\4" ;5g0vz4xdG^= ""			,,  		  	compress 	
+^- /,y/~%C0/1ikf8r%39L(M%59%6A/?$ HTTP/5.1
+Host:		 [::7:5:E:88D9:1:24.35.11.7]:42		 
+Host:[::C:53:B]
 
+F«Ã“Ð®N~

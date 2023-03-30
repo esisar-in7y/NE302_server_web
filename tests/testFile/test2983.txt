@@ -1,14 +1,6 @@
-Q /y%30VW/-nZ/(/hS@Fs//vL%C1/:IZ*%EAWbHlpdj?Z4G%D66 HTTP/0.5
-Cookie:	     	h3W="FMc"; +wfTMst="'Cp"; w6Gf-=""; %I0JVBSrU%peZY="x"; q!0wZ=&D; R=">"; M8Pd=uz<:; .FrAaX-_=X:; PDcsf="S" 			
-Content-Type:4!/M`G7o  ;&_.G=$X	 ;   	 		  	 			Hp2="\ãÛ";		z^c=""   	;		 ktcvaaE="" 				  		;	o!MM5ob#="Ö" 	 	 				
-Accept:		%F`Fb/c# ;-Bjz!v="\u\Ÿ"		;	 	q=0.163  	 ,~tr~_/*	  		;			 	5="";	  Fz!+4'="\ƒ½ðyÔ}\	\ÿ4" 	 	  	 	 ;   	   	  	  		 		 	 WMTj2="\x\~\³"	;  	Z="Ê"  ,	 
-Host: 		 [58B::2:D:E2:0F55:219.1.104.172]  	  
-x0f:HéÄ	\t		ry¸ 	 	
-Accept-Language:			 			,,		  	 	,, ,,  		fZD-a   			 ;	q=0.			  		
-Accept-Language:	 		 		, 	,,							u,  uU-9 	 ; q=1 , 			 		  	 	,	 ,r 	;q=0.	,		Fzbp-7M-Nn-S7rX-4fb-Fi-tdP-BdA-r-P	,		 		 			*,
-User-Agent: 		'2 
-Content-Type: 	 j/Mkvmr			 ;			D.C="c6";	%q=""		;-LI0$kwQ="~ö\tž\·÷" 			; yZ3*ytL$B*Hmkrm=""		;  	K9HO="\2[‘\«c\=„h"			;	Dycb="\c€\r\5\Õ\";			SBHiN="I\n¥i\ \½Š";	#P=Ym8X; 	$j&=""		 ;	 +="=—"	;	   			 lFm3=" "	;  n*l="d\ƒ\o\ð^\Æ}\™]\Ê\œ\û"
-Referer:  )).2	 
-Host: :90	  	 
-Transfer-Encoding:, , 			,,,	b&cZu8Nt5*`	;	 	 	G	=""	 						 ;	Yf      =  "\4o\j\ÚEÞ£–"  	; 		 		Wl=   	  	"\Ê"  	, 			 	C	,		Bg 	  		, V'|BNax	 	;	'Uv 		  	= 	 "¨Å\]"	;	   			 	K9  	 	 =	   "?\ì&-j"  		  ;	0=	"\@äb"			 ;    lfn#Kyk	 	 = "" ;TYR5QX'	 	=  "®Í\Â\²~"  	   	  ;	nGP="œ0";8ay2U5  	= 			"\\¶\`ü4\a";O= "Á";			   	 		 	  7vyk=		 		 	""				   	 			     ;CEa  		 		 	 = 	   "\¥"		 			, h&%5j3	;   N			   = "",				 	Z`yc1SZCR ;	   eE				 	 		 	 	=			"Í\?";	  		40Ocg =  "",,Cy2Scn			 ;		 	 yP%^tCn		=	 "v"	 ,    
+'c /K&Hd%F8WF%15%5F0%5EW$ HTTP/6.7
+Transfer-Encoding:,  	  			l	 	; 	 	'IqN= 	gLX;  ``.82Uxg.%0+bE-	 	 	   			  	 	 		 	 	 =	  		"" 	;mj8uJ=	 	  "\x"; 			 	6W0ykfNE+	   = 	  ""; 	B= "\¶" 	 	  	;		gEk8!d&M 	=		  "\	\©\”åÕz"	 ;			 +FFr_*m        	 	 	=	  ""		 				 ; C&sSN!U   	 =	 				 "\!\Ù"    	,,	 ubQb_ 		  ;Ve%  	=	 	"";	 	c="" 			,   			Z%|F9;`!%EzNxWm=""  		;	 		 CZLhP=			"9‡\¿Ë\ß\B"; CF	=E;	   				 	6  		 =		"Í"	;	W7FG0po="\‘@ï" 		 	 	, 					  , U		;3  =	 	  		"]"				  ;Oi		 		  					=	"´"  ;ni	 		 = 				"\G\ûa\épý\Â’ƒ\@\{"	 	,_GhL   			;  $#|azvP#J$="	\Äl\ð¢" ; S	 =  "\<"			 				,	 *hC 
+L: 	Fw			  	 	ïz		    >” 	  	  	… 
+Content-Type:fSXB/dN2;  	 0W="\=x”Lå'+A4J" 	; r_Y="\è"		 ;	 `=""		
+Host:%E0:141
 

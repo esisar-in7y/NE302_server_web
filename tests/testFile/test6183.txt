@@ -1,7 +1,2 @@
-c' /@&C; HTTP/7.8
-Host:[5::D3:51D:A:E400:FD]								 				  
-Accept-Language: 	,	  ,		, 	 ,			S
-Connection:j  	,	gI&`    ,,&x+L  	, 				,	
-Transfer-Encoding:					 						  ,			 		Gwg2i 		 		   ;	Gzy	=	      	"\Ð"  ;	$6^Em		  	 	= "\y\Þ\¾"	  			, 		 	 	 	  		s ;	Y2Qi=		"õ‘/"		 		 ;	   I =  N5Ts* ; 	O	  	=	"\	\$\…" 		, dubF$a	; 	 	  l 	=	  	""   	 		   ; b=	  					 "p"	; 	UR3K	 ="\–\â\í"	;	 		wL=	 "-l" ;	m="ÎÈ\m"	  	 	 	 ;	Cj		=		  					 	  		  "" ;				U=		  		"" ;wm    = 			"K" 	     	 ;		 o 			 		 =""			 	 ,
+I6TS3 //-/XW%CAHc//%03c%68%B3v/%AF/1KBDkBTP-5D HTTP/2.7
 
-0

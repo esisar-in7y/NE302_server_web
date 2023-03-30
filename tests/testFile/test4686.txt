@@ -1,4 +1,2 @@
-4kEYeat //V?J HTTP/9.1
-Content-Type: 	U*j6y/e
-Host: 				209.28.253.214	
+* / HTTP/5.3
 

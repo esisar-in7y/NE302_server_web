@@ -1,6 +1,0 @@
-h+&i /yo/Z/&,/C HTTP/1.8
-Accept:	 G81d/OAxe+;		  	q=0  	,,	 	z/+F			 	;	 	 	 J+T5-x="",nrYYYFvlil9JY/*		; Fsn=""	 ; 	b="Lƒÿ Ã\¬\õ";	vK2_=y	  ;    &ID%=iDy`kkNV7			 		;	  	 U13QwXa="~"						 	 	 		; 	 	q=0.  	
-Host:158.0.78.26  					
-Accept:kwkF_/* 	 	,						  		, 	 	,		 	 	  	  ,		 #/&q			 	  	 	,		
-Host:	[::2:D:26.142.1.22]		   	  
-

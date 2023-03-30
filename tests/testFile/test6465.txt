@@ -1,11 +1,3 @@
-piudGDA*2 /Pt/a.a%6ECR? HTTP/8.5
-Connection:|	, 		    	  			
-Host:	   		135.6.9.139:5437
-Host:[::364:A:4E7:BE9:89:3.237.251.135]:655
-User-Agent: 	  MzX/^|KPOQ			 		((\Å)) 	  		  	 (PÜ	)				(\¥\4\2)	
-Transfer-Encoding:      	, , ,			  	,			  			  	, 	 	 O	 		 ;   			 		 0E9E9 =  	 "\Ž\–\Ô"  		;	aE 		  	= "9\g\š!¢" ,  		A|5_p.lwXU;	|	= 	"\÷\ÿˆ\×\¹1ðªuù\ƒa\Ë\®\†Â\¥"  
-Connection:  ,pe 	,			,	, 	ohVtdlC,  
-User-Agent:KGOEH 		()  		(-Lê\¤\½e\Ï\¶$~\ùY(\$\¹è)\t\ñ)  	 sX/D	(¡\¥(\}\z)—)	 s6R!H/r	 	  			   	
-Host:	 	:2 
+i+ /7/%20%0CL HTTP/2.2
 
-Z)_
+gAe

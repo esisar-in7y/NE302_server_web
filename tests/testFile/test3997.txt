@@ -1,7 +1,3 @@
-C /%F8os5/_/=R/4/x%AA4C4SA6~/r@Pi7/h&&%DA%24Se?e HTTP/3.4
-Host:[::224.5.127.177]:8779 
-Content-Type:   	F8Maeh/3gCyRHx|Q  			  	;I%&m="kä"	 ;HrN%="" 			  ;	 		ieOY="$\Ïa\Ö\H\¶"   					 	;ui=""	
-User-Agent:  	  tb	()  8q-	  (\O) 	   	()	(\ ) 	  4p	
-Transfer-Encoding:		 ,,,,,  RhOeu;+fzE%U_0Cj~`A_Wgh+  	=	     	 "ùÕ"  ; 	e$lV 			 =	"­\t"				 ,	T    		 	 		 	 	,	 , O 	   ;		  	7lOi5B2C	 =  	 "\L\K\kU\>Ð" 		, 	gzip  , 
-Referer: 		//%A8@[vDAD.-]:456231884/w/T7I?5	 		 
+2 //CJ/%85PRz9h-h%11:%2D2xC%5E9C%0Da/c/X-/)?T5 HTTP/4.1
+Transfer-Encoding:	 	  	,  	,  	  	 	,	  compress	
 

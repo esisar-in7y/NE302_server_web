@@ -1,11 +1,2 @@
-+ /?+C HTTP/8.0
-Connection:			Iil!j		 	,   		,	  J  	 ,	     		 		,1	
-Transfer-Encoding:,	 	 	 				,	  Jqp2Gg  	 		 ; 	    		 				 		  	    		 	 	 		     	 	 	zmJ8IpATJx!   =		"	{Û\»\ó⁄"	;	E	=	"å®\∆\¬!\8$",
-Host:		[::241.1.7.1]		
-Cookie:     	sE=Uq~ajB]c0; %pHxL9.="Y:"; `CWs="+n.0$l"; I-z=")" 	 				 					
-o: ˙		 					tÊ 	;Œ		    		&ı   	‹ 
-Transfer-Encoding:,,	,	   	,	 ,   ,	, 	 		 	   ,K;	Z= 			"u\ô";				2h		   =   	  		 	 	"" ,, 	  	M+ 				 		 ;     	 	+	 		=	  	  		  	"ò";	 %1Rgo.d		 =	 			"\˘ó"		 ;		$CLo=	   ""		 ;		V=	"\›" 		
-7J+: EC   
-Host: 	    			  [::943:9761:5]:570286
+GCTTD5iz /%96F/Z.-m&*H*o%2Fzifh/T0Xf%48?/i%6A$ HTTP/6.7
 
-çV

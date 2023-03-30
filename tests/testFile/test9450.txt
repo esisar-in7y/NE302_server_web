@@ -1,3 +1,6 @@
-QG /z:%30//8/Nt/./X%1C%5F/k HTTP/3.7
+* /b1Y HTTP/4.1
+Connection:		 , ,		,	 ,    	, ,,,	  o				   
+Transfer-Encoding:  		 , 		 ,,	 	,	wg, 	  		,,    		 	 	, 	
+Cookie:QL=c<#	
 
-y0
+]

@@ -1,9 +1,9 @@
-D /%84~k//pgZ?r5 HTTP/0.0
-Transfer-Encoding:	   	    		,	, 			 	,	,!1 
-Cookie: ot&Nv=]U&; nv=|; OlTwWn="h{"; .y5L=e; R8wETy0=""	         		 	  
-Connection:	,		  !BST6Ni
-Accept-Charset:		 	 	   ,		,   -I	;  		q=1
-Accept-Encoding: 	       
-Connection:  ,,,	 	 	 	 `NJf , 	 	 l   			     	,	   , , 	8,		 	 0			 		,jIpFAR 
-E:	ª î~		  	 âπ	,hÏ  		ô 
+g$Yt|nhmhvS*6-KB4b /bc(%71/RNBY&//3G/J HTTP/4.3
+81F5lG:/ 	  	 			?	 
+Cookie: 	 		     	   5+A=; B$`j`OL="a{*kCXy2_z&"; XI!d6on=-; mWhhwA=lcZ.; u9^2RG=; #bv="Udmj"; a="/"; I=""; L%tys="(tEX*"; v="TGf8b" 
+Transfer-Encoding:,,	, 	,,   	,, ,,		     	  				, 			d	, deflate			,				  	,
+Content-Type:3F5d&k'aEeK/%				 		; 	   fE="";			        	 %I6n="\8q"	 ; 0|%R$_FU="£" ;		 t+XCSWK60*!u1-tmC="{"	;						 XE="\/"	    	   
+Host: 			[::0:1:75B:9:C779:218.34.31.5]     
+Cookie:		  	b3B="DU"; Rcb*=; IpY5!qJSu=qhX; *L63+Ciy="I4E"	 	
+!7'mgl+UDE:	   ê 		  O-ó 	 			 3ﬂ	 
 

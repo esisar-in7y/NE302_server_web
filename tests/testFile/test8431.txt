@@ -1,7 +1,5 @@
-OAzJE#~_ /v//O./HL/+'?tpR&%99*Mtk@s HTTP/1.6
-Host:				 87.57.224.49  		
-Referer:	/ 	  			  	 	   		
-H:»Ç7  _
-Transfer-Encoding:,	 		 	,			 		 ,	 	 		      ,,	 	   _tn				  ;		   	  		     r-&3+M=	 	"\9ù"		 ;	iV2	 			="Ô"  	;j'H 			   =	"Ò" ;lPXc.	  			  =	  	 		""; X~~kw	="\Ω\€\Â\g\°\,K";	!'f#6%rT   ="Øá",		   ,	zB`#S 	 	 	 		; 	s05 = 		"é´\L˜"	,	 T;   `sZ 		 		 	=  	    A   	 ;  o	  	=	   		"∑\ß£"   ;	 	 	x1*l|4lFKLfk59'UXGs   	 		 =	 	  n	 ;3pqZuH		=  		"\œ\¢0\Á"  ; p0I#     					 	 	 	 			 		= 	 "Î\K/" 		 		   ;	  	 LtcZIo+Dz  	="" 		
-YH8A:		  			
+-w /?PMTP%1E9 HTTP/5.2
+AXe:
+Host:		7.147.8.201:
 
+„<

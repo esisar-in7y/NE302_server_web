@@ -1,12 +1,3 @@
-HqsK /'%9DgLT/&? HTTP/5.6
-Cookie: 3p=""; tNc="J"; S="{nhmYXU@q"; 4TL=  
-Accept:Ns/* ;  	rVteyDKdpi="≥\„∂≥\´6Ä\È\ë\rå\Ë"		 	; 	-="\ﬁ"	;  		&x="L"	  	;  ss="o\“2AO"  	;1t'A="€"	 ;Q7=Ig;q=0  			 	, ,,    t|/*	 ; 	 lM74="…"					 			;	C9%="\É";#e=""; 3Pw=""	;6Bvz="\¶'\E\»\{"; L2m67P&Pw="\¯\d/ù\»" ;  			  	 	KJX=""	 ,  '6/*	 	;   +f0E.m="ú—§\V'Œ\9\]\—ß\iÕÎ"	 	   ;N=""		;q=0.			 	 	, , ~N/''&9rB6tjM   	 					 , 	  	Ds7q/*	 ;	&&t2T=""	 ;     		hoqOi_EbD="ÿÈl\Ó\i"		;		 	#yxShwR&J%G5J="",	   ,  	 ,  	EOf/*	    			,				, 		, 		OB07#/WHidGdJwv    	; DDe="U";	  	  			X~F3!kvM="\c" 	 ;	QA="f≠" 		;  	 					Horg$c="\⁄e\ÿ"  		; MtY=s3'			;  	 RSz="\Û\Ó+\¸\Å‹\’\¶\Q4"	  ;   				q=0  	 ,	ka/* ; 	 	  	    	  q=0		     , U/sy;	_=""	 ;	q=0 ,	 Hw8/* ;i11W="" 	,  , hDU/+		 		  			; NDu="BR"	 	;	 					  GQ!~~=l  ;    76Q="Öï“" 	 				;	 		6kH8YFcVojq#72V8Ux=R3eEAKh 		 			 ;   		 	xZ4QkZB="\£\0\_\¯"    	;	%fqF=C 		  	 	;4VhQ="\éq\*V@"		 	
-Connection: , +, 	,     	 ,			 T_K 	,		   		H	,S2
-Accept-Charset:  	 	,	7     ;		q=0.,,	z			
-Accept-Charset:  fexy8						   	 	  	  ,   	4 				  ; 	 	q=1   	 , 		 ,  		  	 	 ,    	 	KL; 		q=0,	 	 
-Content-Type: 	 &4-4sOl/m;		  	yWx="m™≠p\ú";		KnzG-rq`=""	 				 ;  	 		  	 	k-AQaMH=B 		 	 			 ;  O~r=","	   		
-Cookie:  		 0I="h"	 		
-Accept-Language:,			  Qd-EV-qQSO-q-J ;q=1		,			,d-TJ-x-0-o3QY-F-Nq-5	   ;q=0 ,	 				aRv-wR,nz-5KA4-DGH	,,	 Mq-vw-Ma-Z	
-Host: [92:48:45::CB:5:242.222.31.206]		
-User-Agent:		 		a96fg/i	(n) 	(\g\z\D(\,ò)) 	()		 	  	(\\(¶)#î) 	 	(\l\89˛()ﬁ\TÑ\ceÏ)
+| /sk%E2(x3=/%C5/8m/k&/8NL9sgfK,/O7v0H?t HTTP/0.9
+Host:		0~:								 		
 

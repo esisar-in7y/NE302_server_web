@@ -1,6 +1,0 @@
-` //%7B%63CLhA%63%B0.56rh'%AC/D%E05%49K-F&7y4'3?! HTTP/3.3
-Content-Type:		 		B/jZO	;%4="Ÿ\D\5"	 
-Transfer-Encoding:,	 ,  	   	 	chunked		,, M 		  
-Connection:,	 	 			,8  	 ,0ZA0 ,	  	 	 	 		 			 					  ,,	 	 &8, ,
-Content-Length:3854
-

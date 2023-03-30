@@ -1,3 +1,0 @@
-R ///, HTTP/4.9
-Accept-Encoding:D;	  q=0 	 	
-

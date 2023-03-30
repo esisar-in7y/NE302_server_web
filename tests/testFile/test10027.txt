@@ -1,3 +1,0 @@
-OMkrol /@n5DF/iy? HTTP/1.2
-User-Agent:			  MIdE/t
-

@@ -1,7 +1,5 @@
-t%kke9nR& /%CE(6n8SmW%BDL/? HTTP/5.5
-Referer:	  /?7pAG	 
-Host:	  			[7::0E:B4D:80:0519:3.5.3.224] 	    	
-Accept-Encoding:,   			 	 	 	 , 	,  	0-q		; 	 	 		q=1.	,		 identity;				 q=0.34	,_B	
-Host:[::E3D:D3E:1:B547:8B8:8.203.3.9] 
+t /9* HTTP/5.9
+Expect:100-continue	   
+Host:	 [::F:AE:0:02:177:2.238.250.229]
 
-ปw
+จั!

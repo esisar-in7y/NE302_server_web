@@ -1,14 +1,5 @@
-mX /wm+x%12t/%94k//@ HTTP/1.5
-Content-Type:		 	p/+MKoM3V	 ;&fxT="–\¡∑\Û\ù\<\‚7\f†\•3\ì";	 4=""  
-Host:  [v5C221DE3.Y]:5
-Accept-Language:		 jVcb-n-A-k,	xB-DP-gK-L 	;  	 q=0., 			   
-Accept:N/* 	 	 	;rkSU="ƒ" 	 ;	g6t_=%  	,	  		 		    &daR/* 	 	;	q=1   ,sZi/&z  ;q=1 ,
-Host:[::25:3C7B:9.31.184.12]	 	
-Referer://[6:AA87:5:C:F3:6:80.226.73.49]:17//@W?%FEk
-Host:			  :2779
-Host: [::6:96.20.3.224]:775 	   
-Accept-Language: PP-y-T ,	, T-0abOqTjf	 	, 	 	      	 	 		 	 ,	,		, 	,	 	
-Referer: 	 	//E6%1Bw%B9ks*q:9/(7//ViA%AD%2B!/q/z~vN/Wqx/DLoAOy*&8?M%37   	 		 
-Referer:h:/		 				
+f.b //? HTTP/7.0
+Host: 45.171.229.2:97 
+Content-Type:		 	  t^y3|!aE/Y; 	 	jJ5="\W\≥\U5>Ä\œ\ÀÑD\Ú\WN"; 		  	 V+6="\V\Ô\}\„\&"
 
-:X
+

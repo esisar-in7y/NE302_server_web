@@ -1,9 +1,3 @@
-q /dJ//F/%5B//%4CYz/Bf%5F HTTP/3.0
-Accept-Language: ,	CR-FG-w-M-j-T,	   bSp-vXq-H-f  	  , 	Qs-x-F-J6-Jo-U-M-g-1YQ		     		  ; q=0		
-Accept-Charset: 	 ,		,			,   	 ,,		 q 	,	 ,  	 				 	  $vV51G			,Y&		  		, 			
-User-Agent:      	xI 	 	 	()	 	   (d) 			 
-Host:    P~y-!%FFG-,6:1474 				   			  			
-User-Agent:  			q/J~1	 (í)   			((\µ))
-Transfer-Encoding:		  ,	 5~84rv; GB!	 =	 "\f" 	;	    	 	N&= 	 "\ç=Ù2" ;	   	Iul6				  	= 			 "≥SµΩ\˙";		 		 	T 		=	 "\q\#\`w\KA\_\®"	 	 ;  	 g	 =	EcpUP&4D|~Ls   	    		;*6+I=		 "\N"  			  	; 	Ob.1Ag9P	 = "{ò\í";   	0y	 		 	 	= 	"Û*UNt\À\F!";#pjp+BlQ|yVS  		 	= 	   "\^\Ê" ; 	p	=	~4u'v~0s	 					 		 	 		   	 ;   e	 =    "¬\ºØZ\ùéÿ\Ÿ¿";  #Y		  =	"\‚X"; 		  		XI~8Up 	=   		  	 			 ">•\Nå\X\y˘"  	; 	 $h'dWnNLAWjW!'LN	 	=	  .Evl#q	;0AT'    = 	"\ê"		 	   	,		
-Host:	[::44:3:4CB:4:A0:1.14.225.244]:03
+r^` /I/V3 HTTP/2.3
+Host: 	[vE86A7.-fYK]:2
 

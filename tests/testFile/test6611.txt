@@ -1,9 +1,4 @@
-PP //%BBwC%F1%33/!R%A32$;_/T:FA?6%4C_ HTTP/7.8
-Host:  		 	 [A1:D5F::BB:150:A2:1156:45B3]:86
-User-Agent:		 	  B%`%&cq 		 
-Cookie:  R="lpEuXo^z"; .V=
-Content-Type:			CGVkAU/$J ;^Vfj1cRdz="\P}jDB\†\dÒ—\Z\¤\&"					 	 	   ; 	  r7J%0=""		   	 ; 	E="\¿\9\›\Í\?\ð\¯\‰" 
-Content-Type:  	djab/H+CKo9s# 		 		;				 bIrYz88="\©" ;					 		X="\Ñâ‹î\[,\BL\©"	 ;`kZz%^="\l\È\IN\‘"		 	  	; 		  			 z5tB="|" ;		1=Wp#;	Sr`O="¶\ö\C";	 1_k*+="\P"	
-aKhcW:  	
-Transfer-Encoding:		compress	,	 	
+|^L /x//Cn&mR8(zsX/?L; HTTP/6.3
+Expect:100-continue 		 	
+Y+`:	 Ï 	 	 
 

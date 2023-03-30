@@ -1,6 +1,12 @@
-KL27LHdP1-8CbYB /W3 HTTP/2.0
-Transfer-Encoding: 	 ,,,,		,   		, 					 	 ,  , 	,   ,			 	  ,		 ,N ;  		   	O|b6t1  	    	 =				"éä\‹\ø\(ß˚"	; IO=",\‚\“S\ô"    	 ; QRE	 	 =		 "\K"  ;Fnil  					=			 	"\f\Ã+\tç"	,	 , 		4XE,	s  	 	 					  	; 				 c  	  	 	   ="\ˆ" ;    xX  =	  		"j\dÔ"
-Host:[4CB::D:3.252.255.212]
-Transfer-Encoding:	,dwG		  	; 	Ww   	=	'~M ; 	 dGlX= 		 		"\ö\d\i";  	 cE  = ""  	;3mZe 	  		   	= 	"\ﬂ\ü‡˝\Ú´\ûM\Ÿ\¯";	PKu3%		  	  		 		=		+V.A^B  		; 	M	  	 	 		=""  			 		 ; 	 	 				RQ$qf-z*y1 =   		    		 "\9Aï\Ê";		 	  	 	  	 .`					   	 	 = 	 		  "ãR\©d";5k  = 		"≈"	 		 ,	 compress 			 ,  	 	, 		  		 	
+.auu /AiZB.Gxc.eE9/Y?R%0Fu_%0D%7DO HTTP/9.2
+Host:[3EB::73CD:68:CAEE:252.235.5.164]			
+Host: [::F:019D:F31E:381:121.82.69.255]	 	
+Host: 		254.182.3.2:6
+Host:	 	h		  		 
+Connection:,	   2H  	 			 	  			,qQ 				  		 , 	 
+Transfer-Encoding:  			5S 		;S' 	 = "\÷";		  Dl-	 			 	=	 "C$⁄\Á\æ\U\L"	  				  		;    	R.+    	= "\/çï\Û\'" ;L				  =		 		 		 "k\C\Ç&h\z∂\¥\æ:"	,M		 	 		 	; !j		 	=				"<˚’é\-\ô\!"	  ;   	 5DQy*Fz	 	  =	  "";6COKc7Cq0|~mw#Ln#o#ZDz2   	 	 	 = "E";  		m_gy="V\π" 	;   xQ&0OP=	   TS	 ; e%Rm^	  		 		=	""		 ;%p|8 	=	"\]"
+#LP:	 	
+RWY0: 	 		ó`˚ 			{‚ 	 ˚πâ∂
+##5:	 ó	‘äÕ 5  	  		
+Transfer-Encoding:	 , 			    	,,,gzip		 	 				,  	,				  		  				 	          			r		   						 	 ;			 aI+=	  "\e" ;	  	bXzoDg	=					 		"";	 	~*j_lW&_=	""    ;AXQF ="\ìp~\€n\·\ˆ"	;y+gh8|b=""  	  ,deflate	,	 GQgI   
 
-ãV´

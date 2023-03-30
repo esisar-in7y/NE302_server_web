@@ -1,15 +1,7 @@
-gOtdm /E HTTP/3.6
-Cookie:  				    		R7t='~zX; KO^V=""; nc5bxR=; j="uo"; Z^F=; %+QrX="s`"; 9=7; G="n"; IbiKW-="'P1"; o="~}Y=" 		
-Connection:	,, 	 	,	   		 		   		 !$cE	  ,,l ,	,  zg_|VAB-Tk1,		gigBUB_H,			 		4a			  ,   	 g				 ,, |' 			 ,
-Connection:,JKMb		
-Referer:	/	
-Cookie:	5=; ub_=sc~q; P#Cpl-u~i="Np["; Cj|=3H6ak8W; w="HbY"; JnqpzR="qp@Srromt'"; HT=""; ~%$PVZuC=B; U=bu  
-Host:	  %90%09P1n%CE
-Host: [::C7D:1:211.43.157.234]			  	
-Connection:,		 ,	 ,		   	 	qMSv  	, 
-Transfer-Encoding:,, ,	 	O;%hF2EI*		= 	 	 	"Ü\$\E"		   	 ;	o   =""  	;z			= "\X\•.\[o\7\s"	 	 	  		     	   					,  			   	E	 	 		 	 		 ;Af-.KB	=		 	"\<†"	 ,  	     j_  		 	;	DGGn6LPI		 	  	   			 ="\ÿ\C™\C\ælÞ\%"  	 ;	CC#pCaKKA	  	 =-	 	   	; T'5UO	=			"Þ\$\\\²"  ;a_B+.$   		   			    	 = 	"\ø"		; 	 	  	 	 	$w=	""	; 			-Ej71Gc83T	 = 	"",		   
-59U:     	  	
-Content-Type: 	 gS9sC/ArGieXh6 ; u=""	 ;		   		QB#=""
-i: 	à   ÀÆ¦		 ›ê 	 032 é  	
-Connection:,	, tzaZY,R6x_	,				 +i,, e6CG1
+*tu /*iI!z/diKD&*//+%3FT%9B%FFiE/n/-SH//!798//Coa%62/e8U? HTTP/0.2
+OlC: ¥	
+Host:	[::A6:5:239.228.85.117]:30		 	 		  	
+lNu:
+Transfer-Encoding:	,		 		 , ,,	 ,		,		,	,	,, 			   	 		 			%0`					;  		VsZaZ  =	  U		  			 		   	, 	7B	 		 			; 	  %j7k_UH=        Q0WCcx$fQ	;					 	  !=    "\Þ" ,	 		 a.  ; Zp=""		;DW		= 	     	 			e~;e=		"ø"
 
+³

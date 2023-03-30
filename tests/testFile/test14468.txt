@@ -1,7 +1,0 @@
-X /?~ HTTP/0.2
-Expect:	100-continue			
-User-Agent: E.5lx/Yex
-Host: [EF:5:0E0:E143:ACBC:05D:250.251.135.85]  
-Accept-Language:	  ,	 	  		,S-I 	; 	 				q=0
-
-ÂúËÚž

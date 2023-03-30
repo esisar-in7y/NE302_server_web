@@ -1,9 +1,0 @@
-x82R //y/;l7/aZ5ss/%76HWGJ/f@/nc/%15c7J8bD51yW HTTP/3.1
-Referer:	m://[8E::2:5:0E4:210.9.213.72]/y/l;/*_U?I		  	
-Host:		 		 60.1.2.210:6150399	  	
-Accept:	  	     
-Accept-Charset:  	b ;	q=0.8 		 	  	   	,  	vNBm3 		 , 	o9Z1hLB;q=0.93	 		   	 	  ,k5,	 	 , $KSL ;q=0.	 , 	, 
-User-Agent: -iA/4Q`2E^tc&.RU4NfH8j   
-Referer:		 //[4BA8:0:E::F:250.77.240.251]:6926/W1v%91/v/b$I//2b? 	 			 	 
-U:
-

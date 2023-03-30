@@ -1,8 +1,0 @@
-'&87 /W,/?%FD HTTP/5.5
-Accept-Charset:	  , HSMrk`0~	 	  ; q=0	  	 	 ,		 	,	* 	,		 			Of	 ;q=1	  ,TU';    q=0.13		  ,PC60 
-Connection:, 	 	lmUk
-Expect:	 	  100-continue 		
-Content-Type: 			F/XX;	  	  	 	n="\º"
-C:	ŽQ	 						   	×l® ~ý		  	 	   		  	 	  	šY P		
-Connection:		 ,		 BJvbXf ,	 
-

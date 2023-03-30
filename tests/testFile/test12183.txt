@@ -1,6 +1,0 @@
-RU /&7hC HTTP/6.5
-Accept-Charset:	  			 ,,, , 	   			    ,	 	 ,  		,,	 	 ,				, , 		  	 ,2	
-Accept-Charset:  		,,`n0X_'w|M4b	 ;		 		    q=0.	,   , 
-Accept-Language:	, 		 			  	, , 	  s  	 , ,				
-Referer:	VI:	 		
-

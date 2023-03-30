@@ -1,7 +1,4 @@
-fpb& /.8p%42g HTTP/9.3
-3M:  	 
-Transfer-Encoding:	 , 	 et		 ;	    		2.0eic%=""     ;	   		ur	   ="\z\›\5" ;   	Oc 	= 	 ""
-YMyM8MaXYN_HC%w1:	Å		  ˆ&
-Host: 	250.248.9.8 
-Connection: 	, ,,,,i		 	  , 	  ,		  2W_Z	
+%XbVY //%534Ug? HTTP/4.7
+Transfer-Encoding:  , ,,  chunked						 	 		 	, 	 	   ,, gzip ,  	 CF-g4tr+K;			  			'oWDU 			 	 		="!" 		;   EWvpN9+G 				=  	"\£²"				  	;+mwTTGc%	 			= 	 			 "\Ÿ"	 			 	 ; xop2B71 	="M\[„\k(¤©\T";							  	Kk	=	 uvC	 ;	Nhq =	"\Z"  	 	;+W!	  		 	=	""; 	 	 oQ 		  = ""		;_%DaX 	    =	 	 	 "\Ež\—\f\RW!\Ô\;"; nV^o =			 c~7qqS_JHzHKsHa; 	  OhaEmxNs	 = D8rJaHLF0um 			;nxr!9c0	=		"\.÷\fà" 	;i 	 		 ="\k¤\*J\´.ì"	;$v	=   'k9i	  		 ;N 	= "\ƒT-" 	  ; 9   			 =  "\>\ " 	;	 		Lp =	 	  "\B\P";     	  		 						S08f_97*Ki  				=	"\ë\ë\°OR¿\X›¥ˆ\Ç*"		 ;		 	 RBBOz	=		""  	 ;		 MG	=	 #IHMPd;  ucGOa&Z=.~`USO   , 
+Connection: ,, 	 N 
 

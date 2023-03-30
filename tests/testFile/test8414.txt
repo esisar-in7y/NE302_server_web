@@ -1,8 +1,5 @@
-` /EC HTTP/6.9
-Transfer-Encoding:	L;PB	 	   	 				=	  	 			"ù\ºRg\±\H\1\õÓ"; p9t$JLi0  =		"\Þ¦¡\:",,CcQSi
-Accept-Language: ,,	 ,  ,  ,		Hv-c  		   	
-Host: 	  	[::0:9:8:72EB:0]:448507343	 
-Transfer-Encoding:	 	 ,	  	,,,Fp. 	;A38   				=  "\x"	 ; N~K'|wHk~ = "\f\/Àòw\*"  			 ;			tbQ3tkDg ="\ËT©Þ~" 	 	;		 	 	9				 	=	 		"s\p\t"	 		 	;j' 	  		= "N1ã"		 				; y 	=	 				"\F\E\í" ;	 8= 	 "\Æ"; 	$BROHcR="\†•";	XKo1		=	 			"E"  
-`':	¦		 	 zh 	wH 	 	È 	
+aD+Ol /H.D%77GE///r8m?/ HTTP/9.5
+Transfer-Encoding:				,	ny, PtUcJ		 	; 					VE 				= 	 ""  	 ;	*		=  	 	   .Zt	 ; 		npG'		=	 "\%"			  	 ;QO|A$j4  	 = &ttv~	 	 	; 	0=   	 "b\<à"  	 ;		c		 		  		  = 			 	 	""	;	        	_d!._l		 	 		   ="\õ"	 ;8*	  =  	"\Ø\¡u_lb\'eÄ\r"  ;	O.n  = ""			  	,,   			, 	 	 C&Dr|.		;  	&	= "!\8\""    	 	;		7 		 			= "\ýM­\;\˜\Ï-\õ", ,	  njwR 			
+Host: 				[vA0.&] 
 
-èwX:`à
+óíì

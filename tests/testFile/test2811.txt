@@ -1,11 +1,7 @@
-X /_C%93jj HTTP/6.2
-Referer://grrm////j/3.va2K%22   
-Transfer-Encoding:	    , 	 , 			,	6Y` ;  76e9ohj    =	  "k\Â\›ü\è\DU"	 			;$r2  	= "üÌË\Ü\<\W\Î∆\ä";3|x 	 	    			="" ;	 	  I*L			 		  = 	 o	   ;t0.J =		 		 	 	TWq ;	 	D*dKJPP#h##tUYDTMaZ= 	  	  	 	"\ù\¨"	   		;		cF  = "",	,	 	  ,,  	chunked,  					  V	 	  	 ;  `~ul0fX 		 	=		 "iÆ\‚\}\œfl";z7F8r9j	 =	"\W˜\¸" ,
-Accept-Charset:	 ,	  		 ,,		,	 ,	, ,	  ,Sc78		   	;		 		 	  	  	q=1, 5H~ci-5 	  ,_d+N!&o;			  		 q=1.0	 	
-Transfer-Encoding: 	   ,,  	    	  ,	 , aS	  , 	HYL	 ;					fs~="\ıº¢"	 ;       	   	  		 			  	  pC'W	= 	   "P.="
-Accept:		
-Content-Type:	 	c/x;		 	HP3=""     	 	
-Accept-Charset:!PuL
-SE: 	  	c		ﬁ˘ 	 	 	
-User-Agent: 	 B3	  	 		() 		(\˘\v)	 		 () (ùØss)	(Ñ\p\uãe-é·\¥\Ô(\H\(/\8Áoû)(\J^Œ‚\‘˝…\j\˘\oz)\+m\{\a\’)   		     	(Ì\4) 		
+XCRp /on;////nWP2h=//O/);/~%76%AD HTTP/1.8
+Host: [v6FBE97.iM$] 				
+Cookie:		 _E*^2=""
+Host: DJB	
+Connection: ,,,,    	 ,,,, eR8o3~273WHkUB		 
+Host:	 [vDCD9D4983.'V1]   		
 

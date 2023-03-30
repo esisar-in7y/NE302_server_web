@@ -1,5 +1,0 @@
-RLYLv /%F7LHx?FX%A3yu HTTP/4.1
-Host: 	 		[::8B:9:BF65:A:F:255.213.9.233]:9 
-Host::2 
-
-Ü

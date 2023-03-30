@@ -1,8 +1,6 @@
-# /-JJ/lIj/1!/-?'iPQ$ HTTP/1.0
-Expect:	        	100-continue
-Host:[C:B1B:3:3B:822:D:254.219.3.0]:72		
-Referer: 	  					   	/Na*/QIg8j?ud	
-Accept-Encoding:6F	
-Transfer-Encoding: ,,	,   		chunked,US$6			;		  	8 	 ="";   	LSz=	 	 v;`k="G\¥¬"  	;FB1p=""  		;	 		  	I8Y="\i‡sJÈ\4ÎH¥" 	   	   		  	 		   			 ;		 EfF3%wO9E7 	= ""	;wq   = 	  	"\»il7ŽÒ\j\¹\ÚÁ"	 		; 	 	PP6=fqN  				 	   ,	 	   
+6J`k&hZH+k%VCAZ+ /o579%BBJfG;/X/a5y/%4C(7,/;/dbw HTTP/4.5
+i:  		
+pye6+aU: 		 
+Transfer-Encoding:  	 		,K	 
+Host:[4:F5::863:38DB:AC:67.40.242.253]
 
-¨

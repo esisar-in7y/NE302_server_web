@@ -1,5 +1,0 @@
-j /w/%B2/%827/UJ/ HTTP/1.5
-Referer:I%5AA6+MZ%D3Eit?P~
-Accept-Language:,  	Df-3-5s-K	 	;	q=0 , 	 	 	*	 ,, ,
-Host: 				  			
-

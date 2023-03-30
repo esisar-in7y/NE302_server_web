@@ -1,9 +1,4 @@
-l /%142%E6LMXln/4d4/7c/F/%BE,9P+j%8Ff1/Jy0%52/PKHf%A5/W!O@c HTTP/3.0
-Host:  		[C9DA::3CC:C:7:250.210.2.216]     			
-Transfer-Encoding: 		,		 	  ,	, ,	,	  ,	 				 	,	 ,	 ,		 , , 	,	 	 M!by;   		ek="ì\L"       ,	 			  	 		 l'X1Bi		;  	DI_SU!'V8o8o3w	   	    = 	"\Ë";W  		="Aì+\≠\Zê" 		 ;	h=  				"L" 
-Accept-Charset:	,	, ,	 ,			 ,    	0 	  ,     1		    	;q=0   				
-User-Agent:	  		 				`UBCg5ooAXJ	   	    	 	({ƒ\¨WjˇedIﬂ⁄()\H\´I) 	    (É)
-Host: 80.255.255.179:989 
-Transfer-Encoding:  , 			,,			    ,		,,	 AP7; h	 					  ="\oú\¸\D3"	 	,	 	 	  	 		 					  wKXDeY3k9	;		  CCwFw			      		=		   ""		;	.+  =  	  				 	 "°\¿\Ñ"	, 
-Accept-Encoding:	  	
+E!#cCQZmvMvu /?8(%9Fe%98s0Hrt%48I HTTP/9.5
+Host:		 [vA6.b]  
 
+

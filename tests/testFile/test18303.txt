@@ -1,8 +1,0 @@
-&L //mm///hg-*//:wK,nc!M*Eh/ HTTP/1.0
-Accept-Language:	 ,n-Z0-rL-Q-EmC-G-SJ-p-FX-m-1-G-s,x-f-Nm   		; 	q=0  	 ,			  			Gn-0-zAH-h3NBGK			, 	Ipf	;q=1.0 		 	 		,	,		  	F-6zQ-4P-gn5qW	;q=0.433,   
-Transfer-Encoding: 	 	 							 ,	    gzip 		,		,	 OcX`Fg$wZF_4;  	 zy=  	z 	;a ="" ; bb=  "\?\ž"	; 		gP.IV=	   	 "i\ˆ{\R"  	,,		  	  	  p`6;   	'a=			 	  "\²ó\‡æ";	  W 		=		    	 CQ_hc , 	F  	 	;B.1   	=   		"\2À\é"			  				 ;	 	 +1Op  = "\V" ;   AX 	="";  lM&qf=	"\Ž#" , 			  CI.XCWp		
-Host:		236.105.129.254:39 
-Transfer-Encoding:, 	,4`A`y`	;  			Ig= ""; 	O.9="pj\Ô\îƒ" ;	 vfvpEr="\I\¸" ; 			 	 		 		 7	=							 	"\qR\‘\­"	;	 	 C 	=		"\1¢}"   ;	  		qis6yzF- =	 	"‰" ;BT2X_ 			  	="\ª\À"  		 ;	 		     7yUNgTBmFRAy!ViO  			=			 	bI	 ;  		 !^P=			 			 		|n2VIA3 	  	   				;	'`Zw_oML	 		 	 ="\‹\Ê\µ%\Ä"	;u	=    	  			"\î›";	|UGQb				=	   	""; e  	=	    	 		"c\$\`\Ø\—" ; FvC~maS=  R	  	 	;	 	 		QK*`	  = "\b\‡\ï" 	;	t	=	 		 "" 	    ;		 	 $+6xCe5GI996 =		 	  "‹" 	     	 	, ,	,,	, _	 ;+ =		""; *vEq=	"" 	 		 		;		 	    		  C0Sj$k ="‹.\n"	 
-Expect:100-continue			 	 				  
-
-&ð/-"ã'

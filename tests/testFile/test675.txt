@@ -1,11 +1,8 @@
-fO /%03d HTTP/9.3
-Cookie:   a=; O1=
-Referer: 		  			cjH://109.200.251.205/hr/-C%59kh3R/-!/&%6A8Tk/goNup9%C9*4%835@  						  			
-Content-Type:		   	    		   	v|`cFZY/9hwpiIw+; t^x="\Ìx\["
-Cookie:     	m3q_4F-6Pr7*U="-b'"; v&#HnS=S/|]OdJZ[9U; dY#Je="/c/L8["  	
-Accept: !bvECw5/tD ; 	 	  ^Kni^="•\ô'"	;f=a	 , b5/*xTN&jc+L 	 	 ; dU=""	; 	 	 4nq="¾a\ø"	; I=+Ih&    ; 	q=0.						, 	 	 ,	  				
-Transfer-Encoding:		,	   ,	  		,	 		 ,gzip,yc3-~8e8q 	 	; m^ 	 = "cƒf\å" 		; 	jk0p=""	 ;~`xF	=	  	"\«Â";	8_="\Q\—¿ã\XD" ;  		 		zjD	=     sR2b0h    	;	 	 x= 		 	 			    				"\~\ÒN\OM\‰\~\ğ\XÆ"			 	 
-User-Agent:  		 		 'd+/W	 
-Referer:	 O4tzO9K:/k;j.////~./%41/%80%59+V 
+afuO&9 /H%DFx%3Bo%CBO.%FDndc HTTP/8.9
+7b: 		 	 qö 		 >i 	í8"  £¦	{ 	    £ 		 	
+Content-Type:em9w/2cxWk.C6			  		 ; O="\ú‡"	;	WdR="\/"  		  		 ; 4="\œ" 	;  NWKh="\Y\X‹"  	  	 ;  	 	 7PLALt%MR_x="\é"
+Content-Type: 	L/z|ad 
+Host:	[::4:C:DD:74.254.40.241]
+Transfer-Encoding:   	  		Md+UCb		  	  	; 		    	 jq|z =  "\Ü\ùQÔ“\Å",$2nX;M =	  		wmv,		  ,, i2bUXq;			 m 	  		 		=   	  "\XZ¡"  	 ;	$^fC=			"˜—E\¢ø\z\©" 	; G6B =R;	THZ		 =6bXa*W	,
+fPYGD:	 	B			 	 Œƒ“	 	 	‚ªøÀ¨  Ï		
 
-Äê

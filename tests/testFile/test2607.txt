@@ -1,19 +1,4 @@
-s| /Ev HTTP/9.1
-Expect:100-continue			   
-User-Agent:b/r6UfW+1	 ((	Ï¶B\ÊØ˜\Ä)⁄)	 
-Referer:  	XaV/t///haoZB$/'%F22b4.%C2X./n54Eo%E2K?S	 
-Accept-Language:  Gre 
-User-Agent:j		((h˝_\Ô\G¬\√\çL\»%è\]\|u§‡‰))  	(ÒI)	  			
-Host:	jC2F:58
-Referer:     //195.148.252.9/!;,WL6Yo4f?)YK+D%22w
-Host: [v8.d,]:87  	
-1:	 		  	D 	’∫w	 			 	 âv3ë  ]· m˜4|  		·¬	 
-Host:   [11:7:6D:172:7A:4A40:180:99E]	 	 
-Content-Type:a/q|
-Accept-Encoding:  .,
-User-Agent:    	 	O/UZ		 			  	 	 (\0m\») 		 ()	  (Ó+ß(\h\–\™Ÿ;i\!)) 		 	 
-Transfer-Encoding: 	 	 		,	 ,,, ,    N$2	; S'	 	 ="";b=	  	 "•∫˜" ; 0'= 		    	  "'\≥ Ã"					,,
-Accept: xl__-VQ/* ;	 bI$!#W=aN ; Yv="Üµ\Ÿ\b”\Ÿf\Æ\ç\H" 	 	    ;			q=0  ,				C/*,	'f/*; 	 wnT=""  	 		
-Content-Type:	 	2HG/WU7JU 	  	; 		kBHOv`Z-T="\%"	;  	 t1%XH=3IpUjs8 ;	 cClWM=""		   	 	
+ilse /%43%CB/?C HTTP/6.0
+Host: 	 11.161.72.237 
+7:		  	   		  			 		   	 			.
 
-xÆVd

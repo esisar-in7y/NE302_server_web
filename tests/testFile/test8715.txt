@@ -1,12 +1,10 @@
-fxcv /U;) HTTP/3.5
-Host:  	[::1B:E:1.90.130.38]:605880		
-Host:  	  [vAB2.OKWov]    	  
-Accept-Charset:	 ,		5 	 ;			 q=1	,	 		   w3W	 	; 					q=0, , ,			  UfXTa&	 			, 	 	  	 				uB ;		q=0		 ,			 		 	, 	 kP2fg8sXJT	 ;  		    q=0 		 	,  		i7Q-KN	 	 ;	q=1.0 	,   	,  Qq`;	q=0. 	,		 	 	
-t%`-TJxel#u&0_:		 
-FX:   	è 				 U 	 
-Accept:				     	  	    
-Accept-Charset: 	 ,	 , 	     ,  , 		6&s1.I&M7F		;     	  		 q=1. 	
-Accept-Charset:	  ,	 			 I~t; 	q=1 			,		 	 	 		 $	  	 ;			  q=0.  	,   	QnE_Vz	 		 ,	 	 		v$v 	        
-Accept:		  l/* ;	TR=""		 ;			ZCe%k%G`="uÉ"		 	;		 	 	 	   	Eo="" 	;	 	 +x=5e ;	|="\v\5";	q=0	 ,I/* 	 	 	;	g^~D9lt07v~="jﬂ"	  		  	,			 ,			 	 			 
-Referer:	  	  zBTA://yHyA!1/NN%32r?7_	 		 		 	 		  		 	  
+tiYSHb /O// HTTP/1.6
+Content-Type:	 	 	 	 	&/q%mpe'n#			
+Um+3AgL^00d70J:	s		 		‚y   
+G: Ø
+Host:213.89.200.157: 
+Transfer-Encoding:	  	  				 ,,,,,  ,	|XgP97smc 	;	M#1bhR0`lIy~ ="Ú"   ,	       
+NcFpF: 
+Host:			[::6:4.100.2.228]:36761356934689   
+Cookie:				yXLpKc_=H; 'Lug=; PpH="@CV4d5-6@"; Aw="y"; w9=; e&dV=; Po3ZtY#bH#h^ym=; F2A5^b0a`G="?:"; 'Sy="v"
 

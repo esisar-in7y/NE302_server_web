@@ -1,8 +1,5 @@
-6*t /? HTTP/1.3
-Accept-Encoding:		 		   identity; 				  	 q=1, H	 	 ;	 q=0
-Transfer-Encoding: compress  , 	VL;	7kS3|h- =	 ""	 		 	 	;				K="Ï" ;		 p				 		  ="K]\Ã\a\±˙\Á\¥\o" 				 ,		,,, PQ5-L2	  	;H9~0B9	  	=		 	"\V“æ\˚7Œ°\‡\™\¸\)",	  
-Transfer-Encoding:	 J9S9Kkr	,    ,,,
-Accept:i4/*; 	  W~ZU0rMR=Bm  		; 	aG8S=m+Mz`		 ;rFW=34cmHz	   , 	 	,    F/q0; jz="\˝\⁄\‡\‘\	\¯\l"	 	;  		q=0,5mvtrud/+UYO	 	; 	3GtS="ø\}ï"	  ;1="+b…ö\)ø\ªIñ\ú\°\A\T\a"   ;8+ZK=""	 	; iPYeIX="˝\#\Ì\E\P"      	 
-Host:210.54.216.254:1891
+rmQaW4Q /6X8!nw&F%F2S--Q/rg0uL6XPau45/zu/%F8x+%E1K!%0A&(SAs HTTP/0.2
+Transfer-Encoding:	DA5l 		;			  	   & 		=		 		GSY3R  	 	;		99	   =	 	"\F";&			  =				   		"ù"; 		 		 	  		SPlH	 	   	 = 		 	 			 	 		"b\ú\ó"			 	  	  ;	  	B^xFwB%cD!lY3	= 			"\è3À\n\(∏"		;	 			 		  	s="\:" ,  	     	
+-iMY:			 					 ì	“#			   Ÿá' Œq 		 	ÊÀ˝ 		 ‚I	M
 
-…‚®FòÔ-…e
+O)

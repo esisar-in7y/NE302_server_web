@@ -1,8 +1,4 @@
-N /=9%D5/d/G3$~9/rYI/ HTTP/5.8
-Cookie:	  	 `="^.7(}Ah" 
-Referer:		gt://@202.2.242.7:7949//mGW:%66&t//fUU?WeJ%90%7BiTp%AF   	
-Transfer-Encoding:	 		, 	 	 ,		 ,, , ,		O  ;							ea  	    = 		 	  				"≠"	 		  ;   	#FvM*4	=	 	"\Ê]Àf" ;	 j9	 	 =	 		 "\>K™" 	  			;l+*V^p= 	n	;	lAW			  			=			 "‹"	 	;  J	 = "" ,	  , 11_;O	=  			.guP$FmdcsoaOxr		 		 		  ;	 9	  			 	 	=	 		 "ì"	      ;	S67FUni*l= 		"\=\®Ì\‘¿Ù"	 ;$%j= 		 			"(\«∞\Iì"		       		;	$Hj!5't=	 	"\ ﬁ"	  ;    	 D36wrz3.EQ=	""	 		 	 	 	; 	 xj 		  	=			"\ÅPÀ\∫\Â\`" ,	 		ta			 ;       LS6lJY  		 =		rS	 ,		,  		,	  4zps`$U|C	 	; sNjcp  =	.BJX 	 ; x		 = 					"\g\3’\Oµ" 	  		;o	  		=		  	 	 			 "\‘h\d"    ;			 	    		 		 _Ed5Cs^*		 	  =		 "\m‘Ó2"	; 			  	 g=	"\áæ\π\∏Ö\Q\w6"  	 		   		 ;	  cRW^      	 	="z»"		    			  ;&   			=    "";		 			3iP=  	 ""		 	 ; 	 	 				fy`k&d=	Y1Qso,	,, ,deflate   	,KAy	; 801L|s 	 		 	= "\Ê\W" ;	 	9DK="\≈\<+®π˘\b"		;	71qB`7  =1Bx%5zA`Q			;  	0*3VD  			 =e3		;	 !		 			="\Ä\Ò*\7\]∏";  ~NN$Y-	  	   		   =	 	 "\¬\H<çTQ"		      ;co=		 		"\t\Å§H\{h\0"	 ;pW="\Õ\ §∑\À" , 	
-Transfer-Encoding:,	_2c|pnqL	 ; 	~ 	=	 	 	 	"\>",	 o		  		 ;	 P 	 			 =	    	  		 "\≈å"      	 	 ;4$ 	="\@" ;		M4ok2 = 	"\°"			 	; 0Msf 	   =	"\n"		 
-Transfer-Encoding:  		 	  ,, 	  chunked 	 
-Accept-Language:	, 			  		*,  	t-h4B5-NR-ic-u-o-z;q=1.	, 	 		,	o-P-S-vEZR-vJQb-f-pp-q1h-Ph6gP-a			  	 		 	  ;q=0,		,	 ,  		   BO	;q=0.557		,CbuG	;	   q=0.			 			,  	 	, 	 			 	 	
+4^0 /kMpk/9/%85- HTTP/9.0
+Host:	[BF:B6::E:7:B:141.200.250.252]
+Cookie:  	 	H~e=""; k&R9n3TKOcFeHkWR=jv^G; evZJ="*y["; 94oul=l^ 
 

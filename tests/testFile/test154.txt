@@ -1,4 +1,4 @@
-^ /L HTTP/4.1
-Expect:  100-continue 
+' /Z~j$!K HTTP/3.6
+Content-Type:	 4/pn.		 	  		 	  			;   a8BT="\Π“Tτι" 	; 	`n=XLiI3`&WT|*
 
-ZH
+—)

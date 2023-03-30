@@ -1,3 +1,0 @@
-o /x/ HTTP/4.1
-Host: 	[vA6A07.zd&*]
-

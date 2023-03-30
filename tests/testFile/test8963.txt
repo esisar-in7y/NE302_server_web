@@ -1,11 +1,5 @@
-%-aioV6^ /%90o? HTTP/9.1
-Cookie:	 		      -=rv; '~=Db2GZjKnW; %=md; nF&hz="!I"
-Transfer-Encoding:g	   			  			;		 	 F6		=		"\Huã.\œ\Û("			;	 	DiKLH#uCNG&	  	= "þ"; 	6v$aLN`oXBC_dx*'jt  		= 		"\É\J.\6\§\¬\v\ÔH*\3š"   	;		  	     	  	v	   =	   	"ØØ›R"		 
-Host:	   	 	 [3B4:DB96::A:3:57.121.40.8]	
-Referer:eqz-y1mq:!xcqoW/Sm-2(L~UV-%C5~)i)%1E/4V6N?x 		
-Accept-Language:	,k-5K-asZ9-h 		  		;	  			q=0.,b-TH-0-nK-ljOJU-u-rm-p0-BT4-Vk-6-ML		 		;q=1			 
-Accept-Language:,,		, 				 	,			 ,  vQPmNy-aB-L-d-HN-2nKE-rv-g-R-7 	,,		 			 	 		, 	 	,	 , Fw-7XF6ghKF-BP,	 	 r		;	   q=0.,S-nI-bei      , 			 	P-fn-aJV 	
-Accept-Charset:,		,     , 	     , ,	 ,  ,  	  					  		 , 	    				k&ZYw;	 	  q=0   
-Referer:	Ltz.:E%BC_~'%0A0MQ//GO%A0//xS/o%B8k/%39G%230%1F/PsN 		
-x:  			   	 p	 
+!Jc'WJ1j /S71z'R;/axi HTTP/1.9
+Host:    60.14.100.94
+Host:	 123.52.208.1: 	
 
+þ'’

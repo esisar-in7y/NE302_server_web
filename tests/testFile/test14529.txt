@@ -1,6 +1,0 @@
-JJ /B%D2 HTTP/1.1
-Accept-Language:,	,	 			       	,	 , 					 ,	 ,	 	  	 		*	  ;			q=1, 	 		, 	  		 		iHh-m-8x-w1xh-U		 	;q=0.		  ,L-fL-e-w-6-s2-T-yn-gHj-OWW-La1y  	 	   ;	q=0	
-Transfer-Encoding:,	   	,,, 	 	,	 	 			 , gzip	  	,   		 , 		,	, 		   					0s`0a 		 		;		G =  			 	"Çî" ,0%Gj
-Accept:U/vR ;t^=UMn^QMx  				 ;	q=0	 	
-
-0;a

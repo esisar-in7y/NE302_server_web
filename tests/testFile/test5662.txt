@@ -1,18 +1,3 @@
-eRDwzLK /Ls//,O;/*r HTTP/4.3
-Accept-Encoding:		
-Accept-Language: ,	, , 	 		   ,,		  	 		 	 		,	 ,	 	,, 		 		  	r-EGM92  	  ;	 			 q=0	, K-5-EF-b;   q=0.01,  h-p-kl-nH2-i2	 ,V	 	  		 	, ImV-M-K3-8-g-8r-BEW 		;	 q=1.000	 	  ,  	FE-1 ;q=0.,			j
-iaWY~O':ô 		Ã% ÌoÚ	8m" ˜j	     		 			  dÿ	
-Accept:		
-Referer:	   	  T:M+/r 	 	  	 
-2Yj$PZ: t  	 			O
-User-Agent:						  	 		f	 $					  	     		(Æ5()éH…Û) 				  	 
-Transfer-Encoding:, 	 	,,		 	   	 	,  ,	 	 	 yyU2	;+Uot  ="Ô\Œ\$" 	 	 ,		.rc   ; DN7u				    =	   	 	"À\‚2\!¶"  	  		;	 5LK		 =P		;TV3GHv  	 =			FO	  		  ;		   JgBaQcXcmE	 				 =mJ_YIcS   	;		 	A9 		 =-+0			 	;k3o="“" 	 ; 	  yE  		=	"\ƒy\_\W¥~\“\$n";Zof6BND1zSX="\'\\®\Ç";   Y$eLvs=	 	"7" 	 	
-E:˛ ª*E ;  		 	
-Referer: 		OfSTw://[::8E7:CA:2B3:F:D:152.231.8.246]:/no/E.%C0/%57'bB		 	
-Referer:	fH://buA.yp/%46/%71%F7h/AJl?%99yNImLv:q65v	
-Connection: UYOh
-Accept-Language:, ,	,					,,     		 	 		  ,	  		 	 RxN-b-6-gcl-WN45v-f-0-z	     	  		
-'c^5-B: 	 		
-Accept-Charset:  	 n%|o#c		 	
-Transfer-Encoding:		,,,uj0^wP%; 		 	D 	    			 	 = 	s	  ;|L		=	"ô\&\^\‘’\ŒÍ*è©\l"	;	|3 		="7\X\e"	 		 		  					;  	*r  =	""	 				 	;			 K ="∑"  	;	Bj*Bo! 			 ="áb] \J";  	gnQkn!					 		="˚\¬\,\qm\¬˚",,  	&SryC0&bGhwZn	  		 		;	 		.`O-=  "È" ;	F=	"¿" 	  		; 9 	="Z·\ß\2å\pç\Â\S";  	 	^98H2Z 		  	  =	 				 		  			  "6§\f\]\ÆDÈe\k\7\$\1bØ" 	 ;  	eZ="\wÛÒ\%\Æ" 		 		,	  
+rN| //f%3CtgW%9A/cKx/ HTTP/3.3
+4zybc*3pe0rs:	n	∫
 

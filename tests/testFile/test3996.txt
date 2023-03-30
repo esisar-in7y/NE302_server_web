@@ -1,6 +1,6 @@
-t /rI?Y9h*Q HTTP/3.8
-Host: [A654:E1:40:62:A:E36E:214.9.222.2]:2
-Accept-Charset:,		,	 ,		, ,s6T+|K, 		  ,		,   
-Content-Type: ^/*		 			 ;TH17v8="\.Ô";t="‹\Xz"     	 		 	 ;	  	   f="\—"	;.m="\¨\O‹\¾Q\z3"	
-Transfer-Encoding:,		,	,  	,    	 ,	|zK 		   			 		 		,	L   		  ;	*   		 	=	"‹"		;Pg			  =	  *`h9		 		 	,,   	 O&; 	 		 	  	  	 1s`3u$tN4LBm=  	 		 				 "\ \lp:\iˆ n\#"; 	g9NX = 	 "J\é\¸\'\²\F"	 		; 		   		  0W     =  ""	;p&A= 	 ""		; #6v2Q	  		 	 =	 "\H¼\@\¾\ó" 			 		    			; 	 		WUevrNoLZq|="\]J3\„\è\1\0"						;	  	   FCkt$IAUpy_G52q$yJ =  	  				  	 		  	r ;7~Ag		 	 	=	"\Ö¢"; 2`1pf4.V5			  =			 "\Þ"; A			="\Ðü\’\?\êÃÌ" 	 ; 		 nsjX-L		=  		  ")"
+5s_J$ /%27UNKWrjA/P%D1P%81F/T5/%88/a(kfT@mYa;/%72k9%C6%C6/Hu/W//A7%C8lQ HTTP/4.2
+Host: [v893.r81v6,] 	
+Host:	 	 	 	 	[2:1:7::8:91:250.216.66.38]:3	
+Connection: ,		  ,,	, ,   	  	D 	 		
+t!Z:		>  s"	*:	 Å,l	  	 Šþ&	 			 <Ô´ 	       	Ýçª 	  µ]	Ð  		 		  		   ™ 			 
 

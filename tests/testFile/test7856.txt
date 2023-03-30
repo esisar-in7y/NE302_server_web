@@ -1,6 +1,4 @@
-|7 /tB!/U? HTTP/3.0
-Host:[::1:CF30:16.251.1.247]:128864 	 
-7V:  		#‚  Y 	
-Accept-Charset:,   ,   		D;		q=0.905 		  			,,		  	mbiVz3 ;   q=0
-Accept: 	IC1/2qrvuaJ 		 ;			 	  DR="É\»k";e9="râ1\Å\æ\∞"     		  ,		j-!ui$k/!RV1L~_.Svw%;z7L$L8j="\1"; 	5iny="\¥ù-"	;	 	 	uWp="‘"  	 ;q=0.		   					
+X3Bzt!P //91AY/)%F8$i/FSq//YAw1_74VII=rOW%89r*F$?%33@%8Am HTTP/6.3
+Host: [209:2:D:9:A1DC:2:9.241.250.80]:65697 
+Host:253.39.4.49  
 

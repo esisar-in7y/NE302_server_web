@@ -1,8 +1,0 @@
-mK /%C8/&X%D1 HTTP/1.5
-Accept-Language:		yv-CgHF	
-Transfer-Encoding:			,	   ,	     ,	  				 	,	,,,	  			   ,	   		 		,  	'1b					  ; 	5cmA6$u9PSg	   		 =	Y; z3   		=		"\+'\0\•"	, , ujMI      ;	 K	 =	 "\ð"	;		 		 I			 =       		"Î‚\Ó«s\q\C" ; 	K  		=	"ÀÆ",	 	 6iCbS ;	c 	=	 "\Å\¥i"	  	
-Referer: %DFzVA/J%93p/DLk?
-e: 	˜	ß³` I÷
-1A'C:		 	
-Expect: 		 100-continue 
-

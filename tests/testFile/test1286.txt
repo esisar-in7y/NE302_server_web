@@ -1,16 +1,5 @@
-G /%C4vJXr/Hb%B4IO? HTTP/1.3
-Cookie:	02sc1.g1C=U(a; 9htG~^w= 	
-Host:    	 251.222.214.235	
-User-Agent:  	 			  	u|/vU1W	   		 (\ñ)  (\ì\˙)	   (\ô\ß)   ((l\¿\Ù·ˇ\Ñ\æ)\ºhf\Éâ\z\·ôR\E∆())	 		(`(:\8°¿#\,¨\G\ˆ\ﬁΩ))	() 	 
-Connection:,	,	 	, 	   	 ,  F.	 , 	   
-Host:	159.9.243.25:3164
-Referer:aVr3:i$Ek/@//%5C2Rdd9%E3./B/21i 	 
-User-Agent:     		Y/S			 (\Å(\˚\ƒ\ë)\V)		() 		 	 p'YXsf  	() (\x)  		 		()	 	() 
-User-Agent:	2o8		i			((u\öé)2\X)	() (È™œ\Ÿ¶Éî(\Î\Œ˚\‚\ ⁄o\S‹y⁄))	  	 	Hdc~2 	(\ª(\â)\™\¯\•)   (\©(K\°vsﬁcÇÜ\¿)Ãû\Ì\“)	 	
-User-Agent:	  	RTtjM2mld/tCT4 ((\€\ò)J(û\–)\9âT()\|`\.)  		 	 	 		 
-Host: 	[vBBD.wkr+bsWhR]	
-User-Agent:7o29rTq3		 	  	 		Duf/+f 	   (›)	 (‘\D\˛\%) (>Äèø\Î5(\ÓÛ)≥c()\Çà())	
-Accept-Charset:$2&8K 	
-Cookie:Pb="0" 	   	
+.6z /9,i/m0B5$BAO HTTP/6.6
+Host:	_:4
+Host:	10.122.254.2
 
-*Ç{
+t

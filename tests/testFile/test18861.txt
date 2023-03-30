@@ -1,5 +1,0 @@
-|%T /hcW1//f%3B HTTP/8.1
-Host: [::8:D:64.254.38.176]:314719166471 		 	 		  
-Transfer-Encoding: chunked 	 
-
-›

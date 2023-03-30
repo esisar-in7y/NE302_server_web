@@ -1,14 +1,2 @@
-t0q /bJ)s////(hjOe9R/2//$G HTTP/2.7
-NS:	à
-Accept-Language:				 ,		,,	 ,			 ,			,	  			,  ,,,i;  	 q=0,I-dfe-UN-4qm-B 		   	,	    	 	 	g-w
-Referer:	
-Referer: Kbw://@227.9.31.239:?%0BP%B9y**n	 	 
-Host: 	211.205.215.105:	  	  
-Host:	 [A::E6:B187:C103:9.69.6.207]	 		 	    
-Host:	  	   	  						 	[8:1::F38D:D:A:10.201.74.225]:357 			 
-s~8:	Y 	 		 	
-Cookie:	  7N=aC				
-Accept:	 #Xq$IGgZY/' 	 	 	;-e=""	;	 	E="" ;							  #="\˜\ã"			  	  ;		 o="Ü\z\Ý\‰?"  	  		 ; 		co="e-ž˜Ì\["; 		  BjmU-o+2="\ÆñÂ="  		;5$JC|="8\\’"	 ; |=ppIZ+		 	 ; JdbD="t\ê";`5rC="bN‡\D\¶«1\P\œ"	;	 	k="";   			   ^OM6="K\Çª\," 	 	;	   	 	 	  	K~FXv.Ni="L<" 	 	 		 	  ;f=""	;	M'_="" ;	  	  		kh8HX%O="q\Ã\ƒ\š\`ª"			 ;	NYm^YJy="\±\Ð\¶\’Ö\¬\,\ón	Á\µ’"	   	;	q=1		 		,	uJ/rqex  	 			;	 	N=""	 	;		q=0.
-Accept-Charset: 		 				 	     			Gz; 		q=1.0	,	,	 ,	   ,8C	 	; 	  		        		q=0.419	  
+W /nBf/ HTTP/6.2
 
-˜

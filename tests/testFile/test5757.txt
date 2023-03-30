@@ -1,6 +1,8 @@
-pf / HTTP/9.9
-ri'r:	 	 		   	 				 ≤D   	XÃiû
-Transfer-Encoding:		,,	  	 ,   			chunked,   	'xv#A^CvU ;	.^xu =			  	 "∏\T!/3"	,,	compress   ,j2 			;	26L6=	 "¥"		  ; 		K7	 = 	"u" ;		^B 	 =		 		"",   
-uj:B	 	 	 	 ìó Å   
+M /%41TAP$//byWn/w%97n%9E/%AE2%5E(Y?= HTTP/1.8
+Host:[1::9:CDFD:54:5B2:249.57.239.15]:1 
+^43_u:	7  	¶
+Connection: 		, ,		, 	,	 ,, 		  	  	2				  
+FoPJ:  ™  	 w			 	
+Connection:	   tF	 , ksr,		 		W,  	,		     
+Cookie: 		 	 t=""; oX`yp=MA	 	
 
-ÍJå

@@ -1,15 +1,0 @@
-Z^6 / HTTP/4.4
-Host:	   [::9:255.26.252.225]:5532
-Host:	  [::]       	
-Referer:			//%02n%F6%9A%3DR%A6fV%68@[2FEC::A:E:F:E:F48]:11581//S&	     		
-Cookie: 	 		 |.NB9="'"; G_=""; #u="prXj>bI"; m$n=>; F="fZ"; a3f=; U9t!=""  	 	 	  	
-Accept-Charset: 	 	V	  				 	;		 q=1		
-uIqam: 	 นอกod ่yMฃ	ช(ํ  	 	 		  				 ๅ 	 		
-Referer://9:=K%C1$V@[::C3:E39:2F:C]/YM
-EBhhD:	 	] 				 …	ย๗;	 
-Host:=YY_1	
-Accept-Charset:	,	,		!,	S-F2	 ,,	 F9FQe6doB    		
-Content-Type:f'/82B9!&.BYciBjLkSqD;   zwEgduu="" 				    ;			  wT4=!^E; 2="\c";	84&_zIO_%9Gh&6="G"		; 	 		u="\ฬ" 			 ;KG="u";	 	yuzP_rq!S="\\ํฬ๕\a\๛\}บ\ใ\Xี๗"	 
-User-Agent:|e ()	  (\ดi(P)\ฤ)			 (#)	(ฉ(\Aธ\W\wึ)(\–)\ฯ0(\-ณ\เ+\9)(\ไ)\ฝ–\ดUฮ\ü\จ\P(U)ศ(3)\๘Y])
-Host: 	 	   [::9:ECB5:06:5:F:D4A:8FE6]	
-

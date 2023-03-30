@@ -1,17 +1,16 @@
-h //NanxEb HTTP/0.7
-Accept-Charset:	4		     ,, ^ 	     	  	  	; q=1.000 			  			 ,	  Wr	;q=1,	
-Connection:  ,, 	   	  	 	k, FLp3X
-Referer:  //@[A:8::206.222.232.5]/xV%7CY%54//!&0J///pJ///%D6-/M7/7yQAG%BAS?	   	 		  
-User-Agent:	wN~/$
-Referer:N:%72%43		 	    		    		
-Transfer-Encoding: ,		   , 	     	 						 ,	 	 ^	 , 		
-Z:o’
-Connection:	,,		 			 	^3 ,$is  ,		  ,  ,,,		 MT3l!R	 , 	,
-Referer:			?		 
-User-Agent:p	(“ƒ\:Ä)     ((\ï\äSa\~\v\‡)\°)
-Transfer-Encoding:	 ,   		 						  ,	,		,lW0 ,  Y;			  	 	1~I ="‹\?"			;	 '		 =		 	!^    	 		;AcY	 	  =  "\a\‰;" 	 ; 		.F31&uwqds 		 	  		 	=""		  ;-3g  = "\€" 	   	 ;		Jo	= 	"ÁE\a" ; 		5		 ="Y¡";  DN5V%JoiK0 = "\7\9˚I"		;ChU	  =		 	"\Œ¶ \E\ ˇ\é\¢"   ;N%jv~=			""	;    	k= 			"\î)Gû\b"  ,YF`D# ;VfCXbE				="\‰\Ø" 	 		;   	   	 ^eLN8q	 	 ='QgSC-	;Mh~d 	 	=		"\ò\ØK∑\y÷D∞" ;ihx=	 "”\∞é";		Bq4G_#	 	 		  	=	 			"Å\Æo\\Uà”ïj"; 	 		  xMzEV =		 2uQ~;		9bVC%%%4	 		 	=  "";		d	  		  		= "…" 		;	 		5`Cb$.eD~v0hF3Ce^ 	 		  =			 ""	;	 	 		     	   	  				 	 *	  	 	=	 "⁄\ã\%"    ;%LNL ="\s\’\E"		 ;~q 	 	 	 	=	"m"  	;  P =	 	 	"\s"		  ;	 	B9 = "\!\p\O«\0á", 		rCQON 	; G1`SD3		="°”m"			  	 	   	   ;	 	 _		  =2J's-1ESOW  ; 	Mk9#a  =  		 	"\c¨\(" 	 	 		, , 		  	compress	,^YA7F,CSc,
-Content-Type:		 	  %~p/-^---	;	zyLftYih="\∞\∑˝\≈("  	
-Referer:		h://226.222.193.223?
-Cookie: 	ZD="<g0"; #WsR=z![DG; G^s="+!q"; 2|="::be"
+.H-VJ$bxy //yV7/DJ%ED'Ue HTTP/2.5
+Transfer-Encoding: 	 		  	 		ZASb%pl;  	 	pXCc = 			"\ (\Œ";	  jW	=	"",    	    
+Transfer-Encoding:,,		  , ,	,  	,				 				   	 ,  	 		,  	,  	  KEUfb-9	;Ds	= ""  	  	 						  		;	`+uW9	 	= 	  "ÕËK˚\˙m˝";e6 =	  "Ÿ\∆l\™\ö"	 			   ,	7KP1iI	;#E-%N_.lg  =	"+\v›ß\`˝" ;	 	 	 	MBo~ 	   	 	  	  =   	 	#s9	  ;   7DNNQ=%		;	 	   					w  	 =	 "\ì\ï\¢\!"			;    t 		= 	  "öLÆTﬂ&>$˜r®/”";   a~= 					"\çÅ"	 ;WP#+ ="\5\`\ÅF\ı„Ù"			 	;	P		=	"",HucNf 		  ;fzIf0o   	 = "\+"   	;			r_ 		= 	 bP	;	 		 	     			A	 			=		  		 "˜",	 9t 
+':		#	 			 	®s“		]
+x: ∏	g»e			 		  	àî 		 “6	 		%ò	ÈL∂—^ 	ä®g  ˙üê_     	îi—π	Î·	 
+X: 	 
+Content-Type:SQjSC!c/Bx8QE18*UX2 		; 			  ^v$np8="\œe\ª˙m\Ï\d"	 
+U7:	Ã 		 Åø,	
+Host:			33.254.4.85
+Host:			 	[v5.~Y0dKZ2,V2p~]:6394176
+Host:[::1:7:64B2:6B:5C:50.192.213.112]
+Cookie:GibrN=")"; YT=g; x=h; %=""; 6n7B|h5Q$V="r4i<"; D="1"; 58Qc=""; tI^$shV=""; 60Og="EB"  	   	
+Host: [::1:66:1:72:0859:69.27.4.241]:3	 		 
+Content-Type:	x/c ; z="\±Ó";  12PVaLiOs="°\`\¨"	;  rN+5Fvjav="" ; 		   XIm9^#a+="ﬂ\Ë" ;      $r%_=""	; xFE="O\Ç"	;	   7p3^E="\N"	;	 			J="Ê\Õˆ"		 
 
-Q<◊◊ 
+Í

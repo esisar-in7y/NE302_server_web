@@ -1,6 +1,0 @@
-#+XW /y=? HTTP/8.1
-Accept-Language: 			 , , 		 	 		,	P-U-f 	
-Host:[v6C.eF9U]:
-Host:	9.50.229.183	
-Accept-Encoding:	 	   
-

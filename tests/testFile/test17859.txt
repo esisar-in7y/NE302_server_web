@@ -1,4 +1,0 @@
-x // HTTP/0.3
-Accept-Encoding:	 	identity  		,
-
-Ï¯Š

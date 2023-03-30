@@ -1,5 +1,0 @@
-X //oIc%86 HTTP/9.4
-Transfer-Encoding:	 chunked,,	,	 ,,	 	 
-Referer:	 				 	Lx+:C+			 			
-Host:[::75B:0FB:7:3D7:C:6.209.248.255] 
-

@@ -1,13 +1,4 @@
-u /!fe? HTTP/6.0
-Connection: 	 	 ,,05
-Host: 	 4.251.240.191:2   			 	
-Referer: 	xk://@[::248.9.5.190]/		
-Accept-Charset:			 	 		 					 	 	 6UL,	 				   		%A8+b!8Z  				;q=0		 	,,
-$4:è 	
-Host:41.62.79.250	
-Transfer-Encoding:   ,	,  ,  		  		   		   				 		 ,	gzip,  	 
-Accept-Charset:   		     !A	; 		 	q=1.	
-Content-Type: I/.j 		    ; I="" 
-u:  	  
-Host:[::245.255.34.30]:8891 			  
+0 /OG'?K HTTP/2.1
+Host: 4.64.244.250:
 
+Å ü¯

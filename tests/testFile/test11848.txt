@@ -1,3 +1,0 @@
-JsvHAU / HTTP/6.3
-Accept-Encoding:	  
-

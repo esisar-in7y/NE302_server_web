@@ -1,5 +1,0 @@
-%iw /%2B? HTTP/6.2
-Accept-Encoding: 	Z  	 ;			   q=0.  ,  tA#;	  q=1.0	,  	 ,,!hfp8	 			 ; 			q=0 	,	 
-Connection:	,, yO8^+Wx7'DAS^sDIh6~	,VJ,			,eZ^%l`RJ  	,Ljy'_, 	T	 
-User-Agent: 				 jM/Yx#H3QM			() 		  (\‚())       	((\Óe\Ý])\>\Ó)		(\"\{\Z\þ<)   
-

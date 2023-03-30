@@ -1,10 +1,9 @@
-vbdYLt /m?jnw HTTP/3.1
-X:   n 		¸û   |— Í	
-bpNY:	„h , 
-v: 		    	
-Accept-Charset:, 	 		, 		  ,	 	,  	 ,, $dZ3kyD~My     				,	, a2~	 	  ,		,		, 	!J 				 	;q=0	,,	 2.c;	 		 	 	q=0     
-Accept-Charset:,, , c2; q=0. 	
-Transfer-Encoding:	 		   gzip , w`	 		,	4Mc5EBSVKSZ$l	 		, 				,		   	,	 	.+3+D;	Hm=  	 ""	 		;ecC 	=			 	 	 			"\Õ$î" 
-xkd:	‰¢				ø¾öz‚		µZ 		 	 			       		 êq	ta			 	  éƒã		 	‰½O) 		eu    	  	À5  ôÎ			 		 		 
-Accept-Encoding: 				
+Rg /S%EC%3C+& HTTP/2.3
+0: 	 		Eÿ
+Cookie:	 		  $Y-=""; d^0=; fvo=|}; #7="9Ehm}]"; Ag=""; RSI_mA*=""; V=c; _=6; h|Ma^.dnx*te|=""	  
+Content-Type:L8MP!8/$;J=""    ;	bN^="\7˜\U\»ƒ"	 ;   jq'n4^1=""  			   			
+#:				ª S]
+    	¹u   "q		 	 	¦	
+Transfer-Encoding: 			,  	,	,,q$A		;V8mp		 	  	 			=".\n\;" ;		 		  oQx=  	 	  "\ü\ï‰\ø?\Í"	,vzp  ,	,	deflate 			 ,	      , chunked  	,  deflate		 				  	 ,	
 
+Aî

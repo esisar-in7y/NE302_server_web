@@ -1,9 +1,0 @@
-&mq /=1:%B3Fzo/:ZH%D7? HTTP/6.5
-Cookie:dy5WPM=opB; MuK="oj8-j1j-ZZ7"; k_i="3#x'!|e"; IB=nOr; X=; LNj~kAD_S!^E=hVmLm; r|E+j6=""; AT!tm*=""; m%WJ4|n7e=Q^VTTt?; T="LQY$tHW7~."; `n547X0z=""; tG="fsO"; %-GF=2D]Y&+>$k8Sz'A  
-Host: 		 	  9D9 	  	 
-Transfer-Encoding:		 		 ,		  		,,  ,, 	 		,,	  ,i  	 ;EVF~ 	 =""   ; jL8 =	_s^rs ;  ^8B		 	 =	 "\Ê„\A\‰" ;5W#|p  ="\‰"    	 		 			; 			5	="" 	;	 			Vh=  	"\:\H$"	; 	  bX`=    	h  
-Connection:    		 	 	       	   	 				    ,   		 ,E 	 	,  	y^8C~ 
-Content-Type:Zt/a 	; 	 		 NGfcD="\®·" 	; 	 		hH="" ; k4Pm|f_|="%<6\·\,"    	 ;			 			te^sGnpIrI4iAfcB=""  ;n-F9=""; !Z#="ß²ž\¤\†\Ó\\wqTS" 		;xtf87="\›\+s¢" 		 		; g+zr="Ù\Y\\vÒ¥" ;		 		a="\" ;		   		 E&dM="¹Lumä\B"
-Host: [::3:C:A:A]:16
-Accept-Language: ,,,, 	   ,		,	 U-yC;	q=1.  	 	,,	 		,    	  ,			 	, 	  	   	MAS-gl-m-9D-B  	   	  ; q=0	, 	u-Lb-XB-Prhe,		,    u	   	 ;  q=1		,
-

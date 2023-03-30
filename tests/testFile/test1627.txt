@@ -1,11 +1,3 @@
-iwV#Gn#zB5 /1/ HTTP/1.7
-Transfer-Encoding:    ,	 	,,compress
-Transfer-Encoding:,  ,compress 	
-WU&3X:	  	q		 0:			–»÷ 	
-Transfer-Encoding: ,	    ,		  ,	 	    	,	 		,			,	,		, 	 k9%K		 ;N= 	"\c\u¢\ã";i9  =	 		 	"\¢\R\∑Ãªï",   	 
-Accept-Charset:	,,	 ,	,	 	,  	R1M; 	   q=0 	  		 	 	      		 ,	W6f	,				
-Transfer-Encoding:,MSka	; 			 8		   		 = "" 	 ;      		1!	=	 	 %;  	  	  	j		 =			"\˛Â\M\Â⁄";  	 	  RkLI  		 = "\q\¬"		 ;og =	     	 "\A1äˇ\V`\8\g"	  		 			; 	   !  =						"\Í"; ~  = 		"H\‡∏"	   		  ;Eq		 		 	=hM 	 	 ;aSE		 	  		=		   qo2 			  	,,			 	  		6	 	   		 	 
-9N:)	∆§	   		   ÕLY		  Œ| 		
-Accept:D-Ru/*		;	%%lK#mhIK=0s!pRMa'Y`p;	pGT=""  	; B$q$Eb=""	;  	 JJ="\ZF\-©è£\œ"	;		Za!lJ*=""   ;	  cdMVKuHr+K&mp="\$ı"  	  	; 				 cg'.ctsUnL="*\®\∑\∂æ^\2", 	s/g&	 	 ;	 	 		     V="\‡\∑\l\Gb" 	   	
+gP_yo6+x /7u%79%51v!/9tb?%05eh HTTP/1.9
 
-,∆∏æÔ#LL
+¶ú

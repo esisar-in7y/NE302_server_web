@@ -1,8 +1,0 @@
-i|U /d/ HTTP/1.1
-Accept-Charset:	,#,  P ,	 s06rUaxEdwTZ
-Referer:   	       //8.172.3.246
-Host:	[v712.is]:80829
-Accept-Encoding:		  
-Accept-Charset:,		 		 		 	 	, , , 	,	, 		 			 		  6			 ;		q=0  ,	 	 					$3W   
-
-Î

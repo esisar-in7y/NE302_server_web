@@ -1,7 +1,2 @@
-FGc0U /H%4A.Z:~- HTTP/7.4
-Host:	ea:6480
-Accept-Charset: 	 		, 	s
-Cookie: X=; h8Y="{b"; bp=_)a{PX8.'jD$; j=; u.ZOrd=q>; 3J=""; wK#=; o=frc   	
-Transfer-Encoding: 	deflate			, 	   %^					 	 	;	IA			 	=	"S\q"	  	 ;		 	|7b= 		Y	 		 	 ;  #%yN	 = 	 ""								  ,	jwJ|2 	  	 		;x 		=  		"•"	;	  		  1	 =	  	"\Æ" 		 , , 	 
-Cookie:      	 u_2="yUT)"   
+b2 /98g)Pu%EDb HTTP/7.6
 

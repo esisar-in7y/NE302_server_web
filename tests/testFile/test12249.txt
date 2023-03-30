@@ -1,4 +1,0 @@
-l2 /Fw?VkI HTTP/3.7
-Host:  	   		 		   4.1.62.4 	
-
-A

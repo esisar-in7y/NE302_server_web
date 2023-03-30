@@ -1,9 +1,0 @@
-*U /z'XJ0P//U' HTTP/1.4
-Accept:		
-Content-Type:!$Rp9w2_GM2/q1			;		 		 	   FC="\üÓY" 
-U: Å    ÖtU	I"  #<
-Cookie:  		 .o&_$^L=; x=""; pDY=; 'nTFHhh=7j+=; EtH=""; t~Wm=N*f		 		 
-Accept-Charset: JF9 		 			 	   	   	 	 	;q=0		    	
-Transfer-Encoding:  	   	, 	 	 		 pd3Kex	 
-Connection:, ,	   , ,	    ,,,	,			 	   	`	   
-

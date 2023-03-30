@@ -1,23 +1,2 @@
-4|pDfi%O8t7 /RU@d!L/tT8%A4!t%F6tt5D&%AD/pq? HTTP/0.7
-Host:   	  			 	  =	
-Connection:	  , 	 `iR	,	   			 		 	    , Ge   	, Z 			,
-Accept-Language:	 			,* 		 	   	 		
-Host:    58.1.239.4:1 	 		 
-R29:]
-Transfer-Encoding:	 , IF	 	;L|+u_  = "\zo\ï\É\Úš´\F\H"  		 ,  
-Host:		        [::353:10F:D0:F:8A4F:4.6.37.70]:		 
-Host:    		  [v150.x]
-Accept-Encoding:  
-User-Agent:   ^d-ogo!x50z  			 
-Host:	 	 [B:B::7:95.21.7.250]:2
-Content-Type:	u%#%k/MfyNqH'4i3			  ; %=-M~	 	 	
-Accept-Language: 	    IeW-M  			  			;q=1	 	 		,	 W-k-w-k-aZ-qm;     	  		q=0.90		 ,    , 	 	o  		,	Iz-j5-Yze5-x-mKe5	 	
-Accept-Charset:	,, , 	 	 			  			  , ,	,	 	,	wEScKMO^Z*CiM ;	q=0 	 			  ,  	 	 	 Up ;q=0.7  				 , 	,	  		, 
-#s:		F	MT		 			 ‰lø 	Â.D˜Z 			Š_  æÕ>  					 	  	    ák  	¿ó  	 	 	 µ
-Host: 7.186.218.7
-Cookie:6=sEk-cyodfbA; 2="I[z?"; jo*++nmCf=3~U; HYT="!"; g=""; o=F%L 		 			   		
-Referer:				//172.3.1.215:1/Ce2ui'/2db/%5B3dnKm10_K2,AIML-%C5T4/o  	
-Connection: 	 ,				W8.`g0Jbar , 		Z ,    	  z	 ,    	 	,		  	  	 	 ,	 t*MCHBiJ		   , 	 	  e1		 		  ,	    	    Q    
-Host:185.87.88.185:001
-Host:		[vB.E]
+tGspA /HR%38?gW HTTP/8.9
 

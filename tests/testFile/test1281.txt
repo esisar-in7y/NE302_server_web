@@ -1,3 +1,5 @@
-.RR%YFn //%8B)/%9F.q$a+Lc(TI%E3:3%C2nJP/=Oz7?U/nr HTTP/7.3
-Referer:		n  
+J /+/wm%F1? HTTP/3.7
+Host:	  	250.5.249.5:0
+Host:		[::3CCD:B1BE]				 	
+Transfer-Encoding:E	  			 	 , 	  ,				N96;  AaC	    = 	*x	 	, 	  		  				, 			 te'	;	 c  		  ="”"	
 

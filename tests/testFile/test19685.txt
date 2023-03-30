@@ -1,6 +1,0 @@
-bp //%F3gy+-9kr%D7/ HTTP/8.2
-Accept-Charset:		, 		 					    zIAcP6;   	q=0.105
-q:	 	  	 ÷		l»		  	 	â	       				 
-Host:	 		  		[::5:38.31.1.120]:   	 
-Accept-Charset:, 	,	 	  	 	 	,8`1'		;			q=1 		   ,	
-

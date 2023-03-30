@@ -1,7 +1,6 @@
-5 /=$l;%D3%FE HTTP/3.6
-Accept-Charset: 		,	c, 	,		,		 iQ3  	 ;	 	 			 	q=0			    		,			 	$H  	   ; q=0
-Cookie: O=""; *="i&KC"; HH="Z[/T"; ez1FFgMHRVq12yD3=; KbZ^Y_="834!"; 1=""; 7="wpOd]"
-Expect:  100-continue
-g:				  	!
-qL: 		
+& //htpH'/Y HTTP/6.5
+Cookie: 	 	n="zy.t"; .!y="v" 
+Transfer-Encoding:$%	  			 ;	  		$&9zSW	=	 	"lÅ",   t0N.Rr	  	,b_		 		 ; 7Ph="\ß"				 		 	,   
+Content-Type:  		gP/3d  	 ;	 	^=V$0OsT*JW;	 6A="\é" ; 		9="“Ü"	 	; 		   lS39re!="9i\ª"	
+Content-Type:	'7qK/Go;	  	wD`="\¦"	
 

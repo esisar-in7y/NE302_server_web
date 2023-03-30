@@ -1,8 +1,0 @@
-e /%FC! HTTP/9.4
-Cookie:	  	  		  		m'Z=R; Ln="dV"; |__50="r6Sg"; 16iZHP="~"; AIz_="2w$W({O48"; |Hd!irja=>t`IU0; $Asjtvb4=P9]d|{aS|[^<Z$7 
-Host:250.0.251.254:8 	 
-Accept-Language:q-Pq-k-w3u-J-Y1N	;q=1.	,,Y-q-yXO 		;q=0.	,	HOal-Tmv-cX-K-8KI-pv-a-KB	 ; 	  			 	q=0 	  	  	 , 	,	 			 		 	,,	
-hM:P	 	C	
-SZzUcqN45aC:	      u A		
-Accept-Encoding:PY5ccvuN~_5	
-

@@ -1,12 +1,5 @@
-$D /%F0/He!/%73q/%AB/c?m HTTP/1.2
-Referer:	  //[v0CBDC31.;]:
-Accept-Charset: ,	,,			, 	   ,,,,			 ,		   	 %  	 	,			 		 uE	,
-Transfer-Encoding:, 	*H; 4 				  =""  	;		 	  	 		 L=	 ""	  	  	 ;PsVRwx  	  =	    "\Ê\Ç\N\œ; )Ç~"	 	  	;		  		d&*X8Z-| 		   =  		  	 "-\˜\ìg" ,, 	, , 			 KtjuA0H;apV	= "" ;	 		   $nc2J=  	""	 		  ;   	  PzOqNF		= 	".\»Î2³‹Š"	;	9_	 =	"\©Ñ\Ë\«¥\óÚí\aØ\p¢ï"		;	 N9j+_  	  		  	 ="\–{"	,  		  	  	  ,		   		E			,	
-Connection:    	 ,,c+$				    ,
-Connection: ,			,	 	ZA,, 		.X	  	 	,   Z'naI$	 	   
-Host: r:4 	  	 
-User-Agent: 		AA!Ryr/9e 	 		 	    	 		
-Host:		h%C2:39501
-Host:	36.9.108.218:16206702			 	
-Host: [6::604C:76:58:ED]	    
+%9D+l*|#fxJA /Y HTTP/6.6
+Host:[7::F6:8:349F:B:247.4.252.221]:2  	
+Cookie:	N9hWk~B="p"; r3=%ja	  		
 
+e

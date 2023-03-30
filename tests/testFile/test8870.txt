@@ -1,12 +1,3 @@
-G /&%68I/////5gqF/ HTTP/3.4
-Referer:zUP3/K?'23Xl%33
-Content-Type:			 		9JL/V 
-Accept:	 
-Transfer-Encoding:	  	 ,,,s  	;     	-A#w3 	  				  	="\x\Å"
-Accept-Language:,,	 	,  			,, ,	,		  		,F;q=0.   , 		 		  	,zW 	 ,, 		 ,	    	 		   	
-Host:	64.2.221.198:0	  
-Referer:  		 	    /??
-Host:[::7:5BCA:B1:7:36:9.93.87.4]:6  				
-Transfer-Encoding:, 	  	, 		 ,  	 	,	 		,	 	 ,7   		; 		 	L*E*=   "\V&ï]§";  yE= 	"";  		auWd  ="";|i6P&urK`&Q8&V			  =  		""
-Connection:	, 	  , 	g-	 		 		, .P`V 	  	, , 	 ,  ,6UQNgLx_	  		 ,			   			$  
+N /0;B//~ HTTP/2.5
+Content-Type:	  	xT_d^/C	 	 		 ;+w8SI="" 		;SDig=! ;	 		 		 fV="ÿ\À±"		
 

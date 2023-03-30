@@ -1,24 +1,2 @@
-ToKRskb$ /!/uLH/zzO%E0l%8F/*o&/EO%83%51g//+?2=)l HTTP/6.3
-User-Agent:    		    2s&``D (()\ÍJ)  (())  
-Host: 	[C1:A:F:E3:DF:8C76:E:3981]:0
-JU: 	[  		 				 ®ü	  		ÿu	
-y1XNg:	Ó		    	    &s 	—	    
-Accept-Encoding: 				
-Referer:K7;?g.8		
-Cookie: 	LQ-_wxt1D6ocHY0=
-Host:		 		  [C3:2B:FC:1:8:C:82.168.222.170] 		
-Host:   				 	[FB::5:CF6:D:E7:91.48.43.75]:  	 			 	     
-Cookie: 	 MF2=	
-Cookie:T="R"
-Transfer-Encoding:  			 HAf&vMw`o92GdV+Ko&f!'	;	  8WeCmJ2-qd 				 		="ƒ" , 		  		 			,				 jv#T-$Uk	   		,#V-,,		 	 	_
-Referer: i:/?67EZI)%13%7AICM   		  		 			
-Transfer-Encoding:,	G49!.|$+ZWZ8vi		 		; 	TW8oB= 	  "2"		  , 				  	  	Cy5ef4,vnSd; 	 ! =	 "iÀñ"	  ; 			  'R  	 	=	  	    	"\ôH" 				;		 4M 	 ="Y" 		 	 	  ;dr	 	 =""	, #AoU			 	 	; 					u	=		 		 ""			  	 ;	 	ft   	=  	 		  		 "\¸\s"	, 	j7	;	  	 	 	 %p =		   			"\K;ã",			 r		;				BqJ#3KmCWM$  	 	 = 	""  
-Host:   2.243.26.9	
-Accept-Language: , 	 	 		 	c-y9-U-fcf-byTj;  		q=1.0 	 ,,	,G			
-Sac#:	  	 	 			  
-Content-Type:			 		KN+Y/a-u+Uet` 	; 	 D%h="\j·R\9˜EÅ\Â\³\?\W"	 ;  ~="‰\*Ê"
-Accept-Charset:  , 		,	 EW~ ;q=0,  3D#_k		
-Accept-Language:	  , , 	,	to-5H-5Y  ,kj-sI-f-s8-Yo-FVE		  ,  	 	 		 ,	 	 	
-Host:[v8E.Q]:  	
+5 /%FAR HTTP/2.6
 
-m

@@ -1,6 +1,3 @@
-o /%B4AXyp HTTP/7.2
-Cookie:f="M"; nZiBwES*DcNiw&l="u"; muMRvE8F="H"; o="{"
-Content-Type:g/|GDQX0;^V=""  	 				  	    ;  9="ßÎÂ\:\X³"	 ;e`6=8Mo		 	 ;				8="\u%~";k5*cjrT2=JcC 
-Host:[422::9:9]:061438867
-Transfer-Encoding:,' 	 ;!'1=				 	nZ0			  		;  								   	  	 H`1r		=			"?z"   	;TzD		 =	"O";	iM^	   = 	  	"e"	 ;Ih= "w«”Ý";e	  = 	  L	; 					     	  sM*`-	 		 		 	  	 	 		    		=	 	 	"\c\—\Üß\ô" ; 	  A-rVvy  	=	"\°O"	;	P =	""  		     			, 	   	 	 
+F` /AF/T-%60/%39m/(-/%56lb'dfu8 HTTP/6.7
+Host:  						 				 [::1:2:4:E:7:8:4]
 

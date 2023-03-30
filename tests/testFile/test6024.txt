@@ -1,7 +1,3 @@
-t /H HTTP/5.8
-Accept-Language:				,	, e-LhCZ-4s-B-IUP-v-GQ-7T-kaASUa-n-U-G-z	
-r5:		”Qý  ~º 	   Õñ  
-Accept-Encoding: 		
-Host:	152.99.254.57:
-Host: 	 155.1.220.253	 	
+9Y /(@Z? HTTP/0.8
+Transfer-Encoding:	,		,		,,		,			   			 	,,	,  		 	,			,	,  	 	 ,	,	  	 	  	   			 ,	,7N*JrX|AvT*xRG	  	 	 		,		  
 

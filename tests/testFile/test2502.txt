@@ -1,11 +1,5 @@
-Ri /njAcXOAt%5610u;F%D8%39 HTTP/4.7
-User-Agent:	8fHT*PDZWq4orej/D   ( v\t7) 	  	() 		  (\Ã\-)  ()						 		(\Ω(ô<))  			
-Accept-Encoding:        
-Referer: //CVD@[::10.140.221.1]/d/C%A5%12u./%E7;/%81Hd?	
-Host: [vE49F0D0.nt_]	
-Connection:	,, ,,				 	 We	 			 	 	
-Host:	[v2.*]:160  
-Expect:	  		 100-continue  
-Referer:Q:/W/%3AmO!~U%629/;hx:5!%9A%33:?	
-Accept:		 
+r /sg3/D03%96D%F7)D/%3C?8/%CB HTTP/6.8
+Transfer-Encoding:		    ,	 		 ,	N;IaF3H%ndQ3$LP="\pñ\Ü\#\ÆF\Ÿ“;\>"    ;m5W	= 	"" 	 	 	;		4XV	=   "Wuà";T!F="";		 	 		 	 SS= "ƒ\R\A\&\å\,n\˘\(¨¬"     ;				3f|I_	   	=	 "ﬁ\À’p!"  		; jYwOwI 	  =		   "Ã#À";  vuH=  	 	"\π" 			; m%ZelPfB1I=  	  "\X\dp{Î\Ñ\Å"		  ;~	 = 	""		;	d|~	 =N; 	   	 Mg&HUo=q0 ;R	= "@"	 	 			;TYY%lG5G+g 	="\§"  ;  		 	 	8  	  	=    "õètVÕ±\¸"	 	   	;  E'V|	    	="vm\ \†"	 
+Transfer-Encoding: _KPL;W~mlol	  = b 		;wo		= "\r"	 ; 			  	|g8			=	"\É\‚÷"			   	 	;	 	 	YU$		  		=		"NH-\¸∫"	;o=""		 				;		2_~*kY2*Ly	=	"\}|w";Y45= 	""	   ; 		 b	   		   	=	    	 .fz~hL,         	 zzy   ;jtxZ$S= 	  "\∑\“\2Ò\7\‚iÎO\X"			 	  ; 	b^ ="\å\Y" 	 ;HJwu 		="\i\7\`\Ã\Â"	;M 	="",^ ;		I&w   =	"\‰"	 	,&SH 
+Host: t:33				 
 

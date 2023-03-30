@@ -1,6 +1,0 @@
-f /%A4 HTTP/5.1
-Host:	76.74.9.158 	     
-Host:		  		 :10612936
-Content-Type:	M/7		 ;U="\M\§\3´\­\:\ìxÙ" 		;  e='*QHjr2bV	 			 		   	 ; MN0x="\sº\+";^xDd=_	 	   	       	
-Expect:100-continue 	
-

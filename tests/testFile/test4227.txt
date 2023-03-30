@@ -1,6 +1,3 @@
-OM /%940%88O:X%BAd HTTP/5.5
-Accept:    	    
-Transfer-Encoding:  			K8Of^+t		  		  ;~   = 	 		  	 		 	  SyBa#	 ;		  	2 	=			   	 'zGyQ2_p'	,
-Accept-Charset:	  	 	 , 		  ,  	,	  		,,	*;	q=0.19, ,	 		,	  $		,	  
+b // HTTP/7.7
+Host:			[v5CEC.CX]: 
 
-C

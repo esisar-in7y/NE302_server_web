@@ -1,4 +1,0 @@
-pmi /y7b HTTP/0.8
-Host:	11.6.76.250 
-Cookie: go.#'=yc; h^4%Z917o^0e=L; B=|9Z6iLg; e="w" 		
-

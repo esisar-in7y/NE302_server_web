@@ -1,7 +1,3 @@
-m5Qu /vnS!MC/1H:ur%25E4E%00PI%BFmWZLm&B/FX.&/d%A3y/1A~%94:/Q3/O/%97//YQ_R*//(sNL21%3F7/aHS?Jq9@U HTTP/6.8
-Cookie:  S%y=zTaD; y=".%"; g$HmV&h*yKcr-0=BqO(*M; J=">"; ~bTi-=Gt
-Host: 	[::9:F5:3E60:C:8:92.216.253.33]:
-Accept-Charset:		  	 ,, K 	
-Transfer-Encoding:	,	,    chunked
-#gHv6:	 	
+h| /k HTTP/5.7
+Host:[6D:5:40:A8:6332:5E:5.229.177.99]
 

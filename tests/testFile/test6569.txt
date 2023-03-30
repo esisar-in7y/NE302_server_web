@@ -1,8 +1,4 @@
-_$R /BhQvz&e/._1%EDE9 HTTP/6.4
-Expect:		 		  	  	 100-continue		  
-Content-Type:	J!Y'z/3mm	 	 
-Host:251.158.223.210 
-Host:23.6.6.231
-Accept-Language:,			 , 	,,,	   *   ,d-d-J-8-B-jTKk6-UL		   
++|I /E3!5(d/%5B77Kx/63/.%18+/0?%B3 HTTP/3.3
+Host:(C:  
+Transfer-Encoding:	, 	,				  Kx				;	   	 	#yyx9F9 	=   ""	 	 ;  `4 	  ="6ух\v\▐щ"		 		 ;  L=  	"a\В,\*Г"	 ;	 i	   	= 				 "\ц";  SL	= 	 "GЙ²"  ;	 	 	 	Zcq7v= "У\К"		 	 	 			,  
 
-■

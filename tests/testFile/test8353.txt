@@ -1,21 +1,2 @@
-1M /coA+OM(%DD/v///%39K6pIEy HTTP/8.0
-Transfer-Encoding:,,	 	A_T|VIzP  	; 	 			  YpUPE0^Pz  	="\ÇçÏ£É\ñ\ª"		 ;	    	 fXR#10Ui|V	 =			   	" \U" 		   			;D~=	 	 	 		     "Ô¶\Ç\ø¶?ˆîê" 			;|Nhv_nf&y			=	 "" 	;a!cy	 		=	P3W			 			 		 	;	^mze		=	 			"\N";   	&=			 "º"	 ; 	 	95~_izY=		 	""		  		;		0|mm'3_Jcy	   =		 	  "\ë" ; nH=			"\·\>\ò"			 	 	;mx2e!3q   ="\%Z\∂\p[d∏˝\Å"   	  	  	    	   	
-Accept-Language:  	,B 	,	,gC-TP-Ozd-D-X-X-J  			 ;	q=0.00	 	 , 	 			
-Referer:  	  k://1@C*,td/%73%CB8%30(+n1%F2RR_)/%59/%EF8%A8/d/z%E0ZL/J1? 
-Z8C+l`Nj:   Ÿ‘			˘d     PÍz	Î∂Û	'	
-Accept-Encoding: 	 	
-Cookie:'px6F1=6V 
-Referer:  		p0:Lij3a%302WMl%61?  
-User-Agent: 			 	 	QRr#MjR7/c& (\◊‚\¨()\iw\™\8V\s+)	       () 	 	  	 		(\È„\Á,â’\l\˛)	 	  (Â) (¸\:˝(\F)„Ö)	(\m) 		  	     	  	   
-Host:[v0E4.d,c]:914
-Transfer-Encoding: 	   	 ,    	sV*pB9^	 			 		;e$xO` 	=  "öÖåè" ;  	 	  -%dB2R="\='\¿"	;8	=						"ï&"
-Host:	[::8051:B:6.67.255.231]:   	   	   						 	
-Host:			   [::9:EF68:95:6.129.234.80]:36505680007788467895138 
-Connection:gK'	  ,hR`	 	,
-Host:[F39C::0:08:8DCA:5D8C:211.97.9.211]:24	
-Accept-Language:		,	 ,,,			  		   	 			 	 	 m-W8u	 		 ; 	 	     q=0.81	 	 ,	    	m			 	,		 GX			,, 					Xk	 ,	, 		,		   				 ,		 	 	,G, B-V-b-S-u
-Accept-Charset:  	 	, ,,,  		  '					,	   	P- ;   		 		       		   	q=0.	    	  ,		 	   		+	 	,	 	+wWBu+	 , , 	 		
-Host:[::F4:E:1:E3]:1	
-Cookie: 	FE~="sf"	    			 
-Host:		 	 		 [::F:149:9:30:11:5.119.16.35]
+wXAZ7I /S!)D-A4WX/6j//6b.d%1Ed HTTP/1.0
 

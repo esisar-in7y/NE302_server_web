@@ -1,10 +1,6 @@
-8p /54-BZ/Tch%8BUm%57uyD5%71/4Z%7F/NuA HTTP/5.4
-Content-Length:	 	174		
-Host:  	[::6D:7:2532:D:A:58]:
-Host:[vB7.W]  		  	 
-Accept-Charset:	     ,	 ,,,				 	 	 			   	  ,	 	 &GZYQ9   	 ,	 	A&  ; q=1.0	 		,  	li	  , 	ZyK~yTox5RC0vs	 ;  			q=0		
-M':					 		k  	  e7
-J6:
-Accept-Language:D; 	q=0 		 	 	
-Accept-Language:  	  ,	r-bT-6AN; 			 	 	 		 	   	q=1.00	 				,	   , 			 		 	 ,, 	    ,  				
+0-7`dn-B^7 /)?c%59 HTTP/3.6
+Host:	 	75.224.96.7		
+Transfer-Encoding:	gzip	,3i_ 	, 
+Transfer-Encoding:	   	   		 			   ,,	 ,,	 T2Uq%; 	40     	 =VG; 			lPsafd					=	   "®"		; fPxt5 = -	 		 		 		  	  				;s0AX_KMDJ-*2'P%= "\_\s,"	,,6w		 	  			;$we= 	 	  1		;c6J	=""	 	;		KKe7EvEyQ720aR1l		 =    		  	""		,		m 
+_l: «		   	 		Bö‘  
 

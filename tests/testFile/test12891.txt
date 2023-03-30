@@ -1,4 +1,0 @@
-!j / HTTP/8.6
-User-Agent: 	!  		
-
-|

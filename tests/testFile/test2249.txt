@@ -1,7 +1,2 @@
-v- /%5F0//,S HTTP/1.8
-Host:	197.219.8.254:8  	  
-Accept:		 
-Cookie:28=""; tLVhtghS=iv 
-Host:%1C:17153115467 		
-Accept-Charset:		KJA.q	 	;	  		 	 q=0		,  , 		 * ,v ;	q=0	       		,		, ,	  	 Y;	q=1  	, M;		q=0.,	 				 	,,			,,	, 
+ubC /T//Z HTTP/1.9
 

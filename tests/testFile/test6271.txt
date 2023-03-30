@@ -1,6 +1,4 @@
-*W /h?aD HTTP/3.4
-Cookie: t=nWr<; `="X{h[Z|XJF"; sK9qb=_	  	 		
-Transfer-Encoding:				 ,      			  ,,	 6t;Q 	 =		"\lª"   		 ;	 _ = 			"î"			 		   	; 		  	dP8vxk|_^p!8|	 =	 "\DŽd‹v"   	    
-Accept-Encoding: 
+59`_FmI /(%7BY/nC,n HTTP/9.6
+Content-Type:  LrpeDSa9B4A/Y 		 ; 	j=""	  ;UscZV^6o5=x87o'*p ;				 	   	Nyj%G6+!=""   	;   	 wjz^=tE		 				
+Expect: 	100-continue 		
 
-

@@ -1,7 +1,3 @@
-G /6*;1/0 HTTP/9.1
-Cookie:  	ARUKSLb=; #4V+R5=cbs82	   	 
-Connection:	FVcA3A'!t3z	 						    	
-Accept-Charset: `ulwr;q=0. 
-ri: 6 				 	ÍÊ  /GÐ 				 	 	 	 	 Q¿	K› ¢ 
-Content-Type:~/A2 	
+B ///f: HTTP/9.2
+Q:  ,	Œ«»‰    	   	 	
 

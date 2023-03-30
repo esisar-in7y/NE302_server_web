@@ -1,4 +1,11 @@
-nw /%DA HTTP/1.1
-Accept-Charset:oMIt$fa!co0IAyKg
-Cookie:	q'aqraqe=TST; *=V9[ue; 5=^S>; b`EW=; bI_CsU="9_."; Q1mb=""; #="ONlT_Um6z#Kt1{w_HM:"; tbV=-&??g; TB8ngyOqToR*KkCIB="]T"; &wR="X"; `bfy=G~#}; t=_KFz0dkG=L; mnK=Uu^; MLsVQ!aZg`Xfw=; dkqQKH%2*="w4S3Z" 	
+Z* /2!Yo~//%E2k%299@U/*gL/?Q HTTP/0.4
+Cookie:PE3=96-			 
+Host: 	 		 	 [::54A9:A:8E:E4]:   		
+DN:		 		 ? 
+Host: 		6.8.254.34:3		  				  
+Connection: 	,	, MKz	 	 
+Connection:			,,  		 		  	 	, Qp,  ,b8_, 	 	 	  		 	,p-fc 			 
+Transfer-Encoding: ,  ,	gzip  		 
+Transfer-Encoding:,	 	 		 'j;   ^Y6WF~		= YS$G ,,,		 	 	  		^			 		, 		 			
+Cookie:		t={; N="58"; D+6l49Lk="tINb"; nVv="y/" 			
 

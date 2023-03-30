@@ -1,5 +1,0 @@
-x /:%E5c? HTTP/3.6
-Content-Type:%X/u& ;  m="\“" 	 		;X=""	 ;  ~b9AiL%="\ø"	 
-Host:	[BEE::2E4A:EF:DC:0.254.3.96]:076  
-Host: 	 90.4.80.207:8338	 					
-

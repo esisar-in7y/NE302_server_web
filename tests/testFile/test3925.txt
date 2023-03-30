@@ -1,21 +1,10 @@
-w8 / HTTP/3.5
-Connection: ,		    	 ,,8!~			
-Referer:		 	  Lo://Vp@8.62.47.0		 
-Accept-Language:  		,,		N-UD 		 , 	  	L-BzI-CXf-D 	   ,	  	 	  	 	 
-Host:  	 		[5:A:90BB:34::CC4:253.222.1.249]:61	
-Host:	[3:14:97:2:0CC:C869:243.124.5.82] 		    		  		
-|s-:			   
-Accept:		 qlM$P1rWuan!'o`JV7Q_/dTP$XQB9e.DhM;  $m!8gZT6J="6\º6"    	;xJ0HX="\Ì\9\Dè\Ü" 	; lR="æ\•˛AÏ\OŒ\„\=" 	 	;  kJFnfl="\`Kk"		 	; 8A$="\¨" ;  		gsv_bVk62S="\ı";z4R9=""	,, ,	  kJ/*	 				   		;k&|="\€\#˙ÓÎ\¯"	 		; 1="?Lj";	 	q=1. ,   N/H				 		;		 	I7i="h"				
-Accept-Language:	  ,	 ,,		 	    , ,		, 		,					 	 , 	B-Fgces-p-4-miaVz-39-UBS-TEQ-N1-RE-ISi-T-b 	,						  		, ,Dj-S-l-F-u-4Ci	 	   ,pm-gpnl-wX;	q=1	
-Referer:	 	  //205.200.250.17:4?,:		 
-Host:69.229.38.14	  
-Host:
-Host:[vF0195B.n]:3 		
-Accept-Charset:		,,,  		,		 	 ,l; q=0		 				  			 ,			  ,	, 
-Referer:	   /		
-Host:   	 		234.252.8.250:97075	
-Content-Type: JJB&r/EiOC`g-OM		;	8^G&t_zb="‘"  		 		; 	BG8=15C*7mBh$	  
-Referer:/9/%26/~t/c5LcV%20B?d%CFX
-Connection:%'2%	 	   		 , &jdKjsy4 		 ,	 			 CV|T,		+q    ,	,  
+q /@-/?S HTTP/5.7
+Connection:,,	   	,   		,		, ,	 		 				  		4acB4h!,ct%	,			  	,
+Host:	 	 75.254.6.115	 	 	 						  
+Cookie:	 9m="fMbX.rn.bD"; h="(}"; X=S; gK="~!CV"; T4uGnCpj=Dhp; 8Ny#="7/V]3"; ey*=^  		
+Y:	 		 5Œ   	 	 	 	–H
+ant:	L						Fk		^Í|¬		  0 
+Host:	   [v2E.1_] 
+Transfer-Encoding: 	  		  , ,		  ,		  	`sl ;					  	  7e1 	="`§"	 	 		 	 ,		 	 	,	 	  !#fl_	 ;  	*= 	"\8";		  R=		   	"ßJ\∂["					;xzBJ`zQ="" 		; 	l9			  		=			 "" 	;   	 		 	 	t=		"U\o\-\∆Ö\`O";	 	m+=		"\®‡C"	 		  		 , 	,	 		,Kd 	  	  	;	 			FNjJ="Ç" ;		 lU	   	=		     "\®Ì\qñ"	;	GiBQMD  =	^i ;`W			=  	   			 			" *" 	;lmOt	 	 		="";	O1Yld8=  	"8∏∑Ø“€" ;  				Pz^X~  = 	 				`-%Wa;	0T 	     =	 		"" ;	 		m%o.%+L	 =""; FHjn9icp	= "" ,	 ,	  		 	 ,	 J 		; ~K7 	 				  	 ="òœz"	;	  		hE=	 	 	 "\˛Û\Í€\9¢\4˜ÿ\}≠\S\eè\∞\,\Ö‰d\AÍ\É"  	;	s_	 = "";   $T|.j6`mCl+&x3ivp5  =		 	"\®À\Ê"    	 ; 	egM =	  ""	  ;zy~		 	  = 	"\ﬁ\4\/\Æ-\˙\<®(∆k\Ö"  		;pw	   	=	    	 	"\ò\N\è\M\\Ù\ﬁ\»L\L\∑"	 	; 	 	 	X ="\Ó\`"		 	 	
 
-µ
+<

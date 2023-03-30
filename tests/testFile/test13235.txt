@@ -1,6 +1,0 @@
-9ti /%A125/%3C? HTTP/1.5
-Accept-Language:	, 	  	 	 nUd-DX60-g3-vYUGcz-A-vr-h-VS		 ; 		  q=0.,h-A-0VQtL	  ,
-Accept-Language: 		,	I-0; q=0 	  	  			,		 	 	 NPD;q=1					 ,	 g-AY0u-x-0-gRu-u-QF-oNi		 	 
-Accept-Language:,	 	,  ,	bM-rH-is-g   	
-Accept-Charset:,	   		 ,  		  	 	 	 ,	 	,,, 		 		,			  , 		,		,			 		l 			, 	 
-

@@ -1,3 +1,0 @@
-^w /s/? HTTP/5.4
-Accept-Charset: yT	;  	 q=0.55	 
-

@@ -1,10 +1,2 @@
-!0 /155/m%19//BVs%6F/-nxE/.R0w/2%F8f/%9B%1C%E23 HTTP/1.3
-Accept-Charset:				 	  	  				 			,,     			,   			,   , 	 	  , 			,   	x8	 ;	 		q=0.5 		 ,  ,,5ER5Pi1 	
-!ZL:  T 		  	  
-Accept-Language:,		,,	   				 	,  	,		,  E-C
-Referer:oPnpI:/w@DRKA/%5E0KY//FQ  			
-Accept-Language:		 , ,	 	 	,    				,, ,		,		  dJm-I-70; 	 	q=0.	 	 	
-Content-Type:	 l9'0/$;		B="Í"  
-Referer:dNRT:M/%89//?  
-Host:[v199A.,m(-G]:71759				   
+* /R%DC-Eo/j%E8/T/Bvi;/QzdBxBv:d/AU%F6f3//Am$K0%21%DB//rP.QFYn HTTP/2.9
 

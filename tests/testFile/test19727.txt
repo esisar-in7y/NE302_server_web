@@ -1,4 +1,0 @@
-PG$ /C/S1%D0/Q=m HTTP/1.4
-Host:		  	[::250.244.108.14] 
-Referer:bko/%10//_E//y?z8	  	 
-

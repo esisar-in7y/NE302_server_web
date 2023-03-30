@@ -1,3 +1,0 @@
-%MR^ /%BE HTTP/5.5
-Connection:,	,,		   	,		   , 			 Uvb6		,mmYZdnmCN		,
-

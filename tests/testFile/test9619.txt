@@ -1,11 +1,2 @@
-NcI /q HTTP/9.3
-Cookie:		 	       		l="47b"; *="=8"; 3=""		   
-Connection:_^&D%			 		  		,	 ,	,   			 # 	,	 	  #r  	 ,,			 		 	,	  bI|Gw,  	  +`I  	 	, 		& 	,	 	4bL~				,iq ,mXk 		
-Content-Type: 	 	 	py^^wOY/o& 				
-Content-Type:	A/CbQ		  ;s="±\ºª"	;b`="Ì";nE!=""		 	;    	  		4ja=qJ			;z#gVPV15e="}"		  	 
-Cookie:RFdozL|=; N`2="?!I"; rK_%=".zM0&N#"; &="%"; ~sE="HvlS)e"; G3M="deiQn(_MU"; .Aa=""; Sv=qG~K]NWU; -=""
-Content-Type: 	E`/1!s`igYC  ;		6d=VioEk		  	    		; 		 	 	 			 		 				 	     	 	 ^Bhto$=""	  	;	 v|DT="›4\/\š\Ð!"; i=|ntQ ;		 				5o8=J		 ;	  v="Ô\I\à\Ö" 		 ; 	  JQ="\—þ*\Ö,‰…ˆE{\~P\º\Û" 	
-Referer:		EQ45H:/?dT%9AE
-Accept-Charset: 	 	 		 ,,,   ,   			 	     , 	   	 ,	  	, ,	 ^ ,	 			 ,,  Nk  ;	  q=1.00		,     	 ca#M#    	  	; q=1  	
+QRB|l-#+ /%90wXK HTTP/5.1
 
-«E§žÊ

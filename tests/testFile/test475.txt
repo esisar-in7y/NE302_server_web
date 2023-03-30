@@ -1,10 +1,3 @@
-py /Zp= HTTP/5.9
-P: 		É3 		 	`Ñ  çÔ   ¼] UÃ	]¢			
-Host:	  [7:6:AB:AE:3:0:56:52A8]  	
-Dh:   	  		&							 
-Accept-Encoding:	  	
-8:		  	j	( 	çn 	 		M© 	    1U  	 	 	 
-Host:[v1C8.8FudXszuR]:914
-Host: 		  	 	[::78:D1:4C2:223.242.252.0]
-Transfer-Encoding:   ,_+FB|Qy'6$wIj^ ,  			, 		 1e;  	8tcuT3y 	    	=	    	 	   "\·Hö\{"  	 ;	 	  	  |#	 ="QåÊ";  TJ=	 		         "Õ"		  ;					ar="\'\G\/\œ\\\Š"	 ;		  	    	   e=	 	  		  		 "Ï\þ" 	
+$rt$&' /?$ HTTP/1.6
+Transfer-Encoding: ,		   ,,	,	compress,	,		 	 Rb8nnB
 

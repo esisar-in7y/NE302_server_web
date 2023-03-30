@@ -1,12 +1,2 @@
-yRvDN /%87%CA3%65/e%1E1/C?%20)es;iD HTTP/5.4
-Accept-Charset:,				 ,   	,	,  		,	 		 ,  		 ,,      		  	 &3|6BG   	 ;q=0	
-Content-Type:	  i#TQK#pam*/T  ;    7*k-J="u%i\ä4"							;  	Lq=K|9-TAT$
-Host: 64.234.252.244	 		 				 
-Transfer-Encoding:	  		  	,,	 		 			,hG;qc$^| 			= "\’\#e"	 	    ,	 d+;					 		 	CtTS~kR^K= 	 ""	;	  M|I2Lg0SQH				= "WÔf\±";	 x	 	  =	 ""		 	 		,0;  			f9kLT     					   	  =  ""				,	 	 	,, ,gzip				 ,compress 	
-Accept-Encoding: 	 		  	 +167UUZ	     	  			 		 ,,				 t 			 			  ; 	 		  		q=0 	,	,	 	 		yE 	 						 		   ;			q=0,	 , 	!X3pg	  		  		 			 ; 	 			q=1					 ,    , Ei, ,  	 	identity  ;	q=0 	,	  					o	 	 	  ,,	
-Accept-Charset:	  ,		,		 	 ,	qW;q=0.750 , 	 	 qGZ.XcPR+s&
-Accept-Language:,		 		 ,    	  			, ,,	 	 ,	,	 ,	 	,					 		 ,	 ,	 ,,,	 ,,,	  		Jp-yR-N-A-tuY57My-jqXoUq-m7D-O ;q=0  	,,  	vUe-p7YsAZ-o-myfJ-ZNLj , 	 		
-Host:      		 	 [::111.4.1.250] 		
-Connection: 		#_    			 	 	  			,   ,				, 		,
+M^ / HTTP/8.6
 
-²

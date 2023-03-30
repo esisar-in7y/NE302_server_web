@@ -1,11 +1,4 @@
-F$f2v7 /%13 HTTP/3.7
-Referer:			 //[v5B9BC1263E.Akwrar$]:19102?%82T(
-Accept-Encoding:  		   
-User-Agent:				8AgJ5 	  	 	(ø\d\…E\	) 	 	(›‹)  	 	 () (Þ\4Ð) 				ilF~IX7bPym/g
-%J:	-    Ê%&¼š		  			ï|ÜG+A		   f
-OV: 	£J	
-Referer:P4ygD:=j/%CCCw%BC%5AZN?D8-%71 	 		 		 	
-Host:	 a46o:9533
-Host:	8Z%0BlncX0r%9F'zO 
-Referer:  	OH/9A/R%99omIc/o/.H%AD(5B//G?		 	
+`&6Kq /%00Er~/G4n/? HTTP/1.9
+Connection:	,  		  	,,	  		  , ,	  		, ,		  ,	,	 c	     ,			 	 	,aO.d	,,					  		 Lt	  	,		  	    	 	 ,	Vmw1, 	 	&6B4		      ,
 
+Ußð

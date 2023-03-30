@@ -1,6 +1,0 @@
-WSwku //OT HTTP/1.6
-Accept-Language: 	 , ,	, 	 ,,,	  	,		, 		,	 		UI-z-2n-wm-U-X-Ks-R-pZ-A ;  	  q=1.       		 	
-Host:[1:21:2::F:38:253.77.210.3]: 	 
-User-Agent: `/$F8UQZ~	()	(\î\P(\?)\`¥)	()	 (€V) 	(`‡)	 3m 
-Accept:M4&N^/*		   ;5IA=bL.Lg2^ ;		 	ll*.d=""		   	;Q&!="î\X`"		;	 			 		   	  nJ|EQgJ="\˜" ;  W="";	  	 E_="R\S"		;	q=1    , 	G/*	,	 	*/*; 		!3="\ó_\_\B"	;		  M*ECukKsd&iUKB_9KDc-Kv=ur'h!O'Pm+!j ;1_zv~JuY="\W\Å\Ý\ê\#\"\\+-j\Ìh\ªÖ\·\^\º"	;wKZ247=""; 		q=0	  		
-

@@ -1,11 +1,2 @@
-C /? HTTP/4.3
-Content-Type:		72-2Ie!22/1	
-Referer:aU://5wjfVm;TkX  
-Host: 			[::D:76CE:833:8C:9B63:34.237.47.7]  		 	   		 		 		
-Referer: i+qD://G@4.215.65.44:?F=f	 	
-Content-Type:	 	n/lvT			  ; 	 	 	U="¶\ú\Ù"	 	; 			 B`Uc.=""
-Host: [7:8:A::3:147.1.58.201]:1	
-Accept-Language:	, 	 	 		 , ,,	,	 ,	,	 	 ,	,					 ,  ,		,		jQ		  ;q=1.00 	
-Referer:%6F/_G%AF%CDe_%3BeDe?%7FdNj	   
-Content-Type:	   'H/&HLV2INPQ;Nc="Š¿!\­#€\µ"						 
+#KaAT /$//8%B3_%C8/i1//i.X:=b/Ms%57//e//!:/3?u HTTP/6.8
 

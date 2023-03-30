@@ -1,8 +1,0 @@
-4e6T /c%8E-&9:u-?9%7E HTTP/1.0
-Connection:	,, 	 		,  ,				,, 		,		  	 		 		,  		  ,	   V-t#-	 			  	 	 			  	
-Accept-Language:  					 ,  ,			jm 	 	 	 				 
-Transfer-Encoding:,,, t
-Host: 			[vCE38A.m-yJzE0TgS7!3V))L_uisp]:   			
-Referer:			 //[::254.6.46.242]/u%23/.m		 
-Referer:  						/l%BDc%69vuo			
-

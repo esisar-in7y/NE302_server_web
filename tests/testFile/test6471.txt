@@ -1,22 +1,2 @@
-d& /k? HTTP/0.8
-Cookie:	  		 vU6b|=ym3L%; gry="P6K"; z=]MME^; 0="tDt#"; Q=""; ~^s_eZ52X=G; -7p="'R-.c4c"; _kP#^Ni.GX=+; QJS=4MEa^OYE 
-Referer:uwE:eA6%B6iV/%67%30=/%FD_%81u/ls3//Oy   
-Referer:	  	      //u*r%5A%7C%9DV$@h:5/uvcFq%96xop%F0/T%B97%31,
-Accept-Language:,					,   	 	  	  	  		,	, 		,, ,  	   		BlisV-7ZuQL-f-F-Xg6xy-o 			  
-Host:	 [vCE4D4C91.zaB]: 			
-zNF:	 ˆ–		  ýb=~  	 	(vC		    Ò	 				 	 
-Host:				 [2A80:3:DE6A:76:8:DF1:30.0.234.216]:50857553857829	 				
-Connection:				, 			 'b!KAA'wt	  , 		v					  ,,,
-Connection:	       ,	  Q+N	
-Transfer-Encoding: 	,	, 				,   	 ,	 		,	 	 ,  	 		,   	 	  ,	 				, 			 		 	 ,		 	 M0uLNk9BR	  ,	   		 	 	,
-Referer: 			   		//%83Dg%79H%E6%31N@4.201.9.6/Y7%27	 	  	
-Cookie:				pXVp+XNW=D	  
-Cookie: 	 kFtYGZTc="59"    
-q+:		 		×8C ?ÁT				  		 	Ç«®'	ÙB		 ’H	   2Û 		  		 	
-Referer:%AFqW/Ke**//%3Af%D4?l	 	   	
-s:	 	 		 J5	Óš	  	¬				  
-Accept-Language:	,	,	  	 	 If-FD0-1j
-Connection:    	 	 	, O	 
-P'ew181:	  	 	
+ZG1o /? HTTP/2.0
 
-©

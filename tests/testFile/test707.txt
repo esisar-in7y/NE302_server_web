@@ -1,16 +1,3 @@
-O /a&/ HTTP/4.7
-Transfer-Encoding: ,,,		 	 ,		,t	;w  =		 	"\ñ"
-Z:			 			
-`-.%: 		  	  
-Host:	  127.178.25.228:	 
-Referer: 0	  
-Referer:%69lr%D9!%4BB~CtCS%1D1z
-Accept-Language:		,  S-45-LG	 	 ; 	   q=0,  	 I-6fs-pZ-dgi-S-A4OW-G-97WAW-D-Il-yL-TOYP-hepqK-aa-y-u-hd-5PN,	 	 	 	
-Transfer-Encoding: ,	 		 			,	,,,	   		  		 	 	 	 ,	, 		         		, ,   ,  ,YF_		 	;W*+%APBrFM7rB			 =	  	 "" 	 		    ,	
-dkFu_8: 	ûnˆ!			ÑŠ  	  		  	   	e|   	 		  wÐ ÿ!   7'   -Š	
-Referer: /%B1Xy4(t&(//,L%38Q//pY	 		
-Host:			   		 [vB8.n]:8	
-Accept-Encoding:    	  
-User-Agent:	 oLP|/X		(®ý½Ä()ž\_^\p(Ê)Ö\;\O\~\K\\Â)	 			 		 	 	   	 	 		./JF () ()	|Y/n 		(–•ì)  Qe     	(\>\ ) 		 				  	  (\€) #klq5ep~!u!ES 	 
+Kt+ /q%71(ybl? HTTP/1.5
 
-12
+ÏÙŽVi’Ìˆ

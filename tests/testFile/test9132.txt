@@ -1,17 +1,2 @@
-wR //?@ HTTP/8.6
-Referer:	 		 j://[::252.255.198.13]:0075/vVy*%8A		  
-Cookie: 	 %="drw1%"
-'4:		 	 P	 	     	óœ	Ó
-	”	 ØN 
-Accept-Charset: 		  	,	 	d;q=0,	  	 				   m	 	 	;	q=0  	 , , NE					 	  	 	   ;	 		q=1	    
-Host: [::A:AF73:B:8] 		 	  	
-Referer: 	  	%D9P%8Aj,/1C%DCKz1:ag?		
-Cookie:	jU=""   		  		 
-Accept-Charset:,	,		  	,	*	;q=0,  60n ;	 	 		q=1.
-Referer:		 	 //@3.128.232.8:?l%965%44r	
-Host:  		 		 	[::20:C:9:3.206.68.68]:	   
-Host: 				[::8:B]:81170	  
-Accept-Language:, 			 wKI-lR93-c-Yh  ,  	  n-X9-C3bQ	 	, uLaHE-W-E-r-9-B-S-b 	;	q=1.	 , 	 		   		 VuekDdXe-4-Udc-q-HSZ-P-X-p;	q=0.
-Content-Type:   	 tCSqm959l/S$pNJWWA		 	 		 			 
-Accept-Encoding:	
+upU /_//x!7Lp%A1+UjE2?j$!X2ME.zi HTTP/5.2
 

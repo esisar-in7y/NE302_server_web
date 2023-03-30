@@ -1,14 +1,6 @@
-'BzH /Qq//PZ%48H7 HTTP/9.0
-Cookie:Cob8So2.X=; N=DKNrH; yKE="-"; M=   		
-Accept-Language:     	  	 	,  		  	,		  	  	h-a0l-q-d2-v-t  	 		 	 	 	,	  h		;q=0. 
-0I:		 	   
-Host: 		  [6:F9:6C::B:919:2.8.235.230]:7
-Accept-Language:	  	 	 		  			  		,		 	 ,	,,   	C-j-Tq ; 	 	q=0.9, 	 	  OG	  , 	, 			 X	,,VF-a9r-3	 , 					 ,,	 	n-dWUE
-User-Agent: 	 	3zv+KpyIz/A'Lr%88*|u^Z 
-Cookie: 	WuD=$aI} 
-Accept-Language: ,  	,			    	 			    		 ,,,  		, ,	 , 		a			  	
-Referer: 	jkusVJWm9.2GUbwL:I/,u///Y%07%69/?%10		
-User-Agent: 	 0O	b
-Referer:   l3v://cI5t)@[::9:CC62:6F0D:12.213.233.225]/5/'6x%79c**/BkjhAr%3C;/E(lB%A7L5)   	 
-Host:  	 	g:39	 
+P99 //%54qs//yCY%EB/VvR8l0%13Um? HTTP/8.4
+Connection:			,,				, 	,, 	  		 	 	,    	,	  , ,,	%H$iGi,			,   	 	, 				 		 	K 				, 	,ismF-3	 	   
+q7zU-dRC:		^…	À	 		
+Content-Type:d/H	;	 	 _hE9="}\Ò\©\Y"	
+Host:[::03E:65:C:E:E:248.253.39.78]:63755603533983238694 	 
 

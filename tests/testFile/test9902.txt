@@ -1,3 +1,2 @@
-t. /%ED HTTP/6.0
-Expect:	 	  100-continue 
+jjumh //hd HTTP/1.1
 

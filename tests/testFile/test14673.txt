@@ -1,9 +1,0 @@
-WjZ //H%0D%E8gp9//S=-(v;%48K/wI%F1rB3J.!%82D,u/%EF9%2Aq8.'%54q)g%84y HTTP/8.0
-Cookie:					  	Wj=; X9mIoCcXdjlkd=O($}; _%L5M$3Y="y'Wg9:N)"  
-Accept-Charset:,	,  			  	 	,	* 	
-Accept-Charset:,q	 ;  q=1.00 		 , 	l	 	 	;  	 q=0,	,, 			,	   	  -;   	q=1					 	 	,	Q	 
-Accept-Charset:,  	,				 	,	 	,	,G#  	 	,	 		  	 		 .q9 ; 		q=0,  	%		 		; 		 q=0.				 , 		
-Accept-Language:		 ,,  		, 	 			 ,,,		  	     		,*			 			, 		  
-User-Agent:	   q#g 
-Accept-Language:	 	,    			 	    , ,,,	,	, 	 		We-Z-2f 		 
-

@@ -1,9 +1,6 @@
-R //HKH/_%82z,%77//~//%4Fbuj/*n8rq%30q HTTP/5.8
-inNN:  	
-Nbn: 	Ø		 	|ô 		 		   'ˆ
-Transfer-Encoding:,    	B ;					 		Xc4ie4S1$gj	 	=	 	   "gÏ\]›«‹\É";			    	  		&R  			 			 ="\·"		;	 			afHSC6.5B_ 	 	="ˆ∫}\C\ç\Ã\ú\E\1\T\í!" ;	  				  5   	  = 	"\J‡\~\U\√\L",,		 	  	 	D 		;   	9olY= 	 "Ç\√"		 		 ;C ="\ﬂ„;"  							;EcXv=  		  	"\√"		;	u5X = 		".í\ò";W^Lc=	    "\©2 ∞",, 		,	
-Host:239.52.242.212	
-ID8'myB:		d•w	
-Referer:fnUXLqZb-0:Y0P/vcPv3&?oO%04kI~9sR%9D? 	 
-$:		   	   = ›F	6				  	  	   		 	 
+Xs ///Tq?L HTTP/9.6
+Host:		1.255.214.51:30 	
+Transfer-Encoding:  				, 	   compress	 	,  , 				,,  	%SnNg	 ;_ 			  	  	   = 	 XckGASMCc7 	 	 	    ;fqAAw 			 =    	 			  	   "h"	 ,		0xD5			 	;O=		 			 "ª\iC\«v‡é\˜"	 		  		;  	 	 +Qq9~y^ 	="\≥" 	
+Expect:  100-continue
+Transfer-Encoding:   	,V;	 ywL= e		;   PP	 	="\s\˙Ä" 				 	 	;	o2HBk	=		 	"Õª≈\ñ"  ;HA3E|U#EL=""	  ;		Sl2W|pY 		=      		 	"\z\l\L"	
 

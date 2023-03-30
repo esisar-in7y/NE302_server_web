@@ -1,6 +1,0 @@
-D /nL?ZC%22%BBT%DBJ%F7 HTTP/1.1
-Host: 	 [v7.jWF1*]:6 
-Accept-Charset:  ,	 	 	 		.IKzM			,,	 ,		,	  		  ,1Z.8Z,  	 	 ,
-Cookie: WUF=Q)@
-Accept-Encoding: 	identity  	  	 
-

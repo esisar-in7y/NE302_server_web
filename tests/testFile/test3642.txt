@@ -1,6 +1,4 @@
-uTQ /MA3?%578~%A6 HTTP/1.6
-Referer:       	//cX(R%C0%FB/=1BHl/b			 		 	 
-Accept:  I/*  	   		  ;%Js="\½"	;GEz`6=9Cp`,
-Connection:   		 ,  ,,,  GU
-Referer: uLE:%FFE/7_&c/,%9C+	
+2i //g/f HTTP/7.1
+Host:	[E84::FF:99:E:0:62.226.1.253]:
 
+Ê

@@ -1,5 +1,2 @@
-pup9b /f%640?; HTTP/8.0
-Accept-Language:			 , iw-k,   	 b	,ek-St-7-bucg-XT-U-g-NO9-YM-yEx-eP
-User-Agent:	Z/mU^ -B
+. / HTTP/1.1
 
-;

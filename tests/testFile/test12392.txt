@@ -1,6 +1,0 @@
-^KE2Vkut /?l+%02%81-?%8EJ,z%7E%7E%86Sc HTTP/3.7
-Connection:	  										,		 	 ,,	 	   ,  0J^,		.-#xj	, 	 
-Host:	[::4078:2A:640:AC:250.2.253.109]:3038858164   	     	 	  		     
-Referer:		 EMWl3e://@[::2:612E:F07:016:1:5.8.251.252]:870   
-Accept-Charset:   		  ,  , 	,			 ,C 	 	 , 	  	,P	   	  	 ; 	 	 		 	 q=0.		 	  ,		 p	 	   	 ; q=0	
-

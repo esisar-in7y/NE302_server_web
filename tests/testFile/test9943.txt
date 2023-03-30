@@ -1,5 +1,3 @@
-yW /gb*%E9Gqg/g4m/j3v(0j HTTP/3.1
-Transfer-Encoding:		 ,				 			 , 		  	,  	,    			, 	   		 	bj 							;Kcf  =	"\È"; X 	=   	"" 			   ;PsWQ= ""	  ;		M   = 	 "w¯\Ω\ë\Œ@ê\`ÄÚ\a\ûT\Ï\Yü\≠≤"	  	    ,
-User-Agent:	 		 	K|/L			 					  	 				 				 (zÉ®\∫)			 	 	()	 
-&SO!u&b8Gv:			  	  		 	,«	#â 			  a		
+7 /Z HTTP/0.4
+Transfer-Encoding:  		,	 	       compress,,   		
 

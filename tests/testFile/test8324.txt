@@ -1,7 +1,2 @@
-- /O%AAfi/9 HTTP/4.6
-Cookie:  	T=.+Nf|<a}; j9Eo~FM'y*zB38aB=+; KTV4=""  
-Accept-Encoding:		 nO	,	sCCfqnV;  	 	 			 q=0.,	,	%l	  	 	; q=1   , 	 	 	  		     						 	 	 identity	 		  	  ;q=0  	,    	 	,			  ,  		   	  , 
-Connection:	 	,	  		 		 , 	   ,	 		 	  ,	 	    , 	     ,		, 				 ~.rouBZRS,  ,,	  .l		   	  	  	 
-Content-Type:+c/fW 			   		 	 	;    						 u_N="\Mg\H";	ou="\ý" ;		 	 	BMU`Xmm="C\òÒ"  	 	 ;  	#J="næ*\\ë"; A^qa^j3=""			 
-Connection: 		,	,	 	  FtX ,		 ,		 		DE, 	  		me9h450r     		,	, 			 	
+J //?%DE HTTP/9.6
 

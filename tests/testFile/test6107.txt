@@ -1,9 +1,5 @@
-U /%92b%85E_n?8HW2%53:xBb9 HTTP/6.2
-d1#:Z 				 	 	 	ø¼Û 			 Åž 	  	 		  		 	Il	 3Y 	 		 			  	¨{	  	  		   ‹û  			   		 	  	 	”‰	  ´œ	 tß 	p	
-Accept:  _8/%cLM-X		; 	   q=0.		, P/*;cfFAOdQ="";$="\Å¼\Ì"  ,	 	  	0r_174/*;  Vis80F1WT="\ú§\—X\Aá"	     	 	;  	FuaP="uß¬Ï";		 		   e="\â"			  	;   QO="\û\§‡" ;	 	 		 u="\Ì\ê’\{™\3÷Ô\•" 
-Referer:xCP8Mlr://%B0@[vF8CC24.8Q]/K///~?C	  		 	
-Cookie:	 Z62=""; FT*9_vT8.k'="f"; R#G=; KG$Oc^N=""; eB09%M9J="2:C" 
-u2pgCS-8-5#W^2: 	   Æ			 §q	  À
+&k //')j/LK8X/9%9FHa HTTP/6.4
+Host: 	[::9:39:D73E:4:240.7.212.126]		 
+Host:	 221.212.67.84:460 
 
-
-2P
+Ào

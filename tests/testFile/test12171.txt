@@ -1,5 +1,0 @@
-w /rcxf/kZZ HTTP/6.5
-Host:			 	[::8:81:4E:85F7:5:33.4.5.6] 	  		  	 	
-Connection:,  2k.69_f 
-Accept:	   	
-

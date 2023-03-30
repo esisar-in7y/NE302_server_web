@@ -1,10 +1,4 @@
-e$S //pY-T2?, HTTP/4.6
-Cookie: 		 		UPj&l=""; .="GCyT<-"; wV1m&t=s}P; 3B="L)"; D=aC+?P$; .A^v=K0@48cnV			
-Host:   252.160.213.131	
-User-Agent:				b		 	&f8/bULb 			(\ê) 	 (Q)	
-Connection:				  sR 	 ,	F, 	  		, 	Sui'6   
-Accept-Language: 		 		 	, 		  						 	,	 	, 			 	 d-bXuiQ-ruj-I-bB-oqQp-HQY-Qn-Nlp-O-B	; q=0.		 	 	   		, 	,				   , 	   ,	 
-Referer: 						  g2YLd:/N%EDK~49		
-Host:	  	 [::0:1:CF:250.194.4.2]  
-Host: [::D66:1:9:B2:1:19.241.2.229]:0 
+E //~fPpd//I HTTP/2.0
+|%:&(	  		¾  		 
+D*B:	‹
 

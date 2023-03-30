@@ -1,10 +1,2 @@
-$DYR /bHX/w6VD./_5@3 HTTP/6.1
-uU5U7: ü∫1	 ê	  	
-Host:
-Content-Type:		#/Rb 	;	  		7Q="∏2";8RV*`2c="€" 	 ;	 I="\w"	
-Accept-Language:		  ,		,,			, , 		 		,, 	, 	 GY-S	 		  	 	;q=0.			 , ,	 	d-a-9uWNtAKG-a5		; q=1     ,		   	*		 ,j-P-3gU-Y-K-v-W	;	q=0.9		,	  	yXL , 					,,	  I-z-j-Y1-6r-o-OM-v-D-YJL-BMzA-CX; 		  			  	 q=0,	     	 ,	   	,	,,
-r:7	 		 	 	Bdº∫	 		 	     	]1 	 5±    		 	Å 	 
-k:			   	 
-Accept-Language: 	 ,	, 			  , 	  , 		, 		   			,			, 	   			,, 						,	 		  				 	,		, 		f-f-4Z-Vr-Kp-xg-ce9	
-Host:	  				221.9.1.1:7
+fE /1rN%AEz HTTP/7.2
 

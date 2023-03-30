@@ -1,17 +1,2 @@
-wd| /S///Xs/ HTTP/1.1
-Host: 	 [v28.,r!ad6+js]:3	   
-Content-Type:OL/. ; HSiq|="5 \Ò	\ı"		   	 		;    	 	qdug.yZ="\·e\v\áNã";	 W=",˙\ù\ı\¬"				
-User-Agent:k+*/&K3BF  	  	 (()) (õÙ\°º\ÉÃ\Œ\l) 	
-Host:[::8:3:9903:B239:5.86.77.255]:8 
-Connection: 	 	   		 	g4  		  
-Host: 	  g%6B%E5p:0238817	
-To:	 			 	   	    	W  	èí ‚
-Accept-Language:	, 	 		,	  ,Nxe 	,		 ,	 V-X				  
-Content-Type:nx/-h1	 		
-Cookie:	 			  			 3fH=
-Transfer-Encoding:	,		 		,  ,	 	 o	;      y+b		=				  "5"  	 ;		*qPf`%kTlS 	  	=  "\‘¢"; 	u   = 	""  				  					 		  		;	 		_2Yi.	=		 	"ù'\ÿ\õ\#" 	;%z$  = 				 	"\∫|\€\{≈˘\ÅV", 		  chunked ,5%vK.'syO-.pR_ ;uR&ROv 		 =					"\˜\T\K‚p–\r\w√§¿\È" 			 ;*D0Ss= "\Q\?";	 	`6I	 =	   "©\≤\”\¨íC" 		; 	 	 bcoc=	"^ùπ" ;	8Mq%  =  			""  	;lf65QcT	=	"\;\_ã\k" ;  	 	R  		     	    			=   	 	"\3O";	 	K^l~n		 	 = 		 ""  				 ;		7P  	 = 	 "" 	 	;	 	SL0	   =  		 "N\»\ò&"	; 	  	X$J5=   "¢[8"	 	;MSOKAf  	  	=  	"\w\6\)\ô0ÄÊ"   ;&%H7ke= 	"h\nß"		;$K.Y' =	"\ƒ\¶\ï\J";	   	pM = 	""				 ,, 2#|;				N-Cy	 	 		 		=	"™\•*-",	#; C~`=""	 		;pafRK	  =			  		 		T'A&Bd,,	  SOk		  	; jK9 	=   	 "∆" 
-Host:			[vC2E.qv]:30206254650713952		
-Accept-Encoding:	 P3P;  	  		q=0.47		,		 	   j ,	,,r$QK96o,QO2   
-Transfer-Encoding:				, 			,,	, 	 , , 	 			,,	        	 			,! ; 		`Zr32Sp|BaA 					="}"		,	3V4E.B
-Accept-Language:	 ,	, ,		       					     ,,,	o	  	
+g /%57%E6_/hK~/cSt7X/2/P0/W%8Ar9p/%B1/wV'nDR//%F4Z/J/f%68%10//lS-UQ/.b/%11D//!,O%07cL3rH%98/+e/wX HTTP/1.6
 

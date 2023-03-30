@@ -1,7 +1,0 @@
-x* /?2 HTTP/7.4
-Content-Type:	     h_v/w	   		 	
-gJ:W 			 	 	—^	 ù    
-Connection: ,, 	  ,,  ,  	 ,5		 					 ,				 	I51  , 			, 	Ag|C 		 	  	 			,     4PE~
-Connection: 	  ,		 ^4 	, 	LKey	  	
-Transfer-Encoding:  , , F ;			 	  tVa$  	 	   =&4U	;  		!LX= "",  gzip				  	  	
-

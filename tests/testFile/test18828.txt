@@ -1,5 +1,0 @@
-X+13 /?j%8EN HTTP/1.4
-Expect:	 	100-continue	
-Cookie:hdM4xQz3="|MK"	 
-
-6»∆Åî}7ÑŸoÈ)

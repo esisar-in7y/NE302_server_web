@@ -1,5 +1,5 @@
-24` //%6F'nJ8/B/m/_%C0/QB~$/E/)KwR/?zC+V HTTP/1.2
-Accept-Charset:,	 		 				 ,	   +;	q=0.           				, 		 		 	 ,  ZrK 	 ; 			 q=1.	  
-Transfer-Encoding: 	, M8Asq		
+m /W%8A* HTTP/6.8
+Connection:		,,		,   	,			  	 	  	 ,   	  ,		, 	  ,	  , , ,	 ,		 ,	    ,	 		,			, , 	    ,	 	 ,,		MQ							,D ,  	,   	   	 	,,	, 				95  	 ,		P	    	, 		,	gq	,  %^, 	 	 	 	  	 
+Host: 			  [::A:F:AB:9:7:250.10.1.6]
+Host:	 [v12.e5TP] 	    		
 
-ô±”,

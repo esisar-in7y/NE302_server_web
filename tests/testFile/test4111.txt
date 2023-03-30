@@ -1,13 +1,2 @@
-U /%64n/OZ/E1-r/u/b/5d/%BC,//S1/? HTTP/0.8
-Accept-Charset: ,	a 		;	  		 		  	  q=0.	 , 	,  	&b ; q=0 	 ,
-J1:				 <  
-Host:	 [2E22::149.5.85.83]:2397609970 		
-m+y1PA:	  _E	Ι$ `–ι 	<B								 	  
-Transfer-Encoding:	,	  	ri;	  			 OQLJ_ThFj=	  " " 	   	  	 
-Host:[465::1E:6:114.255.243.84]
-User-Agent: 	t/p						() 	 		(\™) 	(ª\\Φ(\+))	
-Accept-Language:	   	,	 		  				, 			,	 		  ,z-3-Onp4e ;	q=0	,, 	  	 	    		 xvg-taxMO7-j-MVj-T-JiC-mo-ihcWP-lzB-t-4-i	;	 				 			   	  	q=1., 		 sz-w-y-WQLF-1NZ-C-ZHc-SB-t-0-Eio-9X-S-jhe0v	 		  	 ;q=1. ,,			 	 ,	 	  	 		LFdG-Z-m-N-w-zx 
-Lt7lWuN: 	 		  	 
-Content-Length:	 85307  	  				  
+aga // HTTP/5.8
 
-με

@@ -1,8 +1,0 @@
-%r1nt2 //h/?+ HTTP/4.4
-Host:		[::A15:27:359E:A:6DCC:243.234.240.73]  
-Referer:   									 	//@220.75.246.202:98/Y/b%59m%68nf:
-Referer:  	  	   e8://[0::9:16:40:B6:253.31.96.4]/?,2HhqV@ 		 	  	  			
-Referer: 	/3x/%2BQV%52Sxw/%A7?		
-Accept-Charset:		 , 	,   , , 		,		  ,		,	 	    		 	 	 		 	 	 $Y					   		  		;	q=0,  ,	 kOP&zK# ,HUgmD^3X0.4p  ;	     	q=0.9	 
-
-{лс

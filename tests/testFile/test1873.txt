@@ -1,7 +1,3 @@
-T /%05%67Sy%D2U/,/bI HTTP/5.5
-Transfer-Encoding: 	V~0	   ;%4 =	"‡‚;\7â\3";	. 	 		=	"" 	 		; ^`J%H~.M 	 	 	 		  =			 	 			"\(S"	  	 	;  6SbIlR="" ;W5^_vW  	       ="\ž\(\Ò"; 	  	UV="\¢"					  ,
-qpWIwfmTeGS:ä=				 		 ŸR 		e	 		   	 	 	
-Referer:rs:AP//'
-Connection:	 	 				 ,	 			  ,  	,	    		 	 	,	  ,	 	 	,   	, FLY    		 	, 	   	, x				, 		,	Xmp 	 
-Referer: 				 Ac/$D/8BB/%AF~! 
+2FT /A*?J HTTP/1.7
+Transfer-Encoding:		 yQn*BSjUO'y`,	 		 36E*rJg 	 			 	  	  ; 	MnlQ ="\^Ž iøF" 	 	 	 	   	;	   		P5..tE =		 	"T"  	,  		,IQK 			 		, 	 		,   		  	 compress,deflate 	  
 

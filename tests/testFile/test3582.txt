@@ -1,6 +1,4 @@
-9FROpR1 /UGl_///: HTTP/2.9
-Host:[::F6:7:C:6:2:E68:84]			  
-Cookie:		 	JwivyQR=""; *=; Ke="@oeH/u"
-Transfer-Encoding:	 ,	,,	,	 	gzip,	 	 		   PYBPdyoFV 			,	 	H!lFED 		 		; q		=  		  	 		 ""		     	  	 			;	cV =.~N,	  	 gzip 	 		    ,		
+D /1/%02*:uv HTTP/7.9
+Transfer-Encoding:	  	, 	, 	   ,	 	,		  	 ,		 			,   ,  	 		 	,	, ,   	 	  		 ,	,		,	 	v3,
 
-í^3Ô‹f
+ý

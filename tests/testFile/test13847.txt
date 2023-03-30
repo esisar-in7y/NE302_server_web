@@ -1,13 +1,0 @@
-i //~O/+/5J%E8c%2F/dT3D%A4/%B4q/ULg& HTTP/0.3
-Connection:	,, 	, , 			,				  	 dGz~prxB		   		  	 , 	,	,
-Host:  [::2E6E:F:3B:9C1A:832A:121.41.3.67]:
-Host:	[4B:6:0:BD:8A:4B:254.250.6.253]	 
-Transfer-Encoding: 0Ht5voLAkT~`N~ysHM01J  	; 	-URqBR=de%H$~			,,			,P&zh%8ONV5In1-;	 	 	a	 	   =	  	""  	    	   	
-Accept-Language:		AaY-S 		;q=0.37 	 ,,,		 		hXS-Brt	    	,,		qSv-yz-w-h-u-a;  		q=0 		 
-Referer: 	 	//+%7F@[C::8:0:242.252.143.255]?%34Gv)v	
-User-Agent: PbSN		 (©S\²)	 			
-Referer: /
-Connection:,,	   ,	 	, , 				 	,			 	,VMT ,	 _B|l  , 	d	 		, 
-Host:	 [::]
-
-=|

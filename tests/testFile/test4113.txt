@@ -1,9 +1,2 @@
-^hq /? HTTP/6.8
-Referer:    Q   
-User-Agent: LZi83O52W  			(\иш)		
-Host:	 [v2D8.)]:332     	  			
-Referer:		  	HFSjKCF29NkjYXJ:/?	 		  	  
-t_B: 	   ┬		f
-User-Agent:  	PzYa/1zq.eym		(г\ь) 	  ()  	 	 	 	z/JRo-00    () 	()  #TcNXy%/`qMvA (\H())   	()  (Ф\Х\[\5(\ь╦\]d\{))  	
-Referer://R@[48:B:5:D8:737F:B:251.247.0.214]/,/W0b/GK2stwh/%C0~,C?Fd			 
+1H#k /w3d HTTP/4.4
 

@@ -1,21 +1,4 @@
-2RB /i(/bz HTTP/8.4
-Accept-Charset:  e	,  	    	,	 		    	   			, 	 	 , 	  	 		Cq		   ,x			  
-Ks:I  	 	`
-6i:!	   	‡* 		¶/	  	
-Accept: 	 	_/*  	,		  ,, 		 
-Transfer-Encoding:,  	 			,		 	,		   	,	 	 	 	  	,!HEoZ  ; 	  		K6       = 		 		   	!z3S-SvR; 		 	*X =			 	 	 	 	"\}ïÐL\û\3\ï\þ\$"; r_	 =""			;		 			1WN=	  "Š\B\=\we\‘`\C\þ,\1\•" 		  	;	$ 	=   	"x\ö\”\z"; b		 		 =  		  ""		;BE6Zh  ="\ï\‡v\|@Û\ß"	; |gqb40O2=	" "	 		;  Fm =l0cQi
-Referer:   cqZ2y://H&.1&x9m@[670::59:8:1:8083:201.254.32.9]:539		 
-Host:   [::32:210.4.9.237]	
-Host:		  	[9FD7::A6:6:5:A]		
-Accept-Language: 	 	  	, HaQ-8A1Whw; q=1	 
-Referer:	    WZ:@+%45@*%61e/Qdfi/(T!X/ff2/C:5/j,/0%90UQ+b%12M/%F4pM//Sb=6_~%87D+/Zk//aJw%E9YB+L///!i%D0%E0/8%C1/%3A,d%E9j%95/d//%3B-@XtT':2
-User-Agent:	  		 	 	G_8	 
-Accept-Language:	  	 ,	 	, , r		 ;q=0.3, 	  ,  	  		 	    
-Host:	 		 	1jM3 	 	
-User-Agent: 		 	j-		.nEZLhi1s ((¸Õ`\Êâ))  	
-zOR:6 Ê	š	
-Accept-Charset:  		, , ,				 ,,  u!I'7y,		 2rc8u~`g
-u:  			  			 		x&	
-User-Agent:8M	(()\F\fÁ‘\±B\V\º>)	(~\Ž\6\p\¬)	    	 
-Transfer-Encoding: 		   		 , A		 ;		  CgdMTd	= 		 "\Ç\rDR"		 ;		X*dj*r	  	 =	 n%F		;aTi-$tu	=""	 ; A2!TVqjgzvMxbMBokjf! = ""		 					;  	7ME  = "\,\pgc" ;#*y= 	 "\®" 	
+yn*b /w%3D!WD,3.//=$i%DFehh8J/cP5a5%87x/s/pk:6/%A7q/%65/KHNOi'/%A3.Q5 HTTP/4.0
+Transfer-Encoding:,  	,  		 		  ,		 	  			mZ|		 ; 7D 	   	=	 	 						"ÆC" ,		  , 				 	 	 	,		 deflate	
 
+¥,©®

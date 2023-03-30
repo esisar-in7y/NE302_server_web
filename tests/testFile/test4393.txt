@@ -1,7 +1,6 @@
-!p /r/X;Ul%510Hp HTTP/5.4
-Accept-Encoding:	 	J5+	      	 			   		
-Transfer-Encoding:	 	 			, 	 	 			  	 P.Ar	 	  	;   		tK#&X		=	rnN
-Accept-Encoding: 			 			QzBOY	  ,	   	,      ,`	   ;	 	 	 		 	 q=1	   , 			    , 		B*		
-Transfer-Encoding:,, '~af.;xxs^i`    	 =   			 		 	  	 	VxX*JYt9r-EWn   ; 	|= 	FLeWsM ;XMZ	 			  ="|ô"	,			,	,  ,			  		   	,,o~!94 	 	 ; 		 	qfeQI8t= 	"\³Þ\@\:\ñ" ; 	BzG	=	 "\ÿ\V˜uô"	 		,	,		 aB*9yeS!U	  ;Vv2i   = "OZÙ\<\Ó\A\£",	 
-`7:	 		 	 ©ï	 h     		   	
+p /Zh/%4Br/_ HTTP/1.9
+Host:			[::6:8D:58B:A:7:64.17.5.247]  
+gF7eH:	 				  	
+Z1u9:  	/
+Host: 	   	 		[3:5FC:A:C:CB9:C:255.246.205.55]	  	
 

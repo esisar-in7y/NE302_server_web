@@ -1,5 +1,0 @@
--K` /w,//1jHR//W@s~.bkv%B8J5? HTTP/4.9
-Referer: 	/ 	
-Expect: 			 100-continue
-Accept:		 	g/B 		  ;q=0 	 ,V/*	, 		,
-

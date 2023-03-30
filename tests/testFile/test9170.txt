@@ -1,13 +1,5 @@
-cp5N /'/V2w%4B//W$Z,%6ECD%05~D HTTP/0.3
-Connection:5,			 	TO 		 
-Accept-Charset: 	,  , 			  ,G 	;q=0.20  					,			 		0NN; 	 q=1			,,   	 	 		 		SW7Y  	;	 	 	 	   			q=0,	8dF&F5 ,,dxtTw   	; q=0,		    	  	 Z 		, 			  
-Transfer-Encoding:,   , 	,sG	;		  				    ' 		 ="\d\õ\‘\å"	;		i =       ""  	 	 
-X2Ptfe:	 1	 Uê  	 Nôœ		 	  ˆ	
-Accept: 			   i/L ; q=0.,  k%%/Wp1gy^&,, , +^OmW/n;	 	  		   ddqStR4=""	;     	  	g=UyBzN#;  	J-q|L9D="\f\¬bÜò\\"	;		 	U'-l="\^",	    #F/*				;  q=0,    		  		 ,	 	7/&'$'LDi'6i~	  	 ; *c="\ï\>Ÿ\Ýw\â\b";	 ^ZDazN="\.¡\å"	 ;q=1.00 , 	 		, 		b/|mtc ; 		 		&Ez^=*3yioJ7	  	 ;	chtt="\+VÑ\ºÕ\’\Ãˆ\@" 		  	  			 ;	 			 			  	Q1*="\Ç\>";		 		VV=R9'6dT	;	 		87="\{\Š\I\«ìE	\×?"		     ;	 	 .ZUu=""  ;	b="Ž\Ö\6„\PÎ\+\Æ¥øÓ\¢";	 #|`b="\ý\Ñ”"	;	 		 %="" 	;		q=0.,lr5w/cqn1FS#IYw;  	~L="\t™"  	 	; 	 s="\/<¿\U\R"				 ;		 		'1g="\U"	  ; 	   pTGze=""      	 	 ;  ug`zfWuK$="\4"; UQQ#8G="8jz"	;  d="“\Ô\‘\Ë\=q\Â4\õ"	; 		 C`i=""			;   	 	8-XI~=""				;		uTY7="H\2•\f\Ñ"; 			 	|u7clP="½" 		 ;				~I7="\£\B"	  	
-O!C:	ÚÓ 		  	 	 ‘G	 
-Content-Length:6746503
-Transfer-Encoding:' 	 	;w=   	  "\/\•\è^\¾ñ\Ñ\ß\ "			;wa 	 	  	= 	"bñ";		x 		=H%0O$%BSj6k4GOqj		 ;	9%e   	 =  	"×¾"; 	3Dl_ 		    			 		  =		 "\G\Ê\ˆ" ,	 		 W07m_-U;	 3H9hbw		 =	 			 		 ""	;oM58A	  ="\Ñ" 	 ;G	 =	 		  "\Ý"   	 		 			 ;7eH 	 				   	=	"\ØÁ\xÅÞ\+" 		;	      	`s&eM= S#UQ* 	;	-4j   	 ="\µJ="	;		 #^.L&um`8= ""   	  	; oFMB="Ö\Ùö(\€\ô\K×Ü"	  	   			 	 	;Z6$Yh9fJ    		 		 		="Æe" 	   		 ; 			  uQLI=  	"\@W"		 ;	 	 	O5		= yUV5P  			;	|e= ""; 	oO 	=	    		   	 	 9&VuTzT';      	iqAPG=Y,	
-Host:		[vD2A4F.K)]  		  
-Accept-Charset: ,,	 					,  ap6bJ` 		  	  	;q=0. 	 , 	#46j  	;	q=0 	, OS*RH		  		,			   		  				 		,*	;  		 q=0.6, 	 		 	,  ZV$R  ,Y  	     , 	,* 		;	 q=0.,   		   	
-User-Agent:I*'8RE1		(\xú({\qF;Ö\í’›\t\†)\ä\ý\-(T)) 	   ()	(É)			   ((\Ms,\¦\~L\O\á)\?)		   (\—())	 
+XCh*h /1~F//w/ap2dW//p/%B3AJ?Mm. HTTP/9.3
+Transfer-Encoding:	0.  	  		  ;  	 	'=	  ZwN		  	  ;	 sL	=	"N\,\&\v\:\À\8\\«\ú", 6Ro1	,  qpk`k;	uIfc= 		 	 	 "$\·"		;U#X	=  "";qb =		 DC 		  ; KM$ =		"Ç\M"; 	 	Q   = 	  	 "\±\:\º" ; 	 	 	   		!fWQ.="" 		 ;		Lfv^Ow =  "\1\³:\­"   		; 		 	r=""	;  	 	Vb			="\áì¦Ÿ\°mÛ\x¢\ —¬\üºã\ç\|¿\¦"	 ;6xv="¦\LáVe"  	;	 	SE#18vz| =	  "\kÂÙ™\ž" ;		    			y	=  "Ù"	  ;		 	$U	= "\Ò B"	  ; &K   	= ""				 					;	  	MR5Pm				=	"\¿\	s"				,	 		 	 	   ,  		  nS`	 	 ,	 w	; BK=		 "\òq"		  			;				  			      	$VH1en9qo62=  	 		""
+Host:   	  		 [v9.y]:	   
+Cookie:	 		.=W 	 
 

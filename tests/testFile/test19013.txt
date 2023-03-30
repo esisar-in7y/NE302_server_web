@@ -1,7 +1,0 @@
-SO /kLY//g%4E$/o/p HTTP/2.2
-Host:	161.5.65.117:7606  	
-Referer:LE8l://A/d
-Referer://30.93.250.5:917342934	
-Content-Length: 	 	93351  	 
-Connection:  	,  qf%			 	, 	%`6N,   		 	,				 	R, , 	DoM$LB#	
-

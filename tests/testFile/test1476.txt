@@ -1,8 +1,4 @@
-!7&&b /%ABXAVdDrG;%A6 HTTP/5.2
-Referer:	 	pliU:/ 
-Accept-Charset:	,				 	,	  	 	 			    ,   	  8s|Ff8_za$UkTHHJAJ4k-k$nC+7f		 	;		  	 q=1   		 	, 	   k  	   		;	 q=0.     	
-Connection:,*L5		  		 	 	, i	 	 			,RO_002-
-Cookie:   	 	 					 	CY="" 			 		
-Connection:  H$		 							  	  	 ,   G2t	 		
-User-Agent:BM-/d	
+XCUieLRl /~(o/F%FEDF/%48r/G?/ HTTP/7.2
+Host:  [7DBC:D:A5::5:C:71.202.2.153]:120
+Host:  		  [3::FF2:C6C3:252.5.255.206]			
 

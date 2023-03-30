@@ -1,16 +1,2 @@
-5 /P%3D/rsvf%E1s- HTTP/1.9
-Connection: T56%vVh		   
-Transfer-Encoding:  	,		*  	,
-Referer:  		 JQxzn-R:/?	     	
-XN: k   		?#VR˙	ø
-	 
-Accept-Charset:e
-Accept-Charset:  ,	 u	;q=0,	,	  	 	   	sc!-6u8g7cai%,  	  	cZ       ;	 q=0 			 		 	
-Transfer-Encoding: 	 ,	  	3!_,,,	 ,	   , 	.`P 			     ,HlAj  ;    !_a0o% =	 	^9^dK	;``Pz9v*OD2D!^=		  "\q"  	 	 ,  s;wt.y|Vt=		"\u\nµ\d"	 ; 	 	2qm~%hQ|| 	 	 =	 	"\!"  ,, ktz.fs$a		;		fshAy#V^4Z+ 	="˙\¬\c∆" 	;	FRf_=  RV0B149QlqCsiI^	 	 	 	;  	 GF	=	"Æ"	;UjZ			= "Û" ;			 w.7$LB  = "" 	 	 	 	;  WQ3z	   		= 	""	 				 	;Uzq=  "ˇ"  ;		 T= 	"\éˇ∑\a\ÎY\ã—óù¢"		  	 ;+Mwk*Q4L =""  ;*|	  =	 	  	""	;Np		  		 =	""	,SSS    ; Xh` 			 ="Nq",  	 ,	  ,	 		'z  ;vLt  			 = 	"ﬁ" 	 ;^`	= "\‰\ç.\!"	 		 	,k  ;QQ="\Ä˜9Ç" 	  	
-Host:		91.124.221.244:6808 
-Accept-Charset:	, 	 	 	,	 	 			E;				 	 		q=0		 ,	 	
-Connection: $ 	  	  		 ,			 	rRLn3Mh  	, ,	 
-Content-Type:	 	 	 521/lg|_!6B		  	;tK="\|\Bq";	%=d
-Connection:		,	 		, 		 			 	, 	   , 			 04v!w*WpG1o|1M
-Transfer-Encoding:km!o 		  	 ,   IsVB6' ;	'3 ="/\”m\ã\=";	G%^r+			=   	   "Ø"	    ,DKEHtq9z+OM$`21y$ycQ2; 9%. 			 =		 "\†H\ñ\ŸñÁ" ,	,  		   		,  	  L82.LFflHnmMjMRpLO.c 		  		 						  		; *KYWk=  ""  		 ;			 +.="OˇîÎ¶" ; 	Y	="" ,   ,  	K 	   ;			  	 	 yrJ4WlL`  =			"€M\:J"	 ; 	7E2			 =	  	    	  "?l"  ,	 	  	  	,  
+^ /vo%F8J7f9%E8Yj%92$ymHA/0//z/LJ%0ELM%58MuG%42:zQ///LZm'yM450aLOE? HTTP/0.6
 

@@ -1,5 +1,0 @@
-$F / HTTP/7.3
-Transfer-Encoding: 	 ,	 	  	  		, ,,,,,,	,,  , 		RkP	,				 		 ,, 		k		 ,	  	,		gzip	 
-Accept-Language:			  	    ,   	 oyb  	,		,  ,  				  		 				XJsv-xO	 						,eFS-l-r-F-z-WJ-n7	; q=1 		,	  	   	 tU-Ef-7-D-X-h 	 
-Host:	  		 5.0.27.221:755307410   	 	
-

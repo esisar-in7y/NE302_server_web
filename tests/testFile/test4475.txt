@@ -1,7 +1,9 @@
-u4v //A7P@7 HTTP/4.4
-Accept-Encoding: 		 		 	  	
-Connection: CK_Q!. 
-Cookie:    X.Nx="K3~o"; 7k="/" 
-Transfer-Encoding: ,	 ,  , 	+|z-FibPOwb	 	;		 	 bE	  	  =  ""	;	`  =    "ì\å!\—»\/\M¿¦ \÷"	;Gp =		 "\~\±n\A\ÿÒ\Œ\Íõv&\¦"		 	;	 E4	 		=	"û©"	   ;		 jFpY-   	 		  			    ="";R		 	 = "\¥"; 	&.T`% 	 	   = ""	
-Referer: //[vDD55F8141.aFLnW]?8	
+k8 ///5oZ9s3%C4//0u//~/p%8B%BFk///f%D3V%EB%B6)/hY.TvMs3oNPO HTTP/5.0
+K: 				  
+Host:		  	214.233.254.229:43168	  	 
++:		
+Connection: ,		,'o, 	 	 , ,   		  	  	, 	 H			
+Host:244.160.239.8	
+Transfer-Encoding:   	, 	,    	 						 ,  	  ,	  bo      	  	;ZagUs   = "\É" 		;~  			=""		 		 		, 	,,	 ,	KP1 ;		 HEE+B_+9E   	= 	 		  ""  				;			 |=	  				 	"\®T"	 ; 								87 =	 	 		 		  		"Ð\b"	  	   	;		K	=  	"\{s\¥*"	; 	    B*EH 	= x9  ;	H  	="«ÿ";  T   	 =T 	,,  
+Content-Type:6O*Uqp0l/ew
 

@@ -1,5 +1,3 @@
-fP|46+kR /3C? HTTP/9.2
-Accept-Charset:	 			,		,,	  			 	, 		  ,	,,	,,, 		 	 	  &x;q=1.0	
-Accept-Charset: ,,	, , ,		  	,	, 	  ,	  ,			  	 	,			 Byl  ;	q=0.92   	,	,,,				   ,  			 		 	  ,				  	*	;q=0.3,iV6R 		   ;	   				 q=0		 	    	,	,*	 	;    q=0. 			,   A! 	 ;q=0	 , 		 		 		 , 3oV;	q=1.		  ,,	&w ,    	 
-Host:	[::316:0:DB:A:E2:7.225.204.88]	  
+I /%2D/%7Db;x/dr%23z+/t%6D+Feg.CB%3D/ HTTP/1.7
+Host:			[::3.16.6.218]:4 
 

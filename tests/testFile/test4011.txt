@@ -1,8 +1,3 @@
-UXeNRujyev /q0/Qfbf HTTP/1.5
-Host:   0%95u 
-Host:	  				[::E:0:C684:A:41.251.252.10]
-User-Agent:F (Â) (\R8\Ï\'\«)  		 	 	    ((Ö\RÎ\F\ÞÚ/ªÞ\Ž)\¿(\Ý\Q?,\Q\ß)\ÞÕ) 		()		(«w)
-Accept-Language:	  	 	, 	o-f-4w-3	 	,M;	q=0. ,l-Bs,K-6-g8F-rU  ;   	  	   	q=0.,,b-k	    ;q=1.00  		  
-Content-Type:		 	 	  #P$T/RBq;		!G="\j\Ô\‰\n\¬."  	 	 ;yrUluo="TçŸ\È?T!\=\Z"
+| /w// HTTP/3.1
 
-úxGÌ,5
+ 

@@ -1,3 +1,14 @@
-o%* /%F808 HTTP/3.1
-User-Agent:    				    8l9/TW|hzKe2			    		 	 		(\F\ê) 			 	 	 (\Ÿ)  	  
+aY /71L0*%3EtefGD-(P%3F6N/N/%01?fL3 HTTP/2.6
+Content-Length:10298106	
+Host:225.252.141.12:41420 		
+Connection: 			   	  ,	,, 5wI 
+Transfer-Encoding:1DXRmR|,	  
+Cookie:		 		-LA!1qI=bL<pOTjCg4]LA; onIVLB4="4"; e=""    
+Host::8	 				 
+Transfer-Encoding: , 	 		 ,  				dA6;	7u=	"\q"	; 			 	 r8="„" 	, 	 	  o!LPFGV  	; Tz!d96u3F		 =r  	  ,B&G  ;	|Rlo6   ="\¡"	 	  ;  		 	lCP= "\Â\0!",   	Sw';  							 		 		  		 	     	R2bb8		 =		  	  "\@\Üp6W\T\’\úÇJ"
+Content-Type:  F/JuD      	
+Transfer-Encoding:		,, 			,	 				 	, ,			,  , 			 		WD$Ot   		;rad    	= 		"\8Ù\'Õ\›¥’"	;	 D^Nl+ =  	 "PQ\¸Îâ\â"  			 ;	8w 	 	 	 ="\÷\0" 	 		   ; 		Y			= 	"õ"		;  	r =""
+Transfer-Encoding:     	 			 ,		 , 		, gD;  vf  =		 "\ãÉ¨\$õ\`\®\¢ú" ;		 		 	  	O		="\Í" 	;	 	 	 r =h	  ; I!=	  ""    , 	   		  ,   	 ,		  	  		  	, ,	9i%y;		 					  	  _yx= 	   	""	; 	 		  1M`X5OTd&Jhd	 =		 	"";			 					 	   		jC#&^d%Ck="õ"	 		  		;	ziPec8	=  	   	 ""	 ;	 	hF!X!4a	=+!.		; 7v24.  	="\≥"	 ;		 	 	 yJ= 	  ""  			,	 ,	 	  	 	  	  	j	; o%pWuR3~a. =	"" ;	s		  	 = 	  		  	  	"\¬\wú\ô“\Ó\h" ;       		 	 	 X`0k  		  =  6%iSouS.b	;		r%pq	 = "" 	 		 ;+bTzE="∏" 	   ;	  !I =	"\Éêˆ\j "  	 	  			; &hP  				     =_		,  , 		GT~NTJC	
+Transfer-Encoding:		, ,,,,compress 	,   				  S`JoU! 	 	 	 	;nRD+6m	 			  	=					`T7	 ;	 X	=	  	    	"˙º"		  	;  	  	b	="\•ì\è≠\ïP&ï\VV\ﬂ\°\ã"  ; 	QRv	   	= "H\bù"	   		    ;		 	 qyR+=	    "\3Æ\&\9J\$\“\œ"		;	GxRo2		=	 	  	     	 "\:¬œ\˛"	;  &|		   	=p2O2'y_			  		 	 ; 	!QrM!$_o		= 		     		wbg9L-+,	  	,		 ,,rnh#	;		.		 = 	 ""    		,  	chunked	,	Qg1t2#6a 	  ;	 UtsdY#40&`= 			   "\∞t.…\Ò1\Ω\w"		 	  	 ;		  	i		=			 	 	!	 ;		ePwe	= "F"	;	  v7PG~="ûƒu\†"	  	;Fo4 		= 		9W 	  		 	;m 	 =			""	  		;X#H`D4cAxO		= 		"";  d5|H	= 	 		"«Â";		 	e=	"Ù";  	 w8l`nBIpaAhY 	=	  "fW\Ï˜$"  	  	 	; 			 oU%I5v%CiU#Wr		 ='*.H3;	  Xf5ad	  	 				=	"à"  		 	 ;		 	ovJR		=			 "b\û\˙2K" 	;	 6$8DU				=""; ~'0Pxdy		=	"" ;z =		  	 "\]≠\^\ˆ\ÓÌ\à" ; !M  		  = 	"",   , 	 	  -bXoBs8;	NSK4#  			 = 	"\≥"	   			;oZ4NnYA$ = 	5				 		 	 ,	 				slqBnV	 		 		   ; 45#="£©\≥\%",	 
+Host:		    	
 

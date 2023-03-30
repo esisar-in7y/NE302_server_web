@@ -1,11 +1,3 @@
-!b /4bN/3BF%9Ah-///YQs%34$1/%91/51/k0F HTTP/7.0
-Accept-Charset: 	 	,	 ,	R*X 	 ; 			 q=0.		 	 	, 		QBiGg1, 	3&+5LMO2;				 q=0,^djXI 		;	 			q=0.
-Referer:BE://@126.251.204.3   	
-Referer: n://B@[47:D1A7:D:1::254.10.9.250]/)/W/YJInn/F/%39/2%A7+mRU%F5+B//,8g(6	
-Content-Type:  	u/KZm;    			 jbmTMMWUBuFsm!="\Å" ;	   #rSPYAHn=rYNS~X5	;	s^="\	\å"  	;	 't="."			 ;	 	  		 	C4E="" 	  
-Accept-Language:	  	, 	,	, 	 	,,	   		 	 	Ypaw-OV;				 					 	 q=0  , ,			 				  fF-o-DS-C-eC-9L,I-7-ls-aMGt-K ;q=0
-Accept-Encoding: 		 		 	 			 	  
-Content-Type:		  	   		  6/# ;		  m4Q="" 				  	 	;W="R^\”\T\Ñ\®~"; 72pQnHOe7="\€";			   se="";		scY="Å" ;			    		2pu="ë\Y\Ùn" 		;			NVdJMB="\ô³\Ž"	
-Host:  [2C23::83F1:E:B4:230.255.251.252]:234550 	
-Transfer-Encoding:								, 	 	, 		 ,,  		 	 	 i;	 		 		nK   		=	 		 	 		"MØ]\ô"	 	  		;   	 7Qvf="\Ý\L\‚-Û\C\ÆÕ\Œ";	 	 a=""					; 	 	 	 			 	   ~P	 =	 ""	;	 s=JC1B'oqd+VfdZ^-O	 			    			; %EcUSH ="k\û\_±\°ø" ;  efJNJm="\i\×¿\Ì", 		,   	, 	,  	,	,x0f 		;		     R=  				 nB;S 		= 	 		   				"\çè\k";  	 l= 	  	BC;				  Bx7--s40aEc1 		=		"‘"		;		   	DxjWo1 	=	 		"\&S<"	 ;%8Xu5LD 	=	"ÐB;"	 	;   	  K =	"";		 	 			y&A =		 		  "\Ô\³²ÿ…û" ;	  SCa8s~-arK_     	  	 	 ="n	\yÐ"		,,		chunked  
+7Ds ///T%64Q/%22.g%D0~Z HTTP/3.0
+Host:	[::0:24:E:C:7E1:203.9.255.255]
 

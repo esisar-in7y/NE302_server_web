@@ -1,8 +1,6 @@
-whS /%56wWY)/nqie*/fL/yE5 HTTP/3.1
-Accept-Language: , ,,,  			   	, e-j-h	  			    	   ; 			q=0
-Referer:	 Uj:ASxBGQa%D99y(LC,Gu//4TKU/og!%17K%DEoXV8UZ/?-g%57V%70Yx-cCrj1%E52	
-Accept-Language: 	,			 		  	 			BN,U-O-v9kJ-oBbIDG-4-C  	; q=1 		,  	QX-f-V  ;q=0.	, Beqt;		 	q=0 		 		,, 		 	
-Referer: 			  E:./luT2g//%A2FD(///k%11Vi%CF2!SY%8A%EDC(+D
-Host: 	 8.216.126.9:891672	 		
-Referer:Z:p/AH6?Xg 
++d_i /%1A$%5AHV_E+/fq:5_M_aj)8%4DUsZ;d)/p%D9O HTTP/1.3
+Connection:   		,,	,		  ,		 	,,   	 `0e2		 		 ,	  	  
+Transfer-Encoding:  			    	 		 	&ou  					,, 				  12;e= 	"¡"	;	 						 	 cUiwwFocif30*+I 	 	 		=			 "4\ß"  		
+m*: 	*	 Iø 	 UD
+Host:	  	  		 		228.73.255.178:20	 	       	
 

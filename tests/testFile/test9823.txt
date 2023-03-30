@@ -1,16 +1,7 @@
-` /7,C/je HTTP/5.0
-Host: 				  202.238.5.113:3833062
-Connection:,					,,,   ,  	,nw 	 	 
-7-F^^Z:   	  
-Accept-Language:K	  			
-User-Agent: 		  		  t+C7hW   		  	
-Transfer-Encoding: 	  ,	,	7VL;		 		  		d     		  	    =	  	"", ,	
-Referer:		K   	  	 	 	 	
-Accept:,,Z`-QuxeaP/*;   ~*1QS.7="" ;	z^M7="\j" ;	  BvGtIk=""	 	   		 		  	;			m`a=^			 ; 		 	 Bw8q6c`S="\^imT"		; 			q=1.,lB_uCI9K8/*   ;4="\Å\)" ,  	,tu/*	 , 	,	  ,		   	  
-oXk6YX: 			t è		  	 
-Transfer-Encoding:Z	 	;zk	  =	 "\À"	 	 	  		  	;EWr	 	=	  		"\û"		 				;a3	 			 	 	 	=	  			"4æ\œ∑"; Yr`W$.	 ="SQ’w\j\“"  					  ; 			 			    		9us=		   					 "";	 H= 	"\A8«¥Òo" 	 ;  |B=   	"\Q\Ë\k€Q\I"	 			;	 				  	 	  	Bdnw5NOvi4	 	  =	   	"\k"	  		   ;  			G 		=		"@\ø\—Á"		 	;		eWI0L*p 	  = 		 	   "hf" 	 		;	 ak+W9  	=		 			 "?"; 	|mRi= 		 		 	  	 "\î"	;		    	  I-gz21Ac3|   =	  	 		"€÷",,		  					I!w  ;M =	 	"\π€";$6ev&t%FX="\TR\3n\ó"   		
-Host:					233.205.75.222  		
-User-Agent:V/tw$^!gS	   		  		 (‹)    (¯\M˙(\≠))	   	 
-Content-Type:   		qc/ijFBqag+qPLc		 	
+C /b~a? HTTP/0.7
+Host:   			    	 		 	[71D2::BE:8:3:5:FC4B]	
+d3`$1:W  			 	    	∑ 
+9Ye%|4:	   		gÜ	 
+Cookie:   	ZL1="L=h"; kPqj|uUH=@$<		 		  
+O8$U:	 	  	 
 
-Ùn5

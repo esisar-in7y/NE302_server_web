@@ -1,4 +1,14 @@
-p /lO%CD8!(~tK/r:/Li? HTTP/0.8
-Transfer-Encoding:	a  	 			 		;					 	 		lFSS=  	"\¸‘ï" ;	 			  	Wf		=			 			l1		;	&!pV = 	  	""	  ;Z%z=    		"" ;SrE!V	=		 		 "\m\Á" 	 ;	psrZR= 			  	"∆(\(Ë"	  	; ol =	 		""	 	;EqJCRxJ	   			="H\0._\˘ŒU\∑\Ì"	; !	 =		 		 "\Ö\û\¢Í"	;	 	 			  	4nSS 	  	 	=	 	 "–\§2P\?";  & ="\≈\ê\)\4\§0\·\∂\®È€G\í" 	
-Transfer-Encoding: ,, ,	,		,				 	 	 	,n1*  				 ,5	,				t	;X    	 	=""   	  ;UY 	 = "";     	 			   		N$+WZ%s0=	  	"\‚ö}"   ; vk	 			 ="Æ\,";Oh		=	 	 	    "\Ë" ;   	 n       =    		 			 	"\€ç„\4"	;	 	H~			 	 =	"\h˘\S\eÏY\Ô,›\ˆ\O\hR";*-	 		   ="\ZÁ"  ;M=	 12;uR8= 	   	""		 ,  	 c~ ;	o	 =	"f",	 	 , 	!		;	 H11 			 	 =	    "\AôTØb" , 		,	  ,    kentWOF 	 	 
+._sC /2%07/K1l1o%AF3Gff? HTTP/9.6
+Content-Type:	 		x/Hu.;	82-mE="\ö\p";	gaf**eG_&Jb=|; 	     	4O="å\¥" 
+Content-Type:	       MeMB_/m ; 	6JI="\‚\Í"  ; 	 SVVK="\'<\ÉD\“\◊\¡\°…"	 	 	  	
+Host:  250.255.250.228		   	 		  
+Transfer-Encoding:		 		,	  NK| ;		%VY5A	 		  =		"Ë\\í\|\$à\L\≈"  ,  
+Host:   		[4::B4:11:CF:14.209.5.244] 
+Transfer-Encoding: 		,	 	 gzip	     	 		 	 	 
+Host:	9   	 
+Connection:  			i_eb%~
+Connection:	,P, Kg  	, 		 , 		!mA		
+Cookie:	B="Y"; iO7Sx10o+0ROI*7="D%"; bvxy=X0hS9; a4M="q" 	 	
+Host:[v9007359AF.Z] 
+Host:	 [::7.9.239.0]:88
 

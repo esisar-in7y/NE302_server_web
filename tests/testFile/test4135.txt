@@ -1,4 +1,6 @@
-u3 /w/d.%A3 HTTP/4.7
-User-Agent: U 		 	(;)		    				 		 	 		  		
-Host:a'a   		
+n /O%2BU?%C5 HTTP/1.7
+Host:					r:	
+Transfer-Encoding:,  	 	compress,^  	,		,		  	,deflate 	 ,		  ,		   	compress,	  
+Host:[vC4.x;]:5222 		  	
 
+<

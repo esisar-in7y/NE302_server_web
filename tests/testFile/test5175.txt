@@ -1,8 +1,3 @@
-n~ /oVr%16*B!X/w:WV/.;QW/0%EA HTTP/3.1
-Accept-Language:		 	 		  	 	 	, , 				,   	 	, 	,   	,		,,,		   	  	,,,,	, 	  			   		, 	    ,,		 	  		  	,	 		, 	  , ,	,			   		kFcI-c	  	;		q=1	   			,		x-2qN-pb-rs-f-p-V		 ;  		 			q=0			  , Kt-0E9Rd-S-v-6-1-7 ; q=0.4 
-UVre:   	  	
-Accept:	  HBh/D ;		x="" 	  ;		-Kb!i="\Ê\à\â\øPš" 				
-oX: 	
-Cookie:b9="eR<]ed._Sehh!Q}"; $m|b="L"
-Referer:G://[BD4B:0:3:4C7:E:F:8.9.233.7]? 			      		
+kdKsJ /Z%C1uh%89%CC)3/XobI+/b? HTTP/3.7
+Host:			[::0:1A:207.33.160.238]			
 

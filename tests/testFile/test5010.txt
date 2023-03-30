@@ -1,7 +1,3 @@
-_ / HTTP/5.4
-User-Agent:	V 				 ()		 		 	()   
-Cookie: 		 X+zxt="EOp"; sX+F!dIL.7q=""; bq="8%"; wW="N"; S=lN; uZ6pQRS*og5=glT; eZ1'*Ptc##Q'+VDhBW26=/OcpN!; _="Vt.:T]@zhx"	
-Content-Type: IC00n/!|1Y*pml 		;	 	&2=l 
-Referer: 		 i:%16fq%1FLn%A9Bq%58/el%80GoVj%56E/0%F4B/2/%2Cxftwa@,fQ%2CO//0%208G///Mh%02MjK/3%1A/SWIEMsVP/g/ebez$%9BM%5F/o.&%2ECv
-Accept-Encoding:B0_Tybv,, 	  , 	  	eQELRGS$bt,+1	,  		 , 	#nEyAseIwX2PkwT9oS`1dq;	    		 	q=0. 
+h /zl*/q?7$DR+Gw%C68jjx%D0lo%4Ak%6C~N%4E%9BE%74ttn4 HTTP/0.4
 
+

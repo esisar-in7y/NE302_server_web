@@ -1,3 +1,0 @@
-9tp /X/0 HTTP/4.4
-Cookie:  wz2mpLv="L|0"	   
-

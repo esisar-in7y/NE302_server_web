@@ -1,14 +1,5 @@
-#w /4Pc/. HTTP/1.5
-Accept-Encoding:
-wUX:õ			 ó— 	°Í	 
-Accept-Charset: 			 	eb4Qt	
-Host:	   		%3DS: 		
-Host: 	[vEC6.R*dPw]
-Host:	  :	
-Referer: 	BI5EC:/
-^&0sl^7S:	Ý  			  ¡©		 Žµy		
-Content-Type:	 |6V`KFD/_T		 	 ;yfM=v 	;8e="®Cð\ÕVœ|"		  			;y`x="\vú8½\Û"		    ;  	 ho="Ã\³"		; $ro~h="ä\d\ò\™\H\í\p\¸\¥\«A\¿d\X\RÈ" 		;#="\–‚" ;I$z="Øf\q\®¿"  		 		
-Accept-Encoding: 			
-Content-Type:	 		 	Lrb/d ; 	  	 				RGE=TrHbpns~F
+Ja|bD5pxVbh /K3D HTTP/5.2
+x#za~xPQ^!h:	ý
+Connection:, 			  	^m~%f6|kv ,	 	'  , , , 		 ,  	,, , 	   	hT0Fr4^l0no  	 		,n			 , 7'1WP,,    	,,	R,  	kH,  			,		   	,N	,	 							 					j,				    .Ht,	 	 	   	 		
 
-!ºŽŽ
+b^Z

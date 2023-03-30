@@ -1,4 +1,0 @@
-q /x%24@%CEw/gfx' HTTP/7.4
-Connection:,_X
-Accept-Encoding: 	 
-

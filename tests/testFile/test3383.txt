@@ -1,5 +1,4 @@
-g /srbr HTTP/5.3
-*: P  øÔØ	~šŒ 			?ú				Ú  	  
-Host:	 				 :096 	 	 
+2Dn ///%CEx?nX%4C HTTP/2.8
+Transfer-Encoding:,  ,		 % 				;  	qYva 	 	=		"\5"   	;5c+'t=   		"\£\}i" 				; 	aK =    		 		 	 	 		"¹\Õ\¹"		   	;4'		 	="\j\èGš‹Å\<"	     	;	^HaaiXnFiz1e	=    		"\/«\#\Z\i\Œ(ÿ"		 	;	6S8N ="\(\ŞMç" 				 ;AX 	 			="Ö\§v\•\ş\f" , 	3 ;		  				 H 		=   	"";	0!sQ=	     "­d\æ0Fz"	   ;	 -hWqIF		 	 	 =		 	  		  ""			 	  	; 	BQ 		=  "\ò"	 ;   a 	 	 	  				 		 = 	 	 "\‹\·\",  e;    			L|=	"";		 	 	 				 #i.		=   	 ""   ;	  	9bJT6CoJi7t%S-k`	  = 			 "™\Ô‚ÿ\wä" 	  ; Z 	= 		 	  		"" 	;C#+ohD				 	 		  =			 	  	"‘\,\MÉÚ\„Bw-G-\<";		  			%hZh 		=		 	 		 "ó\b-\åº"	 ,	  		 + 	;	 	FU~3B1v="\ë\¦\µl\ı\¤\©"; H		 	="›."	  ;	 		Sl3#yVlfL= "^j`H¢"	
+Host:  	 [::6.129.79.225]	 	 	  
 
-8xPò6aI

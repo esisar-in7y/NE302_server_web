@@ -1,3 +1,2 @@
-wgxCBx /H+?: HTTP/3.9
-Content-Type:8/YNLNM3B; M=""
+* /1op HTTP/0.3
 

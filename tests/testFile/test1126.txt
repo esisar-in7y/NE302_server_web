@@ -1,6 +1,4 @@
-AR'l //Y?TO6 HTTP/6.1
-Transfer-Encoding:		FAS;   x_		 	=  	"\§€"  	   	,	 	 	  #-		 			; BB|								   ="\3"    ;sC1s.Oca  	=	  L9m+W+	 	 ,			 			 	compress	 	  		, 	 chunked,	 			 		 ,	  O	;E= 	 	 		"þ\=", _U1FKZBqu 	,   	 		,	  
-Host:  (	 
-U:							A î²	 		 	
-Accept-Charset:		 	na	,	,	,			WmG 	 ,   , 	  				 	 	 *		 
+ah ///(T/ HTTP/2.8
+Transfer-Encoding: 	     			 	  		  Va	, 	 	
+Host:	 		 [v5.exl]:	
 

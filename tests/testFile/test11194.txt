@@ -1,8 +1,0 @@
-!%Bn /G%2E4 HTTP/1.0
-Cookie:~f2b=o(; X="/"; +b=""; 24=""; '.Ny`0aV=es; hJ#KBIZR=<r	
-Cookie:		 pCuKBmL="."; f#ww="t"; UoO*4=/	  	
-Host::9081931622 
-Referer:  	    					ecrmC://[::5:AC7:88:E:56.14.5.170]:20/%03Iq/%A8~://q/			
-Accept-Charset:				 , 	C ,	
-Referer: //[::9:238.237.176.112]:/z%79.KLlPLjZ?n2?zDED$DtM21ap   
-

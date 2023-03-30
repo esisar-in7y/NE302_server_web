@@ -1,6 +1,0 @@
-c //e%7DpLI//7y8?p HTTP/4.2
-Host:233.8.42.255
-Referer: 		 		J://9.251.23.2:9623/0.9/?g%DC%AD
-Referer:PfaJs://1.241.255.234/R-pFl/pzpNa 	  	 
-Accept-Charset:	 		 $kg	 ,			 		 			 	  				,6;q=1.00,z	,	 	 		 lzD ;q=0	
-

@@ -1,4 +1,0 @@
-# /%40KW HTTP/1.7
-Host:	200.240.222.112:185  	 
-Content-Type:  		 	 			#ww/1-!
-

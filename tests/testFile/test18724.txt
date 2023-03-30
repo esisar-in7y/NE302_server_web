@@ -1,7 +1,0 @@
-nsVavd /crq@XSR%56/BnLq%D1%ADDCF/=? HTTP/3.1
-User-Agent:    qUK/gpt	 
-Referer://[::077:0A:2:F:B:20:3]?d   			 
-Host: 	 	 	189.205.24.231  
-Host:	 	 			 %73;:		 	
-Accept-Language: 	, , 		 ,,, 			 ,bWjG	
-

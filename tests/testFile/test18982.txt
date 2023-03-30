@@ -1,3 +1,0 @@
-C2MIE /? HTTP/1.0
-Upt:		      
-

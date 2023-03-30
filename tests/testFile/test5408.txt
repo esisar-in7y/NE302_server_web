@@ -1,8 +1,7 @@
-KD /%13%DEfQ HTTP/4.0
-User-Agent:			 	g&Hp/3 	 
-Accept-Charset:		  		,	  		,		   		  	 , ,, ,	 			  		 	 ,		 	 ,	   	,, 	,	, FNgr			 	 ;   		 	 			q=0	 	 ,  			 9Bf'|Bi9K	 	,	Hsa0
-Connection:,		 		 ,  ,	 ,		 	 		  9			  	  		  	  		 , 	  	AAX!z	  			
-Content-Type:        	7/VSgcP+R9Ek!Sl	 ;  8c=JGZFWd   ; 	 	 					v=Z;	  	S+izOZ1N$CP.HPkyJTYJ+="&Ÿ‘\T\ýé\Èþ\]\:¾¥"	 		
-User-Agent:	 m _BG		
-User-Agent: 3l&/U		((\†¥\åþ6)) 	
+26 / HTTP/8.3
+Host:[0CF:985:5:9:2:EC2:31.131.75.201]	
+Content-Type:&x/w	  ;			 		 	R+="";  			 k1ya+=""; 		 +="X" 	 
+Host:				7.190.214.6 
+Content-Type:1/'e ; 	MuGJ|="T\Í\Þ"		;	T="Åï\ó"    	
+Host:	  [v0981B140.Y!X2I]:2	 	
 

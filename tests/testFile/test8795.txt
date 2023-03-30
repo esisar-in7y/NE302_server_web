@@ -1,8 +1,5 @@
-P /9xb/g:/ HTTP/3.0
-Accept-Charset:  	, 	,			,	,  e	
-Accept-Language: ,,  		,,qEIKF-VLmE-17S	  				 	   	 	  		 ,  	gb-b-C7dZ-j-ws1 
-Accept:oCV548J2/*				;gZ="\o\Ú\Ÿ»Ó"	;  		 	vwXXy0=""	;~T+E9Z=aX1A7A6mc1zl	,   		
-Transfer-Encoding:  R ;oWXnFR.WcFm="\ª\¡",		rT+,		,	,   	SWvoldgwoQ.2	  	
-Host:	71.234.251.217	
-Accept-Charset:   	 	 	, ,	 	,	,   	,		 ,		 * 		;	     q=1			, 	 	,, 	   , 	  	
+3&E /T?%D40/ HTTP/1.9
+Transfer-Encoding:S&G.B	,,							 	 K  		 	;qj 	=Nwd5#	 , 	 	r^ 		;  		 	UjIT6ND60 = 					2s 	, 			 			6x;*i	="\ñÛ\]\&\!\5%ª\k\áb\)"	      ;	  			 	 	r	="k\÷\è\ßà"		;			fPQ728tc-hKmS~It	= "~HËÌ»}\í\ˆ\µ\l\o8CÍ\√\í8\PQ\÷Ä»c\˘±\B"		   	 	 	;'iI9 =h%XxqY~	 ,Vz  	; t^ZXZ  ="" 	 ;	OStR 	=  	""	  ;    	 			13%m=	  	  	    "\è\êç\'", 	 ,		 	  cGD~U#nE ;	 	 & 	 	 = 	 "\1œ\uj" 	;	 		  p	 =  		 	   	  		 		  		 		  	 Q	; ci=	 	XIUCz 	   ;	 %z``$   	  		   			  =	 	 	 ""   ;   X 	= 			"û\ﬂ\ËZ";	0T=   "\ï¡~\µ\ß";NlA=					UTPOkh	 	;	`^w	="ı\î∂|S\z"	;6	= 	  Sq*PsG		 ;	 	vO4F	 	    	 =   	 "\%"		;`.AVsVm	="≠\HÈá\ø\‹\6L\V" ;    	GzD'co	 		 	   = "Â"		;t%z	=	"¿\î\ÛÂ\É\#r\h\Ÿ"	
+Host:1.239.5.67:35	 			 			 		    
 
+„

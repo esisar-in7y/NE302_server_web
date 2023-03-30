@@ -1,10 +1,6 @@
-++88~ /4gK%85/%74%7F:/QUq//%A7/0/+/0X HTTP/1.7
-Accept-Encoding:		, 	 ,
-Content-Type:  	V'/& ;		k="#"  		 	 	 	 		;    q2U=hdS9#	    	 ;			L3="\$"
-Accept-Language:  ,   	,, 		 ,,, 		,     		 	 	,,	  	 	  ,	 ,	 			, LGx-kV  		   	; q=1. , ,S    	;	  	q=0	 	
-Host: 		 	 	226.254.240.3:35040213  
-Host: [vCC7E4703230.o)Y]	 	 
-Referer: 	jVzlo.://%6Exh@234.3.6.9:8856227974149846/%13DB_%D4?Me
-Host:	 233.38.175.201:054	 
-#DONI:  µ 			lí 					 	ëmÖî 	   	   V 
+l*a9 /%E738 HTTP/8.5
+Transfer-Encoding:	     		, 		  , Oso ,	 		 ni  	; 	  	  V!  	 				= 		     "|\Ω∞"	 	 	 ,  	    	zdHz-V	;U 	= "ˇO",,		compress,		   	  	k   		; .=	 "ÿ¥\)≠";	 #Y^ 	 =		""		 	;RqRC960v 	 =	"™J"; 	Lm|mKGlP5= 	 	"î\°A∫d";  _	 	  	 = 	""  	,Gz  		;	    			    #		="\◊"	;'eG$ 	 =	">\¢\π\≥\A"   						   		 ; 		MXaHn    			 				  	  				 	=   		T; A'EE   =	 	"\˙ë\N\à\¢\î‚\X5¡ﬁ\®1•Õ:"	  ;	 	7  = 		 	  	   "Í\¶\pÂ\xX"				;       	m 	 ="\õu\•" 	  	 , 
+Host:	  	[31B8:8460::5:9B34:D:207.4.218.42] 			 	  
+Host:;:33853   		
+Transfer-Encoding:,	  ,    ,	,,	,		  	 compress	,*t%				, 			,	,3Mp		 		 ,		P	    ;  9sG`f'RE		="cÀ"   		,%M	 				 		;  qG-   	 	 	  = "ï";j~L8hq4$K= "\w\µó\Å\^"  		;  	e|cRlRVsh^A!b'# 			=  	 	 		  		 	 	"" 	; 	  	   6	="Í2¿" 		; YFuLe 	="\Ç"	;Oy$Z  			= "b" 		 ;	Y``ku|G=   	 	 "¨" 	  	 ;ucWq="n" ;N^=	  "Í",	   	  deflate 	,	 TS! ;   	   		pb`B	 	=      "\¸\ı";HXiQ=	  	""
 

@@ -1,18 +1,2 @@
-o3 /aYoMVRS/7/(%4Dzh1N?bp=kS%FFF%42u9%D3):J HTTP/7.4
-Accept-Language:			kId-Z-f-9-p-u2f-J-Gj	;			 	 	q=1 	 	,Mml-m4Fl-cJ	 		 	 ,	 		Pq-p-b-ejEHA	 
-L: 	 		 	  			â	FÈW 		 			 ªÚ g` ö=	
-Accept-Encoding: 	 *;			 	q=0.		
-Content-Type:`q/DD9H4;f$1~="\>M\j"	 	  ;	   juzfn="\ŸµﬁR]«JsÎÄ\ç\rç6%U\1\æ\o∫\‘*i\ﬁ∆\Í\Æ"
-Content-Type: 4q$sIL/kL&;8ESIv="\ô" 		  	 	 		 		
-Content-Type: 	vb/Y;xZy=A' 			 ;			 KI="" 
-Content-Type:		x2I/RYqY|	  	    		 	 	 	   		   	  	 ;0**drLSpXYtn3WW#="\ïÊ\ÁÀ" 	 		;	 	r=Ib;B="¡ä"	 		 			 	 	 	 		     
-Referer:	//@7.2.39.201:3?;    	  
-Content-Type:	 	  JZ1L`/IE$	 	 ;KC9S="Î\\\†π"	 		  ; 	0-=`-;i1Iq9RG=""
-Transfer-Encoding:,     		 	 			  ,	 ,,,o ;	   	Ov=	""	;  	 3r 	=ampS		;	LJ|W82N`O   = 		  	 "„\ŸD"	; 	|fPqWo			    	 		   ="Å\∫”"    ;  	 LK	 =    				 "VΩ2"		 		  
-1:		B   °Ô	!É  		û  ∏≠   5€ 	 	 
-Host:     	: 
-T7Vqb0:			 			  	≤					
-Referer:			 //@186.243.250.236?+k	
-Content-Type:		 			m.9/|L			;  		  ^="J" 
+sa /q//? HTTP/5.1
 
-3v

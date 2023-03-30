@@ -1,20 +1,3 @@
-$4tDrqyCZ /?%08 HTTP/1.3
-Host:   		%C5.&%C1RMk 		  
-Accept-Language: , 			   ,	 L-n-fd		; q=0  
-Referer:	uv+5b://[FC:BA99:1F:E26:051:2:185.252.8.223]//r/
-User-Agent:  			LB/z	    (”\Nr) (ˆ\L\e‘a\ù)	dgYE 	 qRT	(\Õ()|\t) (\©\Í\ÑÆ\`3)			((\uY)7à(\o\´))  +8yBm	eMbC   	
-Referer:	 zyu://@[4:55::FA:E8:37:0.250.245.2]?pX7
-Referer:  	   %EAL%19%BD(dU/H/mtlR$43U%A7%0F/%CB/////Y%09?r897	 		 	  	
-#~:	Ê		 		 
-Accept: 				#N/Nr
-Accept-Language:	 , , 		GW-rM-m-d-p3-M6 	
-FqgV:	  			  	 		 	ô	 GÚ R 	  0d  ¶§– 	@–	ø˛	 		  	 [
-Content-Type:	 	Sk*/&.;		z'jih03I&l5="Ú" 							 	
-FGx: 	
-!U^s:		 õ  		 
-Transfer-Encoding:, 	,, 	eTG 		,	,  	R		;cZX~    	  		  =	 "Ω¢B";	!UgO4=	 	"P\œ\RyS"	  ;$Y    ="" , 	  el;	8^1Z =		"\æ"  		 		;1OOS=	"\9w\∂\S\l"	 ,
-Transfer-Encoding:	ud		;$A51RB69 	 	= "" 		; 		 6 	=	"\£\ˆ\¨\ê";a&r|^gr	 =		"¨L$\97\b\˜‹",	5D ,DplcTk			; 	 		BqMHO=  "\€\è7˙‡\&¸\'\T‰ã°OÜ\*\L\œ\Ña\$c" 			;  		 'x= 		s;				3jU  	  					 		  	 = 	  	 			   ""    	    ;X|t			 =	"\Ö";Dx ="\Üë";     	 	   dr	=	 "Œ\÷\á\®Ì\@a"  
-Content-Type:  	     		 !x.DTMt/&t16wU	; 	rh9f="\D\Mı"  	
-Accept-Language:			 	, 	   	,,  	  ,	,  		 	  , ,,,	   P,	  ,	,				
-Accept:	 -/*		 ;	 	 			 	rlJ="…";			 	 	 K="%"; 	+xGlz="“\≠\∆";	  	|kCTq'hkV74Y$n'%I="" 		 	;	nuHCygK=xE;		NvU=B1'*nTH 		  		;		  *t'7="/"			;	$="˚\Ê≥\»\Ÿô" 	;	T="”xR\°T\7Ÿ\ ™Af\˚\îùs\¢\Ó"		;				 	 	|r0+'="\‹\Ó"     	 		 ;CEcWv=""	 	 	; rK#="}\#Ihp\0\|\â\_";sr1vK_G!`vD6="" 				       	;	  351fl="\ó\P";   	   		 		 			 tNe0Q'="”\,";xFF_EnP=""	; LZUB="&\m"   	 ;  q=1.
+`IBm9 // HTTP/2.9
 
+s

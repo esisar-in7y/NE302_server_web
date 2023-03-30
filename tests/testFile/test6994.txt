@@ -1,9 +1,3 @@
-+ /?-%2BVS%3B%58 HTTP/1.3
-Accept-Encoding: 
-Host:	 		 			 	 252.2.253.3	  
-Accept-Language:				 ,  iUd-Q					 	      ,	gnW-nC-11-B-d   	,*		 	 , ,  		U-X7-1v		 		  ;  q=0.7		 				  	,D-9MRyK	 ; q=1	 	 
-Transfer-Encoding:	 	,,			 ,			 		chunked 		,		 kP	 	  				;oM~ = "≠";		  N9x=			 ""	 		;Dy = ""		,gD	 	;	KWB^4=  			"C" 	  ;  		s	 ="r\è"			   ; 	  	 4= .sZ	  
-Accept-Language:	Xa-TSaW2;		q=0 				    	,		,,
-Connection:  dg!d$.$Wh  		,		,		 ,	 v 						   	  ,	 				
-Accept: 
+_OD2 /0/Mi/// HTTP/0.0
+Transfer-Encoding:   	,,  		  ,	 ,	 ,		 	 fhxz%p 			  ; 1x|m   	 	 = 		"ü\’\z\¡˚\4\Y"	 	     			;	7r26CIIx	= 	  "´\·\|k\Í¨\•\ó"   ;			 6&V=		 	"√"  ; 		  		ct.k=				""; aBL9uf			 	   		=   			 ""  	;  		 3OH				=	 "\±\GÆ\∑"	 ;	#gf	   ="k"	  ; 0I			="\Ñ" ;  	  	 z	   			=		   "t)•\Ù\!}˚£8\ì\Ó"		 	;				  D0YR=  O3&'j. 
 

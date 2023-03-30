@@ -1,9 +1,6 @@
-q //%98 HTTP/9.0
-Referer:6d%9F/S.)I/Yj;F8g/S~%2CU9/%E6:)+//;%CC/  
-Accept-Charset:	 	 		 		,			,	,   	,,	,  	 		 		I 		 ;	q=0.  , 	, 		 	 		   	 M^  	 	,  	   BWs		  	  
-Accept-Encoding:	 		        	    	  	  		   
-Referer:R:S?
-Connection: 	 	ms,		 	,	   	,  Ea7+!4 ,
-^:			  $	  	 
-Host:   	 		 	[C15:69D:2:F:5E00:77:220.255.132.241]	 	 		    	 
+G4 /wx HTTP/4.7
+Cookie: 		 U=S!; a1MTDZiQeKLfL="<0~I"	 	
+Connection:       y   				,	 	,    	fi^^ 	 	 	
+Host:		[::0D:207.219.99.143]:55						
+Host:			4.228.236.86: 
 

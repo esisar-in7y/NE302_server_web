@@ -1,10 +1,2 @@
-#_- /EZHTW/y~=/+h9*cxt/&Ot HTTP/9.2
-Accept-Charset:,, ,  		 	  	EDtlTI,	S    		  	,	 		 T*uxu7dH^sQr$M 	 ,  	 Q		   		,,,R#e^y|F  		 	,			,   		 PZxWUl	 		 	,     , 	  	 'bm,		   		  	  Mkf01	;	q=0.617 
-User-Agent:	 	  	KpW75P/|	() 	  	    ((\ë<q=\~\o\¬)«\´s\q\Ç)  	 						
-Connection: 		GsY'	  			, ,	
-Referer:	  G:0/A//'; 	 
-Accept:	1v%/*;		 d.6u.3iY="\æ\»ýÅ\´\2\Š‰"			 ;  	cg="\‘û£\º\F\3"	;	m_N="";sC*bCEM="†ÿÉ²bï\@\á" ;	jbYovFbR=""	    	;  k_q=""	 		 ;!A7c=cAQJBEBLKvOnKBf2iA;	 q=0.1,hMny`F!*/*				,	 b/*; 	   	sbA!sHlOc-U=axOj	   	; 	   	xe="ç§É&˜á{\¢\Q"
-Connection: 	 ,,    		,  ,				,,,,,	,,,,	,	   	, 	 V%OQTjc					  , 	,	^	 			   			, 	XK, zWiA%H	   
-Transfer-Encoding:,	 	 	,			&`#t`eMjaEj#%+HFLkmQw$ 					 ;    D	= 			  			 	 	tjJHgi	  ; 		wLFOlfD6= 	  	 "\i\‡\…Ì\ÈHÁ^ÀP"   ;  		   	 	 	 		t=	"\xi\Žf&" 	 ;				l		 ="Ð\WI‹;"   		 		 ,I6Ey!8xT6f~	;#	=	""	;	   5y= 		"âà"		;	 IJl9V=""				 ;  						 dD=		 "" 	 ;		  	 R.t~L|4= 	""					
-Host: [::2:B4:45E:F:DDA6:8.10.28.46]:		 
+v`v /hW/q/V-/8S;vLe/.JB@ HTTP/0.1
 

@@ -1,4 +1,0 @@
-.60W / HTTP/2.4
-User-Agent: iq-%_c7iq					 	
-Connection:, , 		   				, 	17b	,		 
-

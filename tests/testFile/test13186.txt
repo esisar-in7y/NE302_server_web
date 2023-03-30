@@ -1,9 +1,0 @@
-7r /J? HTTP/9.1
-BKT:	    a				  	Hú	 			î‡ 	 	 	  		ò	   	  
-Referer:		      kw://DjX%BD~5@66.222.2.4/hlY 	 			  	
-User-Agent:	 jaQjWH	
-Referer:%70BWG/.M/?
-Accept-Language:  		,			 g-qOBs-E-x-jrs-Qlbh-B-Zhjn-EtFGh-3-d-O-OK-Z ; 	 q=0.	,  wiW-7-6ghy-hS-D5-1p	,	 	 		 mqn-C   	  ; 					q=0 ,	 
-Accept-Charset: 	  ,,,,  gF|cuY;		q=0.734		,J.KUn78a*US2!r , * ; q=0.64 ,			 			 		c5		    ;q=0 	   ,	 	SY*1cJ		,  , 
-Host:	 150.235.2.162 
-

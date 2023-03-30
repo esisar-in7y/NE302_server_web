@@ -1,6 +1,4 @@
-D-D / HTTP/7.5
-Referer:NSZ*%FA%3Eywm3'.%67&%B5%72/%47v%89////?%52%32eRgp			
-#7d:	  	    	 	 h  		 	 			5| 
-Cookie:  		T="kS#"; EvDusI_=gi; h+=r; zj=; R5$C=":7%"; vLK=; SK=C; .=""; R-'r3gu=; q=I; A|y.H=<IA6Z81u69v%?h)zi+iA]yx3; j=; Ld#M.Fw~_GW=g; oqg!w="#s%^Kmwo>"
-Content-Type:59Q/72 		; 		  2x="A" ; $&s!k="\S"			;~vl="\xÜ\‡\þ\g\+"
+F.cE //Dt%C1O_nLga/O/Ne/K5&j%2BA?_ HTTP/4.1
+Host: [CB93:9:F4::1:9C]:4
+Cookie:wp%.=c; O=""
 

@@ -1,14 +1,5 @@
-u% /c/4%E81/s?dN0-T HTTP/7.8
-Content-Type:  */ZZ	 	 	  	
-Accept-Language: ,		 jCpW;q=1 	   		,	  		    
-Transfer-Encoding:,		,	 		 	 ,   		,,,	 				 u 	     	   ;QDv5p~0aQ						 	 =	 	  	 		  "¨\K/žW"	 ;			RhxB&r'Cy 	=	   "ƒ\>" 	 		;		`GIK74jH	 	  		 = si		,compress   		,	 	,, ,ON+-ZglOS;	 			  	bXvbrma		 = 	 		 "\7\È\#Á" ,, 				%g+;	 	 				 	|     		="\×Ì¬"; FWc=		 "" 	 	  , 	deflate,JI  	;#	=   	 	""			 	 	;		i	 		 	 =	"\s\‹"	   			   ;   		  		2 = 		 "\‚i"		 	 ;#FuY+		 =	"P\Ž\˜\w\*Â£\<" 	 		; 				   	 		 $oiW   			  	= 		ME_X7h2f  ; DLtD		 	  	 =		"A"		 	; mAlB7SbH="",,			  	
-User-Agent:Hj|xNE	(@)	9vv		()			(½\í\Û\Â\%)	  (\l¤\²\\w\ïˆ˜—\²\¹)	xQtT0ELo++10/0SR5KM  (¤@î\E\¬)	  (\Ò\K\Óš\ðLó(¢cÛ9\Rp\èIì“)) 	(Ôm\–ÕJ)   	()   		 ((\&\Å\“ \C\ƒ))     (\-:)   			   
-User-Agent:OR  	XQ8sgYvhO|Q	(†\@) 
-Referer:    				//[::9:3:4:D:1:31.226.218.47]/J%90z8xHIrc/?		
-User-Agent: 	`W^w/k0	 
-Host:		   79.53.131.2:6328048
-User-Agent:uB2YW/RxdJ9 	  	ut6bL5L`Gyim/IAc`SM		()					   z&		   	  			(ÿ×’2ù1@(\l)\(p\_)\þÊ\o) 	    				  ((C\çÓ)(ù)\\A()\‘\·\œ) 			   (\×()\ò\Ê´\ý–©R‡)
-Host: 	  [::92:4:6:112.0.202.221]:  
-Transfer-Encoding: ,		 	,,	 	,		,			,,			    ,		,, 	, 	 	 ,			 baM  ;	  		 ~XqW="\–v"   			 		 	; |		  =	 	 	 			 "" ; SjrM5Ll 	 		  ="\É\U\§ª-"  ; O5dlSm  = 			  		 	 	"\X©"  ;vI= "Kø\r4"    	;  !rVOjR 	 	 	="\û\_"		  	  ;18&h#b =  	 	  "ó"			 		 	;		 HPk8y8fnIbLi    			 =		"\["; 		 	~B0x= 		  	"\Ý",	compress 	
+RT^ /R/w HTTP/1.5
+5:€		 			¿¦ä	ìY?	Ó– 	 ú<D			Ò	 	 	  	
+Host:	     251.252.38.20  	   	
 
-
+PZ

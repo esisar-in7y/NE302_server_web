@@ -1,14 +1,9 @@
-i8OywPAv /? HTTP/3.0
-Referer:   %3C?		
-Transfer-Encoding:	, 	,	 , v#N		;U 	 	=			|F* ;	  	1* 		  		     	 	 	=Nd*C%rDAVCd.kPNFJDs 	 ,Mv-U	; TWCjN9-P    ="~ä\˜\:\Ôñ„3'+"			  		   				,      		gzip	 				 	
-Referer: 		  			 //[A::5:8908:D:64:EC:35DD]/tt%B2,e',io/%7B)%66p@	 
-Transfer-Encoding:	 ,,		,	 	 			  ,,, ,	 ,uwlA,  	 	,  
-Content-Type:	t9/Ab
-Host:[vAB3C5FCAA4.jQR;hd;] 		 	 
-V:  r  	  		 		¹	
-Transfer-Encoding: 	  ,,,	  			 	  	,	 ,	 	,		 Tgu3-$B4hbEP^+W-Q 	,		
-Referer:	 //@0.107.255.4/w%E9T0&/w//y/.b:c;/X/%1F7(%2CS-K%00%B4	 
-Host:[02:6F0F::1190:3.218.201.8]:	   
-Accept-Charset:		 						, 	 			 Umh- ;q=0	 			,,   ,	,  VmR!' ;	q=0		  	  , , ,,	 !tcP  	;					q=1.,	   		,	R;q=1	
-Cookie:k4="2X3aFjs"; xSnQRQ`=X; ^*~%qob="["; uJEA={Tw'k^; $yDP="$1"; QJ=u(F[TNg; tQXB+%#s=N; K="~K"	  	  			 		 	 
+S`N /c%A9d HTTP/0.9
+Host:	 		     	 	  [::B59:E:1:54:6.5.4.235]:8093					
+Cookie:Ic=7N; ~5af|Z=d2S; 8="9!Zf494=Z|cu"; y=; KrBt=""			 
+Host:220.207.239.255:998	
+Host:		  81.58.202.85 
+Content-Type:		  	  8y%j/YHye ;W=""	; 	KmS="V";+P`Z="õÄ" ;  WZ="\ì\t:\ˆ"			;	Yr27zs="<F";l="Û\N\'\¿ÛqÐ\Ãè¶\ž\ðÅ#"  			;		85mjhM="+§"			;g#Db-zwD%IHjk=""
+G5: zå				å* 				  	 			nì¿	¥Ê	  ý±A			”ï				 
 
+é—j

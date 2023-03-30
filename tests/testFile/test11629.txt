@@ -1,4 +1,0 @@
-+D20 //JZ/1WkfE$%F5KN:%852 HTTP/0.5
-Host:	 	[::2:F:253.0.48.9]  
-Connection:		  	   		,		 	kx	 	 		 	 ,,   	 K    ,	 ,	
-

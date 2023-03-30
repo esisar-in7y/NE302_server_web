@@ -1,8 +1,2 @@
-T4 /v%44///%83e//%2EN%CBp6f//YY6%F8?VbnX%37%EF HTTP/1.1
-Accept-Charset: ,        	, 	   , 		 	 	$  			  	;q=0  		  	, 	 ~*					  	 			 ; q=0	 
-Accept-Language: ,	  ,  	, 					 rr-8-v-D-iUQE,,	 			 nIVQ-Y ,   	 E-k9-S3C-HY-v-wf-TpcAJ		  	 		,	 
-Accept-Language: , ,								 	, ,	v 	  	   		  ;						q=1,   ,  		 		   ,		H-82-t-N8-V8-p3		  ; 	q=0,		Qg-z-HZqK-ldPM-U-X	;		q=0
-Accept: ,      		  ,	 	 , y%uA/O; wB+N|i`x2x5="\{\&†µ8\•°ç\Å%\“‰¡€”" ,			   	 	   
-Host: 	[vC.c]:02	
+t /C)%62/2///a/'~:*/QF&%42r%6A=l HTTP/0.2
 
-¶

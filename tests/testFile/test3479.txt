@@ -1,18 +1,3 @@
-# /R/Y/j/W/K(1/%3Dt%67$%8D%3Bwuf%59)@'u%6BS82%8E//b~tANsL//kCN HTTP/0.2
-Host:		93.2.17.2 	  		
-Accept:	   		  	  
-Referer:teS:E/
-Referer: %0E%15f%36Z%83%EF%65E0kjp//c/ek		  
-Accept-Language: 	,sJzL-W 	 			; q=0.3 ,S-Q-x-6-g-C; q=0 		 	 	  
-Accept-Language:		  ,   		  	* ,,  		 zWK  		   ; 			q=1.000 	 ,  	   DT, H-F6-g9;q=0  	,, ,ui	 		 ; q=1.00 	,Y 		,gq-W-B-3-Gj-w5-5-d-fq-cqH-X-O47S-C 			;		q=0,     T-j-WYkag-JgL-U-T-ikV
-#|`w#YU:   	€		 			 	 	   }0  	®	
-Accept-Charset: ,, 		,,	 	  	 	 , 		  		,K		; q=1. 	,,	 	,	 		 ,		,, xCAkJ3atH	;			q=1.0,	 	 	
-Accept-Language: 	j 		,  	  Z	  		 ,	 , 	 L-ws,a-1-H-b-u-9zlX-lw1M-Uv-dZS-2O-s-Taho   	  		 ,		  				ga 	; 	 	 	q=0.35	  
-Transfer-Encoding:i3	  
-Referer:	   	 	c://254.245.255.56/lHU/.XTN.Jj?fhj  		    	
-I&6i: 			 	    		ú	 	 	 £{ 	 	«ü~	q# 	 i}   [§ ƒè	&àM			  	=>ý 
-Connection:		fWy-UDQ$'9Hd ,, 	 	, 	
-m:Ø  ¡¡ km	  ™    	 
-Host:	 	[EEFD:5:2:7:A6:9:225.250.245.65]
+R /?Y~%C9s%87 HTTP/3.0
+Host:	 [v4.ZlrGL]	
 
-©šç00

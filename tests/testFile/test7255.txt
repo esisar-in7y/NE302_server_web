@@ -1,9 +1,7 @@
-5SVE /S/f/%9EGNtZz$/J4J%DC/s?7 HTTP/5.6
-Referer:  XUAV://6.33.11.79:/n/lG//JIJXv?&
-Cookie:  			  0Y+x=50ApL^; Y=b   		
-Host: 	[::72.232.236.223]		 	
-Host: %24%7Dj%6D	 
-Transfer-Encoding:	q   ;	 hPv0x9h 	   					 	 		 =  	  	    	  ""	;		g=	"\Ø\E-Ùø\-\°\V"   	, gzip	
-User-Agent:     &Rd 			 	(\„ƒ.\°è\[Ó=π˝˘(º\L)\M) 		jPB^nrk	(ù\›\2)	(\ì[\⁄\ï\E\≤(\%)\¯()\ñ)		(\ñ.V(Wä\˙\ﬁ)) 			 
+I /p%01-Ln%BE9/%0BQE? HTTP/3.0
+Host:  38.11.254.197	    	 
+Host:		130.51.14.94 			   	
+Host:	72.73.147.1:2729	  
+Cookie: 	 Ut-g=; ^q=""; |ZHQ="qVz9'."; G=d
 
-“ö
+95ŒÌ

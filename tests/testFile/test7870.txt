@@ -1,11 +1,6 @@
-W1*F^UOL /l%05FOR? HTTP/1.9
-Content-Type:*C/sWK 	  ;		#yLz="\Î\ƒ\–\Õ’\ï" ;	 w=9IFXUJ'i* 	;%C*088="\r";	 		ss~="c\w";	BFSahv=""	;#=""		;	b&l4="«1\#\tU" 	;K^v^="\òKc’\_"	
-User-Agent:  	RXTVjnSL/PqG%3fl 
-Accept-Language:  		, 		   	,			  	  ,r ;  q=1,   				 	,	 	 	   G-qM-FO-P-P-Vj-U-7M1-W-h-Ol 	 ;   		q=1  	  ,
-Referer:	   		 		 						ZxjnI8mdWHgJMwT1:/?%AA 	   	   
-Accept-Language: , ,,   		 	,		 ,	 ,  	 ,  			 					,  keM-vLp-w-w-j-D4t-4-4KUnf5T-9q-8-g-lPVTBZ-l-h-FtJ-Z-z-9I-sx 		  	;q=0.9 	,	ykOB-Lt-eAR-3qe-S-w-pq-3jP-E-E-76-4dIF-q  		 ;	  	    q=1 	 ,  	  		 	 	 ,lF-Vi6-8-b-RSD-27-N-qoV-C-5eBi7nz9			   	;	q=1.
-User-Agent:							9d$~Uim		 	 		   ()  (\-)   (r)	
-Accept-Language: ,			, ,rAOCCgHJ-e9X-S 	 ,  yG,v	    			 	, * 	,  ,	,	  		  		 	UuY	
-Cookie: WnH_O7W=""; 4_An=F6; !gby-6JzSCm=j:IbIUJ?S:U; W="J^{6" 	 			 
+& /%2EJ:jO%B9f%79%F8R HTTP/9.7
+*:		
+Transfer-Encoding: 	   	 ,   		,		,					 	,	 0				 			  ; 	&J_Y   	 			="\xó\K"	 	 ; 	 	   		 		 nxo= "\:\∫ßZ€¥÷\Ò\”\w\~z:"		  		 ;	K= "" ;    				f.OVBi'ESh+C5Bu		 ="\"  ;  		yZt	 	 = "√P#"		;qi+oIQ&i$tgVQ~Vq5 	  = 			"\∫{@"	  ;	w ="©\6ç\–"	 ;	 	  #x		=       "\?\§\ﬁ\Œ"			 ,, 	 		,b-*aB;  VK+  =   ""   ,   		,   ,  	6HeA		  ;	 	    	 	 	   zEl+	=			 "˚Ñÿ\CB¬\S\ƒÀ@.„Sy\]\?œ\∞\s\˛\Pez",					*M2|OmBl		 				 ;6  	 	=	    	  	"\–"	  ; 	!uC  		   	=  	 	xKO4mu;		5f	=  "\º"		;b 	   = "—\î\(y\¶\ƒsb¥\´€„@W§\(",,			  	     		4h ;		r ="\\1“o5¸\π"		 		 ;		U=	 		 		 "";		 			 k	= 			 "\X\˙\˝\°÷\E_œ\“◊,"	 	 	;	  y1qi= "";	 		 SEW			 	= 6  ; 				 	.`B		 	="I\vÅ’";8-6~Uo38SswRWp =				 		    			8o18NAFP 
+Host:  	 [v446.rf]					
 
-√Ú=
+û

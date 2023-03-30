@@ -1,8 +1,6 @@
-BGy~&yx$6 /FTW HTTP/6.2
-Accept-Language:	 	  ,	,	,	 , , 	,,,	   Gz-pL0f	  ;q=1.0 , 		Y-Dt 	,rhEss-DZ 	 			 	 	  ,  y-g-I-g-FAz		 ; 			 q=1	 , 	  xCjH-p-I-vae-6I-H0n-0Ke-h,   AZ-no-E-k-c-W6x0-ptec-a ;q=0.4  	  ,
-Expect: 		100-continue    
-Accept-Charset: ,,	,		,			 ,	 ,				,   		,G,	,		 				 ,B3^n%WH0'lH$	,		  		q6^Tuc#-WbiSHW$1
-Referer:		  $r/Tf9/eLR/'n$9B	  
-Cookie: #`Vy=Jo; `3pu'="CSSi"; G6HKdeh="T"; aYi="q5s!)"; Jn="ghLA%"; bEj=`9PbTu 
-_:		 	  		  
+GN1o /VWG'7%DE'%DE HTTP/2.4
+Host:7.1.79.102	  
+Host: 	 			[::D8:0:7C:47.235.223.255]:82263				 
+Z-|Lax:					ß	Ù	 
 
+gIÚè

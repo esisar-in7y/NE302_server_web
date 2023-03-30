@@ -1,7 +1,6 @@
-#Hyh /F/2+/Z/%A4ISA%C6-&.)//%B2v%53) HTTP/0.4
-Transfer-Encoding: 	    ,			, 6&u;hB=	"¾”«" ;	   	   	 	_PLGr						=		 	 "\wá+ûL°"	 ;		 	 			 	  10ct	  	  	  		=	  		""	 ;CVrO#=		   wyifs ; %iz	=S 	 ; `Cq%w 		=  "µ\IÉ\<µ)"		, 		
-Accept-Language:    ,,  Vt;		q=0.353			, 	A-vg-aTol-aP26	;q=0		 ,
-Connection:		v9u,	
-Transfer-Encoding:,		compress			   
-Transfer-Encoding:	  ,|hvnw	; 			AbO 			=	"™\-¨\÷óË\*´R}\Š¡<@0"	 ;	G3    =		 		""	  ;	N&h = 	 "\›³Ø1"	;	 	   		 	5y!L= "\»"	; 9I ="\t"  , 5g1w;		 59NhBa.CZpH'wcL30Co0& = 			"2" 		 		;				e	 	="t\à";L#2Lg|365 	= "";+		=qj 	 	  ;H		=	 	 "¬WS-" 	 ;  	 	lCe1xOB!gQN%="\+\%¦	";WIJR		= 		 		 			"\Ô"			;			46|X	=	""	, compress  
+c^ //MPs:YQ?? HTTP/3.2
+Host: 	 			  	 [::8:13:C564:6:2:165.7.147.67]:4 	 
+Content-Type:~IQD/f3&  	;	  	 					WV3h.Yn="\r\:<\È\òRéë="  ;	|4T!="\\½„á\N" 		;  	Syj5Y="\E\˜\Ëê‘"	 	   ;		  	 	    		 .="\K½ "; GV$1~="”f\™\ Œ\F"  ;	 	  	 IMe&$$w$o="\\„";ah#="\t\x\ïÄ\É"			
+Host:	     	251.102.7.6:9		 
+Host:	  	[::F:1:1:F68:C4:240.250.0.7]
 

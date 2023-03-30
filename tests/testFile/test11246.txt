@@ -1,5 +1,0 @@
-O%v_4 /Nd HTTP/3.3
-Accept-Charset: 	 ,  	,   		' ,	9!bY
-Host:	[::F0:EC:7B88:1:252.1.217.1]:195749366888863603  		    
-Referer:	H2J://4@[v5714D81FD.45]//S2HRxwh/Wo?
-

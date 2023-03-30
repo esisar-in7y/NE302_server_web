@@ -1,16 +1,5 @@
-g //7)73.x&,/YhYb%16r%A27%93$ HTTP/1.3
-Accept:	 		
-Referer: 		   //fo@[::A90A:0138:B:18D:F1:6:C]/M		
-Transfer-Encoding: 		,			 ,	 		iw0ts	 ;Zp# ="\´" ;#si`aqc=		  	";í\"" 	 		 , ,		'		;   			 m   ="\›é\ﬁ"; Z*gPG   	  		 		  ="\8«" 	,		tP8|t,			 	 		, 	  ,   ,   ,	V		  	 	 ;	 	 		`	 		   = "q\ìÕ"		;	 	H_e =  	"\ä¯\e";	  	S9_e=	"", 	   		 ,	 ,	 5lPp+M*EE 			 		  	 			; 		  DPl =  "S©\†"	 ;^		 	  	 = 		"\ a"         	  ,    ,N 	  ;	  Yk+g-a	="Ö",
-40uk4:	 	 			•  ÄE 		
-User-Agent:	     	 	 	 wAly5Ia/0   			() (r\ä\Ø)	((Î\`)\&(\)\ﬁ\h∫Ç\O‚©\ùßœ∏\¸\‹\÷!\¥\#\ÿ\ˇ)\L\@X(\%)|\E) 
-User-Agent:		 w4				(îÑ…())	  ((!)\Î\}(\c+))       82/d		 (()(yú\Q)\±(\2\ÍÅ\!\{˛)) 	((ñ\ï\ﬁˆy)P\í\y)	 
-Content-Type:xc_P%/'y	;8%.!AQ7U="\Ä‡\%\w"	;	 	G="\®"
-Accept:    
-Accept:  	 	  		 		
-Referer://G-%4F%3C@[E1:EBF:F:01:8D:47:602:AE]/xp%D3/pd,L/@?O	 
-Transfer-Encoding:	 ,,	  ,		 			 					  ,	 ,  	 , 		 , ,~  				 ;*uf 	=	"\N\ﬂÄ#";	 4&7 =			"Dè" ;t 		=				     "\•/\‘"  ,  ,				    ,9^sy7lr	 ;		Y!s_=		 7pa#k ;-CXbP  =		"\∆\h1z" ,	j^R0i       	    	 			;		 CeU0R--v9S 			 			= 		  #z`;Oqr_t.P="" 		;NhE5=  "$"	 ;DBWS!Z$~	=	"" 	; 	  Y+~U			="W¸sBÍ\W\6"			 		  ;				  		 nB&o8C	 ="∫"	 ;SQF=	 "\v{Ë\ïù"	  ;  Gz&no99*	   =	 "\l\Í⁄\…\¶u\√" 	 			  ; 	  oICw	  = 5hU' ;	cT		=3E7aHQFY!j;2Tt$ZNE 	 = 	I|.g&cvr  	;  '6BGe6lQsmyaB&iw  =  "†÷\J˙";					 5= 		    "\∑Ú"  	; 	`Zzj	  		 	 =	"" 	;VCdJU	="";   hT	 			  		 		=""   ;		V^	=	 "\®";aQY="˜\stnÇ\#\9"  ;	 	QFR		="\X\ù"	   	;	Xa.gu="\´\?" 	  ;    w$6 =	  	"\”"  ;T   	=	"" 		 ; 	Vj.h	 					   =	  	 	"q"	  	 		    	  		  	 		   ,,	  		 	 	   	    +pk_k   ;	`F	= 		  m;  		 	 -_ 	=		   "z"	 		 	;TRYJkK+f0s%c7N			  	=		 "©" ; 	 6iJLC3Z- 	=  ""; p~   =		  	"\‘\ˆÜ\(\‚\|"	;	 	 *	 	= 				 	 	     	 	   "",wOB, 	chunked,	    hK
-Transfer-Encoding:	 	  ,   		 	 			Xw13h		; L= lZRy	   , C		 	; 	 	 	GQ|r~SKr0qM =	 "\8i\«\†µ" 
-Content-Type:	PMk3&LP^/Aed#dH	  ;  			 	V'rDmldC="\¿-"   	 ;	  	9="\ƒ";~olv8Q="";			 	 J7FYqj|7f#oodTk%=""		
+^Ek /%0F9%E7rc(.!///j/,o%BA//la?%DEISx%0F%A54C HTTP/4.4
+k:£‡	 	 	   	  
+6e:	   o◊	0
+Host: 	 	 		  [9ADC:E27::766:1.34.146.250]	 
 
-‘ßC¥

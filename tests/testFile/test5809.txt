@@ -1,6 +1,4 @@
-D /Zwn/V/&@8? HTTP/1.5
-Accept:g~j/-	 	 	  	; CtT8Hyes1*i8pk%="¤ã"	 ;	oc="\·\–\ß"	;	 	#=Wy		  					  	  	  	;			xS6`GyVz#="\Ý“"						 ; bLCfKs="÷" 	;o="\Ë„\”®:\<»\^\¢ \É\<A"	 	  	 		; 				|5`8=""	,j4ufC5e/r$ 	;	 cUqj="Ä\Ÿ";  		 		SjO="“}e\á\Æ";	   Qusq=jbSOyxM	   ; 	  	 		 	 	 +~VTe="¢é‘\þ§“"	,, 					.Gz/*	; -MmeM="\Û"	 ,	sxp%|$19/ys;ET1=""		     	 			;	 w="\ó"	;	 tfB#*_Z="\A\Ë\×\à6\É" 	 	; 	 	i="-\:"	   	 		  			 ;q=1.000		, 		, 		, 6/~3U0qNJ ; 	 	%0=HJ 	  	   ;  SYAx="\›	–À";6!L|=.5rB~wL6d;	 cWozlJU5mA="\Î-"   		 ; 		 	 W#="½\ñ+\²\„»" 		;NE="(\S.";	  `qt="\>l~‘\Î|\*M"				;t%8="˜\b¸"     
-Transfer-Encoding:	 	 		 		 fq	;	 Op 	 ="Û" 
-Host:	[4::71:10:4:21.76.27.8]:881 	 
+b /L%E3m%DFA/%45hB//2%A6o%C3//%23/~/%84/? HTTP/2.3
+Host:  	 [::F:2F:5AE:0C]:3 
 
-EÄ
+c8

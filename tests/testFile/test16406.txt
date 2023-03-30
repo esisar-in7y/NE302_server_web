@@ -1,7 +1,0 @@
-x //&u HTTP/9.3
-Host:[0:CF:8:0:804:FA1:31.68.249.9]:
-Accept-Language:	,	 			, 	  ,	 	 	 ,		 		,				 		,  p-AAS-Y6r-a-TkFx4-i-Y;	 q=1.00		
-Connection: 	 ,, 	 		 			  , 9			,  F1iz ,		 F	 ,	Uut  	 	
-Referer:	/CvQwd72%4Cx 
-Host:		[::500:7DC:D6:4F:6:129.229.2.93]:62243	
-

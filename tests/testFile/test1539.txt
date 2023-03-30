@@ -1,17 +1,5 @@
-m- /%BC//kR/qh/@mcY//._/ HTTP/4.8
-Cookie:		_nuY1=gb`; 91_4c2=nQi 		  	 
-Referer:  			//c+$@[::13.162.77.67]//q/eyv%8Cy/9$z/y?;f%A8GwWBM%BC$n	
-Transfer-Encoding:	 ,  	 ,  ,,cANuc*C`!T				 	; _-r5sy3^GcR&a8z6 =  "û5\!"; 	qZFDxR8					 =	 		"∆"	 ;k="" 		 ;kp 	  	=	""	   	 				;	Up86	=				 			  	 		 						MCsrPWuIK  			;U$ 	 = 			"\TT8\Â\Q0F∫◊\$ù0\ä\	\˚"	 ;~		= "" 	;  	DR5f*=		X				 ; UPX ="\GÅ”ß\~\≈\â\E" 	;		Hd	="\" 	 ,	 ,    ,	  		vxzbs; htA	 = 	 ""	  ,		   		,FaBF 	 ;iDh 		=   	  	":" 		;'kYf 	=	  	 	O; 5 	  =~G81t#I7Inz0lG` ;		q^Juf =	 		""	 						 ;		 c+=	 		 		"⁄ÿ"	 	; 		s|M	=""	;	   				 Ncx_ju="\Tè"   		;  	eY6iU&x= 	 			""  	  	 			 ;		 	v	=  	""		;		 	  p	=	 		 	tWJbuWQYRYo6-Ej27GZ-nv	 		;PF		 	="íß\Á"	 	   		  	  ,	 Y			; !K	 	 	=	""; D5!VqZ =	 	 	 	  "\£\§«\9ﬂ"	 	; $	  ="\¶0"	 	;				 	L=	 "\:ì\z¯=\Y"  	   	;  tBuXhN	 	=	 			"\©\»" 		 ;bjOVdWz3 	="" 			 		 	 	  ;A="\Û\–\ƒ\·_\é€_\ \g˜:]¥\‘\¿";	 	T   		  = 	^C,   
-Transfer-Encoding: 		  ,,   		 	   chunked	     	,,	 , 	,				 		 		chunked	 	 	 	    
-Referer:		/?
-Accept-Language:   			   	,	,				,,	,,,,		,	  			 ,, ,,	 			G ;	 q=0 			
-WV1-.*8ltPHR:	     	Ç		ã∂M
-Host:  			128.5.8.4:56833 			
-Connection:	   ,  		GB				 		, d5gGmAI-pe		 , ,   	  	  		
-Connection:,  ,,,	   				 		 			 ,	  ,		  U  	
-Connection:,,,		#9iFo&  				,,	 w  	 		 	 	 	,			  ,	   		V,, 	 
-Host:[v5C.uF]
-Accept: 	 	  				  	
-Accept: 	  &/PcZd8Hw  	 ;				q=0.3 			, 	,	
+QPvW* /%805g///W/8-%61%C8O%F7/8//%63/r/Knh/s?%604Z HTTP/7.8
+Host: 		  		[::1EA:71.0.221.83]	 
+Host:			 [::1:E2F:1:0:154.2.3.249]:
+Host:				 	  :3154			 		 	 	 
 
-0Ÿ

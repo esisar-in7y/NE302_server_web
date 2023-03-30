@@ -1,6 +1,0 @@
-zI /'?%4BNO8%C7 HTTP/4.4
-Accept-Encoding:	 			  l4zoh		 	; 				q=0.	  	  			  		, 	  ,, S ; 					 q=0   	
-Accept-Encoding:   2a
-Accept-Language:,,					 , 		    	jR-JRDx6Y ;	q=0.527	, 	 	  VFF 	,	 	X	 		; 	q=1,
-Accept-Language:,	  bwcWe   ,, L-Ar	
-

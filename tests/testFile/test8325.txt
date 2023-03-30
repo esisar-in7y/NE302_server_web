@@ -1,5 +1,4 @@
-a /OL/Gjwo5-gHl@///S%01?QZ'%D5? HTTP/9.9
-Transfer-Encoding:		     , , ,    LS'_     ;*3itFl   	=  	"\Ü\ý\ûë%\F\tú¤\ÅûÂ!" ,
-Accept-Charset:	,Nz~&;q=0,				#U*Nc7	, ,	 			 	,+;		  		 			    q=0 ,fO9y*	 	  	 		 	;	q=0 		  ,	 dGn;q=0	 ,t, ,,,~4ZZ
-Expect:100-continue 	  	 
+g /ga'/ HTTP/3.4
+Transfer-Encoding:	CJjjJK; 	!*		=	 	 	   	"¼\]\ä\{" 		;  	  	  					uwL 	  	   =   	"";  	  	f  			=	  	   	 "\ƒè"	  ,qj					 			 ;	E=			  		"\9ý"		; 	 +K3D   =	"ÈÊ\ÚLP\±\ôª" 	;	&	   	 = 			 "\íˆ\¦\¨\z²\3"	  ;		 O2!g^=		 ""  	,,		   	 CP  ;	 		 		 	  	uz	    =	 	     	   	 		 ""	    			;	i	=  "œO"	 	,	, 					,rhf!	 ; 			V|.`G= "ÿ"	 	;  GK  	= 						 			"\‡\B\ô\¨\?" ;$2C="z\Ú"	  		  					    ,,	   	 ,		.8XUzB&9  	; TPm=					"Èœƒq§\b"  	  	; 	 +pjyro		=  	 	"";Az'm	=""	; 	 	 	 $	=		 ""; `Uo 				 		  		   		 	 		   =		  ""	;	BY	=""   ; GDu	 			  =   		z!4	; 2ZvnzL=	  "";	d  = xnXJ	   ,  	 	,	H		
+Host:	 	     [v71.&z]  					 
 

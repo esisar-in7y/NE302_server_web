@@ -1,14 +1,6 @@
-gi //%F3KP.2Ur//B HTTP/1.5
-Expect:			  100-continue   
-Content-Type:  				1k9/V^v0	;u=5
-2:	 			' 	 			 Ø			 	 	  	 		
-Accept-Language:,,    				 		 	 	,	 	   ,	,	  	  	, 		,,IVsOcj-V				 	  	 ;	  q=0,	,V   	 		,,,		 	  	   	  UT-v-VsrP-4T-j 	  ; 	q=0.3	
-J:  						 	  ƒ  ø5	)œËq   oš       ·‰ 
-Connection:	  	 	   ,  f0ji 	 ,   		 ,	 	  Il  ,, ,		 	rt	 				  ,,    		    		, .e272sSd5S#E,AB	 		 , 		xR,	  	 		,,	     y,kSZAh#Qf , -bO 	  	,`go1	  , 	'3 ,  			
-N+:			 
-Accept-Charset:	,, 		 			 ,	oD     ; 	 	 	q=1.0,  	,,	  
-Host:[1:6FE6:4:7:A7::9CD6]:8	
-Host: 		[::9D77:E:FCA:F:098B]:98
-Referer:	r8:%AC/h%EB1Jd?%B3%F2GK38 		 
+^D /eZesOcK/Qf$1'-////:0U7Os*?ru%F4 HTTP/1.5
+Cookie:	H=; b9h=JyNv<:X; -UT.R=d  
+Host:208.9.4.5  						 
+Cookie:	 			wj#n=; Dfr!U=]aZ?P 	
+L: 	 
 
-R[dœŽ>`

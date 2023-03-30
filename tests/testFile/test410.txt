@@ -1,9 +1,5 @@
-CPn /K%5B/%6E/?+/G$xXNK%9EQ/tR HTTP/5.3
-Accept-Charset: 			Y2f  	 			   	,	
-Transfer-Encoding:		,2DV!c		  	 	; 	  		 		 		 Kx=			 	 "\ç\Yêéo±\j"	 ;KRf.	  	="\¸\)\≠\“"
-Referer: 	     		 						 		//@234.3.169.4/T%5D_
-Transfer-Encoding:, 		,    n.F4Z|;q$cS25				   =""	 	  		    	  	  ;			9p!	 						  	 	=			"Ÿ"   		; 	  		  					9Jh  		 	  		= 	 	  		 	""	; 	 oJ		 		= 	"∆" 	 	;	HZz.lVK	  =	 	 "\&" , 
-Referer:			   	 //[::6:245.234.8.0]/8  	   
-Host:40.240.6.93	
-Content-Type:  g0Xlp/SP1D~&9AcN%MCED^
+!va#CA /LD8t%50-%4Bl%7DR HTTP/3.5
+Content-Length:	1609		
+Host:  		[::B:4C:0:05C:245.61.253.8]:596	
 
+4

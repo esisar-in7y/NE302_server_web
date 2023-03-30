@@ -1,5 +1,3 @@
-o / HTTP/8.9
-Connection: ,  	  	, , 	7  	 ,    	 	 , 	    x
-Content-Type:	 TZz/$4 	;D|1=dpl1	;&LgSpn5&CD="\ş\ç]lš\T‡\W­\7"	 	 	 			 	  ;%du="\v†Âh"		 	 	
-Host:								9afa     
+c /H' HTTP/1.5
+Expect:	100-continue	 
 

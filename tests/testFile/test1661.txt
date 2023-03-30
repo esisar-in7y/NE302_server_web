@@ -1,6 +1,2 @@
-6q* /$U HTTP/3.5
-Transfer-Encoding:,,		 	 	,		compress  	 ,deflate
-Transfer-Encoding:, ,  Vj;.H	    =			 		     ""	,	   			 ,      
-User-Agent: 	b%eOs_/1rN56^E#2wJv	 (\Íý0’) 	  		 	(\Î(\ƒ)\â¯M(=a))  (\¶\n\à(ƒ\Ä)(\Ý)J(„)eêS\÷Þ(©À\w)(\?Ê=³A\æ«t\f)<º(\Ñ\W\äq))  
-Cookie:	 	   	 	 b="j"; n%Fy="M9" 
+htG$C /~K,ps/Z HTTP/0.1
 

@@ -1,5 +1,0 @@
-ieA*5~L /0/NG/&tR HTTP/6.2
-Expect:		100-continue 	
-Referer://@95.57.6.241:7785/k31f,%CD%E8T
-Accept-Encoding:		    				
-

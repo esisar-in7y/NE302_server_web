@@ -1,7 +1,2 @@
-p /nZIHe%34 HTTP/4.5
-Cookie:  '*="c"; &-A=""			 
-User-Agent: Z*			 	 #*3KXH.k/S		(e)	 	()
-m: 				_N˝	iÚ*			   …ç 	  	Òô©5˜  ßY	&°	 H
-Cookie: 		 	 	   t`nbbzfc=_w; ^="OjIS" 			
-User-Agent:k (0(\ÂJ\÷)\k«\[) 	  			   		  ()					  $  	 	 ()	 (K())	   ()  	 		 (\à)
+J /3 HTTP/1.3
 

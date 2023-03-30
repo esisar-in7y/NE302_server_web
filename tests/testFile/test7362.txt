@@ -1,17 +1,6 @@
-HOaDnh+~n /%FDq HTTP/6.4
-Accept-Language:,*,		 w-xF-u	 	 ;    		q=0,  sqUN	  
-User-Agent:	8U. 	(hÎ\F\†Æ) 	 
-Yk:
-Accept: *XWsDg/*			 			  ;yU.NX="\ƒ\i\~"; QFCBRMG!tNR="\:?Ž\-\•\BP\;<{\P¡E"	;wTn="é"			 		 		;Q2="çû£\!\!J\Âø" 		 	 ;bB5ICts="\Ñ\v~ò\I";	 &PO_n="\¦Ï\Ôê,\."  	;b=""  ,		X/*  		 	;		 		d$=""	,  				,		,	 Px-r3L/*  ;Ua="5`\EW\7`f!\P\¥m\h\«";~G=""   ;		^MUHjnQV="\˜\|";uqcHr3bn=""  	 ;q=0.0		 ,	, 2HK/*  		 	;G=!UM2!o6|Nqeq8`#!R_UCWBtepF  ; 		 FV="\,‘"; 	 	 	SLLwmP+="\˜º\¾Š\I \Ø\Ö" 	 ;					9Azi="\þ";    	   q=0 	    	 	,	 	 	JUR5/* 	 ;ys="\Göæ]\‹\a—"   	;  	 			  	  	 			Vh98d2="" 	 ;  ip="ANŸ"; 		 	8i="\¦\ãá\ýÖR\ 1\u^Š"	;	c6="\#",		7g94/*;x="";			 BG.6="\¾—®\•Uë\Z\C8\u'E"; rh="\m("	  			 	; 1="";  f!Y="" ;O="" 
-Accept-Charset:, 			  ,  , 	  				,,	 * , 			  	 3 			, 		   E6!S'			;q=1		 				, K ,
-User-Agent:-/nO 
-Referer:  		/ 	  		
-User-Agent:p/L'%0G   5-/BCB80J 	 	((\@–\,¡\íy)\u)		(\Ð) 		
-Content-Type:.5S/5N5; 	 			Cp^="Œ\~"	 ;	v$="" 		   ;rPOC2FE="\~"	;	    *T="\U"		   	     ;	XMFr%BMx=""	; t="\¾3¢\âhØ"		 ;	 vFpK9_=""	
-Host:[::B:4:8:124.78.130.3]		 
-Host:   	i%8Du(:81204866
-Connection:	,,	 	,  ,		,		  	    ,	 		,,		,P93z2  ,   	 			|2VcF		 , 			, ,	 ,	lf1				,  	 		  ,	  	    	 ,   ,,
-Accept-Encoding:	*; q=0.	,8y#-r;q=0 ,, 	 7e ;q=0.13,,	P8zkt7~l'#&yc2o	;q=0.92  ,		,%f 			 ;  q=0.12		
-User-Agent:htx/MwMQ	  
+#C0 /%38i/l;9$?c%57r HTTP/0.1
+W: -
+U:			
+Host:224.204.7.48:4011   
+8Ehh:       gYÊå	 Š	
 
-U€à

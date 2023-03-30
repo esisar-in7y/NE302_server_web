@@ -1,2 +1,5 @@
-u&0#Y /9/R//8+//7?3 HTTP/7.2
+UTU%hQsk / HTTP/0.6
+Expect:	 			100-continue 	
+Content-Type:mt9Sq/&&_ZgQ 	 ;   			6J=rhEr&	   
 
+,

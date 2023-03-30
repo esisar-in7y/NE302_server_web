@@ -1,9 +1,4 @@
-1w% /ZuZJ(tT/Wg%067r HTTP/3.4
-Content-Type:	#/Z%d	  	 ;B="";A6w9~="\ã\f\g"	  		 ;T="\~"  ;		 	 Ssr.="\Œ∑\üÛ\·"
-QX:	W'§
-Transfer-Encoding:	  	, gzip ,* 			;	~V2O		 	 	=	  ""  ;	   	  &=	 	  						"\F7\éK"	;	AUE13	 =   			"" 
-Accept:	 O1GR/B70#	  			  	,	*/*	 		;	 	  2I9=b1AeqO
-Content-Type:   4mTu~q/ZE05TAcvhzs#|*0& 	   	 ;NJ'7="—\h"; 		  		 -HE!l_h'-|d=*93^DWpg`Y'Un*6sZ%!y8Tzd6nW#S9A	
-Transfer-Encoding:	 	, jl.&	 		  ;	 *zP9O   		= 			  "m5è"	;il*H3		 =	 						   		X	;   ayQk 	  		  		  =	 	"8\áªû"   ;3e	= 	"Á"	 		,	
-0~8ReZc0:ã	  			   	6
+hz /d%18u HTTP/4.9
+Host: [::43:C:13.4.84.49]:6 
 
+

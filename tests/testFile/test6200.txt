@@ -1,17 +1,11 @@
-8U / HTTP/6.1
-Referer:	//Eu)8Kkz@0.187.8.253:53/ 	
-User-Agent:	 	 	 h6We6`xlFoS
-Accept-Charset:	M7   	;		 q=0	, 	 X		; 	 		    	  q=0.  			
-f:	    
-Connection:	   , 	 , 	 	 o8TmKbg!dJ& ,,
-Referer:   	  kY-://[::6C:254.64.243.250]:4/p(*v/nxoC%44l	  			
-Transfer-Encoding:,	  , 	,,,	,b8r  		;	   		  	 	 ~8U2	= 	ruTyCn4g4lbI ,	  %		;		 		3=  ""; E  	=  		  "À\o“\k\S"; 	 	r0SNH= ysIg  ; Fup		=		"¥®……Bó"	 ;|= 		 	""  ;			~cKwA 	 =  			 "¨"	, 			I		  		;  	CpO =	A 	 ; 		 		2skAHR+5a! =						"@Ù"					;				  	g0^^%		      	="ã›";V			  	 				 ="™\Vx";O 		 =	 		  I9!R0u,	- , 				   y	,  			 , qfrj7dXu8;	  	97=	""  			,		, 		,,    S+Du, D`sF;  						 	ES  =     		"x\÷\ty\A\—\°\y";		+&#7tm.r7o.h!HU		="\‹˚"   ;'vr3v 	=		"–SR*\Ù∂\Â"
-Host:B-Ns: 	
-Connection:  	,,	 L	 
-w:  	 Ó			É	
-Content-Type:rzHp/l	  ;   VSOZ319=y  	 ;	*=""	   
-Content-Type:	   nL/y|  	;&="\[\0\N"		; 	  			 		   	'4fY=I!	 	 	
-Accept-Charset:  Iw;q=0.	,	ut%f2phW	;	q=0.  
-Connection:	  		, 		 			,	 	 		  ,,	 h~T6	 	, ij66lo				 ,	, 	gHh  ,  	   	 		 ,GKuco,	,	   , , 	 		 		
+TE /%EF-$' HTTP/5.7
+Host:	  		251.6.224.227    	
+Content-Type:	 	4/^`$`Pi3	 			
+Content-Type:     	 	  		rSDs#V/Ye4  	  ;		X="" 	;	clmY="u>IøÌ" 		
+Host:   	 		  	 	 	 	251.212.252.230:5954
+Transfer-Encoding:,			 ,swUalQ;  	   						+.FLG3-2# =			"\˘\FÂ" 	 	;AYb*mn|=			 "" ; TKh!Y%4.H3T|$Z=  	"\I\Æ∑©\òæ"			;  			p69pT	=		    "\Øñ\=\‡\›\‘" 		 ; 	    			uTd5	=	"\·Œ\Û\K›"; 		 	elE#FI=		lWW5_v ;s =   	"";2 		 	= "\Bö"		 ;1 			= 	""		  ;					CRq   ="\¶\b"; 	 $6j#0	 			=	 		"\&÷æ\0\◊"
+Content-Type:		~99B/S3
+Host:[v0.8mO]				 		
+Host:			 	 93.215.202.214 	
 
-ﬁ≥@õìf^ ê:
+ûYES

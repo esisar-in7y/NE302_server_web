@@ -1,2 +1,0 @@
-DDPEAu /kI HTTP/1.2
-

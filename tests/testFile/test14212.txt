@@ -1,4 +1,0 @@
-c / HTTP/8.5
-Accept-Encoding:a
-Accept:	 ivqeKeAm5p/*, , 	
-

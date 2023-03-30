@@ -1,9 +1,6 @@
-SWl2 /wHq,/!;/vlK5+%61b//z/%37rJ//Akaf$?Mr3L%A5$ HTTP/8.1
-Accept-Language:WwN-tI-m5u-8AhHzgi-R-59-bM,	,kD-hsl-W-Fp-Tb-oS 	;q=0.	,		GHR ,	 	 	 ,	 		
-Referer: F06A:/  
-PJ: 	% 		 	¯V						  
-Accept-Encoding:	j,	,	  LnN*$1 ,	,	   		_T|22Ec;  q=0  	 					
-Transfer-Encoding: oSr_S	 		,	
-Transfer-Encoding: ,	deflate 	    		,		R6CzA- ,  9&P 			 ;		d!1oRm =""			  ;5	 		   		 =  "2}r\Qþ\üK‹\¥ïá"			, tNZ;			D-T 	 	 = ""	
-Connection:  	 , 		 		,	 			r^	 	,
+ljK / HTTP/7.1
+Transfer-Encoding:	2
+Host:			 [69:E:9F:ED7C:CFF:5:231.253.212.46]:369	 		
+Connection:		 ,,	!RMli.xBab$  	 , 	 		,	 		 				    6Y!7.w ,,		 			    ,t		 	  	 
+Host:	GZO=N':19	
 

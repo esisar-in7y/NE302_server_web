@@ -1,8 +1,0 @@
-D#o /k%4D.FzZ;u/%71//-/n;J?t* HTTP/3.3
-Host:[::8:8:0FC:5:2]:5	 		  		 
-Host:	[0::0:8:34:248.250.34.2]:46043339		
-Content-Type:	Zq/I; 		jqE="\?\è\®Ò(Ù\≠–\¬;"	 ;  .=YxI&O4q&+gV0|nv!ZLywIC~LTq0cS ; X=""	 		 	; AOv4z+="\o\F\µ"		 	
-Accept-Language:	,,	, 	,			 		  ,		 	    , WKTw-D-DdRl-9;  			q=1.	 	 			 	 	  	 	,	 , yUZOiVuJ-jOj5-xz-n-u-ezh-ti-N-0-K-JcY	  			  	;q=0,	k-J-9wcAj	  ; 	q=0.202  ,	 	,,hw-x       ;q=0.5 	  		,,	  	 		 Lc-C-S		,  					 	   	  	,,,	    ,   Nf-8-Y-1Z-Frf ;  			 	  	q=0  	 
-Content-Type:X/E;		  			 	 	     c="\…\FÔ“" 		 ;Kx=OgQlkSw
-Accept-Encoding: 	+q ,	 identity  ;					 q=1	 
-

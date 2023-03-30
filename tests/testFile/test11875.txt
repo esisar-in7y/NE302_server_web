@@ -1,6 +1,0 @@
-.e /civQ/%ADzz%04/+ HTTP/3.0
-Content-Length:	  76
-Host:		 		  	  [9C::BB:A:2:215.1.84.1]
-Transfer-Encoding:		, 	,	,	RKi#Xy+   ;			 		 3|	 =  	 w5npD_OcjPUgBm`;J 					 =     yPpKKA0ms&M_,,			 y3FXR; 			 		F 				= ""  		   	  	 	;Ok8m= "\•At" ;  t =	 		""
-Host:	   	6.72.252.115
-

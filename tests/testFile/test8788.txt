@@ -1,13 +1,11 @@
-8 /GwmR-eqB!/%52c/S)/5%81r%3F1%E2//M///7 HTTP/6.6
-Connection:   								 S$lZz  		, oAYh^	  ,		^*B,	 			UX			
-Referer:	A/O
-Transfer-Encoding:  		,   	     	  , ,,	,   									 		 	  d	  ; To  =""	 	 ,			yk ;_B^* 	   = "\Ž"	  , , 	,   				 	 	,		 
-Accept-Charset: 		 	  	 6ow;			 q=1.00	 	  		,	,	,
-Accept: d2Kk/*;	K*iW.="\<ÈŠ\cA";  -a$N1bBKg="\K|½\1\¹"  ;	  	  MBw="à\×U\‹\›\E\ q\º0'\–i\P\æx"	  	 	  	; 	 I`!LC="Ç\ÔH±" 	 		;	+PX="\îùÆ\Ù0" ;	 q=0.
-Content-Type:UW/Q	 		 		 ; 	   					 			OV4#="\M\Ïº\Š\¨" 					 
-Cookie:	H*Lu^5~mPRe=H 
-Accept-Charset:	,,  	H   	,			   		,	6	,,   Chq	;q=0.		, ,NEF ;	q=0.8	
-Cookie: 		 	 		  PV|llihF%0dVTFl#1=a2M4-8Mr7 
-Referer: X:Xy/u?kI  
-Accept-Language:	,	g-Tvd-YhW3-gFMO-owoo5t-j-ju-e-HFsg-7-21-U-u-cLt1-r2-C8-Qx  ;	 	q=1. 	     	, 	 R-0gYrL-KGI    ;	 q=1.0, 	   , 				 	, 	   			 	i;			 	 q=0 , z ; q=0.6
+b //b((Y%5A7?%17_hM%3Eg:= HTTP/9.3
+Host:	[::4]:350566 	 						 		  
+j+g: 	
+Cookie:E1vk`="F" 
+w|*y!|: 	  			
+Host:		   1.171.236.6:
+Cookie: 		J6tl="a"  
+Transfer-Encoding: 	,	 		,,  ,	,  	 ,,,,	,,		Ku'l$|	  		;		p	=	 "" 	; z=ZKHC; y= 		"\D\Ê\­"   ;4T.f#zhH=	 	   ""	, 	 	,,		 	 	 &e;			FRV  = 	 ""; dF = 	  	    	"\Ž…\" ; 			   *nb'4hZQ1f'SX^o$	=  	""	;	  	 YHB|ffmdBm2 	="\Ù\ÆJq¸\Ö\æS\Å"	;			 	 		  		8tAu="" 		 		 
+Transfer-Encoding: ,   ,  , 		,	 	,, 	,k8';e!.=	 ""	   		 	,   #D7,T	 		,		chunked   	 	  	      ,, S 		   	;$O5'  	= "ßö\Ž",			 		   PIP!xRE$	;   			t			 		 = 		 	"\\·" 	 	       	 	 	,	 	 	%XL2m|e!_#|*g ,  	x;cHE.FZNcXsrWDE ="u&É:\™\E\à\M\8"; 	 P`i-D = "{" 	,KEnrt	;	   	   	  			 		  C = ""; aSK	  				=	"\¦¤" 		       	;2x=			  	  	  "Èh‹\sÉÙð"  			  ;	 A+	= 		  	"\Á\"	 ,		 l-Xi-d5x	  		 ;	 %doY&	= "M‰\H";h			 =	"\&\³\“~ø\Z\	"	 	  	  			 ;  		  bS2Xy 	=	"EÒ\C\ø\N";	m.#5cy		 = "¯MÎ\9\¼IV\¹" 		 	 , ,	 
+Cookie: Z=%; F=; Zj=PsX; e9dfJ="2(:"; -kiWv="~LcQ"; mz="::d^w"
 

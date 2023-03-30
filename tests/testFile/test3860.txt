@@ -1,9 +1,2 @@
-cE /+2/?a HTTP/1.2
-Accept-Charset: ,		  					,,ciLdn		   	 	   	 ,,	  	     	 	 	 M~Q,	 ,	,  ,	 			
-User-Agent:DJ&r`R 	 			(\w\ž\;\o\ÊD(#\4ó)()M|(\$\ÿòz)$())   (\Ú{)		Ap-0/m.T		 	 		   ((\6T)±”|¬(©)\a\Ïâ)	((_\c\Ñ²\ÿ\“¸)\œ)		  	 (—\„(‹š))	
-Referer: c+p://(@[838:4660:B:3:10:D:246.220.225.217]:28721642/tBm,&ytg@//G%DE%17	  	 	  	
-Accept-Language:		 	,			g-jYzU-Li-jU3sN-DH-7Mjx-6-q9g-Q-n-m-U	 , jUDGA,   		 	 Mym 		  , 	G,,, 	 	   		 		HukK-11Q-4		,,,	S  		,EoZ-B-c07	;q=0  	, ,,			   		    	 		 W-k-6-G-VJ-q 			 ;	 q=0.72			,	m-c-uNdN	;			q=0.1
-Transfer-Encoding: 	  compress	 	,  		 	   		,  		,,  		N5 		
-Accept-Language:	  ,			h-d-jd-FZ-9W  	 	;  q=1.	
-Host: [C117:2203::CAE:5824:71:205.128.98.2]
+. /'9B/-AGEw.WG; HTTP/8.6
 

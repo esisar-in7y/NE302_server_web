@@ -1,14 +1,5 @@
-B /*p%F2//%AA HTTP/7.9
-S&7: 	µ» 	úí	 uù	  	      ÒÀ§åJ	 	  			 	×
-Accept:   
-Referer:		I'/@~9T//h%48/1XAIzBIbc/9WCno/E,k/%D9/p0P5%A6FHHP/%A8S%D3E//X/A,%F1?
-Accept-Language: ,,, 			 	,	 	    			,fXOn;     q=1		,,  lGE	 ;	    q=0.,ek-q-bi-K-bi	
-l:	 			    		
-Transfer-Encoding:  		g ;   	  	   D$N!S1u= "x\±"		;			x6 = 	 			"°\;+," ;P49^P0 = 	    "ó\L" ;   		 		  	~uc'	 			="ÎV\ \kaw\Ä" 		;    .39="",  ar+f		   ;  	 					C	= 			 "Œ" 
-Accept-Charset:   		 		  ,		  , QDkT$&ry 		 			  ,,*	  		 , 	Rt 		;		   				q=1 	 	,j7Nx ; q=0.2,	 	,-c		,			^bH6 
-x:	    	 êž¥
-Referer:XWbLzBFLtWh://[D4::B202:48.205.250.9]:9//JevBgQ///4O/.;N  		
-Accept-Language:	I-0g-a-wKv0w-Zs-s;q=0.198, 					eih-Oy-2;  q=1.00,				H-s-y-Ut-MPta 	
-Connection:		  		  -W 	,		 				 	  	 	  ,, 		
+E //i%4B/'Am%B2 HTTP/7.5
+Host:  IRRybrQG 
+i:    #	 C 	
 
-È¡
+

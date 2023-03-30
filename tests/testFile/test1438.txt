@@ -1,5 +1,2 @@
-+ /c1MJl%C2h?q%F5$%71P%A8iy%87SFM HTTP/7.9
-B:ò  “!	 		Æ÷V   	Ùw 			r„J 						
-Accept-Language:  ,   	,	 	,	 	,  	      	 	,,O-sk 	 	 ;	  	  q=1.,		 		 		  ,nn-ZSu; q=0, 	  					
-Host: 	  	 [::204:4:2A4:495E:58:237.5.212.166]:5465  		 
+L~| /E/ HTTP/3.5
 

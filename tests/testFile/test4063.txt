@@ -1,17 +1,4 @@
-dNtdi6yxfo /t!4k!n/./?n HTTP/2.2
-Accept-Encoding:	-	,	,	 		,,		 	fe ;  q=0.206   	 	 ,, 
-Accept-Language:, ,     	,			  ,	  	 , 	 	 			 ,	,		  		    ONbh-1f-l-ee5k  ;  q=1
-Content-Type:	 		 		4.c/w8   	;		CqV4*Bp="\=\r\°" 	;7="∆" 	 
-Host:	 	
-%2HP:47 [Ú	 		v¬	  	
-Host:	[::3] 	   		 	
-Content-Type: 	 	 6/Fk 		 ;		 	n96="ñ\â\ø\$\bÆ"	 ;	 	    y="\0\±"   	;	 	 &="[\#"	 ;	$$G#DINP6SFM=*fYz|		    	  	 	 	;yA="\ñ\õ≠$\g"  	 ;  Hpmi="\t+\¬"			;	 	 T'="^"
-User-Agent:	%2/q+		
-eVi%'MeuJLB:  		   	 ê			óQ		 ≥á¨ 		Q3:	56˚  	áÍ	 î
-Connection:    *	   	   	
-Accept-Charset:			  	VXUBXLkY	  	,kNF ;q=0.	,   	    
-Content-Type:	 			  cSI#/zt^*CMmRcFA	;  bwdQ="\—";1="Y\ˇ\:â\x\¿\í"; a6Q="\%»";  ~="∞\5\œ\E" 		  
-Accept-Charset:	v	  ;			q=1., 	,    			 	  		 		
-Accept-Language: 	  	,				, ,,,  , FF; 	q=1 				 	  	  , 	gwB	,F-Q6LA,	  			 		    				 ,	   		 ,	,	X-t-pA-i-4e 	,
-Referer:iE7:/   
+D /f6/c(:z@&Z/'cpVR//4P1/-/K//31v HTTP/8.1
+Connection:   ,  					 , 		  	   	,		,  ,, y-2Jgl1	 ,  	  			 	 , vnx  , 			 	^  	, 	  	,     	   		 	
 
+œ

@@ -1,12 +1,2 @@
-'W_r /%20!*sC%E8./? HTTP/3.1
-Accept-Encoding:2mHx	 	,,   		 		Bqf; q=1.0 	 
-D5:  ‚	L£ 	  	   	ÍÅÀ		
-User-Agent:09y/Uakzw ((ü\D\N)ý)	 			(\íé)	 		 L0JS/_	 (\”W) (Û\ð\Ôô)	
-5: 	 	
-6O~: 	ù ÎÜ			  ”!					   	5æ  		ÁÉ 			Nð	 	  êº± `Z		 	   		c]êˆ è		   
-Connection: 	  	 	   , 	   H~	 ,		 						 	F	 	
-Cookie:	A="^B"; AW5e4yGzIJ=j}?'Qt0QQ 	
-~: 	
-Host: 	253.252.241.75		 		
-Accept-Language: , 	Mn  ;	       q=1		,	  	 ,		  				 	g-Qo-sZ7-Etl-6-QcQ	
+IdCl|gC /?%3D HTTP/6.4
 

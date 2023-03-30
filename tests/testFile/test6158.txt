@@ -1,8 +1,2 @@
-8XWF /%26A=?%67%DC6 HTTP/1.5
-Host: [A4C::A2:9B:5.91.167.62]
-Cookie:	q=Q*f; YM="3(_Os"; Bz=; Jr'Pp="YLR)Jv" 		
-Host: [7A4:A:A7:6:B:C:226.63.7.1]		 
-Accept-Encoding:	z  		 ;	  	q=1.0 , 	Yw	  	,		   	,  dEdKsqLS74$Mf~	;	q=1			, 			 ,  								 	 	 	 	 xms	 	 ,			    	  	 fm				 		;    q=1		 ,,							
-User-Agent: k^		 	Fl 	()	  		 (v)	(\=Ë(\{V\Ä\u`Š\¶\M\øÚ\Ê©\é\WH\*\k)\u())		 (ø¤\%>?\ó\0()A\×)	  (e\…)  (Ç\Õ) 	((|\;Í\B¦\Ú\.\Î)()\"\m) 		
-Accept:ud/| 			 	 		;	K6Ic+59LxsY#6Z'~`!="" 			   	   	 ;	  	 	 L*="\¬|\ÊÉ"   ;		`Wy$*Cu5="\‰"     	;	  4Yl1+z="€V\ÚÐ" 	; 	 	  	-="\(\>"	;sYX="Z"    ; 	q=1 		 ,	 P/* ;  'C4=Uugh  	  	;   		    		 			 	  -'="f\1";%=""	;Y.x="\dý\a\ÍŒ‰\Ý\À";	  L#=pw		 ;		Rq%="\‚"		   	 	 	, 	,   	   			Bk+*/*	 			, y9/r;BKaCGF="|";Y-XwG^=":\ŸuÌ" ;  		 o="\É9\T\Uy5\b·\À£"	 ;q=0 	 		 		 
+Q- /MjCc/&9fY%C3%C0X/yXS%2EB%54r%3C////l HTTP/4.6
 

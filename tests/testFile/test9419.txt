@@ -1,7 +1,3 @@
-x /5/wD HTTP/0.9
-Host: 		 	[4392::E:4:6A:E:252.215.8.119]:87062	   	  	
-Referer: 	 $%F9f%68+  		
-Accept-Language: x-4M-t-P-c	 ;q=1.000	 		  ,i , 	BTHys
-Referer: 					  		H	  
+hDa /T3as?CY7n%B8i%49epQ HTTP/0.9
+Expect:100-continue	 		
 
-WçòÙå

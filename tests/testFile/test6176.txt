@@ -1,16 +1,8 @@
-f //W HTTP/8.0
-Accept: 	   je/*		; Q*="Ðp\­\Ã\£\±S˜æÜ\Ÿ\Y\u\A\8w\Ä\_"	
-0:	ò		  	 
-Content-Type:bW/A5		;6d='u*;	T=t  	;	t1="Åê;\¦\e\Ö"	;  ^="\Ó\³"	 		; 	4=""	 ;   UH8="ª\qå\ØÆ6";	 F9y6y4Z2F^olW=G 	;9wq966r="\ž\–\>\°\**\ú\øõ\Ä\x\Új"  ;	  	 	|*J="";		8="Ý\=s¥Å\ç\d<\w"; 	Ie9oTS="Ö\Ž^\ýó" ;			5!Ow="\š\e\—"	; 	1PDGsO=""			    ; x'H7-=V6x6i	    	;Va&thKW=H8		 				
-Host:	 	27.250.19.251	  
-User-Agent:					 A (\H\3) 9fR4   	 		  	(\î\€)  	 	 	(\R)
-$97lUQZAA:z>–Î L¦	   4Zsÿý	 	   	îm~  	 			 	 	 		  
-Accept:  9z/T2 	;	Rvp|vX1_K*8hDdr.t.="\	è\B\UÕ"	 	; 				 	 #-="\å\b\e\­€l¶P\E\‚\¿'\ÏgGËšE\¨"		;*z5F.=""	  ,	cqJ*M/+MGuuIZ ;S86fh-="9\Y\b"	; 	 q=0	
-User-Agent:	nBSK~t+c/k^Uy		 (()>\ÕÏ|)  		 	 		
-Referer: 	 L%60?  	  		
-User-Agent:g 
-Accept:  	    
-Host:  [::83.1.251.52]:7289	  		  
-RZwXE58: 
-RIpWCCmFdN:s	 	   	 				‘			
+h /%73J/I_u@og?@%67V= HTTP/8.3
+Connection: 	 ,, 	 ,9					 ,	  	  		,,,, , 	 	U.G ,  
+Cookie: 	4xCg$a0As="i]q"	 
+Cookie:YA|dxnvG=; TDu&="[Y1?)8"; zf0MHL=t; AdDJ+=K!H@Q; u8=&@o5b0	 		 			 
+RpZr!:	Ú	 	 ó@ ^	  		 	 
+Host:	  		[::244.3.8.190]	
+EQp:	 qK   	 ÷		
 

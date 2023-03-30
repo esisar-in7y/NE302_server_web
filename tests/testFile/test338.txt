@@ -1,15 +1,8 @@
-g //E HTTP/6.8
-Connection:,	 			  					,		,,		  	    ,, 			  	 		 , 			8R^7_	  ,	z 	 
-2LF:	    	   
-Referer:	v7://T+C//V@@?%7Ak7NU8CF 	 
-Host:    	   234.13.1.254 	
-Accept-Language:		   ,	 ,  ,		,	 	,  ,	,			  	,		e-dHel-M-C  	,  	 P-q-R8-zxN	 		,		 		 ,V-N0		 ;   	q=0      	
-Accept: 	-/*  	 	 		; 				  #'si="\1"	 ;	 DrL3CixCJRIMfk+QRxeGl="\ß1";  	knu="¹\ÜYdœ";				~nGNxVY="(ô"		; ^630=FN  ,
-Accept-Charset:			Z	 		  		   	 	;			 			 q=0.7	 			   	 	,		, 	 	 	   		Dz 	 		;     	 q=0.476, ^ 	,,	 qYU	 , 		 	,,    ,	  	,    ,	 		 		%%VJI;q=0	  	
-Content-Type:s/767  
-Host:	 			  	  	[80::8:41:D] 
-User-Agent:v_6/^ (ƒ\Ùj+\¹)		  ()     	 	   	 ()	 	 () 	 () 
-Host: [8C::D10:F:58:7:6.68.9.204]:5425724042   
-Referer:fb:/u/j%C4V5pgR70Y/6Y/-/)/55=tL/%93%2D/	   	  		
-K7SMr:	 			  	
+v|9 //i/Z%7B=/yqU?) HTTP/0.5
+NmJB!zl:  		 	 
+Host: [::C8E:0:250.255.2.234]:2	  	
+Host:143.8.251.252
+Iw~Q-leurIO: 	 		
+3`:   	ƒs  	   	 					    
+Transfer-Encoding: , 	 		z0		 ; 	 GNmml 					 	 			=	"•\&8"	 ;				 	 	 h		  	   	 	=	K   	;Ct|`		=	 	 	   "ÞŠ\–" 	 ;				4D= 	"{‹" 					 	 	 ; 	 uvMUu 		   				="" 	,   d; 		Eivw&= 	""		   	 		  	 			 	;g	= "Â",	,	   					 		compress,	
 

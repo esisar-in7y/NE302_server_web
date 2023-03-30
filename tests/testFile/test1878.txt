@@ -1,11 +1,4 @@
-NP /%F1/E..%CD+4%90 HTTP/5.7
-Accept-Language:			DnRVl					 	,			 	,	 		,	,		 	 qt-wa-MGG-e-A	;	q=0.4	 					 						   ,N-k-mw-z-6j   		;		q=0.	 	  		,			,			,		 * 	
-User-Agent:			y~/w9fKy!CjA3r 
-User-Agent:	M~K		()	 		  
-Connection:,  ,   	  	 		 , 	,,	, 		, 		U,	  
-Accept-Encoding:		 	  
-Host:[v4A6CB13.RlXH]		
-Content-Type:					 	  	4kP/^Y*vi!		   
-Transfer-Encoding:	, , 	     	  	  x;b1sBk=	"Ûî\Òõ"					; 	 pQ9B  	= 		3H51	 	 	,.	 	;D4K=	  pU,			 	B	 ;   ffY*dE = 	 "\>d" 		 		    ,		Oy-B1	 			;		8_'Q	  =	   SvSz_gf	 ,, $;S1= 	 "";t~j=	     "\`\­¾¥/\n\>" 	 	 ;  qnlC0zWDpF="‹\ˆ";	IL|q 	 =  	"\Æ";			 5		=""  			;			~Ur=	  "\ž\Ê", ,lo	 			 , 		 	,TBE	,,GnRc8e_dWh%v		   ,w   ;  v3nAcCx.UC="ô\—\~\-\r\ªrÖ%ÉY\È\š>lük"	 	 ;									 	T 	= 	"-L\o"     		  			 	;dV93FL4wjM&J=			 "5\g\SQ’Q" ;QCr4		= 	"";  Ep^K.	=	 	  	  			"\~" 	 ;		#=		   	 		""		,     		 ,	  N2E.G		   			 			;jg% =		    	 	""; 	   z^~Axr0xi 				 =	  _72ZM~k; r="í\¸"   ;1yw_P.fTb			 	= 	   		"ñ\ä\6\?"	   	; 	  FOrlRkW	 = 				"\ô" 	 	;  		lR$=		  " xiÎ\°\Ü"   	,		6.xn	; 	 o			 		  =	  "\È\ë\ƒ"	
+N*#2ubF /rR/s@e/? HTTP/9.0
+Expect:100-continue	 			  		 	
+Cookie:		 	H="E" 		  
 
-þ

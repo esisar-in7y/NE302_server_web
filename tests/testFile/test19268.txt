@@ -1,6 +1,0 @@
-gQ8MS /OAv%87c9g HTTP/1.0
-Accept-Language:			,	, 			   	 		 					jj-sL3-mf-q	 	   ;	q=1.0, tg-r-P-8-O-j-tMx ,	   	    	 		,	 		 			I-Q	   	; 	q=0 		,	
-Transfer-Encoding:+ ;		    	 	 N7T%r| 			= 	"\{\´\ÃŽv" 	 ;D	=	"í"			
-Transfer-Encoding:   deflate ,   ,
-Transfer-Encoding:,l_*-j%		 		    	 	,x|#d8	   ;	  			 		!e%EMJ  	   =	 	"\\"; 	 Oa 			 		 	    	 =  "\›\N\÷\;\f\x" 	
-

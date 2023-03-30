@@ -1,5 +1,0 @@
-T /X?'e HTTP/0.3
-Referer:  	  DI://[::8D6A:E:B:CD81:2]
-Host: 228.142.244.3		 	 	
-Referer:  DS:
-

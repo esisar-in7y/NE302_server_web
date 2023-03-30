@@ -1,11 +1,7 @@
-U //L%61 HTTP/9.5
-Accept-Language: 	     		,		 	* 	  ; 	 	 		 q=0.83	
-Cookie:_Y=; $IISZxh9b="_"; xe="m/"; d+q="/"	
-Content-Type: Anjt/C1I   			  	 
-^4N1: 	 			   Ψ  Λ  
-Content-Type:   	 	|+3v/AHi+-	   	  			  		
-Referer:uqF4kvJ+JmvyzEoXJ2:/~iw?	
-User-Agent:  -VG	(\Θ\υ\ιέ)	 		  	 ()
-Transfer-Encoding:	 	,	 		,,		   				 ,,		,, ,		 , 	, ,		  		,   ,	,	 	    ,, J5`U 		;	 			 5`4= 	O0V^U  ;	y= 	U.A~;eouj&eUX= "θ\Π\^\Έ>";v9ye			= +C   	 ;		 BqY 	  	 			=    ""	 , 	 	  u&OI 	 ;H	   	=	   		 	"‘" 	
-Accept:								
+%lGH ///2qB)K;8,/p/cE%ADw;/0-//2Wz0eUc~mM/.Au8p/-_s HTTP/3.2
+Host:   		[EF::9:F:2:18:204.224.255.254]: 	  		 		  	 
+Host:   		[::7:96:4:3:9E8C:139.225.73.182]: 
+Content-Type:	 s/o0m; #g=pO0	;	 dk!="" 		  
+Cookie: 		e1^Z-*=  
+Cookie: 	MTGTO=""; ~=; DdVLjI#E="y"; dQ=; V7`G=L|; N1-I7=-BRVX.SeWM}-9_; w="h"; BIA=  	
 

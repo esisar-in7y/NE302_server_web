@@ -1,15 +1,3 @@
-r|9 //%F81%38p?%92=2 HTTP/3.1
-Host: [v8.=az]:6219	
-Referer:Oa://%675i@[::4:1A:6:E3B:9:9.136.181.193]:/b?  
-Host::74961	   		   	 
-Referer:  	 m/%61/%55k%571*?ZsHlrT?BI9 
-Transfer-Encoding: , 				 ,	,	l&  			 	;	!quXU= 	  			"\°¬" , V%VU+Pi  ;   	J3		="\Ü"	 ;	ZylEt	= 	 	"þ\\"
-Referer:	 	/4z%4Cm%E4z+%E3%83%FD%10%20KcfXt?	 	
-Host:[C3:8EC:62:ACA:6:7:B:4]:078	
-jA|5^kGu:  		 ì O  
-User-Agent:elLT    ()  (\Ž(i\-\t\t\I)øà&„\±¼ß\oŠ)	   (()(jÊ\Ë\»))	 (\{) 	 	
-Content-Type: 	   ~/'.RZ.P+	 		 					;GUuHlC0="\’¾\³\õ¥\¨(I\ó\b\Þ\L\¤"	  	
-YdS#Faak: 			Û 	 së¥¯(				  
-Accept-Charset:, 	,  	,,& 	 , 		  _UwF;q=0				,	 ,
+IZ //?V+AF HTTP/6.6
 
-¤ï˜0
+"

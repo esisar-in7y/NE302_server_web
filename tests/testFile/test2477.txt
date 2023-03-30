@@ -1,10 +1,7 @@
-!vmS&'XS&W /Ox/w;/%1A HTTP/1.0
-Host:       [::DF:7C:0]:380
-Referer: Su://%3ByJFd@[6::C:6:B:25:64.196.29.235]/%18/Q/v%6F   
-Referer: 			b:%C2%4A@/+q=W?3%56R 			   	 			    	
-Connection:  ,     	 		, , 		,,,    					  v-	 ,q,	,   		X  ,	v					 
-Referer:	7M/h/hUr(E/?4l=q  
-Accept-Language: 	wD-6aH-Iw0W-A-P28-Z   	;  			q=0.3	 	
-Accept-Charset:	WY
+BajNoW&l8H /R/%FByn/!%A3/1h/?0.x%F7'T2%6F$x( HTTP/8.0
+Connection:	  			 	 	,	,	 	 			 	, ,,  		zNA     		
+X:			 Ë 
+Host: [9:D:7D:1:4:B:253.69.202.242]
+Connection:	 	 	,		~RD ,6X, 		B% ,nYo%I0d		 
+Host:	[::F48:AA1:6.252.0.8]			
 
-

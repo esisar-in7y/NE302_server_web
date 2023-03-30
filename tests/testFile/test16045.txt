@@ -1,6 +1,0 @@
-v //? HTTP/1.4
-Connection:	# 	, 	  	 	 					 	,	, 	 		,
-v: 0Ç	øn	 			
-Host:			 	 		2.245.52.251:3326
-Transfer-Encoding:,	 ,					, 	,			8
-

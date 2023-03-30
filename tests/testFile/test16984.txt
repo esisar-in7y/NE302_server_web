@@ -1,5 +1,0 @@
-#l /y HTTP/4.0
-Referer:B/5S~/kx8I%D4dM%12		 
-Accept:	  	
-
-ß

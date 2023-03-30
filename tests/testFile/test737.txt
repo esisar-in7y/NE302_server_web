@@ -1,10 +1,4 @@
-r /H/ HTTP/9.1
-User-Agent:  	Y3N|v|			 		 		   		(\ô) 		(&) 						(\XÆ^\&)		(ð)  	()	(\«\ygŒ­µ\¢\`)	(å\©\(u)  	     () 		() 			  
-Host:  	 	[v7F462BB.W]  
-Content-Type:aMNq'/CH; 	 	'Y="8\½_\l";E=""; 			8gxNU=""		   ;		y="Ð"	 ;	 0gG1ug=p4				;		 Re45=T ;^h_rX="";	l="\õ"	 			
-Host:250.101.1.254				 		  		
-Host: R=%22	
-6:     	 			  
-Referer: 		 //:D@[D::E:F:FAF1:0:70.190.180.45]/q/n?.%E2%74O
-Transfer-Encoding:HbSK!ChN+p71~xb   	; 	 	    G=   	 h	 	 	 	;	P_3GjiU  = 	 "\°\N\¨" ; 	 	KZCXn'n=	   	""		   	;		d%scl 		  			 ="" 		;			  	 T	=  "";	76UPr		="Ð\t6•¨Ê\j\çÇR\·\‡"  	 ; Cj=      Sv'N ;			  	  	8 	 	 			    	= "5\ \4Á\*\Œ¸\Ú\;Ø"	   ;			  			   v5 	= 	 	 	  	"B\»\ÐV\F\*"		 ;	%UCdQ3bOH			 		 = 			"%\“©\:\å" 	;  	  		tfmZf=    "\2\Í" ;fc41ZgUpnDmJw0		= 		"\6\\"; 	   	  		 j = 		""	,f		 	;  	 l5afWL  			= 	 "M\Z\×"	 ;   		 		 ozfhLIr=j		  ;5ASE`JE	= 				  	 	 	 	 	 "íæ",	   	i,	 ,		,	HdLw
+I9nmc$ /,/A%7E?IXBX HTTP/5.3
+Host:	51.243.1.236	 
 
+/“

@@ -1,7 +1,2 @@
-h /S%F8?mU! HTTP/2.3
-m:         	k 	 		 ğ	
-Transfer-Encoding:	 compress 	,4U3*m_40YjQ  		 		;	`'X'~d`C^Q= 		   "";nQ	 		 =""; ^	="ù-¤\V\½?\t\ÿ\ó\u\ƒĞ"  	 ,,b5t!+G~U; 		'&		  	=""	 ;  	 	 	K ="\U_Q",		 	 #jv;Plkm_luDj  		=	  		 	   	 "\)";	 bt_K= 	"\Îè£Ê\ææô\=€\B\şD\ş\ò\Ê" 	; kx 	=pB71 ;	vCj=   ""  ,d'M9_v		 ,	 HALqpC0VPq ;^		 = ""			  	; .  =""	; .T=	 "7\‡”",	
-Accept-Charset: 	,	c   	 	     ;  		 				q=0,^m		, *CZ0cN
-Host: 	 	[E::8:BF:33.3.14.219]:10714
-Content-Length:  	 6
+5x+9m.!h%1AMZMtl //PX(e%2CAL%71K&lEt%BD HTTP/1.8
 

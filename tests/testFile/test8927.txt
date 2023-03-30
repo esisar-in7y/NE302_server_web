@@ -1,8 +1,7 @@
-euG /%1C01w%21%ACrB4Z0tWAbi?~l~ HTTP/6.9
-Transfer-Encoding:	,	 D!2uLCPUY	 ;pD=	"\é \+\žþ\q"	  , 	 	C	;+   =	 		  7			;m**is'	    	= 	  "\œ"		  ;S="\Z" 		;	mePgK^	 =	J'Y^YoF'!	 ,	 6`wbP ;	Acvw6asjLH!qmxYF#=	  	 		"\Š"    ;		   	 		vw~_273`+3'X`th7%2+tV2zn1Kcz-dk7vTusS		= 	  "\î\`";~A7+		=  "\Û\Eª\Òú%" ; tzzW=		""		;	 		I4		 = 		 	 "œ\•\²s@\š£\µ³\/\PË\à*"	  	  ;| 		 =		"\Ú\s\Ö\—"
-Content-Type:   oV`/Og    ; 	  		 ke="3Ú"	    ;Ui="\W\ˆ"	
-Cookie:		 			 		  D`=""; Wd1E*!Q6tNou4nB=""; 6=A{x	   
-c:  è			 			 ¤$ÅÈ
-Connection:   ,,	g'  	,	  ^dI	  		, ,		$  		  	  	 	 ,	 	 ,
-Connection: 	,,		   ,				C
+H /%DD+/p1M=/7%A5?-Z HTTP/8.3
+G: 	 	    	QFÆá	 	’‚žK õ
+Cookie:	.qO=""; i_="fK#>C2"; Nb=h; #'="Bo6"; X=T!; 0DCn="[q"   
+Host: 		182.6.208.248  
+Cookie:   			dj="f5"							
+Content-Type:   	T6/778#	   	;	 	 '=v				;		  	 6d.D6x1rE=""			;6FB3j=""
 

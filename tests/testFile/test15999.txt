@@ -1,4 +1,0 @@
-P /Hu HTTP/5.7
-Accept-Charset: W 	;q=1 	
-Referer:			 		chN://1.2.109.9/Wp%6E   		
-

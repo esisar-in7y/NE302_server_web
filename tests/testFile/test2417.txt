@@ -1,10 +1,2 @@
-FP^6cl1AZ / HTTP/6.5
-Accept:  	
-Expect:	100-continue
-Transfer-Encoding: 	  	 I3%l-kHHk		; 	 	  				9X~i8|K7~AQD	= 	 		"\]\Б\≥\л;z" ;						_DVPh= 	 "цh\]"		   ;				   VIYKRfB	="\2ТU";		 	 	jA 	 =  			"\\o"
-Connection:		,			 	  hN		
-Referer:   BpFwBKw://e%FA$k@27.9.228.255:?z)(
-Content-Type:  oiUrJd_/YN ; 	33="\М\"™m\≤r“ƒ\эџ\ѓ\ра\t"	 	;  	  	  	   	AlJ^iGX="" 	;8="NCч\e"	  	  ;	 	 f^rE_="J\d" 	 		; I40="ґ"   			    ;  2fY~="\-£G`\£"  
-Host:	 [4::]
+_$af /?0 HTTP/7.5
 
-ЁЪ«

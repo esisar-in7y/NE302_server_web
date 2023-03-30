@@ -1,3 +1,3 @@
-*AqW /a%11H=z0 HTTP/3.8
-Accept-Encoding:h			   		 	; 	q=1.		,		  , 
+|*9 / HTTP/0.3
+Host: 			 :0		  		  	
 

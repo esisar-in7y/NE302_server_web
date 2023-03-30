@@ -1,9 +1,5 @@
-2X /-Dy//%CC)%4F HTTP/0.7
-Transfer-Encoding: , xn 	; T41	=".˛A"	  	  ;		 			Hl	= 			 "Y\•\∫"   	
-Accept-Language:	  	,	mX-4t3SyNR-y-b-BBh-1b-f-bk-g		, ,U
-Host:	    15.0.255.161  
-Host:	[::1:1:0:29:36:240.4.1.194]:829
-Content-Type: 	  	Z/S`-aNM66w%N	;			 lz+=""  	;   	 	 		  	  	uGX="\Áú{" 			 ; 		 			  	  				&L&KPD="Ø\$\5oÃ:Q˛|∂\ºÆ\âÚ\nq\ﬁë"	;Ug="\„\X\i";3="" 	 	    ;	 				 	 	3="\˘\ÕŒ\_";O%x=P6vpVo	 ;b|d=""		 ;	  		    7H8L="ù" 		 	    		
-~:   	  		
-Connection:!He  	   	 	,,, 		 , 	XwI`5D7EwC	 		
+B /@// HTTP/0.4
+Content-Type:			  G/ngeSN!3	 			; 		 s'sqV%~.sNy="î9"
+Host:131.71.0.3:7 
+Content-Type:  	 	h/$		 
 

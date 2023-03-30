@@ -1,14 +1,4 @@
-9t%Z&dYe //e/B/oH/%44(Dy&V%13(dV$?M3R4ffyZ%93%80 HTTP/0.2
-Px:  	 		 
-Cookie:HA.= 
-Host: 	[::A:A1D5:1:F09:B:8C:11]		 		 
-Referer:   		 	P:%F4z%11? 
-MzUj:  	 				FÁ 		    	 	úù¨
-Host:  				 		 	  [B:C:109:668::2.254.251.8]:120572 	
-Accept-Language:,	 	  	  	,	,	Dm-Q-nfir-HdI	  ,  	   	 	
-Content-Type:	G!q/nwRIsw'	     
-Referer:   		//L@[v66A6E.e]//%18ae/NM%DA/(@y/i(~s///%0C/%C6e=*2aT%911/,k%5BtL?~	 	 	
-Host:    	  [::E1:B2C7:7]
-Accept:J/5U ;r-cpg="Ùë\_N"  				 ;$b="\lÜ.\$ôì¨\ı\7\ÂÈ"; q=1.0				
-!:x# ß•,	  		 	$î  	   
+104 /%E3/ptDqH/!%F2*A$,WL?i+x HTTP/7.9
+Content-Type:KX5/T;S~sW="™";CzjC="\ø"	  ;					  Nv="\k\›z"	;	!2TY`~="ü" ;	  t*VB&*n#1q=fzdO 		 			 		;X-puzVS="\D¬\û‰‡\è\tuBu\∞\¯Æ	\˝\Pπ\+⁄\8\<\¬\RûŸ"    	 	; 	`="¡\≠\u"		 		;  		 		 	  	8="#À”" 			 ;   				   oa1=""	  ; 	9|o&I8Fs^="J≤\Ï≤\3ôH¶\""  ;!ApBDDtZ="\," ;		 +k#N6="\+"
+Connection:	qddS.7	,	 	 ,  , 	 	xNH	 	, z, 	,					 ,		6I0^O6-		  	 
 

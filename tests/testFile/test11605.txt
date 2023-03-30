@@ -1,6 +1,0 @@
-J /VbN%A0//%ADzY7V/@& HTTP/3.2
-Host:		[v837.EK2gv]  	
-Accept-Charset: 	 , 	 ,	 	 	 		 WkQ4 	;q=0 	,	 Eg ;  		 	   q=1.0 				 
-Host:	    [::B7:DF:CE8C:C:230.4.255.239]:						
-
-

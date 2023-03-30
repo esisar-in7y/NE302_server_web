@@ -1,9 +1,5 @@
-UFwXX /J.~7V%4FEc/Q/IF)n? HTTP/5.8
-Host:		[::246.236.227.81]
-Accept-Charset:,!	 ,  			H	; q=0 			  ,  		 				 	,	, ,`68y ;  	 q=0  	,   	 , 							 			,e2 		 ,	,			 p  	;	 q=0 ,	qmVZ*!G!1IjMq4Dv.k   	,	  ,	 6;		 q=0.	,,   		,y.,, 				  ,		,	   ,	, 		 tvolz 	;	 	q=1 		 	 	 
-Referer:	      				      //xST@[::5:4:2:59:4:5.7.5.5]/%08i8CHX/U!gO~!//:Q/%0C%9E%A4VJNt/BGlg)v  
-Accept-Language:,	    	 	,  		,  u  ,	cD-ZA-zvi		 ;	 	  	q=1.0	 	 	 ,	  	  llumT-Fs-Y-E-3-m5-a0wc3-whLt-u-h				 	
-Transfer-Encoding: ,   ,	  	, 	,	   ,	1IFoI#V7t;Sd		 ="";	  +Q1A= 	 "\M{"	   	; 		 m0		= 		 	 	"Î",  
-Host:	 	    	[C5::2F36:1:7953:70:148.253.44.1]	
-Referer:			i-dal://2.5.9.8:451416283? 		 
+!.iAZ8oDBS%ntcYdm6 /J%3EG//j HTTP/2.1
+E1:  ³ 3UOåùÊ    " 	
+!E: 	 		·Ó ¨*	 		Ú™ 
+Host:	   		 	231.3.9.2:
 

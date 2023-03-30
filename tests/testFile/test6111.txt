@@ -1,6 +1,5 @@
-71Nb /lU:%6D!%2Chho%56/,/Pj%0Am3X/ HTTP/3.0
-wRN: 		åWb–Ý 	 	îþM	¶þ  		  	 	   ÇD£f  	 	 			  
-Accept-Charset: , 	 	 	  		  NUut6y`fo`S; 	 	  	 q=0.292 		 ,	wfpIe;q=0.				 ,oY8		 	,VtdU*A8	  	  		  
-Referer:					 	//254.64.58.137/g?uH%73 
+D#w /%86Wu/yI%9DEB7Ril/&9V?j-nI HTTP/6.2
+Host:[C9A:C3F3:1:EB:8:17FF:230.5.7.253]
+Transfer-Encoding: ,	,, 		 ,		   , 			 		       	 	, 		,	 	,	 	,pFvf			 ,	, 	, deflate 	,  	deflate	,	|miRSIjCtMIm~U		 ;	   	 #f	 	=	 	  "\{\¡\3\5hZ"; 	 		g 	=	"";	  uT 	 				 =		 "Ì\6" ,  		 xN 		  						;					  	` =	""   ,,,	 			  
+Transfer-Encoding:			 ,	,    	, ,	    , gzip ,,, zBh 	 	  		  	 	 ;ff=	     "V“"  	   	;  		  	   d			 =				 "\›Ó";8nuYV3i=	 ""		    ;	R`|ap*$.VS	= "\ë\å" ;+5Nd13C9			  	 =""
 
->åi

@@ -1,3 +1,0 @@
-U /L/@lp HTTP/0.8
-Referer:	 	 		7_/		
-

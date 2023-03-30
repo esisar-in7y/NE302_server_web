@@ -1,4 +1,0 @@
-qH0l /w%E8I/%46///%8F%70 HTTP/4.4
-Accept-Encoding:					 	 	 *	
-Host:[C:6:1:295:5C63:C:126.253.2.81]		
-

@@ -1,5 +1,2 @@
-! /b$/ HTTP/7.2
-Accept-Language:		,  ,	 		   ,	  	   		  		 vQ-Y-MSi-d-y3I-A-l7-F8-D,,		 H-ap-9y-wg-KP8-LB-w-rf-WbU-x 	 ,q-z-3-C	,	,  		 , 	B-Z-FUhO-cE-qIf2w-p 			   		 ;   q=0		,,qDuG-B-R-i-J-p-S-q-w-1F-Cg-94H-T-f-O-l-E ,		d	
-Transfer-Encoding:`
-Accept-Language:,,	, M-1-6s8-4-ex-gGMfz-dr-7hU-Lt-B ;	q=0 		 	 	
+J /%8Fd//zk&B&E HTTP/2.9
 

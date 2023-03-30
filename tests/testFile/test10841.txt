@@ -1,9 +1,0 @@
-tS /D// HTTP/1.4
-Referer:	aeULYe://[vDBF89.AcY0'$6Ivq]:/4*z/Y(&.rA?f%EAUMnG
-Accept-Language: 	   			    	,,	, 	     	, 	,		,	 				QJlx-Z-Q 		;		  	 	q=0  	,					 		  jT	   	   
-Cookie:		 			  	 		   		n0ZLY~gPa=">"; .%PzydyuPlr=""; |="0"
-User-Agent:			 	cklijO/%  (À\i\<—\$\Ù()Ô1Ó\ðûÿ\é\õ)			(š)		  () 			 	 	 	   	 N^r/5  	b.6&/Hta+			  
-Host: 		8.203.106.5:562 		
-Transfer-Encoding: 		*U			;BqR' 				 		  =								  		 	 "ñj"   ,	 nm	;				 		h=	 	 	"^\K"	; 	S	  		= 'EK9c2Y		  		   ;J			  	=	  "\Ÿ\¬"; 			J!PzIy_p=	 "" ;			 	 	C 	=	 				""	 	 ;  L=	 	 	"V"
-Host:		 [565C:95EA::67.20.11.0]			 		 	  
-

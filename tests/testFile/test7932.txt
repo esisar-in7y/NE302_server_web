@@ -1,7 +1,8 @@
-8 /s%03)8(P(%0C/9e HTTP/6.7
-Content-Length:	96 	   		 
-Accept: 		
-Expect:  	 		100-continue	 
-Referer: 			  //x!     			 
+N /& HTTP/9.1
+Host:227.3.88.3:7
+Host:			xBO:1
+Cookie: 	 		tT9z^="f6"; c=; Z=rH>R#z%	
+Content-Length:   1		  			 	
+Host:			%80:7 		   		  		 			 	
+Wv:		 	†	
 
-¯,õ<

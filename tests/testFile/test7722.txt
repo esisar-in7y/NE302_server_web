@@ -1,9 +1,7 @@
-q /I/%24~%8C%D3C/F/;b%A8Ofd//%CBFkGIZu~JV/1Op;xS/ HTTP/1.7
-Host: 		 28.223.0.56		 
-Accept-Language: ,	 ,,	    	 ,  	,  	,	, ,		   ,,  		 	 	 		,	 		k	  ;  q=1	 ,t-3-Z ; q=1.00 ,c-j-U   			; 	q=0   	,   	
-Referer:			 d$XJM4///of%BB%14/?	
-Accept-Charset:,  ,  	 ,		 	 	 , 	CKJ   , 	   
-Host:			[B::E8:21:8:2C24:624]:46482
-Cookie: f="1xT9yi"; !7='	
+w /%E8r%87%E200_(dH%3EFI/%2Bj/p////%BB/a3Y/wLT&HR2Y.Lcqi2H2fj%91Du@$//%83R? HTTP/3.2
+Host:[4:2B5::F2C0:C8:251.245.206.244]	 		   
+Host:		[v09CC.j]:4708603
+Transfer-Encoding: 	,,	,,	nt;  f="\~\#\F"			;|eB5F|q!O&Lw*!E	 	  	=""			; B	 ="§\≈\â\jC^\◊\°Èz6"   				 		;	   	 w =		 	 "ã\=\ù◊†"; 	y`FWi.o#yo~5Mr_ar|_X^z0 = "",		 	 	x		;		     q	   			      ="\P\+ƒ";Nl		   = 	  	  	  ""	;	 			q~HKox!j$gw'	 	="¯\æ\†Ω"	  ; KqNc'8 		 	=   	  	"";  	 	 6v     		 ="\˘1\¯?",		 k	     	 	  		;O+a44IR	  ="\P";M=	 ""	;d=	"\U"  	;7Ox1^  	  =""; 	 0=	    ""				  ;		 e	 	=	"‘\ﬂ" 	 		;d25=		  "\!©h"	
+Connection:			, ,,	    	, ,9J-Q	  	 		,			OL  	    	 ,Cx+zZK~0GGC+M', 		   	, 	 	   			, Oj ,G&ls
+Transfer-Encoding:,				 , 	,			,	    	 j	 ; ~6U	  	=	    "N"  			 	, 	
 
-÷µ≠Ó

@@ -1,6 +1,0 @@
-o //r%BBi%1Ain!5%5E%3F HTTP/0.0
-Expect:  100-continue 	
-Accept-Encoding:
-Content-Type:		jldK1/L7A9d1Ui-B; |="\L´"	
-
-

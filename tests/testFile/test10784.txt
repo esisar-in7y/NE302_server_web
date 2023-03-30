@@ -1,5 +1,0 @@
-$z //.%A0bV73nJX(pGx@l%9D%0F?.AH;5w%B3%A76Bl_FIm, HTTP/5.8
-Accept-Language:			  , ,		   	 a		 ;q=0.
-Connection: 	  					   , ,, 	, ,  ,		 					 	  		,, ,	 	 		, 	 , ,     	 	,	EVvb 
-Host:	   [CD:91C:65C:7F8:CD0:A39E:7:A]:4
-

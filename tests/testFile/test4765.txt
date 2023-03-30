@@ -1,4 +1,7 @@
--v- /e%C5 HTTP/6.4
-Accept-Encoding: *-	 ;		 q=1. ,		identity ;		 q=0		 , 	,		,,  	  		o  			;	 q=1  	 			  	 , ,,			  ,
-Content-Type:n/KD28z'a&8_a%LDH#f`S 		;		#k="\îe\}"   		    
+ig` /ix HTTP/5.3
+Cookie: aL="G<Lve~Sd'" 		  	
+Content-Type:	 			NFoH/pb'r 		 			; Q6|iIS="$\½"
+Host:		 		  [::42.2.202.210]: 
+Host:[2:0:9A:8:D94E:9:2.255.228.253]		
 
+ÿé%

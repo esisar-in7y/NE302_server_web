@@ -1,4 +1,2 @@
-z6 / HTTP/3.3
-Host:		 		6.240.78.119				
-Host: 	Ef
+reip /4+b%AB?-w2 HTTP/2.0
 

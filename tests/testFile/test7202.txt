@@ -1,11 +1,4 @@
-~~2g5bI8y-XJRNg /?;PgmW:C;eo3eJ HTTP/4.0
-Transfer-Encoding:,,  -G*wzl*j ;7E= "" 		;O~dOT^8$mc0= "\CC\³"  	 ;e2g-Y ="« "  ;`=	 "\Š\¡"	;  J!-QG!H0 			= "\b\‰VAp’\s" 	  
-Accept:   
-Transfer-Encoding:  ,	  ,	 	 ,	,	  	, , ,				  			 	U-X		; Dm.4=  ""	;		 				 	  					#7=  "ž"     	;	 		 		 	    	4 			=  		"\$^4"	,	 yNPdv				   ;		!#JX`D4'H	     ="" ;		   	   sCx1	 		=			"G\(\x\G"	   	 
-Referer:	//[v2F6ACFC613A.H7]:7/     	  				
-Host:[7::A:9:3:2.6.224.99]:8	 			 	 	 	 			
-Accept-Encoding:			
-Content-Type:  i/F	;w-n_O="\4\]\9¬\ý¤\Š";  	 e$-z="\Ëï\~\.‹\£\-P"	  	; O$="Ê\ƒc\	\É\â÷\.$\º"	;  	um="È	\‚{\­"	 	;		 Rwno="Ãð"  		;	 D1S+^R8=p|Z		 
-Host: G0: 
-Host:			145.7.222.58
+VPHK /%1A_/%C3Q/?%C2 HTTP/3.8
+Host:	[::839:9:7:254.0.240.232] 	
 
+{

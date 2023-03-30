@@ -1,6 +1,0 @@
-M2 /%08~Z4r@%F0/%9C HTTP/6.2
-Accept-Encoding:	 					 	    			
-Content-Type:				 	ovGq/ZT6&7OtD$8  	  		  
-Transfer-Encoding:	 	 , 	  ,				  			,		  	  		 	,		 		 	compress		,  	 
-Connection:,		  ,	  	9	 	,	,,	Adu|.^, , ,3
-

@@ -1,4 +1,0 @@
-c //%6DX.%A4S%B8zSrj+@/a///Yn HTTP/9.5
-Host:  		[::7CB:F4:F:B0:8.183.46.18]:6 		
-Accept-Encoding: P6Mn0Ldy4trm;	 	 		q=0 	  	
-

@@ -1,9 +1,0 @@
-jh /kR/Y/B/ HTTP/0.9
-Referer:	//Xev@B)%E1:086//@)V+%66,,sgq,/GvOnl?
-Transfer-Encoding:,    	 	,	  	 	deflate 	
-02: 	l		   
-Connection:		 		h
-Cookie:				&!2="" 
-Host:[::254.2.223.51]:864	 
-8:	  		
-

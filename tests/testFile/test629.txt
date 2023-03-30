@@ -1,9 +1,2 @@
-oz /%5AM HTTP/9.0
-Content-Type:+&'ukW/X`o; 	  SxD~=co	 	
-Accept-Encoding:
-Host:[::84:1E49:5:101.231.2.233]	  	 	 
-Accept-Encoding:   	       	xE_.aP*~06			
-Accept-Charset:  	+Gb9briZ     ;q=0 	  		,		e; 	 	 q=0.7	,  						, 		  ~+#1w;		q=0,H 
-Host:bp
-Referer: 	 	 	 //-@[::A:5B:E:246.251.250.79]/n/z
+e&Y /O/ HTTP/5.8
 

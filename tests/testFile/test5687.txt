@@ -1,9 +1,2 @@
-'7R|%p /// HTTP/1.1
-Host:	[A::FA4D:A9:6E45:45:218.136.8.239]
-User-Agent:	$U`Dwv*$
-Referer: 	//[::45C:223.216.16.254]:011893?%1EeN	
-Referer:	  		 FEc:/?%02IhB	
-Referer:  				  		   	mq83Ex://[v594.*]:13854235
-Cookie:			 		  		 	   				  		i1p=!; O1V=_-J; br="U"; 2u="rk[{8?{G"; CC7=; v=; V!r=#; V="E&le@Tn%"  	 		
-Cookie: i-IGOUe=%h; Avi="R"; nbf="j"; .=k; f7&O`+aXfW|w=q~; P|eTF9e-7$0z&&="j6W"	
+3k`j-As / HTTP/1.1
 

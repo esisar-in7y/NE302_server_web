@@ -1,10 +1,5 @@
-ZVQ3 /a HTTP/8.7
-Referer: 		 	 aPE:-82L/b0.%F4S/HK:VP4//-5I9$%F4/%73
-Transfer-Encoding:gzip			, 		, 			
-Transfer-Encoding:  	 	,	 	4O5X 				; i'.AmJ89kyvN2=	 			""	  ,  		 ,  sFrNJluMU-'n..^i%LRy		   ;	^ 	=			 ""	; 				$		  =	"\kY[-\<®\Í3ë"		;	  	   k="1"		;+c^= "\î"		 ;Zx  ="\E" 	;		 	*sEC		  =	""  		 	     ;		W'|5=  	  "" ;z7 	= 			RTRN~E			 ;WBqDl=  "š\Û"   
-Transfer-Encoding:compress 	  ,	   	 oB 	 	 
-Content-Type:	  O07/M~*XK ; -="t" 	
-Accept-Language:	   			  o 	 	    
-Cookie:	  		 n=XCSgC_&sX; XSki`LsrZNdFM.QcrItC~xso|8="CnN"	 	 
+S6+n~F4 //,xMkJ HTTP/1.0
+Host:		  [::CBB5:25:E:A:931:65.238.3.251]	
+Content-Type: 	  	 	jW2/jN 					 		  	 ;		  		hf="\g·G\í)\i\É\þ\Î"  		
+Transfer-Encoding:guv	
 
-

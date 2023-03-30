@@ -1,8 +1,2 @@
-8- //H;)A/ HTTP/5.7
-Content-Type: 	p-/w._z; 	 					J="\<\³\›Ÿ>\Ó\Ž\Û(\Oç¡\×"	  				 	  
-Oa: 
-User-Agent:		 	  zdRJpP/*_0 		(\•\ë\î\Þ\Óô©™0(\n)\L) 		 	 	 ((\Ü\ïÑ\­G\PÇ\i\U-\ÜN\W\‡Ó))	  			 			 (\^())		 	
-User-Agent:  		 kdTygTU/9  (\_\Â(Ã)\á) 		   (<s\M‘¹)  	 	 			 (Ý(\9)ý\‹\I\O\z\G\m)	 	 ()		(\ö\Q]t\m) ()	 		(«())  	 	(\¤\ò)  
-Content-Type:   &!UZ/q30u3	  					;08nZmtW="";hpjfM_M="íH\¦‡\2V\¼+\·º#ì\ç"	; JDhnK=";\pª\žd\Á\ì\¾:" 			  
-Accept-Charset: 	b.crg-Po 	;	q=0.	,		 uP			 			 	 			 
+2 / HTTP/6.2
 

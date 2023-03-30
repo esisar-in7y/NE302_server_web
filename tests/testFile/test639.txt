@@ -1,4 +1,7 @@
-#f'bm /BrPio HTTP/6.0
-Accept-Charset:		 	,   		.E6v 		; 		q=0, w	;	 		 	 q=0.891  
-Accept-Charset:  			,	  , 	   					,	H	;			 	q=0. ,		   	 				,w!` 	 			;	 					   q=1.	 , 	  		,			 10M, 	 ,	    	 	&CA,   		LQIaJ 							
+a^5t|i /%E8eOM!q%D6%45 HTTP/0.5
+2'qh:
+Cookie: 		5*={; S=; U="B"; ok=/.]b=   		 
+Expect:	 100-continue	 
+Cookie: 	  Q6e!SAtR="}i.P"; 06hT=""; %#|F="Ulh"; m=""; vmL=W; uuk="t?E" 					 
+Host: 		   		i%5Bf: 		
 

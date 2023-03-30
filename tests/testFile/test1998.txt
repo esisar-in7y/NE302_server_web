@@ -1,8 +1,5 @@
-.X!bfGOl /I/%5B/1%88mPf/e%6Cl%0D:/%D0'1Y%B2%17Q%BEBI9Q,J/rpbc;V/IDp/DSeVV/// HTTP/6.3
-User-Agent:	   	  	mSMIM4t 	()	  	(d/K(r)(á\\\Õ‘m))		 	 (ÕÔ)	(‰(€\ƒ)‹) (\∂\√\Ú•\Ω) ()  			 (\î\jÓ)	 	 	 +x	 (\¡∫n\Ì\/ˇ\Ï÷)	   ()		
-bH|V: √	  	Ωˇ  	  	 
-Transfer-Encoding: ,9	;0^f'%w8FV8n~	=		 "\0\®\fJ\f" ;	0Z5Q 		=	   "\ì"	;   		H~#wpJ~V3p%+`7=	  0;~V^~|#twb3H ="\í\-\R°\2Ô\^\ˇ\Ë\ï\7"	 ;z=			  	"\F",Hl   ;			i=	 "y"	 ;	c6=oAB4LbXo%   	 ;			 HSURrpAh5i7vB 	= 		  	 ""	 	 ;  		 n~ 	=	dMAn;lgLNUN=   "À\>ò\|•∂“"		;   		 DxIYpJ ="Ω\ëW«"	 ,, 	 	     	 aS35lg	;	  `TSW9  	  ="{õ"		 ; 	 iz 	 ="bΩ\5\q>\â∂¶"	 ;	2OjWhWr`QUzpuhS=		  	"ˇ"		 	 	;   	 r^elz^YpJAI=7BybC			   ;	TEQuBI ="\y"			 	 	 	
-Host:[::9:18:CB8:9E48]
-Host:  		[1::CC:20C0:4:8A:18.70.228.251]
-Accept-Charset:, ,,, 	   	  ,	cH$ , nj ;			  q=0  			,	 		,	Y* 		 
+n3I0N /a?$?bM HTTP/7.1
+Content-Type: 	 	6e`8/i	;			 	 	 		yfO65$'="ÿ\∫\y\Áç-\o\±" 			 ;$o="\z”T`\Œ";hP="\Z"
+j:  			 	 	ﬁ{¬]ŸP		  				 		"ª¶, S3oÔ   	 Ê	
+Host:		 [93:9:B:A6:5:5:5.214.244.253]:0 
 

@@ -1,16 +1,4 @@
-OAZ /$//p HTTP/1.4
-Content-Type:			  	   	`6^QC/^%ZVf!fgk-	  ;  x=%	 
-JFFvcNvIK:	j v)	 í 
-Transfer-Encoding: 	, 		 			 59W'g;3=	orW;flrWnZwvRts-p	=  	  "\Å"	 	;3D3%li'ET	 	=		"≈";		X1^K5i7 =	"®°´¢\ùør ¥" ;L*|A&5|oD6D-VI= 	N+m 	 ,   		`Tm#q2pO 	 		  				;h# ="\b";   cIUEKoeT0W= 	"\gk"			 ; 	6		="KY\\\	\!†\T" 	;  L="≠\3`\ﬁ\;(\Å$O˝\Y\»\¸\Ê\¡ñ\/"	;		 	 U= 	"$$"	 ;	 	  	 1Khx ="∞8±\>\ƒ" 	;| 	  =		 	 		 			    ""	  
-Accept-Encoding:P	 	 ;			q=0  ,, 			,					 	 
-Transfer-Encoding:				q  
-Cookie:   kT=`E; f78%=En; n="S8"; W=#0		 	
-Accept:yVm^./28FR+1xL!4L'9!Xoba`hIuZ ;  .ce="/\r\ã";    	  'ih="üò\r•\p\ù"	 	;9tm="\ƒ\&"	 	   
-Host: %7D 						 			 	 	  
-Cookie:	 	cj=E; wzqI=-O4S; 4JUtb=o
-Referer: 				 		//8+N%08@245.42.4.221?%9C			   	 	     	 
-Cookie: .="icW"				 		
-Connection: 	d	 		 
-Host:	 	
-Content-Type:      	   		.BHPXolG/%; 			92=""	  	;c_xJ|JYs11rk="∆"  	 	
+wjWI5yJv /c*j&RE0/$/R%A56&D/%1B%63h7/LigdFl/y%12LaB/FcZZ/+ HTTP/6.7
+Host:   CNyw:1919    
+Host:[::253.203.204.8]
 

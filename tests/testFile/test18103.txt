@@ -1,6 +1,0 @@
-aZK /h:n HTTP/0.3
-Cookie:			Pdi="xv&?L"; O+="/"; da=; P^3eqS="pL8"; h=; vvNO8=; RZs=o`'mB(FZs!			
-Transfer-Encoding:	 	   	 ,, 	,  	5  		 ; z= 	  "YÂ", 	,	,,	    	Po 	 ; 	f= o4P	 ;			 R'=	 ""	  ,,   	    
-Referer:    	//253.183.64.216?;QQ    
-
-

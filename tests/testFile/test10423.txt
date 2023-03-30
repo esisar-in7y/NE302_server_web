@@ -1,4 +1,0 @@
-f /f/? HTTP/7.0
-Referer:	 	 	 				//212.247.58.80//k?		     
-Referer:/%81~/O%927PppQ)48%00QK%2DN
-

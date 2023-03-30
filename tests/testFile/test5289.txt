@@ -1,17 +1,7 @@
-7WyB /h%9DkM%12%0B%2C/%8B%23W%B4tTg$VS(&ye,1q%19k%3F/Sx%A1eA/z:Ju/?C) HTTP/0.5
-Accept-Language:	 	,, * 	 ;		q=0, ,		 
-Accept-Charset:	   ,			 				   	 	 ,,eK,		 
-Accept-Language:			 	,	 ,	 	 ,	 ,f-O2-a77-fp-YtN-3m7sJ-P
-Referer:0%30/q2%739;:%72//K%58%87m/7YO=BEn/%66%17C/:/Y5%A3S=%09qnEZm_//E&%14yZ%18n%62//b%A4ok/38//r%F8jt/vE?T6a   	
-Accept:		 	
-Connection:		  	  ,  ,, 	 ,  , c,	,  	 		p0sWXgRGcs 	, 	 	+Y#  	
-Content-Type:		Oa/C 	 			  	 					 ;M4="" 	; 			  I&2n="\È"
-Host: 		  		54.77.42.79
-Accept:     		 	 	 	  
-Content-Type: 			 		 G/&d;	rCj="\£"	 	;					T="Ì\ƒ\e\Ö"  ; ~=q ;			 	N+=dE	 ;Qk="\úÈ" ;	  .OX&3X="\(\ \O"
-Transfer-Encoding:	,  					 l 			 		   	 	 ,9j6;Y  			 		=		   ""	  		  ;  I4&oX		= ""	 			   ,   		 ,	gzip	 ,		,		,  	 	   WV 	;	dV!9hj 		 		=			 	   "\ñ"		,   	, 	   		 HT|		;$ 	  		=   	 		 "∫\q ã" 	;		uv	= 		 "\◊ã"	,9- 	 		 ; 3h=  "…"	; gOx~W= 	 	   "î\Øy\!$\ìM∂\¬\W\,]Éù"			;	58H 	=	  "" ; x_T&RFg%	="'\¢^\w\/" 	   			; 		_E		 	=		  	   "v∆";  	Tvem8%yQO	= 	 	    "\yD\5⁄+\ù"		  				 ;1X  	 =		^!i|Pl ;	 Ehk~g1="\o "		;					   			 -			  	 		=  	"\´¸\Ì\ù\„\Ç^A " ; 	 	h6|gv2Ny="k" 			  		; ~%nq  	= "p\πO\q\ù" 	;q 	=  "\è"	 ;		 		m+Cnb			=	  	 "©\ò\≤";S		= 		"TZ"   		 		 ; 	 		 	  		 	 	8Tjs$XhN="‘\Ø\™",,  ja.,   		  ,	    ,-0	 ;&V 					=  	"\é\\=pd\P\E±Ω\a\ç\¥Åﬁ\ë{ªi\j"  ;	   		5			 	=     				 "\/"  			;bY		 	  ="" 	 				;rV  = 			"\øå\8\9"	; 	G52 	 	="&\í#ª)"   ;	yqw=5R#VDbgezw		  			; Hng4    =	 "\2\Ï\Ñ\u"				  	 
-Connection: , 		, ,,  ,uESgZ'PwJm	   	, , 	  ,,  			O+DG%*l	,	g 		 ,6q	  	
-Host: 		 		 			N
-Cookie:i=; #M=1WY; Wx8Dd-=; 0g'pf=F7F`?.i3; OY&=fzt)d	
-Host:	uoO  	
+$2yMP /)) HTTP/2.7
+Content-Type:				 $iL5q*O/Z#Z	
+Host: 	B(7W;%0C%17%09:	  
+Host: 		 	27.215.0.9
+M:		 	 
 
+È

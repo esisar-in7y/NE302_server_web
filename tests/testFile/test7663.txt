@@ -1,9 +1,4 @@
-P9.KdsR /SI5 HTTP/4.8
-Referer:D6hY:R8J/p*1
-Host:	 [::18.75.252.0]:3   
-Cookie: 	0%rVXCz=(KT1jq{q; q=}; oHm="A?"; 8K1oYy=g; KI=""; txTO64l90=HH^_?8)NY; M3L=""; 6UmLk="pU5"  
-Host: [::B:B869:C0E7:219.0.253.30]:70450 		
-User-Agent: J2a|k 	(\§*)
-Accept:	
+# /?O HTTP/4.6
+Host:  [v533B3A.JK]	   	
 
-ÊT
+5§

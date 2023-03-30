@@ -1,8 +1,5 @@
-w90Nc / HTTP/6.2
-Connection:	,  		  ,, 		  	   P4|5M38			,		,	   ,		 J  	    
-Accept-Encoding:	 	 	 	 		* 	 
-Transfer-Encoding:,   	,  			  ,	 , 	     	,	 ,		 		 		,|L~  ;		*zZ=4YsA0tyc; 	 a'=s;J 	=	 	 "O\\\³\P\å\zg\½uD"	,,			   
-Transfer-Encoding:	,	  		  			,	   	, 	 , 		 			  	 ^U4 ;  	`f*^i			= 	""  	  			 		 		;	 		    			 7e7G3p6e		=""	   ; 	   &XUx= 	"\†\þä£y"		 		;	QG-rL	= 	 		 "Cí\vÍ\Ý\š<\Ÿ\ãðä\¨"  		;*=	  	 	 	 	 "\\Ë" ;	 tQ~kP =   	""	 ;	   %J	  ="\žy\ù\è"	    	,	 	   ,compress 		   		
-Referer:  Lj://xL:3/$/g%A5%F8/b?	
+!~~ /24/%3DS,jx%24/5/X4/o HTTP/6.9
+Host: 	 	  29.52.233.9:61
+Host:   	254.28.79.58:67 
 
-UÁ
+•

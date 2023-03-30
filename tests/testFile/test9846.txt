@@ -1,12 +1,7 @@
-dC /v_J HTTP/5.9
-#7XF:	   	   	 	
-Host:147.53.213.242:37  	 
-Accept-Charset:,,  			,,		,		     D ;q=0 				 ,,  	 				 	  	 	 			 NC&.H	 	  ; 	q=0.2
-Accept-Language:,  	,   hq-R-w28-5-t-9-X-rxY;   	 q=1.				 ,,	  	 ,		  
-_Rtl:ä	 
-Host:[::239.68.146.211]
-Accept-Charset:			 	,	 				  		   	  ,,  , 	  	j7E5A  ,  !%; 			 		 			q=0.,*		 	;	 q=0.,,	 	,				  	 kPX	;q=0 ,   '
-Accept-Charset:, 	  	, ,,   	 4`VJ			;			  q=0	 ,		,, 	    	,,
-Transfer-Encoding:,o			 	 ;	  a	 	 		  	=    	 	"G\+Ó\(√„";   zcC	=		""   ;   'bck	  		 	 =	 	 	 "\à‰R\[\;∑ﬁ\~" 	     ;o	 =	"\Œ "; 				    		4|nX=	 		de|6.u	  	 ;YJh   =  ""; 			DO2t`oBt0z4Poty_  	= 		 	"ê"   ;			Swx= 	 			 		 "\’¬\ú\wM\s\Vã\}\œ\e—\p\B»\ˆ\ı\÷c¢\Œè\î\—\O"    	  ; 	 	 KP  =		"`\á" 			;	 	_XK6 	 = " "   	 				 ;	   	 		 	  	-0YSk^HDYy6	 ="\j"	   			;eD4Z=	$KzK ;  8in^    ="\t"   		; 	Uh%E$rBjX	 	  = 		  "\w"; Rn.			=""	;					  		   38N+P3		=	"\¡\Qˇ\G"			,		 ,,  7A; 		  		_ =	WUbX ; aV+IOX	 = 	 	  	w9fn!lC5f!K  ;		V6 = 		 	 		 	""		 ,KFQhS;	 	B = *TM   	   	 		    ;   				 			 pE	=   	"\˙¶"  		 ;  `%XzX#1			=""	  	 			  		 			
-Cookie:YBY`hIu=v/0mPA|^ 	 
+|cH /o&jds%23dP/CY/Of%EEYb=k%3A%FEcU%9D8%60cPzETyqY('g?%96cY HTTP/5.3
+Op:   ñ|    	á
+hBM+E:	 »p			©‡Ú	 	 		S
+Host:	_%5A%B3-:48
+Host:	 	[::E2C9:7A58:0:255.3.119.224] 		 
+Host:	i(:812  		 	  
 

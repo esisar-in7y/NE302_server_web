@@ -1,11 +1,5 @@
-Loi+x //-// HTTP/7.0
-~b: :		  ๒  	7ด  	๐	  
-1af:		^’H   ขฺA%f		 V9 		
-Content-Type: 	  H-M*./`	   ;jY!="\q\ัต" 	   	 		   ;	  EbK="\N" 	;	 	xX-n="\ส\ัด";					ad*=$9Pim|; ~Mvb!wWN=""   	  		 			  		  	;co="\V\’\tฒ";  	 		  l'QM~G="$ซ\บ"		;$jg="\\ฦ#\ี" ;-B-5xpk6gsrgaCV=DOxLL-bwb	;	J="'";	 	 	 	 				 OL="\üซ\"  	;oa="T" 	;z`="ฐ\ธ<—\|\`" 	;r8VY_nt="รํ\๏\ฝ\\น\"	  		 	;3Dt3~9=""	; 0="\ซp\๛\U";kij'9EZWdY5P0="\\T"
-Accept-Language: 		  	  		 ,			,	,  ,			,	,,		,	 	 	 					, 		   ,,	  ,  		u-I-SD-dP-7	 	;	q=0	 ,  	hL
-Host:			 [B::0B:B2:2A6:2F:172.81.46.89]	  	
-y: 	 
-Transfer-Encoding:					 		 ,,   ,	, 		 	 ,	 	 	 	  			     		   ,  ,   ,Z~a ;  `T =  	  ""; 	 	 %aK 						=  	 		 	 248yn$4  ;M0r   	  =  "\m"	 	 ;Hg`	 =	"\]\๛V\—’";		 	 |=	 	"\8\๑"	 	  	;	  5   	 =		"ธ{"	 ;	 X#PNIc~.M4n=	9  				  	;			716FzSqIS=	 	"\ะฦ๛\ะ\ศ|\ต"   ; n		=		"\" ;	 	MX#0 = 	"\"		  		, wwA  ;   		 	 ^ 		 =  "\อ\ก[Y" 			 	 ;MlW	=*BI; 		WUap%QRaSl 	="๑"   	,	 uTO0v; 	  	sk&	   	 			=    	 		   	 "G\ค\ส\=\—\Z\iฤ"; 	 		 #`			    			  	 =""	 	 ;		k =			 	Z3yw|K;PtB  	="\K"		  	,	 ,  		,	 				 chunked 
-Accept:   JP/*		  	;	Vlk8R1Etuh5="",		 			, 		 		 	  ,	,    	 ,J/*;		  	   	 q=0.99,	 ,,,`/*	;	s6="" 	 		   	;	 	  	 	q=0. 	,		 	 ./*		;	JJ*EIDd'EA="\รH๒ูๆ๘เ\ 1\ ี%\“่3"; 1C=7HUL*	 	,		 1mx0Zp2ugr_/hn&2Dv	  ,R|E/*		; s7="ฝ\Aนตไ"		 	; 			1="\("	 	 ; C0VKJ="\๒\Y"		      	 	; 	  			n8hoomfU8fz+=""	 ;		 		Yap="ฆ\”\๚\X\๏" 	 				 ; 			 b="ÿ" 	 ;aRhx`FI!p*O~Rv-c5="";  		l="๚"; 	5="\þ\,^+Zฆ" 	;					  d0cWNOQTP1Up=""		 ,				 ,	 	, 	,		 1_O/RA;  	W=""  	  	;					q=0	  
-Accept:7#/Dcs;						#="";RVN#C4="6\E•";5=""   	,,,		-T/u1`q0#Y	   	;			 	7wIx6="\m\ฐ\แฦ\NÝ \2\f่" 	 		   ;	 	NpsD="Wญ" ; 	 	 	A="\!S" 		  ;  ^CU="U"	;		`PaO^%e="\๊"  ;	   	 	   		 	 	 	 	  	 yMPsL~3="";		Uw="๗v"					 ;	 	  	q=0.	  , 	 	+mU1#i/J	 ;	  !Nd=""; 	   	  q=0.	 ,
+ek2 /)K HTTP/0.9
+Host:  			251.235.6.4 	 	  	 
+Host: [::C0:CA:6B:B:A69:26.242.159.5]
+Host:	[C:6:6:14F:7F:A:223.15.203.1]:8030	  		 	 	  
 

@@ -1,4 +1,0 @@
-# / HTTP/9.9
-Host: 	:72
-Transfer-Encoding:		,  	 	 NL2	   
-

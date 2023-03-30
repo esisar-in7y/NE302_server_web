@@ -1,8 +1,2 @@
-U7&gy`J|8 /? HTTP/1.4
-Host:	 		[CED:2FF:4:F:5:1:69.172.226.109]:18743090 
-Connection: 	   , 	,	   	 	  	 	 			zUw			 
-Referer: 	v=_/K		 	
-Host:  3.225.74.72		
-Referer: 	Me:
-Content-Type:Qh-T3bU/k 		; L72M="ø"			; *Cf="\úÏ\Eà\Õ«\½Íºı÷\ÆV"	;wK3D7K="u?\*\„\B;\‹ş\§"	 ; 	 wh="\ª"  ; |M=""  	 			 	   ;'n%3rw$g=C^ijt		;*xI="}\Ã\ĞW\l"
++F^*f / HTTP/6.4
 

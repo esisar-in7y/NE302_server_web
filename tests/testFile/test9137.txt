@@ -1,13 +1,4 @@
-8J! /m~f/oX HTTP/3.1
-Cookie:	 y=
-Expect:100-continue 	 		 
-Cookie:	  	    			 	    	tio20=""; uc="(t"  	  			 		
-Referer://[B7::73E:EB]:3056
-Transfer-Encoding: 		 	,		, 		  	,,,  R`X,	 deflate				,s ; 0!9 	 			=	"\Τ§"	  ;	wy     =   "\>\Lλτσ"   ;	 			    				 	Q-`Smy2ZN	  ="½"   ,,,u;OYj-Mr	="\u\ι\Z\Neλ\C";PbLZWxRR#0 =	 			""	   ;	   &f			 = 	 		  	 "ο"; 7r6DZ-j14&RNN0         =			   	 "",		 	,	!1		,	Q^z;-$4m ="`"   ;uRO="F\Q"   	;7_Sfr^G_l =	 	"" ;SX^L	=	 "α\·\=\ΟO";  			P6Q|zFhfGe_ZUHr.I5 	 		=	"―\ί«"  	  			 ;l^	=   	 		1s_7;	 		   	 	  	  		 	 	 	  i	 	 	  	    		=	 "/"  ;     	 		Rur 	    = 		 	 	"ÿ"	 	;	vwTKL#'I65n^	 = "\–";			  CR'Pg	=  fS50;		R|QJ	= 		""	  			  ;	 			h'H` ="z\Ρ\υ\I\ΪΣ.ά" 	,		0SP 	 	;Ty$= 	  		   	 "\…\;‡" ;	zdN	=	 		  "\ώZ\¥"  	;	^U	  	  =""; T 						=  	 		 	""    	; J_lF2'`	   	=  	"Mi\ς\λε\X"	,  	 , 	  
-Host: 6.241.86.207 
-Transfer-Encoding:	 	  	  	  			,,,	*y#KDi	, 	 	,	
-Accept-Language:q-5sJ-I-HP-PrJJ-qt2jB, 	,		 		A-OM 	 ,		 			uuMM			 
-Accept-Encoding:	 	   	  aHLN`Z;	q=1	 	
-Transfer-Encoding:,	    			 ,	  ,, ,		,,       	    , ,					 		 , 		     ,		 				,,  	   	  , 		   ,  ,  		,,		  	   	, 	  ,	,Ez6K	,	
-Cookie: 	  		 	 _7="ZFAmN["; 6|8Yu~1T=""; qWmY.Mf.w.x`="|bvb"; 3-uiW=@; WR="$<##Oakq~y"; KX6v0+x9-e=`+; dKI="I"; 0^=c; s~Q*="*E1=UNTR$xR$Vd5"; `LNH9=[s; JNs#Jz=; #VANrq="0"; uE7="7" 	 		
+n-p2 /fM/:s'*%5CW/L:(,TKkP3'/r2W%B1%D6W/%45Fv/2%35(cz%7FF//P70w/%49%71;s/Bba:/ek3Y%26=/I3~V'z8'!-/:T%C2%5D%97-1/e~//w-%2C%98/R8UL/H3HqP/4/?%09rD HTTP/1.9
+Cookie:g55|=; +M9`TD=; Q'XY05M=; t|t&=@Oyc; nS2=""; %1n=@Swy_+f6_  		 	
 
+]

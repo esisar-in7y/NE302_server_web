@@ -1,8 +1,6 @@
-$W1l //? HTTP/4.0
-Host: 	231.96.232.123		  
-Referer:	 			QK://mEFneN@[::0D:C:40:9:97:217.53.32.225]/%BA/~/d1/pb0:/E2//			 
-User-Agent: 	 8IYMM/E3~C.  (\Ö\Ö\Iº\>(ÿ)«k())			
-Referer: fWXqO7DiuMVYJm://S@71.0.23.0?
-Referer:			F198eW://[0:1968:86:2:D:7:234.33.1.215]//%47/-F2%43?O
-Cookie:m6HyM=%aFqecZ'; 0-T*|="I1NDr4N1k4HR2"	
+! /%7C-8%42?$(n$7 HTTP/9.8
+x: ; 	à˜ ‚ã H		    			
+d&:£ 		a 	   
+Cookie:-e=D)t; b=   	   	  	 	
+Host:  [0:0:DB:3:7D5:2:78.46.82.18]:	 
 

@@ -1,7 +1,0 @@
-2A$NdQL /7ER? HTTP/7.3
-f^3:	1 
-Transfer-Encoding:  ,		 	 	,		, , 	 ,	D.	 	  			
-Referer:	//[135:7:A:E:9:A8:180.233.5.58]:/WX~?	 
-Referer:g9:%4Dm?g%8E9+W		
-Host::4	
-

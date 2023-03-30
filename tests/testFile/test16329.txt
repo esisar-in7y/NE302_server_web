@@ -1,7 +1,0 @@
-rk-u /ZWCx HTTP/5.6
-Accept-Charset:3S13u	;  q=1.	  				 ,	, 
-Referer:  	IOD://@ZuMK=hK5!.=%C7UWM%40B/Z%BCJ03%C1X'-%B1@/_/ 
-Cookie:#k'=; %n=+m; Zs=""; V=""; q=N; 9=u; d!=""; Yi="<"; _="cp{L6:c"; $dJ='+TzLK-t; H%Q=_l; RNf!_Jon=""; ~=]; |_="X]"; |q3=; U'=gBn30
-Connection:  f, 		 	 			
-User-Agent:3'U 
-

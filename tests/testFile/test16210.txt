@@ -1,5 +1,0 @@
-p|z //u//Wd%2D&/qi:+WfxQn HTTP/5.2
-Host:[3:9:1:1::F3:253.7.200.66]	 	  
-Referer://@[::8:E:B3:0E:8D8A:2.6.168.3]:6?q 
-Referer: 		 		 pp://@[vC.8$m]:9861/ 	  
-

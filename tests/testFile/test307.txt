@@ -1,7 +1,6 @@
-L.X // HTTP/5.7
-Accept:
-Accept-Charset:					 &NU1a`	 ,A  		 ;   	q=0.	 
-Host:			219.1.164.0:6		 
-Transfer-Encoding:,, 	 qh;	 						   	Vk*8Q=		 "";  M	  	= 		!s;#LJ_HQIU=	 	 "\˚+\d\È" 	 ; !%= 	 	"\æØd\ÿ\!\˘\"\,\v"		     	   ;	 9$4^0r8				=   	"" ;	 	as~=		  	  		  	 ""			 	;			 	6 	 		 ="\í"	;. 	=		 "]"	,		 ,		 ,	  	 				K	  ;.ZB	  		  	="\i0\'\‚"	 		  	 	  	, 		 		  ,yj   	 ;		 	 		5!eD2ctNGvc#Pfp7'oYXn=		 		 "\ß"; I3=   ""  	 		  	; 6|Vr  = 		"\7&\s\^–‹h–7";	'XlW3`+p3UUrhp-~ax!A  =g;	 HlH	    =		 	  	   	 ""	  ;	 			f1&j=uJs		;  oJ	 	=	"\ì"	;h_   	 	=  	  	 "Á"		
-lAOi^TY:		  		  
+YP /o//P,W%43&/jv;Qw%D6NU HTTP/4.8
+Co9QJ&r#: 	à	  ù 
+Host:	 194.196.234.81:6970 
+Connection:4& 			  	
+lm:		 V	 	 	]lC	 óA  ãP	 
 

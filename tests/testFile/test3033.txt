@@ -1,20 +1,4 @@
-!~iQK1b /r//0///b1t//6QO? HTTP/8.8
-Host:			 	 	     4.76.200.6:9	  	    	
-Host:6.205.66.3:3 
-tuJR:     J				 	 		 	ÉY‰ñ†	 FëJ  	_¿ÚL	Ç0… 	yd  			   	  	”` 		 		    				 1ì 	 ú
-Accept-Language:	 	 			 	, ,	,	,k  ,		d ; 			q=1		 	 		, y-71Jm	 	 	 ; q=0.  
-Content-Length:	 84
-Host:[vD5B144809AFA5D522EC12381DA805.UQIM:]:341		
-Host:	 3.111.4.4   		
-Referer:		    %52/%59/d/%4C/%02%D2/0//oiZn;z*?  		 		 				 
-Accept-Language:	 	,	 ,	 ,	  	 		R-eBv	
-zr_:
-Cookie:gNjJ=c; 5=r; $i=gm		 	
-9Z:	  
-Referer:			//@[::6E:187.132.59.129]:1/evZ7'Wa=/m*R/&n5/q/v/o///R/c%68+KZw@u!%61/FbMA)t)%63F///6XS/V%86;%B5/n=h8//?%C8@		   
-Referer:nMV://[::592:D:6]:/5H/%A4+oj_%269%EA0B;%34%69%96x////%D3wU/2C)%D4/%34+,=m/;+TNOpb/%EBUm/p?%2A$%B2D_ 		    	
-User-Agent: 	  bYW/YTG4oWQ
-Referer:nhoui://@5.7.4.3:11731457920
-Transfer-Encoding: 	 			8+28O8Mk-uL|			;   L#XVGFiR7bP	   =  "†\#";		'fbq="q\k\!\U" 			  
+m /$%7C HTTP/7.1
+Connection:   	   H0.~		, , '+YQ12,    
+Host:[::F:1A:85.246.133.144]		   				 
 
-›œ‘

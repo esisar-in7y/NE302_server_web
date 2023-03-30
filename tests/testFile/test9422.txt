@@ -1,3 +1,4 @@
-w /g%FEFh/%034!U:/eC4/GV:o'rh/~%0E HTTP/2.0
-Accept-Encoding:	  			 	  	   		
+qR / HTTP/6.0
+Transfer-Encoding:	deflate,
+Connection:  		 ,,  	 	 		 		,, , , 	 	  yvzl	  
 

@@ -1,5 +1,4 @@
-Wt //co;p%A4cw%83/%52m!%A2&z%56sTN$2Z/%7C/v/%CB=%46,/ HTTP/0.9
-Transfer-Encoding:	 ,	compress		 				 	
-Referer:	//;@95.108.211.125/%32ui/VI%E03M?
-Host:			  	 	 [1:E2:5:9:7A48:0:6.91.223.248]:064968571  		
+&V /,?oFj HTTP/0.6
+Host: 					[05E:B:3:5B:C:B250:118.1.45.78]:2712   	
+Cookie: CaEJu="K"; rfwbmf=; 5+PlMX7u=w{; Ac-fKq=6&M; _=; B=; Zk0aL`="sL"; D`D="Kc"; ^=>M2#
 

@@ -1,16 +1,3 @@
-5 /%19+rG-J/%0B%FBnj//UE/? HTTP/3.6
-Host:	  [v6FB.xK:]   	  
-Referer:	 /?  	
-Accept-Language:   ,	    	, 		 	,		,  M-i  		  					 	 		 ;q=0 , PO    ;  q=0.	 		, ,,  ,KR-T-l	 
-Referer:	  	//254.77.141.41 
-Host:	  	96.24.254.254
-Cookie:   		   				 S.`+my#xE1e!=g; L=Y2nP*TW; tyy^n="" 		
-Accept-Charset:		bt 	;q=1.  	
-qD:  	Í	 ^J
-User-Agent: 				  ^uT/0D	   		
-Accept-Charset:	 S;		 q=0 			 
-User-Agent: 	VnU&/+vtMtcP 	A 	 
-User-Agent:ZiETvp$	 (G) 	   	 	(³)		 		
-Cookie:	    	WwR="" 
-Content-Type:	VnN6&nm0/J+ff			;	ne=1sE;	&|c=""	;			 	  		  	 			 	 	  	 	4d^Y="Î" 		  	;8E="C" 			 	  
+zL /3R%CC HTTP/1.1
 
+$Ê>|M

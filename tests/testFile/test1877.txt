@@ -1,8 +1,8 @@
-x /m/FP%BCS%DE//%0F/%88//%B8%63r%FEf/X/aq?gE%B9B%128loLL%39f9%F2%A2'9(*rN HTTP/5.9
-Accept-Charset:		%R-W-		; 	  q=0			,y		 	; q=1		  	  	,  	 SZ`e$ 	;q=1.000 	  	 		 	   ,  sR`Vu
-Transfer-Encoding: ,		    	,  	, 			,#ui ;	  D'		=	"æ\-∑\Ÿ"	 	;	m|AYb=	"\ª";  n7 ="J\9ë\∆\ÜÏ"	;rU			 	 =		 lb3AAUT#wSiQEcoY9UdAEA;		NWr&="",,,			 	,	   	  				    	 yl4 	;	  	 		 			 0&Y = 	"\0÷" 	 ;   u 	 	  = 	 "$O\jO¯«¢”r\X\ú",  		,	 y 		  		; x	 	 = 3H 	;	  		iT.+LgTh1			 	  			="õ\∞\∂\{W"	
-User-Agent:	kS&|XAM    (t\Ñ\≥†)	 		  (\ô)  	 	 				W&
-Host: 	0r=	
-Accept-Language:  ,	,,	o-8u; 		q=0.
-Transfer-Encoding: , T*  ; 	  	  uMVcmT 	  	 	  ="Ym\à\À0"		 ;			  kV8E			   			 		 			 =  "\›";  		0e`OxND  	= 	  	"\∂"   ;   		.u	="¸\d\…" ;X1%wvBFqzba#^	=  		  3T; 		8	=	   ""  ;  		 	   		 	%`~				= "\l\&" 		;3|sf`FP		  	= 		 "\œ\å\ﬁ\∫\?\™"; 42'M=  "!\µ¢\È\N∞\5∏";HoOCcv8E+g=		 Gg&x 
+^u /RR%FA%7E HTTP/0.5
+Transfer-Encoding: OrB 		; 	e 	 		 =			 "\]áû\J"  	,O3*j ;Y 		=	""     ;				   	+BuYA	= "" ;	U = 			""	;r$R  	=  ""	 ;	 	q!o+			="\Â\,\Y\Ü\^Cû\Ò˘\(È\T\ı¢\ë8\û,"
+Connection:				 	 			    		  	 	 	   		,	W~9
+Connection:	 ,			 , M, 
+Host:229.88.65.8:616045	
+mgq:		 @  :ô –±	v∂Ï¯		™∆									⁄ıß	œ∆˛   	  	 ƒ
 
+«ê‘

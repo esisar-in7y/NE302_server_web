@@ -1,7 +1,2 @@
-~ //N;m//bJTsjnc4zd//go///B/fu//7?@-1 HTTP/2.7
-Host:[::C7D:44:03:70:83.2.86.162]:30137343364822717681242401311  
-Transfer-Encoding:		 ,	,	4;			 -Jg*ZtH 					  	= 	 "\.áy\>†M\v´ù",	,  			, 	, 	 	8&#		;			  	 	 2=		  "oN" ;I    = 	 	 	"\’\j\1\à"; _^=    A- 	  		;		am4UY	 =	 			"\#\ÕÂ"			  ,  	 	 	 	 NODV; _C5="‰" ;				!hSA|taEz=  	"\+–‡ß\#" ;	  	Qn  =  	   "\∞p"		,  	 			   ,		,     +	 , 	 UP^Dm$%g 		 		     ; 	   	  	 		*    	= 	  		  	 "\»&\("	;Gt	=""  ;	     	 iv =   "\ëo"   ;		 	 		  	 				  	6 		=		 "÷\À\« \\\B" 		 	;				     n=	"`“"		 		 	 	;  ng	 	 	 =		 "\à\÷#h\6\y◊"	 	 ;			.j-=					    "\≥" 			 	
-Transfer-Encoding: ,	 		,,    , ,		 $T^WWn2r0  	    		 ; 	 		 20	 =     		"\÷0\û."		    	;  	     org		=		 "\ÙË,\ﬁ"	 	 	;	b'JD 	=		"—"	, tT4do;Dt9aVx  	 	=		 	"oCÒä\d§" ;ywon	    = "",	, 
-Transfer-Encoding:		 	 	  	,,	,,	,,,			 	 			,`D, 	 	, 		 , 	G	   		  ;	   ^LU&~w~2|H21X~s*bBJ  	="" ;B= 	"" ,	 	  ,,compress	,  	 , ,chunked		,	 	 		,       Q7G	,  K+  ; 	   I=	 "∏ÍÏ"  		  	 	    ,  
+w3 //%E4jL%16K%C0,a%E2q%E0?LH%5C%80LL%8F HTTP/1.0
 
-X ØTâ»∂»

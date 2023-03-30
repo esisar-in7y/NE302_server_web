@@ -1,7 +1,2 @@
-Iz /K)nJ%FFqn%EC HTTP/9.3
-Accept-Charset: ,   			,  		 			  	 		+cUemvV0oH	, 	 	   					 |K3	 	,	 		 	 ,	   	, Kp ;	q=1.00  
-Hs'-7J:
-Referer:%1C%79%6AC
-Host:   	[64::D:A:B:01:224.251.76.9]		
-Transfer-Encoding:	         ,	,kS`s;	 ^!v	 = 	"Z\`{Ç`\Û" ; .7		= 	"@", roZL^	 		   		,, 	  		  F	 	;   			  aHtbLN|  ="\ µç\(\}É\ßmú\	\sb"			;JDXh	 =		 	 	"\÷" 	  		 	 , , ,,  	
+ro /mRR HTTP/5.7
 

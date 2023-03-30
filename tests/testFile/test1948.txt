@@ -1,11 +1,6 @@
-N /%A7/Hf%EB/SYNp/=%66f=j/q//-G/&nzb/k=7Nu*Fy%AEEj%D5bEt/P=%6Af!/nU+Z//Pj%F2L/pe:%0DEZy?T~ HTTP/4.0
-Transfer-Encoding:,	tOk3.    	 			;	e	 	=	")"
-User-Agent: 	I87-e'a2gK6$$NU&Zh0%5x19zG	( ) 	U&    w/G| () 	(\Õ\€)  		P/'Hhh4QW|8z.5S!u 	 			  X|g/vaF-Q 			 
-Cookie:u-nh=G4&y; vB="_!L"; m="c`9U]Oz"; Z="jt@B"; ~="/R'a"; ~E^`s="Hq"; #M~jGoP3`bm_Iz'="A"; |jn%W="HS1i|fS="; &=J$c; xuUip$=""	
-User-Agent:	k79v/^'	(\QV\Œ)	(\˜Û\Ñ>\L)	 	  		("Ò)	   	.jY1e/V (¨)	 	(Ï\Ô\ï\&) 	  	 (Ý) 		
-Accept-Language:	   				,,   , ,,,,	,,,,, 	     AcXTc-y-lL   				;   	 q=0 	 , * 	  	 				 			 ;		 q=0.5 ,Lap-E5-O-4-d-d-x-aa-B-UPIa0-P-La-n-sKS-KS-t-7		
-Referer:RxPMBx://[::3F29]:/a%2Ctu2V%60'%C7M//?f	
-Accept:		3X_/*	;		  V.za=""	;	 	84NrWLhP="q\µ\m\Q"  	;3liFmh=""					 ;  D="\Œ\d"	 ;9="\µ\¾\\"  ;		 q=0 	 	 ,		  	U/e					 
-Referer: 	 	 				 //DSdO6:yOk@1.255.144.222:3//(%97/tNX//%56%8C%0ABx:)d'q3/n/d;%DE?, 	
-YUwT5Y~:		 	 	 		 Ø	
+_ //G4q./&?6 HTTP/0.0
+Content-Type:h/MRa;		 I`p="\a"	   	 		;OEKnU=8x 
+Transfer-Encoding:, , ,,8Bl9 ;~c' 		=P ,,   	 , 			  	ma&US;	&gk   	  =	"À" 		;		 					!   =w&	; 	KMI*x 	   ="K~\ž"    ; |1		 		=	"\&Y";yv.K! =   		""		; .8V  		 		 	 				 		 = "œ"		  ,,  	 o1D; u!  	  			 =		!_;f!*+11^z1NexbHu9	 	=	 "" 	 		  	 	 ;   				 D =	 			""	
+Connection: 		  ,  	,,  	,~_I` 
 
+

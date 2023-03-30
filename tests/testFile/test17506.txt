@@ -1,9 +1,0 @@
-~ /? HTTP/0.4
-Host: [5:4:C:C:F7:48D:0.253.168.1]:		
-Accept-Language:	  	J-l 		; q=1			 						
-Referer: 		VE.-:1qVrH;?
-Transfer-Encoding:,   			 	   				,,|pUmzKIH   	   	  
-Host:  	 	9.194.222.19:61 	 	 		 			
-Accept-Charset:	,	  	    		 ,  	  		 	Cfn	 		 	 			 	,
-Referer:   			 A5v:lTzweY69	 	
-

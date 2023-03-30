@@ -1,11 +1,2 @@
-i ////_*Z?8c$2xB%19 HTTP/9.4
-Connection:				 ,,,	 					,	  	,		 ,	    ,	 		,	,tat3rTOwLQKbnb.3heHTJ6c,f!,		, ,    	  ,			, ,Np|O9!z  	
-Connection:  	 ,	 	, ,,	 	  lq`4#		 	   				  	  	,	 			 	h	,	   UlrXeG	 			
-Host:[v0AD1F93.af0qgYJjr]:4689247926
-7Kx:				   	 		 	 	V 	  	š¦Ñ						ŸÎ  þ
-Transfer-Encoding:,    ,	 	, 	, 	,		,chunked,	 mGSqXhTF 	 		 		 ,					E4|Ub;  VTRms57 	= 	 	 	XNlNf0#'d	 ,					  		 	
-Host:	    	 	 	   		
--:	 FÙ
-Host:	  	 	 			218.211.232.253 				   
+D /Q/%B8V//;C?x@ HTTP/3.8
 
-W-¸;

@@ -1,8 +1,0 @@
-q / HTTP/2.1
-qk:	˝ 		 	  ‡F 	◊,	y‡| ¨/fCWÚ	  			 p 
-Accept-Encoding: 	 			   	
-Transfer-Encoding:,	,	 OVk!kG 	;	*OSSYH=			"\e‹";iGkIss=.I0*7|x2J; a*zBqv&u.#=			 ""			;		 	  	    &CRF     ="µ"	   ,   ,	 	 	 		  	 	   		 		sL^g;_TI'6Xl*cD=&zhZ  ;jsFzD1#G1O	 	=   				  		 "•"	    	  	,gO   		 				;			h|`C9 = "\¶\¶\)È\§" 		 ;	Tb		     		   	  	=	  	  	 "8\ﬂ\9ÎE\∏"  ;		  t=   	 		t`m	; N1=  	 	 						 t9X$		 ;LHR		 =	"\CÂ~8Ω\Ê¸"			 	,-~W^ZRJ;!L-Oc6Bm =   	A!L	;	7="\¿>\~\T¬\M~∆\…\”\FR\ÜQ\ÿ"   ; e=		"Ø"    	  ; A	  	 = "L™\˜Ω\ä" 	 	 			 			  ; oRsF'mp9w		=  "";		!# = 	"\;e•ı˚!\H"	  	 	; K  =	 	 "\ïñ≈v\W^\*HÛ\X",  			    	compress,		 ,	 	 	 		,	  	  			     	 v;Z     		  		   	=	 "	πí{∏V\ƒ\∫q" 	,		|vj;'d		= "¡\í\h*Ã" 		; 	 	B% =    "" ;  X 		= 		Nr		,			 	  	 	,		 	   ,, zaD_		  		  		;	 *GMX0="≤\s\X„ÇTT" ,    	b7 			;		*2      	 =	   ""	  ;	 		0n=  	"ß\è\?^\õ£"			;W= 		 		"‘Ç"		 		  	  	 						;		mSR		="\=\“\µ\◊"  			 	;     p=	 	  	"áΩAÌ\Ã";    	  $=	    "‰" ;	 O6U4g=   "\í\¸";		 	 R				 		  = 				"" 	 ;  	 		&^cY*=    			 	  		  	 		"˚N\7";X*bAw#-X|ZOuwC`HqAg=			"\‘\W\π"			  	 ; O=	  	  "¿"		 	,,  KPYp`C				 	   
-User-Agent:	   	   `10 			 		  (]\∫y(\ùâ\_ˆ´\#\v)–)		  	(\DØK\c)		 
-Host:		  [::1:9:A:B:68A:68.241.113.38] 	     
-Accept-Charset:		D,		   	 ,			  j	 	; q=0.040	, 9#Z`GH6YU ,		,  ,	  ,  	,3		 	, 			 d 	;q=0.5  ,     	 
-

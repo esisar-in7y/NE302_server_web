@@ -1,3 +1,0 @@
-oq / HTTP/7.2
-Content-Type:!/R|cIAbD    		  
-

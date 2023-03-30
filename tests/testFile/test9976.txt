@@ -1,14 +1,3 @@
-kS31 /H?yb HTTP/2.2
-Cookie:	 		 	 S="/"; +c=Q; C~Xb7fx&jFiU'=""
-Accept:T/*;v~0Lf#i8luK+..WhF="\Û√\_"	;M&HsDj="—9\{\8K\^.\]14\Õ";	V#9="¶\œß"	;Bo=""; 	 4="\cR";		 oEj=jW3$08jYCW	
-Content-Type:	 	   gzJtN8fx'/r ;^dIORSUX-G+fYK="\‡"  ;  	K~M4kmyK="≠$"
-Content-Type:VB8k`~/UWsf6umw31KfsbAgAF	 ; +`wxeX="\ñ\cŒ"  ;  6#x="-]\"\R"    	;  	  		 g="\ç\d\PÅ\–&"		 	 	;	ey="" 	    		  					;		P="" 		
-Host:25.8.254.1	  	  	  	 	 	 	 		
-Transfer-Encoding:  ,			    GX 		    	    ;	 .  =	 	""	 		 		 ;	Rh    = ""	,	,		     n0 			 ; 	 *RCt 			= 		  "µÛ…¬";  	 E0	  	 =8zR;8bYXc	  	="\˚Ë" 	 ,   		  	   	  	,	 
-Transfer-Encoding:	 			 , ,	 	  ,			,					, 				 		 	,,		,   ,	, ,, 	  	 , ,		9|vx9 	    ;dclT.Lx	  		 =					"ŒÎ\ì±\Q¯\à\‚"	   ; 	 	  tX5KvWgb9`'b!+ 	= 	  	 "\J\∫!\e\á\Ω7"		 	 ;	 _s   				=						"",|
-Transfer-Encoding: 	 , 	v6s 	 ,	 	 		#`		  		; 	  	 Zm6PPt 	 			="\;\Ç\à\Ω\S\J•\˛"
-Accept-Charset:  		 	 		  	,*	 	 		,   	i5,  			
-OqZf:ÜÏ		õﬁñ   			 Z;av			Ö‡		  	
-Connection:, 	  	   ,				,	  ,,	|gEy	 			, ,	2		 ,  red 	
-Referer:	//[v3A.NuSZM]
+^GlM /0//4E?=C6 HTTP/1.3
+72!_X1o|:		 ‹ 	`
 

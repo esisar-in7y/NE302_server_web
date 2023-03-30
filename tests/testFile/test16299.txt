@@ -1,9 +1,0 @@
-u /7~_-I%AD? HTTP/7.5
-Host: [D::6:9:1B:2:9E]:673		 				  			
-Host: 26.4.2.254 		 
-Expect: 100-continue
-Content-Type:  tuu/9&Tix#$E*I		 	 			 			
-Transfer-Encoding: ,K0!qoa ;  	o   = 			"" 	 ,		,	 	
-Accept-Encoding:	  		  
-
-ˆ

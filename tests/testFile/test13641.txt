@@ -1,5 +1,0 @@
-4L /P/x3dY//%D6zhK8ayHOvv~+2@*m//? HTTP/3.7
-Referer:s://[::A6F0:A:9E2:B4CA]/ 	
-Host: [C0:C269:C01B:3::5:100.9.79.82]:142
-
-EN

@@ -1,10 +1,4 @@
-a // HTTP/6.6
-Referer://15.61.0.211/H/	   	
-Accept-Charset: ,		         ,	  		m`EFS'IoM$JKk		 			 			
-Referer:	 	hNKl5X:A~/t&/XSF/%B0/52/,/%49p%35/W?
-Connection: 	 	, ,iT~|,
-*IOzj+Yhk|ln.dkC%Fhz0:		   	 ~ 
-Connection:   	*G  		, 	  ,	  	
-Host:	[v5.BOL]	
-Connection:lv,     	 , 	  	 ^ 	,					eCIhq,	WDO	 	 ,	 	 	 	   ,,	|B!  	,	 	 bw , g-#HC'YY		,	 	 	,	 , 	p
+Pm5fx3O*Mz /;/Ni?J HTTP/9.5
+3:		 	 
+Host:		 	   [::0.229.1.104]:8
 

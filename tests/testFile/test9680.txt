@@ -1,15 +1,2 @@
-$ /%A5qj,;2g,%C0Kp/*kM?5N HTTP/6.6
-Referer:	CO+u:/Rt&6%F2p%0D%B5/i/E.r)w//TuPFM?uHO 		
-Referer:	/%28/C?Se 
-Referer:	Q1py+9o7E7S+://8:18///zKDF	 
-Cookie: 	CRXK=Sv1; 8= 		
-Accept-Encoding:  	8tWy$Q$;q=0,				,  
-DmH-Ym:		 	 	 	¯		  ;ÿb 		 |   
-Content-Type:BGJh&/3'Fyd	
-Content-Type:	 	'8HYwm~/~;jd3x="=í"
-Cookie: 			I="U*9hu.r{PnQf"; `=; &=i&; j2=; ^=":PF4+G}Xd"; J=	
-Host::570
-Host:   	  	144.207.4.118:40690		
-Accept-Language:				 QHg ;	   q=1 	 			,	  		 	,	 ,  	 ,	 	,  	 e-MTj-tz-P4Tt-M	     		;q=0.	 ,	
-Accept:	  $XhjumAj2Js/d 	 ;			  d3qh="Æ\—q@6Û\ø\6©\ﬁ?H¡" ,		,     				, 					,, yvUX7pc6*/*  ;	zD|.ug="\}\q" 	  ;				Tj="4\‡" ;  	 	   pjFil="\ï\JÓ#"	;			   	n*yT=""		; -="”\†\Rè"		   		  				;  7^7="è\’G\Õ”\+O∑\,U\ø" 	
+!9w /;S,,C'l*ZQN/~5/?j%52 HTTP/5.3
 

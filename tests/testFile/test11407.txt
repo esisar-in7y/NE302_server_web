@@ -1,6 +1,0 @@
-M*y /u HTTP/5.6
-Accept-Language:,		, S 	, 	, ,J-rP-Lcy, H-o-G-Cw-OtS-ABT-Lz				     	 			; 	 q=0  	 	 ,,   		  Jih-U-t-XymU-a-J				,,	 	A 	 	 	,Y-X	 			   			  	 	 			 	  	 ;	  	 	 	 			q=1.0,	  wl  		;		q=1.		 	 	  					,	 	  hI-hggi3-P   ;	  		q=0 			  ,	 	 	r-9-Y-9ovF		 	,      u-T-M-6QobJ-H 			 ;q=1. 	,			  	 	  j-0zSB-C4-qVg-aN8-T-3f-d-OL-PyN-3g-Q-MN-m-7-Y-H-t-F	 	  ;	   q=0.026, CK-N ;					q=0,	  	Yp-g-n-ti1k-xb9Ty	;   	  q=0 	,				 ,		,	  	 		 	 	,l-W  ; 	q=0	      				 
-Connection:	 	 , 	 rd%5zGXmBYg6Q1C5		 	, t+E	 
-Transfer-Encoding:	 		    ,rfIbdz7Jys.at+RZ-^7R 			  	 	 		 ;		   		 	 vZ.						  	  ="\”DÜ\ùø"   ;	6aEf  		=		"\#"; 	   	   Qy2qf!W  =jX		  	;2i|3&	= "" 		 		  			 ;2m' 	 =   "\™\ñ\¨û\¾";1+ 				 	 		 =	"¤c\¦\¯" 	  ;	7	  	 		=   		 ""	 ;qI'BGZW' 	=   	"ÿE"			;X_I8wL =	 	   -2x~5							
-Host:	 	w%A4  	 		
-

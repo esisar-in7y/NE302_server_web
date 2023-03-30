@@ -1,14 +1,4 @@
-Y /B%7D&ZjCH'EjiG/mF?AT%FBH%E9N HTTP/0.9
-User-Agent: 	 Hsq7EDu+yffm_5Ely/t (\në˛r\öÁ)	 () 	(\a\ä)	   	((T))	%BbSq/4		(Àn) 	((å\›\ÎvÙ\¢)ÛŒ\U(\l)()(©)\†Á°\*) 	   c5/VVI4   q4'T1 	()    		
-Connection:	 		 			 		  	,	, 	 		 	mPMYHIlp
-9TG:	
-9:e åËµ 	 	 	  	 É0	u	
-Content-Type: rL/G~1 		
-Accept-Charset:	  ,,    *;     q=0.390				,  
-D`:  	◊  ±° 				‚  			 	   
-Transfer-Encoding:	, 		   	 		 		,,,,  ,		  	 						 	   	 ,  N  	;  3l=""   ;	 8hr	=		"\R\ñ\´\Í\¥";fHb					=	"\å";aGgQ+^y-j	    		 = 	 	 "\¯\Î\H\·˜Úlu\ö\Ñ\£"	  ;	 $		 	  	  = "\ä\¸\Ú\o¨ê\\", 	 	
-Host:	 	%FDx:2258   	
-Accept-Language:   		 	 	 , F	;    		q=1 	 			  ,  
-User-Agent:%cYBb^	 				 ((\s\‘\Õ\‡\ì\ò)\¿)			  	 	  .4dQ/9w `PU 	 	  		 
-Accept-Charset:,    	qQrZ
+#GvQU //)kFJ/EW;9nd/F%D0q/?i HTTP/0.2
+Host:		  [::4C:B5:7:E:C:8.251.2.227]:27
+y%P`$: ˚		  õ`\Iì?kËˇ  â„ 		 		 	  Úc		wX	
 

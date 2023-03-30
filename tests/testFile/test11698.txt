@@ -1,9 +1,0 @@
-0 //eNn%C1*/%1B%DAri/m//X/E~vb/c//Wb/naB//.///HzA1qV$*JS//%1D/**%E8%89/N HTTP/4.4
-Host:			 	  [::B:AFE:255.27.142.237]
-Host:		82.91.244.52  	 	 		
-Cookie:PEcb&Vb=w%; gpibK4oq=":a"; v=TrCF; L="g'sJ"; SqlU!$M+8= 
-Transfer-Encoding:, 	  	 ,,, 		, 	  	Qif-de	;!5a	= "\}l"		 ;	 	  	 K="\m"  	  	,	
-Accept-Language: 			,jiI-Y-TE-ju5-F;	q=0.0,	e;	 	 q=0	
-Accept-Language:M-zwcv-8ts-3fvE-LPT2-C-o-Q  		 		 
-Accept-Encoding:_;  q=0,		   identity	 	 		;   q=1.0
-

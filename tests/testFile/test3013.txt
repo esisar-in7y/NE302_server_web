@@ -1,13 +1,9 @@
-Xb^AG718CoSU ////TIv/q;7h/?eB HTTP/1.8
-Host:228.237.252.17		 		
-Transfer-Encoding:F8,		, , ,				,	 , , ,  			.1nL_3yM1; 	'r3=				"" ,
-Expect:100-continue
-Accept-Encoding:		    	^Xr.LI		; 	q=0.513  
-Transfer-Encoding: ,	 	 ,, ,	S6kDG4FC		 ;      	8Zo= 	"\I¸\øê\¥\u" ; 	#Z	 	=    	  "›\â"		 ;  		`|N	  	=   "\ÿ8—R"		 	     ; 		SA+6Pw`Evg=J		,,  ,	r2p2SC|t!A_H,		 	  ,,   		 	 	   	  	  ,~ 	 ;.^ 	 =	  	""; 		l	 	 	=			   		 "uËB\•hûÓÙvàºÃé"	   
-Accept-Charset: 	    			 		    	,	 		bzHiKe				   ;	   q=0,,  			 		     	 ,  r 	 ; q=0.3  ,		kE 		; q=1.			,  				 	#	 	;q=0,	 ,  , 	e|WV, 	   ,	 ,	 	  S+Wb0		,	    tXwR9s	;	q=0.4	,		  .`rE0_ 		 	; q=0.	 ,	    	    		  	,qT 	;	     	  	  		  		q=0. 
-T39yv:	 	  7 	   ØÎ 	
-Accept-Charset:,	   ,	,	 	 	 ,  0z; 	 q=0.     ,_P	; 	q=0 	 ,	 	 & 	 		 	  	 		;	   	   q=0		  , f,,	 	 ,  -_WYmu3bMC2		 		,  T2l%5|$rHYS	,, 	cy-u-3; q=0 ,     	,|y	
-Referer:/ 			 		    
-Referer: 		/?		     		   
+* /)7/D3x%6A/$D%96kh//h/b-56j/7W.7-D%C3liExBCn%5AeYfv+%23%D7B%CD? HTTP/6.9
+n59aka: 		  			ÇU¯é				
+Connection: 		  ,   ,,	,  	  	  ,a	      , 				,v	   
+Transfer-Encoding:|PftiLbo1t; 		 MWg+RH0jvYx	=	 "\-§^"    ;	  WOUD76. 	 	= 	 			F^l  		;		 	sCn=  			""  			 		 	; K			 ="", 	  	  		 m				 		;	s= ""		;	 	n =	  	 			"l]\ÿ\¼"  , 	  		V0Zt; uTIPI 	=	 			  "\u~c\*\=\¶\î";	  	np  =	 "\Å\ç‘\|\‘\e\Ä" ;Z= jT2$,,  	 , 	$s&wd 	  	 ;  			 	  		QHCh|	  =			qD.	     	, 		 gzip	,	
++A%: 		 		 			
+Host:230.75.250.247:	
+Host:[8465:96A:3:D3:D:2B:224.8.56.57] 
 
-Ó}Hï
+)

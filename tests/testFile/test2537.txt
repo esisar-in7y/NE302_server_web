@@ -1,6 +1,4 @@
-& /kU=/4& HTTP/8.4
-Accept-Charset:CuLP61` 	;  		 	 q=1	, 			  *	 	  	 	; q=0.57	 ,	,    bM  							  		,dH 
-Referer:	 //[::4:FC27:4665:79:133.1.9.255]://? 
-L`DaR: äa¿ÆÊ	 				  Ê			   	 	
-Accept-Charset:							, 		, ,,, 				 q;  	 			q=0,	 ,	~Or ;			      	 q=1		  , 
+^5f / HTTP/2.6
+Host: 6.224.11.90
+Host:		   			7.215.240.251 							 			
 
