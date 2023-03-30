@@ -15,9 +15,9 @@ int parseur(char* req, int bytes) {
 }
 #define RED     "\033[31m"      /* Red */
 #define RESET   "\033[0m"
-void debug(tree_node* node_tmp) {
+void debug(tree_node* node_tmp,int line) {
     int middle=node_tmp->start_string+node_tmp->length_string;
-    printf(">%-20s|",tree_node_string[node_tmp->type]);
+    printf(">%-4d|%-20s|",line,tree_node_string[node_tmp->type]);
     print_sub_str(node_tmp->string, 0, middle);
     printf(RED);
     print_sub_str(node_tmp->string, middle, strlen(node_tmp->string)-middle);
@@ -622,8 +622,10 @@ tree_node* Host(tree_node* parent) {
 // OWS = *( SP / HTAB )
 tree_node* OWS(tree_node* parent) {
     tree_node* node_OWS = tree_node_add_node(parent, "OWS");
-    while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL)
-        ;
+    while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL){
+        printf("childs:%d\n",node_OWS->childs_count);
+    }
+    debug(node_OWS,__LINE__);
     return node_OWS;
 }
 
@@ -1121,12 +1123,13 @@ tree_node* header_field(tree_node* parent) {
 // transfert_coding = "chunked" / "compress" / "deflate" / "gzip" / transfer_extension
 tree_node* transfert_coding(tree_node* parent) {
     tree_node* node_transfert_coding = tree_node_add_node(parent, "transfert_coding");
+    debug(node_transfert_coding,__LINE__);
     if (check_sa(node_transfert_coding, "chunked") ||
         check_sa(node_transfert_coding, "compress") ||
         check_sa(node_transfert_coding, "deflate") ||
         check_sa(node_transfert_coding, "gzip") ||
         transfer_extension(node_transfert_coding)) {
-        debug(node_transfert_coding);
+        debug(node_transfert_coding,__LINE__);
         return node_transfert_coding;
     }
     tree_node_free(node_transfert_coding);
@@ -1176,8 +1179,8 @@ tree_node* origin_form(tree_node* parent) {
     tree_node* node_tmp = tree_node_tmp(node_origin_form);
     if (check_sa(node_tmp, "?") && query(node_tmp)) {
         move_childs(node_tmp, node_origin_form);
-        tree_node_free(node_tmp);
     }
+    tree_node_free(node_tmp);
     return node_origin_form;
 }
 // request_target = origin_form
@@ -1220,14 +1223,12 @@ tree_node* Transfert_encoding(tree_node* parent) {
     tree_node* node_tmp=NULL;
     while (!end) {
         node_tmp = tree_node_tmp(node_Transfert_encoding);
-        if (check_sa(node_tmp, ",") != NULL) {
-            OWS(node_tmp);
+        if (check_sa(node_tmp, ",") != NULL && OWS(node_tmp)!=NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
         } else {
             end = true;
         }
-        debug(node_Transfert_encoding);
-        tree_node_free(node_tmp);
+        debug(node_Transfert_encoding,__LINE__);
     }
     if (transfert_coding(node_Transfert_encoding) == NULL) {
         tree_node_free(node_Transfert_encoding);
@@ -1236,22 +1237,22 @@ tree_node* Transfert_encoding(tree_node* parent) {
     end = false;
     while (!end) {
         node_tmp = tree_node_tmp(node_Transfert_encoding);
-        OWS(node_tmp);
-        if (check_sa(node_tmp, ",") != NULL) {
+        if (OWS(node_tmp)!=NULL && check_sa(node_tmp, ",") != NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
-            debug(node_tmp);
-            OWS(node_tmp);
-            if (transfert_coding(node_tmp) != NULL) {
+            tree_node_free(node_tmp);
+            node_tmp = tree_node_tmp(node_Transfert_encoding);
+            debug(node_Transfert_encoding,__LINE__);
+            if (OWS(node_tmp)!=NULL && transfert_coding(node_tmp) != NULL) {
                 move_childs(node_tmp, node_Transfert_encoding);
-                debug(node_tmp);
+                debug(node_Transfert_encoding,__LINE__);
             }
         } else {
             end = true;
         }
         tree_node_free(node_tmp);
-        debug(node_Transfert_encoding);
+        debug(node_Transfert_encoding,__LINE__);
     }
-    int p=0;
+    while(1);
     return node_Transfert_encoding;
 }
 
