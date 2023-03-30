@@ -1,0 +1,8 @@
+H / HTTP/4.5
+Transfer-Encoding:  					,  	  ,   		  ,  	, ,   , 			  deflate					
+Host: 	[FC77::C:0FA2]	
+Referer:   /
+Content-Type:	$K/fQ	 	  		   
+Host:[::06:9:F5:F:BF:51.36.28.62]	
+
+sþ‘¥

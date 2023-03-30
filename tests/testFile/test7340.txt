@@ -1,0 +1,7 @@
+. //?p3t~ HTTP/2.0
+Host:		  	 9.49.95.65:75	 
+Cookie:	YExpm=P4D%fV5C; G!N="HA=^n!}b"; buRG="m"; 2Ebw6=")s!"; 3wgF|hF%Ol=H:; D=v(8Xz; 1dyQM4LzF="I"; ^A=pdBz-ln7g~&D]k; *C=">C^j"; o#wsJm~x$jTre=""; %~=f%Ysq79:z 
+Connection:, ,,  ,	 , 		 			  	  	 	wX, 
+Host:		[::DE73:AE:9.146.46.202]  			
+Accept-Language:		,		 ,			 	       			  , 				 ,,   	 		h 				; 	 q=1.0	 	,  	 	q-A-Lu-4pD-5-a-0D-r	 ;	  q=0 	,	 				 G-bS-MbCq-18-qh 	,,*    
+

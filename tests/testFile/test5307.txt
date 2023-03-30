@@ -1,0 +1,13 @@
+q /? HTTP/1.4
+Accept:	  	
+Accept-Language: 		 	  ,	,   	 		 	,		 		, 	 , 				 		 		 		o-a	; 	q=0 			, 	  			 c-RmT9Ic-n-b-4D	,  	  	 g  	 	 	,		 FAOa-0V ;	q=0.,		 		t-V 		; 			 	q=0.
+Host:	 		  	 	26.228.29.1:
+Referer:	 Wnh://h:062216/2Q_O=uStOCXc/KE//X%F6Dl%31z%CA/j+/Z:/Q%65+T*jd/8(x/bAv'lg/,!~/N	
+Content-Type: 	   	aY/d				;	 7HizQl="\w";  		   	 bl!v8NsjIG="\ƒέε\Ρ\/kά\δ"  
+Referer:	 		 ZR5IVW://!y6:135		 	
+Accept-Language:	 ,					  	   	 	c-p  	; q=0 	 			 
+Accept-Language:,		 ,						, 	 		 ,	,  				,  	 	 	   , ,		 	b		; q=0.
+Content-Type:*l/ze
+Transfer-Encoding:+O			 	  ;  sn    =	    	  	"\V\Σ\»2]’\%\Έ"	 		;   WQX 	=y_Yr',						|lBtzY	 	 	 	   ;	  	  		  	80x =  "Ζ" ;w7Ty~HtV		  	="\«L",			
+Accept-Language:  		  		,	 	 		fmx-fcN	 ,  oeV-WW-R-a3YI-6TkOt1		;		 q=0 
+

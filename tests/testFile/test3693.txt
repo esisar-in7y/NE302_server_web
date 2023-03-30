@@ -1,0 +1,4 @@
+t /=%A2 HTTP/8.5
+Accept-Encoding:		  					
+
+¤³

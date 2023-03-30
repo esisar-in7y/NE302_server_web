@@ -1,0 +1,4 @@
+.f2*Vox //T=%CCS*%E2 HTTP/2.5
+Cookie: 	 		 	C4z|Ld=uNN=^; q~31="-Z"; w="QN" 		 	
+Host:[::B:6F2:C69C:5B5:8:44.250.5.151]:55 			  	 
+

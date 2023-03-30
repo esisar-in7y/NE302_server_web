@@ -1,1 +1,5 @@
-start4 c !m ?hDpVvCWtXUkR_.!fin
+y /// HTTP/1.1
+Connection:	  	, 		T	 ,	  		
+Accept-Charset:,, 	  ,	 ,   ,  	    	 	 	 		%GS3sC8hD  	 ,y;    	q=0.0	 	
+Host: 	  		  	     	 	 	  	 [3:0:E:08:2:5:250.211.254.236]
+

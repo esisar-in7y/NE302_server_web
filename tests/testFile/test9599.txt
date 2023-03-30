@@ -1,0 +1,12 @@
+dk /T HTTP/0.5
+Referer: //@[EF:7:D:4F3B:F:6938:5.215.188.19]:06?'%5F%F3j,,No%9B  	  					
+Connection:        ,,		L		 ,X		
+Referer:  		//@[::42:6.220.251.220]/H/~.%63/q/l,/R%7E?n? 
+Host: [1:C2:42:8:C8:FBD:4.1.249.5]:9
+Accept-Charset:|IDI 		;  	 		 			q=0 
+J:  /  		 			IŸ$]∆B		  â		 
+Transfer-Encoding:,  			 			  ,	  		 		  i, Rq	 	 ; 		 	G 	 ="‘"   	 			 		 	;	qn*f=      i 	 	 	  ;  		H=  "u∑"	 ; 		 		CZs+Sh`DyLsU'= "∫m\ª\=\ÁB\>\M\l\]\‡\P\œ\≤Ë"		 ;    	  		    $*X4iT2hiRv 	= 	"¸U\ìpˆ\5\7\ë";					   	Qt3TPdS = 	"\s"  ;	  			b  	     =GKWG,	 2J		  ;6F6+D60y="4\B\W\¸ã\´\CO" 					  	 	;l9l		 	  	="\¬\¯" ; 	 v'fPbW		  	 =		"¸\F\Õ";	gw   	 	= 	"Àv"		 
+Referer: ap+:/u 
+Accept-Charset: 	 , 		e|	;			   q=0,			  p&
+Accept:						M/*		 							;   	 		 			C#Y="≤Eæ@"	 		  	 	;  UiV3m="\6åR\t\Œ\Æ≥\+"	 	 	 	  		 	;	~="=" 		 	    ;		-~C=""   	  ; 	  q=1	 ,,	d/*		; 		k8oOD="\O="	;3B=""		 	 	  		;	 		 q=0	   , 		 		 0/NN7			;	4Jtw!="";	    +INHj=7Z 		;   7pOSu="w~\y¨2ûKy"		;x5-="\3\]"	   	 	;		5.hd=h; 		epfg="\ù\C" 	 		;2m="è∏jœ\“åc", 			 	X/L	 		;_A!="Ø"; 		 			t'="N"		 		;	 		7oX="\C\*¥åŸ’öª"	 ;	ogI="\«"; 	  Ks#wR=eo2	    	 ; 			e#!XK="\b\F"			  		 	;vprftYk=|x	 ;	 		q=0.  
+

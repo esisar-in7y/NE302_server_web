@@ -1,0 +1,4 @@
++ /H/70 HTTP/1.9
+Host: 		 		  	 				 [::907E:E:4C37:76:7D6:0:7]:0096   	  		  			 		 						 		 
+Content-Type:				       X/wQe  ;ruT76L="ø5" ;wm="\†";	0=""     		 		 			  					;	 S="Ì";  	 Mg=""	  ;P="ç"	;i="\´î"	 	;   C3blFVG="¾"  		 	
+

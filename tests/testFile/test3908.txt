@@ -1,0 +1,12 @@
+NfOEJk /T%F3Z%7D HTTP/8.0
+Transfer-Encoding:  	 		 3R|#s^6H 	 ;	 li	=""	
+Accept-Encoding:   	c	,			,	identity  		;q=0, 	
+Referer:e:Y~		 	
+Accept:  	
+Accept-Charset:	 ,	 	 	,,,,_,   	 y;    q=0	
+Connection:		,		 		  		 		   AbV0I.Q	
+*:	 ßÉ   		 	ù 	 
+Host: 		 [::21C0:9F0:0:3:25.6.74.42]:3987902	 
+Connection:		,				b  	
+M5: 	 Œü	o 
+

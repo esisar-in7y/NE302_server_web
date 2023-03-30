@@ -1,0 +1,6 @@
+. / HTTP/9.9
+Accept-Charset:   			, D ;		q=0			 	  	  	 	
+F:  	
+Accept-Charset:,   	  			 ,	, 	,	,  	u#		,
+Host:	[7::6:149.28.177.236]	  
+

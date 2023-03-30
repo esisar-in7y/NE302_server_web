@@ -1,0 +1,17 @@
+$UytnX /%BEP?Z HTTP/3.3
+Content-Length:	 29  	 
+Host:[2C:438::239.255.27.50]  		
+Host:[v17.iuj]:9	 	 		
+Accept-Encoding:			  D	;			q=0., 	  	  		,	 	 	, ,Uz		 	, ,		 		 	 	   	  			*   ;q=0.3,Xlb|h0	  	 ;  	  	 q=0.74 		
+Content-Length:259
+User-Agent: 	 U 		(ˆ\U)  (\®ª\B\Ú) 	 		
+za:  			   		  
+Transfer-Encoding: 5M6Y ;~uV 			  	  		  =  "\¢I\@"  ;		 		  U ="\Í¯" ,, 	 , 	 	  	 		 	  	 		Hu;		 c="±ƒú\ﬂ\^\("			 		; wz%eU0E3P7m   = "x\l"	 ; 		 	 	sny~Uv_t_9V			 = "\t À"  ; Uxx6y				  		="_\-";X 			= "\Î\A\ö \EÍõ\§ã" 	   ;	 K=""	 ;  	  		 2 	 		=	""	    	; 	 AXh7 =	 "c\¿\|\â"	 ,		 ,		lCU,   				 1U2aFT   	  ;    	 					 	r0j|yOqx 		 		 =	"",				 	 				,		,	wjCe+Z*G		 			   ;L0	 = sGm&T,, 		  	compress ,
+AVVcU:					*˙		  _[ 
+Host:				 %08		 
+Referer:FZi:,/t1%B1$A/9/?TGM%DF
+Accept-Language: 		,  ,		,	,  	  	   	,,  ,	Pg-7-BPv-Hhl6z  	 ,    ,	   	
+Host:[8::55C5:C:0]
+Accept-Charset: &R5 		 		  ,7yv  ;q=0  ,*		 	  	 ; 		   	 q=1.0			 	  ,	dlS  ; 	q=0	 	 ,			,,	oxgf 	  ; 	 	  			q=1.0	   	, $+2y2kB;	 q=1.
+Transfer-Encoding:	 	,  	  , 	  ,,		,  	  		 ,  	, 	 , 	 	deflate ,  	,	 	  	,_IU~#*SbhIjwC   	,,	 ,,A0xa	 	  	;	LOK2so^F		  	   		= "π\Mç"  				 ; 	    	94=OB	 ; zj*d'Q	= Z8h	 ;A=		 "˚" ;		       		O$nt		=	   	"" 	; 			WFY*g 		= 	"\ñ" 	 	     	 	 		   ,	 4WT4 	;	  	L%*Znix	= Hz, , 
+

@@ -1,0 +1,3 @@
+g /%CE~.DW?3K HTTP/9.4
+Host:	  	 [8:1A::79DB:6C:A59:CF7:E]:467			  		
+

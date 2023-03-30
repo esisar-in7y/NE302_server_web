@@ -1,0 +1,2 @@
+KNX /-%ADr*/c HTTP/3.0
+

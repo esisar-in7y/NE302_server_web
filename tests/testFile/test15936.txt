@@ -1,0 +1,5 @@
+rP /h//P/P HTTP/4.0
+Accept-Charset:		  		 		,	     		 ,	 ,L_k	; 		 q=1,Z	 		;	q=1.0	,,,  	     oB$;	  q=0 ,	  	,		 
+Host:	 	1.98.70.40
+Host: 		 _:3  
+

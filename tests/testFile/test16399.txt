@@ -1,0 +1,4 @@
+L /!//=%DF/g/taiI HTTP/1.2
+Accept:  			 	
+Referer: //8.7.230.12:069/// 
+

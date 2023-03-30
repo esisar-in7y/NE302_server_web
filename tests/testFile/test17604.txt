@@ -1,0 +1,13 @@
+LW.1GD8-F /r/%A7u/h/r/ HTTP/7.9
+Referer:BDqII6y://[::80B4:18.227.251.2]/!/
+Accept: 	uA74/*;  Hg=q		;  		q=0  	,		 ,  *'mF&p/g  ;	X6a!brEQ5=GAtYUzAN|q  	 	 ; F^="\=\î";  bC|="µ8\w"
+ikFyu-k:û³I		 
+Host:  245.215.64.255
+Referer:L://221.7.224.134/ 	 
+Host:42.1.9.254:6693315	 
+!~cS!.f_gE2^H91b$-tA:… 	 	H˜D    	9‘ 
+Accept-Charset:  ,, vw	;	 	 	q=1.000	   	,	, 		 	   	 U%3d			 	 	 	; q=1	 			 	   	,		q ;    q=1.00	 		 , 	 	 ,	 		m;	   		q=0   
+Transfer-Encoding:	 ,	,	     		  ,|#P,gzip,    	s,	,v1,		  
+Referer:cwj+J://[vC8048B14B81D1.LjPqca&5sc3]  
+Accept-Language:,   , ,Rak-V		;		q=0.     	 	    			  						 ,	   			,	,	  	   		 * 		 		
+

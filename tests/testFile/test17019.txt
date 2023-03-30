@@ -1,0 +1,9 @@
+Sx /%03 HTTP/6.2
+Referer:	  z3://[::F5CC:A:46.90.8.0]/U!5?Q
+Host:	[405::221.41.252.248]:4 
+Z7rxA:		 Ç		ù
+Expect: 100-continue	
+e: v∑ œï∏ 
+Accept-Charset:	 ,L ,,
+Accept-Encoding:	
+

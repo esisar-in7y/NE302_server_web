@@ -1,0 +1,7 @@
+`rp9w /U?M HTTP/1.1
+Accept-Language:				, 			  u 			;q=0., 	 	  *  		;	q=0  	, 		 			
+Accept-Charset:  ,G&, 		  	  ^5$|	  ,$JH; q=0.675
+Transfer-Encoding: ,  ,%		 ;	1 =""	,		C			 	  ;	-yY         		=  ""; 		 j  =		   	""	 ;Ne=	"\x";7  	  		 	=""; 	Yl=	    FR 	;FawgK8&	 =  "Å‚" 	 ,, 	 N  ;	 Ksome&$& =			"\ÀÂ¹\­\å¤"		 ;	 gKd= 				"\µ\/|"; DONSwe	     		   		=		 "¨\ÿ",    	 					  	 			,VT;'  		 	  ="ä";  6		=   	F   ,			 	 		 		,	    	K8a 		   ; 	POF.4   =  e3  	 ; Vw  	  		=				 "\	R):"		  	;  _'= 			"\¼´Ö"   ;	^=	  		   "\%º\´" ; Cf2^~=	  ""
+Host:	197.254.11.40:75957
+
+¸q

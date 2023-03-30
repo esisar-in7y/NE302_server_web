@@ -1,0 +1,6 @@
+S. /~/Uh$d HTTP/3.8
+Host: 		[4::A:215.254.10.250]:
+Host: 166.0.5.170
+Accept-Charset:  		  	 ,	,  		 m0PH.iR			 ,,	 		cIK	 ; 					  		 		   q=0.53 ,   			X4, V#;	q=1.		,5zs	    ; 					 	q=0. 	,	
+Transfer-Encoding:    ,	  	    	 deflate  	   
+

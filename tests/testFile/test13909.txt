@@ -1,0 +1,3 @@
+Osk / HTTP/0.2
+Host:	%26lR 		  
+

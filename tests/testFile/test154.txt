@@ -1,1 +1,4 @@
-startg	.CAU .dhAp_:QaLx-?200 O	:KT-?Qegcs ,?fin
+^ /L HTTP/4.1
+Expect:  100-continue 
+
+ZHçè

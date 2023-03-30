@@ -1,0 +1,4 @@
+.R.g /%1A8? HTTP/9.0
+Accept-Charset: _eF		, 		,	
+Host:99.26.8.193:9	  
+

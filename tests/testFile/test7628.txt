@@ -1,0 +1,4 @@
+bQ4 ///%BC/?%30 HTTP/1.5
+Accept-Charset:			  a  ,*		;    		q=0, ,
+
+>0що/

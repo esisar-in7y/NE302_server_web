@@ -1,1 +1,5 @@
-startAj-?085	XIKVA_!84 fin
+e /e/J HTTP/5.0
+Accept-Charset:,   	 ,		 ,		SC  ;      q=0.,	MVoxXY		;  	 		q=0	 , 	,	 	*;q=1 
+Expect:	 	100-continue		 
+Host:[v238.6] 	
+

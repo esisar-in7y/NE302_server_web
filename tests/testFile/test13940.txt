@@ -1,0 +1,7 @@
+RFT /j8i?Z HTTP/5.4
+User-Agent:	BH7VN  
+Cookie: 	M#={k 
+Host:6.228.206.50: 				 
+Transfer-Encoding:, 	 ,		    	, 		 	 	   vu	   	   ;		2z=	0 ; 	S0L=	  		""	;		  	 	H 		  	       ="D J\é\8Í®On\°\v\“Ò"	 	; 8  =  	   "\Ý\3" ;		3m^9Zg+ao6-=  	 		 	    "\!" 		 
+Host: 	 	[::5:E:255.201.0.71]  				
+

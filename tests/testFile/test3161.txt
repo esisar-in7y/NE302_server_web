@@ -1,0 +1,3 @@
+8WAzn /S HTTP/6.1
+Referer:	W://tas%DF%EF@106.7.251.196		
+

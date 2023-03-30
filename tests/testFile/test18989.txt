@@ -1,0 +1,6 @@
+bc /? HTTP/6.3
+Referer:   		 			 	n://6(k;X/3HJ?%8CA%82eq			 	  	  
+Host:	     [5BA:D::33:4:2.10.91.18]
+Host: 96.252.214.251:  
+Accept-Language:			 	, 	Q-j-S 	 ,myz-H				  , q-lpa				;		 		 q=0	 ,	 	, 		    o;q=1.0	   
+

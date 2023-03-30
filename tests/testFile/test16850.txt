@@ -1,0 +1,5 @@
+8e // HTTP/1.9
+Host: 223.253.97.2 
+Transfer-Encoding: 	i;	  	  	 e*L=				 		  	"", 	   	,    7e9	  	  				 	;TP="Š" ;		 	z	  			="U\[" ;   	 dq7.  	=""	 ;	oJLo14KN_=	   			 	  	 	   "\ñ~"			  	  			,
+Host: 	 	[::30C:6:C92C]:1     	 
+

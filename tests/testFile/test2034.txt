@@ -1,0 +1,8 @@
+zr /T HTTP/7.6
+Referer:QHQ3://[::2:512:9CDE]:7/D?%09 
+Transfer-Encoding:	 		 ,	ua8U ,		 	   
+Accept: 	 MQ*1CfXG/*; 	e6="›"	 	;&$rJ022k="\f\ç\”\G"		  			;	X=""	 ;		  BbS$="\ó\{jÛ\b";h=""   	; 	Sif="\Õ\CFýèu"		,	      ,g/s+k    					   	  	 ,  		,,Rtg/*, 		,		
+Host:	[vB2B58F853D09F.lnLU(*Y7zCu*9]	
+Content-Type:			-/5NQ$;t="" ;	tK4~=HbT  ;9W=' ;			wY="5"		 		
+Referer:  	    h6RI:/
+

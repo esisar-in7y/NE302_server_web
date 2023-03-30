@@ -1,0 +1,6 @@
+V /N%4E?f2n%46FH%8B%F8O HTTP/9.7
+Referer:Zi5://[v3E.1]		
+Connection:	,,,	,	 A7		,	  9	  	,	,
+Host: 	 253.33.0.252:28223 	
+Cookie:	 			 			 e|x=""; *=`t; H%="|/S"; n=pf; kC0gL=7
+

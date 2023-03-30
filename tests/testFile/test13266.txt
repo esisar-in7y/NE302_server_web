@@ -1,0 +1,16 @@
+&q8 /v!z%98U??F HTTP/3.3
+Host:201.79.19.28
+Referer: 	/S%39%41wI/./Bf%FC%A8iU;i1
+Accept-Charset:%-	   ,  		QDL9R ;q=1	,	ZKG ,sn 	 	 			
+Transfer-Encoding: 9gloB2;  	 k  	   				= 	G%YgDz`  ; R+Fp4lcuOr-_    	      			 	="" 	 	; 6G =			  		  		"‹ù" ,&a	  	; 	t|lz=*		 	  ; u 	=""				;			 bxl&V=	"\µ" ;      				 RMs 		 	 =  	""; 		 		     |N'M  		 	 ="\•è•\T\ÎS\}"		 ;  bEM3K0L&C	 	=	 	"$\ê"; o	 	  =	   ""	  , ,					 chunked	,  , 
+Accept-Language:			  ,	 		 		,			,,w			; q=0.		 
+User-Agent:	 	M	
+User-Agent:			1SYq 	 	_/Nj5_wJ%I1	 ()
+Connection: ,1zV	  ,	 B		  	 ,5X 	 			 	, 
+Transfer-Encoding:	,,   , ,		 	,		 qA ; 		 N~3XSzV	 		= 	""  		  ,  	L 			  , 	, 			
+Host:	 		28.220.234.9: 
+Host:		 [B::8:A:D:4:253.56.12.24]
+Accept: 
+Connection: ,	 3I
+Host:	  [::255.224.202.3]:7
+

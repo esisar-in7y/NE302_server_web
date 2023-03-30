@@ -1,1 +1,7 @@
-startclkw_:94-BAf	,,fin
+J /N HTTP/7.1
+Host:	 	[v720E6.W3T]:08723	 
+Connection: , 	  	 		 ,,  			 	 		,	 	3ntn,     	 	 ,  	 			 		+		   
+Accept-Language:	  	  	 ,    	  ,  	 , Ni-Q-lZOM-04-1-g-Xl-LsK-2	  ,		, 	XE			;	q=0.		 
+Host:		    		%D4L:75		
+Host:  60.208.34.219 	 
+

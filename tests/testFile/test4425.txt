@@ -1,0 +1,5 @@
+wg /k~3H/ HTTP/9.1
+Cookie:1KXd'="loZ1"; D=+8; Tn.gfF="vi_B"; X="-U"		  	 	 
+Host:[5::171.40.33.5]:512691   
+Accept: D/i	 	 ;		 4Y#rYK=""		    ;		w&="\тc\ж╬еpУ" ;	L`M5abD="Є\ув\Ї\╗╘\╫8╝\g\■▐╠	\)\х\z|\√";	EW=Y ;		 	 	 	 qE=4HN5;	  	 			S`r=0N ;HC`wfMCA="\B";	1=_AAZ	; rN#C.=""	; l=""				;		Hq=7c.TLt 	   		;	 	'u=""			  ;ev1lX%AP#=NaLxj ;  				 	  	     	 M&Gd|2H3lV4="\Ю\v└уз\_Ч\╣\пZщ\a"     		  	;q=1	, 	,	 ,  ,		,B./*	;   	 	  6nOe="\°Ь┼Я0\;\=\╞эO"	  ;	Tg=`*;  	 5Jx5-rR2c=DOA-	      ;RkJ="С}\▌\╩_\Я╝\'▀\№┌\\╣А";85b="Б√g\q~" , 			 
+

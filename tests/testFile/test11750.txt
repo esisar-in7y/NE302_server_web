@@ -1,0 +1,6 @@
+5 /P?2*Gx%25=dt HTTP/7.2
+Host:  	  		 				249.223.234.68:57
+Transfer-Encoding:	   p`&x'
+Accept: 
+Host:	[v10BDC.Dv]:6
+

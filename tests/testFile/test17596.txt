@@ -1,0 +1,4 @@
+i /x HTTP/3.2
+User-Agent: 		 f/crA 	 ((\Æ\ý\Å\T)\aN(:\ç)‹)
+Accept-Charset:_*	 ,			  	3		
+

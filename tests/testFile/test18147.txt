@@ -1,0 +1,4 @@
+s //GX%1B/6Bz HTTP/3.5
+Host: 		[::198.253.8.96]:74	 
+Accept-Encoding:j
+

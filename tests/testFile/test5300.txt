@@ -1,0 +1,4 @@
+^ /%56%E7%4Fm5t/G/)+P HTTP/0.7
+Accept-Charset: ,		 	 WW		; 		q=0
+Host:	 
+

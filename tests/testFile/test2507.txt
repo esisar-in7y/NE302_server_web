@@ -1,0 +1,5 @@
+R3 /&C(?L HTTP/8.0
+Accept-Charset:,,u			 ;	q=0 		,		,MUN6			 	  ;			 	q=1.		,	 ,		  	`   ,		, 	 , 	,,,		 	Uv	   
+Transfer-Encoding: 		,	, ,  	 , 	, 			 3;	9YG0yyR=	 	 		 "\µ\—\¬" 	;		     	   			 		 y 				=		|SIm
+Accept:		7eU/*   ; 	q=0.43	 	,	 	uD/* 	;   ~If2e="\w"; c7DsN+6G="" 		;fD4eq="\Ú2\ñL\A\h\¥è\Ü\ûV/";							 	q=1
+
