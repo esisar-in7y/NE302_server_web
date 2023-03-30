@@ -352,7 +352,6 @@ tree_node* connection_option(tree_node* parent) {
 }
 // HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
 tree_node* HEXDIG(tree_node* parent) {
-    //DEBIUG 3
     char valids[] = "ABCDEF";
     tree_node* node_digit = tree_node_add_node(parent, "HEXDIG");
     debug(node_digit,__LINE__);
@@ -395,8 +394,10 @@ tree_node* dec_octet(tree_node* parent) {
     tree_node* node_tmp = tree_node_tmp(node_dec_octet);
     if (check_sa(node_tmp, "2")) {
         if (check_sa(node_tmp, "5")) {
+            debug(node_tmp,__LINE__);
             index = get_start(parent);
             if (parent->string[index] >= '0' && parent->string[index] <= '5') {
+                debug(node_tmp,__LINE__);
                 tree_node_add_child(node_tmp, parent->string, index, 1, "0-5");
                 move_childs(node_tmp, node_dec_octet);
                 tree_node_free(node_tmp);
@@ -653,7 +654,7 @@ tree_node* Expect(tree_node* parent) {
 // IPv4address   = dec_octet "." dec_octet "." dec_octet "." dec_octet
 tree_node* IPv4address(tree_node* parent) {
     tree_node* node_IPv4address = tree_node_add_node(parent, "IPv4address");
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 4; i++) {
         if (dec_octet(node_IPv4address) == NULL ||
             check_sa(node_IPv4address, ".") == NULL) {
             tree_node_free(node_IPv4address);
@@ -854,17 +855,19 @@ tree_node* IP_literal(tree_node* parent) {
 }
 // cookie_string = cookie_pair *( ";" SP cookie_pair )
 tree_node* cookie_string(tree_node* parent) {
+    //DEBUG 0
     tree_node* node_cookie_string = tree_node_add_node(parent, "cookie_string");
     if (cookie_pair(node_cookie_string) == NULL) {
         tree_node_free(node_cookie_string);
         return NULL;
     }
     bool end = false;
+    debug(node_cookie_string,__LINE__);
     while (!end) {
         tree_node* node_tmp = tree_node_tmp(node_cookie_string);
         if (check_sa(node_tmp, ";") &&
-            SP(node_cookie_string) &&
-            cookie_pair(node_cookie_string)) {
+            SP(node_tmp) &&
+            cookie_pair(node_tmp)) {
             move_childs(node_tmp, node_cookie_string);
         } else {
             end = true;
@@ -1203,7 +1206,6 @@ tree_node* HTTP_version(tree_node* parent) {
 }
 // absolute_path = 1*( "/" segment )
 tree_node* absolute_path(tree_node* parent) {
-    //DEBUG 1
     tree_node* node_absolute_path = tree_node_add_node(parent, "absolute_path");
     if (check_sa(node_absolute_path, "/") == NULL || segment(node_absolute_path) == NULL) {
         tree_node_free(node_absolute_path);
@@ -1230,7 +1232,6 @@ tree_node* origin_form(tree_node* parent) {
 }
 // request_target = origin_form
 tree_node* request_target(tree_node* parent) {
-    //DEBUG 0
     tree_node* node_request_target = tree_node_add_node(parent, "request_target");
     if (origin_form(node_request_target) == NULL) {
         tree_node_free(node_request_target);

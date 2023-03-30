@@ -3,6 +3,7 @@
 total=0
 good=0
 touch "bad.o"
+echo "" > "bad.o"
 for test in tests/testFile/*; do
     if [ -f "$test" ]; then
         ./bin/http_parse $test mot > /dev/null 2>&1
