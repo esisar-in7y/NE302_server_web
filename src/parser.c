@@ -17,7 +17,7 @@ int parseur(char* req, int bytes) {
 #define RESET   "\033[0m"
 void debug(tree_node* node_tmp) {
     int middle=node_tmp->start_string+node_tmp->length_string;
-    printf(">%s|",tree_node_string[node_tmp->type]);
+    printf(">%-20s|",tree_node_string[node_tmp->type]);
     print_sub_str(node_tmp->string, 0, middle);
     printf(RED);
     print_sub_str(node_tmp->string, middle, strlen(node_tmp->string)-middle);
@@ -1126,6 +1126,7 @@ tree_node* transfert_coding(tree_node* parent) {
         check_sa(node_transfert_coding, "deflate") ||
         check_sa(node_transfert_coding, "gzip") ||
         transfer_extension(node_transfert_coding)) {
+        debug(node_transfert_coding);
         return node_transfert_coding;
     }
     tree_node_free(node_transfert_coding);
@@ -1219,7 +1220,8 @@ tree_node* Transfert_encoding(tree_node* parent) {
     tree_node* node_tmp=NULL;
     while (!end) {
         node_tmp = tree_node_tmp(node_Transfert_encoding);
-        if (check_sa(node_tmp, ",") != NULL && OWS(node_tmp) != NULL) {
+        if (check_sa(node_tmp, ",") != NULL) {
+            OWS(node_tmp);
             move_childs(node_tmp, node_Transfert_encoding);
         } else {
             end = true;
@@ -1234,10 +1236,12 @@ tree_node* Transfert_encoding(tree_node* parent) {
     end = false;
     while (!end) {
         node_tmp = tree_node_tmp(node_Transfert_encoding);
-        if (OWS(node_tmp) != NULL && check_sa(node_tmp, ",") != NULL) {
+        OWS(node_tmp);
+        if (check_sa(node_tmp, ",") != NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
             debug(node_tmp);
-            if (OWS(node_tmp) != NULL && transfert_coding(node_tmp) != NULL) {
+            OWS(node_tmp);
+            if (transfert_coding(node_tmp) != NULL) {
                 move_childs(node_tmp, node_Transfert_encoding);
                 debug(node_tmp);
             }
