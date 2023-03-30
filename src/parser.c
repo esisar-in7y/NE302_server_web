@@ -654,11 +654,12 @@ tree_node* IPv4address(tree_node* parent) {
 // h16           = 1*4HEXDIG
 tree_node* h16(tree_node* parent) {
     tree_node* node_h16 = tree_node_add_node(parent, "h16");
-    for (int i = 0; i < 4; i++) {
-        if (HEXDIG(node_h16) == NULL) {
-            tree_node_free(node_h16);
-            return NULL;
-        }
+    if(HEXDIG(node_h16) == NULL) {
+        tree_node_free(node_h16);
+        return NULL;
+    }
+    for (int i = 1; i < 4; i++) {
+        HEXDIG(node_h16)
     }
     return node_h16;
 }
@@ -1249,7 +1250,6 @@ tree_node* HTTP_message(tree_node* parent) {
         if (header_field(node_tmp) != NULL) {
             tree_node_print_all(node_tmp, 0);
             tree_node_print(node_tmp, 0);
-            printf("YESUISLA\n");
             if (CRLF(node_tmp) != NULL) {
                 move_childs(node_tmp, node_HTTP_message);
             } else {
