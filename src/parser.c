@@ -659,7 +659,7 @@ tree_node* h16(tree_node* parent) {
         return NULL;
     }
     for (int i = 1; i < 4; i++) {
-        HEXDIG(node_h16)
+        HEXDIG(node_h16);
     }
     return node_h16;
 }
