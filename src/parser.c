@@ -17,7 +17,7 @@ int parseur(char* req, int bytes) {
 #define RESET   "\033[0m"
 void debug(tree_node* node_tmp) {
     int middle=node_tmp->start_string+node_tmp->length_string;
-    printf("> |" );
+    printf(">%s|",tree_node_string[node_tmp->type]);
     print_sub_str(node_tmp->string, 0, middle);
     printf(RED);
     print_sub_str(node_tmp->string, middle, strlen(node_tmp->string)-middle);
@@ -1224,8 +1224,7 @@ tree_node* Transfert_encoding(tree_node* parent) {
         } else {
             end = true;
         }
-        printf("> |" );
-        print_sub_str(node_tmp->string, 0, node_tmp->start_string+node_tmp->length_string);
+        debug(node_Transfert_encoding);
         tree_node_free(node_tmp);
     }
     if (transfert_coding(node_Transfert_encoding) == NULL) {
@@ -1248,6 +1247,7 @@ tree_node* Transfert_encoding(tree_node* parent) {
         tree_node_free(node_tmp);
         debug(node_Transfert_encoding);
     }
+    int p=0;
     return node_Transfert_encoding;
 }
 

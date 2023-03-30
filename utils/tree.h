@@ -144,6 +144,7 @@ __attribute__((unused)) static char *tree_node_string[] = {
     "Transfer-Encoding",
     "transfert_coding",
     "Transfert-encoding:",
+    "Transfert_encoding",
     "Transfer_Encoding_header",
     "transfer_extension",
     "transfer_parameter",
