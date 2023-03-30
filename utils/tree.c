@@ -210,7 +210,7 @@ void tree_node_print(tree_node *node, uint16_t level)
 
     printf("[%d:%s] = \"", level, tree_node_string[node->type]);
     print_sub_str(node->string, node->start_string, node->length_string);
-    printf("\" -> |%d|=%d\n",node->start_string,node->length_string);
+    printf("\"\n");
 }
 
 // print all nodes in tree with format:
