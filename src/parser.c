@@ -686,9 +686,12 @@ tree_node* ls32(tree_node* parent) {
 // TODO good luck les mecs
 // c'est moa ki sui quasé ou cé ip6 ki est quasé ?
 // 8 morts 6 blessés je pète ma bière ma luubellule
+
+// Can you correct the following code ? I'm not sure it's correct
 tree_node* IPv6address(tree_node* parent) {
     tree_node* node_IPv6address = tree_node_add_node(parent, "IPv6address");
     int count = 0;
+
     while (check_sa(node_IPv6address, ":")) {
         if (h16(node_IPv6address) == NULL || check_sa(node_IPv6address, ":") == NULL) {
             tree_node_free(node_IPv6address);
@@ -696,38 +699,39 @@ tree_node* IPv6address(tree_node* parent) {
         }
         count++;
     }
+
     if (count > 8) {
         tree_node_free(node_IPv6address);
         return NULL;
     }
-    if (count == 6) {
+
+    if (count == 8) {
         if (ls32(node_IPv6address) == NULL || check_sa(node_IPv6address, "::") == NULL) {
             tree_node_free(node_IPv6address);
             return NULL;
         }
         return node_IPv6address;
     }
+
     if (count == 0) {
         if (check_sa(node_IPv6address, "::") == NULL) {
             tree_node_free(node_IPv6address);
             return NULL;
         }
     }
+
     for (int i = 0; i < 5 - count; i++) {
-        if (h16(node_IPv6address) == NULL) {
-            tree_node_free(node_IPv6address);
-            return NULL;
-        }
-        if (check_sa(node_IPv6address, ":") == NULL) {
+        if (h16(node_IPv6address) == NULL || check_sa(node_IPv6address, ":") == NULL) {
             tree_node_free(node_IPv6address);
             return NULL;
         }
     }
-    if (check_sa(node_IPv6address, "::") == NULL ||
-        ls32(node_IPv6address) == NULL) {
+
+    if (check_sa(node_IPv6address, "::") == NULL || ls32(node_IPv6address) == NULL) {
         tree_node_free(node_IPv6address);
         return NULL;
     }
+
     return node_IPv6address;
 }
 
