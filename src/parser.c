@@ -249,8 +249,9 @@ tree_node* token(tree_node* parent) {
         tree_node_free(node_token);
         return NULL;
     }
-    while (tchar(node_token) != NULL)
-        ;
+    while (tchar(node_token) != NULL){
+        debug(node_token,__LINE__);
+    }
     return node_token;
 }
 
@@ -622,9 +623,7 @@ tree_node* Host(tree_node* parent) {
 // OWS = *( SP / HTAB )
 tree_node* OWS(tree_node* parent) {
     tree_node* node_OWS = tree_node_add_node(parent, "OWS");
-    while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL){
-        printf("childs:%d\n",node_OWS->childs_count);
-    }
+    while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL);
     debug(node_OWS,__LINE__);
     return node_OWS;
 }
@@ -787,16 +786,18 @@ tree_node* DQUOTE(tree_node* parent) {
 // qdtext = HTAB / SP / "!" / %x23-5B / %x5D-7E / obs_text
 tree_node* qdtext(tree_node* parent) {
     tree_node* node_qdtext = tree_node_add_node(parent, "qdtext");
+    debug(node_qdtext,__LINE__);
     if (HTAB(node_qdtext) ||
         SP(node_qdtext) ||
-        obs_text(node_qdtext)) {
-        return node_qdtext;
-    }
-    if (check_sa(node_qdtext, "!")) {
+        obs_text(node_qdtext) ||
+        check_sa(node_qdtext, "!")) {
         return node_qdtext;
     }
     int index = get_start(parent);
+    //x03->x7e sauf le "\"
+    printf("%x|%c\n",parent->string[index],parent->string[index]);
     if (parent->string[index] >= 0x23 && parent->string[index] <= 0x5B) {
+        //sensé passer ici
         tree_node_add_child(node_qdtext, parent->string, index, 1, "%x23-5B");
         return node_qdtext;
     }
@@ -903,12 +904,36 @@ tree_node* quoted_string(tree_node* parent) {
         tree_node_free(node_quoted_string);
         return NULL;
     }
-    while (qdtext(node_quoted_string) != NULL || quoted_pair(node_quoted_string) != NULL)
-        ;
+    //j'essaie de taper dans Discord mais ce con me switch de fenêtre enleve le mode follow
+    // tu va dans la tab live share et si tu vois un point full color tu clique dessus dans participant
+    // putain j'ai enlevé le mode follow keski me fait chier le debugger ptdr il prends tout les curseurs ce con
+    // ptdr
+    // on se déco pour règler ça ? non c'est juste qu'ils ont codé aec le cul
+    // et du coup la solution ? la prière 
+    // amen mes frères ah c'est bon cetait une option planquéeéeée 
+    // gah lesgo emndcorre un coup de giorgi
+    // stop ecrire
+    debug(node_quoted_string,__LINE__);
+    bool end=false;
+    while (!end)
+    {
+        if (qdtext(node_quoted_string) != NULL){
+            debug(node_quoted_string,__LINE__);
+        } else if(quoted_pair(node_quoted_string) != NULL){
+            debug(node_quoted_string,__LINE__);
+        }else{
+            end=true;
+            debug(node_quoted_string,__LINE__);
+        }
+    }
+    //azy du coup là ça en est où exactement ? il a juste skip le tru d'audessus et c'est pas normal chelou
+    // while (qdtext(node_quoted_string) != NULL || quoted_pair(node_quoted_string) != NULL)
+    debug(node_quoted_string,__LINE__);
     if (DQUOTE(node_quoted_string) == NULL) {
         tree_node_free(node_quoted_string);
         return NULL;
     }
+    debug(node_quoted_string,__LINE__);
     return node_quoted_string;
 }
 // parameter = token "=" ( token / quoted_string )
@@ -1048,40 +1073,58 @@ tree_node* Connection_header(tree_node* parent) {
 // BWS = *( SP / HTAB )
 tree_node* BWS(tree_node* parent) {
     tree_node* node_BWS = tree_node_add_node(parent, "BWS");
-    while (check_sa(node_BWS, " ") || check_sa(node_BWS, "\t"))
-        ;
+    while (check_sa(node_BWS, " ") || check_sa(node_BWS, "\t"));
     return node_BWS;
 }
 // transfer_parameter = token BWS "=" BWS ( token / quoted_string )
-tree_node* transfer_parameter(tree_node* parent) {
-    tree_node* node_transfer_parameter = tree_node_add_node(parent, "transfer_parameter");
+tree_node *transfer_parameter(tree_node *parent)
+{
+    tree_node *node_transfer_parameter = tree_node_add_node(parent, "transfer_parameter");
     if (
         token(node_transfer_parameter) != NULL &&
         BWS(node_transfer_parameter) != NULL &&
         check_sa(node_transfer_parameter, "=") != NULL &&
         BWS(node_transfer_parameter) != NULL &&
-        (token(node_transfer_parameter) != NULL ||
-         quoted_string(node_transfer_parameter) != NULL)) {
+        (
+            token(node_transfer_parameter) != NULL ||
+            quoted_string(node_transfer_parameter) != NULL
+        )
+    )
+    {
         return node_transfer_parameter;
     }
     tree_node_free(node_transfer_parameter);
     return NULL;
 }
 
-// transfer_extension = token [ "=" ( token / quoted_string ) ]
+// transfer-extension = token * ( OWS ";" OWS transfer-parameter )
 tree_node* transfer_extension(tree_node* parent) {
     tree_node* node_transfer_extension = tree_node_add_node(parent, "transfer_extension");
+    tree_node *node_tmp;
+    bool end = false;
     if (token(node_transfer_extension) == NULL) {
         tree_node_free(node_transfer_extension);
         return NULL;
     }
-    tree_node* node_tmp = tree_node_tmp(node_transfer_extension);
-    if (
-        check_sa(node_tmp, "=") != NULL &&
-        (token(node_tmp) != NULL || quoted_string(node_tmp) != NULL)) {
-        move_childs(node_tmp, node_transfer_extension);
+    while (!end){
+        node_tmp = tree_node_tmp(node_transfer_extension);
+        OWS(node_tmp);
+        if(check_sa(node_tmp, ";") != NULL && OWS(node_tmp)!=NULL){
+            if(transfer_parameter(node_tmp)!=NULL){
+                move_childs(node_tmp, node_transfer_extension);
+            }else{
+                end=true;
+            }
+        // if (OWS(node_tmp)!=NULL && 
+        //     check_sa(node_tmp, ";") != NULL &&
+        //     OWS(node_tmp)!=NULL &&
+        //     transfer_parameter(node_tmp)!=NULL){
+        //     move_childs(node_tmp, node_transfer_extension);
+        }else{
+            end=true;
+        }
+        tree_node_free(node_tmp);
     }
-    tree_node_free(node_tmp);
     return node_transfer_extension;
 }
 // Transfer_Encoding_header = "Transfer-Encoding" ":" OWS Transfer_Encoding OWS
@@ -1124,11 +1167,11 @@ tree_node* header_field(tree_node* parent) {
 tree_node* transfert_coding(tree_node* parent) {
     tree_node* node_transfert_coding = tree_node_add_node(parent, "transfert_coding");
     debug(node_transfert_coding,__LINE__);
-    if (check_sa(node_transfert_coding, "chunked") ||
-        check_sa(node_transfert_coding, "compress") ||
-        check_sa(node_transfert_coding, "deflate") ||
-        check_sa(node_transfert_coding, "gzip") ||
-        transfer_extension(node_transfert_coding)) {
+    if (check_sa(node_transfert_coding, "chunked")!=NULL ||
+        check_sa(node_transfert_coding, "compress")!=NULL ||
+        check_sa(node_transfert_coding, "deflate")!=NULL ||
+        check_sa(node_transfert_coding, "gzip")!=NULL ||
+        transfer_extension(node_transfert_coding)!=NULL ) {
         debug(node_transfert_coding,__LINE__);
         return node_transfert_coding;
     }
@@ -1221,11 +1264,11 @@ tree_node* Transfert_encoding(tree_node* parent) {
     tree_node* node_Transfert_encoding = tree_node_add_node(parent, "Transfert_encoding");
     bool end = false;
     tree_node* node_tmp=NULL;
-    while (!end) {
+    while (!end) {//:)
         node_tmp = tree_node_tmp(node_Transfert_encoding);
         if (check_sa(node_tmp, ",") != NULL && OWS(node_tmp)!=NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
-        } else {
+        } else {//faut penser à remove les comments non tkt ça fait partie du lore le  fameux lore du projet de ne juste a tous les chercher trkl
             end = true;
         }
         debug(node_Transfert_encoding,__LINE__);
@@ -1252,7 +1295,6 @@ tree_node* Transfert_encoding(tree_node* parent) {
         tree_node_free(node_tmp);
         debug(node_Transfert_encoding,__LINE__);
     }
-    while(1);
     return node_Transfert_encoding;
 }
 

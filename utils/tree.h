@@ -226,7 +226,7 @@ typedef struct _tree_node {
     uint16_t start_string;
     uint16_t length_string;
     uint16_t childs_count;
-    char *string;
+    unsigned char *string;
     // tree_node_type type;
     int type;
     struct _tree_node *parent;
@@ -235,12 +235,12 @@ typedef struct _tree_node {
 // global variable
 __attribute__((unused)) static tree_node *rootTree = NULL;
 
-tree_node *tree_node_init(char *string);
-tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char *type);        // tree_node_type type
-tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, const char *type);  // tree_node_type type
-tree_node *tree_node_get_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string);
+tree_node *tree_node_init(unsigned char *string);
+tree_node *tree_node_new(unsigned char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char *type);        // tree_node_type type
+tree_node *tree_node_add_child(tree_node *parent, unsigned char *string, uint16_t start_string, uint16_t length_string, const char *type);  // tree_node_type type
+tree_node *tree_node_get_child(tree_node *parent,  unsigned char *string, uint16_t start_string, uint16_t length_string);
 tree_node *tree_node_get_child_by_index(tree_node *node, uint16_t index);
-tree_node *tree_node_get_child_by_string(tree_node *node, char *string);
+// tree_node *tree_node_get_child_by_string(tree_node *node, char *string);
 void tree_node_add_child_node(tree_node *parent, tree_node *node);
 void tree_node_free(tree_node *node);
 void tree_node_print(tree_node *node, uint16_t level);

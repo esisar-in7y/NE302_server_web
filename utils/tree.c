@@ -12,7 +12,7 @@ int get_type_index(const char *string)
     return -1;
 }
 
-tree_node *tree_node_init(char *string)
+tree_node *tree_node_init(unsigned char *string)
 {
     tree_node *node = NULL;
     #if ABNF==0
@@ -26,7 +26,7 @@ tree_node *tree_node_init(char *string)
 tree_node *tree_node_tmp(tree_node *parent){
     return tree_node_new(parent->string, get_start(parent), 0, NULL, "tmp");
 }
-tree_node *tree_node_new(char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char* type) //tree_node_type type)
+tree_node *tree_node_new( unsigned char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char* type) //tree_node_type type)
 {
     tree_node *node = (tree_node *)malloc(sizeof(tree_node));
     node->string = string;
@@ -81,7 +81,7 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node)
     // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return;
 }
-tree_node *tree_node_add_child(tree_node *parent, char *string, uint16_t start_string, uint16_t length_string, const char* type) //tree_node_type type)
+tree_node *tree_node_add_child(tree_node *parent,  unsigned char *string, uint16_t start_string, uint16_t length_string, const char* type) //tree_node_type type)
 {
 
     parent->childs_count++;
@@ -115,17 +115,17 @@ tree_node *tree_node_get_child_by_index(tree_node *node, uint16_t index)
     return NULL;
 }
 
-tree_node *tree_node_get_child_by_string(tree_node *node, char *string)
-{
-    for (uint16_t i = 0; i < node->childs_count; i++)
-    {
-        if (strcmp(node->childs[i]->string, string) == 0)
-        {
-            return node->childs[i];
-        }
-    }
-    return NULL;
-}
+// tree_node *tree_node_get_child_by_string(tree_node *node, char *string)
+// {
+//     for (uint16_t i = 0; i < node->childs_count; i++)
+//     {
+//         if (strcmp(node->childs[i]->string, string) == 0)
+//         {
+//             return node->childs[i];
+//         }
+//     }
+//     return NULL;
+// }
 int find_node_index(tree_node *node)
 {
     if (node->parent == NULL)

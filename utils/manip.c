@@ -12,7 +12,7 @@ char *copy_sub_str(const char *source, uint16_t start, uint16_t length) {
     return buffer;
 }
 
-void print_sub_str(char *string, int start_index, int length) {
+void print_sub_str( unsigned char *string, int start_index, int length) {
     for (int i = start_index; i < start_index + length && string[i] != '\0'; i++) {
         switch (string[i])
         {
