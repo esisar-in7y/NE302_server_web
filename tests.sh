@@ -2,6 +2,7 @@
 
 total=0
 good=0
+touch "bad.o"
 for test in tests/testFile/*; do
     if [ -f "$test" ]; then
         ./bin/http_parse $test mot > /dev/null 2>&1
@@ -11,6 +12,7 @@ for test in tests/testFile/*; do
             # ./bin/http_parse $test mot
             echo "./bin/http_parse $test mot"
             echo "$test    Not Valid"
+            echo "$test" >> "bad.o"
         fi
         total=$(($total+1))
     fi

@@ -352,14 +352,18 @@ tree_node* connection_option(tree_node* parent) {
 }
 // HEXDIG = DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
 tree_node* HEXDIG(tree_node* parent) {
+    //DEBIUG 3
     char valids[] = "ABCDEF";
     tree_node* node_digit = tree_node_add_node(parent, "HEXDIG");
+    debug(node_digit,__LINE__);
     if (DIGIT(node_digit)) {
+        debug(node_digit,__LINE__);
         return node_digit;
     }
     int index = get_start(parent);
     if (strchr(valids, parent->string[index]) != NULL) {
-        node_digit->length_string = 1;
+        tree_node_add_child(node_digit, node_digit->string, index, 1, "HEXALPHA");
+        debug(node_digit,__LINE__);
         return node_digit;
     }
     tree_node_free(node_digit);
@@ -390,9 +394,8 @@ tree_node* dec_octet(tree_node* parent) {
     tree_node* node_dec_octet = tree_node_add_node(parent, "dec_octet");
     tree_node* node_tmp = tree_node_tmp(node_dec_octet);
     if (check_sa(node_tmp, "2")) {
-        index++;
         if (check_sa(node_tmp, "5")) {
-            index++;
+            index = get_start(parent);
             if (parent->string[index] >= '0' && parent->string[index] <= '5') {
                 tree_node_add_child(node_tmp, parent->string, index, 1, "0-5");
                 move_childs(node_tmp, node_dec_octet);
@@ -401,6 +404,7 @@ tree_node* dec_octet(tree_node* parent) {
             }
             tree_node_free(node_tmp);
         }
+        index = get_start(parent);
         if (parent->string[index] >= '0' && parent->string[index] <= '4') {
             tree_node_add_child(node_tmp, parent->string, index, 1, "0-4");
             if (DIGIT(node_tmp) != NULL) {
@@ -413,9 +417,7 @@ tree_node* dec_octet(tree_node* parent) {
         tree_node_free(node_tmp);
     }
     node_tmp = tree_node_tmp(node_dec_octet);
-    index = get_start(parent);
     if (check_sa(node_tmp, "1")) {
-        index++;
         if (DIGIT(node_tmp) != NULL && DIGIT(node_tmp) != NULL) {
             move_childs(node_tmp, node_dec_octet);
             tree_node_free(node_tmp);
@@ -510,6 +512,7 @@ tree_node* pct_encoded(tree_node* parent) {
 // pchar = unreserved / pct_encoded / sub_delims / ":" / "@"
 tree_node* pchar(tree_node* parent) {
     tree_node* node_pchar = tree_node_add_node(parent, "pchar");
+    debug(node_pchar,__LINE__);
     if (unreserved(node_pchar) != NULL ||
         pct_encoded(node_pchar) != NULL ||
         sub_delims(node_pchar) != NULL ||
@@ -524,8 +527,7 @@ tree_node* pchar(tree_node* parent) {
 // segment = *pchar
 tree_node* segment(tree_node* parent) {
     tree_node* node_segment = tree_node_add_node(parent, "segment");
-    while (pchar(node_segment) != NULL)
-        ;
+    while (pchar(node_segment) != NULL);
     return node_segment;
 }
 
@@ -534,8 +536,7 @@ tree_node* query(tree_node* parent) {
     tree_node* node_query = tree_node_add_node(parent, "query");
     while (pchar(node_query) != NULL ||
            check_sa(node_query, "/") ||
-           check_sa(node_query, "?"))
-        ;
+           check_sa(node_query, "?"));
     return node_query;
 }
 
@@ -1202,13 +1203,13 @@ tree_node* HTTP_version(tree_node* parent) {
 }
 // absolute_path = 1*( "/" segment )
 tree_node* absolute_path(tree_node* parent) {
+    //DEBUG 1
     tree_node* node_absolute_path = tree_node_add_node(parent, "absolute_path");
     if (check_sa(node_absolute_path, "/") == NULL || segment(node_absolute_path) == NULL) {
         tree_node_free(node_absolute_path);
         return NULL;
     }
-    while (check_sa(node_absolute_path, "/") && segment(node_absolute_path) != NULL)
-        ;
+    while (check_sa(node_absolute_path, "/") && segment(node_absolute_path) != NULL);
     return node_absolute_path;
 }
 
@@ -1219,8 +1220,9 @@ tree_node* origin_form(tree_node* parent) {
         tree_node_free(node_origin_form);
         return NULL;
     }
+    debug(node_origin_form,__LINE__);
     tree_node* node_tmp = tree_node_tmp(node_origin_form);
-    if (check_sa(node_tmp, "?") && query(node_tmp)) {
+    if (check_sa(node_tmp, "?")!=NULL && query(node_tmp)!=NULL) {
         move_childs(node_tmp, node_origin_form);
     }
     tree_node_free(node_tmp);
@@ -1228,6 +1230,7 @@ tree_node* origin_form(tree_node* parent) {
 }
 // request_target = origin_form
 tree_node* request_target(tree_node* parent) {
+    //DEBUG 0
     tree_node* node_request_target = tree_node_add_node(parent, "request_target");
     if (origin_form(node_request_target) == NULL) {
         tree_node_free(node_request_target);
