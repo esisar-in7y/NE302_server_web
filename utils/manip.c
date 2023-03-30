@@ -25,6 +25,9 @@ void print_sub_str(char *string, int start_index, int length) {
         case '\t':
             printf("\\T");
             break;
+        case ' ':
+            printf("\\S");
+            break;
         default:
             printf("%c", string[i]);
             break;

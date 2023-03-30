@@ -13,6 +13,16 @@ int parseur(char* req, int bytes) {
     }
     return 1;
 }
+#define RED     "\033[31m"      /* Red */
+#define RESET   "\033[0m"
+void debug(tree_node* node_tmp) {
+    int middle=node_tmp->start_string+node_tmp->length_string;
+    printf("> |" );
+    print_sub_str(node_tmp->string, 0, middle);
+    printf(RED);
+    print_sub_str(node_tmp->string, middle, strlen(node_tmp->string)-middle);
+    printf("\n");
+}
 // nombre = 1*DIGIT
 tree_node* validate_number(tree_node* parent) {
     int index = get_start(parent);
@@ -1202,18 +1212,20 @@ tree_node* start_line(tree_node* parent) {
     }
     return node_start_line;
 }
-// Transfert_encoding = *( "," OWS ) transfer_coding *( OWS "," [ OWS transfer_coding ] )
+// Transfert_encoding = *( "," OWS ) transfert_coding *( OWS "," [ OWS transfert_coding ] )
 tree_node* Transfert_encoding(tree_node* parent) {
     tree_node* node_Transfert_encoding = tree_node_add_node(parent, "Transfert_encoding");
     bool end = false;
-    tree_node* node_tmp;
+    tree_node* node_tmp=NULL;
     while (!end) {
-        node_tmp = tree_node_new(parent->string, get_start(node_Transfert_encoding), 1, NULL, "tmp");
+        node_tmp = tree_node_tmp(node_Transfert_encoding);
         if (check_sa(node_tmp, ",") != NULL && OWS(node_tmp) != NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
         } else {
             end = true;
         }
+        printf("> |" );
+        print_sub_str(node_tmp->string, 0, node_tmp->start_string+node_tmp->length_string);
         tree_node_free(node_tmp);
     }
     if (transfert_coding(node_Transfert_encoding) == NULL) {
@@ -1222,17 +1234,19 @@ tree_node* Transfert_encoding(tree_node* parent) {
     }
     end = false;
     while (!end) {
-        node_tmp = tree_node_new(parent->string, get_start(node_Transfert_encoding), 1, NULL, "tmp");
+        node_tmp = tree_node_tmp(node_Transfert_encoding);
         if (OWS(node_tmp) != NULL && check_sa(node_tmp, ",") != NULL) {
             move_childs(node_tmp, node_Transfert_encoding);
+            debug(node_tmp);
             if (OWS(node_tmp) != NULL && transfert_coding(node_tmp) != NULL) {
                 move_childs(node_tmp, node_Transfert_encoding);
+                debug(node_tmp);
             }
-            tree_node_free(node_tmp);
         } else {
             end = true;
         }
         tree_node_free(node_tmp);
+        debug(node_Transfert_encoding);
     }
     return node_Transfert_encoding;
 }
