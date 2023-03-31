@@ -14,7 +14,7 @@ for test in tests/testFile/*; do
         else
             echo "./bin/http_parse $test mot"
             echo "$test    Not Valid"
-            tail -n 5 /tmp/rs | tr '\n' ' '| awk -F'> [0-9]+' ' { print $NF } ' | awk -F'rep:0' ' {print $1} '
+            tail -n 5 /tmp/rs | tr '\n' ' '| awk -F'> src/parser.c:' ' { print $NF } ' | awk -F'rep:0' ' {print $1} '
             echo "$test" >> "bad.o"
         fi
         total=$(($total+1))
