@@ -17,7 +17,7 @@ int parseur(char* req, int bytes) {
 #define RESET   "\033[0m"
 void debug(tree_node* node_tmp,int line) {
     int middle=node_tmp->start_string+node_tmp->length_string;
-    printf(">%-4d|%-20s|",line,tree_node_string[node_tmp->type]);
+    printf("> src/parser.c:%-4d |%-20s|",line,tree_node_string[node_tmp->type]);
     print_sub_str(node_tmp->string, 0, middle);
     printf(RED);
     print_sub_str(node_tmp->string, middle, strlen((const char*)node_tmp->string)-middle);
@@ -412,14 +412,14 @@ tree_node* dec_octet(tree_node* parent) {
     tree_node* node_tmp = tree_node_tmp(node_dec_octet);
     if (check_sa(node_tmp, "2")) {
         if (check_sa(node_tmp, "5")) {
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_tmp,__LINE__);
-#endif
+            #endif
             index = get_start(parent);
             if (parent->string[index] >= '0' && parent->string[index] <= '5') {
-#ifdef DEBUG
+                #ifdef DEBUG
                 debug(node_tmp,__LINE__);
-#endif
+                #endif
                 tree_node_add_child(node_tmp, parent->string, index, 1, "0-5");
                 move_childs(node_tmp, node_dec_octet);
                 tree_node_free(node_tmp);
@@ -459,9 +459,9 @@ tree_node* dec_octet(tree_node* parent) {
         if (DIGIT(node_tmp) != NULL) {
             move_childs(node_tmp, node_dec_octet);
             tree_node_free(node_tmp);
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_dec_octet,__LINE__);
-#endif
+            #endif
             return node_dec_octet;
         }
         tree_node_free(node_tmp);
@@ -693,13 +693,16 @@ tree_node* Expect(tree_node* parent) {
 tree_node* IPv4address(tree_node* parent) {
     tree_node* node_IPv4address = tree_node_add_node(parent, "IPv4address");
     for (int i = 0; i < 3; i++) {
-#ifdef DEBUG
+        #ifdef DEBUG
         debug(node_IPv4address,__LINE__);
-#endif
+        #endif
         if (dec_octet(node_IPv4address) == NULL || check_sa(node_IPv4address, ".") == NULL) {
             tree_node_free(node_IPv4address);
             return NULL;
         }
+        #ifdef DEBUG
+        debug(node_IPv4address,__LINE__);
+        #endif
     }
     if (dec_octet(node_IPv4address) == NULL){
         tree_node_free(node_IPv4address);
@@ -1002,9 +1005,9 @@ tree_node* IPv6address(tree_node* parent) {
         for (int i = 0; !end && i < 4; i++)
         {
             node_tmp3 = tree_node_tmp(node_tmp2);
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_tmp3,__LINE__);
-#endif
+            #endif
             if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
                 move_childs(node_tmp3, node_tmp2);
                 move_childs(node_tmp2, node_tmp);
@@ -1012,9 +1015,9 @@ tree_node* IPv6address(tree_node* parent) {
             }
             tree_node_free(node_tmp3);
             node_tmp3 = tree_node_tmp(node_tmp2);
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_tmp3,__LINE__);
-#endif
+            #endif
             if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
                 move_childs(node_tmp3, node_tmp2);
             }
