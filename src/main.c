@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
     }
     close(fi);
     // free(addr);
+    // return 1;
     return (res);
 }
 #endif

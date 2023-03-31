@@ -12,13 +12,13 @@ int get_type_index(const char *string)
     return -1;
 }
 
-tree_node *tree_node_init(unsigned char *string)
+tree_node *tree_node_init(char *string)
 {
     tree_node *node = NULL;
     #if ABNF==0
-        node=tree_node_new(string, 0, 0, NULL, "HTTP_message");
+        node=tree_node_new((unsigned char*)string, 0, 0, NULL, "HTTP_message");
     #elif ABNF==1
-        node=tree_node_new(string, 0, 0, NULL, "message");//strlen(string)
+        node=tree_node_new((unsigned char*)string, 0, 0, NULL, "message");//strlen(string)
     #endif
     rootTree=node;
     return node;

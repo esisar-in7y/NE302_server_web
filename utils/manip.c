@@ -1,5 +1,5 @@
 #include "manip.h"
-char *copy_sub_str(const char *source, uint16_t start, uint16_t length) {
+char *copy_sub_str(const unsigned char *source, uint16_t start, uint16_t length) {
     char *buffer = malloc(sizeof(char) * (length + 1));
     if (buffer == NULL) {
         return NULL;

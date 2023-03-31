@@ -239,7 +239,7 @@ typedef struct _tree_node {
 // global variable
 __attribute__((unused)) static tree_node *rootTree = NULL;
 
-tree_node *tree_node_init(unsigned char *string);
+tree_node *tree_node_init(char *string);
 tree_node *tree_node_new(unsigned char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char *type);        // tree_node_type type
 tree_node *tree_node_add_child(tree_node *parent, unsigned char *string, uint16_t start_string, uint16_t length_string, const char *type);  // tree_node_type type
 tree_node *tree_node_get_child(tree_node *parent,  unsigned char *string, uint16_t start_string, uint16_t length_string);
