@@ -874,6 +874,7 @@ tree_node* IPv6address(tree_node* parent) {
                 if (h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL)
                 {
                     tree_node_free(node_tmp);
+                    node_tmp = tree_node_tmp(node_IPv6address);
                     end = true;
                 }
             }

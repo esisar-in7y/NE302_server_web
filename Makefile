@@ -1,6 +1,6 @@
 EXEC = http_parse
 # ARGS = tests/testFile/test1.txt nombre
-ARGS = tests/testFile/test998.txt HTTP_name
+ARGS = tests/testFile/test7505.txt HTTP_name
 
 CC = gcc
 CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 -D DEBUG=1
