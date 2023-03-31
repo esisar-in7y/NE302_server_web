@@ -54,6 +54,7 @@ __attribute__((unused)) static char *tree_node_string[] = {
     ":",
     "::",
     "=",
+    ";",
     "1",
     "]","[",
     "0-4",
