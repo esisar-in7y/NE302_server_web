@@ -308,8 +308,7 @@ tree_node* method(tree_node* parent) {
 // port = *DIGIT
 tree_node* port(tree_node* parent) {
     tree_node* node_port = tree_node_add_node(parent, "port");
-    while (DIGIT(node_port) != NULL)
-        ;
+    while (DIGIT(node_port) != NULL);
     return node_port;
 }
 
@@ -354,15 +353,15 @@ tree_node* connection_option(tree_node* parent) {
 tree_node* HEXDIG(tree_node* parent) {
     char valids[] = "ABCDEF";
     tree_node* node_digit = tree_node_add_node(parent, "HEXDIG");
-    debug(node_digit,__LINE__);
+    // debug(node_digit,__LINE__);
     if (DIGIT(node_digit)) {
-        debug(node_digit,__LINE__);
+        // debug(node_digit,__LINE__);
         return node_digit;
     }
     int index = get_start(parent);
     if (strchr(valids, parent->string[index]) != NULL) {
         tree_node_add_child(node_digit, node_digit->string, index, 1, "HEXALPHA");
-        debug(node_digit,__LINE__);
+        // debug(node_digit,__LINE__);
         return node_digit;
     }
     tree_node_free(node_digit);
@@ -372,15 +371,24 @@ tree_node* HEXDIG(tree_node* parent) {
 // IPvFuture = "v" 1*HEXDIG "." 1*( unreserved / sub-delims / ":" )
 tree_node* IPvFuture(tree_node* parent) {
     tree_node* node_IPvFuture = tree_node_add_node(parent, "IPvFuture");
-    if (
-        check_sa(node_IPvFuture, "v") != NULL &&
-        at_least_x(node_IPvFuture, HEXDIG, 1) &&
-        check_sa(node_IPvFuture, ".") != NULL &&
-        (unreserved(node_IPvFuture) != NULL ||
-         sub_delims(node_IPvFuture) != NULL ||
-         check_sa(node_IPvFuture, ":") != NULL)) {
-        while (unreserved(node_IPvFuture) != NULL || sub_delims(node_IPvFuture) != NULL || check_sa(node_IPvFuture, ":"))
-            ;
+    debug(node_IPvFuture,__LINE__);
+    if (check_sa(node_IPvFuture, "v") == NULL||
+        !at_least_x(node_IPvFuture, HEXDIG, 1) ||
+        check_sa(node_IPvFuture, ".") == NULL){
+        tree_node_free(node_IPvFuture);
+        return NULL;
+    }
+    debug(node_IPvFuture,__LINE__);
+    if(
+            unreserved(node_IPvFuture) != NULL ||
+            sub_delims(node_IPvFuture) != NULL ||
+            check_sa(node_IPvFuture, ":") != NULL
+    )
+    {
+    debug(node_IPvFuture,__LINE__);
+        while (unreserved(node_IPvFuture) != NULL || sub_delims(node_IPvFuture) != NULL || check_sa(node_IPvFuture, ":")){
+            debug(node_IPvFuture,__LINE__);
+        }
         return node_IPvFuture;
     }
     tree_node_free(node_IPvFuture);
@@ -405,15 +413,14 @@ tree_node* dec_octet(tree_node* parent) {
             }
             tree_node_free(node_tmp);
         }
-        index = get_start(parent);
+        index = get_start(node_tmp);
         if (parent->string[index] >= '0' && parent->string[index] <= '4') {
             tree_node_add_child(node_tmp, parent->string, index, 1, "0-4");
             if (DIGIT(node_tmp) != NULL) {
                 move_childs(node_tmp, node_dec_octet);
-                tree_node_free(node_tmp);
+                debug(node_dec_octet,__LINE__);
                 return node_dec_octet;
             }
-            tree_node_free(node_tmp);
         }
         tree_node_free(node_tmp);
     }
@@ -422,22 +429,25 @@ tree_node* dec_octet(tree_node* parent) {
         if (DIGIT(node_tmp) != NULL && DIGIT(node_tmp) != NULL) {
             move_childs(node_tmp, node_dec_octet);
             tree_node_free(node_tmp);
+            debug(node_dec_octet,__LINE__);
             return node_dec_octet;
         }
         tree_node_free(node_tmp);
     }
     node_tmp = tree_node_tmp(node_dec_octet);
-    index = get_start(parent);
+    index = get_start(node_tmp);
     if (parent->string[index] >= '1' && parent->string[index] <= '9') {
         tree_node_add_child(node_tmp, parent->string, index, 1, "1-9");
         if (DIGIT(node_tmp) != NULL) {
             move_childs(node_tmp, node_dec_octet);
             tree_node_free(node_tmp);
+            debug(node_dec_octet,__LINE__);
             return node_dec_octet;
         }
         tree_node_free(node_tmp);
     }
     if (DIGIT(node_dec_octet) != NULL) {
+        debug(node_dec_octet,__LINE__);
         return node_dec_octet;
     }
     tree_node_free(node_dec_octet);
@@ -551,6 +561,7 @@ tree_node* reg_name(tree_node* parent) {
 
 // DIGIT = %x30-39
 tree_node* DIGIT(tree_node* parent) {
+        // debug(parent,__LINE__);
     int index = get_start(parent);
     if (parent->string[index] >= '0' && parent->string[index] <= '9') {
         return tree_node_add_child(parent, parent->string, index, 1, "DIGIT");
@@ -618,6 +629,7 @@ tree_node* Host(tree_node* parent) {
     if (check_sa(node_tmp, ":") != NULL && port(node_tmp) != NULL) {
         move_childs(node_tmp, node_Host);
     }
+    debug(node_Host,__LINE__);
     tree_node_free(node_tmp);
     return node_Host;
 }
@@ -626,7 +638,7 @@ tree_node* Host(tree_node* parent) {
 tree_node* OWS(tree_node* parent) {
     tree_node* node_OWS = tree_node_add_node(parent, "OWS");
     while (SP(node_OWS) != NULL || HTAB(node_OWS) != NULL);
-    debug(node_OWS,__LINE__);
+    // debug(node_OWS,__LINE__);
     return node_OWS;
 }
 
@@ -654,12 +666,16 @@ tree_node* Expect(tree_node* parent) {
 // IPv4address   = dec_octet "." dec_octet "." dec_octet "." dec_octet
 tree_node* IPv4address(tree_node* parent) {
     tree_node* node_IPv4address = tree_node_add_node(parent, "IPv4address");
-    for (int i = 0; i < 4; i++) {
-        if (dec_octet(node_IPv4address) == NULL ||
-            check_sa(node_IPv4address, ".") == NULL) {
+    for (int i = 0; i < 3; i++) {
+        debug(node_IPv4address,__LINE__);
+        if (dec_octet(node_IPv4address) == NULL || check_sa(node_IPv4address, ".") == NULL) {
             tree_node_free(node_IPv4address);
             return NULL;
         }
+    }
+    if (dec_octet(node_IPv4address) == NULL){
+        tree_node_free(node_IPv4address);
+        return NULL;
     }
     return node_IPv4address;
 }
@@ -671,21 +687,34 @@ tree_node* h16(tree_node* parent) {
         tree_node_free(node_h16);
         return NULL;
     }
+    // debug(node_h16,__LINE__);
     for (int i = 1; i < 4; i++) {
         HEXDIG(node_h16);
+        // debug(node_h16,__LINE__);
     }
+    // debug(node_h16,__LINE__);
     return node_h16;
 }
 // ls32          = ( h16 ":" h16 ) / IPv4address
+//DEBUG 0
 tree_node* ls32(tree_node* parent) {
+    //DEBUG 2
     tree_node* node_ls32 = tree_node_add_node(parent, "ls32");
-    if (h16(node_ls32) == NULL ||
-        check_sa(node_ls32, ":") ||
-        h16(node_ls32) == NULL) {
-        tree_node_free(node_ls32);
-        return NULL;
+    tree_node* node_tmp = tree_node_tmp(node_ls32);
+    debug(node_tmp,__LINE__);
+    if (h16(node_tmp) != NULL &&
+        check_sa(node_tmp, ":")!=NULL &&
+        h16(node_tmp) != NULL) {
+        move_childs(node_tmp, node_ls32);
+        return node_ls32;
+        debug(node_ls32,__LINE__);
     }
-    return node_ls32;
+    if(IPv4address(node_ls32) != NULL) {
+        debug(node_ls32,__LINE__);
+        return node_ls32;
+    }
+    tree_node_free(node_ls32);
+    return NULL;
 }
 
 // IPv6address   =                            6( h16 ":" ) ls32
@@ -700,53 +729,301 @@ tree_node* ls32(tree_node* parent) {
 // TODO good luck les mecs
 // c'est moa ki sui quasé ou cé ip6 ki est quasé ?
 // 8 morts 6 blessés je pète ma bière ma luubellule
-
-// Can you correct the following code ? I'm not sure it's correct
 tree_node* IPv6address(tree_node* parent) {
     tree_node* node_IPv6address = tree_node_add_node(parent, "IPv6address");
-    int count = 0;
-
-    while (check_sa(node_IPv6address, ":")) {
-        if (h16(node_IPv6address) == NULL || check_sa(node_IPv6address, ":") == NULL) {
-            tree_node_free(node_IPv6address);
-            return NULL;
+    debug(node_IPv6address,__LINE__);
+    {
+        printf("IPv6address 1\n");
+        // 6( h16 ":" ) ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        bool end = false;
+        for (int i = 0; !end && i < 6; i++)
+        {
+            if (h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL)
+            {
+                tree_node_free(node_tmp);
+                end = true;
+            }
         }
-        count++;
-    }
-
-    if (count > 8) {
-        tree_node_free(node_IPv6address);
-        return NULL;
-    }
-
-    if (count == 8) {
-        if (ls32(node_IPv6address) == NULL || check_sa(node_IPv6address, "::") == NULL) {
-            tree_node_free(node_IPv6address);
-            return NULL;
-        }
-        return node_IPv6address;
-    }
-
-    if (count == 0) {
-        if (check_sa(node_IPv6address, "::") == NULL) {
-            tree_node_free(node_IPv6address);
-            return NULL;
+        if (!end && ls32(node_tmp) != NULL)
+        {
+            move_childs(node_tmp, node_IPv6address);
+            tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+            return node_IPv6address;
         }
     }
-
-    for (int i = 0; i < 5 - count; i++) {
-        if (h16(node_IPv6address) == NULL || check_sa(node_IPv6address, ":") == NULL) {
-            tree_node_free(node_IPv6address);
-            return NULL;
+    {
+        printf("IPv6address 2\n");
+        // "::" 5( h16 ":" ) ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        bool end = false;
+        if (check_sa(node_tmp, "::") != NULL)
+        {
+            for (int i = 0; !end && i < 5; i++)
+            {
+                if (h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL)
+                {
+                    tree_node_free(node_tmp);
+                    end = true;
+                }
+            }
+            if (!end && ls32(node_tmp) != NULL)
+            {
+                move_childs(node_tmp, node_IPv6address);
+                tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+                return node_IPv6address;
+            }
         }
     }
-
-    if (check_sa(node_IPv6address, "::") == NULL || ls32(node_IPv6address) == NULL) {
-        tree_node_free(node_IPv6address);
-        return NULL;
+    {
+        printf("IPv6address 3\n");
+        // [ h16 ] "::" 4( h16 ":" ) ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        bool end = false;
+        h16(node_tmp);
+        if (check_sa(node_tmp, "::") != NULL)
+        {
+            for (int i = 0; !end && i < 4; i++)
+            {
+                if (h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL)
+                {
+                    tree_node_free(node_tmp);
+                    end = true;
+                }
+            }
+            if (!end && ls32(node_tmp) != NULL)
+            {
+                move_childs(node_tmp, node_IPv6address);
+                tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+                return node_IPv6address;
+            }
+        }
     }
-
-    return node_IPv6address;
+    {
+        printf("IPv6address 4\n");
+        // [ [ h16 ":" ] h16 ] "::" 3( h16 ":" ) ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2 = tree_node_tmp(node_IPv6address);
+        bool end = false;
+        if (h16(node_tmp2) == NULL || check_sa(node_tmp2, ":") == NULL){
+            tree_node_free(node_tmp2);
+            node_tmp2 = tree_node_tmp(node_IPv6address);
+        }
+        if(h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        tree_node_free(node_tmp2);
+        if (check_sa(node_tmp, "::") != NULL)
+        {
+            for (int i = 0; !end && i < 3; i++)
+            {
+                debug(node_tmp,__LINE__);
+                if (h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL)
+                {
+                    tree_node_free(node_tmp);
+                    end = true;
+                }
+            }
+            debug(node_tmp,__LINE__);
+            if (!end && ls32(node_tmp) != NULL)
+            {
+                move_childs(node_tmp, node_IPv6address);
+                tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+                return node_IPv6address;
+            }
+        }
+    }
+    {
+        //DEBUG 1
+        printf("IPv6address 5\n");
+        // [ *2( h16 ":" ) h16 ] "::" 2( h16 ":" ) ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2=tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp3=NULL;
+        bool end = false;
+        for (int i = 0; !end && i < 2; i++)
+        {
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+                move_childs(node_tmp2, node_tmp);
+                end = true;continue;
+            }
+            tree_node_free(node_tmp3);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+            }
+            tree_node_free(node_tmp3);
+        }
+        debug(node_tmp2,__LINE__);
+        if(!end && h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        debug(node_tmp,__LINE__);
+        tree_node_free(node_tmp2);
+        if (end || check_sa(node_tmp, "::") != NULL)
+        {
+            end=false;
+            for (int i = 0; !end && i < 2; i++)
+            {
+                end = h16(node_tmp) == NULL || check_sa(node_tmp, ":") == NULL;
+            }
+            if (!end && ls32(node_tmp) != NULL)
+            {
+                move_childs(node_tmp, node_IPv6address);
+                tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+                return node_IPv6address;
+            }
+        }
+        tree_node_free(node_tmp);
+    }
+    {
+        printf("IPv6address 6\n");
+        // [ *3( h16 ":" ) h16 ] "::" h16 ":" ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2=tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp3=NULL;
+        bool end = false;
+        for (int i = 0; !end && i < 3; i++)
+        {
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+                move_childs(node_tmp2, node_tmp);
+                end = true;continue;
+            }
+            tree_node_free(node_tmp3);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+            }
+            tree_node_free(node_tmp3);
+        }
+        if(!end && h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        tree_node_free(node_tmp2);
+        if ((end || check_sa(node_tmp, "::") != NULL) && h16(node_tmp) != NULL && check_sa(node_tmp, ":") != NULL && ls32(node_tmp) != NULL)
+        {
+            move_childs(node_tmp, node_IPv6address);
+            tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+            return node_IPv6address;
+        }
+    }
+    {
+        printf("IPv6address 7\n");
+        // [ *4( h16 ":" ) h16 ] "::" ls32
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2=tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp3=NULL;
+        bool end = false;
+        for (int i = 0; !end && i < 4; i++)
+        {
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+                move_childs(node_tmp2, node_tmp);
+                end = true;continue;
+            }
+            tree_node_free(node_tmp3);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+            }
+            tree_node_free(node_tmp3);
+        }
+        if(!end && h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        debug(node_tmp,__LINE__);
+        tree_node_free(node_tmp2);
+        if ((end || check_sa(node_tmp, "::") != NULL) && ls32(node_tmp) != NULL)
+        {
+            move_childs(node_tmp, node_IPv6address);
+            tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+            return node_IPv6address;
+        }
+    }
+    {
+        printf("IPv6address 8\n");
+        // [ *5( h16 ":" ) h16 ] "::" h16
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2=tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp3=NULL;
+        bool end = false;
+        for (int i = 0; !end && i < 5; i++)
+        {
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+                move_childs(node_tmp2, node_tmp);
+                end = true;continue;
+            }
+            tree_node_free(node_tmp3);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            debug(node_tmp3,__LINE__);
+            if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+            }
+            tree_node_free(node_tmp3);
+        }
+        if(!end && h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        tree_node_free(node_tmp2);
+        if ((end || check_sa(node_tmp, "::") != NULL) && h16(node_tmp) != NULL)
+        {
+            move_childs(node_tmp, node_IPv6address);
+            tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+            return node_IPv6address;
+        }
+    }
+    {
+        printf("IPv6address 9\n");
+        // [ *6( h16 ":" ) h16 ] "::"
+        tree_node *node_tmp = tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp2=tree_node_tmp(node_IPv6address);
+        tree_node *node_tmp3=NULL;
+        bool end = false;
+        for (int i = 0; !end && i < 6; i++)
+        {
+            node_tmp3 = tree_node_tmp(node_IPv6address);
+            if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+            }else{
+                end = true;
+            }
+            tree_node_free(node_tmp3);
+        }
+        if(h16(node_tmp2)){
+            move_childs(node_tmp2, node_tmp);
+        }
+        tree_node_free(node_tmp2);
+        if (check_sa(node_tmp, "::") != NULL)
+        {
+            move_childs(node_tmp, node_IPv6address);
+            tree_node_free(node_tmp);
+            debug(node_IPv6address,__LINE__);
+            return node_IPv6address;
+        }
+    }
+    return NULL;
 }
 
 // Expect_header = "Expect" ":" OWS Expect OWS
@@ -788,7 +1065,7 @@ tree_node* DQUOTE(tree_node* parent) {
 // qdtext = HTAB / SP / "!" / %x23-5B / %x5D-7E / obs_text
 tree_node* qdtext(tree_node* parent) {
     tree_node* node_qdtext = tree_node_add_node(parent, "qdtext");
-    debug(node_qdtext,__LINE__);
+    // debug(node_qdtext,__LINE__);
     if (HTAB(node_qdtext) ||
         SP(node_qdtext) ||
         obs_text(node_qdtext) ||
@@ -845,9 +1122,18 @@ tree_node* cookie_pair(tree_node* parent) {
 // IP_literal    = "[" ( IPv6address / IPvFuture  ) "]"
 tree_node* IP_literal(tree_node* parent) {
     tree_node* node_IP_literal = tree_node_add_node(parent, "IP_literal");
-    if (check_sa(node_IP_literal, "[") &&
-        (IPv6address(node_IP_literal) || IPvFuture(node_IP_literal)) &&
-        check_sa(node_IP_literal, "]")) {
+    // if(parent->start_string>1000){
+    //     check_sa(node_IP_literal, "[");
+    //     debug(node_IP_literal,__LINE__);
+    //     IPv6address(node_IP_literal);
+    //     debug(node_IP_literal,__LINE__);
+    //     printf("===================%d==\n",parent->start_string);
+    //     exit(0);
+    // }
+    if (
+        check_sa(node_IP_literal, "[")!=NULL &&
+        (IPv6address(node_IP_literal)!=NULL || IPvFuture(node_IP_literal)!=NULL) &&
+        check_sa(node_IP_literal, "]")!=NULL) {
         return node_IP_literal;
     }
     tree_node_free(node_IP_literal);
@@ -855,7 +1141,7 @@ tree_node* IP_literal(tree_node* parent) {
 }
 // cookie_string = cookie_pair *( ";" SP cookie_pair )
 tree_node* cookie_string(tree_node* parent) {
-    //DEBUG 0
+    //DEBUG 2
     tree_node* node_cookie_string = tree_node_add_node(parent, "cookie_string");
     if (cookie_pair(node_cookie_string) == NULL) {
         tree_node_free(node_cookie_string);
@@ -917,17 +1203,17 @@ tree_node* quoted_string(tree_node* parent) {
     // amen mes frères ah c'est bon cetait une option planquéeéeée 
     // gah lesgo emndcorre un coup de giorgi
     // stop ecrire
-    debug(node_quoted_string,__LINE__);
+    // debug(node_quoted_string,__LINE__);
     bool end=false;
     while (!end)
     {
         if (qdtext(node_quoted_string) != NULL){
-            debug(node_quoted_string,__LINE__);
+            // debug(node_quoted_string,__LINE__);
         } else if(quoted_pair(node_quoted_string) != NULL){
-            debug(node_quoted_string,__LINE__);
+            // debug(node_quoted_string,__LINE__);
         }else{
             end=true;
-            debug(node_quoted_string,__LINE__);
+            // debug(node_quoted_string,__LINE__);
         }
     }
     //azy du coup là ça en est où exactement ? il a juste skip le tru d'audessus et c'est pas normal chelou
@@ -1077,7 +1363,7 @@ tree_node* Connection_header(tree_node* parent) {
 // BWS = *( SP / HTAB )
 tree_node* BWS(tree_node* parent) {
     tree_node* node_BWS = tree_node_add_node(parent, "BWS");
-    while (check_sa(node_BWS, " ") || check_sa(node_BWS, "\t"));
+    while (SP(node_BWS)!=NULL || HTAB(node_BWS)!=NULL);
     return node_BWS;
 }
 // transfer_parameter = token BWS "=" BWS ( token / quoted_string )
@@ -1241,7 +1527,19 @@ tree_node* request_target(tree_node* parent) {
 }
 // request_line = method SP request_target SP HTTP_version CRLF
 tree_node* request_line(tree_node* parent) {
+    //DEBUG 0
     tree_node* node_request_line = tree_node_add_node(parent, "request_line");
+    // method(node_request_line);
+    // debug(node_request_line,__LINE__);
+    // SP(node_request_line);
+    // request_target(node_request_line);
+    // debug(node_request_line,__LINE__);
+    // SP(node_request_line);
+    // HTTP_version(node_request_line);
+    // debug(node_request_line,__LINE__);
+    // CRLF(node_request_line);
+    // debug(node_request_line,__LINE__);
+    // exit(0);
     if (
         method(node_request_line) == NULL ||
         SP(node_request_line) == NULL ||
@@ -1325,10 +1623,12 @@ tree_node* HTTP_message(tree_node* parent) {
         }
         tree_node_free(node_tmp);
     }
+    debug(node_HTTP_message,__LINE__);
     if (CRLF(node_HTTP_message) == NULL) {
         tree_node_free(node_HTTP_message);
         return NULL;
     }
     message_body(node_HTTP_message);
+    debug(node_HTTP_message,__LINE__);
     return node_HTTP_message;
 }

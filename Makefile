@@ -1,6 +1,6 @@
 EXEC = http_parse
 # ARGS = tests/testFile/test1.txt nombre
-ARGS = tests/testFile/test0.txt HTTP_name
+ARGS = tests/testFile/test998.txt HTTP_name
 
 CC = gcc
 CFLAGS = -fcoroutines -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99  -D TST=0 
@@ -54,6 +54,10 @@ tests: clean $(EXEC)
 run: $(EXEC)
 	@reset
 	./$(OUTDIR)/$(EXEC) $(ARGS)
+
+bt: $(EXEC)
+	@reset
+	gdb -batch -ex "run" -ex "bt" --args ./$(OUTDIR)/$(EXEC) $(ARGS)
 
 leaks: $(EXEC)
 	valgrind --leak-check=full \

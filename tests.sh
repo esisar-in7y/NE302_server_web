@@ -1,5 +1,6 @@
 #!/bin/sh
-
+if [ $# -eq 0 ]
+  then
 total=0
 good=0
 touch "bad.o"
@@ -20,3 +21,6 @@ for test in tests/testFile/*; do
 done
 
 echo "Results: $good/$total tests."
+else
+    ./bin/http_parse "tests/testFile/test$1.txt" mot
+fi

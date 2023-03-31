@@ -172,6 +172,7 @@ void tree_node_free(tree_node *node)
             rootTree=NULL;
         }
         free(node);
+        node=NULL;
     }
 }
 tree_node* tree_node_add_node(tree_node* parent,char* name){
