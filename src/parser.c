@@ -1118,11 +1118,22 @@ tree_node* IPv6address(tree_node* parent) {
         bool end = false;
         for (int i = 0; !end && i < 6; i++)
         {
-            node_tmp3 = tree_node_tmp(node_IPv6address);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            #ifdef DEBUG
+            debug(node_tmp3,__LINE__);
+            #endif
+            if(h16(node_tmp3) != NULL && check_sa(node_tmp3, "::") != NULL){
+                move_childs(node_tmp3, node_tmp2);
+                move_childs(node_tmp2, node_tmp);
+                end = true;continue;
+            }
+            tree_node_free(node_tmp3);
+            node_tmp3 = tree_node_tmp(node_tmp2);
+            #ifdef DEBUG
+            debug(node_tmp3,__LINE__);
+            #endif
             if (h16(node_tmp3) != NULL && check_sa(node_tmp3, ":") != NULL){
                 move_childs(node_tmp3, node_tmp2);
-            }else{
-                end = true;
             }
             tree_node_free(node_tmp3);
         }
@@ -1130,13 +1141,13 @@ tree_node* IPv6address(tree_node* parent) {
             move_childs(node_tmp2, node_tmp);
         }
         tree_node_free(node_tmp2);
-        if (check_sa(node_tmp, "::") != NULL)
+        if (end || check_sa(node_tmp, "::") != NULL)
         {
             move_childs(node_tmp, node_IPv6address);
             tree_node_free(node_tmp);
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_IPv6address,__LINE__);
-#endif
+            #endif
             return node_IPv6address;
         }
     }
