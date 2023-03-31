@@ -1,5 +1,6 @@
 valgrind-out.txt
 .vscode/settings.json
+testFile/*.txt
 bin/*
 # Prerequisites
 *.d
