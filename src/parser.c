@@ -159,7 +159,11 @@ bool validate_message(tree_node* parent) {
 
 tree_node* check_sa(tree_node* parent, char* chars) {
     if (strncasecmp((const char*)parent->string + get_start(parent), chars, strlen(chars)) == 0) {
-        return tree_node_add_child(parent, parent->string, get_start(parent), strlen(chars), chars);
+        tree_node* node=tree_node_add_child(parent, parent->string, get_start(parent), strlen(chars), chars);
+        #ifdef DEBUG
+        debug(node,__LINE__);
+        #endif
+        return node;
     }
     return NULL;
 }
@@ -415,26 +419,27 @@ tree_node* dec_octet(tree_node* parent) {
             #ifdef DEBUG
             debug(node_tmp,__LINE__);
             #endif
-            index = get_start(parent);
+            index = get_start(node_tmp);
             if (parent->string[index] >= '0' && parent->string[index] <= '5') {
-                #ifdef DEBUG
-                debug(node_tmp,__LINE__);
-                #endif
                 tree_node_add_child(node_tmp, parent->string, index, 1, "0-5");
                 move_childs(node_tmp, node_dec_octet);
                 tree_node_free(node_tmp);
+                #ifdef DEBUG
+                debug(node_dec_octet,__LINE__);
+                #endif
                 return node_dec_octet;
             }
             tree_node_free(node_tmp);
+            node_tmp = tree_node_tmp(node_dec_octet);
         }
         index = get_start(node_tmp);
         if (parent->string[index] >= '0' && parent->string[index] <= '4') {
             tree_node_add_child(node_tmp, parent->string, index, 1, "0-4");
             if (DIGIT(node_tmp) != NULL) {
                 move_childs(node_tmp, node_dec_octet);
-#ifdef DEBUG
+                #ifdef DEBUG
                 debug(node_dec_octet,__LINE__);
-#endif
+                #endif
                 return node_dec_octet;
             }
         }
@@ -445,9 +450,9 @@ tree_node* dec_octet(tree_node* parent) {
         if (DIGIT(node_tmp) != NULL && DIGIT(node_tmp) != NULL) {
             move_childs(node_tmp, node_dec_octet);
             tree_node_free(node_tmp);
-#ifdef DEBUG
+            #ifdef DEBUG
             debug(node_dec_octet,__LINE__);
-#endif
+            #endif
             return node_dec_octet;
         }
         tree_node_free(node_tmp);
@@ -692,11 +697,24 @@ tree_node* Expect(tree_node* parent) {
 // IPv4address   = dec_octet "." dec_octet "." dec_octet "." dec_octet
 tree_node* IPv4address(tree_node* parent) {
     tree_node* node_IPv4address = tree_node_add_node(parent, "IPv4address");
+    #ifdef DEBUG
+    debug(node_IPv4address,__LINE__);
+    #endif
     for (int i = 0; i < 3; i++) {
         #ifdef DEBUG
         debug(node_IPv4address,__LINE__);
         #endif
-        if (dec_octet(node_IPv4address) == NULL || check_sa(node_IPv4address, ".") == NULL) {
+        if (dec_octet(node_IPv4address) == NULL) {
+            #ifdef DEBUG
+            debug(node_IPv4address,__LINE__);
+            #endif
+            tree_node_free(node_IPv4address);
+            return NULL;
+        }
+        if(check_sa(node_IPv4address, ".") == NULL){
+            #ifdef DEBUG
+            debug(node_IPv4address,__LINE__);
+            #endif
             tree_node_free(node_IPv4address);
             return NULL;
         }
@@ -704,10 +722,19 @@ tree_node* IPv4address(tree_node* parent) {
         debug(node_IPv4address,__LINE__);
         #endif
     }
+    #ifdef DEBUG
+    debug(node_IPv4address,__LINE__);
+    #endif
     if (dec_octet(node_IPv4address) == NULL){
+        #ifdef DEBUG
+        debug(node_IPv4address,__LINE__);
+        #endif
         tree_node_free(node_IPv4address);
         return NULL;
     }
+    #ifdef DEBUG
+    debug(node_IPv4address,__LINE__);
+    #endif
     return node_IPv4address;
 }
 
