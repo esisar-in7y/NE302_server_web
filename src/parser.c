@@ -1084,18 +1084,18 @@ tree_node* cookie_value(tree_node* parent) {
 	tree_node* node_cookie_value = tree_node_add_node(parent, "cookie_value");
 	tree_node* node_tmp = tree_node_tmp(node_cookie_value);
 	if (DQUOTE(node_tmp)) {
-		while (cookie_octet(node_tmp) != NULL)
-			;
+		while (cookie_octet(node_tmp) != NULL);
 		if (DQUOTE(node_tmp) == NULL) {
 			tree_node_free(node_tmp);
+			tree_node_free(node_cookie_value);
 			return NULL;
 		}
 		move_childs(node_tmp, node_cookie_value);
 		tree_node_free(node_tmp);
 		return node_cookie_value;
 	}
-	while (cookie_octet(node_cookie_value) != NULL)
-		;
+	tree_node_free(node_tmp);
+	while (cookie_octet(node_cookie_value) != NULL);
 	return node_cookie_value;
 }
 
