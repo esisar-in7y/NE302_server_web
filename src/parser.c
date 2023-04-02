@@ -507,19 +507,22 @@ tree_node* HTAB(tree_node* parent) {
     }
     return NULL;
 }
-// field_content = field_vchar *( *( SP / HTAB ) field_vchar )
-//le prof est tres intelligent il a un qi superieur a celui d'un escargot
+// field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
+
 tree_node* field_content(tree_node* parent) {
     tree_node* node_field_content = tree_node_add_node(parent, "field_content");
+    printf("FIELD CONTENT\n");
     if (field_vchar(node_field_content) == NULL) {
         tree_node_free(node_field_content);
         return NULL;
     }
     tree_node* node_tmp = tree_node_tmp(node_field_content);
-    while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL){
-        field_vchar(node_tmp);
+    if (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL){
+        while (SP(node_tmp) != NULL || HTAB(node_tmp) != NULL);
+        if(field_vchar(node_tmp)!=NULL){
+            move_childs(node_tmp, node_field_content);
+        }
     }
-    move_childs(node_tmp, node_field_content);
     tree_node_free(node_tmp);
     return node_field_content;
 }
@@ -527,7 +530,9 @@ tree_node* field_content(tree_node* parent) {
 // field_value = *( field_content / obs_fold )
 tree_node* field_value(tree_node* parent) {
     tree_node* node_field_value = tree_node_add_node(parent, "field_value");
+    debug(parent,__LINE__);
     while (field_content(node_field_value) != NULL || obs_fold(node_field_value) != NULL);
+    debug(parent,__LINE__);
     return node_field_value;
 }
 
@@ -621,10 +626,13 @@ tree_node* obs_fold(tree_node* parent) {
         tree_node_free(node_obs_fold);
         return NULL;
     }
-    if (SP(node_obs_fold) == NULL || HTAB(node_obs_fold) == NULL) {
+
+
+    if (SP(node_obs_fold) == NULL && HTAB(node_obs_fold) == NULL) {
         tree_node_free(node_obs_fold);
         return NULL;
     }
+
     bool end = false;
     while (!end) {
         tree_node* node_tmp = tree_node_tmp(node_obs_fold);
