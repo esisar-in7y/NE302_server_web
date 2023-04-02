@@ -170,6 +170,7 @@ void move_childs(tree_node* from,tree_node* to){
         tree_node_add_child_node(to,from->childs[i]);
     }
     from->childs_count=0;
+    free(from->childs);
 
     // for (uint16_t i = 0; i < from->childs_count; i++)
     // {
