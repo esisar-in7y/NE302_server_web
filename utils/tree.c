@@ -58,15 +58,6 @@ void update_length_parents(tree_node* node){
             string_length+=parent->childs[i]->length_string;
         }
         parent->length_string=string_length;
-        // if(string_length>=112){
-        //     printf("string_length:%d\n",string_length);
-        // }
-        // tree_node_print_all(parent,0);
-        // if(rootTree->length_string>=112){
-        //     tree_node_print_all(rootTree,0);
-        // }
-        // tree_node_print(rootTree, 0);
-        // printf("newlen:%d\n",parent->length_string);
         parent=parent->parent;
     }
 }
@@ -78,7 +69,6 @@ void tree_node_add_child_node(tree_node *parent,tree_node *node)
     parent->childs[parent->childs_count] = node;
     parent->childs_count++;
     update_length_parents(parent);
-    // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return;
 }
 tree_node *tree_node_add_child(tree_node *parent,  unsigned char *string, uint16_t start_string, uint16_t length_string, const char* type) //tree_node_type type)
@@ -88,7 +78,6 @@ tree_node *tree_node_add_child(tree_node *parent,  unsigned char *string, uint16
     parent->childs = realloc(parent->childs, sizeof(tree_node) * parent->childs_count); //(tree_node *)
     parent->childs[parent->childs_count-1] = tree_node_new(string, start_string, length_string, parent, type);
     update_length_parents(parent);
-    // printf("ajoutch:%s<=%s childs:%d\n",tree_node_string[node->type],tree_node_string[type],node->childs_count);
     return parent->childs[parent->childs_count - 1];
 }
 
@@ -149,11 +138,9 @@ void tree_node_free(tree_node *node)
     {
         tree_node_free(node->childs[0]);
     }
-    // printf("free:%s\n",tree_node_string[node->type]);
     if(node->parent && node->parent->childs_count>0){
         tree_node* parent=node->parent;
         int index=find_node_index(node);
-        // printf("free:%s:%d childs:%d\n",tree_node_string[node->type],index,parent->childs_count);
         free(parent->childs[index]);
         for (uint16_t i = index; i < parent->childs_count-1; i++)
         {
@@ -218,12 +205,9 @@ void tree_node_print(tree_node *node, uint16_t level)
 // [depth:name] = string
 void tree_node_print_all(tree_node *node, uint16_t level)
 {
-    // printf("[%d:%s] = \"%s\"\n", level, node->string, node->string);
     tree_node_print(node, level);
-    // printf("childs:%d (%s)\n",node->childs_count,tree_node_string[node->type]);
     for (uint16_t i = 0; node != NULL && i < node->childs_count; i++)
     {
-        // printf("%d=>%s\n",level,tree_node_string[node->childs[i]->type]);
         tree_node_print_all(node->childs[i], level + 1);
     }
 }
