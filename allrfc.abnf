@@ -1,33 +1,28 @@
 HTTP-message = start-line *( header-field CRLF ) CRLF [ message-body ]
-start-line = request-line 
-request-line = method SP request-target SP HTTP-version CRLF
-method = token
-token = 1*tchar
-tchar = "!" / "#" / "$" / "%" / "&" / "'" / "*" / "+" / "-" / "." / "^" / "_" / "`" / "|" / "~" / DIGIT / ALPHA
-request-target = origin-form 
-origin-form = absolute-path [ "?" query ]
-absolute-path = 1*( "/" segment )
-segment       = *pchar
-pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
-
-
-
 HTTP-name = %x48.54.54.50 ; HTTP
 HTTP-version = HTTP-name "/" DIGIT "." DIGIT
 
-token68 = 1*( ALPHA / DIGIT / "-" / "." / "_" / "~" / "+" / "/" ) *("=")
 
 field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
 field-name = token
 field-value = *( field-content / obs-fold )
 field-vchar = VCHAR / obs-text
 
+last-chunk = 1*"0" [ chunk-ext ] CRLF
+
 message-body = *OCTET
+method = token
 
 obs-fold = CRLF 1*( SP / HTAB )
 obs-text = %x80-FF
+origin-form = absolute-path [ "?" query ]
 
 reason-phrase = *( HTAB / SP / VCHAR / obs-text )
+request-line = method SP request-target SP HTTP-version CRLF
+request-target = origin-form 
+
+;start-line = request-line / status-line
+start-line = request-line 
 status-code = 3DIGIT
 status-line = HTTP-version SP status-code SP reason-phrase CRLF
 
@@ -53,6 +48,7 @@ relative-part = "//" authority path-abempty
 scheme        = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
 
 absolute-form = absolute-URI
+absolute-path = 1*( "/" segment )
 asterisk-form = "*"
 authority-form = authority
 
@@ -64,9 +60,9 @@ chunk-ext-val = token / quoted-string
 chunk-size = 1*HEXDIG
 chunked-body = *chunk last-chunk trailer-part CRLF
 
-authority     = [ userinfo "@" ] _host [ ":" port ]
+authority     = [ userinfo "@" ] host [ ":" port ]
 userinfo      = *( unreserved / pct-encoded / sub-delims / ":" )
-_host          = IP-literal / IPv4address / reg-name
+host          = IP-literal / IPv4address / reg-name
 port          = *DIGIT
 
 IP-literal    = "[" ( IPv6address / IPvFuture  ) "]"
@@ -107,10 +103,12 @@ path-noscheme = segment-nz-nc *( "/" segment )
 path-rootless = segment-nz *( "/" segment )
 path-empty    = ""
 
+segment       = *pchar
 segment-nz    = 1*pchar
 segment-nz-nc = 1*( unreserved / pct-encoded / sub-delims / "@" )
               ; non-zero-length segment without any colon ":"
 
+pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
 
 query         = *( pchar / "/" / "?" )
 
@@ -198,7 +196,8 @@ regular       = "art-lojban"        ; these tags match the 'langtag'
                / "zh-xiang"
 BWS = OWS
 
-Connection = *( "," OWS ) connection-option *( OWS "," [ OWS connection-option ] )
+Connection = *( "," OWS ) connection-option *( OWS "," [ OWS
+    connection-option ] )
 
 Content-Length = 1*DIGIT
 
@@ -247,6 +246,7 @@ qdtext = HTAB / SP / "!" / %x23-5B ; '#'-'['
 quoted-pair = "\" ( HTAB / SP / VCHAR / obs-text )
 quoted-string = DQUOTE *( qdtext / quoted-pair ) DQUOTE
 
+rank = ( "0" [ "." *3DIGIT ] ) / ( "1" [ "." *3"0" ] )
 
 received-by = ( uri-host [ ":" port ] ) / pseudonym
 received-protocol = [ protocol-name "/" ] protocol-version
@@ -255,7 +255,9 @@ received-protocol = [ protocol-name "/" ] protocol-version
 
 t-codings = "trailers" / ( transfer-coding [ t-ranking ] )
 t-ranking = OWS ";" OWS "q=" rank
-
+tchar = "!" / "#" / "$" / "%" / "&" / "'" / "*" / "+" / "-" / "." /
+    "^" / "_" / "`" / "|" / "~" / DIGIT / ALPHA
+token = 1*tchar
 
 trailer-part = *( header-field CRLF )
 transfer-coding = "chunked" / "compress" / "deflate" / "gzip" /
@@ -263,7 +265,7 @@ transfer-coding = "chunked" / "compress" / "deflate" / "gzip" /
 transfer-extension = token *( OWS ";" OWS transfer-parameter )
 transfer-parameter = token BWS "=" BWS ( token / quoted-string )
 
-uri-host = _host 
+uri-host = host 
 
 Accept = [ ( "," / ( media-range [ accept-params ] ) ) *( OWS "," [
  OWS ( media-range [ accept-params ] ) ] ) ]
@@ -283,6 +285,8 @@ Content-Type = media-type
 Date = HTTP-date
 
 Expect = "100-continue"
+
+;From = mailbox
 
 GMT = %x47.4D.54 ; GMT
 
@@ -356,6 +360,7 @@ obs-date = rfc850-date / asctime-date
 parameter = token "=" ( token / quoted-string )
 product = token [ "/" product-version ]
 product-version = token
+qvalue = ( "0" [ "." *3DIGIT ] ) / ( "1" [ "." *3"0" ] )
 
 rfc850-date = day-name-l "," SP date2 SP time-of-day SP GMT
 
@@ -458,9 +463,12 @@ WWW-Authenticate = *( "," OWS ) challenge *( OWS "," [ OWS challenge ] )
 auth-param = token BWS "=" BWS ( token / quoted-string )
 auth-scheme = token
 
+challenge = auth-scheme [ 1*SP ( token68 / [ ( "," / auth-param ) *( OWS "," [ OWS auth-param ] ) ] ) ]
+credentials = auth-scheme [ 1*SP ( token68 / [ ( "," / auth-param ) *( OWS "," [ OWS auth-param ] ) ] ) ]
 
 Authorization = credentials
 
+token68 = 1*( ALPHA / DIGIT / "-" / "." / "_" / "~" / "+" / "/" ) *"="
 Connection-header = "Connection" ":" OWS Connection OWS
 Content-Length-header = "Content-Length" ":" OWS Content-Length OWS
 Content-Type-header = "Content-Type" ":" OWS Content-Type OWS
@@ -493,6 +501,7 @@ Accept-Encoding-header = "Accept-Encoding" ":" OWS Accept-Encoding OWS
 Accept-Language-header = "Accept-Language" ":" OWS Accept-Language OWS
 Authorization-header = "Authorization" ":" OWS Authorization OWS
 Proxy-Authorization-header = "Proxy-Authorization" ":" OWS Proxy-Authorization OWS
+; From-header = "From" ":" OWS From OWS
 Referer-header = "Referer" ":" OWS Referer OWS
 User-Agent-header = "User-Agent" ":" OWS User-Agent OWS
 
@@ -503,11 +512,9 @@ cookie-value      = ( DQUOTE *cookie-octet DQUOTE ) / *cookie-octet
 cookie-octet      = %x21 / %x23-2B / %x2D-3A / %x3C-5B / %x5D-7E
 Cookie-header = "Cookie:" OWS cookie-string OWS
 cookie-string = cookie-pair *( ";" SP cookie-pair )
-header-field =  Connection-header / Content-Length-header / Content-Type-header / Cookie-header / Transfer-Encoding-header / Expect-header / Host-header / ( field-name ":" OWS field-value OWS )
-last-chunk = 1*("0") [ chunk-ext ] CRLF
 
-rank = ( "0" [ "." *3DIGIT ] ) / ( "1" [ "." *3("0") ] )
-qvalue = ( "0" [ "." *3DIGIT ] ) / ( "1" [ "." *3("0") ] )
+; header-field = field-name ":" OWS field-value OWS 
+; Modified to enable full parsing, see rfcglue.abnf 
 
-challenge = auth-scheme [ 1*SP ( token68 / [ ( "," / auth-param ) *( OWS "," [ OWS auth-param ] ) ] ) ]
-credentials = auth-scheme [ 1*SP ( token68 / [ ( "," / auth-param ) *( OWS "," [ OWS auth-param ] ) ] ) ]
+; header-field =  Connection-header / Content-Length-header / Content-Type-header / Cookie-header / Transfer-Encoding-header / Expect-header / Host-header / Accept-header / Accept-Charset-header / Accept-Encoding-header / Accept-Language-header / Referer-header / User-Agent-header / ( field-name ":" OWS field-value OWS ) 
+header-field =  Connection-header / Content-Length-header / Content-Type-header / Cookie-header / Transfer-Encoding-header / Expect-header / Host-header / ( field-name ":" OWS field-value OWS ) 
