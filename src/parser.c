@@ -339,8 +339,8 @@ tree_node* dec_octet(tree_node* parent) {
 				return node_dec_octet;
 			}
 		}
-		tree_node_free(node_tmp);
 	}
+	tree_node_free(node_tmp);
 	node_tmp = tree_node_tmp(node_dec_octet);
 	if (check_sa(node_tmp, "1")) {
 		if (DIGIT(node_tmp) != NULL && DIGIT(node_tmp) != NULL) {
@@ -351,8 +351,8 @@ tree_node* dec_octet(tree_node* parent) {
 #endif
 			return node_dec_octet;
 		}
-		tree_node_free(node_tmp);
 	}
+	tree_node_free(node_tmp);
 	node_tmp = tree_node_tmp(node_dec_octet);
 	index = get_start(node_tmp);
 	if (parent->string[index] >= '1' && parent->string[index] <= '9') {
