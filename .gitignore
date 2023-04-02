@@ -1,4 +1,4 @@
-valgrind-out.txt
+valgrind*.txt
 .vscode/settings.json
 testFile/*.txt
 bin/*
