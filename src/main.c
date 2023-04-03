@@ -35,8 +35,6 @@ int main(int argc, char *argv[])
     if ((addr = mmap(NULL, st.st_size, PROT_WRITE, MAP_PRIVATE, fi, 0)) == NULL)
         return false;
 
-    // This is a special HACK since identificateur in C can't have character '-'
-
     if (argc == 3)
     {
         p = argv[2];
@@ -51,7 +49,7 @@ int main(int argc, char *argv[])
         }
         p = argv[2];
     }
-    // call parser and get results. This is a special HACK since C don't suck enough
+
     if ((res = parseur(addr, st.st_size)))
     {
         _Token *r, *tok;

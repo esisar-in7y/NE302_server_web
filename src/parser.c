@@ -1,7 +1,7 @@
 #include "parser.h"
 #define RED	  "\033[31m" /* Red */
 #define RESET "\033[0m"
-// TODO move tmp that works LOL
+
 int parseur(char* req, int bytes) {
 	// printf("size:%d req:%s\n", bytes, req);
 	tree_node* root = tree_node_init(req);
@@ -689,9 +689,7 @@ tree_node* ls32(tree_node* parent) {
 //               / [ *4( h16 ":" ) h16 ] "::"              ls32
 //               / [ *5( h16 ":" ) h16 ] "::"              h16
 //               / [ *6( h16 ":" ) h16 ] "::"
-// TODO good luck les mecs
-// c'est moa ki sui quasé ou cé ip6 ki est quasé ?
-// 8 morts 6 blessés je pète ma bière ma luubellule
+
 tree_node* IPv6address(tree_node* parent) {
 	tree_node* node_IPv6address = tree_node_add_node(parent, "IPv6address");
 #ifdef DEBUG
@@ -1173,15 +1171,7 @@ tree_node* quoted_string(tree_node* parent) {
 		tree_node_free(node_quoted_string);
 		return NULL;
 	}
-	// j'essaie de taper dans Discord mais ce con me switch de fenêtre enleve le
-	// mode follow
-	//  tu va dans la tab live share et si tu vois un point full color tu clique
-	//  dessus dans participant putain j'ai enlevé le mode follow keski me fait
-	//  chier le debugger ptdr il prends tout les curseurs ce con ptdr on se
-	//  déco pour règler ça ? non c'est juste qu'ils ont codé aec le cul et du
-	//  coup la solution ? la prière amen mes frères ah c'est bon cetait une
-	//  option planquéeéeée gah lesgo emndcorre un coup de giorgi stop ecrire
-	//  debug(node_quoted_string,__LINE__);
+
 	bool end = false;
 	while (!end) {
 		if (qdtext(node_quoted_string) != NULL) {
@@ -1193,10 +1183,7 @@ tree_node* quoted_string(tree_node* parent) {
 			// debug(node_quoted_string,__LINE__);
 		}
 	}
-	// azy du coup là ça en est où exactement ? il a juste skip le tru
-	// d'audessus et c'est pas normal chelou
-	//  while (qdtext(node_quoted_string) != NULL ||
-	//  quoted_pair(node_quoted_string) != NULL)
+
 #ifdef DEBUG
 	debug(node_quoted_string, __LINE__);
 #endif
