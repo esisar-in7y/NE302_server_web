@@ -1,0 +1,15 @@
+METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
+
+HTTP-VERSION
+If version not in [0.9,1.0,1.1,2.0,3.0] (exist) => 400 Bad Request
+
+If version not in [0.9,1.0,1.1] (supported)  => 505 HTTP Version Not Supported
+
+If version 1.1 and no Host header => 400 Bad Request
+
+Request-target
+Gérer le % encoding et le dot segment removal
+## A finir de détailler
+
+
+
