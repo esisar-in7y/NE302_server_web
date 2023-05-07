@@ -117,6 +117,18 @@ int checkSemantics(_Token* root) {
             }
             t = t->next;
         }
+
+        // Content-Length Header
+        t = searchTree(root,"Content-Length");
+        if(t != NULL){
+            node = t->node;
+            char* contentLength = getElementValue(node,node->length_string);
+            if(atoi(contentLength) < 0){
+                return 400;
+            }
+        }
+
+        return 200;
 	}
 }
 
