@@ -99,10 +99,24 @@ int checkSemantics(_Token* root) {
 			return 400;
 		}
 
-		// Referer Header
-		if (searchTree(root, "Referer_header") != NULL) {
-			// If the URL contains a fragment (indicated by a '#' symbol) or userinfo (indicated by a '@' symbol) => 400 Bad Request
-		}
+        // Referer Header
+        t = searchTree(root,"header_field");
+        _Token* fieldName;
+        while(t->next != NULL){
+            fieldName = searchTree(t,"field_name");
+            node = fieldName->node;
+            if (strcmp(getElementValue(node,node->length_string),"Referer") == 0){
+                 //If the URL contains a fragment (indicated by a '#' symbol) or userinfo (indicated by a '@' symbol) => 400 Bad Request
+                t = searchTree(root,"field_value");
+                node = t->node;
+                char* absolutePath = getElementValue(node,node->length_string);
+                if(strchr(absolutePath,'#') != NULL || strchr(absolutePath,'@') != NULL){
+                    return 400;
+                }
+                break;
+            }
+            t = t->next;
+        }
 	}
 }
 
