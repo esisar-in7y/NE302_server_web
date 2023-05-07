@@ -1,4 +1,14 @@
 #include "manip.h"
+
+void debug(tree_node* node_tmp, int line) {
+	int middle = node_tmp->start_string + node_tmp->length_string;
+	printf("> src/parser.c:%-4d |%-20s|", line, tree_node_string[node_tmp->type]);
+	print_sub_str(node_tmp->string, 0, middle);
+	printf(RED);
+	print_sub_str(node_tmp->string, middle, strlen((const char*)node_tmp->string) - middle);
+	printf(RESET "\n");
+}
+
 char *copy_sub_str(const unsigned char *source, uint16_t start, uint16_t length) {
     char *buffer = malloc(sizeof(char) * (length + 1));
     if (buffer == NULL) {
@@ -61,4 +71,77 @@ char *trim_space(char *str) {
     }
     *(end + 1) = '\0';
     return str;
+}
+int hex_to_int(char c) {
+	if (isdigit(c)) {
+		return c - '0';
+	} else {
+		return toupper(c) - 'A' + 10;
+	}
+}
+
+char* url_decode(const char* src) {
+	const char* p = src;
+	char* dest = NULL;
+	char* tmp = NULL;
+	size_t size = 0;
+	while (*p) {
+		if (*p == '%') {
+			int value = hex_to_int(*(p + 1)) * 16 + hex_to_int(*(p + 2));
+			if (NULL == (tmp = realloc(dest, size + 2))) {
+				fprintf(stderr, "realloc problem\n");
+                exit(3);
+			}
+			dest = tmp;
+			dest[size] = (char)value;
+			size++;
+			p += 3;
+		} else {
+			if (NULL == (tmp = realloc(dest, size + 2))) {
+				fprintf(stderr, "realloc problem\n");
+                exit(3);
+			}
+			dest = tmp;
+			dest[size] = *p;
+			size++;
+			p++;
+		}
+	}
+	if (dest) {
+		dest[size] = '\0';
+	}
+	return dest;
+}
+
+char *remove_dot_segments(const char *input) {
+    char *output = malloc(strlen(input) + 1);
+    char *out_ptr = output;
+    const char *in_ptr = input;
+
+    while (*in_ptr) {
+        if (strncmp(in_ptr, "../", 3) == 0 || strncmp(in_ptr, "./", 2) == 0) {
+            in_ptr += (*in_ptr == '.' ? 2 : 3);
+        } else if (strncmp(in_ptr, "/./", 3) == 0 || strcmp(in_ptr, "/.") == 0) {
+            in_ptr += 2;
+        } else if (strncmp(in_ptr, "/../", 4) == 0 || strcmp(in_ptr, "/..") == 0) {
+            in_ptr += 3;
+            if (out_ptr > output) {
+                out_ptr--;
+                while (out_ptr > output && *out_ptr != '/') {
+                    out_ptr--;
+                }
+            }
+        } else if (strcmp(in_ptr, ".") == 0 || strcmp(in_ptr, "..") == 0) {
+            break;
+        } else {
+            const char *next_slash = strchr(in_ptr + 1, '/');
+            size_t segment_len = next_slash ? (size_t)(next_slash - in_ptr) : strlen(in_ptr);
+            memcpy(out_ptr, in_ptr, segment_len);
+            out_ptr += segment_len;
+            in_ptr += segment_len;
+        }
+    }
+
+    *out_ptr = '\0';
+    return output;
 }

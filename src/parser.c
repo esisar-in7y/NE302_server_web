@@ -1,6 +1,4 @@
 #include "parser.h"
-#define RED	  "\033[31m" /* Red */
-#define RESET "\033[0m"
 
 int parseur(char* req, int bytes) {
 	// printf("size:%d req:%s\n", bytes, req);
@@ -12,14 +10,6 @@ int parseur(char* req, int bytes) {
 		return 0;
 	}
 	return 1;
-}
-void debug(tree_node* node_tmp, int line) {
-	int middle = node_tmp->start_string + node_tmp->length_string;
-	printf("> src/parser.c:%-4d |%-20s|", line, tree_node_string[node_tmp->type]);
-	print_sub_str(node_tmp->string, 0, middle);
-	printf(RED);
-	print_sub_str(node_tmp->string, middle, strlen((const char*)node_tmp->string) - middle);
-	printf(RESET "\n");
 }
 // nombre = 1*DIGIT
 tree_node* validate_number(tree_node* parent) {

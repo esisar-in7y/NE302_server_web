@@ -11,3 +11,5 @@
     typedef uint16_t u_int16_t;
 #endif
 #include "manip.h"
+#define RED	  "\033[31m" /* Red */
+#define RESET "\033[0m"
