@@ -189,7 +189,7 @@ int checkAcceptEncoding(_Token* root) {
 
 // If several Host header => 400 Bad Request
 
-int checkHost(_Token* root) {
+int checkHostHeader(_Token* root) {
     _Token* tok = searchTree(root, "HTTP_version");
     _Token* tok2 = searchTree(root, "Host");
     tree_node* node = tok->node;
