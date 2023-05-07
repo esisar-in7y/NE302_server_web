@@ -17,5 +17,5 @@ const char *get_file_type(const char *filename) {
         }
     }
 
-    return "unknown";
+    return "application/octet-stream";
 }
