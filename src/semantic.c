@@ -99,36 +99,36 @@ int checkSemantics(_Token* root) {
 			return 400;
 		}
 
-        // Referer Header
-        t = searchTree(root,"header_field");
-        _Token* fieldName;
-        while(t->next != NULL){
-            fieldName = searchTree(t,"field_name");
-            node = fieldName->node;
-            if (strcmp(getElementValue(node,node->length_string),"Referer") == 0){
-                 //If the URL contains a fragment (indicated by a '#' symbol) or userinfo (indicated by a '@' symbol) => 400 Bad Request
-                t = searchTree(root,"field_value");
-                node = t->node;
-                char* absolutePath = getElementValue(node,node->length_string);
-                if(strchr(absolutePath,'#') != NULL || strchr(absolutePath,'@') != NULL){
-                    return 400;
-                }
-                break;
-            }
-            t = t->next;
-        }
+		// Referer Header
+		t = searchTree(root, "header_field");
+		_Token* fieldName;
+		while (t->next != NULL) {
+			fieldName = searchTree(t, "field_name");
+			node = fieldName->node;
+			if (strcmp(getElementValue(node, node->length_string), "Referer") == 0) {
+				// If the URL contains a fragment (indicated by a '#' symbol) or userinfo (indicated by a '@' symbol) => 400 Bad Request
+				t = searchTree(root, "field_value");
+				node = t->node;
+				char* absolutePath = getElementValue(node, node->length_string);
+				if (strchr(absolutePath, '#') != NULL || strchr(absolutePath, '@') != NULL) {
+					return 400;
+				}
+				break;
+			}
+			t = t->next;
+		}
 
-        // Content-Length Header
-        t = searchTree(root,"Content-Length");
-        if(t != NULL){
-            node = t->node;
-            char* contentLength = getElementValue(node,node->length_string);
-            if(atoi(contentLength) < 0){
-                return 400;
-            }
-        }
+		// Content-Length Header
+		t = searchTree(root, "Content-Length");
+		if (t != NULL) {
+			node = t->node;
+			char* contentLength = getElementValue(node, node->length_string);
+			if (atoi(contentLength) < 0) {
+				return 400;
+			}
+		}
 
-        return 200;
+		return 200;
 	}
 }
 
@@ -177,17 +177,31 @@ int checkConnection(_Token* root) {
 // If representation has no content coding => acceptable
 
 int checkAcceptEncoding(_Token* root) {
-	_Token* tok = searchTree(root, "HTTP_version");
-	_Token* tok2 = searchTree(root, "Accept-Encoding");
-	tree_node* node = tok->node;
-	tree_node* node2 = tok2->node;
-	char* version = getElementValue(node, node->length_string);
-	char* acceptEncoding = getElementValue(node2, node2->length_string);
-	if (acceptEncoding != NULL) {
-		if (searchTree(root, "Content-Encoding") == NULL) {
-			return 415;
-		}
-	}
+	_Token* tokV = searchTree(root, "HTTP_version");
+	// _Token* tok2 = searchTree(root, "Accept-Encoding");
+	// Referer Header
+	_Token* tok = searchTree(root, "header_field");
+	_Token* fieldName;
+    tree_node* node;
+    tree_node* nodeV = tokV->node;
+    char* version = getElementValue(node, node->length_string);
+    while (tok != NULL) {
+        _Token* fieldName = searchTree(tok, "field_name");
+        tree_node* node = fieldName->node;
+        char* name = getElementValue(node, node->length_string);
+        if (strcmp(name, "Accept-Encoding") == 0) {
+            _Token* fieldValue = searchTree(tok, "field_value");
+            node = fieldValue->node;
+            char* value = getElementValue(node, node->length_string);
+            if (strstr(value, "gzip") != NULL || strstr(value, "compress") != NULL || strstr(value, "deflate") != NULL || strstr(value, "br") != NULL || strstr(value, "identity") != NULL) {
+                if (searchTree(root, "Content-Encoding") == NULL) {
+                    return 415;
+                }
+            }
+            break;
+        }
+        tok = tok->next;
+    }
 	return 200;
 }
 
@@ -202,16 +216,16 @@ int checkAcceptEncoding(_Token* root) {
 // If several Host header => 400 Bad Request
 
 int checkHostHeader(_Token* root) {
-    _Token* tok = searchTree(root, "HTTP_version");
-    _Token* tok2 = searchTree(root, "Host");
-    tree_node* node = tok->node;
-    tree_node* node2 = tok2->node;
-    char* version = getElementValue(node, node->length_string);
-    char* host = getElementValue(node2, node2->length_string);
-    if (strcmp(version, "HTTP/1.1") == 0) {
-        if (host == NULL) {
-            return 400;
-        }
-    }
-    return 200;
+	_Token* tok = searchTree(root, "HTTP_version");
+	_Token* tok2 = searchTree(root, "Host");
+	tree_node* node = tok->node;
+	tree_node* node2 = tok2->node;
+	char* version = getElementValue(node, node->length_string);
+	char* host = getElementValue(node2, node2->length_string);
+	if (strcmp(version, "HTTP/1.1") == 0) {
+		if (host == NULL) {
+			return 400;
+		}
+	}
+	return 200;
 }
