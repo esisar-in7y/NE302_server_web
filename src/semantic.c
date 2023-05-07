@@ -127,6 +127,8 @@ int checkSemantics(_Token* root) {
                 return 400;
             }
         }
+
+        return 200;
 	}
 }
 
