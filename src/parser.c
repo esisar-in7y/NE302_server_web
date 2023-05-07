@@ -1479,18 +1479,14 @@ tree_node* request_target(tree_node* parent) {
 tree_node* request_line(tree_node* parent) {
 	// DEBUG 0
 	tree_node* node_request_line = tree_node_add_node(parent, "request_line");
-	// method(node_request_line);
-	// debug(node_request_line,__LINE__);
-	// SP(node_request_line);
-	// request_target(node_request_line);
-	// debug(node_request_line,__LINE__);
-	// SP(node_request_line);
-	// HTTP_version(node_request_line);
-	// debug(node_request_line,__LINE__);
-	// CRLF(node_request_line);
-	// debug(node_request_line,__LINE__);
-	// exit(0);
-	if (method(node_request_line) == NULL || SP(node_request_line) == NULL || request_target(node_request_line) == NULL || SP(node_request_line) == NULL || HTTP_version(node_request_line) == NULL || CRLF(node_request_line) == NULL) {
+	if (
+		method(node_request_line) == NULL || 
+		SP(node_request_line) == NULL || 
+		request_target(node_request_line) == NULL || 
+		SP(node_request_line) == NULL || 
+		HTTP_version(node_request_line) == NULL || 
+		CRLF(node_request_line) == NULL
+	) {
 		tree_node_free(node_request_line);
 		return NULL;
 	}

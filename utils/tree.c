@@ -191,6 +191,24 @@ void tree_node_print(tree_node *node, uint16_t level)
         printf("NULL\n");
         return;
     }
+    if(
+        node->type==get_type_index("field_content") ||
+        node->type==get_type_index("tchar") ||
+        node->type==get_type_index("ALPHA") ||
+        node->type==get_type_index("CRLF") ||
+        node->type==get_type_index("OWS") ||
+        node->type==get_type_index("SP") ||
+        node->type==get_type_index(":") ||
+        node->type==get_type_index("vchar") ||
+        node->type==get_type_index("pchar") ||
+        node->type==get_type_index("/") ||
+        node->type==get_type_index("unreserved") ||
+        node->type==get_type_index("DIGIT") ||
+        node->type==get_type_index(".") ||
+        node->type==get_type_index("field_vchar")
+        ){
+        return;
+    }
     for (uint16_t i = 0; i < level; i++)
     {
         printf(" ");

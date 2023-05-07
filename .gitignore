@@ -61,3 +61,6 @@ dkms.conf
 .vscode/launch.json
 .vscode/launch.json
 bin/http_parse
+tests/*/*/*.txt
+tests/*/*.txt
+tests/fuzzer/*

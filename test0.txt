@@ -1,0 +1,35 @@
+GET /questions/866946/how-can-i-see-the-request-headers-made-by-curl-when-sending-a-request-to-the-ser HTTP/1.1
+Host: stackoverflow.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: deflate
+Referer: https://www.google.com/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Sec-Fetch-User: ?1
+Pragma: no-cache
+Cache-Control: no-cache
+
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+cache-control: private
+location: https://stackoverflow.com/questions/866946/how-can-i-see-the-request-headers-made-by-curl-when-sending-a-request-to-the-ser
+x-request-guid: 0a71be50-0fa1-495c-98f4-04259ed384bd
+feature-policy: microphone 'none'; speaker 'none'
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+Accept-Ranges: bytes
+Date: Sun, 07 May 2023 15:12:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-par-lfpg1960026-PAR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1683472370.860774,VS0,VE83
+Vary: Fastly-SSL
+X-DNS-Prefetch-Control: off
+Set-Cookie: prov=d64b0e20-cf07-c169-d5c9-1dc26b0576ee; domain=.stackoverflow.com; expires=Fri, 01-Jan-2055 00:00:00 GMT; path=/; HttpOnly
+transfer-encoding: chunked
+
