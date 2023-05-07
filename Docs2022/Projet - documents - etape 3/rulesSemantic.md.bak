@@ -6,12 +6,27 @@ If version not in [0.9,1.0,1.1,2.0,3.0] (exist) => 400 Bad Request
 
 If version not in [0.9,1.0,1.1] (supported)  => 505 HTTP Version Not Supported
 
-If version 1.1 and no Host header => 400 Bad Request
+
 
 **Request-target**
 Gérer le % encoding et le dot segment removal
 ## A finir de détailler
+5.3.1.  origin-form
 
+   The most common form of request-target is the origin-form.
+
+     origin-form    = absolute-path [ "?" query ]
+	 
+5.3.2.  absolute-form
+
+   When making a request to a proxy, other than a CONNECT or server-wide
+   OPTIONS request (as detailed below), a client MUST send the target
+   URI in absolute-form as the request-target.
+
+     absolute-form  = absolute-URI
+	 
+	 
+	 
 **Transfer-Encoding-header**
 
 Verify that the message body isn't chunked more than once
@@ -47,6 +62,32 @@ Without Accept-encoding => everything is considered as acceptable so do nothing
 If representation has no content coding => acceptable 
 
 **Content-Length header**
+max
+(Value=>0) => (Value<max) => OK sinon 413 Content Too Large sinon 400 Bad Request
+
+Content-Length and Transfer-encoding can't be in the same request
+
+**Host header**
+
+Overlap with Request-target for URI
+
+If version 1.1 and no Host header => 400 Bad Request
+
+If request-target include authority component and Host have a value different to this component => 400 Bad Request
+
+If several Host header => 400 Bad Request
+
+**Connection header**
+
+If Version 1.0 and keep Alive option, must have Transfer-Encoding or Content-Length, if not 400 Bad Request
+
+If Version 1.1 and no close option, must have Transfer-Encoding or Content-Length, if not 400 Bad Request
+
+If is a proxy and Version 1.0 and keep Alive option or Version 1.1 and no close option => 400 Bad Request
+
+
+
+
 
 
 
