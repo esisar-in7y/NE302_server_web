@@ -178,3 +178,28 @@ int checkAcceptEncoding(_Token* root) {
 	}
 	return 200;
 }
+
+// **Host header**
+
+// Overlap with Request-target for URI
+
+// If version 1.1 and no Host header => 400 Bad Request
+
+// If request-target include authority component and Host have a value different to this component => 400 Bad Request
+
+// If several Host header => 400 Bad Request
+
+int checkHost(_Token* root) {
+    _Token* tok = searchTree(root, "HTTP_version");
+    _Token* tok2 = searchTree(root, "Host");
+    tree_node* node = tok->node;
+    tree_node* node2 = tok2->node;
+    char* version = getElementValue(node, node->length_string);
+    char* host = getElementValue(node2, node2->length_string);
+    if (strcmp(version, "HTTP/1.1") == 0) {
+        if (host == NULL) {
+            return 400;
+        }
+    }
+    return 200;
+}
