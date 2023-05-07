@@ -114,3 +114,41 @@ int checkSemantics(_Token *root){
 
     }
 }
+
+int checkConnection(_Token* root) {
+	_Token* tok = searchTree(root, "HTTP_version");
+	_Token* tok2 = searchTree(root, "Connection");
+	_Token* tok3 = searchTree(root, "Proxy-Connection");
+    tree_node *node = tok->node;
+    tree_node *node2 = tok2->node;
+    tree_node *node3 = tok3->node;    
+	char* version = getElementValue(node, node->length_string);
+	char* connection = getElementValue(node2, node2->length_string);
+	char* proxyConnection = getElementValue(node3, node3->length_string);
+	if (strcmp(version, "HTTP/1.1")) {
+		if (strcmp(connection, "close") != 0) {
+			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+				return 400;
+			}
+		}
+	} else if (strcmp(version, "HTTP/1.0")) {
+		if (strcmp(connection, "keep-alive") == 0 || strcmp(connection, "Keep-Alive") == 0) {
+			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+				return 400;
+			}
+		}
+	} else if (strcmp(proxyConnection, "keep-alive") == 0 || strcmp(proxyConnection, "Keep-Alive") == 0) {
+		if (strcmp(version, "HTTP/1.1")) {
+			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+				return 400;
+			}
+		} else if (strcmp(version, "HTTP/1.0")) {
+			if (strcmp(connection, "close") != 0) {
+				if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+					return 400;
+				}
+			}
+		}
+	}
+	return 200;
+}
