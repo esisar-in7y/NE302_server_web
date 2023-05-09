@@ -3,7 +3,7 @@ EXEC = http_parse
 ARGS = tests/tests.txt HTTP_name
 
 CC = gcc
-CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99  -D TST=0
+CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0
 # -D ABNF=1
 # -D DEBUG
 
@@ -18,7 +18,7 @@ SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
-LIBS = 
+LIBS = -lmagic
 LIB_DIRS = 
 
 PHONY := $(EXEC)

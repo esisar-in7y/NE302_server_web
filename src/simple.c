@@ -4,14 +4,15 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include "../Docs2022/Projet - documents - etape 3/librequest-0.5/api/request.h"   
+#include "../utils/request.h"   
 #include "api.h"   
 
 #define REPONSEGOOD "HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: Keepalive\r\n\r\n"
 #define REPONSEBAD "HTTP/1.0 400 OK\r\n\r\n"
 
 // ceci decrit la methode experimentale de renvoi de la reponse Cf API
-
+#define false 0
+#if TST==0
 int main(int argc, char *argv[])
 {
 	message *requete; 
@@ -39,4 +40,4 @@ int main(int argc, char *argv[])
 	}
 	return (1);
 }
-
+#endif

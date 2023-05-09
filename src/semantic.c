@@ -32,10 +32,11 @@ void purgeTree(void *root);
 
 // L'appel à votre parser un char* et une longueur à parser.
 int parseur(char *req, int len); */
-int main() {
-	_Token* root = getRootTree();
-	return checkSemantics(root);
-}
+
+// int main() {
+// 	_Token* root = getRootTree();
+// 	return checkSemantics(root);
+// }
 
 int checkSemantics(_Token* root) {
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
@@ -127,10 +128,10 @@ int checkSemantics(_Token* root) {
 				return 400;
 			}
 		}
-
-		return 200;
 	}
+	return 200;
 }
+
 
 int checkConnection(_Token* root) {
 	_Token* tok = searchTree(root, "HTTP_version");
@@ -175,16 +176,21 @@ int checkConnection(_Token* root) {
 // Verif one of the content codings listed is the representation's content coding (si q!=0)  or \*/\*else =>  415 Unsupported Media Type
 // Without Accept-encoding => everything is considered as acceptable so do nothing
 // If representation has no content coding => acceptable
-
+bool isin(char* str, char* list[]){
+	for(int i=0; i<sizeof(list)/sizeof(list[0]); i++){
+		if(strcmp(str, list[i])==0){
+			return true;
+		}
+	}
+	return false;
+}
 int checkAcceptEncoding(_Token* root) {
+	char* accepted_encodings[]={"gzip", "compress", "deflate", "br", "identity"};
 	_Token* tokV = searchTree(root, "HTTP_version");
 	// _Token* tok2 = searchTree(root, "Accept-Encoding");
 	// Referer Header
 	_Token* tok = searchTree(root, "header_field");
 	_Token* fieldName;
-    tree_node* node;
-    tree_node* nodeV = tokV->node;
-    char* version = getElementValue(node, node->length_string);
     while (tok != NULL) {
         _Token* fieldName = searchTree(tok, "field_name");
         tree_node* node = fieldName->node;
@@ -193,12 +199,9 @@ int checkAcceptEncoding(_Token* root) {
             _Token* fieldValue = searchTree(tok, "field_value");
             node = fieldValue->node;
             char* value = getElementValue(node, node->length_string);
-            if (strstr(value, "gzip") != NULL || strstr(value, "compress") != NULL || strstr(value, "deflate") != NULL || strstr(value, "br") != NULL || strstr(value, "identity") != NULL) {
-                if (searchTree(root, "Content-Encoding") == NULL) {
-                    return 415;
-                }
-            }
-            break;
+			if(!isin(value, accepted_encodings)){
+				return 415;
+			}
         }
         tok = tok->next;
     }
