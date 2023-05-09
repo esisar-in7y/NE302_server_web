@@ -70,7 +70,7 @@ leaks: $(EXEC)
 		--show-leak-kinds=all \
 		--track-origins=yes \
 		--log-file=valgrind_out.txt -s \
-		./$(OUTDIR)/$(EXEC) $(ARGS)
+	./$(OUTDIR)/$(EXEC) $(ARGS)
 
 abnf:
 	gcc -g -o obj/manip.o -c utils/manip.c
