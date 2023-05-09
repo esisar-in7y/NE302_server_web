@@ -26,8 +26,8 @@ LIB_DIRS =
 
 PHONY := $(EXEC)
 $(EXEC): $(OBJS)
- 	@mkdir -p $(OUTDIR)
- 	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
+	@mkdir -p $(OUTDIR)
+	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
 
 
 
