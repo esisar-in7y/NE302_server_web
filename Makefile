@@ -72,3 +72,6 @@ abnf:
 	gcc -g -o obj/abnf.o -c utils/abnf.c
 	gcc -g -o obj/abnf_test.o obj/abnf.o obj/manip.o
 	./obj/abnf_test.o
+
+rendu:
+	zip -r9 "rendus/LEPRAT_MONCORGE_MOUSSU_$$(date +"%Y-%m-%-d-%H-%M-%S").zip" . -x *.git* *.vscode* Docs2022/\* allrfc.abnf rendus/\* tests/**\*
