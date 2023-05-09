@@ -26,14 +26,7 @@ int main(int argc, char *argv[])
 		printf("Client [%d] [%s:%d]\n",requete->clientId,inet_ntoa(requete->clientAddress->sin_addr),htons(requete->clientAddress->sin_port));
 		printf("Contenu de la demande %.*s\n\n",requete->len,requete->buf);  
 			
-		if ( parseur(requete->buf,requete->len) !=1 ) { 
-			
-			writeDirectClient(requete->clientId,REPONSEBAD,strlen(REPONSEBAD)); 
-		} 
-		else {
-			writeDirectClient(requete->clientId,REPONSEGOOD,strlen(REPONSEGOOD)); 
-		}
-		endWriteDirectClient(requete->clientId); 
+		parseur(requete->buf,requete->len);
 		//requestShutdownSocket(requete->clientId); 
 	// on ne se sert plus de requete a partir de maintenant, on peut donc liberer... 
 	freeRequest(requete); 

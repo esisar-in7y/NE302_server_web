@@ -18,20 +18,17 @@ SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
-# LIBS = -lmagic
-LDFLAGS = -L. -lrequest -lmagic
+LIBS = -lrequest -lmagic
+LDFLAGS = -L.
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./api
 
 LIB_DIRS = 
 
 PHONY := $(EXEC)
-# $(EXEC): $(OBJS)
-# 	@mkdir -p $(OUTDIR)
-# 	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
-
 $(EXEC): $(OBJS)
-	@mkdir -p $(OUTDIR)
-	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LDFLAGS) $(CFLAGS)
+ 	@mkdir -p $(OUTDIR)
+ 	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
+
 
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
