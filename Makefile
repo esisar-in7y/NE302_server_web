@@ -18,9 +18,9 @@ SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
-LIBS = -lrequest -lmagic
-LDFLAGS = -L.
-INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./api
+LIBS =  -lmagic
+LDFLAGS = 
+INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./api -I./request
 
 LIB_DIRS = 
 
