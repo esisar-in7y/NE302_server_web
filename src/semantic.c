@@ -186,13 +186,13 @@ bool isin(char* str, char* list[]){
 }
 int checkAcceptEncoding(_Token* root) {
 	char* accepted_encodings[]={"gzip", "compress", "deflate", "br", "identity"};
-	_Token* tokV = searchTree(root, "HTTP_version");
+	// _Token* tokV = searchTree(root, "HTTP_version");
 	// _Token* tok2 = searchTree(root, "Accept-Encoding");
 	// Referer Header
 	_Token* tok = searchTree(root, "header_field");
 	_Token* fieldName;
     while (tok != NULL) {
-        _Token* fieldName = searchTree(tok, "field_name");
+        fieldName = searchTree(tok, "field_name");
         tree_node* node = fieldName->node;
         char* name = getElementValue(node, node->length_string);
         if (strcmp(name, "Accept-Encoding") == 0) {
