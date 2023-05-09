@@ -4,10 +4,10 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include "../utils/request.h"   
+#include "../lib/request.h"   
 #include "api.h"   
 
-#define PORT 8080
+#define PORT 8082
 #define REPONSEGOOD "HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: Keepalive\r\n\r\n"
 #define REPONSEBAD "HTTP/1.0 400 OK\r\n\r\n"
 
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 		printf("Contenu de la demande %.*s\n\n",requete->len,requete->buf);  
 			
 		parseur(requete->buf,requete->len);
-		//requestShutdownSocket(requete->clientId); 
-	// on ne se sert plus de requete a partir de maintenant, on peut donc liberer... 
-	freeRequest(requete); 
+		requestShutdownSocket(requete->clientId); 
+		// on ne se sert plus de requete a partir de maintenant, on peut donc liberer... 
+		freeRequest(requete); 
 	}
 	return (1);
 }

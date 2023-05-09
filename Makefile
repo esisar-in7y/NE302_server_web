@@ -1,6 +1,6 @@
 EXEC = http_parse
 # ARGS = tests/testFile/test1.txt nombre
-ARGS = tests/tests.txt HTTP_name
+# ARGS = tests/tests.txt HTTP_name
 
 CC = gcc
 CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0
@@ -11,7 +11,7 @@ IGNORE = tst.c
 OUTDIR = ./bin
 DATADIR = ./data
 SUBDIR = utils src
-DIR_OBJ = ./obj
+DIR_OBJ = ./bin
 
 INCS = $(wildcard *.h $(foreach fd, $(SUBDIR), $(fd)/*.h))
 SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
@@ -20,7 +20,7 @@ OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
 LIBS =  -lmagic
 LDFLAGS = 
-INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./api -I./request
+INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./lib
 
 LIB_DIRS = 
 
@@ -79,3 +79,6 @@ abnf:
 
 rendu:
 	zip -r9 "rendus/LEPRAT_MONCORGE_MOUSSU_$$(date +"%Y-%m-%-d-%H-%M-%S").zip" . -x *.git* *.vscode* Docs2022/\* allrfc.abnf rendus/\* tests/**\*
+
+autoreload:
+	./autoreload.sh
