@@ -1,7 +1,4 @@
-#include "../utils/global.h"
-
-// Put parser here
-#include "api.h"
+#include "semantic.h"
 /*
 typedef struct _token {
 	void *node;  		// node type opaque pointant vers un noeud de votre structure de données.
