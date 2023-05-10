@@ -2,6 +2,7 @@
 # ARGS = tests/testFile/test1.txt nombre
 # ARGS = tests/tests.txt HTTP_name
 EXEC = server_test
+ARGS = 
 
 CC = gcc
 CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0
@@ -62,8 +63,8 @@ tests: clean $(EXEC)
 
 run: $(EXEC)
 	@reset
-	# ./$(OUTDIR)/$(EXEC) $(ARGS)
-	./$(OUTDIR)/$(EXEC)
+	-pkill -f $(EXEC)
+	./$(OUTDIR)/$(EXEC) $(ARGS)
 
 bt: $(EXEC)
 	@reset

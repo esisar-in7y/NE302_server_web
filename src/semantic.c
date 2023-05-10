@@ -89,7 +89,7 @@ int checkSemantics(tree_node* root) {
 			}
 		}
 	}
-	return 200;
+	return 0;
 }
 
 
