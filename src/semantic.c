@@ -129,7 +129,7 @@ int checkConnection(tree_node* root) {
 			}
 		}
 	}
-	return 200;
+	return NULL;
 }
 
 // **Accept-encoding header**
@@ -137,19 +137,9 @@ int checkConnection(tree_node* root) {
 // Verif one of the content codings listed is the representation's content coding (si q!=0)  or \*/\*else =>  415 Unsupported Media Type
 // Without Accept-encoding => everything is considered as acceptable so do nothing
 // If representation has no content coding => acceptable
-bool isin(char* str, char* list[]){
-	for(int i=0; i<sizeof(list)/sizeof(list[0]); i++){
-		if(strcmp(str, list[i])==0){
-			return true;
-		}
-	}
-	return false;
-}
+
 int checkAcceptEncoding(tree_node* root) {
 	char* accepted_encodings[]={"gzip", "compress", "deflate", "br", "identity"};
-	// _Token* tokV = searchTree(root, "HTTP_version");
-	// _Token* tok2 = searchTree(root, "Accept-Encoding");
-	// Referer Header
 	_Token* tok = searchTree(root, "header_field");
     while (tok != NULL) {
         tree_node* node =(tree_node*) searchTree(tok->node, "field_name")->node;
@@ -163,7 +153,7 @@ int checkAcceptEncoding(tree_node* root) {
         }
         tok = tok->next;
     }
-	return 200;
+	return NULL;
 }
 
 // **Host header**
@@ -177,16 +167,13 @@ int checkAcceptEncoding(tree_node* root) {
 // If several Host header => 400 Bad Request
 
 int checkHostHeader(tree_node* root) {
-	_Token* tok = searchTree(root, "HTTP_version");
-	_Token* tok2 = searchTree(root, "Host");
-	tree_node* node = tok->node;
-	tree_node* node2 = tok2->node;
-	char* version = getElementValue(node, node->length_string);
-	char* host = getElementValue(node2,  node2->length_string);
-	if (strcmp(version, "HTTP/1.1") == 0) {
-		if (host == NULL) {
+	tree_node* node_http_version = (tree_node*) searchTree(root, "HTTP_version")->node;
+	char* http_version = getElementValue(node_http_version, node_http_version->length_string);
+	if (strcmp(http_version, "HTTP/1.1") == 0) {
+		_Token* tok2 = searchTree(root, "Host");
+		if (tok2 == NULL) {
 			return 400;
 		}
 	}
-	return 200;
+	return NULL;
 }

@@ -145,3 +145,11 @@ char *remove_dot_segments(const char *input) {
     *out_ptr = '\0';
     return output;
 }
+bool isin(char* str, char* list[]){
+	for(int i=0; i<sizeof(list)/sizeof(list[0]); i++){
+		if(strcmp(str, list[i])==0){
+			return true;
+		}
+	}
+	return false;
+}
