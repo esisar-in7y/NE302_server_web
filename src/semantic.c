@@ -157,10 +157,12 @@ int checkAcceptEncoding(tree_node* root) {
 
 // **Host header**
 
-// Overlap with Request-target for URI => 400 Bad Request
-// If request-target include authority component and Host have a value different to this component => 400 Bad Request
+// Overlap with Request-target for URI
 
 // If version 1.1 and no Host header => 400 Bad Request
+
+// If request-target include authority component and Host have a value different to this component => 400 Bad Request
+
 // If several Host header => 400 Bad Request
 
 int checkHostHeader(tree_node* root) {
@@ -168,9 +170,14 @@ int checkHostHeader(tree_node* root) {
 	char* http_version = getElementValue(node_http_version, node_http_version->length_string);
 	if (strcmp(http_version, "HTTP/1.1") == 0) {
 		_Token* tok2 = searchTree(root, "Host");
-		if (tok2 == NULL || tok2->next != NULL) {
+		if (tok2 == NULL) {
 			return 400;
 		}
 	}
 	return 0;
+}
+
+char getHost(tree_node* root) {
+	tree_node* node_host = (tree_node*) searchTree(root, "Host")->node;
+	return getElementValue(node_host, node_host->length_string);
 }
