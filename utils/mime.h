@@ -8,7 +8,7 @@ int get_file_size(const char* filepath);
 
 #ifndef MIME_H
 #define MIME_H
-static char* MIME[][2]={
+__attribute__((unused)) static char* MIME[][2]={
     {".x3d","application/vnd.hzn-3d-crossword"},
     {".3gp","video/3gpp"},
     {".3g2","video/3gpp2"},

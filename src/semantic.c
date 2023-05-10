@@ -43,15 +43,14 @@ int checkSemantics(tree_node* root) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
-	_Token* t = searchTree(root, "HTTP_version");
-	node =(tree_node*) t->node;
+	node =(tree_node*)  searchTree(root, "HTTP_version")->node;
 	char* version = getElementValue(node,   node->length_string);
 	if (strcmp(version, "HTTP/1.0") != 0 && strcmp(version, "HTTP/1.1") != 0) {
 		return 505;
 	}
 
 	// On check si le header Transfer-Encoding est présent et on vérifie sa sémantique
-	t = searchTree(root, "Transfer_Encoding_header");
+	_Token* t = searchTree(root, "Transfer_Encoding_header");
 	if (t != NULL) {
 		// If 1.0 and Transfer-Encoding header => 400 Bad Request
 		t = searchTree(root, "HTTP_version");
@@ -60,14 +59,14 @@ int checkSemantics(tree_node* root) {
 		if (strcmp(version, "HTTP/1.0") == 0) {
 			return 400;
 		}
-
+		char* accepted_encodings[]={"gzip", "compress", "deflate", "br","chunked"};
 		// If it's a transfer-coding it doesn't understand => 501 Not Implemented
 		t = searchTree(root, "transfert_coding");
 		// Parcourir la liste chainée de transfert_coding et vérifier que chaque élément est chunked gzip compress deflate
 		for (_Token* current_token = t; current_token != NULL; current_token = current_token->next) {
 			node = (tree_node*)t->node;
 			char* transferEncoding = getElementValue(node, node->length_string);
-			if (strcmp(transferEncoding, "chunked") != 0 && strcmp(transferEncoding, "gzip") != 0 && strcmp(transferEncoding, "compress") != 0 && strcmp(transferEncoding, "deflate") != 0) {
+			if(!isin(transferEncoding, accepted_encodings)) {
 				return 501;
 			}
 		}
@@ -174,7 +173,7 @@ int checkConnection(tree_node* root) {
 // If representation has no content coding => acceptable
 
 int checkAcceptEncoding(tree_node* root) {
-	char* accepted_encodings[]={"gzip", "compress", "deflate", "br", "identity"};
+	char* accepted_encodings[]={"gzip", "compress", "deflate", "br","chunked"};
 	_Token* tok = searchTree(root, "header_field");
     while (tok != NULL) {
         tree_node* node =(tree_node*) searchTree(tok->node, "field_name")->node;
