@@ -63,7 +63,7 @@ tests: clean $(EXEC)
 
 run: $(EXEC)
 	@reset
-	-pkill -f $(EXEC)
+	-pkill -9 -f $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
 
 bt: $(EXEC)

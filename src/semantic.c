@@ -177,7 +177,32 @@ int checkHostHeader(tree_node* root) {
 	return 0;
 }
 
-char getHost(tree_node* root) {
-	tree_node* node_host = (tree_node*) searchTree(root, "Host")->node;
+char* getHost(tree_node* root) {
+	tree_node* node_host = (tree_node*) searchTree(root, "uri_host")->node;
 	return getElementValue(node_host, node_host->length_string);
+}
+
+bool isAccepted(tree_node* root, char* mime_type){
+    _Token* temp = searchTree(root,"header_field");
+	bool isfirst=true;
+    while (temp != NULL) {
+        tree_node* node_head_field = (tree_node*)temp->node;
+        _Token* node_token= searchTree(node_head_field, "field_name");
+		if(node_token==NULL){
+			temp = temp->next;  
+			continue;
+		}
+		node_head_field = (tree_node*)node_token->node;
+        char* field_name = getElementValue(node_head_field, node_head_field->length_string);
+        if (strcmp(field_name, "Accept") == 0) {
+			isfirst=false;
+            node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
+            char* field_value = getElementValue(node_head_field, node_head_field->length_string);
+            if (isin(mime_type, strtok(field_value, ',;'))) {
+                return true;
+            }
+        }
+        temp = temp->next;  
+    }
+	return isfirst;
 }

@@ -10,7 +10,7 @@
 #include "../utils/req.c"
 
 #define SHOWHEAD 0
-#define PORT 8000
+#define PORT 8003
 #define BUFFER_SIZE 1024
 void send_end(int clientId){
 	writeDirectClient(clientId, "\r\n\r\n", 4);
@@ -26,9 +26,18 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 		char* url = getElementValue(node, node->length_string);
 		url = remove_dot_segments(url_decode(url));
 		// to url: add www if / is the first char otherwise add www/
-		char* url2 = malloc(strlen(url) + 4);
+		char* host = getHost(root);
+		printf("Host: %s\n", host);
+		char* url2 = malloc(strlen(url) + 5 + strlen(host)+10);
 		strcpy(url2, "www");
+		if(strcmp(host, "localhost") != 0 && strcmp(host, "127.0.0.1") != 0){
+			strcat(url2, "/");
+			strcat(url2, host);
+		}
 		strcat(url2, url);
+		if(url2[strlen(url2)-1] == '/'){
+			strcat(url2, "index.html");
+		}
 		printf("File path: %s\n", url2);
 		// check if the file exists
 		// writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
@@ -37,6 +46,11 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 			send_status(200,clientId);
 			// get the mime type
 			char* mime_type = (char*) get_mime_type(url2);
+			// if(!isAccepted(root, mime_type)){
+			// 	send_status(406,clientId);
+			// 	send_end(clientId);
+			// 	return;
+			// }
 			printf("mime type: %s\n", mime_type);
 			writeDirectClient(clientId, "Content-Type: ", 14);
 			writeDirectClient(clientId, mime_type, strlen(mime_type));
@@ -52,6 +66,7 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 			// send file content by pack of 1024 bytes
 			writeDirectClient(clientId, "\r\n", 2);
 			if(strcmp(method, "HEAD") == 0){
+				// return send_end(clientId);
 				return;
 			}
 			char buffer [BUFFER_SIZE]={0};
@@ -66,6 +81,7 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 			send_end(clientId);
 		}
 	}
+	// send_end(clientId);
 }
 void send_status(int status, int clientId){
 	char status_char[10];
@@ -104,6 +120,7 @@ int main(int argc, char *argv[])
 			status=checkSemantics(root);
 			if(status>0){
 				send_status(status,requete->clientId);
+				send_end(requete->clientId);
 			}else{
 				answerback(root,status,requete->clientId);
 			}
