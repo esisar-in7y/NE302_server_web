@@ -36,7 +36,7 @@ void answerback(tree_node* root,int* status,unsigned int clientId){
 			}
 			printf("File path: %s\n", url2);
 			// check if the file exists
-			writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
+			// writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 			if(access(url2, F_OK) == 0){
 				//!!! ATTENTION !!! could be just folders
 				// get the mime type
@@ -55,7 +55,6 @@ void answerback(tree_node* root,int* status,unsigned int clientId){
 				writeDirectClient(clientId, "\r\n", 2);
 				// send file content by pack of 1024 bytes
 				writeDirectClient(clientId, "\r\n", 2);
-				writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 				char buffer [BUFFER_SIZE]={0};
 				FILE* file = fopen(url2, "rb");
 				int buffer_size=0;
