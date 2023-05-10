@@ -36,8 +36,7 @@ void answerback(tree_node* root,int* status,unsigned int clientId){
 			}
 			printf("File path: %s\n", url2);
 			// check if the file exists
-			writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);
-			return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
+			writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 			if(access(url2, F_OK) == 0){
 				//!!! ATTENTION !!! could be just folders
 				// get the mime type
