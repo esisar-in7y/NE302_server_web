@@ -12,8 +12,9 @@
 #define SHOWHEAD 0
 #define PORT 8000
 #define BUFFER_SIZE 1024
-#define REPONSEGOOD "HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: Keepalive\r\n\r\n"
-#define REPONSEBAD "HTTP/1.0 400 OK\r\n\r\n"
+void send_end(int clientId){
+	writeDirectClient(clientId, "\r\n\r\n", 4);
+}
 
 void answerback(tree_node* root,int status,unsigned int clientId){
 	// check if it's a GET request
@@ -67,6 +68,7 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 			fclose(file);
 		}else{
 			send_status(404,clientId);
+			send_end(clientId);
 		}
 	}
 }
