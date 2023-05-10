@@ -26,14 +26,9 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 		char* url = getElementValue(node, node->length_string);
 		url = remove_dot_segments(url_decode(url));
 		// to url: add www if / is the first char otherwise add www/
-		char* url2 = malloc(strlen(url) + 5);
-		if (url[0] == '/') {
-			strcpy(url2, "www");
-			strcat(url2, url);
-		} else {
-			strcpy(url2, "www/");
-			strcat(url2, url);
-		}
+		char* url2 = malloc(strlen(url) + 4);
+		strcpy(url2, "www");
+		strcat(url2, url);
 		printf("File path: %s\n", url2);
 		// check if the file exists
 		// writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));

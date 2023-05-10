@@ -128,7 +128,7 @@ int checkConnection(tree_node* root) {
 			}
 		}
 	}
-	return NULL;
+	return 0;
 }
 
 // **Accept-encoding header**
@@ -152,17 +152,15 @@ int checkAcceptEncoding(tree_node* root) {
         }
         tok = tok->next;
     }
-	return NULL;
+	return 0;
 }
 
 // **Host header**
 
-// Overlap with Request-target for URI
-
-// If version 1.1 and no Host header => 400 Bad Request
-
+// Overlap with Request-target for URI => 400 Bad Request
 // If request-target include authority component and Host have a value different to this component => 400 Bad Request
 
+// If version 1.1 and no Host header => 400 Bad Request
 // If several Host header => 400 Bad Request
 
 int checkHostHeader(tree_node* root) {
@@ -170,9 +168,9 @@ int checkHostHeader(tree_node* root) {
 	char* http_version = getElementValue(node_http_version, node_http_version->length_string);
 	if (strcmp(http_version, "HTTP/1.1") == 0) {
 		_Token* tok2 = searchTree(root, "Host");
-		if (tok2 == NULL) {
+		if (tok2 == NULL || tok2->next != NULL) {
 			return 400;
 		}
 	}
-	return NULL;
+	return 0;
 }
