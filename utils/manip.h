@@ -8,4 +8,5 @@ int  strncasecmp(const char *, const char *, size_t);
 char* trim_space(char *str);
 char* url_decode(const char* src);
 char *remove_dot_segments(const char *input);
+bool isin(char* str, char* list[]);
 #endif

@@ -55,7 +55,6 @@ void answerback(tree_node* root,int* status,unsigned int clientId){
 				writeDirectClient(clientId, "\r\n", 2);
 				// send file content by pack of 1024 bytes
 				writeDirectClient(clientId, "\r\n", 2);
-				writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 				char buffer [BUFFER_SIZE]={0};
 				FILE* file = fopen(url2, "rb");
 				int buffer_size=0;
