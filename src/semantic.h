@@ -1,7 +1,7 @@
 #include "../utils/global.h"
 #include "api.h"
-int checkSemantics(_Token* root);
-int checkConnection(_Token* root);
+int checkSemantics(tree_node* root);
+int checkConnection(tree_node* root);
 bool isin(char* str, char* list[]);
-int checkAcceptEncoding(_Token* root);
-int checkHostHeader(_Token* root);
+int checkAcceptEncoding(tree_node* root);
+int checkHostHeader(tree_node* root);

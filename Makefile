@@ -13,27 +13,29 @@ DATADIR = ./data
 SUBDIR = utils src
 DIR_OBJ = ./bin
 
+LD_LIBRARY_PATH=lib
+
 INCS = $(wildcard *.h $(foreach fd, $(SUBDIR), $(fd)/*.h))
 SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
-INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
-LIBS =  -lmagic
+LIBS = -L./lib -lrequest -lmagic
 LDFLAGS = 
-INC_DIRS = -I./ $(addprefix -I, $(SUBDIR)) -I./lib
+INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
 
+# gcc -o ./bin/http_parse ./bin/*/*.o -L./lib -lrequest -lmagic -Wall -std=c99 -D TST=0
 LIB_DIRS = 
 
 PHONY := $(EXEC)
 $(EXEC): $(OBJS)
 	@mkdir -p $(OUTDIR)
-	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(LIBS) $(CFLAGS)
+	$(CC) -o $(OUTDIR)/$@ $(OBJS) $(LIB_DIRS) $(INC_DIRS) $(LIBS) $(CFLAGS)
 
 
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
 	@mkdir -p $(@D)
-	$(CC) -o $@ $(CFLAGS) -c $< $(INC_DIRS)
+	$(CC) -o $@ $(CFLAGS) -c $< $(INC_DIRS) $(LIBS)
 
 PHONY += clean
 clean:

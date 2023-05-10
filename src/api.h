@@ -24,7 +24,7 @@ char *getElementTag(void *node,int *len);
 
 // fonction qui renvoie un pointeur vers char indiquant la valeur du noeud. (la partie correspondnant à la rulename dans la requete HTTP ) 
 // et indique (si len!=NULL) dans *len la longueur de cette chaine.
-char *getElementValue(void *node,int *len); 
+char *getElementValue(void *node,unsigned int *len); 
 
 // Fonction qui supprime et libere la liste chainée de reponse. 
 void purgeElement(_Token **r); 
