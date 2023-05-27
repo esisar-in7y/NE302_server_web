@@ -63,3 +63,4 @@ bin/http_parse
 tests/*/*/*.txt
 tests/*/*.txt
 tests/fuzzer/*
+rendus/*
