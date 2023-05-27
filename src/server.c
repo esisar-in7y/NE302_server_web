@@ -90,7 +90,123 @@ void send_status(int status, int clientId){
 	char status_char[10];
 	sprintf(status_char, "%d", status);
 	writeDirectClient(clientId,status_char,3);
-	writeDirectClient(clientId," OK\r\n\r\n",SHOWHEAD?7:5);
+	// writeDirectClient(clientId," OK\r\n\r\n",SHOWHEAD?7:5);
+	switch(status){
+		case 200:
+		writeDirectClient(clientId,"<html><body><h1>200 OK</h1></body></html>",SHOWHEAD?40:0);
+		break;
+		case 201:
+		writeDirectClient(clientId,"<html><body><h1>201 Created</h1></body></html>",SHOWHEAD?45:0);
+		break;
+		case 202:
+		writeDirectClient(clientId,"<html><body><h1>202 Accepted</h1></body></html>",SHOWHEAD?46:0);
+		break;
+		case 203:
+		writeDirectClient(clientId,"<html><body><h1>203 Non-Authoritative Information</h1></body></html>",SHOWHEAD?69:0);
+		break;
+		case 204:
+		writeDirectClient(clientId,"<html><body><h1>204 No Content</h1></body></html>",SHOWHEAD?50:0);
+		break;
+		case 205:
+		writeDirectClient(clientId,"<html><body><h1>205 Reset Content</h1></body></html>",SHOWHEAD?53:0);
+		break;
+		case 206:
+		writeDirectClient(clientId,"<html><body><h1>206 Partial Content</h1></body></html>",SHOWHEAD?55:0);
+		break;
+		case 300:
+		writeDirectClient(clientId,"<html><body><h1>300 Multiple Choices</h1></body></html>",SHOWHEAD?56:0);
+		break;
+		case 301:
+		writeDirectClient(clientId,"<html><body><h1>301 Moved Permanently</h1></body></html>",SHOWHEAD?59:0);
+		break;
+		case 302:
+		writeDirectClient(clientId,"<html><body><h1>302 Found</h1></body></html>",SHOWHEAD?45:0);
+		break;
+		case 303:
+		writeDirectClient(clientId,"<html><body><h1>303 See Other</h1></body></html>",SHOWHEAD?48:0);
+		break;
+		case 304:
+		writeDirectClient(clientId,"<html><body><h1>304 Not Modified</h1></body></html>",SHOWHEAD?50:0);
+		break;
+		case 305:
+		writeDirectClient(clientId,"<html><body><h1>305 Use Proxy</h1></body></html>",SHOWHEAD?47:0);
+		break;
+		case 307:
+		writeDirectClient(clientId,"<html><body><h1>307 Temporary Redirect</h1></body></html>",SHOWHEAD?60:0);
+		break;
+		case 400:
+		writeDirectClient(clientId,"<html><body><h1>400 Bad Request</h1></body></html>",SHOWHEAD?47:0);
+		break;
+		case 401:
+		writeDirectClient(clientId,"<html><body><h1>401 Unauthorized</h1></body></html>",SHOWHEAD?49:0);
+		break;
+		case 402:
+		writeDirectClient(clientId,"<html><body><h1>402 Payment Required</h1></body></html>",SHOWHEAD?52:0);
+		break;
+		case 403:
+		writeDirectClient(clientId,"<html><body><h1>403 Forbidden</h1></body></html>",SHOWHEAD?44:0);
+		break;
+		case 404:
+		writeDirectClient(clientId,"<html><body><h1>404 Not Found</h1></body></html>",SHOWHEAD?45:0);
+		break;
+		case 405:
+		writeDirectClient(clientId,"<html><body><h1>405 Method Not Allowed</h1></body></html>",SHOWHEAD?56:0);
+		break;
+		case 406:
+		writeDirectClient(clientId,"<html><body><h1>406 Not Acceptable</h1></body></html>",SHOWHEAD?49:0);
+		break;
+		case 407:
+		writeDirectClient(clientId,"<html><body><h1>407 Proxy Authentication Required</h1></body></html>",SHOWHEAD?70:0);
+		break;
+		case 408:
+		writeDirectClient(clientId,"<html><body><h1>408 Request Time-out</h1></body></html>",SHOWHEAD?52:0);
+		break;
+		case 409:
+		writeDirectClient(clientId,"<html><body><h1>409 Conflict</h1></body></html>",SHOWHEAD?42:0);
+		break;
+		case 410:
+		writeDirectClient(clientId,"<html><body><h1>410 Gone</h1></body></html>",SHOWHEAD?38:0);
+		break;
+		case 411:
+		writeDirectClient(clientId,"<html><body><h1>411 Length Required</h1></body></html>",SHOWHEAD?50:0);
+		break;
+		case 412:
+		writeDirectClient(clientId,"<html><body><h1>412 Precondition Failed</h1></body></html>",SHOWHEAD?57:0);
+		break;
+		case 413:
+		writeDirectClient(clientId,"<html><body><h1>413 Request Entity Too Large</h1></body></html>",SHOWHEAD?65:0);
+		break;
+		case 414:
+		writeDirectClient(clientId,"<html><body><h1>414 Request-URI Too Large</h1></body></html>",SHOWHEAD?61:0);
+		break;
+		case 415:
+		writeDirectClient(clientId,"<html><body><h1>415 Unsupported Media Type</h1></body></html>",SHOWHEAD?60:0);
+		break;
+		case 416:
+		writeDirectClient(clientId,"<html><body><h1>416 Requested range not satisfiable</h1></body></html>",SHOWHEAD?73:0);
+		break;
+		case 417:
+		writeDirectClient(clientId,"<html><body><h1>417 Expectation Failed</h1></body></html>",SHOWHEAD?54:0);
+		break;
+		case 500:
+		writeDirectClient(clientId,"<html><body><h1>500 Internal Server Error</h1></body></html>",SHOWHEAD?60:0);
+		break;
+		case 501:
+		writeDirectClient(clientId,"<html><body><h1>501 Not Implemented</h1></body></html>",SHOWHEAD?52:0);
+		break;
+		case 502:
+		writeDirectClient(clientId,"<html><body><h1>502 Bad Gateway</h1></body></html>",SHOWHEAD?44:0);
+		break;
+		case 503:
+		writeDirectClient(clientId,"<html><body><h1>503 Service Unavailable</h1></body></html>",SHOWHEAD?54:0);
+		break;
+		case 504:
+		writeDirectClient(clientId,"<html><body><h1>504 Gateway Time-out</h1></body></html>",SHOWHEAD?52:0);
+		break;
+		case 505:
+		writeDirectClient(clientId,"<html><body><h1>505 HTTP Version not supported</h1></body></html>",SHOWHEAD?66:0);
+		break;
+	}
 	printf("answer back\n");
 }
 //TODO connection keep alive
