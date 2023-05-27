@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
 	message *requete; 
 	printf("Serveur HTTP demarre sur le port %d\n",PORT);
 
-	while ( 1 ) {
+	while (1) {
 		// on attend la reception d'une requete HTTP requete pointera vers une ressource allouée par librequest. 
 		if ((requete=getRequest(PORT)) == NULL ) return -1; 
 
@@ -128,15 +128,22 @@ int main(int argc, char *argv[])
 				send_end(requete->clientId);
 				// Gérer le header connection pour savoir si on garder la connexion ouverte ou non
 				endWriteDirectClient(requete->clientId);
-				if (!keepAlive(root)){
-					endWriteDirectClient(requete->clientId);
-					requestShutdownSocket(requete->clientId); 
-				}
+				requestShutdownSocket(requete->clientId);
 			}else{
+				send_status(200,requete->clientId);
 				answerback(root,status,requete->clientId);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(requete->clientId);
-				requestShutdownSocket(requete->clientId); 
+				if (!keepAlive(root)){
+					#ifdef DEBUG
+						debug("Not keep alive", __LINE__);
+					#endif
+					requestShutdownSocket(requete->clientId); 
+				}else{
+					#ifdef DEBUG
+						debug("Keep alive", __LINE__);
+					#endif
+				}
 			}
 		}
 		

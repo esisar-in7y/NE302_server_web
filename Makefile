@@ -5,7 +5,7 @@ EXEC = server_test
 ARGS = 
 
 CC = gcc
-CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0
+CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0 -D DEBUG
 # -D ABNF=1
 # -D DEBUG
 
@@ -63,7 +63,6 @@ tests: clean $(EXEC)
 
 run: $(EXEC)
 	@reset
-	-pkill -9 -f $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
 
 bt: $(EXEC)
