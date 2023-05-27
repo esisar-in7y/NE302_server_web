@@ -1,0 +1,109 @@
+GET / HTTP/1.1
+Host: flolep.fr
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+Accept-Encoding: deflate
+
+HTTP/1.1 200 OK
+Date: Sat, 27 May 2023 21:21:05 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.4.33
+Access-Control-Allow-Headers: content-type,origin, x-requested-with, Authorization
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS
+X-Powered-By: fuck u
+Server: o2switch-PowerBoost-v3
+
+f7b
+<html>
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5410116830186478" crossorigin="anonymous"></script>
+<title>UNDER CONSTRUCT</title>
+<meta property="og:title" content="Flolep.fr | UNDER CONSTRUCT" />
+<meta property="og:description" content="this page is currently underconstruct" />
+<meta property="og:image" content="https://flolep.fr/room.png" />
+<meta property="og:site_name" content="Flolep" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://flolep.fr" />
+<meta name="theme-color" content="#0f38f2">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+#counter{position: absolute;right:0;bottom:0;width: 35%;max-width:300px}
+@font-face{font-family:'Varela Round';font-style:normal;font-weight:400;font-display:swap;src:local('Varela Round Regular'),local('VarelaRound-Regular'),url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');unicode-range:U+0590-05FF,U+20AA,U+25CC,U+FB1D-FB4F}@font-face{font-family:'Varela Round';font-style:normal;font-weight:400;font-display:swap;src:local('Varela Round Regular'),local('VarelaRound-Regular'),url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqMuPP9g.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Varela Round';font-style:normal;font-weight:400;font-display:swap;src:local('Varela Round Regular'),local('VarelaRound-Regular'),url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqcuPP9g.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Varela Round';font-style:normal;font-weight:400;font-display:swap;src:local('Varela Round Regular'),local('VarelaRound-Regular'),url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body{margin:0;padding:0;height:100vh;width:100vw;overflow:hidden;background-color:#0b120d}#contener{height:100%;width:100%;background-image:url(/room.webp);background-repeat:no-repeat;background-size:cover;background-position:center}ul{list-style:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}ul li:before{content:"\2BC0";color:#fff;width:1em;margin-left:-1em;font-weight:700;display:inline-block;text-shadow:-1px -1px 0 #1ef2f1,1px 1px 0 #f6050a;animation:infinite alternate loop 1s}@keyframes loop{0%{text-shadow:1px 1px 0 #1ef2f1,-1px -1px 0 #f6050a}50%{text-shadow:0 0 0 #f6050a,0 0 0 #1ef2f1}100%{text-shadow:1px 1px 0 #f6050a,-1px -1px 0 #1ef2f1}}ul a:hover{color:#333;text-shadow:-3px -1px 1px #1ef2f1,3px 1px 1px #f6050a}ul a{border:none;font-family:'Varela Round',sans-serif;text-overflow:clip;letter-spacing:2px;text-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-weight:700;font-size:2em;text-decoration:none;color:#fff;animation:.5s alternate all}
+li.title h1 {color:red;
+border: none;
+    font-family: 'Varela Round',sans-serif;
+    text-overflow: clip;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 0 #7d7d7d, 0 2px 0 #7d7d7d, 0 3px 0 #7d7d7d, 0 4px 0 #7d7d7d, 0 5px 0 #7d7d7d, 0 6px 1px rgba(255,0,0,.1), 0 0 5px rgba(255,0,0,.1), 0 1px 3px 
+rgba(255,0,0,.3), 0 3px 5px rgba(255,0,0,.2), 0 5px 10px rgba(255,0,0,.25), 0 10px 10px rgba(255,0,0,.2), 0 20px 20px rgba(255,0,0,.15);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;}
+li.title:before{content:"";}
+ul{box-shadow: 0px 1px 20px 5px #00000082;
+    
+86d
+background-color: #00000082;
+padding-bottom: 10px;
+    padding-top: 10px;}
+</style>
+</head>
+<body>
+<div id="contener" style="background-image:url(background/fantasy.gif)">
+    <ul>
+
+        <li>
+            <a href="https://tst.flolep.fr">TEST ZOONE</a>
+        </li>
+        <li>
+            <a href="https://hacker.flolep.fr/">COOL BACKGROUND</a>
+        </li>
+        <li>
+            <a href="https://portfolio.flolep.fr/">PORTOFOLIO</a>
+        </li>
+        <li>
+            <a href="https://anime.flolep.fr">SEARCH ANIME</a>
+        </li>
+        <li>
+            <a href="https://stream.flolep.fr">SEARCH ANIME V2.0</a>
+        </li>
+        <li>
+            <a href="https://music.weeb.flolep.fr/">0x40 (pwa)</a>
+        </li>
+        <li>
+            <a href="https://osu.weeb.flolep.fr">OSU on web</a>
+        </li>
+        <li>
+            <a href="https://radar.flolep.fr">French radar map</a>
+        </li>
+        <li>
+            <a href="https://vignette.flolep.fr/">VIGNETTE DE CT</a>
+        </li>
+    </ul>
+<div style="width:207px; height:33px; position:absolute; z-index:999; top: 4px; left: 772px;">
+ <strong> visitor N* 18890 </strong > </div>
+</div>
+</body>
+<script defer>
+//base=document.querySelector("#contener").style;
+//imagesArray=["aquarium","bateau","fleuriste","gare","metro","rainbow","hack","window","pizza","wtf","future","snow","2077","shop","seine","future","police","bronx",
+//"city","car","jap","daprofiler"];
+//base.backgroundImage="url(background/"+imagesArray[Math.floor(Math.random()*imagesArray.length)]+".gif)";
+
+document.addEventListener("click",(event)=>{
+const video=document.querySelector("video")
+video.muted = false
+if(event.clientX<100 && event.clientY<100){
+	console.log("E")
+	if(base.backgroundImage.includes("camo.githubusercontent.com")){base.backgroundImage="url(/room.webp)"}
+	else{base.backgroundImage="url(https://camo.githubusercontent.com/9be29021cfdb21b2cc257a3efcb269f64d42f5b6/687474703a2f2f32352e6d656469612e74756d626c722e636f6d2f63393961353739646233616530666331363462663463636131343838383564332f74756d626c725f6d6a6776386b45754d67317338376e37396f315f3430302e676966)"}
+}})
+</script>
+</html>
+
+0
+

@@ -95,3 +95,14 @@ autoreload:
 
 keepalive:
 	curl -v http://localhost:8000/www.toto.com/index.html  --next http://localhost:8000/www.toto.com/index.html 2>&1 | grep "Connection "
+
+tsth:
+	/bin/echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\r\nsec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"\r\n\r\n' | ncat -C --hex-dump out localhost 8000
+
+tsth:
+	/bin/echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\r\nsec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"\r\n\r\n' | ncat -C -o out localhost 8000
+tsti:
+	/bin/echo -ne 'GET / HTTP/1.1\r\nHost: flolep.fr\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36\r\nAccept-Encoding: deflate\r\n\r\n' | ncat -C -o out flolep.fr 80
+
+tstt:
+	curl -v http://flolep.fr/ --next http://flolep.fr/ 2>&1 | grep "Connection "
