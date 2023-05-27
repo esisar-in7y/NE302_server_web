@@ -8,7 +8,6 @@
 #include "../utils/mime.h"
 #include "api.h"   
 #include "../utils/req.c"
-#include "../utils/manip.c"
 
 #define SHOWHEAD 0
 #define PORT 8000
