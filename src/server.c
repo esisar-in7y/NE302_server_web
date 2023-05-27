@@ -133,6 +133,7 @@ int main(int argc, char *argv[])
 					requestShutdownSocket(requete->clientId); 
 				}
 			}else{
+				send_status(200,requete->clientId);
 				answerback(root,status,requete->clientId);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(requete->clientId);
