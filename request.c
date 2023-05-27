@@ -14,6 +14,14 @@ message* getRequest(short int port) {
 		if (sockfd == -1) {
 			return NULL;
 		}
+		//? pouvoir activer le keep-alive
+		int enable_keepalive = 1;
+		if (setsockopt(sockfd, SOL_SOCKET, SO_KEEPALIVE, (char *)&enable_keepalive, sizeof(enable_keepalive)) < 0) {
+			perror("setsockopt(SO_REUSEADDR) failed");
+			close(sockfd);
+			sockfd = -1;
+			return NULL;
+		}
 		//? pour pouvoir relancer le serveur sans attendre 2 minutes
 		int enable = 1;
 		if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0) {

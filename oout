@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Sat, 27 May 2023 21:23:59 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.4.33
+Access-Control-Allow-Headers: content-type,origin, x-requested-with, Authorization
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS
+X-Powered-By: fuck u
+Server: o2switch-PowerBoost-v3
+

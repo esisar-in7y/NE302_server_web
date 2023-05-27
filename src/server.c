@@ -68,12 +68,12 @@ int main2(int argc, char* argv[]){
 #ifdef DEBUG
 					debug_http("Keep alive", __LINE__);
 #endif
-					struct timeval timeout;
-					timeout.tv_sec = 60;
-					timeout.tv_usec = 0;
+					// struct timeval timeout;
+					// timeout.tv_sec = 60;
+					// timeout.tv_usec = 0;
 
-					setsockopt(requete->clientId, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
-					setsockopt(requete->clientId, SOL_SOCKET, SO_SNDTIMEO, (char *)&timeout, sizeof(timeout));
+					// setsockopt(requete->clientId, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
+					// setsockopt(requete->clientId, SOL_SOCKET, SO_SNDTIMEO, (char *)&timeout, sizeof(timeout));
 
 				}
 			}

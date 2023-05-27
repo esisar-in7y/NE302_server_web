@@ -125,6 +125,7 @@ void answerback(tree_node* root, int status, unsigned int clientId) {
 			send_status(200, clientId);
 			if(keepAlive(root)){
 				writeDirectClient(clientId,"Connection: keep-alive\r\n",24);
+				writeDirectClient(clientId,"Keep-Alive: timeout=60, max=10\r\n",32);
 			}else{
 				writeDirectClient(clientId,"Connection: close\r\n",19);
 			}
