@@ -1,14 +1,19 @@
 #!/bin/bash
 
-# Function to execute on file change
-on_file_change() {
-    echo "File changed: \$1"
-    make clean
-    make run
-}
+# Check if inotify is available
+if [ -z "$(which inotifywait)" ]; then
+    echo "inotifywait not installed."
+    echo "In most distros, it is available in the inotify-tools package."
+    exit 1
+fi
 
-# Monitor file changes with inotifywait
-while true; do
-    # inotifywait -e modify,move,create,delete --exclude obj/* .
-    on_file_change "$(inotifywait -e modify,move,create,delete --exclude obj/* .)"
+# Function to execute on file change
+function on_file_change() {
+    echo "Detected change"
+    make clean && make run
+}
+on_file_change &
+# Watch for file changes in the specified directory
+inotifywait --recursive --monitor --format "%e %w%f" --event modify,move,create,delete src utils | while read changed; do
+    on_file_change
 done

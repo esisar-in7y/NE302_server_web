@@ -198,6 +198,7 @@ void tree_node_print(tree_node *node, uint16_t level)
         node->type==get_type_index("CRLF") ||
         node->type==get_type_index("OWS") ||
         node->type==get_type_index("SP") ||
+        node->type==get_type_index("cookie_octet") ||
         node->type==get_type_index(":") ||
         node->type==get_type_index("vchar") ||
         node->type==get_type_index("pchar") ||

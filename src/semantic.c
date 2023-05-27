@@ -1,6 +1,6 @@
 #include "semantic.h"
 
-int checkSemantics(tree_node* root) {
+int getstatus(tree_node* root) {
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
 	tree_node* node = searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
@@ -8,7 +8,7 @@ int checkSemantics(tree_node* root) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
-	if (checkVersion(root) == 505) {
+	if (checkVersion(root) == NULL) {
 		return 505;
 	}
 
@@ -93,9 +93,9 @@ int checkSemantics(tree_node* root) {
 int checkVersion(tree_node* root) {
 	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
 	char* version = getElementValue(node, node->length_string);
-	if (strcasecmp(version, "HTTP/1.1") == 0) { // HTTP/1.1
+	if (strcasecmp(version, "HTTP/1.1") == 0) {			// HTTP/1.1
 		return 1;
-	}else if(strcasecmp(version, "HTTP/1.0")==0){ // HTTP/1.0
+	} else if (strcasecmp(version, "HTTP/1.0") == 0) {	// HTTP/1.0
 		return 0;
 	}
 	return NULL;
@@ -169,6 +169,7 @@ char* getHost(tree_node* root) {
 	return getElementValue(node_host, node_host->length_string);
 }
 
+//? ca marche donc voila strstr(field_value,mime_type)
 bool isAccepted(tree_node* root, char* mime_type) {
 	_Token* temp = searchTree(root, "header_field");
 	bool isfirst = true;
@@ -185,8 +186,30 @@ bool isAccepted(tree_node* root, char* mime_type) {
 			isfirst = false;
 			node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
 			char* field_value = getElementValue(node_head_field, node_head_field->length_string);
-			if (isin(mime_type, strtok(field_value, ",;"))) { //! strtok(field_value, ",;") = char* !=char **
-				return true;
+			char* token;
+			if ((token = strstr(field_value, mime_type))) {
+				int position = field_value - token;
+				int value = 0;
+				if (position - 1 > 0) {
+					switch (field_value[position - 1]) {
+					case ',':
+					case ';':
+					case '\0':
+					case ' ': value++; break;
+					}
+					int position_fin = position + strlen(mime_type) + 1;
+					if (position_fin <= strlen(field_value)) {
+						switch (field_value[position_fin]) {
+						case ',':
+						case ';':
+						case '\0':
+						case ' ': value++; break;
+						}
+						if (value == 2) {
+							return true;
+						}
+					}
+				}
 			}
 		}
 		temp = temp->next;
@@ -194,18 +217,15 @@ bool isAccepted(tree_node* root, char* mime_type) {
 	return isfirst;
 }
 
-bool keepAlive(tree_node* root){
+bool keepAlive(tree_node* root) {
 	// Function send true if the connection is keep-alive, false otherwise
-	tree_node* node_connection = (tree_node*)searchTree(root, "connection_option");
+	_Token* node_connection_token = (_Token*)searchTree(root, "connection_option");	 //"connection_option");
 	// Si Connection, on regarde la value de Connection
-	if (node_connection != NULL){
-		printf("AAAA\n");
-		printf("d: %d %d \n",node_connection->length_string,node_connection->type);
-		printf("d: %s\n",node_connection->string);
+	if (node_connection_token != NULL) {
+		tree_node* node_connection = node_connection_token->node;
 		char* connection = getElementValue(node_connection, node_connection->length_string);
-		printf("BBBB\n");
 		return strcasecmp(connection, "keep-alive") == 0;
-	} else if (checkVersion(root) == 0){
+	} else if (checkVersion(root) == 0) {
 		return false;
 	} else {
 		return true;

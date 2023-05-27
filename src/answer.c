@@ -119,13 +119,15 @@ void answerback(tree_node* root, int status, unsigned int clientId) {
 		char* url = beautify_url(root);
 		printf("File path: %s\n", url);
 		// check if the file exists
-		//! hum
-		writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);
-		// return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 
 		if (access(url, F_OK) == 0) {
 			//!!! ATTENTION !!! could be just folders
 			send_status(200, clientId);
+			if(keepAlive(root)){
+				writeDirectClient(clientId,"Connection: keep-alive\r\n",24);
+			}else{
+				writeDirectClient(clientId,"Connection: close\r\n",24);
+			}
 			// get the mime type
 			char* mime_type = (char*)get_mime_type(url);
 			// if(!isAccepted(root, mime_type)){
