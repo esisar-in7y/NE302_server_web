@@ -4,13 +4,13 @@ int checkSemantics(tree_node* root) {
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
 	tree_node* node = searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
-	if (strcmp(method, "GET") != 0 && strcmp(method, "HEAD") != 0 && strcmp(method, "POST") != 0) {
+	if (strcasecmp(method, "GET") != 0 && strcasecmp(method, "HEAD") != 0 && strcasecmp(method, "POST") != 0) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
 	node = (tree_node*)searchTree(root, "HTTP_version")->node;
 	char* version = getElementValue(node, node->length_string);
-	if (strcmp(version, "HTTP/1.0") != 0 && strcmp(version, "HTTP/1.1") != 0) {
+	if (strcasecmp(version, "HTTP/1.0") != 0 && strcasecmp(version, "HTTP/1.1") != 0) {
 		return 505;
 	}
 
@@ -21,7 +21,7 @@ int checkSemantics(tree_node* root) {
 		t = searchTree(root, "HTTP_version");
 		node = (tree_node*)t->node;
 		char* version = getElementValue(node, node->length_string);
-		if (strcmp(version, "HTTP/1.0") == 0) {
+		if (strcasecmp(version, "HTTP/1.0") == 0) {
 			return 400;
 		}
 		char* accepted_encodings[] = {"gzip", "compress", "deflate", "br", "chunked"};
@@ -41,7 +41,7 @@ int checkSemantics(tree_node* root) {
 		for (_Token* current_token = t; current_token != NULL; current_token = current_token->next) {
 			node = (tree_node*)t->node;
 			char* transferEncoding = getElementValue(node, node->length_string);
-			if (strcmp(transferEncoding, "chunked") == 0) {
+			if (strcasecmp(transferEncoding, "chunked") == 0) {
 				count++;
 			}
 		}
@@ -56,7 +56,7 @@ int checkSemantics(tree_node* root) {
 		}
 		node = (tree_node*)t->node;
 		char* transferEncoding = getElementValue(node, node->length_string);
-		if (strcmp(transferEncoding, "chunked") != 0) {
+		if (strcasecmp(transferEncoding, "chunked") != 0) {
 			return 400;
 		}
 
@@ -66,7 +66,7 @@ int checkSemantics(tree_node* root) {
 		while (t->next != NULL) {
 			fieldName = searchTree(t, "field_name");
 			node = (tree_node*)fieldName->node;
-			if (strcmp(getElementValue(node, node->length_string), "Referer") == 0) {
+			if (strcasecmp(getElementValue(node, node->length_string), "Referer") == 0) {
 				// If the URL contains a fragment (indicated by a '#' symbol) or userinfo (indicated by a '@' symbol) => 400 Bad Request
 				t = searchTree(root, "field_value");
 				node = (tree_node*)t->node;
@@ -95,34 +95,31 @@ int checkSemantics(tree_node* root) {
 
 
 int checkConnection(tree_node* root) {
-	_Token* tok = searchTree(root, "HTTP_version");
-	_Token* tok2 = searchTree(root, "Connection");
-	_Token* tok3 = searchTree(root, "Proxy-Connection");
-	tree_node* node = (tree_node*)tok->node;
-	tree_node* node2 = (tree_node*)tok2->node;
-	tree_node* node3 = (tree_node*)tok3->node;
+	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
+	tree_node* node2 = (tree_node*)searchTree(root, "Connection")->node;
+	tree_node* node3 = (tree_node*)searchTree(root, "Proxy-Connection")->node;
 	char* version = getElementValue(node, node->length_string);
 	char* connection = getElementValue(node2, node2->length_string);
 	char* proxyConnection = getElementValue(node3, node3->length_string);
-	if (strcmp(version, "HTTP/1.1")) {
-		if (strcmp(connection, "close") != 0) {
+	if (strcasecmp(version, "HTTP/1.1")) {
+		if (strcasecmp(connection, "close") != 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
 		}
-	} else if (strcmp(version, "HTTP/1.0")) {
-		if (strcmp(connection, "keep-alive") == 0 || strcmp(connection, "Keep-Alive") == 0) {
+	} else if (strcasecmp(version, "HTTP/1.0")) {
+		if (strcasecmp(connection, "keep-alive") == 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
 		}
-	} else if (strcmp(proxyConnection, "keep-alive") == 0 || strcmp(proxyConnection, "Keep-Alive") == 0) {
-		if (strcmp(version, "HTTP/1.1")) {
+	} else if (strcasecmp(proxyConnection, "keep-alive") == 0) {
+		if (strcasecmp(version, "HTTP/1.1")) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
-		} else if (strcmp(version, "HTTP/1.0")) {
-			if (strcmp(connection, "close") != 0) {
+		} else if (strcasecmp(version, "HTTP/1.0")) {
+			if (strcasecmp(connection, "close") != 0) {
 				if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 					return 400;
 				}
@@ -144,7 +141,7 @@ int checkAcceptEncoding(tree_node* root) {
 	while (tok != NULL) {
 		tree_node* node = (tree_node*)searchTree(tok->node, "field_name")->node;
 		char* name = getElementValue(node, node->length_string);
-		if (strcmp(name, "Accept-Encoding") == 0) {
+		if (strcasecmp(name, "Accept-Encoding") == 0) {
 			node = searchTree(tok->node, "field_value")->node;
 			char* value = getElementValue(node, node->length_string);
 			if (!isin(value, accepted_encodings)) {
@@ -169,7 +166,7 @@ int checkAcceptEncoding(tree_node* root) {
 int checkHostHeader(tree_node* root) {
 	tree_node* node_http_version = (tree_node*)searchTree(root, "HTTP_version")->node;
 	char* http_version = getElementValue(node_http_version, node_http_version->length_string);
-	if (strcmp(http_version, "HTTP/1.1") == 0) {
+	if (strcasecmp(http_version, "HTTP/1.1") == 0) {
 		_Token* tok2 = searchTree(root, "Host");
 		if (tok2 == NULL) {
 			return 400;
@@ -195,7 +192,7 @@ bool isAccepted(tree_node* root, char* mime_type) {
 		}
 		node_head_field = (tree_node*)node_token->node;
 		char* field_name = getElementValue(node_head_field, node_head_field->length_string);
-		if (strcmp(field_name, "Accept") == 0) {
+		if (strcasecmp(field_name, "Accept") == 0) {
 			isfirst = false;
 			node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
 			char* field_value = getElementValue(node_head_field, node_head_field->length_string);
