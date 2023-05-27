@@ -22,7 +22,7 @@ SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 LIBS = -L./lib -lrequest -lmagic
-LDFLAGS = 
+LDFLAGS = -D DEBUG=1
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
 
 # gcc -o ./bin/http_parse ./bin/*/*.o -L./lib -lrequest -lmagic -Wall -std=c99 -D TST=0

@@ -8,6 +8,7 @@
 #include "../utils/mime.h"
 #include "api.h"   
 #include "../utils/req.c"
+#include "../utils/manip.c"
 
 #define SHOWHEAD 0
 #define PORT 8000
@@ -129,6 +130,9 @@ int main(int argc, char *argv[])
 				// Gérer le header connection pour savoir si on garder la connexion ouverte ou non
 				endWriteDirectClient(requete->clientId);
 				if (!keepAlive(root)){
+					#ifdef DEBUG
+							debug("Not keep alive", __LINE__);
+					#endif
 					endWriteDirectClient(requete->clientId);
 					requestShutdownSocket(requete->clientId); 
 				}
