@@ -1,4 +1,12 @@
 #include "parser.h"
+void debug(tree_node* node_tmp, int line) {
+	int middle = node_tmp->start_string + node_tmp->length_string;
+	printf("> src/parser.c:%-4d |%-20s|", line, tree_node_string[node_tmp->type]);
+	print_sub_str(node_tmp->string, 0, middle);
+	printf(RED);
+	print_sub_str(node_tmp->string, middle, strlen((const char*)node_tmp->string) - middle);
+	printf(RESET "\n");
+}
 
 int parseur(char* req, int bytes) {
 	// printf("size:%d req:%s\n", bytes, req);
@@ -144,9 +152,9 @@ tree_node* token(tree_node* parent) {
 		return NULL;
 	}
 	while (tchar(node_token) != NULL) {
-#ifdef DEBUG
-		debug(node_token, __LINE__);
-#endif
+// #ifdef DEBUG
+// 		debug(node_token, __LINE__);
+// #endif
 	}
 	return node_token;
 }
@@ -1585,5 +1593,6 @@ tree_node* HTTP_message(tree_node* parent) {
 #ifdef DEBUG
 	debug(node_HTTP_message, __LINE__);
 #endif
+// tree_node_print_all(node_HTTP_message,0);
 	return node_HTTP_message;
 }

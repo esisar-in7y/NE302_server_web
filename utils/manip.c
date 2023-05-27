@@ -1,6 +1,6 @@
 #include "manip.h"
 
-void debug(char* string, int line) {
+void debug_http(char* string, int line) {
 	printf(RED);
 	printf("> src/parser.c:%-4d |%-20s|", line, string);
 	printf(RESET "\n");

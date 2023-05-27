@@ -4,7 +4,7 @@ int checkSemantics(tree_node* root) {
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
 	tree_node* node = searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
-	if (strncasecmp(method, "GET",3) != 0 && strncasecmp(method, "HEAD",4) != 0 && strncasecmp(method, "POST",4) != 0) {
+	if (strcasecmp(method, "GET") != 0 && strcasecmp(method, "HEAD") != 0 && strcasecmp(method, "POST") != 0) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
@@ -93,22 +93,17 @@ int checkSemantics(tree_node* root) {
 int checkVersion(tree_node* root) {
 	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
 	char* version = getElementValue(node, node->length_string);
-	if (strcasecmp(version, "HTTP/1.0") != 0 && strcasecmp(version, "HTTP/1.1") != 0) { // Version unsupported
-		return 505;
-	}
-	else if (strcasecmp(version, "HTTP/1.1") == 0) { // HTTP/1.1
+	if (strcasecmp(version, "HTTP/1.1") == 0) { // HTTP/1.1
 		return 1;
-	}
-	else { // HTTP/1.0
+	}else if(strcasecmp(version, "HTTP/1.0")==0){ // HTTP/1.0
 		return 0;
 	}
+	return NULL;
 }
 
 int checkConnection(tree_node* root) {
 	tree_node* nodeConnection = (tree_node*)searchTree(root, "Connection")->node;
-	tree_node* nodeProxy = (tree_node*)searchTree(root, "Proxy-Connection")->node;
 	char* connection = getElementValue(nodeConnection, nodeConnection->length_string);
-	char* proxyConnection = getElementValue(nodeProxy, nodeProxy->length_string);
 	if (checkVersion(root) == 1) {
 		if (strcasecmp(connection, "close") != 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
@@ -119,18 +114,6 @@ int checkConnection(tree_node* root) {
 		if (strcasecmp(connection, "keep-alive") == 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
-			}
-		}
-	} else if (strcasecmp(proxyConnection, "keep-alive") == 0) {
-		if (checkVersion(root) == 1) {
-			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
-				return 400;
-			}
-		} else if (checkVersion(root) == 0) {
-			if (strcasecmp(connection, "close") != 0) {
-				if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
-					return 400;
-				}
 			}
 		}
 	}
@@ -202,7 +185,7 @@ bool isAccepted(tree_node* root, char* mime_type) {
 			isfirst = false;
 			node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
 			char* field_value = getElementValue(node_head_field, node_head_field->length_string);
-			if (isin(mime_type, strtok(field_value, ',;'))) {
+			if (isin(mime_type, strtok(field_value, ",;"))) { //! strtok(field_value, ",;") = char* !=char **
 				return true;
 			}
 		}
@@ -213,17 +196,15 @@ bool isAccepted(tree_node* root, char* mime_type) {
 
 bool keepAlive(tree_node* root){
 	// Function send true if the connection is keep-alive, false otherwise
-	tree_node* node_connection = searchTree(root, "Connection");
-	tree_node* node_proxy_connection = searchTree(root, "Proxy-Connection");
+	tree_node* node_connection = (tree_node*)searchTree(root, "connection_option");
 	// Si Connection, on regarde la value de Connection
 	if (node_connection != NULL){
+		printf("AAAA\n");
+		printf("d: %d %d \n",node_connection->length_string,node_connection->type);
+		printf("d: %s\n",node_connection->string);
 		char* connection = getElementValue(node_connection, node_connection->length_string);
+		printf("BBBB\n");
 		return strcasecmp(connection, "keep-alive") == 0;
-	// Sinon si Proxy-Connection, on regarde la value de Proxy-Connection
-	} else if (node_proxy_connection != NULL){
-		char* proxy_connection = getElementValue(node_proxy_connection, node_proxy_connection->length_string);
-		return strcasecmp(proxy_connection, "keep-alive") == 0;
-	// Sinon on regarde la version HTTP pour le comportement par defaut
 	} else if (checkVersion(root) == 0){
 		return false;
 	} else {

@@ -91,7 +91,7 @@ const char *get_mime_type(const char *filepath) {
     size_t num_mime_types = sizeof(MIME) / sizeof(MIME[0]);
 
     for (size_t i = 0; i < num_mime_types; i++) {
-        if (strncasecmp(extension, MIME[i][0] + 1,max(sizeof(extension),sizeof( MIME[i][0] + 1))) == 0) {
+        if (strcasecmp(extension, MIME[i][0] + 1) == 0) {
             return MIME[i][1];
         }
     }

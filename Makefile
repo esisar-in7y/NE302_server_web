@@ -5,7 +5,7 @@ EXEC = server_test
 ARGS = 
 
 CC = gcc
-CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0 -D DEBUG
+CFLAGS = -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 -D PARSER=1
 # -D ABNF=1
 # -D DEBUG
 
@@ -80,6 +80,9 @@ abnf:
 	gcc -g -o obj/abnf.o -c utils/abnf.c
 	gcc -g -o obj/abnf_test.o obj/abnf.o obj/manip.o
 	./obj/abnf_test.o
+
+parse:
+
 
 rendu:
 	zip -r9 "rendus/LEPRAT_MONCORGE_MOUSSU_$$(date +"%Y-%m-%-d-%H-%M-%S").zip" . -x *.git* *.vscode* Docs2022/\* allrfc.abnf rendus/\* tests/**\*
