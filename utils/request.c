@@ -5,12 +5,21 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <stdio.h>
 
 message* getRequest(short int port) {
 	static int sockfd = -1;
 	if (sockfd == -1) {
 		sockfd = socket(AF_INET, SOCK_STREAM, 0);
 		if (sockfd == -1) {
+			return NULL;
+		}
+		//? pour pouvoir relancer le serveur sans attendre 2 minutes
+		int enable = 1;
+		if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0) {
+			perror("setsockopt(SO_REUSEADDR) failed");
+			close(sockfd);
+			sockfd = -1;
 			return NULL;
 		}
 

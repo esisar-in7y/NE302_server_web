@@ -10,7 +10,7 @@
 #include "../utils/req.c"
 
 #define SHOWHEAD 0
-#define PORT 8003
+#define PORT 8000
 #define BUFFER_SIZE 1024
 void send_end(int clientId){
 	writeDirectClient(clientId, "\r\n\r\n", 4);
@@ -40,7 +40,7 @@ void answerback(tree_node* root,int status,unsigned int clientId){
 		}
 		printf("File path: %s\n", url2);
 		// check if the file exists
-		// writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
+writeDirectClient(clientId, "Content-Type: text/html\r\n\r\n", 27);return writeDirectClient(clientId, aaaaaaaaaaaaaaa(), strlen(aaaaaaaaaaaaaaa()));
 		if(access(url2, F_OK) == 0){
 			//!!! ATTENTION !!! could be just folders
 			send_status(200,clientId);
@@ -90,7 +90,7 @@ void send_status(int status, int clientId){
 	writeDirectClient(clientId," OK\r\n\r\n",SHOWHEAD?7:5);
 	printf("answer back\n");
 }
-
+//TODO connection keep alive
 // ceci decrit la methode experimentale de renvoi de la reponse Cf API
 #define false 0
 #if TST==0
