@@ -92,3 +92,6 @@ rendu:
 
 autoreload:
 	./autoreload.sh
+
+keepalive:
+	curl -v http://localhost:8000/www.toto.com/index.html  --next http://localhost:8000/www.toto.com/index.html 2>&1 | grep "Connection "
