@@ -112,6 +112,8 @@ int main(int argc, char *argv[])
 		writeDirectClient(requete->clientId,"HTTP/1.0 ",9);
 		if(parseur(requete->buf,requete->len)==0){
 			send_status(400,requete->clientId);
+			endWriteDirectClient(requete->clientId);
+			requestShutdownSocket(requete->clientId); 
 		}else{
 			printf("get root\n");
 			tree_node* root = (tree_node*) getRootTree();
@@ -121,12 +123,22 @@ int main(int argc, char *argv[])
 			if(status>0){
 				send_status(status,requete->clientId);
 				send_end(requete->clientId);
+				// Gérer le header connection pour savoir si on garder la connexion ouverte ou non
+				if (!keepAlive(root)){
+					endWriteDirectClient(requete->clientId);
+					requestShutdownSocket(requete->clientId); 
+				}
 			}else{
 				answerback(root,status,requete->clientId);
+				// Fermer la connexion avec le client
+				endWriteDirectClient(requete->clientId);
+				requestShutdownSocket(requete->clientId); 
 			}
 		}
-		endWriteDirectClient(requete->clientId);
-		requestShutdownSocket(requete->clientId); 
+		
+
+
+
 		// on ne se sert plus de requete a partir de maintenant, on peut donc liberer... 
 		freeRequest(requete);
 	}
