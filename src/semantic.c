@@ -8,9 +8,7 @@ int checkSemantics(tree_node* root) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
-	node = (tree_node*)searchTree(root, "HTTP_version")->node;
-	char* version = getElementValue(node, node->length_string);
-	if (strcasecmp(version, "HTTP/1.0") != 0 && strcasecmp(version, "HTTP/1.1") != 0) {
+	if (checkVersion(root) == 505) {
 		return 505;
 	}
 
@@ -92,33 +90,43 @@ int checkSemantics(tree_node* root) {
 	return 0;
 }
 
-
+int checkVersion(tree_node* root) {
+	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
+	char* version = getElementValue(node, node->length_string);
+	if (strcasecmp(version, "HTTP/1.0") != 0 && strcasecmp(version, "HTTP/1.1") != 0) { // Version unsupported
+		return 505;
+	}
+	else if (strcasecmp(version, "HTTP/1.1") == 0) { // HTTP/1.1
+		return 1;
+	}
+	else { // HTTP/1.0
+		return 0;
+	}
+}
 
 int checkConnection(tree_node* root) {
-	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
-	tree_node* node2 = (tree_node*)searchTree(root, "Connection")->node;
-	tree_node* node3 = (tree_node*)searchTree(root, "Proxy-Connection")->node;
-	char* version = getElementValue(node, node->length_string);
-	char* connection = getElementValue(node2, node2->length_string);
-	char* proxyConnection = getElementValue(node3, node3->length_string);
-	if (strcasecmp(version, "HTTP/1.1")) {
+	tree_node* nodeConnection = (tree_node*)searchTree(root, "Connection")->node;
+	tree_node* nodeProxy = (tree_node*)searchTree(root, "Proxy-Connection")->node;
+	char* connection = getElementValue(nodeConnection, nodeConnection->length_string);
+	char* proxyConnection = getElementValue(nodeProxy, nodeProxy->length_string);
+	if (checkVersion(root) == 1) {
 		if (strcasecmp(connection, "close") != 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
 		}
-	} else if (strcasecmp(version, "HTTP/1.0")) {
+	} else if (checkVersion(root) == 0) {
 		if (strcasecmp(connection, "keep-alive") == 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
 		}
 	} else if (strcasecmp(proxyConnection, "keep-alive") == 0) {
-		if (strcasecmp(version, "HTTP/1.1")) {
+		if (checkVersion(root) == 1) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
-		} else if (strcasecmp(version, "HTTP/1.0")) {
+		} else if (checkVersion(root) == 0) {
 			if (strcasecmp(connection, "close") != 0) {
 				if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
 					return 400;
@@ -164,9 +172,7 @@ int checkAcceptEncoding(tree_node* root) {
 // If several Host header => 400 Bad Request
 
 int checkHostHeader(tree_node* root) {
-	tree_node* node_http_version = (tree_node*)searchTree(root, "HTTP_version")->node;
-	char* http_version = getElementValue(node_http_version, node_http_version->length_string);
-	if (strcasecmp(http_version, "HTTP/1.1") == 0) {
+	if (checkVersion(root) == 1) {
 		_Token* tok2 = searchTree(root, "Host");
 		if (tok2 == NULL) {
 			return 400;
@@ -207,7 +213,6 @@ bool isAccepted(tree_node* root, char* mime_type) {
 
 bool keepAlive(tree_node* root){
 	// Function send true if the connection is keep-alive, false otherwise
-	tree_node* node_http_version = (tree_node*)searchTree(root, "HTTP_version")->node;
 	tree_node* node_connection = searchTree(root, "Connection");
 	tree_node* node_proxy_connection = searchTree(root, "Proxy-Connection");
 	// Si Connection, on regarde la value de Connection
@@ -219,7 +224,7 @@ bool keepAlive(tree_node* root){
 		char* proxy_connection = getElementValue(node_proxy_connection, node_proxy_connection->length_string);
 		return strcasecmp(proxy_connection, "keep-alive") == 0;
 	// Sinon on regarde la version HTTP pour le comportement par defaut
-	} else if (strcasecmp(getElementValue(node_http_version, node_http_version->length_string), "HTTP/1.0") == 0){
+	} else if (checkVersion(root) == 0){
 		return false;
 	} else {
 		return true;
