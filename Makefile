@@ -5,7 +5,8 @@ EXEC = server_test
 ARGS = 
 
 CC = gcc
-CFLAGS = -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 -D PARSER=1
+CFLAGS = -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 
+CFLAGS += -D PARSER=1
 # -D ABNF=1
 # -D DEBUG
 
