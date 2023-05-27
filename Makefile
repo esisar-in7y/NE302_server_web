@@ -5,7 +5,7 @@ EXEC = server_test
 ARGS = 
 
 CC = gcc
-CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0
+CFLAGS = -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wall -Wextra -O2 -ansi -std=c99 -Wno-int-conversion -D TST=0 -D DEBUG
 # -D ABNF=1
 # -D DEBUG
 
@@ -22,7 +22,7 @@ SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 LIBS = -L./lib -lrequest -lmagic
-LDFLAGS = -D DEBUG=1
+LDFLAGS = 
 INC_DIRS = -I./ $(addprefix -I, $(SUBDIR))
 
 # gcc -o ./bin/http_parse ./bin/*/*.o -L./lib -lrequest -lmagic -Wall -std=c99 -D TST=0
@@ -63,7 +63,6 @@ tests: clean $(EXEC)
 
 run: $(EXEC)
 	@reset
-	-pkill -9 -f $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
 
 bt: $(EXEC)

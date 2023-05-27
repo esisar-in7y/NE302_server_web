@@ -139,6 +139,10 @@ int main(int argc, char *argv[])
 						debug("Not keep alive", __LINE__);
 					#endif
 					requestShutdownSocket(requete->clientId); 
+				}else{
+					#ifdef DEBUG
+						debug("Keep alive", __LINE__);
+					#endif
 				}
 			}
 		}
