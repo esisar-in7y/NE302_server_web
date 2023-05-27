@@ -124,6 +124,7 @@ int main(int argc, char *argv[])
 				send_status(status,requete->clientId);
 				send_end(requete->clientId);
 				// Gérer le header connection pour savoir si on garder la connexion ouverte ou non
+				endWriteDirectClient(requete->clientId);
 				if (!keepAlive(root)){
 					endWriteDirectClient(requete->clientId);
 					requestShutdownSocket(requete->clientId); 
@@ -136,9 +137,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		
-
-
-
 		// on ne se sert plus de requete a partir de maintenant, on peut donc liberer... 
 		freeRequest(requete);
 	}
@@ -146,3 +144,5 @@ int main(int argc, char *argv[])
 }
 #endif
 // echo -ne 'GET /sites/www.fake.com/index.html HTTP/1.1\r\nHost: example.com\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0\r\n\r\n' | ncat -C --hex-dump out localhost 8101
+// echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: curl/7.81.0\r\nAccept: */*\r\n\r\n' | ncat -C --hex-dump out localhost 8000
+// curl -Iv http://localhost:8000/www.toto.com/index.htm 2>&1 | grep -i 'connection #0'
