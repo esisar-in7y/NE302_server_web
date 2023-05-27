@@ -136,7 +136,7 @@ int main(int argc, char *argv[])
 				endWriteDirectClient(requete->clientId);
 				if (!keepAlive(root)){
 					#ifdef DEBUG
-							debug("Not keep alive", __LINE__);
+						debug("Not keep alive", __LINE__);
 					#endif
 					requestShutdownSocket(requete->clientId); 
 				}

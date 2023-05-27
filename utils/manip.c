@@ -1,11 +1,8 @@
 #include "manip.h"
 
-void debug(tree_node* node_tmp, int line) {
-	int middle = node_tmp->start_string + node_tmp->length_string;
-	printf("> src/parser.c:%-4d |%-20s|", line, tree_node_string[node_tmp->type]);
-	print_sub_str(node_tmp->string, 0, middle);
+void debug(char* string, int line) {
 	printf(RED);
-	print_sub_str(node_tmp->string, middle, strlen((const char*)node_tmp->string) - middle);
+	printf("> src/parser.c:%-4d |%-20s|", line, string);
 	printf(RESET "\n");
 }
 
