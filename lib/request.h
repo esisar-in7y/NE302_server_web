@@ -1,6 +1,7 @@
 
 #define MAXCLIENT 10
 
+
 /**
  * \struct message
  * \brief Objet message qui peut etre soit une requete, soit une reponse. utilisé pour communiquer entre le programme et la bibliothèque.
@@ -11,14 +12,15 @@
 
 
 */
-
+#ifndef MESSAGE
+#define MESSAGE
 typedef struct {
 	char *buf;				/**< buf Un pointeur vers le message recu */
 	unsigned int len;			/**< len La longueur du message recu */
 	unsigned int clientId;			/**< clientId identifiant du client, recu dans une requete, doit etre recopier dans la reponse correspondante*/
 	struct sockaddr_in *clientAddress; 	/**< iclientAddress pointeur vers une structure permettant de recuperer l'adresse IP et le port du client HTTP */
 } message;
-
+#endif
 
 /** 
 \fn message *getRequest(short int port)

@@ -4,7 +4,7 @@ int checkSemantics(tree_node* root) {
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
 	tree_node* node = searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
-	if (strcasecmp(method, "GET") != 0 && strcasecmp(method, "HEAD") != 0 && strcasecmp(method, "POST") != 0) {
+	if (strncasecmp(method, "GET",3) != 0 && strncasecmp(method, "HEAD",4) != 0 && strncasecmp(method, "POST",4) != 0) {
 		return 501;
 	}
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
