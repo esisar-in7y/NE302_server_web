@@ -2,7 +2,7 @@
 #define SHOWHEAD	0
 
 void send_status(int status, int clientId) {
-	char status_char[4];
+	char status_char[10];
 	sprintf(status_char, "%d ", status);
 	writeDirectClient(clientId, status_char, 3);
 	// writeDirectClient(clientId," OK\r\n\r\n",SHOWHEAD?7:5);
