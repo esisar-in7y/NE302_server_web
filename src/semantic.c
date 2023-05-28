@@ -20,6 +20,7 @@ int getstatus(tree_node* root) {
 		node = (tree_node*)t->node;
 		char* version = getElementValue(node, node->length_string);
 		if (strcasecmp(version, "HTTP/1.0") == 0) {
+			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 		char* accepted_encodings[] = {"gzip", "compress", "deflate", "br", "chunked"};
@@ -44,6 +45,7 @@ int getstatus(tree_node* root) {
 			}
 		}
 		if (count > 1) {
+			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 
@@ -55,6 +57,7 @@ int getstatus(tree_node* root) {
 		node = (tree_node*)t->node;
 		char* transferEncoding = getElementValue(node, node->length_string);
 		if (strcasecmp(transferEncoding, "chunked") != 0) {
+			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 
@@ -70,6 +73,7 @@ int getstatus(tree_node* root) {
 				node = (tree_node*)t->node;
 				char* absolutePath = getElementValue(node, node->length_string);
 				if (strchr(absolutePath, '#') != NULL || strchr(absolutePath, '@') != NULL) {
+			printf("line:%d\n",__LINE__);
 					return 400;
 				}
 				break;
@@ -83,6 +87,7 @@ int getstatus(tree_node* root) {
 			node = (tree_node*)t->node;
 			char* contentLength = getElementValue(node, node->length_string);
 			if (atoi(contentLength) < 0) {
+			printf("line:%d\n",__LINE__);
 				return 400;
 			}
 		}
@@ -107,12 +112,14 @@ int checkConnection(tree_node* root) {
 	if (checkVersion(root) == 1) {
 		if (strcasecmp(connection, "close") != 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+			printf("line:%d\n",__LINE__);
 				return 400;
 			}
 		}
 	} else if (checkVersion(root) == 0) {
 		if (strcasecmp(connection, "keep-alive") == 0) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
+			printf("line:%d\n",__LINE__);
 				return 400;
 			}
 		}
@@ -158,6 +165,7 @@ int checkHostHeader(tree_node* root) {
 	if (checkVersion(root) == 1) {
 		_Token* tok2 = searchTree(root, "Host");
 		if (tok2 == NULL) {
+			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 	}
@@ -224,7 +232,7 @@ bool keepAlive(tree_node* root) {
 	if (node_connection_token != NULL) {
 		tree_node* node_connection = node_connection_token->node;
 		char* connection = getElementValue(node_connection, node_connection->length_string);
-		return strcasecmp(connection, "keep-alive") == 0;
+		return (strcasecmp(connection, "keep-alive")==0) || (strcasecmp(connection, "keepalive") == 0);
 	} else if (checkVersion(root) == 0) {
 		return false;
 	} else {

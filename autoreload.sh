@@ -14,6 +14,5 @@ function on_file_change() {
 }
 on_file_change &
 # Watch for file changes in the specified directory
-inotifywait --recursive --monitor --format "%e %w%f" --event modify,move,create,delete src utils | while read changed; do
-    on_file_change
-done
+inotifywait --recursive --monitor --format "%e %w%f" --event modify,move,create,delete src utils | on_file_change
+
