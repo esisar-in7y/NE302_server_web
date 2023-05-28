@@ -38,3 +38,27 @@ int run_php(const char *script_path, char **output) {
 
     return 0;
 }
+
+
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <fcgi_stdio.h>
+
+// int fastcgi_handler(struct FastCGI_Handler *handler) {
+//     char *query;
+//     int query_len;
+//     char *content;
+
+//     while (FCGI_Accept(handler) >= 0) {
+//         query = FCGI_GetParameter(handler, "QUERY_STRING", 0, &query_len);
+//         content = "Hello, World!";
+
+//         FCGI_SetHeader(handler, "Content-type", "text/html");
+//         FCGI_Output(handler, (char *)content, strlen(content));
+//         FCGI_SetHeader(handler, "Content-Length", query_len + strlen(content));
+//     }
+
+//     return 0;
+// }

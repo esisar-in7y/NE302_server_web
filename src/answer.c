@@ -108,7 +108,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	return url2;
 }
 
-void answerback(tree_node* root, int status, _headers_request* headers_request, _headers_response* headers_response) {
+void answerback(tree_node* root, _headers_request* headers_request, _Reponse* reponse) {
 	// check if it's a GET request
 	tree_node* node = (tree_node*)searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
@@ -123,7 +123,6 @@ void answerback(tree_node* root, int status, _headers_request* headers_request, 
 			send_status(200, clientId);
 			if(keepAlive(root)){
 				writeDirectClient(clientId,"Connection: keep-alive\r\n",24);
-				writeDirectClient(clientId,"Keep-Alive: timeout=60, max=10\r\n",32);
 			}else{
 				writeDirectClient(clientId,"Connection: close\r\n",19);
 			}

@@ -42,26 +42,21 @@ int main2(int argc, char* argv[]){
 			tree_node_print_all(root,0);
 			printf("popu resp\n");
 			_headers_request headers_request;
-			_headers_response headers_response;
-			headers_response.clientId = requete->clientId;
-			status = getstatus(root,&headers_request);
+			_Reponse reponse;
+			reponse.clientId=requete->clientId;
+			reponse.headers_response.clientId= requete->clientId;
+			reponse.headers_response.status = getstatus(root,&headers_request);
 
-			//TODO function send_headers
-			if(checkVersion(root)==1){
-				writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
-			}else{
-				writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
-			}
+			//TODO populate headers_response
 
-			if (status > 0) {
-				send_status(status, requete->clientId);
+			if (reponse.headers_response.status > 0) {
+				send_headers(reponse.clientId,reponse.headers_response);
 				send_end(requete->clientId);
-				// Gérer le header connection pour savoir si on garder la connexion ouverte ou non
 				endWriteDirectClient(requete->clientId);
 				requestShutdownSocket(requete->clientId);
 			} else {
 				// send_status(200, requete->clientId);
-				answerback(root, status, requete->clientId);
+				answerback(root, requete->clientId);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(requete->clientId);
 				if (!keepAlive(root)) {

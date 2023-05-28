@@ -62,8 +62,6 @@ typedef struct {
 } _headers_request;
 
 typedef struct {
-    unsigned int clientId;// pour la socket
-
     _HTTP_version* version;
     _Connection* connection;
     int* content_length;
@@ -79,7 +77,8 @@ typedef struct {
 
 
 typedef struct {
-    _headers_response* headers_response;
+    _headers_response headers_response;
+    unsigned int clientId;// pour la socket
     char* body;
 } _Reponse;
 
