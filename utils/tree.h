@@ -1,7 +1,7 @@
 #ifndef _TREE_H
 #define _TREE_H
-#include "../src/api.h"
 #include "global.h"
+#include "../src/api.h"
 
 __attribute__((unused)) static char *tree_node_string[] = {
     "%x23-5B",
@@ -123,16 +123,6 @@ __attribute__((unused)) static char *tree_node_string[] = {
     "tmp"
 };
 
-typedef struct _tree_node {
-    uint16_t start_string;
-    uint16_t length_string;
-    uint16_t childs_count;
-    unsigned char *string;
-    // tree_node_type type;
-    int type;
-    struct _tree_node *parent;
-    struct _tree_node **childs;
-} tree_node;
 // global variable
 __attribute__((unused)) static tree_node *rootTree = NULL;
 

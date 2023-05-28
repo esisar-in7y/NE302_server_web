@@ -1,28 +1,31 @@
 #include "semantic.h"
 
-int getstatus(tree_node* root) {
+int getstatus(tree_node* root, _headers_request* header_req) {
+	//TODO mettre des fonctions
 	// On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
-	tree_node* node = searchTree(root, "method")->node;
-	char* method = getElementValue(node, node->length_string);
-	if (strcasecmp(method, "GET") != 0 && strcasecmp(method, "HEAD") != 0 && strcasecmp(method, "POST") != 0) {
+	populate_method(root, header_req);
+	if (header_req->methode == NULL) {
 		return 501;
 	}
+
+	populate_version(root, header_req);
 	// On check VERSION = HTTP/1.0 or HTTP/1.1 if not in VERSION => 505 HTTP Version Not Supported
-	if (checkVersion(root) == NULL) {
+	if (header_req->version == NULL) {
 		return 505;
 	}
 
+	populate_transfer_encoding(root, header_req);
 	// On check si le header Transfer-Encoding est présent et on vérifie sa sémantique
-	_Token* t = searchTree(root, "Transfer_Encoding_header");
-	if (t != NULL) {
-		// If 1.0 and Transfer-Encoding header => 400 Bad Request
-		t = searchTree(root, "HTTP_version");
-		node = (tree_node*)t->node;
-		char* version = getElementValue(node, node->length_string);
-		if (strcasecmp(version, "HTTP/1.0") == 0) {
-			printf("line:%d\n",__LINE__);
+	if (header_req->transfert_encoding != NULL) {
+		if (header_req->version == HTTP1_0) {
 			return 400;
 		}
+		if (strcasecmp(header_req->transfert_encoding, "chunked") != 0 && ) {
+			return 501;
+		}
+	}
+
+	if (t != NULL) {
 		char* accepted_encodings[] = {"gzip", "compress", "deflate", "br", "chunked"};
 		// If it's a transfer-coding it doesn't understand => 501 Not Implemented
 		t = searchTree(root, "transfert_coding");
@@ -45,7 +48,6 @@ int getstatus(tree_node* root) {
 			}
 		}
 		if (count > 1) {
-			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 
@@ -57,7 +59,6 @@ int getstatus(tree_node* root) {
 		node = (tree_node*)t->node;
 		char* transferEncoding = getElementValue(node, node->length_string);
 		if (strcasecmp(transferEncoding, "chunked") != 0) {
-			printf("line:%d\n",__LINE__);
 			return 400;
 		}
 
@@ -73,7 +74,6 @@ int getstatus(tree_node* root) {
 				node = (tree_node*)t->node;
 				char* absolutePath = getElementValue(node, node->length_string);
 				if (strchr(absolutePath, '#') != NULL || strchr(absolutePath, '@') != NULL) {
-			printf("line:%d\n",__LINE__);
 					return 400;
 				}
 				break;
@@ -87,7 +87,6 @@ int getstatus(tree_node* root) {
 			node = (tree_node*)t->node;
 			char* contentLength = getElementValue(node, node->length_string);
 			if (atoi(contentLength) < 0) {
-			printf("line:%d\n",__LINE__);
 				return 400;
 			}
 		}
@@ -95,33 +94,32 @@ int getstatus(tree_node* root) {
 	return 0;
 }
 
-int checkVersion(tree_node* root) {
-	tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
-	char* version = getElementValue(node, node->length_string);
-	if (strcasecmp(version, "HTTP/1.1") == 0) {			// HTTP/1.1
-		return 1;
-	} else if (strcasecmp(version, "HTTP/1.0") == 0) {	// HTTP/1.0
-		return 0;
-	}
-	return NULL;
+
+int checkVersion(tree_node* root, _headers_request* header_req) {
+	populate_version(root,	header_req);
+	return header_req->version;
 }
 
-int checkConnection(tree_node* root) {
-	tree_node* nodeConnection = (tree_node*)searchTree(root, "Connection")->node;
-	char* connection = getElementValue(nodeConnection, nodeConnection->length_string);
-	if (checkVersion(root) == 1) {
-		if (strcasecmp(connection, "close") != 0) {
-			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
-			printf("line:%d\n",__LINE__);
+
+int checkConnection(tree_node* root, _headers_request* header_req) {
+	populate_connection(root,header_req);
+	populate_content_length(root,header_req);
+	populate_transfer_encoding(root,header_req);
+
+	if (checkVersion(root, header_req) == HTTP1_1) {
+		if (header_req->connection!=0) {
+			if (header_req->transfert_encoding == NULL && header_req->content_length == NULL) {
 				return 400;
 			}
+			header_req->connection=1;
 		}
-	} else if (checkVersion(root) == 0) {
-		if (strcasecmp(connection, "keep-alive") == 0) {
+	} else if (checkVersion(root, header_req) == HTTP1_0) {
+		if (header_req->connection==1) {
 			if (searchTree(root, "Transfer-Encoding") == NULL && searchTree(root, "Content-Length") == NULL) {
-			printf("line:%d\n",__LINE__);
 				return 400;
 			}
+		}else{
+			header_req->connection=0;
 		}
 	}
 	return 0;
@@ -161,11 +159,11 @@ int checkAcceptEncoding(tree_node* root) {
 
 // If several Host header => 400 Bad Request
 
-int checkHostHeader(tree_node* root) {
-	if (checkVersion(root) == 1) {
-		_Token* tok2 = searchTree(root, "Host");
-		if (tok2 == NULL) {
-			printf("line:%d\n",__LINE__);
+int checkHostHeader(tree_node* root, _headers_request* header_req) {
+	populate_version(root,header_req);
+	populate_host(root,header_req);
+	if (header_req->version == HTTP1_1) {
+		if (searchTree(root, "Host") == NULL) {
 			return 400;
 		}
 	}
@@ -173,11 +171,10 @@ int checkHostHeader(tree_node* root) {
 }
 
 char* getHost(tree_node* root) {
-	tree_node* node_host = (tree_node*)searchTree(root, "uri_host")->node;
-	return getElementValue(node_host, node_host->length_string);
+	return get_first_value(root,"uri_host");
 }
 
-//? ca marche donc voila strstr(field_value,mime_type)
+//? ca marche donc voila strcasestr(field_value,mime_type)
 bool isAccepted(tree_node* root, char* mime_type) {
 	_Token* temp = searchTree(root, "header_field");
 	bool isfirst = true;
@@ -195,29 +192,9 @@ bool isAccepted(tree_node* root, char* mime_type) {
 			node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
 			char* field_value = getElementValue(node_head_field, node_head_field->length_string);
 			char* token;
-			if ((token = strstr(field_value, mime_type))) {
-				int position = field_value - token;
-				int value = 0;
-				if (position - 1 > 0) {
-					switch (field_value[position - 1]) {
-					case ',':
-					case ';':
-					case '\0':
-					case ' ': value++; break;
-					}
-					int position_fin = position + strlen(mime_type) + 1;
-					if (position_fin <= strlen(field_value)) {
-						switch (field_value[position_fin]) {
-						case ',':
-						case ';':
-						case '\0':
-						case ' ': value++; break;
-						}
-						if (value == 2) {
-							return true;
-						}
-					}
-				}
+			//! aucune idée si ca marche mais ca devrait
+			if(have_separators(field_value,mime_type)){
+				return true;
 			}
 		}
 		temp = temp->next;

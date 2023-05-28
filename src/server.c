@@ -41,12 +41,15 @@ int main2(int argc, char* argv[]){
 			tree_node* root = (tree_node*)getRootTree();
 			tree_node_print_all(root,0);
 			printf("popu resp\n");
+			_headers_request headers_request;
+			_headers_response headers_response;
+
 			if(checkVersion(root)==1){
 				writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
 			}else{
 				writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 			}
-			status = getstatus(root);
+			status = getstatus(root,&headers_request);
 			if (status > 0) {
 				send_status(status, requete->clientId);
 				send_end(requete->clientId);
@@ -67,13 +70,6 @@ int main2(int argc, char* argv[]){
 #ifdef DEBUG
 					debug_http("Keep alive", __LINE__);
 #endif
-					// struct timeval timeout;
-					// timeout.tv_sec = 60;
-					// timeout.tv_usec = 0;
-
-					// setsockopt(requete->clientId, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
-					// setsockopt(requete->clientId, SOL_SOCKET, SO_SNDTIMEO, (char *)&timeout, sizeof(timeout));
-
 				}
 			}
 		}

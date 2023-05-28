@@ -17,7 +17,7 @@ DATADIR = ./data
 SUBDIR = utils src
 DIR_OBJ = ./bin
 
-LD_LIBRARY_PATH=$(dir $(abspath $(firstword $(MAKEFILE_LIST))))/lib
+# LD_LIBRARY_PATH=$(dir $(abspath $(firstword $(MAKEFILE_LIST))))/lib
 INCS = $(wildcard *.h $(foreach fd, $(SUBDIR), $(fd)/*.h))
 SRCS = $(wildcard *.c $(foreach fd, $(SUBDIR), $(fd)/*.c))
 NODIR_SRC = $(notdir $(SRCS))
@@ -35,6 +35,7 @@ $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(OUTDIR)/$@ $(OBJS) $(LIBS)
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
+	@mkdir -p $(OUTDIR)
 	@mkdir -p $(@D)
 	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $< 
 

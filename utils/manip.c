@@ -1,5 +1,7 @@
 #include "manip.h"
 
+// Fonctions pour faire le café
+
 void debug_http(char* string, int line) {
 	printf(RED);
 	printf("> src/parser.c:%-4d |%-20s|", line, string);
@@ -149,4 +151,61 @@ bool isin(char* str, char* list[]){
 		}
 	}
 	return false;
+}
+
+
+bool have_separators(char* string, char *value){
+    char* token;
+    if ((token = strstr(string, value))) {
+        int position = token - string;
+        if (position - 1 > 0) {
+            switch (string[position - 1]) {
+                case ',':
+                case ';':
+                case ':':
+                case '\0':
+                case ' ': break;
+                default:return false;
+            }
+        }
+        int position_fin = position + strlen(value) + 1;
+        if (position_fin <= strlen(string)) {
+            switch (string[position_fin]) {
+                case ',':
+                case ';':
+                case '\0':
+                case ':':
+                case ' ': break;
+                default:return false;
+            }
+        }
+        return true;
+    }
+    return false;
+}
+
+char* get_first_value(tree_node* root,char* search){
+	_Token* node_token = (_Token*)searchTree(root, "Content-Length");
+	if (node_token != NULL) {
+		tree_node* node=(tree_node*)node_token->node;
+		return getElementValue(node, node->length_string);
+	}
+	return NULL;
+}
+
+char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
+    _Token* node_token = (_Token*)searchTree(root, "field_name");
+    char* value;
+    tree_node* node;
+    while (node_token != NULL)
+    {
+        node=(tree_node*)node_token->node;
+        value=getElementValue(node, node->length_string);
+        if (strcasecmp(field_name, value) == 0) {
+            node=node->parent;
+            node=(tree_node*)searchTree(node, "field_value")->node;
+            return getElementValue(node, node->length_string);
+        }
+        node_token=node_token->next;
+    }
 }

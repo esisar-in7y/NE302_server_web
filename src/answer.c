@@ -166,3 +166,17 @@ void answerback(tree_node* root, int status, unsigned int clientId) {
 	}
 	// send_end(clientId);
 }
+
+// Send a chunked body
+void sendChunkedBody(FILE * file, int clientId){
+	char buffer[BUFFER_SIZE] = {0};
+	int buffer_size = 0;
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+		char size[10];
+		sprintf(size,"%x\r\n",buffer_size);
+		writeDirectClient(clientId,size,strlen(size));
+		writeDirectClient(clientId,buffer,buffer_size);
+		writeDirectClient(clientId,"\r\n",2);
+	}
+	writeDirectClient(clientId,"0\r\n\r\n",5);
+}

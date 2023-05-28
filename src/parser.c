@@ -1263,7 +1263,7 @@ tree_node* Content_Length_header(tree_node* parent) {
 
 // Connection = *( "," OWS ) connection_option *( OWS "," [ OWS
 // connection_option ] )
-tree_node* Connection(tree_node* parent) {
+tree_node* parser_Connection(tree_node* parent) {
 	// DEBUG 0
 	tree_node* node_Connection = tree_node_add_node(parent, "Connection");
 	tree_node* node_tmp;
@@ -1326,12 +1326,12 @@ tree_node* Connection_header(tree_node* parent) {
 	// tree_node_print_all(getRootTree(), 0);
 	// tree_node_print(getRootTree(), 0);
 	tree_node* node_Connection_header = tree_node_add_node(parent, "Connection_header");
-	if (check_sa(node_Connection_header, "Connection:") != NULL && OWS(node_Connection_header) != NULL && Connection(node_Connection_header) != NULL && OWS(node_Connection_header) != NULL) {
+	if (check_sa(node_Connection_header, "Connection:") != NULL && OWS(node_Connection_header) != NULL && parser_Connection(node_Connection_header) != NULL && OWS(node_Connection_header) != NULL) {
 		return node_Connection_header;
 	}
 	// if (check_sa(node_Connection_header, "Connection:") != NULL &&
 	//     OWS(node_Connection_header) != NULL &&
-	//     Connection(node_Connection_header) != NULL &&
+	//     parser_Connection(node_Connection_header) != NULL &&
 	//     OWS(node_Connection_header) != NULL) {
 	//     return node_Connection_header;
 	// }
@@ -1434,7 +1434,7 @@ tree_node* HTTP_name(tree_node* parent) {
 	return node_HTTP_name;
 }
 // HTTP_version = HTTP_name "/" DIGIT "." DIGIT
-tree_node* HTTP_version(tree_node* parent) {
+tree_node* parser_HTTP_version(tree_node* parent) {
 	tree_node* node_HTTP_version = tree_node_add_node(parent, "HTTP_version");
 	if (HTTP_name(node_HTTP_version) == NULL || check_sa(node_HTTP_version, "/") == NULL || DIGIT(node_HTTP_version) == NULL || check_sa(node_HTTP_version, ".") == NULL || DIGIT(node_HTTP_version) == NULL) {
 		tree_node_free(node_HTTP_version);
@@ -1492,7 +1492,7 @@ tree_node* request_line(tree_node* parent) {
 		SP(node_request_line) == NULL || 
 		request_target(node_request_line) == NULL || 
 		SP(node_request_line) == NULL || 
-		HTTP_version(node_request_line) == NULL || 
+		parser_HTTP_version(node_request_line) == NULL || 
 		CRLF(node_request_line) == NULL
 	) {
 		tree_node_free(node_request_line);
