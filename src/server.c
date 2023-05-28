@@ -81,6 +81,7 @@ int main2(int argc, char* argv[]){
 
 		// on ne se sert plus de requete a partir de maintenant, on peut donc liberer...
 		freeRequest(requete);
+		requete = NULL;
 	}
 	return (1);
 }

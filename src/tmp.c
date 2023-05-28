@@ -12,16 +12,17 @@
 
 typedef struct {
     char* host;
-    char* user_agent;
+    //char* user_agent;
     char* accept;
     char* content_type;
     char* content_length;
-    char* authorization;
+    //char* authorization;
     char* referer;
-    char* cache_control;
-    char* if_modified_since;
+    //char* cache_control;
+    //char* if_modified_since;
     char* range;
-    char* origin;
+    //char* origin; // Proxy 
+    char* connection
 } requestClient;
 
 // Status Line
