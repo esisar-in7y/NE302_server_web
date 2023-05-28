@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <sys/types.h>
+#include "structures.h"
 #if defined(_WIN32)
     #include <stdint.h>
     typedef uint8_t u_int8_t;
