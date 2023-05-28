@@ -42,28 +42,28 @@ int main2(int argc, char* argv[]){
 			tree_node_print_all(root,0);
 			printf("popu resp\n");
 			_headers_request headers_request;
-			_Reponse reponse;
-			reponse.clientId=requete->clientId;
-			reponse.headers_response.clientId= requete->clientId;
-			reponse.headers_response.status = getstatus(root,&headers_request);
+			_response response;
+			response.clientId=requete->clientId;
+			response.headers_response.clientId= requete->clientId;
+			response.headers_response.status = getstatus(root,&headers_request);
 
 			//TODO populate headers_response
 
-			if (reponse.headers_response.status > 0) {
-				send_headers(reponse.clientId,reponse.headers_response);
-				send_end(requete->clientId);
-				endWriteDirectClient(requete->clientId);
-				requestShutdownSocket(requete->clientId);
+			if (response.headers_response.status > 0) {
+				send_headers(response.clientId,response.headers_response);
+				send_end(response.clientId);
+				endWriteDirectClient(response.clientId);
+				requestShutdownSocket(response.clientId);
 			} else {
-				// send_status(200, requete->clientId);
-				answerback(root, requete->clientId);
+				// send_status(200, response.clientId);
+				answerback(root, response.clientId);
 				// Fermer la connexion avec le client
-				endWriteDirectClient(requete->clientId);
+				endWriteDirectClient(response.clientId);
 				if (!keepAlive(root)) {
 #ifdef DEBUG
 					debug_http("Not keep alive", __LINE__);
 #endif
-					requestShutdownSocket(requete->clientId);
+					requestShutdownSocket(response.clientId);
 				} else {
 #ifdef DEBUG
 					debug_http("Keep alive", __LINE__);
