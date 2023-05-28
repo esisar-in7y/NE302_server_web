@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "bit": "c",
+        "deque": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "vector": "c"
+    }
+}

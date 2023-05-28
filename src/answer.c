@@ -1,8 +1,5 @@
 #include "answer.h"
-
 #include <unistd.h>
-
-#include "../utils/global.h"
 #include "../utils/manip.h"
 #include "../utils/mime.h"
 #include "api.h"

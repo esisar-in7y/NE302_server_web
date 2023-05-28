@@ -22,7 +22,7 @@ typedef struct {
     //char* if_modified_since;
     char* range;
     //char* origin; // Proxy 
-    char* connection
+    char* connection;
 } requestClient;
 
 // Status Line
