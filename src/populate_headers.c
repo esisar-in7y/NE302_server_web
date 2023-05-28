@@ -1,4 +1,4 @@
-#include "populate_headers.h"
+#include "headers.h"
 
 void populate_version(tree_node* root, _headers_request* header_req) {
 	if (header_req->version == NULL) {
@@ -44,6 +44,7 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req){
 		_Token* node_token = searchTree(root, "Transfer-Encoding");	 // TODO multiple transfer encoding
 		tree_node* node;
 		while (node_token->next != NULL) {
+			header_req->transfert_encoding.isPresent=true;
 			node = (tree_node*)node_token->node;
 			char* transfer_encoding = getElementValue(node, node->length_string);
 			if (have_separators(transfer_encoding, "chunked") != NULL) {
@@ -100,10 +101,7 @@ void populate_method(tree_node* root, _headers_request* header_req){
 
 void populate_host(tree_node* root, _headers_request* header_req){
 	if (header_req->host == NULL) {
-		char* host = get_first_value(root, "Host");
-		if (host != NULL) {
-			header_req->host = host;
-		}
+		header_req->host = get_first_value(root, "Host");
 	}
 }
 

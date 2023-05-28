@@ -43,13 +43,16 @@ int main2(int argc, char* argv[]){
 			printf("popu resp\n");
 			_headers_request headers_request;
 			_headers_response headers_response;
+			headers_response.clientId = requete->clientId;
+			status = getstatus(root,&headers_request);
 
+			//TODO function send_headers
 			if(checkVersion(root)==1){
 				writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
 			}else{
 				writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 			}
-			status = getstatus(root,&headers_request);
+
 			if (status > 0) {
 				send_status(status, requete->clientId);
 				send_end(requete->clientId);

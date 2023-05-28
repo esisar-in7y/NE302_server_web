@@ -209,3 +209,15 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
         node_token=node_token->next;
     }
 }
+
+/** 
+\fn void writeClient(int i,char *buf)
+* \brief Procedure (expérimentale) [alternative à sendReponse] d'envoi d'un buffer au client i. Il est parfois pratique d'écrire au client au fur et à mesure du traitement de la requête.
+*  La librairie ne peut pas determiner toute seule la fin de la réponse. Si vous utilisez cette fonction il faut OBLIGATOIREMENT utiliser la fonction endWriteDirectClient quand la réponse est finie.
+*  L'intérêt ici est de ne pas avoir à stocker dans des buffers la totalité de la réponse. 
+* \param i Le client 
+* \param buf Le message à envoyer (non recopié par la bibliothèque)
+*/
+void writeClient(int i,char *buf){
+    writeDirectClient(i,buf,strlen(buf));
+}

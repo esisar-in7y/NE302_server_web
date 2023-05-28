@@ -23,6 +23,7 @@ typedef enum
 } _Connection;
 
 typedef struct {
+    bool isPresent;
     bool initialized;
     bool BR;
     bool GZIP;
@@ -36,6 +37,16 @@ typedef struct {
     int end;
 } _Range;
 
+typedef struct {
+    char* name;
+    int value;
+} _Server_timing;
+
+//chained list or _Server_timing
+typedef struct _Server_timings {
+    _Server_timing* timings;
+    struct _Server_timings* next;
+} _Server_timings;
 
 typedef struct {
     _HTTP_version* version;
@@ -45,6 +56,7 @@ typedef struct {
     _Encoding transfert_encoding;
     _Encoding accept_encoding;
     char* host;
+
     _Range* ranges;
     unsigned int range_count;
 } _headers_request;
@@ -61,6 +73,15 @@ typedef struct {
 
     _Range* ranges;
     unsigned int range_count;
+
+    _Server_timings* server_timings;
 } _headers_response;
+
+
+typedef struct {
+    _headers_response* headers_response;
+    char* body;
+} _Reponse;
+
 
 #endif

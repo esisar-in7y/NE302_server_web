@@ -13,80 +13,81 @@ void send_status(int status, int clientId) {
 	writeDirectClient(clientId, status_char, 4);
 	// writeDirectClient(clientId," OK\r\n",SHOWHEAD?7:5);
 	switch (status) {
-	case 100: writeDirectClient(clientId, "Continue\r\n", 10); break;
-	case 101: writeDirectClient(clientId, "Switching Protocols\r\n", 21); break;
-	case 102: writeDirectClient(clientId, "Processing\r\n", 12); break;
-	case 103: writeDirectClient(clientId, "Early Hints\r\n", 13); break;
-	case 200: writeDirectClient(clientId, "OK\r\n", 4); break;
-	case 201: writeDirectClient(clientId, "Created\r\n", 9); break;
-	case 202: writeDirectClient(clientId, "Accepted\r\n", 10); break;
-	case 203: writeDirectClient(clientId, "Non-Authoritative Information\r\n", 31); break;
-	case 204: writeDirectClient(clientId, "No Content\r\n", 12); break;
-	case 205: writeDirectClient(clientId, "Reset Content\r\n", 15); break;
-	case 206: writeDirectClient(clientId, "Partial Content\r\n", 17); break;
-	case 207: writeDirectClient(clientId, "Multi-Status\r\n", 14); break;
-	case 208: writeDirectClient(clientId, "Already Reported\r\n", 18); break;
-	case 226: writeDirectClient(clientId, "IM Used\r\n", 9); break;
-	case 300: writeDirectClient(clientId, "Multiple Choices\r\n", 18); break;
-	case 301: writeDirectClient(clientId, "Moved Permanently\r\n", 19); break;
-	case 302: writeDirectClient(clientId, "Found\r\n", 7); break;
-	case 303: writeDirectClient(clientId, "See Other\r\n", 11); break;
-	case 304: writeDirectClient(clientId, "Not Modified\r\n", 14); break;
-	case 305: writeDirectClient(clientId, "Use Proxy\r\n", 11); break;
-	case 306: writeDirectClient(clientId, "Switch Proxy\r\n", 14); break;
-	case 307: writeDirectClient(clientId, "Temporary Redirect\r\n", 20); break;
-	case 308: writeDirectClient(clientId, "Permanent Redirect\r\n", 20); break;
-	case 400: writeDirectClient(clientId, "Bad Request\r\n", 13); break;
-	case 401: writeDirectClient(clientId, "Unauthorized\r\n", 14); break;
-	case 402: writeDirectClient(clientId, "Payment Required\r\n", 18); break;
-	case 403: writeDirectClient(clientId, "Forbidden\r\n", 11); break;
-	case 404: writeDirectClient(clientId, "Not Found\r\n", 11); break;
-	case 405: writeDirectClient(clientId, "Method Not Allowed\r\n", 20); break;
-	case 406: writeDirectClient(clientId, "Not Acceptable\r\n", 16); break;
-	case 407: writeDirectClient(clientId, "Proxy Authentication Required\r\n", 31); break;
-	case 408: writeDirectClient(clientId, "Request Timeout\r\n", 17); break;
-	case 409: writeDirectClient(clientId, "Conflict\r\n", 10); break;
-	case 410: writeDirectClient(clientId, "Gone\r\n", 6); break;
-	case 411: writeDirectClient(clientId, "Length Required\r\n", 17); break;
-	case 412: writeDirectClient(clientId, "Precondition Failed\r\n", 21); break;
-	case 413: writeDirectClient(clientId, "Payload Too Large\r\n", 19); break;
-	case 414: writeDirectClient(clientId, "URI Too Long\r\n", 14); break;
-	case 415: writeDirectClient(clientId, "Unsupported Media Type\r\n", 24); break;
-	case 416: writeDirectClient(clientId, "Range Not Satisfiable\r\n", 23); break;
-	case 417: writeDirectClient(clientId, "Expectation Failed\r\n", 20); break;
-	case 418: writeDirectClient(clientId, "I'm a teapot\r\n", 14); break;
-	case 421: writeDirectClient(clientId, "Misdirected Request\r\n", 21); break;
-	case 422: writeDirectClient(clientId, "Unprocessable Entity\r\n", 22); break;
-	case 423: writeDirectClient(clientId, "Locked\r\n", 8); break;
-	case 424: writeDirectClient(clientId, "Failed Dependency\r\n", 19); break;
-	case 426: writeDirectClient(clientId, "Upgrade Required\r\n", 18); break;
-	case 428: writeDirectClient(clientId, "Precondition Required\r\n", 23); break;
-	case 429: writeDirectClient(clientId, "Too Many Requests\r\n", 19); break;
-	case 431: writeDirectClient(clientId, "Request Header Fields Too Large\r\n", 33); break;
-	case 451: writeDirectClient(clientId, "Unavailable For Legal Reasons\r\n", 31); break;
-	case 500: writeDirectClient(clientId, "Internal Server Error\r\n", 23); break;
-	case 501: writeDirectClient(clientId, "Not Implemented\r\n", 17); break;
-	case 502: writeDirectClient(clientId, "Bad Gateway\r\n", 13); break;
-	case 503: writeDirectClient(clientId, "Service Unavailable\r\n", 21); break;
-	case 504: writeDirectClient(clientId, "Gateway Timeout\r\n", 17); break;
-	case 505: writeDirectClient(clientId, "HTTP Version Not Supported\r\n", 28); break;
-	case 506: writeDirectClient(clientId, "Variant Also Negotiates\r\n", 26); break;
-	case 507: writeDirectClient(clientId, "Insufficient Storage\r\n", 22); break;
-	case 508: writeDirectClient(clientId, "Loop Detected\r\n", 15); break;
-	case 510: writeDirectClient(clientId, "Not Extended\r\n", 14); break;
-	case 511: writeDirectClient(clientId, "Network Authentication Required\r\n", 33); break;
+	case 100: writeClient(clientId, "Continue"); break;
+	case 101: writeClient(clientId, "Switching Protocols"); break;
+	case 102: writeClient(clientId, "Processing"); break;
+	case 103: writeClient(clientId, "Early Hints"); break;
+	case 200: writeClient(clientId, "OK"); break;
+	case 201: writeClient(clientId, "Created"); break;
+	case 202: writeClient(clientId, "Accepted"); break;
+	case 203: writeClient(clientId, "Non-Authoritative Information"); break;
+	case 204: writeClient(clientId, "No Content"); break;
+	case 205: writeClient(clientId, "Reset Content"); break;
+	case 206: writeClient(clientId, "Partial Content"); break;
+	case 207: writeClient(clientId, "Multi-Status"); break;
+	case 208: writeClient(clientId, "Already Reported"); break;
+	case 226: writeClient(clientId, "IM Used"); break;
+	case 300: writeClient(clientId, "Multiple Choices"); break;
+	case 301: writeClient(clientId, "Moved Permanently"); break;
+	case 302: writeClient(clientId, "Found"); break;
+	case 303: writeClient(clientId, "See Other"); break;
+	case 304: writeClient(clientId, "Not Modified"); break;
+	case 305: writeClient(clientId, "Use Proxy"); break;
+	case 306: writeClient(clientId, "Switch Proxy"); break;
+	case 307: writeClient(clientId, "Temporary Redirect"); break;
+	case 308: writeClient(clientId, "Permanent Redirect"); break;
+	case 400: writeClient(clientId, "Bad Request"); break;
+	case 401: writeClient(clientId, "Unauthorized"); break;
+	case 402: writeClient(clientId, "Payment Required"); break;
+	case 403: writeClient(clientId, "Forbidden"); break;
+	case 404: writeClient(clientId, "Not Found"); break;
+	case 405: writeClient(clientId, "Method Not Allowed"); break;
+	case 406: writeClient(clientId, "Not Acceptable"); break;
+	case 407: writeClient(clientId, "Proxy Authentication Required"); break;
+	case 408: writeClient(clientId, "Request Timeout"); break;
+	case 409: writeClient(clientId, "Conflict"); break;
+	case 410: writeClient(clientId, "Gone"); break;
+	case 411: writeClient(clientId, "Length Required"); break;
+	case 412: writeClient(clientId, "Precondition Failed"); break;
+	case 413: writeClient(clientId, "Payload Too Large"); break;
+	case 414: writeClient(clientId, "URI Too Long"); break;
+	case 415: writeClient(clientId, "Unsupported Media Type"); break;
+	case 416: writeClient(clientId, "Range Not Satisfiable"); break;
+	case 417: writeClient(clientId, "Expectation Failed"); break;
+	case 418: writeClient(clientId, "I'm a teapot"); break;
+	case 421: writeClient(clientId, "Misdirected Request"); break;
+	case 422: writeClient(clientId, "Unprocessable Entity"); break;
+	case 423: writeClient(clientId, "Locked"); break;
+	case 424: writeClient(clientId, "Failed Dependency"); break;
+	case 426: writeClient(clientId, "Upgrade Required"); break;
+	case 428: writeClient(clientId, "Precondition Required"); break;
+	case 429: writeClient(clientId, "Too Many Requests"); break;
+	case 431: writeClient(clientId, "Request Header Fields Too Large"); break;
+	case 451: writeClient(clientId, "Unavailable For Legal Reasons"); break;
+	case 500: writeClient(clientId, "Internal Server Error"); break;
+	case 501: writeClient(clientId, "Not Implemented"); break;
+	case 502: writeClient(clientId, "Bad Gateway"); break;
+	case 503: writeClient(clientId, "Service Unavailable"); break;
+	case 504: writeClient(clientId, "Gateway Timeout"); break;
+	case 505: writeClient(clientId, "HTTP Version Not Supported"); break;
+	case 506: writeClient(clientId, "Variant Also Negotiates"); break;
+	case 507: writeClient(clientId, "Insufficient Storage"); break;
+	case 508: writeClient(clientId, "Loop Detected"); break;
+	case 510: writeClient(clientId, "Not Extended"); break;
+	case 511: writeClient(clientId, "Network Authentication Required"); break;
 	}
+	writeDirectClient(clientId, "\r\n",2);
 	if (SHOWHEAD) {
 		writeDirectClient(clientId, "\r\n", 2);
 	}
 	printf("answer back\n");
 }
 
-char* beautify_url(tree_node* root) {
+char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	tree_node* node = (tree_node*)searchTree(root, "request_target")->node;
 	char* url = getElementValue(node, node->length_string);
 	url = remove_dot_segments(url_decode(url));
-	char* host = getHost(root);
+	char* host = headers_request->host;
 	char* url2;
 	
 	if (host != NULL) {
@@ -107,13 +108,13 @@ char* beautify_url(tree_node* root) {
 	return url2;
 }
 
-void answerback(tree_node* root, int status, unsigned int clientId) {
+void answerback(tree_node* root, int status, _headers_request* headers_request, _headers_response* headers_response) {
 	// check if it's a GET request
 	tree_node* node = (tree_node*)searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
 	if (strcmp(method, "GET") == 0 || strcmp(method, "HEAD") == 0) {
 		// check the query url
-		char* url = beautify_url(root);
+		char* url = beautify_url(root, );
 		printf("File path: %s\n", url);
 		// check if the file exists
 

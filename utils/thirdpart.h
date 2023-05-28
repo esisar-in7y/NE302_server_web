@@ -1,2 +1,2 @@
 #include "global.h"
-char *run_php(const char *filename);
+int run_php(const char *script_path, char **output);
