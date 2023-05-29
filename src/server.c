@@ -1,15 +1,15 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <sys/time.h>
 #include <unistd.h>
 
 #include "../lib/request.h"
 #include "../utils/global.h"
 #include "../utils/manip.h"
 #include "../utils/mime.h"
+#include "answer.h"
 #include "api.h"
 #include "semantic.h"
-#include "answer.h"
-#include <sys/time.h>
 
 #define PORT		8000
 #define BUFFER_SIZE 1024
@@ -17,9 +17,8 @@ void send_end(int clientId) {
 	writeDirectClient(clientId, "\r\n\r\n", 4);
 }
 
-
 // TODO connection keep alive
-int main2(int argc, char* argv[]){
+int main2(int argc, char* argv[]) {
 	message* requete;
 	printf("Serveur HTTP demarre sur le port %d\n", PORT);
 
@@ -39,24 +38,23 @@ int main2(int argc, char* argv[]){
 		} else {
 			printf("get root\n");
 			tree_node* root = (tree_node*)getRootTree();
-			tree_node_print_all(root,0);
+			tree_node_print_all(root, 0);
 			printf("popu resp\n");
 			_headers_request headers_request;
 			_Reponse response;
-			response.clientId=requete->clientId;
-			response.headers_response.status = getstatus(root,&headers_request);
-
+			response.clientId = requete->clientId;
+			response.headers_response.status = getstatus(root, &headers_request);
 
 			if (response.headers_response.status > 0) {
-				response.headers_response.connection = CLOSE; // On va fermer la connection car il y a une erreur
-				send_headers(response.clientId, &response.headers_response); 
+				response.headers_response.connection = CLOSE;  // On va fermer la connection car il y a une erreur
+				send_headers(response.clientId, &response.headers_response);
 				send_end(response.clientId);
 				endWriteDirectClient(response.clientId);
 				requestShutdownSocket(response.clientId);
 			} else {
-			//TODO populate headers_response
-			// Connection / Content Length ect ...
-				populateRespFromReq(&headers_request,&response);
+				// TODO populate headers_response
+				//  Connection / Content Length ect ...
+				populateRespFromReq(&headers_request, &response);
 				answerback(root, response.clientId, &headers_request);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(response.clientId);
@@ -80,17 +78,32 @@ int main2(int argc, char* argv[]){
 	return (1);
 }
 
-void populate_response(tree_node* root, _Reponse* response) {
+void populate_response(tree_node* root, _Reponse* response, unsigned int clientId) {
 	populate_version(root, &response->headers_response);
 	populate_connection(root, &response->headers_response);
 	populate_content_length(root, &response->headers_response);
 	populate_transfer_encoding(root, &response->headers_response);
-
-	
+	// TODO
+	// ranges
+	// server timings
+	if (response->headers_response.content_type == NULL) {
+		response->headers_response.content_type = get_first_value(root, "Content-Type");
+	}
+	if (response->headers_response.content_length != NULL) {
+		response->body = (char*)malloc(*response->headers_response.content_length);
+	} else {
+		response->body = NULL;
+	}
+	if (response->clientId == NULL) {
+		response->clientId = clientId;
+	}
+	if (response->headers_response.status == NULL) {
+		response->headers_response.status = getstatus(root, &response->headers_response);
+	}
 }
 
 #define false 0
-#if HTTP==1
+#if HTTP == 1
 int main(int argc, char* argv[]) {
 	return main2(argc, argv);
 }
