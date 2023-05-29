@@ -196,7 +196,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 
 void send_response(_Response* response){
 	send_headers(response);
-	writeClient(response->clientId,"\r\n");
 	if(response->body!=NULL){
 		writeClient(response->clientId,response->body);
 	}

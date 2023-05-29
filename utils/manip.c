@@ -168,7 +168,7 @@ bool have_separators(char* string, char *value){
                 default:return false;
             }
         }
-        unsigned int position_fin = (unsigned int)(position + strlen(value) + 1);
+        unsigned int position_fin = (unsigned int)(position + strlen(value));
         if (position_fin <= strlen(string)) {
             switch (string[position_fin]) {
                 case ',':
