@@ -3,7 +3,7 @@
 void send_header(int clientId, char* data1,char* data2) {
     writeClient(clientId, data1);
     writeClient(clientId, data2);
-    writeDirectClient(clientId, "\n\n", 2);
+    writeDirectClient(clientId, "\r\n", 2);
 }
 
 void send_headers(_Response* response) {
@@ -14,16 +14,21 @@ void send_headers(_Response* response) {
             writeDirectClient(response->clientId, "HTTP/1.0 ", 9);
         }
         send_status(response->headers_response.status_code, response->clientId);
-	}
+	}else{
+        printf("NO first header:%d %d\n" ,response->headers_response.version,__LINE__);
+    }
 
     if (response->headers_response.content_type != NULL) {
         send_header(response->clientId, "Content-Type: ", response->headers_response.content_type);
     }
 
     if(response->headers_response.content_length != NULL){
+        printf("toto=%d\n",*(response->headers_response.content_length));
         char content_length_str[10];
         sprintf(content_length_str, "%d", *(response->headers_response.content_length));
         send_header(response->clientId, "Content-Length: ", content_length_str);
+    }else{
+        
     }
 
     if(response->headers_response.connection != 0){
@@ -49,4 +54,5 @@ void send_headers(_Response* response) {
             current = current->next;
         }
     }
+    writeDirectClient(response->clientId,"\r\n",2);
 }

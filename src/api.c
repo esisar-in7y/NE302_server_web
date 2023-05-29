@@ -24,8 +24,8 @@ _Token *searchTree(void *start, char *name)
         start = getRootTree();
     }
     _Token *r = NULL;
-    printf("searchTree: %s|%d\n", name,get_type_index(name));
-    printf("start: %s|%d\n", tree_node_string[((tree_node *)start)->type],((tree_node *)start)->type);
+    // printf("searchTree: %s|%d\n", name,get_type_index(name));
+    // printf("start: %s|%d\n", tree_node_string[((tree_node *)start)->type],((tree_node *)start)->type);
     // tree_node_print_all(start,0);
     tree_node_find_type(start, get_type_index(name),&r);
     return r;
@@ -47,7 +47,7 @@ char *getElementValue(void *node, unsigned int *len)
         return NULL;
     }
     tree_node* tnode = (tree_node *)node;
-    printf("elm val:%d :=>%s\n",tnode->type,copy_sub_str(tnode->string, tnode->start_string, tnode->length_string));
+    // printf("elm val:%d :=>%s\n",tnode->type,copy_sub_str(tnode->string, tnode->start_string, tnode->length_string));
     // *len = tnode->length_string;
     // *len = strlen(str);
     return copy_sub_str(tnode->string, tnode->start_string, tnode->length_string);

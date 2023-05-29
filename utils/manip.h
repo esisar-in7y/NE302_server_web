@@ -25,5 +25,6 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name);
 * \param buf Le message à envoyer (non recopié par la bibliothèque)
 */
 void writeClient(int i,char *buf);
+char* copyStringUntilSlash(char* s);
 
 #endif

@@ -39,12 +39,14 @@ int main2(int argc, char* argv[]) {
 			tree_node* root = (tree_node*)getRootTree();
 			tree_node_print_all(root, 0);
 			printf("popu resp\n");
-			_headers_request headers_request;
-			_Response response;
+			_headers_request headers_request={0};
+			_Response response={0};
 			response.clientId = requete->clientId;
-			response.headers_response.status_code = getstatus(root, &headers_request);
-
+			
+			response.headers_response.status_code = getstatus(root, &headers_request);//TODO renommer ce truc
+			printf("resp from getstatus: %d\n",response.headers_response.status_code);
 			if (response.headers_response.status_code >= 300) {
+				response.headers_response.version = HTTP1_0;
 				response.headers_response.connection=CLOSE;
 				send_headers(&response);
 				send_end(response.clientId);
@@ -55,7 +57,10 @@ int main2(int argc, char* argv[]) {
 				//  Connection / Content Length ect ...
 				//  populate_response(root, &response, requete->clientId);
 				populateRespFromReq(&headers_request, &response);
-				answerback(root, &headers_request, &response);
+				// Content Length, Content Type populate in send_data
+				if(!send_data(root, &headers_request, &response)){
+					send_response(&response);
+				}
 				// Fermer la connexion avec le client
 				endWriteDirectClient(response.clientId);
 				if (response.headers_response.connection == CLOSE) {
@@ -76,30 +81,6 @@ int main2(int argc, char* argv[]) {
 		requete = NULL;
 	}
 	return (1);
-}
-
-void populate_response(tree_node* root, _Response* response, unsigned int clientId) {
-	// populate_version(root, &response->headers_response);
-	// populate_connection(root, &response->headers_response);
-	// populate_content_length(root, &response->headers_response);
-	// populate_transfert_encoding(root, &response->headers_response);
-	// TODO
-	// ranges
-	// server timings
-	// if (response->headers_response.content_type == NULL) {
-	// 	response->headers_response.content_type = get_first_value(root, "Content-Type");
-	// }
-	// if (response->headers_response.content_length != NULL) {
-	// 	response->body = (char*)malloc(*response->headers_response.content_length);
-	// } else {
-	// 	response->body = NULL;
-	// }
-	// if (response->clientId == NULL) {
-	// 	response->clientId = clientId;
-	// }
-	// if (response->headers_response.status_code == NULL) {
-	// 	response->headers_response.status_code = getstatus(root, &response->headers_response);
-	// }
 }
 
 #define false 0

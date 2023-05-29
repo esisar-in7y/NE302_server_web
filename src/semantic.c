@@ -47,7 +47,7 @@ int getstatus(tree_node* root, _headers_request* header_req) {
 
 int checkReferer(tree_node* root, _headers_request* header_req) {
 	char* Referer = getFieldValueFromFieldName(root, "Referer");
-	if (strchr(Referer, '#') != NULL || strchr(Referer, '@') != NULL) {
+	if (Referer !=NULL && (strchr(Referer, '#') != NULL || strchr(Referer, '@') != NULL)) {
 		return 400;
 	}
 	return 0;
@@ -120,31 +120,23 @@ int checkHostHeader(tree_node* root, _headers_request* header_req) {
 	return 0;
 }
 
-//? ca marche donc voila strcasestr(field_value,mime_type)
+//? ca devrait être bon
 bool isAccepted(tree_node* root, char* mime_type) {
-	_Token* temp = searchTree(root, "header_field");
-	bool isfirst = true;
-	while (temp != NULL) {
-		tree_node* node_head_field = (tree_node*)temp->node;
-		_Token* node_token = searchTree(node_head_field, "field_name");
-		if (node_token == NULL) {
-			temp = temp->next;
-			continue;
-		}
-		node_head_field = (tree_node*)node_token->node;
-		char* field_name = getElementValue(node_head_field, node_head_field->length_string);
-		if (strcasecmp(field_name, "Accept") == 0) {
-			isfirst = false;
-			node_head_field = (tree_node*)searchTree(temp, "field_value")->node;
-			char* field_value = getElementValue(node_head_field, node_head_field->length_string);
-			//! aucune idée si ca marche mais ca devrait
-			if(have_separators(field_value,mime_type)){
-				return true;
-			}
-		}
-		temp = temp->next;
+	char* accepted=getFieldValueFromFieldName(root, "Accept");
+	printf("accepted : %s\n",accepted);
+	if(accepted==NULL) return true;
+	if(have_separators(accepted,"*/*")){
+		return true;
 	}
-	return isfirst;
+	if(have_separators(accepted,mime_type)){
+		return true;
+	}
+	char* wilded=copyStringUntilSlash(mime_type);
+	strcat(wilded,"/*");
+	if(have_separators(accepted,wilded)){
+		return true;
+	}
+	return false;
 }
 
 

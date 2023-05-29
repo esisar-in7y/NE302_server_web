@@ -28,7 +28,7 @@ tree_node *tree_node_tmp(tree_node *parent){
 }
 tree_node *tree_node_new( unsigned char *string, uint16_t start_string, uint16_t length_string, tree_node *parent, const char* type) //tree_node_type type)
 {
-    tree_node *node = (tree_node *)malloc(sizeof(tree_node));
+    tree_node *node = (tree_node *)calloc(1,sizeof(tree_node));
     node->string = string;
     node->start_string = start_string;
     node->length_string = length_string;

@@ -1,10 +1,12 @@
 #include "answer.h"
+
 #include <unistd.h>
+
 #include "../utils/manip.h"
 #include "../utils/mime.h"
+#include "../utils/structures.h"
 #include "api.h"
 #include "semantic.h"
-#include "../utils/structures.h"
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
 
@@ -77,7 +79,7 @@ void send_status(int status, int clientId) {
 	case 510: writeClient(clientId, "Not Extended"); break;
 	case 511: writeClient(clientId, "Network Authentication Required"); break;
 	}
-	writeDirectClient(clientId, "\r\n",2);
+	writeDirectClient(clientId, "\r\n", 2);
 	if (SHOWHEAD) {
 		writeDirectClient(clientId, "\r\n", 2);
 	}
@@ -86,20 +88,24 @@ void send_status(int status, int clientId) {
 
 char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	tree_node* node = (tree_node*)searchTree(root, "request_target")->node;
-	char* url = getElementValue(node, node->length_string);
+	char* url = getElementValue(node, (unsigned int*) (&node->length_string));
 	url = remove_dot_segments(url_decode(url));
 	char* host = headers_request->host;
-	char* url2;
-	
+	char* url2 = NULL;
+
 	if (host != NULL) {
-		url2=malloc(strlen(url) + 5 + strlen(host) + 10);
+		url2 = calloc(1,strlen(url) + 5 + strlen(host) + 10);
 		strcpy(url2, "www");
 		if (strcmp(host, "localhost") != 0 && strcmp(host, "127.0.0.1") != 0) {
 			strcat(url2, "/");
 			strcat(url2, host);
 		}
-	}else{
-		url2=malloc(strlen(url) + 5 + 10);
+	} else {
+		url2 = calloc(1,strlen(url) + 5 + 10);
+		strcpy(url2, "www");
+		if(url[0]!='/'){
+			strcpy(url2, "/");
+		}
 	}
 	strcat(url2, url);
 	if (url2[strlen(url2) - 1] == '/') {
@@ -109,11 +115,33 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	return url2;
 }
 
-void answerback(tree_node* root, _headers_request* headers_request, _Response* response) {
-	// check if it's a GET request
-	tree_node* node = (tree_node*)searchTree(root, "method")->node;
-	char* method = getElementValue(node, node->length_string);
-	if (strcmp(method, "GET") == 0 || strcmp(method, "HEAD") == 0) {
+
+
+// Send a chunked body
+void sendChunkedBody(FILE* file, int clientId) {
+	char buffer[BUFFER_SIZE]={0};
+	int buffer_size = 0;
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+		char size[12];
+		snprintf(size, sizeof(size), "%x\r\n", buffer_size);
+		writeClient(clientId, size);
+		writeDirectClient(clientId, buffer, buffer_size);
+		writeDirectClient(clientId, "\r\n", 2);
+	}
+	writeDirectClient(clientId, "0\r\n\r\n", 5);
+}
+
+void sendIdentity(FILE* file, int clientId) {
+	char buffer[BUFFER_SIZE]={0};
+	int buffer_size = 0;
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+		writeDirectClient(clientId, buffer, buffer_size);
+	}
+}
+
+bool send_data(tree_node* root, _headers_request* headers_request, _Response* response) {
+	// check if it's a GET HEAD request
+	if (headers_request->methode == GET || headers_request->methode == HEAD) {
 		// check the query url
 		char* url = beautify_url(root, headers_request);
 		printf("File path: %s\n", url);
@@ -121,74 +149,73 @@ void answerback(tree_node* root, _headers_request* headers_request, _Response* r
 		unsigned int clientId = response->clientId;
 		if (access(url, F_OK) == 0) {
 			//!!! ATTENTION !!! could be just folders
-			send_status(200, clientId);
+
 			// get the mime type
 			char* mime_type = (char*)get_mime_type(url);
-			// if(!isAccepted(root, mime_type)){
-			// 	send_status(406,clientId);
-			// 	send_end(clientId);
-			// 	return;
-			// }
-			printf("mime type: %s\n", mime_type);
-			writeDirectClient(clientId, "Content-Type: ", 14);
-			writeDirectClient(clientId, mime_type, strlen(mime_type));
-			writeDirectClient(clientId, "\r\n", 2);
-			// get the file size
-			int file_size = get_file_size(url);
-			printf("file size: %d\n", file_size);
-			char file_size_str[10];
-			sprintf(file_size_str, "%d", file_size);
-			writeDirectClient(clientId, "Content-Length: ", 16);
-			writeDirectClient(clientId, file_size_str, strlen(file_size_str));
-			writeDirectClient(clientId, "\r\n", 2);
-			// send file content by pack of 1024 bytes
-			writeDirectClient(clientId, "\r\n", 2);
-			if (strcmp(method, "HEAD") == 0) {
-				// return send_end(clientId);
-				return;
+			if (!isAccepted(root, mime_type)) {
+				response->headers_response.status_code = 415;
+				return false;
 			}
-			char buffer[BUFFER_SIZE] = {0};
-			FILE* file = fopen(url, "rb");
-			int buffer_size = 0;
-			while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
-				writeDirectClient(clientId, buffer, buffer_size);
+			// On rajoute content type
+			response->headers_response.content_type=malloc(strlen(mime_type));
+			strcpy(response->headers_response.content_type,mime_type);
+			// get the file size
+			if (response->headers_response.transfert_encoding != CHUNKED) {
+				int file_size = get_file_size(url);
+				printf("file size: %d\n", file_size);
+				response->headers_response.content_length = (int*)calloc(1,sizeof(int*));
+				*response->headers_response.content_length = file_size;
+			}
+
+			if (response->headers_response.status_code == 0) {
+				response->headers_response.status_code = 200;
+			}
+			if (headers_request->methode == HEAD) {
+				return false;
+			}
+			//send headers
+			send_headers(response);
+			// send data
+			FILE* file=fopen(url,"rb");
+			if (response->headers_response.transfert_encoding == CHUNKED) {
+				sendChunkedBody(file, clientId);
+			} else {
+				sendIdentity(file, response->clientId);
 			}
 			fclose(file);
+			return true;
 		} else {
-			send_status(404, clientId);
-			// send_end(clientId);
-			writeDirectClient(clientId,"\r\n\r\n",4);
+			response->headers_response.status_code = 404;
+			response->headers_response.connection = CLOSE;
 		}
+	} else if (headers_request->methode == POST) {
 	}
 	// send_end(clientId);
+	return false;
+}
+
+void send_response(_Response* response){
+	send_headers(response);
+	writeClient(response->clientId,"\r\n");
+	if(response->body!=NULL){
+		writeClient(response->clientId,response->body);
+	}
 }
 
 void populateRespFromReq(_headers_request* headers_request, _Response* response) {
+
+	response->headers_response.version = headers_request->version;
 	// Populate connection field
 	response->headers_response.connection = headers_request->connection;
 	// choose encoding
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
-	if (*headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
+	if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
 		response->headers_response.transfert_encoding = CHUNKED;
 	} else {
 		response->headers_response.transfert_encoding = IDENTITY;
 	}
 #endif
-	// 
-}
-
-// Send a chunked body
-void sendChunkedBody(FILE * file, int clientId){
-	char buffer[BUFFER_SIZE] = {0};
-	int buffer_size = 0;
-	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
-		char size[10];
-		sprintf(size,"%x\r\n",buffer_size);
-		writeDirectClient(clientId,size,strlen(size));
-		writeDirectClient(clientId,buffer,buffer_size);
-		writeDirectClient(clientId,"\r\n",2);
-	}
-	writeDirectClient(clientId,"0\r\n\r\n",5);
+	//
 }

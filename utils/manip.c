@@ -9,7 +9,7 @@ void debug_http(char* string, int line) {
 }
 
 char *copy_sub_str(const unsigned char *source, uint16_t start, uint16_t length) {
-    char *buffer = malloc(sizeof(char) * (length + 1));
+    char *buffer = calloc(1,sizeof(char) * (length + 1));
     if (buffer == NULL) {
         return NULL;
     }
@@ -113,7 +113,7 @@ char* url_decode(const char* src) {
 }
 
 char *remove_dot_segments(const char *input) {
-    char *output = malloc(strlen(input) + 1);
+    char *output = calloc(1,strlen(input) + 1);
     char *out_ptr = output;
     const char *in_ptr = input;
 
@@ -188,7 +188,7 @@ char* get_first_value(tree_node* root,char* search){
 	_Token* node_token = (_Token*)searchTree(root, "Content-Length");
 	if (node_token != NULL) {
 		tree_node* node=(tree_node*)node_token->node;
-		return getElementValue(node, node->length_string);
+		return getElementValue(node,(unsigned int*) &node->length_string);
 	}
 	return NULL;
 }
@@ -200,11 +200,11 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
     while (node_token != NULL)
     {
         node=(tree_node*)node_token->node;
-        value=getElementValue(node, node->length_string);
+        value=getElementValue(node, (unsigned int*) &node->length_string);
         if (strcasecmp(field_name, value) == 0) {
             node=node->parent;
             node=(tree_node*)searchTree(node, "field_value")->node;
-            return getElementValue(node, node->length_string);
+            return getElementValue(node, (unsigned int*) &node->length_string);
         }
         node_token=node_token->next;
     }
@@ -221,4 +221,23 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
 */
 void writeClient(int i,char *buf){
     writeDirectClient(i,buf,strlen(buf));
+}
+
+char* copyStringUntilSlash(char* s)
+{
+    int i;
+    char* s2;
+    s2 = (char*)malloc(20);
+
+    // Executing until '/' character or null character is found
+    for (i = 0; s[i] != '/' && s[i] != '\0'; i++) {
+        // Copy the character one by one from s to s2
+        s2[i] = s[i];
+    }
+
+    // Add the null character at the end of the copied string
+    s2[i] = '\0';
+
+    // Return the pointer of the newly created string
+    return s2;
 }
