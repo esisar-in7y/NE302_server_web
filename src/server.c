@@ -54,6 +54,7 @@ int main2(int argc, char* argv[]) {
 			} else {
 				// TODO populate headers_response
 				//  Connection / Content Length ect ...
+				populate_response(root, &response, requete->clientId);
 				populateRespFromReq(&headers_request, &response);
 				answerback(root, response.clientId, &headers_request);
 				// Fermer la connexion avec le client
