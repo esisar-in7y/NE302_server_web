@@ -1,7 +1,7 @@
 #include "headers.h"
 
 void populate_version(tree_node* root, _headers_request* header_req) {
-	if (header_req->version == NULL) {
+	if (header_req->version == 0) {
 		tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
 		char* version = getElementValue(node, node->length_string);
 		if (strcasecmp(version, "HTTP/1.1") == 0) {			// HTTP/1.1
@@ -13,16 +13,16 @@ void populate_version(tree_node* root, _headers_request* header_req) {
 }
 
 void populate_connection(tree_node* root, _headers_request* header_req) {
-	if (header_req->connection == NULL) {
+	if (header_req->connection == 0) {
 		char* connection = get_first_value(root, "Connection");
 		if (connection != NULL) {
 			if (strcasecmp(connection, "close") == 0) {
 				header_req->connection = 0;
-			} else if (strcasecmp(connection, "keep-alive") == 0) {
-				header_req->connection = 1;
-			} else if (strcasecmp(connection, "keepalive") == 0) {
-				header_req->connection = 1;
-			} else if (strcasecmp(connection, "keep alive") == 0) {
+			} else if (
+				strcasecmp(connection, "keep-alive") == 0 ||
+				strcasecmp(connection, "keepalive") == 0 ||
+				strcasecmp(connection, "keep alive") == 0
+			) {
 				header_req->connection = 1;
 			}
 		}
@@ -47,15 +47,15 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req){
 			header_req->transfert_encoding.isPresent=true;
 			node = (tree_node*)node_token->node;
 			char* transfer_encoding = getElementValue(node, node->length_string);
-			if (have_separators(transfer_encoding, "chunked") != NULL) {
+			if (have_separators(transfer_encoding, "chunked")) {
 				header_req->transfert_encoding.CHUNKED=true;
-			} else if (have_separators(transfer_encoding, "compress") != NULL) {
+			} else if (have_separators(transfer_encoding, "compress")) {
 				header_req->transfert_encoding.COMPRESS=true;
-			} else if (have_separators(transfer_encoding, "deflate") != NULL) {
+			} else if (have_separators(transfer_encoding, "deflate")) {
 				header_req->transfert_encoding.DEFLATE=true;
-			} else if (have_separators(transfer_encoding, "gzip") != NULL) {
+			} else if (have_separators(transfer_encoding, "gzip")) {
 				header_req->transfert_encoding.GZIP=true;
-			} else if (have_separators(transfer_encoding, "br") != NULL) {
+			} else if (have_separators(transfer_encoding, "br")) {
 				header_req->transfert_encoding.BR=true;
 			}
 			node_token = node_token->next;
@@ -71,13 +71,13 @@ void populate_accept_encoding(tree_node* root, _headers_request* header_req){
 		while (node_token->next != NULL) {
 			node = (tree_node*)node_token->node;
 			char* accept_encoding = getElementValue(node, node->length_string);
-			if (have_separators(accept_encoding, "compress") != NULL) {
+			if (have_separators(accept_encoding, "compress")) {
 				header_req->accept_encoding.COMPRESS=true;
-			} else if (have_separators(accept_encoding, "deflate") != NULL) {
+			} else if (have_separators(accept_encoding, "deflate")) {
 				header_req->accept_encoding.DEFLATE=true;
-			} else if (have_separators(accept_encoding, "gzip") != NULL) {
+			} else if (have_separators(accept_encoding, "gzip")) {
 				header_req->accept_encoding.GZIP=true;
-			} else if (have_separators(accept_encoding, "br") != NULL) {
+			} else if (have_separators(accept_encoding, "br")) {
 				header_req->accept_encoding.BR=true;
 			}
 			node_token = node_token->next;
@@ -86,7 +86,7 @@ void populate_accept_encoding(tree_node* root, _headers_request* header_req){
 }
 
 void populate_method(tree_node* root, _headers_request* header_req){
-	if (header_req->methode == NULL) {
+	if (header_req->methode == 0) {
 		tree_node* node = searchTree(root, "method")->node;
 		char* method = getElementValue(node, node->length_string);
 		if (strcasecmp(method, "GET") == 0) {

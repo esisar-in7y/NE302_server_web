@@ -1,6 +1,7 @@
 #include "thirdpart.h"
+#include <stdio.h>
 
-int run_php(const char *script_path, char **output) {
+int run_php(char *script_path, char **output) {
     char *command = "php";
     char *script_arg = script_path;
     char *pipe_cmd = "/bin/bash -c 'popen(\"%s %s\",\"r\")'";
@@ -24,7 +25,6 @@ int run_php(const char *script_path, char **output) {
     }
     fputs(input, pipe);
 
-    int status;
     if (pclose(pipe) == -1) {
         perror("pclose");
         return 1;

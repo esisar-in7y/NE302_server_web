@@ -29,7 +29,6 @@ int main2(int argc, char* argv[]) {
 		printf("#########################################\nDemande recue depuis le client %d\n", requete->clientId);
 		printf("Client [%d] [%s:%d]\n", requete->clientId, inet_ntoa(requete->clientAddress->sin_addr), htons(requete->clientAddress->sin_port));
 		printf("Contenu de la demande %.*s\n\n", requete->len, requete->buf);
-		int status = 0;
 		if (parseur(requete->buf, requete->len) == 0) {
 			writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 			send_status(400, requete->clientId);
@@ -41,25 +40,25 @@ int main2(int argc, char* argv[]) {
 			tree_node_print_all(root, 0);
 			printf("popu resp\n");
 			_headers_request headers_request;
-			_Reponse response;
+			_Response response;
 			response.clientId = requete->clientId;
-			response.headers_response.status = getstatus(root, &headers_request);
+			response.headers_response.status_code = getstatus(root, &headers_request);
 
-			if (response.headers_response.status > 0) {
-				response.headers_response.connection = CLOSE;  // On va fermer la connection car il y a une erreur
-				send_headers(response.clientId, &response.headers_response);
+			if (response.headers_response.status_code >= 300) {
+				response.headers_response.connection=CLOSE;
+				send_headers(&response);
 				send_end(response.clientId);
 				endWriteDirectClient(response.clientId);
 				requestShutdownSocket(response.clientId);
 			} else {
 				// TODO populate headers_response
 				//  Connection / Content Length ect ...
-				populate_response(root, &response, requete->clientId);
+				//  populate_response(root, &response, requete->clientId);
 				populateRespFromReq(&headers_request, &response);
-				answerback(root, response.clientId, &headers_request);
+				answerback(root, &headers_request, &response);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(response.clientId);
-				if (!keepAlive(root)) {
+				if (response.headers_response.connection == CLOSE) {
 #ifdef DEBUG
 					debug_http("Not keep alive", __LINE__);
 #endif
@@ -79,28 +78,28 @@ int main2(int argc, char* argv[]) {
 	return (1);
 }
 
-void populate_response(tree_node* root, _Reponse* response, unsigned int clientId) {
-	populate_version(root, &response->headers_response);
-	populate_connection(root, &response->headers_response);
-	populate_content_length(root, &response->headers_response);
-	populate_transfer_encoding(root, &response->headers_response);
+void populate_response(tree_node* root, _Response* response, unsigned int clientId) {
+	// populate_version(root, &response->headers_response);
+	// populate_connection(root, &response->headers_response);
+	// populate_content_length(root, &response->headers_response);
+	// populate_transfert_encoding(root, &response->headers_response);
 	// TODO
 	// ranges
 	// server timings
-	if (response->headers_response.content_type == NULL) {
-		response->headers_response.content_type = get_first_value(root, "Content-Type");
-	}
-	if (response->headers_response.content_length != NULL) {
-		response->body = (char*)malloc(*response->headers_response.content_length);
-	} else {
-		response->body = NULL;
-	}
-	if (response->clientId == NULL) {
-		response->clientId = clientId;
-	}
-	if (response->headers_response.status == NULL) {
-		response->headers_response.status = getstatus(root, &response->headers_response);
-	}
+	// if (response->headers_response.content_type == NULL) {
+	// 	response->headers_response.content_type = get_first_value(root, "Content-Type");
+	// }
+	// if (response->headers_response.content_length != NULL) {
+	// 	response->body = (char*)malloc(*response->headers_response.content_length);
+	// } else {
+	// 	response->body = NULL;
+	// }
+	// if (response->clientId == NULL) {
+	// 	response->clientId = clientId;
+	// }
+	// if (response->headers_response.status_code == NULL) {
+	// 	response->headers_response.status_code = getstatus(root, &response->headers_response);
+	// }
 }
 
 #define false 0

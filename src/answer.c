@@ -4,6 +4,7 @@
 #include "../utils/mime.h"
 #include "api.h"
 #include "semantic.h"
+#include "../utils/structures.h"
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
 
@@ -108,7 +109,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	return url2;
 }
 
-void answerback(tree_node* root, _headers_request* headers_request, _Reponse* reponse) {
+void answerback(tree_node* root, _headers_request* headers_request, _Response* response) {
 	// check if it's a GET request
 	tree_node* node = (tree_node*)searchTree(root, "method")->node;
 	char* method = getElementValue(node, node->length_string);
@@ -117,15 +118,10 @@ void answerback(tree_node* root, _headers_request* headers_request, _Reponse* re
 		char* url = beautify_url(root, headers_request);
 		printf("File path: %s\n", url);
 		// check if the file exists
-		unsigned int clientId = reponse->clientId;
+		unsigned int clientId = response->clientId;
 		if (access(url, F_OK) == 0) {
 			//!!! ATTENTION !!! could be just folders
 			send_status(200, clientId);
-			if(keepAlive(root)){
-				writeDirectClient(clientId,"Connection: keep-alive\r\n",24);
-			}else{
-				writeDirectClient(clientId,"Connection: close\r\n",19);
-			}
 			// get the mime type
 			char* mime_type = (char*)get_mime_type(url);
 			// if(!isAccepted(root, mime_type)){
@@ -167,10 +163,20 @@ void answerback(tree_node* root, _headers_request* headers_request, _Reponse* re
 	// send_end(clientId);
 }
 
-void populateRespFromReq(_headers_request* headers_request,_Reponse* response){
+void populateRespFromReq(_headers_request* headers_request, _Response* response) {
 	// Populate connection field
-	response->headers_response.connection=headers_request->connection;
-	
+	response->headers_response.connection = headers_request->connection;
+	// choose encoding
+#if FORCE_IDENTITY == 1
+	response->headers_response.transfert_encoding = IDENTITY;
+#else
+	if (*headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
+		response->headers_response.transfert_encoding = CHUNKED;
+	} else {
+		response->headers_response.transfert_encoding = IDENTITY;
+	}
+#endif
+	// 
 }
 
 // Send a chunked body

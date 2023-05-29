@@ -144,8 +144,8 @@ char *remove_dot_segments(const char *input) {
     *out_ptr = '\0';
     return output;
 }
-bool isin(char* str, char* list[]){
-	for(long unsigned int i=0; i<sizeof(list)/sizeof(list[0]); i++){
+bool isin(char* str, char* list[], size_t list_size){
+	for(long unsigned int i=0; i<list_size; i++){
 		if(strcmp(str, list[i])==0){
 			return true;
 		}
@@ -168,7 +168,7 @@ bool have_separators(char* string, char *value){
                 default:return false;
             }
         }
-        int position_fin = position + strlen(value) + 1;
+        unsigned int position_fin = (unsigned int)(position + strlen(value) + 1);
         if (position_fin <= strlen(string)) {
             switch (string[position_fin]) {
                 case ',':
@@ -208,6 +208,7 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
         }
         node_token=node_token->next;
     }
+    return NULL;
 }
 
 /** 
