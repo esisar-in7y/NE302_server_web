@@ -35,9 +35,9 @@ void send_headers(int clientId,_headers_response* header_response) {
         }
     }
 
-    if(header_response->range != NULL){
+    if(header_response->ranges != NULL){
         char range_str[50];
-        sprintf(range_str, "bytes %d-%d/%d", header_response->range->start, header_response->range->end, header_response->range->total);
+        sprintf(range_str, "bytes %d-%d/%d", header_response->ranges->start, header_response->ranges->end, header_response->ranges->total);
         send_header(clientId, "Content-Range: ", range_str);
     }
 
@@ -45,7 +45,7 @@ void send_headers(int clientId,_headers_response* header_response) {
         _Server_timings* current = header_response->server_timings;
         while(current != NULL){
             char timing_str[50];
-            sprintf(timing_str, "%s;dur=%d", current->timing->name, current->timing->value);
+            sprintf(timing_str, "%s;dur=%d", current->timings->name, current->timings->value);
             send_header(clientId, "Server-Timing: ", timing_str);
             current = current->next;
         }

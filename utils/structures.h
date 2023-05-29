@@ -35,6 +35,7 @@ typedef struct {
 typedef struct {
     int start;
     int end;
+    int total;
 } _Range;
 
 typedef struct {
@@ -71,8 +72,9 @@ typedef struct {
 
     _Range* ranges;
     unsigned int range_count;
-
+    
     _Server_timings* server_timings;
+    unsigned int status;
 } _headers_response;
 
 

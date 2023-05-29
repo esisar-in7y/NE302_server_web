@@ -42,21 +42,22 @@ int main2(int argc, char* argv[]){
 			tree_node_print_all(root,0);
 			printf("popu resp\n");
 			_headers_request headers_request;
-			_response response;
+			_Reponse response;
 			response.clientId=requete->clientId;
-			response.headers_response.clientId= requete->clientId;
 			response.headers_response.status = getstatus(root,&headers_request);
 
-			//TODO populate headers_response
 
 			if (response.headers_response.status > 0) {
-				send_headers(response.clientId,response.headers_response);
+				response.headers_response.connection = CLOSE; // On va fermer la connection car il y a une erreur
+				send_headers(response.clientId, &response.headers_response); 
 				send_end(response.clientId);
 				endWriteDirectClient(response.clientId);
 				requestShutdownSocket(response.clientId);
 			} else {
-				// send_status(200, response.clientId);
-				answerback(root, response.clientId);
+			//TODO populate headers_response
+			// Connection / Content Length ect ...
+				populateRespFromReq(&headers_request,&response);
+				answerback(root, response.clientId, &headers_request);
 				// Fermer la connexion avec le client
 				endWriteDirectClient(response.clientId);
 				if (!keepAlive(root)) {
@@ -77,6 +78,15 @@ int main2(int argc, char* argv[]){
 		requete = NULL;
 	}
 	return (1);
+}
+
+void populate_response(tree_node* root, _Reponse* response) {
+	populate_version(root, &response->headers_response);
+	populate_connection(root, &response->headers_response);
+	populate_content_length(root, &response->headers_response);
+	populate_transfer_encoding(root, &response->headers_response);
+
+	
 }
 
 #define false 0

@@ -167,6 +167,12 @@ void answerback(tree_node* root, _headers_request* headers_request, _Reponse* re
 	// send_end(clientId);
 }
 
+void populateRespFromReq(_headers_request* headers_request,_Reponse* response){
+	// Populate connection field
+	response->headers_response.connection=headers_request->connection;
+	
+}
+
 // Send a chunked body
 void sendChunkedBody(FILE * file, int clientId){
 	char buffer[BUFFER_SIZE] = {0};
