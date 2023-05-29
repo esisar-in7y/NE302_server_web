@@ -114,10 +114,10 @@ void answerback(tree_node* root, _headers_request* headers_request, _Reponse* re
 	char* method = getElementValue(node, node->length_string);
 	if (strcmp(method, "GET") == 0 || strcmp(method, "HEAD") == 0) {
 		// check the query url
-		char* url = beautify_url(root, );
+		char* url = beautify_url(root, headers_request);
 		printf("File path: %s\n", url);
 		// check if the file exists
-
+		unsigned int clientId = reponse->clientId;
 		if (access(url, F_OK) == 0) {
 			//!!! ATTENTION !!! could be just folders
 			send_status(200, clientId);
