@@ -48,9 +48,9 @@ typedef struct {
 } _Range;
 
 //chained list of _Range
-typedef struct {
-    _Range* range;
-    struct _Ranges* next;
+typedef struct _Ranges {
+   _Range* range;
+   struct _Ranges* next;
 } _Ranges;
 
 typedef struct {

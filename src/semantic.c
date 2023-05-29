@@ -1,7 +1,6 @@
 #include "semantic.h"
 
 int getstatus(tree_node* root, _headers_request* header_req) {
-	// TODO mettre des fonctions
 	//  On check METHOD = [GET,HEAD,POST] if not in METHOD => 501 Not Implemented
 	int status=0;
 	populate_method(root, header_req);

@@ -110,3 +110,17 @@ void populate_host(tree_node* root, _headers_request* header_req) {
 // 		}
 // 	}
 // }
+
+void populate_range(tree_node* root, _headers_request* header_req) {
+    if (header_req->ranges == NULL) {
+        char* range_value = get_first_value(root, "Range");
+        if (range_value != NULL) {
+            int64_t start = strtoll(range_value, NULL, 10);
+            int64_t end = start + strtol(get_first_value(root, "Units"), NULL, 10);
+            header_req->ranges = malloc(sizeof(_Ranges));
+            header_req->ranges->range = malloc(sizeof(_Range));
+            header_req->ranges->range->start = start;
+            header_req->ranges->range->end = end;
+        }
+    }
+}
