@@ -65,3 +65,4 @@ tests/*/*.txt
 tests/fuzzer/*
 rendus/*
 out
+*.mp4

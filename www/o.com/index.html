@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop mute>
+        <source src="Mask%20Off%E2%9D%A4%20%5BLhg2dMh49YA%5D.webm" type="video/webm">
+    </video>
+</body>
+<script>
+    const video = document.querySelector('video');
+    video.addEventListener('click', function () {
+        video.muted = false;
+    }, false);
+    
+</script>
+
+</html>

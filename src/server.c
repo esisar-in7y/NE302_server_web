@@ -42,10 +42,7 @@ int main2(int argc, char* argv[]) {
 			_headers_request headers_request={0};
 			_Response response={0};
 			response.clientId = requete->clientId;
-			
-			response.headers_response.status_code = getstatus(root, &headers_request);//TODO renommer ce truc
-			printf("resp from getstatus: %d\n",response.headers_response.status_code);
-			if (response.headers_response.status_code >= 300) {
+			if ((response.headers_response.status_code = getstatus(root, &headers_request)) >= 300) {
 				response.headers_response.version = HTTP1_0;
 				response.headers_response.connection=CLOSE;
 				send_headers(&response);

@@ -6,6 +6,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <sys/types.h>
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
 
 #if defined(_WIN32)
     #include <stdint.h>

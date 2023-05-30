@@ -28,19 +28,12 @@ int getstatus(tree_node* root, _headers_request* header_req) {
 		return status;
 	}
 
-
-// cecic n'a aucun SEEEENSSSSSSSSSSSSSSSSSSSSSSSSSSS
-
-	// On check si le header Accept-Encoding est présent et on vérifie sa sémantique
-	if((status = checkAcceptEncoding(root, header_req)) > 0){
-		return status;
-	}
-
 	// On check si le header Referer est présent et on vérifie sa sémantique
 	if((status = checkReferer(root, header_req)) > 0){
 		return status;
 	}
-
+	// mettre tout les populates ici pour avoir ce qu'on veut apres
+	populate_accept_encoding(root,header_req);
 	return 0;
 }
 
@@ -66,20 +59,20 @@ int checkConnection(tree_node* root, _headers_request* header_req) {
 	populate_content_length(root,header_req);
 	populate_transfert_encoding(root,header_req);
 
-	if (checkVersion(root, header_req) == HTTP1_1) {
-		if (header_req->connection!=0) {
+	if (header_req->version == HTTP1_1) {
+		if (header_req->connection!=CLOSE) {
 			if (header_req->transfert_encoding.initialized == false && header_req->content_length == NULL) {
 				return 400;
 			}
-			header_req->connection=1;
+			header_req->connection=KEEP_ALIVE;
 		}
-	} else if (checkVersion(root, header_req) == HTTP1_0) {
-		if (header_req->connection==1) {
+	} else if (header_req->version == HTTP1_0) {
+		if (header_req->connection==KEEP_ALIVE) {
 			if (searchTree(root, "Content-Length") == NULL) {
 				return 400;
 			}
 		}else{
-			header_req->connection=0;
+			header_req->connection=CLOSE;
 		}
 	}
 	return 0;
@@ -92,13 +85,6 @@ int checkTransfertEncoding(tree_node* root, _headers_request* header_req) {
 			return 400;
 		}
 	}
-	return 0;
-}
-
-// **Accept-encoding header**
-
-int checkAcceptEncoding(tree_node* root, _headers_request* header_req) {
-	populate_accept_encoding(root,header_req);
 	return 0;
 }
 
@@ -137,5 +123,3 @@ bool isAccepted(tree_node* root, char* mime_type) {
 	}
 	return false;
 }
-
-

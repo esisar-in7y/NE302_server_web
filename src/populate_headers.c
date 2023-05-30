@@ -17,9 +17,9 @@ void populate_connection(tree_node* root, _headers_request* header_req) {
 		char* connection = get_first_value(root, "Connection");
 		if (connection != NULL) {
 			if (strcasecmp(connection, "close") == 0) {
-				header_req->connection = 0;
+				header_req->connection = CLOSE;
 			} else if (strcasecmp(connection, "keep-alive") == 0 || strcasecmp(connection, "keepalive") == 0 || strcasecmp(connection, "keep alive") == 0) {
-				header_req->connection = 1;
+				header_req->connection = KEEP_ALIVE;
 			}
 		}
 	}
@@ -46,6 +46,8 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 			char* transfer_encoding = getElementValue(node, (unsigned int*)&node->length_string);
 			if (have_separators(transfer_encoding, "chunked")) {
 				header_req->transfert_encoding.CHUNKED = true;
+			} else if (have_separators(transfer_encoding, "identity")) {
+				header_req->transfert_encoding.IDENTITY = true;
 			} else if (have_separators(transfer_encoding, "compress")) {
 				header_req->transfert_encoding.COMPRESS = true;
 			} else if (have_separators(transfer_encoding, "deflate")) {
@@ -111,16 +113,48 @@ void populate_host(tree_node* root, _headers_request* header_req) {
 // 	}
 // }
 
-void populate_range(tree_node* root, _headers_request* header_req) {
+void populate_ranges(tree_node* root, _headers_request* header_req) {
     if (header_req->ranges == NULL) {
-        char* range_value = get_first_value(root, "Range");
-        if (range_value != NULL) {
-            int64_t start = strtoll(range_value, NULL, 10);
-            int64_t end = start + strtol(get_first_value(root, "Units"), NULL, 10);
-            header_req->ranges = malloc(sizeof(_Ranges));
-            header_req->ranges->range = malloc(sizeof(_Range));
-            header_req->ranges->range->start = start;
-            header_req->ranges->range->end = end;
+        char* range = get_first_value(root, "Range");
+        if (range != NULL) {
+            size_t length = strlen(range);
+            header_req->ranges = (_Ranges*)calloc(1, sizeof(_Ranges));
+            header_req->ranges->range = (_Range*)calloc(1, sizeof(_Range));
+            header_req->ranges->next = NULL;
+            _Ranges* current_range = header_req->ranges;
+
+            // Parse the range string
+            char* start_str = range + 6;  // Skip "bytes="
+            char* end_str = strchr(start_str, '-');
+            while (end_str != NULL) {
+                // Extract start and end values
+                int start = atoi(start_str);
+                int end = atoi(end_str + 1);
+
+                // Create a new _Range structure
+                _Range* new_range = (_Range*)malloc(sizeof(_Range));
+                new_range->start = start;
+                new_range->end = end;
+
+                // Set the new range in the current _Ranges node
+                current_range->range = new_range;
+
+                // Check for additional ranges
+                start_str = strchr(end_str + 1, ',');
+                if (start_str != NULL) {
+                    // Allocate memory for the next _Ranges node
+                    current_range->next = (_Ranges*)calloc(1, sizeof(_Ranges));
+                    current_range = current_range->next;
+                    current_range->range = (_Range*)calloc(1, sizeof(_Range));
+                    current_range->next = NULL;
+
+                    // Move the start_str pointer to the next range
+                    start_str += 2;  // Skip ", "
+                    end_str = strchr(start_str, '-');
+                } else {
+                    break;  // No more ranges, exit the loop
+                }
+            }
         }
     }
 }

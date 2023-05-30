@@ -1,5 +1,4 @@
 #include "answer.h"
-
 #include <unistd.h>
 
 #include "../utils/manip.h"
@@ -173,17 +172,53 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			if (headers_request->methode == HEAD) {
 				return false;
 			}
-			//send headers
-			send_headers(response);
-			// send data
-			FILE* file=fopen(url,"rb");
-			if (response->headers_response.transfert_encoding == CHUNKED) {
-				sendChunkedBody(file, clientId);
-			} else {
-				sendIdentity(file, response->clientId);
+			if(headers_request->ranges!=NULL){
+				response->headers_response.status_code = 206;
+				//populate range response
+				_Range* range= headers_request->ranges->range;
+				int start = range->start;
+				int end = range->end;
+				FILE* file=fopen(url,"rb");// TODO safe open
+				if(start==-1){
+					start = 0;
+				}
+				if(end==-1){
+					fseek(file, 0L, SEEK_END);
+					end = ftell(file);
+				}
+
+				response->headers_response.range=malloc(sizeof(_Range));
+				response->headers_response.range->start=start;
+				response->headers_response.range->end=end;
+				send_headers(response);
+				fseek(file, start, SEEK_SET);
+				int size = end - start;
+				char buffer[BUFFER_SIZE] = {0};
+				int buffer_size = 0;
+				while ((buffer_size = fread(buffer, 1, MIN(BUFFER_SIZE,size), file)) > 0) {
+					writeDirectClient(clientId, buffer, buffer_size);
+					size -= buffer_size;
+					if (size <= 0) {
+						break;
+					}
+				}
+				
+
+				//get file size
+
+			}else{
+				//send headers
+				send_headers(response);
+				// send data
+				FILE* file=fopen(url,"rb");
+				if (response->headers_response.transfert_encoding == CHUNKED) {
+					sendChunkedBody(file, clientId);
+				} else {
+					sendIdentity(file, response->clientId);
+				}
+				fclose(file);
+				return true;
 			}
-			fclose(file);
-			return true;
 		} else {
 			response->headers_response.status_code = 404;
 			response->headers_response.connection = CLOSE;
@@ -202,7 +237,6 @@ void send_response(_Response* response){
 }
 
 void populateRespFromReq(_headers_request* headers_request, _Response* response) {
-
 	response->headers_response.version = headers_request->version;
 	// Populate connection field
 	response->headers_response.connection = headers_request->connection;
@@ -210,7 +244,9 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
-	if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
+	if (headers_request->accept_encoding.IDENTITY == true) {
+		response->headers_response.transfert_encoding = IDENTITY;
+	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
 		response->headers_response.transfert_encoding = CHUNKED;
 	} else {
 		response->headers_response.transfert_encoding = IDENTITY;
