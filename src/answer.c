@@ -8,7 +8,7 @@
 #include "semantic.h"
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
-#define BIG_BUFFER_SIZE 10*BUFFER_SIZE
+#define BIG_BUFFER_SIZE 5*BUFFER_SIZE
 
 void send_status(int status, int clientId) {
 	char status_char[5];
@@ -206,19 +206,24 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				response->headers_response.range->start=start;
 				response->headers_response.range->end=end;
 				if(response->headers_response.content_length==NULL){
-					response->headers_response.content_length=(long int*)malloc(sizeof(long int*));
+					response->headers_response.content_length=(long*)malloc(sizeof(long));
 				}
 				*response->headers_response.content_length=end-start+1;
 				printf("ranges:%d-%d\n",start,end);
 				send_headers(response);
+				//TODO mettre ca dans la fonction send identity
 				fseek(file, start, SEEK_SET);
-				int size = end - start;
-				printf("size:%d\n",size);
+				unsigned long waiting_bytes = end - start;
+				printf("size:%ld\n",waiting_bytes);
 				char buffer[BIG_BUFFER_SIZE] = {0};
 				int buffer_size = 0;
-				while (size>0 && (buffer_size = fread(buffer, 1, MIN(BIG_BUFFER_SIZE,size), file)) > 0) {
+				while (waiting_bytes>0 && (buffer_size = fread(buffer,  MIN(BIG_BUFFER_SIZE,waiting_bytes), 1, file)) > 0) {
 					writeDirectClient(clientId, buffer, buffer_size);
-					size -= buffer_size;
+					if(waiting_bytes>buffer_size){
+						waiting_bytes -= buffer_size;
+					}else{
+						waiting_bytes = 0;
+					}
 				}
 				return true;
 			}else{

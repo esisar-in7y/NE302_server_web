@@ -21,7 +21,21 @@ void send_headers(_Response* response) {
 	if (response->headers_response.content_type != NULL) {
 		send_header(response->clientId, "Content-Type: ", response->headers_response.content_type);
 	}
-
+	if (response->headers_response.range != NULL) {
+		char range_str[60]={0};
+		if (response->headers_response.range->start < 0) {
+			sprintf(range_str, "bytes */%ld", response->headers_response.range->size);
+		} else {
+			if(response->headers_response.content_length == NULL){
+				response->headers_response.content_length = (long*)malloc(sizeof(long));
+			}
+			printf("JE SET TON CONTENT LENGTH\n");
+			*(response->headers_response.content_length) = response->headers_response.range->end - response->headers_response.range->start + 1;
+			sprintf(range_str, "bytes %ld-%ld/%ld", response->headers_response.range->start, response->headers_response.range->end, response->headers_response.range->size);
+		}
+		send_header(response->clientId, "Content-Range: ", range_str);
+		
+	}
 	if (response->headers_response.content_length != NULL) {
 		printf("toto=%ld\n", *(response->headers_response.content_length));
 		char content_length_str[30]={0};
@@ -54,15 +68,7 @@ void send_headers(_Response* response) {
 	// 		current = current->next;
 	// 	}
 	// }
-	if (response->headers_response.range != NULL) {
-		char range_str[60]={0};
-		if (response->headers_response.range->start < 0) {
-			sprintf(range_str, "bytes */%ld\r\n", response->headers_response.range->size);
-		} else {
-			sprintf(range_str, "bytes %ld-%ld/%ld\r\n", response->headers_response.range->start, response->headers_response.range->end, response->headers_response.range->size);
-		}
-		send_header(response->clientId, "Content-Range: ", range_str);
-	}
+	
 
 	if (response->headers_response.server_timings != NULL) {
 		struct _Server_timings* current = response->headers_response.server_timings;
