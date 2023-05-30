@@ -52,7 +52,7 @@ typedef struct _Server_timings {
 typedef struct {
 	_HTTP_version version;
 	_Connection connection;
-	int* content_length;
+	long int* content_length;
 	_Methode methode;
 	_Encoding transfert_encoding;
 	_Encoding accept_encoding;
@@ -62,12 +62,12 @@ typedef struct {
 } _headers_request;
 
 typedef struct {
-	_HTTP_version version;				// ok
-	_Connection connection;				// ok
-	int* content_length;				// pas ok
-	int status_code;					// ok
-	char* content_type;					// pas ok
-	_Encoding_resp transfert_encoding;	// ok
+	_HTTP_version version;				
+	_Connection connection;				
+	long int* content_length;				
+	int status_code;					
+	char* content_type;					
+	_Encoding_resp transfert_encoding;
 
 	// _Ranges* ranges;
 	_Range* range;	// osef si y'en a plusieurs

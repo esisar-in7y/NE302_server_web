@@ -8,6 +8,7 @@
 #include "semantic.h"
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
+#define BIG_BUFFER_SIZE 10*BUFFER_SIZE
 
 void send_status(int status, int clientId) {
 	char status_char[5];
@@ -120,10 +121,13 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 void sendChunkedBody(FILE* file, int clientId) {
 	char buffer[BUFFER_SIZE]={0};
 	int buffer_size = 0;
-	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros
-		char size[30];
-		snprintf(size, sizeof(size), "%x\r\n", buffer_size);
-		writeClient(clientId, size);
+	int sum=0;
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros (2Mio)
+		char size_str[30]={0};
+		snprintf(size_str, sizeof(size_str), "%x\r\n", buffer_size);
+		sum+=buffer_size;
+		printf("sum: %d size : %s\n",sum, size_str);
+		writeDirectClient(clientId, size_str,strlen(size_str));
 		writeDirectClient(clientId, buffer, buffer_size);
 		writeDirectClient(clientId, "\r\n", 2);
 	}
@@ -159,11 +163,12 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			response->headers_response.content_type=malloc(strlen(mime_type));
 			strcpy(response->headers_response.content_type,mime_type);
 			// get the file size
+			long int file_size=0;
 			if (response->headers_response.transfert_encoding != CHUNKED) {
-				int file_size = get_file_size(url);
-				printf("file size: %d\n", file_size);
-				response->headers_response.content_length = (int*)calloc(1,sizeof(int*));
-				*response->headers_response.content_length = file_size;
+				file_size = get_file_size(url);
+				printf("file size: %ld\n", file_size);
+				response->headers_response.content_length = (long int*)calloc(1,sizeof(long int*));
+				*response->headers_response.content_length = file_size-1;
 			}
 
 			if (response->headers_response.status_code == 0) {
@@ -173,24 +178,26 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				return false;
 			}
 			if(headers_request->ranges!=NULL){
-				response->headers_response.transfert_encoding=IDENTITY;
 				response->headers_response.status_code = 206;
 				//populate range response
 				_Range* range= headers_request->ranges->range;
 				int start = range->start;
 				int end = range->end;
-				int max = 0;
 				FILE* file=fopen(url,"rb");// TODO safe open
+				response->headers_response.range=malloc(sizeof(_Range));
+				response->headers_response.range->size=file_size;
+
 				if(start==-1){
 					start = 0;
+				}else if(start<0){
+					response->headers_response.status_code = 416;
+					response->headers_response.range->start=-1;
+					response->headers_response.range->end=-1;
+					return false;
 				}
-				fseek(file, 0L, SEEK_END);
-				max=ftell(file);
-				response->headers_response.range=malloc(sizeof(_Range));
-				response->headers_response.range->size=max;
 				if(end==-1){
-					end = MIN(start+300*BUFFER_SIZE,max);
-				}else if(end>max){
+					end = MIN(start+300*BUFFER_SIZE,file_size);
+				}else if(end>file_size){
 					response->headers_response.status_code = 416;
 					response->headers_response.range->start=-1;
 					response->headers_response.range->end=-1;
@@ -198,13 +205,18 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				}
 				response->headers_response.range->start=start;
 				response->headers_response.range->end=end;
+				if(response->headers_response.content_length==NULL){
+					response->headers_response.content_length=(long int*)malloc(sizeof(long int*));
+				}
+				*response->headers_response.content_length=end-start+1;
 				printf("ranges:%d-%d\n",start,end);
 				send_headers(response);
 				fseek(file, start, SEEK_SET);
 				int size = end - start;
-				char buffer[BUFFER_SIZE] = {0};
+				printf("size:%d\n",size);
+				char buffer[BIG_BUFFER_SIZE] = {0};
 				int buffer_size = 0;
-				while (size>0 && (buffer_size = fread(buffer, 1, MIN(BUFFER_SIZE,size), file)) > 0) {
+				while (size>0 && (buffer_size = fread(buffer, 1, MIN(BIG_BUFFER_SIZE,size), file)) > 0) {
 					writeDirectClient(clientId, buffer, buffer_size);
 					size -= buffer_size;
 				}
@@ -248,7 +260,9 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
-	if (headers_request->accept_encoding.IDENTITY == true) {
+	if(headers_request->ranges!=NULL){
+		response->headers_response.transfert_encoding = IDENTITY;
+	} else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
 		response->headers_response.transfert_encoding = CHUNKED;

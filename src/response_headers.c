@@ -23,9 +23,9 @@ void send_headers(_Response* response) {
 	}
 
 	if (response->headers_response.content_length != NULL) {
-		printf("toto=%d\n", *(response->headers_response.content_length));
-		char content_length_str[10];
-		sprintf(content_length_str, "%d", *(response->headers_response.content_length));
+		printf("toto=%ld\n", *(response->headers_response.content_length));
+		char content_length_str[30]={0};
+		sprintf(content_length_str, "%ld", *(response->headers_response.content_length));
 		send_header(response->clientId, "Content-Length: ", content_length_str);
 	} else {
 		switch (response->headers_response.transfert_encoding) {
@@ -55,7 +55,7 @@ void send_headers(_Response* response) {
 	// 	}
 	// }
 	if (response->headers_response.range != NULL) {
-		char range_str[60];
+		char range_str[60]={0};
 		if (response->headers_response.range->start < 0) {
 			sprintf(range_str, "bytes */%ld\r\n", response->headers_response.range->size);
 		} else {
@@ -67,7 +67,7 @@ void send_headers(_Response* response) {
 	if (response->headers_response.server_timings != NULL) {
 		struct _Server_timings* current = response->headers_response.server_timings;
 		while (current != NULL) {
-			char timing_str[50];
+			char timing_str[50]={0};
 			sprintf(timing_str, "%s;dur=%d", current->timings->name, current->timings->value);
 			send_header(response->clientId, "Server-Timing: ", timing_str);
 			current = current->next;

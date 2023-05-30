@@ -6,7 +6,7 @@ CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function
 # -std=c99
 # -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 
 
-CFLAGS += -D HTTP=1 
+CFLAGS += -D HTTP=1  -D FORCE_IDENTITY=1
 # -D FORCE_IDENTITY=1
 # -D HTTP=1
 # -D PARSER=1
@@ -103,3 +103,7 @@ tsti:
 
 tstt:
 	curl -v http://flolep.fr/ --next http://flolep.fr/ 2>&1 | grep "Connection "
+
+ttt:
+	/bin/echo -ne 'GET /o.com/Mask%20Off%E2%9D%A4%20%5BLhg2dMh49YA%5D.webm HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 \r\n\r\n' | ncat -C --hex-dump out localhost 8000
+

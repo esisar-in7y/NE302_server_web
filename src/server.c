@@ -2,6 +2,7 @@
 #include <netinet/in.h>
 #include <sys/time.h>
 #include <unistd.h>
+#include <signal.h>
 
 #include "../lib/request.h"
 #include "../utils/global.h"
@@ -83,6 +84,7 @@ int main2(int argc, char* argv[]) {
 #define false 0
 #if HTTP == 1
 int main(int argc, char* argv[]) {
+	// signal(SIGPIPE, SIG_IGN);
 	return main2(argc, argv);
 }
 #endif

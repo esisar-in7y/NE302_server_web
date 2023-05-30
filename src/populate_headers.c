@@ -29,7 +29,7 @@ void populate_content_length(tree_node* root, _headers_request* header_req) {
 	if (header_req->content_length == NULL) {
 		char* content_length = get_first_value(root, "Content-Length");
 		if (content_length != NULL) {
-			header_req->content_length = (int*)calloc(1, sizeof(int*));
+			header_req->content_length = (long int*)calloc(1, sizeof(long int*));
 			*header_req->content_length = atoi(content_length);
 		}
 	}
