@@ -147,7 +147,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 		// check if the file exists
 		unsigned int clientId = response->clientId;
 		if (access(url, F_OK) == 0) {
-			//!!! ATTENTION !!! could be just folders
+			//!!! ATTENTION !!! could be just folder
 
 			// get the mime type
 			char* mime_type = (char*)get_mime_type(url);
@@ -202,8 +202,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 						break;
 					}
 				}
-				
-
+				return true;
 				//get file size
 
 			}else{
