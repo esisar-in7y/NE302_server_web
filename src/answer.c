@@ -1,5 +1,6 @@
 #include "answer.h"
 #include <unistd.h>
+#include <zlib.h>
 
 #include "../utils/manip.h"
 #include "../utils/mime.h"
@@ -115,7 +116,44 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 
 	return url2;
 }
+int compressToGzip(const char* input, int inputSize, char* output, int outputSize)
+{
+    z_stream zs;
+    zs.zalloc = Z_NULL;
+    zs.zfree = Z_NULL;
+    zs.opaque = Z_NULL;
+    zs.avail_in = (uInt)inputSize;
+    zs.next_in = (Bytef *)input;
+    zs.avail_out = (uInt)outputSize;
+    zs.next_out = (Bytef *)output;
 
+    // hard to believe they don't have a macro for gzip encoding, "Add 16" is the best thing zlib can do:
+    // "Add 16 to windowBits to write a simple gzip header and trailer around the compressed data instead of a zlib wrapper"
+    deflateInit2(&zs, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 15 | 16, 8, Z_DEFAULT_STRATEGY);
+    deflate(&zs, Z_FINISH);
+    deflateEnd(&zs);
+    return zs.total_out;
+}
+
+
+void sendGzipBody(FILE* file, int clientId) {
+    char* buffer = malloc(BUFFER_SIZE * sizeof(char));
+	char* compressed = malloc(BUFFER_SIZE * sizeof(char));
+	int compressed_size=0;
+	int buffer_size=0;
+
+    while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+        compressed_size=compressToGzip(buffer, buffer_size, compressed, BUFFER_SIZE);
+		char size_str[30]={0};
+		snprintf(size_str, sizeof(size_str), "%x\r\n", compressed_size);
+		writeDirectClient(clientId, size_str,strlen(size_str));
+		writeDirectClient(clientId, compressed, compressed_size);
+		writeDirectClient(clientId, "\r\n", 2);
+    }
+	writeDirectClient(clientId, "0\r\n\r\n", 5);
+    free(compressed);
+    free(buffer);
+}
 
 
 // Send a chunked body
@@ -166,7 +204,10 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			long int file_size = 0;
 			FILE* file = fopen(url, "rb");
 
-			if (response->headers_response.transfert_encoding != CHUNKED) {
+			if (
+				response->headers_response.transfert_encoding != CHUNKED &&
+				response->headers_response.transfert_encoding != GZIP
+				) {
 				if (file == NULL) {
 					printf("Failed to open file: %s\n", url);
 					return -1;
@@ -244,7 +285,9 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				FILE* file=fopen(url,"rb");
 				if (response->headers_response.transfert_encoding == CHUNKED) {
 					sendChunkedBody(file, clientId);
-				} else {
+				} else if(response->headers_response.transfert_encoding == GZIP){
+					sendGzipBody(file, response->clientId);
+				}else{
 					sendIdentity(file, response->clientId);
 				}
 				fclose(file);
@@ -275,9 +318,12 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
+printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
-	} else if (headers_request->accept_encoding.IDENTITY == true) {
+	} else if(headers_request->accept_encoding.GZIP == true){
+		response->headers_response.transfert_encoding = GZIP;
+	}else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
 		response->headers_response.transfert_encoding = CHUNKED;

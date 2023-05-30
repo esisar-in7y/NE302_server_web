@@ -44,17 +44,18 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 			header_req->transfert_encoding.isPresent = true;
 			node = (tree_node*)node_token->node;
 			char* transfer_encoding = getElementValue(node, (unsigned int*)&node->length_string);
+			printf("transfer_encoding:%s\n",transfer_encoding);
 			if (have_separators(transfer_encoding, "chunked")) {
 				header_req->transfert_encoding.CHUNKED = true;
-			} else if (have_separators(transfer_encoding, "identity")) {
+			} if (have_separators(transfer_encoding, "identity")) {
 				header_req->transfert_encoding.IDENTITY = true;
-			} else if (have_separators(transfer_encoding, "compress")) {
+			} if (have_separators(transfer_encoding, "compress")) {
 				header_req->transfert_encoding.COMPRESS = true;
-			} else if (have_separators(transfer_encoding, "deflate")) {
+			} if (have_separators(transfer_encoding, "deflate")) {
 				header_req->transfert_encoding.DEFLATE = true;
-			} else if (have_separators(transfer_encoding, "gzip")) {
+			} if (have_separators(transfer_encoding, "gzip") || have_separators(transfer_encoding, "x-gzip")) {
 				header_req->transfert_encoding.GZIP = true;
-			} else if (have_separators(transfer_encoding, "br")) {
+			} if (have_separators(transfer_encoding, "br")) {
 				header_req->transfert_encoding.BR = true;
 			}
 			node_token = node_token->next;
@@ -65,21 +66,16 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 void populate_accept_encoding(tree_node* root, _headers_request* header_req) {
 	if (!(header_req->accept_encoding.initialized)) {
 		header_req->accept_encoding.initialized = true;
-		_Token* node_token = searchTree(root, "Accept-Encoding");  // TODO multiple transfer encoding
-		tree_node* node;
-		while (node_token != NULL) {
-			node = (tree_node*)node_token->node;
-			char* accept_encoding = getElementValue(node, (unsigned int*)&node->length_string);
-			if (have_separators(accept_encoding, "compress")) {
-				header_req->accept_encoding.COMPRESS = true;
-			} else if (have_separators(accept_encoding, "deflate")) {
-				header_req->accept_encoding.DEFLATE = true;
-			} else if (have_separators(accept_encoding, "gzip")) {
-				header_req->accept_encoding.GZIP = true;
-			} else if (have_separators(accept_encoding, "br")) {
-				header_req->accept_encoding.BR = true;
-			}
-			node_token = node_token->next;
+		char* accept_encoding = getFieldValueFromFieldName(root,"Accept-Encoding");
+		printf("accept_encoding:%s\n",accept_encoding);
+		if (have_separators(accept_encoding, "compress")) {
+			header_req->accept_encoding.COMPRESS = true;
+		} if (have_separators(accept_encoding, "deflate")) {
+			header_req->accept_encoding.DEFLATE = true;
+		} if (have_separators(accept_encoding, "gzip")) {
+			header_req->accept_encoding.GZIP = true;
+		} if (have_separators(accept_encoding, "br")) {
+			header_req->accept_encoding.BR = true;
 		}
 	}
 }

@@ -41,12 +41,15 @@ void send_headers(_Response* response) {
 		send_header(response->clientId, "Content-Length: ", content_length_str);
 	} else {
 		switch (response->headers_response.transfert_encoding) {
-		case BR: writeClient(response->clientId, "Transfer-Encoding: br\r\n"); break;
-		case GZIP: writeClient(response->clientId, "Transfer-Encoding: gzip\r\n"); break;
-		case DEFLATE: writeClient(response->clientId, "Transfer-Encoding: deflate\r\n"); break;
-		case CHUNKED: writeClient(response->clientId, "Transfer-Encoding: chunked\r\n"); break;
-		case IDENTITY: writeClient(response->clientId, "Transfer-Encoding: identity\r\n"); break;
-		default: break;
+			case BR: writeClient(response->clientId, "Transfer-Encoding: br\r\n"); break;
+			case GZIP: 
+				writeClient(response->clientId, "Content-Encoding: gzip\r\n");
+				writeClient(response->clientId, "Transfer-Encoding: chunked\r\n");
+				break;
+			case DEFLATE: writeClient(response->clientId, "Transfer-Encoding: deflate\r\n"); break;
+			case CHUNKED: writeClient(response->clientId, "Transfer-Encoding: chunked\r\n"); break;
+			case IDENTITY: writeClient(response->clientId, "Transfer-Encoding: identity\r\n"); break;
+			default: break;
 		}
 	}
 

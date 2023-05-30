@@ -6,11 +6,11 @@ CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function
 # -std=c99
 # -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 
 
-CFLAGS += -D HTTP=1 -D FORCE_IDENTITY=1  -D FORCE_IDENTITY=1
-# -D FORCE_IDENTITY=1
+CFLAGS += -D HTTP=1
 # -D HTTP=1
 # -D PARSER=1
 # -D DEBUG
+# -D FORCE_IDENTITY=1
 
 IGNORE = tst.c
 OUTDIR = ./bin
@@ -28,12 +28,16 @@ INC_DIRS = -I./lib
 # -I./ $(addprefix -I, $(SUBDIR))
 
 # gcc -o ./bin/http_parse ./bin/*/*.o -L./lib -lrequest -lmagic -Wall -std=c99 -D TST=0
-LIBS = -L./lib -lrequest
+LIBS = -L./lib -lrequest -lz
 
 PHONY := $(EXEC)
 $(EXEC): $(OBJS)
 	@mkdir -p $(OUTDIR)
 	$(CC) $(CFLAGS) -o $(OUTDIR)/$@ $(OBJS) $(LIBS)
+
+$(DIR_OBJ)/utils/thirdpart.o: utils/thirdpart.c $(DIR_OBJ)/utils/socket_1.o
+	@mkdir -p $(DIR_OBJ)/utils
+	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $< 
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
 	@mkdir -p $(OUTDIR)
@@ -100,3 +104,9 @@ tsth:
 
 range:
 	curl -v -r 0-199 "http://localhost:8000/o.com/Mask%20Off%E2%9D%A4%20%5BLhg2dMh49YA%5D.webm" -o ooo
+
+gzip:
+	curl -v --compressed http://localhost:8000/www.toto.com/index.html
+
+tstz:
+	/bin/echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 \r\nAccept-Encoding: gzip\r\n\r\n' | ncat -C --hex-dump out localhost 8000
