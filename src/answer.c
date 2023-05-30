@@ -121,7 +121,7 @@ void sendChunkedBody(FILE* file, int clientId) {
 	char buffer[BUFFER_SIZE]={0};
 	int buffer_size = 0;
 	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
-		char size[12];
+		char size[30];
 		snprintf(size, sizeof(size), "%x\r\n", buffer_size);
 		writeClient(clientId, size);
 		writeDirectClient(clientId, buffer, buffer_size);

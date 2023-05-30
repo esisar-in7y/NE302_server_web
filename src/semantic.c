@@ -34,6 +34,7 @@ int getstatus(tree_node* root, _headers_request* header_req) {
 	}
 	// mettre tout les populates ici pour avoir ce qu'on veut apres
 	populate_accept_encoding(root,header_req);
+	populate_ranges(root,header_req);
 	return 0;
 }
 
