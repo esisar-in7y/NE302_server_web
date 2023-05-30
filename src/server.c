@@ -36,12 +36,10 @@ int main2(int argc, char* argv[]) {
 			endWriteDirectClient(requete->clientId);
 			requestShutdownSocket(requete->clientId);
 		} else {
-			printf("get root\n");
 			tree_node* root = (tree_node*)getRootTree();
 #if DEBUG == 1
 			tree_node_print_all(root, 0);
 #endif
-			printf("popu resp\n");
 			_headers_request headers_request={0};
 			_Response response={0};
 			response.clientId = requete->clientId;

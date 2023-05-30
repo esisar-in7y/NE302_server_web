@@ -117,7 +117,6 @@ void populate_host(tree_node* root, _headers_request* header_req) {
 void populate_ranges(tree_node* root,_headers_request* header_req) {
     if (header_req->ranges == NULL) {
         char* range =  getFieldValueFromFieldName(root, "Range");
-		printf("ranges:%s\n",range);
         if (range != NULL) {
             size_t length = strlen(range);
             header_req->ranges = (_Ranges*)calloc(1, sizeof(_Ranges));

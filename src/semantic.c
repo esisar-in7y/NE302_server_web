@@ -109,7 +109,7 @@ int checkHostHeader(tree_node* root, _headers_request* header_req) {
 //? ca devrait être bon
 bool isAccepted(tree_node* root, char* mime_type) {
 	char* accepted=getFieldValueFromFieldName(root, "Accept");
-	printf("accepted : %s\n",accepted);
+	// printf("accepted : %s\n",accepted);
 	if(accepted==NULL) return true;
 	if(have_separators(accepted,"*/*")){
 		return true;

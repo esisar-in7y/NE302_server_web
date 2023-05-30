@@ -29,7 +29,6 @@ void send_headers(_Response* response) {
 			if(response->headers_response.content_length == NULL){
 				response->headers_response.content_length = (long*)malloc(sizeof(long));
 			}
-			printf("JE SET TON CONTENT LENGTH\n");
 			*(response->headers_response.content_length) = response->headers_response.range->end - response->headers_response.range->start + 1;
 			sprintf(range_str, "bytes %ld-%ld/%ld", response->headers_response.range->start, response->headers_response.range->end, response->headers_response.range->size);
 		}
@@ -37,7 +36,6 @@ void send_headers(_Response* response) {
 		
 	}
 	if (response->headers_response.content_length != NULL) {
-		printf("toto=%ld\n", *(response->headers_response.content_length));
 		char content_length_str[30]={0};
 		sprintf(content_length_str, "%ld", *(response->headers_response.content_length));
 		send_header(response->clientId, "Content-Length: ", content_length_str);

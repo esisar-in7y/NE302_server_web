@@ -8,7 +8,8 @@
 #include "semantic.h"
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
-#define BIG_BUFFER_SIZE 5*BUFFER_SIZE
+#define BIG_BUFFER_SIZE 10*BUFFER_SIZE
+#define MAX_STREAM_SIZE 50*BIG_BUFFER_SIZE
 
 void send_status(int status, int clientId) {
 	char status_char[5];
@@ -121,12 +122,9 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 void sendChunkedBody(FILE* file, int clientId) {
 	char buffer[BUFFER_SIZE]={0};
 	int buffer_size = 0;
-	int sum=0;
 	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros (2Mio)
 		char size_str[30]={0};
 		snprintf(size_str, sizeof(size_str), "%x\r\n", buffer_size);
-		sum+=buffer_size;
-		printf("sum: %d size : %s\n",sum, size_str);
 		writeDirectClient(clientId, size_str,strlen(size_str));
 		writeDirectClient(clientId, buffer, buffer_size);
 		writeDirectClient(clientId, "\r\n", 2);
@@ -196,7 +194,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 					return false;
 				}
 				if(end==-1){
-					end = MIN(start+300*BUFFER_SIZE,file_size);
+					end = MIN(start+MAX_STREAM_SIZE,file_size);
 				}else if(end>file_size){
 					response->headers_response.status_code = 416;
 					response->headers_response.range->start=-1;

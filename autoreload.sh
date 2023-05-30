@@ -22,8 +22,8 @@ function on_file_change() {
             kill $previous_pid
         fi
         # Clean, build and run the application in the background
-        # make clean && make run &
-        make run &
+        make clean && make run &
+        # make run &
 
         # Update the process ID variable
         previous_pid=$!
