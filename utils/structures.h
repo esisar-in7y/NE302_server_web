@@ -27,8 +27,9 @@ typedef struct {
 typedef enum { BR, GZIP, CHUNKED, COMPRESS, DEFLATE, IDENTITY } _Encoding_resp;
 
 typedef struct {
-	int start;
-	int end;
+	long int start;
+	long int end;
+	unsigned long int size;
 } _Range;
 
 // chained list of _Range

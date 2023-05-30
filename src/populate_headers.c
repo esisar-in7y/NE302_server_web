@@ -113,9 +113,11 @@ void populate_host(tree_node* root, _headers_request* header_req) {
 // 	}
 // }
 
-void populate_ranges(tree_node* root, _headers_request* header_req) {
+
+void populate_ranges(tree_node* root,_headers_request* header_req) {
     if (header_req->ranges == NULL) {
-        char* range = get_first_value(root, "Range");
+        char* range =  getFieldValueFromFieldName(root, "Range");
+		printf("ranges:%s\n",range);
         if (range != NULL) {
             size_t length = strlen(range);
             header_req->ranges = (_Ranges*)calloc(1, sizeof(_Ranges));
@@ -129,7 +131,13 @@ void populate_ranges(tree_node* root, _headers_request* header_req) {
             while (end_str != NULL) {
                 // Extract start and end values
                 int start = atoi(start_str);
+                if(start<0){
+                    start=-1;
+                }
                 int end = atoi(end_str + 1);
+                if(end==0){
+                    end=-1;
+                }
 
                 // Create a new _Range structure
                 _Range* new_range = (_Range*)malloc(sizeof(_Range));

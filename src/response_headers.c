@@ -56,7 +56,11 @@ void send_headers(_Response* response) {
 	// }
 	if (response->headers_response.range != NULL) {
 		char range_str[60];
-		sprintf(range_str, "bytes %d-%d/*\r\n", response->headers_response.range->start, response->headers_response.range->end);
+		if (response->headers_response.range->start < 0) {
+			sprintf(range_str, "bytes */%ld\r\n", response->headers_response.range->size);
+		} else {
+			sprintf(range_str, "bytes %ld-%ld/%ld\r\n", response->headers_response.range->start, response->headers_response.range->end, response->headers_response.range->size);
+		}
 		send_header(response->clientId, "Content-Range: ", range_str);
 	}
 

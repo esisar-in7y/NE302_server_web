@@ -120,7 +120,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 void sendChunkedBody(FILE* file, int clientId) {
 	char buffer[BUFFER_SIZE]={0};
 	int buffer_size = 0;
-	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros
 		char size[30];
 		snprintf(size, sizeof(size), "%x\r\n", buffer_size);
 		writeClient(clientId, size);
@@ -173,39 +173,44 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				return false;
 			}
 			if(headers_request->ranges!=NULL){
+				response->headers_response.transfert_encoding=IDENTITY;
 				response->headers_response.status_code = 206;
 				//populate range response
 				_Range* range= headers_request->ranges->range;
 				int start = range->start;
 				int end = range->end;
+				int max = 0;
 				FILE* file=fopen(url,"rb");// TODO safe open
 				if(start==-1){
 					start = 0;
 				}
-				if(end==-1){
-					fseek(file, 0L, SEEK_END);
-					end = ftell(file);
-				}
-
+				fseek(file, 0L, SEEK_END);
+				max=ftell(file);
 				response->headers_response.range=malloc(sizeof(_Range));
+				response->headers_response.range->size=max;
+				if(end==-1){
+					end = MIN(start+300*BUFFER_SIZE,max);
+				}else if(end>max){
+					response->headers_response.status_code = 416;
+					response->headers_response.range->start=-1;
+					response->headers_response.range->end=-1;
+					return false;
+				}
 				response->headers_response.range->start=start;
 				response->headers_response.range->end=end;
+				printf("ranges:%d-%d\n",start,end);
 				send_headers(response);
 				fseek(file, start, SEEK_SET);
 				int size = end - start;
 				char buffer[BUFFER_SIZE] = {0};
 				int buffer_size = 0;
-				while ((buffer_size = fread(buffer, 1, MIN(BUFFER_SIZE,size), file)) > 0) {
+				while (size>0 && (buffer_size = fread(buffer, 1, MIN(BUFFER_SIZE,size), file)) > 0) {
 					writeDirectClient(clientId, buffer, buffer_size);
 					size -= buffer_size;
-					if (size <= 0) {
-						break;
-					}
 				}
 				return true;
-				//get file size
-
 			}else{
+				printf("No range\n");
 				//send headers
 				send_headers(response);
 				// send data
