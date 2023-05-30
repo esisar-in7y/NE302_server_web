@@ -213,18 +213,19 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				send_headers(response);
 				//TODO mettre ca dans la fonction send identity
 				fseek(file, start, SEEK_SET);
-				unsigned long waiting_bytes = end - start;
+				unsigned long waiting_bytes = *response->headers_response.content_length;
 				printf("size:%ld\n",waiting_bytes);
-				char buffer[BIG_BUFFER_SIZE] = {0};
-				int buffer_size = 0;
-				while (waiting_bytes>0 && (buffer_size = fread(buffer,  MIN(BIG_BUFFER_SIZE,waiting_bytes), 1, file)) > 0) {
-					writeDirectClient(clientId, buffer, buffer_size);
+				char* stream_buffer=(char *)malloc(BIG_BUFFER_SIZE);
+				size_t buffer_size = 0;
+				while (waiting_bytes>0 && (buffer_size = fread(stream_buffer,1,MIN(BIG_BUFFER_SIZE,waiting_bytes), file)) > 0) {
+					writeDirectClient(clientId, stream_buffer, buffer_size);
 					if(waiting_bytes>buffer_size){
 						waiting_bytes -= buffer_size;
 					}else{
 						waiting_bytes = 0;
 					}
 				}
+				free(stream_buffer);
 				return true;
 			}else{
 				printf("No range\n");

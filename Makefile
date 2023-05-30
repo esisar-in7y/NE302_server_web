@@ -107,3 +107,5 @@ tstt:
 ttt:
 	/bin/echo -ne 'GET /o.com/Mask%20Off%E2%9D%A4%20%5BLhg2dMh49YA%5D.webm HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 \r\n\r\n' | ncat -C --hex-dump out localhost 8000
 
+range:
+	curl -v -r 0-199 "http://localhost:8000/o.com/Mask%20Off%E2%9D%A4%20%5BLhg2dMh49YA%5D.webm" -o ooo
