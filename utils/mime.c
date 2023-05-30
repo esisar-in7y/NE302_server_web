@@ -29,18 +29,6 @@
 //     return mime_type;
 // }
 
-int get_file_size(const char* filepath) {
-    FILE* file = fopen(filepath, "rb");
-    if (file == NULL) {
-        printf("Failed to open file: %s\n", filepath);
-        return -1;
-    }
-
-    fseek(file, 0L, SEEK_END);
-    int size = ftell(file);
-    fclose(file);
-    return size;
-}
 
 const char *get_file_extension(const char *filename) {
     const char *dot = strrchr(filename, '.');

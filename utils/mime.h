@@ -1,7 +1,6 @@
 #include "global.h"
 #include <magic.h>
 const char *get_mime_type(const char* filepath);
-int get_file_size(const char* filepath);
 
 // https://www.freeformatter.com/mime-types-list.html
 // "{"+[...document.querySelectorAll("tbody>tr")].map(r=>[...r.querySelectorAll("td")].map(s=>s.innerText)).map(r=>`{"${r[2]}","${r[1]}"}`).join(",")+"}"

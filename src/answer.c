@@ -120,7 +120,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 
 // Send a chunked body
 void sendChunkedBody(FILE* file, int clientId) {
-	char buffer[BUFFER_SIZE]={0};
+	char* buffer=malloc(BUFFER_SIZE*sizeof(char));
 	int buffer_size = 0;
 	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros (2Mio)
 		char size_str[30]={0};
@@ -130,14 +130,16 @@ void sendChunkedBody(FILE* file, int clientId) {
 		writeDirectClient(clientId, "\r\n", 2);
 	}
 	writeDirectClient(clientId, "0\r\n\r\n", 5);
+	free(buffer);
 }
 
 void sendIdentity(FILE* file, int clientId) {
-	char buffer[BUFFER_SIZE]={0};
+	char* buffer = malloc(BUFFER_SIZE*sizeof(char));
 	int buffer_size = 0;
 	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
 		writeDirectClient(clientId, buffer, buffer_size);
 	}
+	free(buffer);
 }
 
 bool send_data(tree_node* root, _headers_request* headers_request, _Response* response) {
@@ -158,21 +160,30 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				return false;
 			}
 			// On rajoute content type
-			response->headers_response.content_type=malloc(strlen(mime_type));
-			strcpy(response->headers_response.content_type,mime_type);
+			response->headers_response.content_type = malloc(strlen(mime_type));
+			strcpy(response->headers_response.content_type, mime_type);
 			// get the file size
-			long int file_size=0;
+			long int file_size = 0;
+			FILE* file = fopen(url, "rb");
+
 			if (response->headers_response.transfert_encoding != CHUNKED) {
-				file_size = get_file_size(url);
+				if (file == NULL) {
+					printf("Failed to open file: %s\n", url);
+					return -1;
+				}
+
+				fseek(file, 0L, SEEK_END);
+				file_size = ftell(file);
 				printf("file size: %ld\n", file_size);
-				response->headers_response.content_length = (long int*)calloc(1,sizeof(long int*));
-				*response->headers_response.content_length = file_size-1;
+				response->headers_response.content_length = (long int*)calloc(1, sizeof(long int*));
+				*response->headers_response.content_length = file_size;
 			}
 
 			if (response->headers_response.status_code == 0) {
 				response->headers_response.status_code = 200;
 			}
 			if (headers_request->methode == HEAD) {
+				fclose(file);
 				return false;
 			}
 			if(headers_request->ranges!=NULL){
@@ -181,7 +192,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				_Range* range= headers_request->ranges->range;
 				int start = range->start;
 				int end = range->end;
-				FILE* file=fopen(url,"rb");// TODO safe open
 				response->headers_response.range=malloc(sizeof(_Range));
 				response->headers_response.range->size=file_size;
 
@@ -224,6 +234,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 					}
 				}
 				free(stream_buffer);
+				fclose(file);
 				return true;
 			}else{
 				printf("No range\n");
