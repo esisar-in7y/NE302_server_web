@@ -94,7 +94,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	url = remove_dot_segments(url_decode(url));
 	char* host = headers_request->host;
 	char* url2 = NULL;
-
+	populate_host(root,headers_request);
 	if (host != NULL) {
 		url2 = calloc(1,strlen(url) + 5 + strlen(host) + 10);
 		strcpy(url2, "www");
@@ -282,7 +282,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				//send headers
 				send_headers(response);
 				// send data
-				FILE* file=fopen(url,"rb");
 				if (response->headers_response.transfert_encoding == CHUNKED) {
 					sendChunkedBody(file, clientId);
 				} else if(response->headers_response.transfert_encoding == GZIP){
@@ -321,8 +320,8 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
-	} else if(headers_request->accept_encoding.GZIP == true){
-		response->headers_response.transfert_encoding = GZIP;
+	//} else if(headers_request->accept_encoding.GZIP == true){
+	//	response->headers_response.transfert_encoding = GZIP;
 	}else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
