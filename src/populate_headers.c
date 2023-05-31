@@ -126,7 +126,6 @@ void populate_ranges(tree_node* root,_headers_request* header_req) {
     if (header_req->ranges == NULL) {
         char* range =  getFieldValueFromFieldName(root, "Range");
         if (range != NULL) {
-            size_t length = strlen(range);
             header_req->ranges = (_Ranges*)calloc(1, sizeof(_Ranges));
             header_req->ranges->range = (_Range*)calloc(1, sizeof(_Range));
             header_req->ranges->next = NULL;

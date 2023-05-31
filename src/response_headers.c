@@ -41,8 +41,7 @@ void send_headers(_Response* response) {
 		send_header(response->clientId, "Content-Length: ", content_length_str);
 	} else {
 		switch (response->headers_response.transfert_encoding) {
-			default:
-			case 0: response->headers_response.transfert_encoding=IDENTITY;
+			default:response->headers_response.transfert_encoding=IDENTITY;  __attribute__ ((fallthrough));
 			case IDENTITY: writeClient(response->clientId, "Transfer-Encoding: identity\r\n"); break;
 			case BR: writeClient(response->clientId, "Transfer-Encoding: br\r\n"); break;
 			case GZIP:
