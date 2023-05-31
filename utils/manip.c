@@ -79,8 +79,8 @@ int hex_to_int(char c) {
 	}
 }
 
-char* url_decode(const char* src) {
-	const char* p = src;
+char* url_decode(char* src) {
+	char* p = src;
 	char* dest = NULL;
 	char* tmp = NULL;
 	size_t size = 0;
@@ -88,6 +88,8 @@ char* url_decode(const char* src) {
 		if (*p == '%') {
 			int value = hex_to_int(*(p + 1)) * 16 + hex_to_int(*(p + 2));
 			if (NULL == (tmp = realloc(dest, size + 2))) {
+                better_free(tmp);
+                better_free(dest);
 				fprintf(stderr, "realloc problem\n");
                 exit(3);
 			}
@@ -97,6 +99,8 @@ char* url_decode(const char* src) {
 			p += 3;
 		} else {
 			if (NULL == (tmp = realloc(dest, size + 2))) {
+                better_free(tmp);
+                better_free(dest);
 				fprintf(stderr, "realloc problem\n");
                 exit(3);
 			}
@@ -106,7 +110,17 @@ char* url_decode(const char* src) {
 			p++;
 		}
 	}
-	if (dest) {
+	// if (dest) {
+	// 	dest[size] = '\0';
+	// }
+    if (dest) {
+		char* tmp = realloc(dest, size + 1);  // Resize to remove unused space
+		if (tmp == NULL) {
+			free(dest);  // Free previously allocated memory
+			fprintf(stderr, "realloc problem\n");
+			exit(3);
+		}
+		dest = tmp;
 		dest[size] = '\0';
 	}
 	return dest;
@@ -188,12 +202,14 @@ char* get_first_value(tree_node* root,char* search){
 	_Token* node_token = (_Token*)searchTree(root, search);
 	if (node_token != NULL) {
 		tree_node* node=(tree_node*)node_token->node;
+        purgeElement(&node_token);
 		return getElementValue(node,(unsigned int*) &node->length_string);
 	}
 	return NULL;
 }
 
 char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
+    _Token* node_tmp=NULL;
     _Token* node_token = (_Token*)searchTree(root, "field_name");
     char* value;
     tree_node* node;
@@ -202,11 +218,15 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name) {
         node=(tree_node*)node_token->node;
         value=getElementValue(node, (unsigned int*) &node->length_string);
         if (strcasecmp(field_name, value) == 0) {
+            better_free(value);
             node=node->parent;
-            node=(tree_node*)searchTree(node, "field_value")->node;
-            return getElementValue(node, (unsigned int*) &node->length_string);
+            purgeElement(&node_token);
+            return get_first_value(node, "field_value");
         }
-        node_token=node_token->next;
+        better_free(value);
+        node_tmp=node_token->next;
+        better_free(node_token);
+        node_token=node_tmp;
     }
     return NULL;
 }
@@ -240,4 +260,86 @@ char* copyStringUntilSlash(char* s)
 
     // Return the pointer of the newly created string
     return s2;
+}
+/*
+typedef struct {
+	long int start;
+	long int end;
+	unsigned long int size;
+} _Range;
+
+// chained list of _Range
+typedef struct _Ranges {
+	_Range* range;
+	struct _Ranges* next;
+} _Ranges;
+
+typedef struct {
+	_HTTP_version version;
+	_Connection connection;
+	long int* content_length;
+	_Methode methode;
+	_Encoding transfert_encoding;
+	_Encoding accept_encoding;
+	char* host;
+
+	_Ranges* ranges;
+} _headers_request;
+*/
+
+// void freeResponse(_Response* response,_headers_request* headers_request){
+//     better_free(response->body);
+//     better_free(response->headers_response.content_type);
+//     better_free(response->headers_response.content_length);
+//     better_free(response->headers_response.range);
+//     better_free(response->headers_response.server_timings);
+//     better_free(headers_request->content_length);
+//     better_free(headers_request->host);
+//     // free linked list: headers_request->ranges
+//     _Ranges* tmp=headers_request->ranges;
+//     _Ranges* tmp_tmp;
+//     while (tmp != NULL) {
+//         better_free(tmp->range);
+//         tmp_tmp=tmp->next;
+//         better_free(tmp);
+//         tmp=tmp_tmp;
+//     }
+
+// }
+void freeResponse(_Response* response, _headers_request* headers_request) {
+    if (response!=NULL) {
+        better_free(response->headers_response.content_length);
+        better_free(response->headers_response.content_type);
+        better_free(response->headers_response.range);
+        better_free(response->body);
+        // Free server timings
+        _Server_timings* server_timings = response->headers_response.server_timings;
+        while (server_timings!=NULL) {
+            _Server_timings* next = server_timings->next;
+            free(server_timings->timings->name);
+            free(server_timings->timings);
+            free(server_timings);
+            server_timings = next;
+        }
+    }
+    
+    if (headers_request!=NULL) {
+        better_free(headers_request->host);
+        better_free(headers_request->content_length);
+        _Ranges* ranges = headers_request->ranges;
+        while (ranges!=NULL) {
+            _Ranges* next = ranges->next;
+            better_free(ranges->range);
+            better_free(ranges);
+            ranges = next;
+        }
+    }
+}
+
+
+void better_free(void* r){
+    if(r!=NULL){
+        free(r);
+        r=NULL;
+    }
 }

@@ -89,32 +89,35 @@ void send_status(int status, int clientId) {
 }
 
 char* beautify_url(tree_node* root, _headers_request* headers_request) {
-	tree_node* node = (tree_node*)searchTree(root, "request_target")->node;
-	char* url = getElementValue(node, (unsigned int*) (&node->length_string));
-	url = remove_dot_segments(url_decode(url));
-	char* host = headers_request->host;
-	char* url2 = NULL;
+	char* url = get_first_value(root, "request_target");
+	char* url2 = url_decode(url);
+	better_free(url);
+	char* url_updated = remove_dot_segments(url2);
+	better_free(url2);
 	populate_host(root,headers_request);
+	char* host = headers_request->host;
+	printf("host: %s\n", host);
+	char* return_url = NULL;
 	if (host != NULL) {
-		url2 = calloc(1,strlen(url) + 5 + strlen(host) + 10);
-		strcpy(url2, "www");
+		return_url = calloc(1,strlen(url_updated) + 5 + strlen(host) + 10);
+		strcpy(return_url, "www");
 		if (strcmp(host, "localhost") != 0 && strcmp(host, "127.0.0.1") != 0) {
-			strcat(url2, "/");
-			strcat(url2, host);
+			strcat(return_url, "/");
+			strcat(return_url, host);
 		}
 	} else {
-		url2 = calloc(1,strlen(url) + 5 + 10);
-		strcpy(url2, "www");
-		if(url[0]!='/'){
-			strcpy(url2, "/");
+		return_url = calloc(1,strlen(url_updated) + 5 + 10);
+		strcpy(return_url, "www");
+		if(url_updated[0]!='/'){
+			strcpy(return_url, "/");
 		}
 	}
-	strcat(url2, url);
-	if (url2[strlen(url2) - 1] == '/') {
-		strcat(url2, "index.html");
+	strcat(return_url, url_updated);
+	if (return_url[strlen(return_url) - 1] == '/') {
+		strcat(return_url, "index.html");
 	}
-
-	return url2;
+	better_free(url_updated);
+	return return_url;
 }
 int compressToGzip(const char* input, int inputSize, char* output, int outputSize)
 {
@@ -195,6 +198,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			char* mime_type = (char*)get_mime_type(url);
 			if (!isAccepted(root, mime_type)) {
 				response->headers_response.status_code = 415;
+				free(url);
 				return false;
 			}
 			// On rajoute content type
@@ -203,15 +207,17 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			// get the file size
 			long int file_size = 0;
 			FILE* file = fopen(url, "rb");
-
+			if (file == NULL) {
+				printf("Failed to open file: %s\n", url);
+				free(url);
+				return -1;
+			}
+			free(url);
 			if (
 				response->headers_response.transfert_encoding != CHUNKED &&
 				response->headers_response.transfert_encoding != GZIP
 				) {
-				if (file == NULL) {
-					printf("Failed to open file: %s\n", url);
-					return -1;
-				}
+				
 
 				fseek(file, 0L, SEEK_END);
 				file_size = ftell(file);
@@ -296,6 +302,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			response->headers_response.status_code = 404;
 			response->headers_response.connection = CLOSE;
 		}
+		free(url);
 	} else if (headers_request->methode == POST) {
 	}
 	// send_end(clientId);

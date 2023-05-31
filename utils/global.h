@@ -8,6 +8,9 @@
 #include <sys/types.h>
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define MAX(a,b) (((a)>(b))?(a):(b))
+#include "tree.h"
+#include "manip.h"
+#include "structures.h"
 
 #if defined(_WIN32)
     #include <stdint.h>
@@ -26,9 +29,6 @@ typedef struct _tree_node {
     struct _tree_node *parent;
     struct _tree_node **childs;
 } tree_node;
-#include "tree.h"
-#include "manip.h"
-#include "structures.h"
 #endif
 
 #define RED	  "\033[31m" /* Red */

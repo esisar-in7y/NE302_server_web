@@ -7,7 +7,6 @@ CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function
 # -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99
 
 CFLAGS += -D HTTP=1 
-CFLAGS += -DLEAK_CHECK=1
 # -D HTTP=1
 # CFLAGS += -D PARSER=1 -D DEBUG
 # -D DEBUG
@@ -77,7 +76,9 @@ bt: $(EXEC)
 	@reset
 	gdb -batch -ex "run" -ex "bt" --args ./$(OUTDIR)/$(EXEC) $(ARGS)
 
-leaks: $(EXEC)
+leaks:
+	$(MAKE) clean
+	$(MAKE) CFLAGS="$(CFLAGS) -D LEAK_CHECK=1" $(EXEC)
 	valgrind --leak-check=full \
 		--show-leak-kinds=all \
 		--track-origins=yes \
@@ -88,8 +89,6 @@ abnf:
 	gcc -g -o obj/abnf.o -c utils/abnf.c
 	gcc -g -o obj/abnf_test.o obj/abnf.o obj/manip.o
 	./obj/abnf_test.o
-
-parse:
 
 
 rendu:

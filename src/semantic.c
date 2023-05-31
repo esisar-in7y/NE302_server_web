@@ -41,8 +41,10 @@ int getstatus(tree_node* root, _headers_request* header_req) {
 int checkReferer(tree_node* root, _headers_request* header_req) {
 	char* Referer = getFieldValueFromFieldName(root, "Referer");
 	if (Referer !=NULL && (strchr(Referer, '#') != NULL || strchr(Referer, '@') != NULL)) {
+		free(Referer);
 		return 400;
 	}
+	free(Referer);
 	return 0;
 }
 
@@ -99,7 +101,7 @@ int checkHostHeader(tree_node* root, _headers_request* header_req) {
 	populate_version(root,header_req);
 	populate_host(root,header_req);
 	if (header_req->version == HTTP1_1) {
-		if (searchTree(root, "Host") == NULL) {
+		if (header_req->host == NULL) {
 			return 400;
 		}
 	}
@@ -110,17 +112,26 @@ int checkHostHeader(tree_node* root, _headers_request* header_req) {
 bool isAccepted(tree_node* root, char* mime_type) {
 	char* accepted=getFieldValueFromFieldName(root, "Accept");
 	// printf("accepted : %s\n",accepted);
-	if(accepted==NULL) return true;
+	if(accepted==NULL) {
+		free(accepted);
+		return true;
+	}
 	if(have_separators(accepted,"*/*")){
+		free(accepted);
 		return true;
 	}
 	if(have_separators(accepted,mime_type)){
+		free(accepted);
 		return true;
 	}
 	char* wilded=copyStringUntilSlash(mime_type);
 	strcat(wilded,"/*");
 	if(have_separators(accepted,wilded)){
+		free(accepted);
+		free(wilded);
 		return true;
 	}
+	free(accepted);
+	free(wilded);
 	return false;
 }

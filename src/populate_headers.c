@@ -2,13 +2,13 @@
 
 void populate_version(tree_node* root, _headers_request* header_req) {
 	if (header_req->version == 0) {
-		tree_node* node = (tree_node*)searchTree(root, "HTTP_version")->node;
-		char* version = getElementValue(node, (unsigned int*)&node->length_string);
+		char* version = get_first_value(root, "HTTP_version");
 		if (strcasecmp(version, "HTTP/1.1") == 0) {			// HTTP/1.1
 			header_req->version = HTTP1_1;
 		} else if (strcasecmp(version, "HTTP/1.0") == 0) {	// HTTP/1.0
 			header_req->version = HTTP1_0;
 		}
+		free(version);
 	}
 }
 
@@ -22,6 +22,7 @@ void populate_connection(tree_node* root, _headers_request* header_req) {
 				header_req->connection = KEEP_ALIVE;
 			}
 		}
+		free(connection);
 	}
 }
 
@@ -32,6 +33,7 @@ void populate_content_length(tree_node* root, _headers_request* header_req) {
 			header_req->content_length = (long int*)calloc(1, sizeof(long int*));
 			*header_req->content_length = atoi(content_length);
 		}
+		free(content_length);
 	}
 }
 // Populate
@@ -45,7 +47,10 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 			node = (tree_node*)node_token->node;
 			char* transfer_encoding = getElementValue(node, (unsigned int*)&node->length_string);
 			printf("transfer_encoding:%s\n",transfer_encoding);
-			if (transfer_encoding==NULL) continue;
+			if (transfer_encoding==NULL){
+				free(transfer_encoding);
+				continue;
+			}
 			if (have_separators(transfer_encoding, "chunked")) {
 				header_req->transfert_encoding.CHUNKED = true;
 			} if (have_separators(transfer_encoding, "identity")) {
@@ -59,6 +64,7 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 			} if (have_separators(transfer_encoding, "br")) {
 				header_req->transfert_encoding.BR = true;
 			}
+			free(transfer_encoding);
 			node_token = node_token->next;
 		}
 	}
@@ -69,7 +75,10 @@ void populate_accept_encoding(tree_node* root, _headers_request* header_req) {
 		header_req->accept_encoding.initialized = true;
 		char* accept_encoding = getFieldValueFromFieldName(root,"Accept-Encoding");
 		printf("accept_encoding:%s\n",accept_encoding);
-		if(accept_encoding==NULL) return;
+		if(accept_encoding==NULL) {
+			free(accept_encoding);
+			return;
+		}
 		if (have_separators(accept_encoding, "compress")) {
 			header_req->accept_encoding.COMPRESS = true;
 		} if (have_separators(accept_encoding, "deflate")) {
@@ -79,13 +88,13 @@ void populate_accept_encoding(tree_node* root, _headers_request* header_req) {
 		} if (have_separators(accept_encoding, "br")) {
 			header_req->accept_encoding.BR = true;
 		}
+		free(accept_encoding);
 	}
 }
 
 void populate_method(tree_node* root, _headers_request* header_req) {
 	if (header_req->methode == 0) {
-		tree_node* node = searchTree(root, "method")->node;
-		char* method = getElementValue(node, (unsigned int*)&node->length_string);
+		char* method = get_first_value(root, "method");
 		if (strcasecmp(method, "GET") == 0) {
 			header_req->methode = GET;
 		} else if (strcasecmp(method, "HEAD") == 0) {
@@ -93,6 +102,7 @@ void populate_method(tree_node* root, _headers_request* header_req) {
 		} else if (strcasecmp(method, "POST") == 0) {
 			header_req->methode = POST;
 		}
+		free(method);
 	}
 }
 
@@ -137,7 +147,7 @@ void populate_ranges(tree_node* root,_headers_request* header_req) {
                 }
 
                 // Create a new _Range structure
-                _Range* new_range = (_Range*)malloc(sizeof(_Range));
+                _Range* new_range = (_Range*)calloc(1,sizeof(_Range));
                 new_range->start = start;
                 new_range->end = end;
 
@@ -161,5 +171,6 @@ void populate_ranges(tree_node* root,_headers_request* header_req) {
                 }
             }
         }
+		free(range);
     }
 }

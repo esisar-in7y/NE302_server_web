@@ -77,6 +77,7 @@ int main2(int argc, char* argv[]) {
 					debug_http("Keep alive", __LINE__);
 #endif
 				}
+				freeResponse(&response,&headers_request);
 			}
 		}
 

@@ -9,7 +9,7 @@ char *copy_sub_str(const unsigned char *source,uint16_t start,uint16_t length);
 void print_sub_str( unsigned char *string, int start_index, int end_index);
 int  strncasecmp(const char *, const char *, size_t);
 char* trim_space(char *str);
-char* url_decode(const char* src);
+char* url_decode(char* src);
 char *remove_dot_segments(const char *input);
 bool isin(char* str, char* list[], size_t list_size);
 bool have_separators(char* string, char *value);
@@ -26,5 +26,6 @@ char* getFieldValueFromFieldName(tree_node* root, char* field_name);
 */
 void writeClient(int i,char *buf);
 char* copyStringUntilSlash(char* s);
-
+void freeResponse(_Response* response,_headers_request* headers_request);
+void better_free(void* r);
 #endif
