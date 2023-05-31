@@ -198,7 +198,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				return false;
 			}
 			// On rajoute content type
-			response->headers_response.content_type = malloc(strlen(mime_type));
+			response->headers_response.content_type = malloc((strlen(mime_type)+1)*sizeof(char));
 			strcpy(response->headers_response.content_type, mime_type);
 			// get the file size
 			long int file_size = 0;
