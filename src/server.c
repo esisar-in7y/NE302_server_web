@@ -22,21 +22,27 @@ void send_end(int clientId) {
 int main2(int argc, char* argv[]) {
 	message* requete;
 	printf("Serveur HTTP demarre sur le port %d\n", PORT);
-
+#if LEAK_CHECK == 1
+	int e = 0;
+	while (e < 10) {
+		e++;
+#else
 	while (1) {
+#endif
 		// on attend la reception d'une requete HTTP requete pointera vers une ressource allouée par librequest.
 		if ((requete = getRequest(PORT)) == NULL) return -1;
 		// Affichage de debug
 		printf("#########################################\nDemande recue depuis le client %d\n", requete->clientId);
 		printf("Client [%d] [%s:%d]\n", requete->clientId, inet_ntoa(requete->clientAddress->sin_addr), htons(requete->clientAddress->sin_port));
 		printf("Contenu de la demande %.*s\n\n", requete->len, requete->buf);
-		if (parseur(requete->buf, requete->len) == 0) {
+		bool parseur_status = parseur(requete->buf, requete->len);
+		tree_node* root = (tree_node*)getRootTree();
+		if ( parseur_status== 0) {
 			writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 			send_status(400, requete->clientId);
 			endWriteDirectClient(requete->clientId);
 			requestShutdownSocket(requete->clientId);
 		} else {
-			tree_node* root = (tree_node*)getRootTree();
 #if DEBUG == 1
 			tree_node_print_all(root, 0);
 #endif
@@ -74,6 +80,7 @@ int main2(int argc, char* argv[]) {
 			}
 		}
 
+		purgeTree(root);
 		// on ne se sert plus de requete a partir de maintenant, on peut donc liberer...
 		freeRequest(requete);
 		requete = NULL;

@@ -6,7 +6,8 @@ CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function
 # -std=c99
 # -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99
 
-CFLAGS += -D HTTP=1
+CFLAGS += -D HTTP=1 
+CFLAGS += -DLEAK_CHECK=1
 # -D HTTP=1
 # CFLAGS += -D PARSER=1 -D DEBUG
 # -D DEBUG
