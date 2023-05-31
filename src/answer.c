@@ -133,7 +133,7 @@ int compressToGzip(const char* input, int inputSize, char* output, int outputSiz
     deflate(&zs, Z_FINISH);
     deflateEnd(&zs);
     return zs.total_out;
-}
+    }
 
 
 void sendGzipBody(FILE* file, int clientId) {
@@ -144,15 +144,15 @@ void sendGzipBody(FILE* file, int clientId) {
 
     while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
         compressed_size=compressToGzip(buffer, buffer_size, compressed, BUFFER_SIZE);
-		char size_str[30]={0};
+    char size_str[30]={0};
 		snprintf(size_str, sizeof(size_str), "%x\r\n", compressed_size);
-		writeDirectClient(clientId, size_str,strlen(size_str));
+	writeDirectClient(clientId, size_str,strlen(size_str));
 		writeDirectClient(clientId, compressed, compressed_size);
-		writeDirectClient(clientId, "\r\n", 2);
-    }
+	writeDirectClient(clientId, "\r\n", 2);
+}
 	writeDirectClient(clientId, "0\r\n\r\n", 5);
     free(compressed);
-    free(buffer);
+	free(buffer);
 }
 
 
@@ -282,7 +282,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				//send headers
 				send_headers(response);
 				// send data
-				FILE* file=fopen(url,"rb");
 				if (response->headers_response.transfert_encoding == CHUNKED) {
 					sendChunkedBody(file, clientId);
 				} else if(response->headers_response.transfert_encoding == GZIP){
@@ -321,9 +320,11 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
-	} else if(headers_request->accept_encoding.GZIP == true){
-		response->headers_response.transfert_encoding = GZIP;
-	}else if (headers_request->accept_encoding.IDENTITY == true) {
+	} 
+	// else if(headers_request->accept_encoding.GZIP == true){
+		//response->headers_response.transfert_encoding = GZIP;
+	// }
+	else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {
 		response->headers_response.transfert_encoding = CHUNKED;
