@@ -33,7 +33,7 @@ void send_headers(_Response* response) {
 			sprintf(range_str, "bytes %ld-%ld/%ld", response->headers_response.range->start, response->headers_response.range->end, response->headers_response.range->size);
 		}
 		send_header(response->clientId, "Content-Range: ", range_str);
-		
+
 	}
 	if (response->headers_response.content_length != NULL) {
 		char content_length_str[30]={0};
@@ -41,15 +41,16 @@ void send_headers(_Response* response) {
 		send_header(response->clientId, "Content-Length: ", content_length_str);
 	} else {
 		switch (response->headers_response.transfert_encoding) {
+			default:
+			case 0: response->headers_response.transfert_encoding=IDENTITY;
+			case IDENTITY: writeClient(response->clientId, "Transfer-Encoding: identity\r\n"); break;
 			case BR: writeClient(response->clientId, "Transfer-Encoding: br\r\n"); break;
-			case GZIP: 
+			case GZIP:
 				writeClient(response->clientId, "Content-Encoding: gzip\r\n");
 				writeClient(response->clientId, "Transfer-Encoding: chunked\r\n");
 				break;
 			case DEFLATE: writeClient(response->clientId, "Transfer-Encoding: deflate\r\n"); break;
 			case CHUNKED: writeClient(response->clientId, "Transfer-Encoding: chunked\r\n"); break;
-			case IDENTITY: writeClient(response->clientId, "Transfer-Encoding: identity\r\n"); break;
-			default: break;
 		}
 	}
 
@@ -69,7 +70,7 @@ void send_headers(_Response* response) {
 	// 		current = current->next;
 	// 	}
 	// }
-	
+
 
 	if (response->headers_response.server_timings != NULL) {
 		printf("SErver timings:\n");

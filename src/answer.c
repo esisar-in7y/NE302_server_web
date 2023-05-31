@@ -94,7 +94,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	url = remove_dot_segments(url_decode(url));
 	char* host = headers_request->host;
 	char* url2 = NULL;
-
+	populate_host(root,headers_request);
 	if (host != NULL) {
 		url2 = calloc(1,strlen(url) + 5 + strlen(host) + 10);
 		strcpy(url2, "www");

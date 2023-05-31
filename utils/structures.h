@@ -24,7 +24,7 @@ typedef struct {
 	bool IDENTITY;
 } _Encoding;
 
-typedef enum { BR, GZIP, CHUNKED, COMPRESS, DEFLATE, IDENTITY } _Encoding_resp;
+typedef enum { BR=1, GZIP, CHUNKED, COMPRESS, DEFLATE, IDENTITY } _Encoding_resp;
 
 typedef struct {
 	long int start;
@@ -62,11 +62,11 @@ typedef struct {
 } _headers_request;
 
 typedef struct {
-	_HTTP_version version;				
-	_Connection connection;				
-	long int* content_length;				
-	int status_code;					
-	char* content_type;					
+	_HTTP_version version;
+	_Connection connection;
+	long int* content_length;
+	int status_code;
+	char* content_type;
 	_Encoding_resp transfert_encoding;
 
 	// _Ranges* ranges;

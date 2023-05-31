@@ -45,6 +45,7 @@ void populate_transfert_encoding(tree_node* root, _headers_request* header_req) 
 			node = (tree_node*)node_token->node;
 			char* transfer_encoding = getElementValue(node, (unsigned int*)&node->length_string);
 			printf("transfer_encoding:%s\n",transfer_encoding);
+			if (transfer_encoding==NULL) continue;
 			if (have_separators(transfer_encoding, "chunked")) {
 				header_req->transfert_encoding.CHUNKED = true;
 			} if (have_separators(transfer_encoding, "identity")) {
@@ -68,6 +69,7 @@ void populate_accept_encoding(tree_node* root, _headers_request* header_req) {
 		header_req->accept_encoding.initialized = true;
 		char* accept_encoding = getFieldValueFromFieldName(root,"Accept-Encoding");
 		printf("accept_encoding:%s\n",accept_encoding);
+		if(accept_encoding==NULL) return;
 		if (have_separators(accept_encoding, "compress")) {
 			header_req->accept_encoding.COMPRESS = true;
 		} if (have_separators(accept_encoding, "deflate")) {
@@ -96,7 +98,7 @@ void populate_method(tree_node* root, _headers_request* header_req) {
 
 void populate_host(tree_node* root, _headers_request* header_req) {
 	if (header_req->host == NULL) {
-		header_req->host = get_first_value(root, "Host");
+		header_req->host = get_first_value(root, "uri_host");
 	}
 }
 

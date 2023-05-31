@@ -1,10 +1,10 @@
 EXEC = server_test
-ARGS = 
+ARGS =
 
 CC = gcc
-CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wextra -std=c99 
+CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wextra -std=c99
 # -std=c99
-# -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99 
+# -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99
 
 CFLAGS += -D HTTP=1
 # -D HTTP=1
@@ -37,12 +37,12 @@ $(EXEC): $(OBJS)
 
 $(DIR_OBJ)/utils/thirdpart.o: utils/thirdpart.c $(DIR_OBJ)/utils/socket_1.o
 	@mkdir -p $(DIR_OBJ)/utils
-	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $< 
+	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $<
 
 $(DIR_OBJ)/%.o: %.c $(INCS)
 	@mkdir -p $(OUTDIR)
 	@mkdir -p $(@D)
-	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $< 
+	$(CC) $(CFLAGS) $(INC_DIRS) -c -o $@ $<
 
 PHONY += clean
 clean:
