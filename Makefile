@@ -31,6 +31,7 @@ INC_DIRS = -I./lib
 LIBS = -L./lib -lrequest -lz
 
 PHONY := $(EXEC)
+
 $(EXEC): $(OBJS)
 	@mkdir -p $(OUTDIR)
 	$(CC) $(CFLAGS) -o $(OUTDIR)/$@ $(OBJS) $(LIBS)
@@ -113,4 +114,4 @@ tstz:
 
 gzip2:
 	curl 'http://localhost:8000/www.toto.com/index.png' --compressed -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0' -H 'Accept: image/avif,image/webp,*/*' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Connection: keep-alive' -H 'Referer: http://localhost:8000/www.toto.com/' -H 'Sec-Fetch-Dest: image' -H 'Sec-Fetch-Mode: no-cors' -H 'Sec-Fetch-Site: same-origin' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache'
-/bin/echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 \r\nAccept-Encoding: gzip\r\n\r\n' | ncat -C --hex-dump out localhost 8000
+# /bin/echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 \r\nAccept-Encoding: gzip\r\n\r\n' | ncat -C --hex-dump out localhost 8000
