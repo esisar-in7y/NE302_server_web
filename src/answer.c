@@ -160,7 +160,7 @@ void sendGzipBody(FILE* file, int clientId) {
 void sendChunkedBody(FILE* file, int clientId) {
 	char* buffer=malloc(BUFFER_SIZE*sizeof(char));
 	int buffer_size = 0;
-	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {//! ca pete lorsque fichier trop gros (2Mio)
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
 		char size_str[30]={0};
 		snprintf(size_str, sizeof(size_str), "%x\r\n", buffer_size);
 		writeDirectClient(clientId, size_str,strlen(size_str));
