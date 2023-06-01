@@ -243,14 +243,14 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	// send_direct_header_cgi(root,h,"DOCUMENT_URI","absolute_path");
 	// send_direct_header_cgi(root,h,"SERVER_PROTOCOL","HTTP_version");
 	// send_direct_header_cgi(root,h,"HTTP_HOST","uri_host");
-	send_direct_header_cgi(root,h,"HTTP_ACCEPT","Accept"); 
+	send_indirect_header_cgi(root,h,"HTTP_ACCEPT","Accept"); 
 	// send_direct_header_cgi(root,h,"HTTP_CONNECTION","connection_option");
 
-//   'CONTENT_TYPE' => 'Content-Type:' indirect,
+//   'CONTENT_TYPE' => 'Content-Type:' direct,
 //   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
 //   'HTTP_ACCEPT_ENCODING' => Accept-Encoding indirect,
 //   'HTTP_USER_AGENT' =>  User-Agent indirect,
-	send_indirect_header_cgi(root,h,"CONTENT_TYPE","Content_Type");
+	send_direct_header_cgi(root,h,"CONTENT_TYPE","Content_Type");
 	send_indirect_header_cgi(root,h,"HTTP_ACCEPT_LANGUAGE","Accept-Language");
 	send_indirect_header_cgi(root,h,"HTTP_ACCEPT_ENCODING","Accept-Encoding");
 	send_indirect_header_cgi(root,h,"HTTP_USER_AGENT","User-Agent");
