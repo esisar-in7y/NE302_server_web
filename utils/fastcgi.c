@@ -267,7 +267,7 @@ int get_http_body_length(char* http_string, long len) {
 }
 
 bool sendFCGI(tree_node* root, message* requete) {
-	bool keepalive;
+	bool keepalive=false;
 	int fd;
 	size_t len;
 	FCGI_Header h;
@@ -314,15 +314,14 @@ bool sendFCGI(tree_node* root, message* requete) {
 		keepalive = true;
 	} else if (strcmp(version, "HTTP/1.0") == 0) {
 		writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
-		keepalive = false;
 	}
 	better_free(version);
 	char* connection = get_first_value(root, "Connection");
 	if (connection != NULL) {
 		if (strcasecmp(connection, "close") != 0) {
-			keepalive = true;
-		} else if (strcasecmp(connection, "keep-alive") != 0 && strcasecmp(connection, "keepalive") != 0 && strcasecmp(connection, "keep alive") != 0) {
 			keepalive = false;
+		} else if (strcasecmp(connection, "keep-alive") != 0 && strcasecmp(connection, "keepalive") != 0 && strcasecmp(connection, "keep alive") != 0) {
+			keepalive = true;
 		}
 	}
 	better_free(connection);
