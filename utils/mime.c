@@ -3,7 +3,7 @@
 #define CHUNK_SIZE 50
 #define MAX_SIZE 10240
 #include <stdio.h>
-#include <magic.h>
+// #include <magic.h>
 // const char *get_mime_type(const char* filepath) {
 //     const char* mime_type = NULL;
 //     magic_t magic_cookie;

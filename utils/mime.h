@@ -1,5 +1,5 @@
 #include "global.h"
-#include <magic.h>
+// #include <magic.h>
 const char *get_mime_type(const char* filepath);
 
 // https://www.freeformatter.com/mime-types-list.html

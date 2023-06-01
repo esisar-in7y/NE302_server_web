@@ -11,7 +11,7 @@
 #include <arpa/inet.h>
 #include "../utils/tree.h"
 #include "fastcgi.h" 
-
+#include "../src/answer.h"
 // =========================================================================================================== // 
 
 size_t readSocket(int fd,char *buf,size_t len)
@@ -219,7 +219,8 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	char* script_f_name=calloc(1,strlen(abs_path)+20);
 	strcat(script_f_name,"/var/www/html");
 	strcat(script_f_name,abs_path);
-	addNameValuePair(h,"SCRIPT_FILENAME","/var/www/html");
+	addNameValuePair(h,"SCRIPT_FILENAME",script_f_name);
+	printf("script_f_name:%s\n",script_f_name);
 	better_free(script_f_name);
 	better_free(abs_path);
 //   'REQUEST_METHOD' => "method" direct,
@@ -233,14 +234,14 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 //   'HTTP_ACCEPT' => Accept indirect,
 //   'HTTP_CONNECTION' => connection_option direct
 	send_direct_header_cgi(root,h,"REQUEST_METHOD","method");
-	send_direct_header_cgi(root,h,"REQUEST_URI","request_target");
+	// send_direct_header_cgi(root,h,"REQUEST_URI","request_target");
 	send_direct_header_cgi(root,h,"QUERY_STRING","query");
 	send_direct_header_cgi(root,h,"CONTENT_LENGTH","Content_Length");
-	send_direct_header_cgi(root,h,"DOCUMENT_URI","absolute_path");
-	send_direct_header_cgi(root,h,"SERVER_PROTOCOL","HTTP_version");
-	send_direct_header_cgi(root,h,"HTTP_HOST","uri_host");
-	send_direct_header_cgi(root,h,"HTTP_ACCEPT","Accept");
-	send_direct_header_cgi(root,h,"HTTP_CONNECTION","connection_option");
+	// send_direct_header_cgi(root,h,"DOCUMENT_URI","absolute_path");
+	// send_direct_header_cgi(root,h,"SERVER_PROTOCOL","HTTP_version");
+	// send_direct_header_cgi(root,h,"HTTP_HOST","uri_host");
+	send_direct_header_cgi(root,h,"HTTP_ACCEPT","Accept"); 
+	// send_direct_header_cgi(root,h,"HTTP_CONNECTION","connection_option");
 
 //   'CONTENT_TYPE' => 'Content-Type:' indirect,
 //   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
@@ -252,10 +253,26 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	send_indirect_header_cgi(root,h,"HTTP_USER_AGENT","User-Agent");
 //   'SERVER_SOFTWARE' => 'sup4rserv300',
 //   'SERVER_NAME' => 'sup4rserv300',
-	addNameValuePair(h,"SERVER_SOFTWARE","sup4rserv300");
-	addNameValuePair(h,"SERVER_NAME","sup4rserv300");
-	addNameValuePair(h,"DOCUMENT_ROOT","/var/www/html");
+	// addNameValuePair(h,"SERVER_SOFTWARE","sup4rserv300");
+	// addNameValuePair(h,"SERVER_NAME","sup4rserv300");
+	// addNameValuePair(h,"DOCUMENT_ROOT","/var/www/html");
 }
+
+
+int get_http_body_length(char *http_string,long len) {
+    // Find the end of the header section
+    char *body_start = strstr(http_string, "\r\n\r\n");
+    if (body_start == NULL) {
+        return -1;  // Header section not found
+    }
+    body_start += 4;  // Skip the empty field header
+
+    // Calculate the length of the body section
+    int body_len = len - (body_start - http_string);
+    return body_len;
+}
+
+
 void sendFCGI(tree_node* root,message* requete)
 {
     int fd;
@@ -289,6 +306,7 @@ void sendFCGI(tree_node* root,message* requete)
 		int length=0;
 		sscanf(length_string,"%d",&length);
 		char* data=get_first_value(root,"message_body");
+		printf("send data:%d|%s\n",length,data);
 		sendWebData(fd,FCGI_STDIN,ID,data,length);
 		sendWebData(fd,FCGI_STDIN,ID,NULL,0);
 	}
@@ -296,6 +314,14 @@ void sendFCGI(tree_node* root,message* requete)
     
     // Read the response from the server
 	bool first=true;
+	char* version=get_first_value(root, "HTTP_version");
+	printf("version:%s\n",version);
+	if (strcmp(version,"HTTP/1.1")==0) {
+		writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
+	} else if (strcmp(version,"HTTP/1.0")==0) {
+		writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
+	}
+	better_free(version);
     do {
         readData(fd,&h,&len);
         if (h.type == FCGI_STDOUT) {
@@ -304,17 +330,26 @@ void sendFCGI(tree_node* root,message* requete)
 				if(first){
 					first=false;
 					if(strstr(h.contentData,"Status: ")){
-						if (strcmp(get_first_value(root, "HTTP_version"),"HTTP/1.1")) {
-							writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
-						} else if (strcmp(get_first_value(root, "HTTP_version"),"HTTP/1.0")) {
-							writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
-						}
 						char* pointer=h.contentData+8;
 						writeDirectClient(requete->clientId,pointer,h.contentLength-8);
 					}else{
+						send_status(200,requete->clientId);
+						long total_length=get_http_body_length(h.contentData,h.contentLength);
+						char* total_length_string=malloc(40);
+						sprintf(total_length_string,"%ld",total_length);
+						writeDirectClient(requete->clientId,"Content-length: ",16);
+						writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
+						writeDirectClient(requete->clientId,"\r\n",2);
 						writeDirectClient(requete->clientId,h.contentData,h.contentLength);
+						better_free(total_length_string);
 					}
 				}else{
+					long total_length=get_http_body_length(h.contentData,h.contentLength);
+					char* total_length_string=malloc(40);
+					sprintf(total_length_string,"%ld",total_length);
+					writeDirectClient(requete->clientId,"Content-length: ",16);
+					writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
+					writeDirectClient(requete->clientId,"\r\n",2);
 					writeDirectClient(requete->clientId,h.contentData,h.contentLength);
 				}
             }
