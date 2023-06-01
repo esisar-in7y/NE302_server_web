@@ -202,6 +202,8 @@ void send_direct_header_cgi(tree_node* root,FCGI_Header* h,char* header,char* qu
 		addNameValuePair(h,header,tmp);
 		printf("%s:%s\n",header,tmp);
 		better_free(tmp);
+	}else{
+		printf("%s:NULL\n",header);
 	}
 }
 void send_indirect_header_cgi(tree_node* root,FCGI_Header* h,char* header,char* query){
@@ -211,6 +213,8 @@ void send_indirect_header_cgi(tree_node* root,FCGI_Header* h,char* header,char* 
 		addNameValuePair(h,header,tmp);
 		printf("%s:%s\n",header,tmp);
 		better_free(tmp);
+	}else{
+		printf("%s:NULL\n",header);
 	}
 }
 
