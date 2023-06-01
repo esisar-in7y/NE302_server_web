@@ -275,7 +275,7 @@ bool sendFCGI(tree_node* root, message* requete) {
 
 	// Establish a connection to the FastCGI server
 	fd = createSocket(9000);
-	int ID = rand();
+	uint16_t ID = rand();
 	// Send a FCGI_BEGIN_REQUEST message to start a new request
 	sendBeginRequest(fd, ID, FCGI_RESPONDER, FCGI_KEEP_CONN);
 
@@ -305,6 +305,7 @@ bool sendFCGI(tree_node* root, message* requete) {
 		sendWebData(fd, FCGI_STDIN, ID, data, length);
 		sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	}
+	better_free(length_string);
 
 	// Read the response from the server
 	bool first = true;
