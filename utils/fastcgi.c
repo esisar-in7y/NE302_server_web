@@ -200,6 +200,7 @@ void send_direct_header_cgi(tree_node* root,FCGI_Header* h,char* header,char* qu
 	tmp=get_first_value(root, query);
 	if(tmp!=NULL){
 		addNameValuePair(h,header,tmp);
+		printf("%s:%s\n",header,tmp);
 		better_free(tmp);
 	}
 }
@@ -208,11 +209,19 @@ void send_indirect_header_cgi(tree_node* root,FCGI_Header* h,char* header,char* 
 	tmp=getFieldValueFromFieldName(root, query);
 	if(tmp!=NULL){
 		addNameValuePair(h,header,tmp);
+		printf("%s:%s\n",header,tmp);
 		better_free(tmp);
 	}
 }
 
 void fill_headers(tree_node* root,FCGI_Header* h){
+	char* abs_path=get_first_value(root,"absolute_path");
+	char* script_f_name=calloc(1,strlen(abs_path)+20);
+	strcat(script_f_name,"/var/www/html");
+	strcat(script_f_name,abs_path);
+	addNameValuePair(h,"SCRIPT_FILENAME","/var/www/html");
+	better_free(script_f_name);
+	better_free(abs_path);
 //   'REQUEST_METHOD' => "method" direct,
 //   'REQUEST_URI' => request_target direct,
 //    'QUERY_STRING' => query direct,
@@ -227,7 +236,6 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	send_direct_header_cgi(root,h,"REQUEST_URI","request_target");
 	send_direct_header_cgi(root,h,"QUERY_STRING","query");
 	send_direct_header_cgi(root,h,"CONTENT_LENGTH","Content_Length");
-	send_direct_header_cgi(root,h,"SCRIPT_FILENAME","absolute_path");
 	send_direct_header_cgi(root,h,"DOCUMENT_URI","absolute_path");
 	send_direct_header_cgi(root,h,"SERVER_PROTOCOL","HTTP_version");
 	send_direct_header_cgi(root,h,"HTTP_HOST","uri_host");
@@ -246,8 +254,8 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 //   'SERVER_NAME' => 'sup4rserv300',
 	addNameValuePair(h,"SERVER_SOFTWARE","sup4rserv300");
 	addNameValuePair(h,"SERVER_NAME","sup4rserv300");
+	addNameValuePair(h,"DOCUMENT_ROOT","/var/www/html");
 }
-
 void sendFCGI(tree_node* root,message* requete)
 {
     int fd;
