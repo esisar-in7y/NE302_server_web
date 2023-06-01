@@ -231,14 +231,9 @@ void fill_headers(tree_node* root, FCGI_Header* h) {
 	//   'HTTP_ACCEPT' => Accept indirect,
 	//   'HTTP_CONNECTION' => connection_option direct
 	send_direct_header_cgi(root, h, "REQUEST_METHOD", "method");
-	// send_direct_header_cgi(root,h,"REQUEST_URI","request_target");
 	send_direct_header_cgi(root, h, "QUERY_STRING", "query");
 	send_direct_header_cgi(root, h, "CONTENT_LENGTH", "Content_Length");
-	// send_direct_header_cgi(root,h,"DOCUMENT_URI","absolute_path");
-	// send_direct_header_cgi(root,h,"SERVER_PROTOCOL","HTTP_version");
-	// send_direct_header_cgi(root,h,"HTTP_HOST","uri_host");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT", "Accept");
-	// send_direct_header_cgi(root,h,"HTTP_CONNECTION","connection_option");
 
 	//   'CONTENT_TYPE' => 'Content-Type:' direct,
 	//   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
@@ -250,9 +245,6 @@ void fill_headers(tree_node* root, FCGI_Header* h) {
 	send_indirect_header_cgi(root, h, "HTTP_USER_AGENT", "User-Agent");
 	//   'SERVER_SOFTWARE' => 'sup4rserv300',
 	//   'SERVER_NAME' => 'sup4rserv300',
-	// addNameValuePair(h,"SERVER_SOFTWARE","sup4rserv300");
-	// addNameValuePair(h,"SERVER_NAME","sup4rserv300");
-	// addNameValuePair(h,"DOCUMENT_ROOT","/var/www/html");
 }
 
 int get_http_body_length(char* http_string, long len) {
@@ -303,7 +295,6 @@ void sendFCGI(tree_node* root, message* requete) {
 		tree_node_print_all(root, 0);
 		printf("send data:%d|%s\n", length, data);
 		sendWebData(fd, FCGI_STDIN, ID, data, length);
-		// sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	}
 	sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	better_free(length_string);
@@ -350,19 +341,11 @@ void sendFCGI(tree_node* root, message* requete) {
 						better_free(total_length_string);
 					}
 				} else {
-					// long total_length=get_http_body_length(h.contentData,h.contentLength);
-					// char* total_length_string=malloc(40);
-					// sprintf(total_length_string,"%ld",total_length);
-					// writeDirectClient(requete->clientId,"Content-length: ",16);
-					// writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
-					// writeDirectClient(requete->clientId,"\r\n",2);
 					writeDirectClient(requete->clientId, h.contentData, h.contentLength);
-					// better_free(total_length_string);
 				}
 			}
 		}
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
-	// writeSocket(fd,FCGI_REQUEST_COMPLETE,1);
 	shutdown(fd, SHUT_RDWR);
 	if(!keepalive){
 		requestShutdownSocket(requete->clientId);
