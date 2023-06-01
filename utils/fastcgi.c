@@ -219,7 +219,7 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	char* script_f_name=calloc(1,strlen(abs_path)+20);
 	strcat(script_f_name,"/var/www/html");
 	strcat(script_f_name,abs_path);
-	addNameValuePair(h,"SCRIPT_FILENAME","/var/www/html");
+	addNameValuePair(h,"SCRIPT_FILENAME",script_f_name);
 	better_free(script_f_name);
 	better_free(abs_path);
 //   'REQUEST_METHOD' => "method" direct,
