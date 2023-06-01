@@ -64,7 +64,6 @@ int main2(int argc, char* argv[]) {
 					requestShutdownSocket(response.clientId);
 				} else {
 					//  Connection / Content Length ect ...
-					//  populate_response(root, &response, requete->clientId);
 					populateRespFromReq(&headers_request, &response);
 					// Content Length, Content Type populate in send_data
 					if (!send_data(root, &headers_request, &response)) {
@@ -93,7 +92,6 @@ int main2(int argc, char* argv[]) {
 #define false 0
 #if HTTP == 1
 int main(int argc, char* argv[]) {
-	// signal(SIGPIPE, SIG_IGN);
 	return main2(argc, argv);
 }
 #endif

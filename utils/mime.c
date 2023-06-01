@@ -3,31 +3,6 @@
 #define CHUNK_SIZE 50
 #define MAX_SIZE 10240
 #include <stdio.h>
-// #include <magic.h>
-// const char *get_mime_type(const char* filepath) {
-//     const char* mime_type = NULL;
-//     magic_t magic_cookie;
-
-//     magic_cookie = magic_open(MAGIC_MIME_TYPE);
-//     if (magic_cookie == NULL) {
-//         printf("Unable to initialize magic library\n");
-//         return mime_type;
-//     }
-
-//     if (magic_load(magic_cookie, NULL) != 0) {
-//         printf("Cannot load magic database - %s\n", magic_error(magic_cookie));
-//         magic_close(magic_cookie);
-//         return mime_type;
-//     }
-
-//     mime_type = magic_file(magic_cookie, filepath);
-//     if (mime_type == NULL) {
-//         printf("Failed to get mime type - %s\n", magic_error(magic_cookie));
-//     }
-
-//     magic_close(magic_cookie);
-//     return mime_type;
-// }
 
 
 const char *get_file_extension(const char *filename) {

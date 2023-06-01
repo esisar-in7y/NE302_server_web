@@ -112,16 +112,6 @@ void populate_host(tree_node* root, _headers_request* header_req) {
 	}
 }
 
-// void populate_range(tree_node* root, _headers_request* header_req){
-// 	if (header_req->ranges == NULL) {
-// 		char* range = get_first_value(root, "Range");
-// 		if (range != NULL) {
-// 			header_req->ranges = range;
-// 		}
-// 	}
-// }
-
-
 void populate_ranges(tree_node* root,_headers_request* header_req) {
     if (header_req->ranges == NULL) {
         char* range =  getFieldValueFromFieldName(root, "Range");

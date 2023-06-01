@@ -72,8 +72,6 @@ int main(int argc, char *argv[])
         purgeTree(root);
     }
     close(fi);
-    // free(addr);
-    // return 1;
     return (res);
 }
 #endif

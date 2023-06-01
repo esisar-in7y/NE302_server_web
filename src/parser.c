@@ -9,7 +9,6 @@ void debug(tree_node* node_tmp, int line) {
 }
 
 int parseur(char* req, int bytes) {
-	// printf("size:%d req:%s\n", bytes, req);
 	tree_node* root = tree_node_init(req);
 	bool rep = HTTP_message(root) != NULL;	// validate_message(root);
 	if (!rep) {

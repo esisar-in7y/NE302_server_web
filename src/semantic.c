@@ -108,10 +108,8 @@ int checkHostHeader(tree_node* root, _headers_request* header_req) {
 	return 0;
 }
 
-//? ca devrait être bon
 bool isAccepted(tree_node* root, char* mime_type) {
 	char* accepted=getFieldValueFromFieldName(root, "Accept");
-	// printf("accepted : %s\n",accepted);
 	if(accepted==NULL) {
 		free(accepted);
 		return true;

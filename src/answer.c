@@ -16,7 +16,6 @@ void send_status(int status, int clientId) {
 	char status_char[5];
 	sprintf(status_char, "%d ", status);
 	writeDirectClient(clientId, status_char, 4);
-	// writeDirectClient(clientId," OK\r\n",SHOWHEAD?7:5);
 	switch (status) {
 	case 100: writeClient(clientId, "Continue"); break;
 	case 101: writeClient(clientId, "Switching Protocols"); break;

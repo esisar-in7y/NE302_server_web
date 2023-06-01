@@ -110,9 +110,6 @@ char* url_decode(char* src) {
 			p++;
 		}
 	}
-	// if (dest) {
-	// 	dest[size] = '\0';
-	// }
     if (dest) {
 		char* tmp = realloc(dest, size + 1);  // Resize to remove unused space
 		if (tmp == NULL) {
@@ -261,51 +258,6 @@ char* copyStringUntilSlash(char* s)
     // Return the pointer of the newly created string
     return s2;
 }
-/*
-typedef struct {
-	long int start;
-	long int end;
-	unsigned long int size;
-} _Range;
-
-// chained list of _Range
-typedef struct _Ranges {
-	_Range* range;
-	struct _Ranges* next;
-} _Ranges;
-
-typedef struct {
-	_HTTP_version version;
-	_Connection connection;
-	long int* content_length;
-	_Methode methode;
-	_Encoding transfert_encoding;
-	_Encoding accept_encoding;
-	char* host;
-
-	_Ranges* ranges;
-} _headers_request;
-*/
-
-// void freeResponse(_Response* response,_headers_request* headers_request){
-//     better_free(response->body);
-//     better_free(response->headers_response.content_type);
-//     better_free(response->headers_response.content_length);
-//     better_free(response->headers_response.range);
-//     better_free(response->headers_response.server_timings);
-//     better_free(headers_request->content_length);
-//     better_free(headers_request->host);
-//     // free linked list: headers_request->ranges
-//     _Ranges* tmp=headers_request->ranges;
-//     _Ranges* tmp_tmp;
-//     while (tmp != NULL) {
-//         better_free(tmp->range);
-//         tmp_tmp=tmp->next;
-//         better_free(tmp);
-//         tmp=tmp_tmp;
-//     }
-
-// }
 void freeResponse(_Response* response, _headers_request* headers_request) {
     if (response!=NULL) {
         better_free(response->headers_response.content_length);

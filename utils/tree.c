@@ -36,10 +36,6 @@ tree_node *tree_node_new( unsigned char *string, uint16_t start_string, uint16_t
     node->childs = NULL;
     node->childs_count = 0;
     node->type = get_type_index(type);
-    // if(parent==NULL && rootTree==NULL)
-    // {
-    //     rootTree=node;
-    // }
     return node;
 }
 
@@ -52,7 +48,6 @@ void update_length_parents(tree_node* node){
     while (parent!=NULL)
     {
         int string_length = 0;
-        // tree_node_print(parent, 0);
         for (size_t i = 0; i < parent->childs_count; i++)
         {
             string_length+=parent->childs[i]->length_string;
@@ -85,8 +80,6 @@ void tree_node_find_type(tree_node *node, int _type,_Token **r)
 {
     if (node->type == _type)
     {
-        // printf("found:%s\n", tree_node_string[node->type]);
-        // tree_node_print(node,0);
         add_token(r,node);//ajouter a liste chainee
     }
     for (uint16_t i = 0; i < node->childs_count; i++)
@@ -104,17 +97,6 @@ tree_node *tree_node_get_child_by_index(tree_node *node, uint16_t index)
     return NULL;
 }
 
-// tree_node *tree_node_get_child_by_string(tree_node *node, char *string)
-// {
-//     for (uint16_t i = 0; i < node->childs_count; i++)
-//     {
-//         if (strcmp(node->childs[i]->string, string) == 0)
-//         {
-//             return node->childs[i];
-//         }
-//     }
-//     return NULL;
-// }
 int find_node_index(tree_node *node)
 {
     if (node->parent == NULL)
@@ -171,17 +153,6 @@ void move_childs(tree_node* from,tree_node* to){
     }
     from->childs_count=0;
     free(from->childs);
-
-    // for (uint16_t i = 0; i < from->childs_count; i++)
-    // {
-    //     // tree_node_add_child(to,from->childs[i]->string,from->childs[i]->start_string,from->childs[i]->length_string,"tmp")->type=from->childs[i]->type;
-    //     tree_node_add_child_node(to,from->childs[i]);
-    // }
-    // from->childs_count=0;
-    // // free(from->childs);
-    // from->childs=NULL;
-    // from->start_string=get_start(to);
-    // from->length_string=0;
 }
 
 void tree_node_print(tree_node *node, uint16_t level)
@@ -214,8 +185,6 @@ void tree_node_print(tree_node *node, uint16_t level)
     {
         printf(" ");
     }
-    // printf("%s (%u, %u) %d childs %p parent %p \n", tree_node_string[node->type], node->start_string, node->length_string, node->childs_count, node, node->parent);
-
     printf("[%d:%s] = \"", level, tree_node_string[node->type]);
     print_sub_str(node->string, node->start_string, node->length_string);
     printf("\"\n");

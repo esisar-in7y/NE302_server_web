@@ -59,18 +59,6 @@ void send_headers(_Response* response) {
         send_header(response->clientId, "Connection: ", "close");
     }
 
-	// if (response->headers_response.ranges != NULL) {
-	// 	struct _Ranges* current = response->headers_response.ranges;
-	// 	// TODO faire comme plus bas en dessous
-	// 	while (current != NULL) {
-	// 		char range_str[50];
-	// 		sprintf(range_str, "bytes=%d-%d", current->range->start, current->range->end);
-	// 		send_header(response->clientId, "Content-Range: ", range_str);
-	// 		current = current->next;
-	// 	}
-	// }
-
-
 	if (response->headers_response.server_timings != NULL) {
 		printf("SErver timings:\n");
 		struct _Server_timings* current = response->headers_response.server_timings;

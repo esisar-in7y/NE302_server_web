@@ -69,7 +69,6 @@ typedef struct {
 	char* content_type;
 	_Encoding_resp transfert_encoding;
 
-	// _Ranges* ranges;
 	_Range* range;	// osef si y'en a plusieurs
 	_Server_timings* server_timings;
 } _headers_response;
