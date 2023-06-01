@@ -363,8 +363,6 @@ bool sendFCGI(tree_node* root, message* requete) {
 		}
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
 	// writeSocket(fd,FCGI_REQUEST_COMPLETE,1);
-	if (!keepalive) {
-		shutdown(fd, SHUT_RDWR);
-	}
+	shutdown(fd, SHUT_RDWR);
 	return keepalive;
 }

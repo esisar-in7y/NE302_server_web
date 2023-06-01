@@ -51,7 +51,9 @@ int main2(int argc, char* argv[]) {
 			char* abs_path = get_first_value(root, "absolute_path");
 			if (strstr(abs_path, ".php") != NULL) {
 				printf("TO CGI\n");
-				sendFCGI(root, requete);
+				if (!sendFCGI(root, requete)) {
+						requestShutdownSocket(requete->clientId);
+					}
 			} else {
 				_headers_request headers_request = {0};
 				_Response response = {0};
@@ -64,7 +66,6 @@ int main2(int argc, char* argv[]) {
 					endWriteDirectClient(response.clientId);
 					requestShutdownSocket(response.clientId);
 				} else {
-					// TODO populate headers_response
 					//  Connection / Content Length ect ...
 					//  populate_response(root, &response, requete->clientId);
 					populateRespFromReq(&headers_request, &response);
@@ -75,14 +76,8 @@ int main2(int argc, char* argv[]) {
 					// Fermer la connexion avec le client
 					endWriteDirectClient(response.clientId);
 					if (response.headers_response.connection == CLOSE) {
-#ifdef DEBUG
-						debug_http("Not keep alive", __LINE__);
-#endif
 						requestShutdownSocket(response.clientId);
 					} else {
-#ifdef DEBUG
-						debug_http("Keep alive", __LINE__);
-#endif
 					}
 					freeResponse(&response, &headers_request);
 				}
