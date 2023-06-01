@@ -303,8 +303,9 @@ bool sendFCGI(tree_node* root, message* requete) {
 		tree_node_print_all(root, 0);
 		printf("send data:%d|%s\n", length, data);
 		sendWebData(fd, FCGI_STDIN, ID, data, length);
-		sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
+		// sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	}
+	sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	better_free(length_string);
 
 	// Read the response from the server

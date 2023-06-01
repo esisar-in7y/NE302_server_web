@@ -13,7 +13,7 @@
 #include "api.h"
 #include "semantic.h"
 
-#define PORT		8001
+#define PORT		8000
 #define BUFFER_SIZE 1024
 void send_end(int clientId) {
 	writeDirectClient(clientId, "\r\n\r\n", 4);
