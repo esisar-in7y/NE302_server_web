@@ -250,7 +250,7 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 //   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
 //   'HTTP_ACCEPT_ENCODING' => Accept-Encoding indirect,
 //   'HTTP_USER_AGENT' =>  User-Agent indirect,
-	send_indirect_header_cgi(root,h,"CONTENT_TYPE","Content-Type:");
+	send_indirect_header_cgi(root,h,"CONTENT_TYPE","Content_Type");
 	send_indirect_header_cgi(root,h,"HTTP_ACCEPT_LANGUAGE","Accept-Language");
 	send_indirect_header_cgi(root,h,"HTTP_ACCEPT_ENCODING","Accept-Encoding");
 	send_indirect_header_cgi(root,h,"HTTP_USER_AGENT","User-Agent");
