@@ -212,7 +212,7 @@ void send_indirect_header_cgi(tree_node* root, FCGI_Header* h, char* header, cha
 }
 
 void fill_headers(tree_node* root, FCGI_Header* h) {
-	tree_node_print_all(root,0);
+	tree_node_print_all(root, 0);
 	char* abs_path = get_first_value(root, "absolute_path");
 	char* script_f_name = calloc(1, strlen(abs_path) + 20);
 	strcat(script_f_name, "/var/www/html");
@@ -268,7 +268,7 @@ int get_http_body_length(char* http_string, long len) {
 }
 
 bool sendFCGI(tree_node* root, message* requete) {
-	bool keepalive=false;
+	bool keepalive = false;
 	int fd;
 	size_t len;
 	FCGI_Header h;
@@ -363,6 +363,8 @@ bool sendFCGI(tree_node* root, message* requete) {
 		}
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
 	// writeSocket(fd,FCGI_REQUEST_COMPLETE,1);
-	shutdown(fd,SHUT_RDWR);
+	if (!keepalive) {
+		shutdown(fd, SHUT_RDWR);
+	}
 	return keepalive;
 }
