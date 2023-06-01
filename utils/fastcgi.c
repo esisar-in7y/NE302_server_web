@@ -309,6 +309,7 @@ void sendFCGI(tree_node* root,message* requete)
 		int length=0;
 		sscanf(length_string,"%d",&length);
 		char* data=get_first_value(root,"message_body");
+		tree_node_print_all(root,0);
 		printf("send data:%d|%s\n",length,data);
 		sendWebData(fd,FCGI_STDIN,ID,data,length);
 		sendWebData(fd,FCGI_STDIN,ID,NULL,0);

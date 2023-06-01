@@ -106,7 +106,7 @@ tree_node* message_body(tree_node* parent) {
 	int index = get_start(parent);
 	unsigned length = 0;
 	while (parent->string[index + length] != 0)length++;
-	return tree_node_add_child(parent, parent->string, index, MAX(length-1,0), "message_body");
+	return tree_node_add_child(parent, parent->string, index, MAX(length,0), "message_body");
 }
 
 // obs_text= %x80-FF
