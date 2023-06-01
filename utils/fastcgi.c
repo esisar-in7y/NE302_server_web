@@ -347,14 +347,14 @@ void sendFCGI(tree_node* root,message* requete)
 						better_free(total_length_string);
 					}
 				}else{
-					long total_length=get_http_body_length(h.contentData,h.contentLength);
-					char* total_length_string=malloc(40);
-					sprintf(total_length_string,"%ld",total_length);
-					writeDirectClient(requete->clientId,"Content-length: ",16);
-					writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
-					writeDirectClient(requete->clientId,"\r\n",2);
+					// long total_length=get_http_body_length(h.contentData,h.contentLength);
+					// char* total_length_string=malloc(40);
+					// sprintf(total_length_string,"%ld",total_length);
+					// writeDirectClient(requete->clientId,"Content-length: ",16);
+					// writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
+					// writeDirectClient(requete->clientId,"\r\n",2);
 					writeDirectClient(requete->clientId,h.contentData,h.contentLength);
-					better_free(total_length_string);
+					// better_free(total_length_string);
 
 				}
             }
