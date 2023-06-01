@@ -11,6 +11,7 @@
 #include "answer.h"
 #include "api.h"
 #include "semantic.h"
+#include "../utils/fastcgi.h"
 
 #define PORT		8000
 #define BUFFER_SIZE 1024
@@ -46,6 +47,9 @@ int main2(int argc, char* argv[]) {
 #if DEBUG == 1
 			tree_node_print_all(root, 0);
 #endif
+			// ICI DEVIATION REQUETE POUR FASTCGI
+			sendFCGI(root);
+
 			_headers_request headers_request={0};
 			_Response response={0};
 			response.clientId = requete->clientId;

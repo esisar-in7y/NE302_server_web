@@ -1,3 +1,4 @@
+#include "global.h"
 /* Taken from FCGI specification and adapted */ 
 
 #define FASTCGILENGTH 0xffff
@@ -90,3 +91,4 @@ typedef struct __attribute__((__packed__)) {
 #define FCGI_AUTHORIZER 2
 #define FCGI_FILTER     3
 
+void sendFCGI(tree_node* root);

@@ -82,9 +82,6 @@ void send_status(int status, int clientId) {
 	case 511: writeClient(clientId, "Network Authentication Required"); break;
 	}
 	writeDirectClient(clientId, "\r\n", 2);
-	if (SHOWHEAD) {
-		writeDirectClient(clientId, "\r\n", 2);
-	}
 	printf("answer back\n");
 }
 
@@ -216,9 +213,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			if (
 				response->headers_response.transfert_encoding != CHUNKED &&
 				response->headers_response.transfert_encoding != GZIP
-				) {
-				
-
+			) {
 				fseek(file, 0L, SEEK_END);
 				file_size = ftell(file);
 				printf("file size: %ld\n", file_size);
@@ -304,6 +299,11 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 		}
 		free(url);
 	} else if (headers_request->methode == POST) {
+		response->headers_response.connection=CLOSE;
+		writeDirectClient(response->clientId, "HTTP/1.0 ", 9);
+		send_status(405, response->clientId);
+		writeDirectClient(response->clientId,"\r\n",2);
+		return true;
 	}
 	// send_end(clientId);
 	return false;
