@@ -248,7 +248,7 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	addNameValuePair(h,"SERVER_NAME","sup4rserv300");
 }
 
-void sendFCGI(tree_node* root)
+void sendFCGI(tree_node* root,message* requete)
 {
     int fd;
     size_t len;
@@ -277,22 +277,40 @@ void sendFCGI(tree_node* root)
 
 //    BODY=> "message_body" direct
 	char* length_string=get_first_value(root, "Content_Length");
-	int length=0;
-	sscanf(length_string,"%d",&length);
-	char* data=get_first_value(root,"message_body");
-    sendWebData(fd,FCGI_STDIN,ID,data,length);
-    sendWebData(fd,FCGI_STDIN,ID,NULL,0);    
+	if(length_string!=NULL){
+		int length=0;
+		sscanf(length_string,"%d",&length);
+		char* data=get_first_value(root,"message_body");
+		sendWebData(fd,FCGI_STDIN,ID,data,length);
+		sendWebData(fd,FCGI_STDIN,ID,NULL,0);
+	}
+	
     
     // Read the response from the server
+	bool first=true;
     do {
         readData(fd,&h,&len);
         if (h.type == FCGI_STDOUT) {
             if (len > 0) {
-            printf("buf=%s",h.contentData);
-
+				printf("buf=%s",h.contentData);
+				if(first){
+					first=false;
+					if(strstr(h.contentData,"Status: ")){
+						if (strcmp(get_first_value(root, "HTTP_version"),"HTTP/1.1")) {
+							writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
+						} else if (strcmp(get_first_value(root, "HTTP_version"),"HTTP/1.0")) {
+							writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
+						}
+						char* pointer=h.contentData+8;
+						writeDirectClient(requete->clientId,pointer,h.contentLength-8);
+					}else{
+						writeDirectClient(requete->clientId,h.contentData,h.contentLength);
+					}
+				}else{
+					writeDirectClient(requete->clientId,h.contentData,h.contentLength);
+				}
             }
         }
     } while ((len != 0 ) && (h.type != FCGI_END_REQUEST));
-
 }
 

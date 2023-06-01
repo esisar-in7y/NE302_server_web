@@ -1,17 +1,17 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <signal.h>
 #include <sys/time.h>
 #include <unistd.h>
-#include <signal.h>
 
 #include "../lib/request.h"
+#include "../utils/fastcgi.h"
 #include "../utils/global.h"
 #include "../utils/manip.h"
 #include "../utils/mime.h"
 #include "answer.h"
 #include "api.h"
 #include "semantic.h"
-#include "../utils/fastcgi.h"
 
 #define PORT		8000
 #define BUFFER_SIZE 1024
@@ -38,7 +38,7 @@ int main2(int argc, char* argv[]) {
 		printf("Contenu de la demande %.*s\n\n", requete->len, requete->buf);
 		bool parseur_status = parseur(requete->buf, requete->len);
 		tree_node* root = (tree_node*)getRootTree();
-		if ( parseur_status== 0) {
+		if (parseur_status == 0) {
 			writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 			send_status(400, requete->clientId);
 			endWriteDirectClient(requete->clientId);
@@ -48,41 +48,46 @@ int main2(int argc, char* argv[]) {
 			tree_node_print_all(root, 0);
 #endif
 			// ICI DEVIATION REQUETE POUR FASTCGI
-			sendFCGI(root);
-
-			_headers_request headers_request={0};
-			_Response response={0};
-			response.clientId = requete->clientId;
-			if ((response.headers_response.status_code = getstatus(root, &headers_request)) >= 300) {
-				response.headers_response.version = HTTP1_0;
-				response.headers_response.connection=CLOSE;
-				send_headers(&response);
-				send_end(response.clientId);
-				endWriteDirectClient(response.clientId);
-				requestShutdownSocket(response.clientId);
+			char* abs_path = get_first_value(root, "absolute_path");
+			if (strstr(abs_path, ".php") != NULL) {
+				printf("TO CGI\n");
+				sendFCGI(root, requete);
 			} else {
-				// TODO populate headers_response
-				//  Connection / Content Length ect ...
-				//  populate_response(root, &response, requete->clientId);
-				populateRespFromReq(&headers_request, &response);
-				// Content Length, Content Type populate in send_data
-				if(!send_data(root, &headers_request, &response)){
-					send_response(&response);
-				}
-				// Fermer la connexion avec le client
-				endWriteDirectClient(response.clientId);
-				if (response.headers_response.connection == CLOSE) {
-#ifdef DEBUG
-					debug_http("Not keep alive", __LINE__);
-#endif
+				_headers_request headers_request = {0};
+				_Response response = {0};
+				response.clientId = requete->clientId;
+				if ((response.headers_response.status_code = getstatus(root, &headers_request)) >= 300) {
+					response.headers_response.version = HTTP1_0;
+					response.headers_response.connection = CLOSE;
+					send_headers(&response);
+					send_end(response.clientId);
+					endWriteDirectClient(response.clientId);
 					requestShutdownSocket(response.clientId);
 				} else {
+					// TODO populate headers_response
+					//  Connection / Content Length ect ...
+					//  populate_response(root, &response, requete->clientId);
+					populateRespFromReq(&headers_request, &response);
+					// Content Length, Content Type populate in send_data
+					if (!send_data(root, &headers_request, &response)) {
+						send_response(&response);
+					}
+					// Fermer la connexion avec le client
+					endWriteDirectClient(response.clientId);
+					if (response.headers_response.connection == CLOSE) {
 #ifdef DEBUG
-					debug_http("Keep alive", __LINE__);
+						debug_http("Not keep alive", __LINE__);
 #endif
+						requestShutdownSocket(response.clientId);
+					} else {
+#ifdef DEBUG
+						debug_http("Keep alive", __LINE__);
+#endif
+					}
+					freeResponse(&response, &headers_request);
 				}
-				freeResponse(&response,&headers_request);
 			}
+			free(abs_path);
 		}
 
 		purgeTree(root);
