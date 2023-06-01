@@ -212,6 +212,7 @@ void send_indirect_header_cgi(tree_node* root, FCGI_Header* h, char* header, cha
 }
 
 void fill_headers(tree_node* root, FCGI_Header* h) {
+	tree_node_print_all(root,0);
 	char* abs_path = get_first_value(root, "absolute_path");
 	char* script_f_name = calloc(1, strlen(abs_path) + 20);
 	strcat(script_f_name, "/var/www/html");
