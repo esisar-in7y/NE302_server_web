@@ -220,7 +220,10 @@ void fill_headers(tree_node* root,FCGI_Header* h){
 	strcat(script_f_name,"/var/www/html");
 	strcat(script_f_name,abs_path);
 	addNameValuePair(h,"SCRIPT_FILENAME",script_f_name);
+<<<<<<< HEAD
 	printf("script_f_name:%s\n",script_f_name);
+=======
+>>>>>>> 0c5dff7bf1926c255c27b83a730447cfbecdc11c
 	better_free(script_f_name);
 	better_free(abs_path);
 //   'REQUEST_METHOD' => "method" direct,
@@ -351,6 +354,8 @@ void sendFCGI(tree_node* root,message* requete)
 					writeDirectClient(requete->clientId,total_length_string,strlen(total_length_string));
 					writeDirectClient(requete->clientId,"\r\n",2);
 					writeDirectClient(requete->clientId,h.contentData,h.contentLength);
+					better_free(total_length_string);
+
 				}
             }
         }
