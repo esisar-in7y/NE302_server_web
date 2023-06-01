@@ -271,13 +271,13 @@ int get_http_body_length(char *http_string,long len) {
     body_start += 4;  // Skip the empty field header
 
     // Calculate the length of the body section
-    int body_len = len - (body_start - http_string);
-    return body_len;
+    return len - (body_start - http_string);
 }
 
 
-void sendFCGI(tree_node* root,message* requete)
+bool sendFCGI(tree_node* root,message* requete)
 {
+	bool keepalive;
     int fd;
     size_t len;
     FCGI_Header h;
@@ -326,6 +326,10 @@ void sendFCGI(tree_node* root,message* requete)
 		writeDirectClient(requete->clientId, "HTTP/1.0 ", 9);
 	}
 	better_free(version);
+	char* status=get_first_value(root, "status");
+	printf("status:%s\n",status);
+	writeDirectClient(requete->clientId, status, strlen(status));
+	writeDirectClient(requete->clientId, "\r\n", 2);
     do {
         readData(fd,&h,&len);
         if (h.type == FCGI_STDOUT) {
@@ -361,5 +365,6 @@ void sendFCGI(tree_node* root,message* requete)
             }
         }
     } while ((len != 0 ) && (h.type != FCGI_END_REQUEST));
+	return keepalive;
 }
 
