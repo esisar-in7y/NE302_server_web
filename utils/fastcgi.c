@@ -267,7 +267,7 @@ int get_http_body_length(char* http_string, long len) {
 	return len - (body_start - http_string);
 }
 
-bool sendFCGI(tree_node* root, message* requete) {
+void sendFCGI(tree_node* root, message* requete) {
 	bool keepalive = false;
 	int fd;
 	size_t len;
@@ -364,5 +364,7 @@ bool sendFCGI(tree_node* root, message* requete) {
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
 	// writeSocket(fd,FCGI_REQUEST_COMPLETE,1);
 	shutdown(fd, SHUT_RDWR);
-	return keepalive;
+	if(!keepalive){
+		requestShutdownSocket(requete->clientId);
+	}
 }

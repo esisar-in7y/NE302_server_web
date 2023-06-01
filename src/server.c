@@ -19,7 +19,6 @@ void send_end(int clientId) {
 	writeDirectClient(clientId, "\r\n\r\n", 4);
 }
 
-// TODO connection keep alive
 int main2(int argc, char* argv[]) {
 	message* requete;
 	printf("Serveur HTTP demarre sur le port %d\n", PORT);
@@ -51,9 +50,7 @@ int main2(int argc, char* argv[]) {
 			char* abs_path = get_first_value(root, "absolute_path");
 			if (strstr(abs_path, ".php") != NULL) {
 				printf("TO CGI\n");
-				if (!sendFCGI(root, requete)) {
-						requestShutdownSocket(requete->clientId);
-					}
+				sendFCGI(root, requete);
 			} else {
 				_headers_request headers_request = {0};
 				_Response response = {0};

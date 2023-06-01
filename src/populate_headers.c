@@ -40,7 +40,7 @@ void populate_content_length(tree_node* root, _headers_request* header_req) {
 void populate_transfert_encoding(tree_node* root, _headers_request* header_req) {
 	if (!(header_req->transfert_encoding.initialized)) {
 		header_req->transfert_encoding.initialized = true;
-		_Token* node_token = searchTree(root, "Transfer-Encoding");	 // TODO multiple transfer encoding
+		_Token* node_token = searchTree(root, "Transfer-Encoding");	 
 		tree_node* node;
 		while (node_token != NULL) {
 			header_req->transfert_encoding.isPresent = true;

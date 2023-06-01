@@ -261,7 +261,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				*response->headers_response.content_length=end-start+1;
 				printf("ranges:%d-%d\n",start,end);
 				send_headers(response);
-				//TODO mettre ca dans la fonction send identity
 				fseek(file, start, SEEK_SET);
 				unsigned long waiting_bytes = *response->headers_response.content_length;
 				printf("size:%ld\n",waiting_bytes);
