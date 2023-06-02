@@ -82,25 +82,40 @@ void writeLen(int len, char** p) {
 
 // =========================================================================================================== //
 int addNameValuePair(FCGI_Header* h, char* name, char* value) {
-	char* p;
-	unsigned int nameLen = 0, valueLen = 0;
+    char* p;
+    unsigned long long nameLen = 0, valueLen = 0;
 
-	if (name) nameLen = strlen(name);
-	if (value) valueLen = strlen(value);
+    if (name) nameLen = strlen(name);
+    if (value) valueLen = strlen(value);
 
-	if ((valueLen > FASTCGIMAXNVPAIR) || (valueLen > FASTCGIMAXNVPAIR)) return -1;
-	if ((h->contentLength + ((nameLen > 0x7F) ? 4 : 1) + ((valueLen > 0x7F) ? 4 : 1)) > FASTCGILENGTH) return -1;
+    if ((valueLen > FASTCGIMAXNVPAIR) || (valueLen > FASTCGIMAXNVPAIR)) return -1;
+    if ((h->contentLength + ((nameLen > 0x7F) ? 4 : 1) + ((valueLen > 0x7F) ? 4 : 1)) > FASTCGILENGTH) return -1;
 
-	p = (h->contentData) + h->contentLength;
-	writeLen(nameLen, &p);
-	writeLen(valueLen, &p);
-	strncpy(p, name, nameLen);
-	p += nameLen;
-	if (value) strncpy(p, value, valueLen);
-	h->contentLength += nameLen + ((nameLen > 0x7F) ? 4 : 1);
-	h->contentLength += valueLen + ((valueLen > 0x7F) ? 4 : 1);
-	return 0;
+    p = (h->contentData) + h->contentLength;
+    if (nameLen <= 0x7F) {
+        *p++ = (char)nameLen;
+    } else {
+        *p++ = (char)((nameLen >> 24) | 0x80);
+        *p++ = (char)(nameLen >> 16);
+        *p++ = (char)(nameLen >> 8);
+        *p++ = (char)nameLen;
+    }
+    if (valueLen <= 0x7F) {
+        *p++ = (char)valueLen;
+    } else {
+        *p++ = (char)((valueLen >> 24) | 0x80);
+        *p++ = (char)(valueLen >> 16);
+        *p++ = (char)(valueLen >> 8);
+        *p++ = (char)valueLen;
+    }
+    strncpy(p, name, nameLen);
+    p += nameLen;
+    if (value) strncpy(p, value, valueLen);
+    h->contentLength += nameLen + ((nameLen > 0x7F) ? 4 : 1);
+    h->contentLength += valueLen + ((valueLen > 0x7F) ? 4 : 1);
+    return 0;
 }
+
 // =========================================================================================================== //
 
 void sendGetValue(int fd) {
@@ -212,20 +227,21 @@ void send_indirect_header_cgi(tree_node* root, FCGI_Header* h, char* header, cha
 }
 
 typedef struct response_data {
-	char* data;
-	size_t length;
-	struct response_data* next;
+    char* data;
+    size_t length;
+    struct response_data* next;
 } response_data;
 
-unsigned long get_http_body_length(char* http_string, long len) {
-	if (http_string == NULL) return -1;
-	// Find the end of the header section
-	char* body_start = strstr(http_string, "\r\n\r\n");
-	if (body_start == NULL) return -1;
-	return len - (body_start + 4 - http_string);
+
+size_t get_http_body_length(char* http_string, long len) {
+    if (http_string == NULL) return -1;
+    char* body_start = strstr(http_string, "\r\n\r\n");
+    if (body_start == NULL) return -1;  
+    return len - (body_start - http_string) - 4;
 }
-void send_length(int contentLength, char* contentData, message* requete) {
-	unsigned long total_length = get_http_body_length(contentData, contentLength);
+
+void send_length(int contentLength,char* contentData, message* requete){
+	size_t total_length = get_http_body_length(contentData, contentLength);
 	char* total_length_string = malloc(40);
 	sprintf(total_length_string, "%ld", total_length);
 	writeDirectClient(requete->clientId, "Content-length: ", 16);
@@ -243,14 +259,31 @@ void fill_headers(tree_node* root, FCGI_Header* h) {
 	addNameValuePair(h, "SCRIPT_FILENAME", script_f_name);
 	better_free(script_f_name);
 	better_free(abs_path);
+	//   'REQUEST_METHOD' => "method" direct,
+	//   'REQUEST_URI' => request_target direct,
+	//    'QUERY_STRING' => query direct,
+	//   'CONTENT_LENGTH' => Content_Length direct,
+	//   'SCRIPT_FILENAME' => absolute_path direct,
+	//   'DOCUMENT_URI' => 'absolute_path direct',
+	//   'SERVER_PROTOCOL' => HTTP_version direct,
+	//   'HTTP_HOST' => uri_host direct,
+	//   'HTTP_ACCEPT' => Accept indirect,
+	//   'HTTP_CONNECTION' => connection_option direct
 	send_direct_header_cgi(root, h, "REQUEST_METHOD", "method");
 	send_direct_header_cgi(root, h, "QUERY_STRING", "query");
 	send_direct_header_cgi(root, h, "CONTENT_LENGTH", "Content_Length");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT", "Accept");
+
+	//   'CONTENT_TYPE' => 'Content-Type:' direct,
+	//   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
+	//   'HTTP_ACCEPT_ENCODING' => Accept-Encoding indirect,
+	//   'HTTP_USER_AGENT' =>  User-Agent indirect,
 	send_direct_header_cgi(root, h, "CONTENT_TYPE", "Content_Type");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT_LANGUAGE", "Accept-Language");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT_ENCODING", "Accept-Encoding");
 	send_indirect_header_cgi(root, h, "HTTP_USER_AGENT", "User-Agent");
+	//   'SERVER_SOFTWARE' => 'sup4rserv300',
+	//   'SERVER_NAME' => 'sup4rserv300',
 }
 
 
@@ -282,6 +315,7 @@ int sendFCGI(tree_node* root, message* requete) {
 	h.paddingLength = 0;
 	writeSocket(fd, &h, FCGI_HEADER_SIZE + (h.contentLength) + (h.paddingLength));
 
+	//    BODY=> "message_body" direct
 	char* length_string = get_first_value(root, "Content_Length");
 	if (length_string != NULL) {
 		int length = 0;
@@ -313,68 +347,59 @@ int sendFCGI(tree_node* root, message* requete) {
 		}
 	}
 	better_free(connection);
-	response_data* response_list = NULL;
-	response_data* current_response = NULL;
-	bool first = true;
-	unsigned long content_length = 0;
-	do {
-		readData(fd, &h, &len);
-		if (h.type == FCGI_STDOUT) {
-			if (len > 0) {
-				if (first) {
-					first = false;
-					if (strstr(h.contentData, "Status: ")) {
-						char* pointer = h.contentData + 8;
-						writeDirectClient(requete->clientId, pointer, h.contentLength - 8);
-					} else {
-						send_status(200, requete->clientId);
-						if (keepalive) {
-							response_data* new_response = malloc(sizeof(response_data));
-							new_response->data = malloc(h.contentLength);
-							memcpy(new_response->data, h.contentData, h.contentLength);
-							new_response->length = h.contentLength;
-							new_response->next = NULL;
-							response_list = new_response;
-							current_response = new_response;
-							content_length += h.contentLength;
-						} else {
-							writeDirectClient(requete->clientId, h.contentData, h.contentLength);
-						}
-					}
-				} else {
-					if (keepalive) {
-						response_data* new_response = malloc(sizeof(response_data));
-						new_response->data = malloc(h.contentLength);
-						memcpy(new_response->data, h.contentData, h.contentLength);
-						new_response->length = h.contentLength;
-						new_response->next = NULL;
-						current_response->next = new_response;
-						current_response = new_response;
-						content_length += h.contentLength;
-					} else {
-						writeDirectClient(requete->clientId, h.contentData, h.contentLength);
-					}
-				}
-			}
-		}
-	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
+response_data* response_list = NULL;
+response_data* current_response = NULL;
+bool first = true;
+unsigned long content_length = 0;
+do {
+    readData(fd, &h, &len);
+    if (h.type == FCGI_STDOUT) {
+        if (len > 0) {
+            if (first) {
+                first = false;
+                if (strstr(h.contentData, "Status: ")) {
+                    char* pointer = h.contentData + 8;
+                    writeDirectClient(requete->clientId, pointer, h.contentLength - 8);
+                } else {
+                    send_status(200, requete->clientId);
+                    if (keepalive) {
+                        response_data* new_response = malloc(sizeof(response_data));
+                        new_response->data = malloc(h.contentLength);
+                        memcpy(new_response->data, h.contentData, h.contentLength);
+                        new_response->length = h.contentLength;
+                        new_response->next = NULL;
+                        response_list = new_response;
+                        current_response = new_response;
+                        content_length += h.contentLength;
+                    } else {
+                        writeDirectClient(requete->clientId, h.contentData, h.contentLength);
+                    }
+                }
+            } else {
+                if (keepalive) {
+                    response_data* new_response = malloc(sizeof(response_data));
+                    new_response->data = malloc(h.contentLength);
+                    memcpy(new_response->data, h.contentData, h.contentLength);
+                    new_response->length = h.contentLength;
+                    new_response->next = NULL;
+                    current_response->next = new_response;
+                    current_response = new_response;
+                    content_length += h.contentLength;
+                } else {
+                    writeDirectClient(requete->clientId, h.contentData, h.contentLength);
+                }
+            }
+        }
+    }
+} while ((len != 0) && (h.type != FCGI_END_REQUEST));
 
-	// Send the response to the client
-	if (keepalive) {
-		response_data* current = response_list;
-		send_length(current->length, current->data, requete);
-		while(current!=NULL){
-<<<<<<< HEAD
-=======
-			send_length(content_length, current->data, requete);
-			printf("A\n");
->>>>>>> parent of 94fec748 (aut0maticpush 4 lazy)
-			writeDirectClient(requete->clientId, current->data, current->length);
-			response_data* tmp = current->next;
-			better_free(current);
-			current = tmp;
-		}
-	}
+// Send the response to the client
+if (keepalive && response_list!=NULL) {
+    send_length(content_length, response_list->data, requete);
+    for (response_data* current = response_list; current != NULL; current = current->next) {
+        writeDirectClient(requete->clientId, current->data, current->length);
+    }
+}
 	shutdown(fd, SHUT_RDWR);
 	return keepalive;
 }
