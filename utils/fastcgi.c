@@ -364,8 +364,6 @@ int sendFCGI(tree_node* root, message* requete) {
 		response_data* current = response_list;
 		send_length(current->length, current->data, requete);
 		while(current!=NULL){
-			send_length(content_length, current->data, requete);
-			printf("A\n");
 			writeDirectClient(requete->clientId, current->data, current->length);
 			response_data* tmp = current->next;
 			better_free(current);
