@@ -11,7 +11,6 @@
 #include <sys/types.h>
 #include <time.h>
 #include <unistd.h>
-#include "manip.h"
 
 #include "../src/answer.h"
 #include "../utils/tree.h"
@@ -82,66 +81,31 @@ void writeLen(int len, char** p) {
 }
 
 // =========================================================================================================== //
-// int addNameValuePair(FCGI_Header* h, char* name, char* value) {
-// 	char* p;
-// 	unsigned int nameLen = 0, valueLen = 0;
-
-// 	if (name) nameLen = strlen(name);
-// 	if (value) valueLen = strlen(value);
-
-// 	if ((valueLen > FASTCGIMAXNVPAIR) || (valueLen > FASTCGIMAXNVPAIR)) return -1;
-// 	if ((h->contentLength + ((nameLen > 0x7F) ? 4 : 1) + ((valueLen > 0x7F) ? 4 : 1)) > FASTCGILENGTH) return -1;
-
-// 	p = (h->contentData) + h->contentLength;
-// 	writeLen(nameLen, &p);
-// 	writeLen(valueLen, &p);
-// 	strncpy(p, name, nameLen);
-// 	p += nameLen;
-// 	if (value) strncpy(p, value, valueLen);
-// 	h->contentLength += nameLen + ((nameLen > 0x7F) ? 4 : 1);
-// 	h->contentLength += valueLen + ((valueLen > 0x7F) ? 4 : 1);
-// 	return 0;
-// }
-
 int addNameValuePair(FCGI_Header* h, char* name, char* value) {
-    char* p;
-    unsigned long long nameLen = 0, valueLen = 0;
+	char* p;
+	unsigned int nameLen = 0, valueLen = 0;
 
-    if (name) nameLen = strlen(name);
-    if (value) valueLen = strlen(value);
+	if (name) nameLen = strlen(name);
+	if (value) valueLen = strlen(value);
 
-    if ((valueLen > FASTCGIMAXNVPAIR) || (valueLen > FASTCGIMAXNVPAIR)) return -1;
-    if ((h->contentLength + ((nameLen > 0x7F) ? 4 : 1) + ((valueLen > 0x7F) ? 4 : 1)) > FASTCGILENGTH) return -1;
+	if ((valueLen > FASTCGIMAXNVPAIR) || (valueLen > FASTCGIMAXNVPAIR)) return -1;
+	if ((h->contentLength + ((nameLen > 0x7F) ? 4 : 1) + ((valueLen > 0x7F) ? 4 : 1)) > FASTCGILENGTH) return -1;
 
-    p = (h->contentData) + h->contentLength;
-    if (nameLen <= 0x7F) {
-        *p++ = (char)nameLen;
-    } else {
-        *p++ = (char)((nameLen >> 24) | 0x80);
-        *p++ = (char)(nameLen >> 16);
-        *p++ = (char)(nameLen >> 8);
-        *p++ = (char)nameLen;
-    }
-    if (valueLen <= 0x7F) {
-        *p++ = (char)valueLen;
-    } else {
-        *p++ = (char)((valueLen >> 24) | 0x80);
-        *p++ = (char)(valueLen >> 16);
-        *p++ = (char)(valueLen >> 8);
-        *p++ = (char)valueLen;
-    }
-    strncpy(p, name, nameLen);
-    p += nameLen;
-    if (value) strncpy(p, value, valueLen);
-    h->contentLength += nameLen + ((nameLen > 0x7F) ? 4 : 1);
-    h->contentLength += valueLen + ((valueLen > 0x7F) ? 4 : 1);
-    return 0;
+	p = (h->contentData) + h->contentLength;
+	writeLen(nameLen, &p);
+	writeLen(valueLen, &p);
+	strncpy(p, name, nameLen);
+	p += nameLen;
+	if (value) strncpy(p, value, valueLen);
+	h->contentLength += nameLen + ((nameLen > 0x7F) ? 4 : 1);
+	h->contentLength += valueLen + ((valueLen > 0x7F) ? 4 : 1);
+	return 0;
 }
 // =========================================================================================================== //
 
 void sendGetValue(int fd) {
 	FCGI_Header h;
-	memset(&h, 0, sizeof(FCGI_Header));
+
 	h.version = FCGI_VERSION_1;
 	h.type = FCGI_GET_VALUES;
 	h.requestId = htons(FCGI_NULL_REQUEST_ID);
@@ -157,7 +121,6 @@ void sendGetValue(int fd) {
 void sendBeginRequest(int fd, unsigned short requestId, unsigned short role, unsigned char flags) {
 	FCGI_Header h;
 	FCGI_BeginRequestBody* begin;
-	memset(&h, 0, sizeof(FCGI_Header));
 
 	h.version = FCGI_VERSION_1;
 	h.type = FCGI_BEGIN_REQUEST;
@@ -172,7 +135,6 @@ void sendBeginRequest(int fd, unsigned short requestId, unsigned short role, uns
 // =========================================================================================================== //
 void sendAbortRequest(int fd, unsigned short requestId) {
 	FCGI_Header h;
-	memset(&h, 0, sizeof(FCGI_Header));
 
 	h.version = FCGI_VERSION_1;
 	h.type = htons(FCGI_ABORT_REQUEST);
@@ -188,7 +150,6 @@ void sendAbortRequest(int fd, unsigned short requestId) {
 
 void sendWebData(int fd, unsigned char type, unsigned short requestId, char* data, unsigned int len) {
 	FCGI_Header h;
-	memset(&h, 0, sizeof(FCGI_Header));
 
 	if (len > FASTCGILENGTH) return;
 
@@ -256,16 +217,14 @@ typedef struct response_data {
 	struct response_data* next;
 } response_data;
 
-
-
 unsigned long get_http_body_length(char* http_string, long len) {
 	if (http_string == NULL) return -1;
 	// Find the end of the header section
-	char* body_start = strnstr(http_string, "\r\n\r\n", len);
+	char* body_start = strstr(http_string, "\r\n\r\n");
 	if (body_start == NULL) return -1;
 	return len - (body_start + 4 - http_string);
 }
-void send_length(size_t contentLength, char* contentData, message* requete) {
+void send_length(int contentLength, char* contentData, message* requete) {
 	unsigned long total_length = get_http_body_length(contentData, contentLength);
 	char* total_length_string = malloc(40);
 	sprintf(total_length_string, "%ld", total_length);
@@ -276,6 +235,7 @@ void send_length(size_t contentLength, char* contentData, message* requete) {
 }
 
 void fill_headers(tree_node* root, FCGI_Header* h) {
+	tree_node_print_all(root, 0);
 	char* abs_path = get_first_value(root, "absolute_path");
 	char* script_f_name = calloc(1, strlen(abs_path) + 20);
 	strcat(script_f_name, "/var/www/html");
@@ -300,7 +260,6 @@ int sendFCGI(tree_node* root, message* requete) {
 	int fd;
 	size_t len;
 	FCGI_Header h;
-	memset(&h, 0, sizeof(FCGI_Header));
 
 	// Establish a connection to the FastCGI server
 	fd = createSocket(9000);
@@ -328,6 +287,7 @@ int sendFCGI(tree_node* root, message* requete) {
 		int length = 0;
 		sscanf(length_string, "%d", &length);
 		char* data = get_first_value(root, "message_body");
+		tree_node_print_all(root, 0);
 		printf("send data:%d|%s\n", length, data);
 		sendWebData(fd, FCGI_STDIN, ID, data, length);
 	}
@@ -404,9 +364,10 @@ int sendFCGI(tree_node* root, message* requete) {
 		response_data* current = response_list;
 		send_length(current->length, current->data, requete);
 		while(current!=NULL){
+			send_length(content_length, current->data, requete);
+			printf("A\n");
 			writeDirectClient(requete->clientId, current->data, current->length);
 			response_data* tmp = current->next;
-			better_free(current->data);
 			better_free(current);
 			current = tmp;
 		}
@@ -414,5 +375,3 @@ int sendFCGI(tree_node* root, message* requete) {
 	shutdown(fd, SHUT_RDWR);
 	return keepalive;
 }
-
-// curl -v 'http://localhost:8000/info.php' -X POST -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Origin: http://localhost:8000' -H 'Connection: keep-alive' -H 'Content-Type: application/x-www-form-urlencoded'
