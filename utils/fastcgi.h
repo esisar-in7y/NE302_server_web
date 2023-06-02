@@ -91,4 +91,4 @@ typedef struct __attribute__((__packed__)) {
 #define FCGI_AUTHORIZER 2
 #define FCGI_FILTER     3
 
-void sendFCGI(tree_node* root, message* requete);
+int sendFCGI(tree_node* root, message* requete);

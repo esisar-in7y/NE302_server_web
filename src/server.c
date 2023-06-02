@@ -50,7 +50,11 @@ int main2(int argc, char* argv[]) {
 			char* abs_path = get_first_value(root, "absolute_path");
 			if (strstr(abs_path, ".php") != NULL) {
 				printf("TO CGI\n");
-				sendFCGI(root, requete);
+				int keepalive = sendFCGI(root, requete);
+				endWriteDirectClient(requete->clientId);
+				if (!keepalive) {
+					requestShutdownSocket(requete->clientId);
+				}
 			} else {
 				_headers_request headers_request = {0};
 				_Response response = {0};
