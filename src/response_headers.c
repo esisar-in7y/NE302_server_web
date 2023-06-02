@@ -60,7 +60,7 @@ void send_headers(_Response* response) {
     }
 
 	if (response->headers_response.server_timings != NULL) {
-		printf("SErver timings:\n");
+		printf("Server timings:\n");
 		struct _Server_timings* current = response->headers_response.server_timings;
 		while (current != NULL) {
 			char timing_str[50]={0};

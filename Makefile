@@ -132,4 +132,3 @@ push:
 
 install:
 	sudo cp www/o.com/post.php /var/www/html/post.php
-	
