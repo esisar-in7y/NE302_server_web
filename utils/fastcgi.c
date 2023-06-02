@@ -193,10 +193,7 @@ void send_direct_header_cgi(tree_node* root, FCGI_Header* h, char* header, char*
 	tmp = get_first_value(root, query);
 	if (tmp != NULL) {
 		addNameValuePair(h, header, tmp);
-		printf("%s:%s\n", header, tmp);
 		better_free(tmp);
-	} else {
-		printf("%s:NULL\n", header);
 	}
 }
 void send_indirect_header_cgi(tree_node* root, FCGI_Header* h, char* header, char* query) {
@@ -204,15 +201,11 @@ void send_indirect_header_cgi(tree_node* root, FCGI_Header* h, char* header, cha
 	tmp = getFieldValueFromFieldName(root, query);
 	if (tmp != NULL) {
 		addNameValuePair(h, header, tmp);
-		printf("%s:%s\n", header, tmp);
 		better_free(tmp);
-	} else {
-		printf("%s:NULL\n", header);
 	}
 }
 
 void fill_headers(tree_node* root, FCGI_Header* h) {
-	tree_node_print_all(root, 0);
 	char* abs_path = get_first_value(root, "absolute_path");
 	char* script_f_name = calloc(1, strlen(abs_path) + 20);
 	strcat(script_f_name, "/var/www/html");
@@ -220,48 +213,38 @@ void fill_headers(tree_node* root, FCGI_Header* h) {
 	addNameValuePair(h, "SCRIPT_FILENAME", script_f_name);
 	better_free(script_f_name);
 	better_free(abs_path);
-	//   'REQUEST_METHOD' => "method" direct,
-	//   'REQUEST_URI' => request_target direct,
-	//    'QUERY_STRING' => query direct,
-	//   'CONTENT_LENGTH' => Content_Length direct,
-	//   'SCRIPT_FILENAME' => absolute_path direct,
-	//   'DOCUMENT_URI' => 'absolute_path direct',
-	//   'SERVER_PROTOCOL' => HTTP_version direct,
-	//   'HTTP_HOST' => uri_host direct,
-	//   'HTTP_ACCEPT' => Accept indirect,
-	//   'HTTP_CONNECTION' => connection_option direct
 	send_direct_header_cgi(root, h, "REQUEST_METHOD", "method");
 	send_direct_header_cgi(root, h, "QUERY_STRING", "query");
 	send_direct_header_cgi(root, h, "CONTENT_LENGTH", "Content_Length");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT", "Accept");
-
-	//   'CONTENT_TYPE' => 'Content-Type:' direct,
-	//   'HTTP_ACCEPT_LANGUAGE' => "Accept-Language" indirect,
-	//   'HTTP_ACCEPT_ENCODING' => Accept-Encoding indirect,
-	//   'HTTP_USER_AGENT' =>  User-Agent indirect,
 	send_direct_header_cgi(root, h, "CONTENT_TYPE", "Content_Type");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT_LANGUAGE", "Accept-Language");
 	send_indirect_header_cgi(root, h, "HTTP_ACCEPT_ENCODING", "Accept-Encoding");
 	send_indirect_header_cgi(root, h, "HTTP_USER_AGENT", "User-Agent");
-	//   'SERVER_SOFTWARE' => 'sup4rserv300',
-	//   'SERVER_NAME' => 'sup4rserv300',
+	addNameValuePair(h, "SERVER_NAME", "sup4rserv300");
+	addNameValuePair(h, "SERVER_SOFTWARE", "sup4rserv300");
 }
 
 int get_http_body_length(char* http_string, long len) {
 	// Find the end of the header section
 	char* body_start = strstr(http_string, "\r\n\r\n");
-	if (body_start == NULL) {
-		return -1;	  // Header section not found
-	}
+	if (body_start == NULL) return -1;	  // Header section not found
 	body_start += 4;  // Skip the empty field header
-
-	// Calculate the length of the body section
 	return len - (body_start - http_string);
+}
+void send_length(int contentLength,char* contentData, message* requete){
+	long total_length = get_http_body_length(contentData, contentLength);
+							char* total_length_string = malloc(40);
+							sprintf(total_length_string, "%ld", total_length);
+							writeDirectClient(requete->clientId, "Content-length: ", 16);
+							writeDirectClient(requete->clientId, total_length_string, strlen(total_length_string));
+							writeDirectClient(requete->clientId, "\r\n", 2);
+							better_free(total_length_string);
 }
 
 int sendFCGI(tree_node* root, message* requete) {
 	bool keepalive = false;
-	int fd;
+	int fd=0;
 	size_t len;
 	FCGI_Header h;
 
@@ -292,9 +275,8 @@ int sendFCGI(tree_node* root, message* requete) {
 		int length = 0;
 		sscanf(length_string, "%d", &length);
 		char* data = get_first_value(root, "message_body");
-		tree_node_print_all(root, 0);
-		printf("send data:%d|%s\n", length, data);
 		sendWebData(fd, FCGI_STDIN, ID, data, length);
+		better_free(data);
 	}
 	sendWebData(fd, FCGI_STDIN, ID, NULL, 0);
 	better_free(length_string);
@@ -302,7 +284,6 @@ int sendFCGI(tree_node* root, message* requete) {
 	// Read the response from the server
 	bool first = true;
 	char* version = get_first_value(root, "HTTP_version");
-	printf("version:%s\n", version);
 	if (strcmp(version, "HTTP/1.1") == 0) {
 		writeDirectClient(requete->clientId, "HTTP/1.1 ", 9);
 		keepalive = true;
@@ -319,11 +300,13 @@ int sendFCGI(tree_node* root, message* requete) {
 		}
 	}
 	better_free(connection);
+	char* all_buff = NULL;
+	unsigned long content_length = 0;
+	bool buffering = false;
 	do {
 		readData(fd, &h, &len);
 		if (h.type == FCGI_STDOUT) {
 			if (len > 0) {
-				printf("buf=%s", h.contentData);
 				if (first) {
 					first = false;
 					if (strstr(h.contentData, "Status: ")) {
@@ -331,21 +314,37 @@ int sendFCGI(tree_node* root, message* requete) {
 						writeDirectClient(requete->clientId, pointer, h.contentLength - 8);
 					} else {
 						send_status(200, requete->clientId);
-						long total_length = get_http_body_length(h.contentData, h.contentLength);
-						char* total_length_string = malloc(40);
-						sprintf(total_length_string, "%ld", total_length);
-						writeDirectClient(requete->clientId, "Content-length: ", 16);
-						writeDirectClient(requete->clientId, total_length_string, strlen(total_length_string));
-						writeDirectClient(requete->clientId, "\r\n", 2);
+						if (keepalive) {
+							if (h.contentLength == 65535) {
+								buffering = true;
+								all_buff = (char*)malloc(h.contentLength * sizeof(char));
+								strcpy(all_buff, h.contentData);
+								content_length = h.contentLength;
+							} else {
+								send_length(h.contentLength, h.contentData, requete);
+							}
+						}
 						writeDirectClient(requete->clientId, h.contentData, h.contentLength);
-						better_free(total_length_string);
 					}
 				} else {
-					writeDirectClient(requete->clientId, h.contentData, h.contentLength);
+					if (buffering) {
+						content_length += h.contentLength;
+						if(realloc(all_buff, content_length * sizeof(char))==NULL){
+							perror("realloc error");
+						}
+						strcat(all_buff, h.contentData);
+					} else {
+						writeDirectClient(requete->clientId, h.contentData, h.contentLength);
+					}
 				}
 			}
 		}
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
+	if (buffering) {
+		send_length(content_length, all_buff, requete);
+		writeDirectClient(requete->clientId, all_buff, content_length);
+	}
+	better_free(all_buff);
 	shutdown(fd, SHUT_RDWR);
 	return keepalive;
 }

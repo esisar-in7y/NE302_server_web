@@ -81,7 +81,6 @@ void send_status(int status, int clientId) {
 	case 511: writeClient(clientId, "Network Authentication Required"); break;
 	}
 	writeDirectClient(clientId, "\r\n", 2);
-	printf("answer back\n");
 }
 
 char* beautify_url(tree_node* root, _headers_request* headers_request) {
@@ -342,7 +341,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				fclose(file);
 				return true;
 			}else{
-				printf("No range\n");
 				//send headers
 				send_headers(response);
 				// send data
@@ -391,9 +389,9 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
 	} 
-	// else if(headers_request->accept_encoding.DEFLATE == true){
-	// 	response->headers_response.transfert_encoding = DEFLATE;
-	// }
+	else if(headers_request->accept_encoding.DEFLATE == true){
+		response->headers_response.transfert_encoding = DEFLATE;
+	}
 	else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {

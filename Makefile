@@ -128,3 +128,8 @@ push:
 	-git add *
 	-git commit -am "aut0maticpush 4 lazy"
 	-git push
+
+
+install:
+	sudo cp www/o.com/post.php /var/www/html/post.php
+	
