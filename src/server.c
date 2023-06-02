@@ -13,13 +13,14 @@
 #include "api.h"
 #include "semantic.h"
 
-#define PORT		8001
+#define PORT		8000
 #define BUFFER_SIZE 1024
 void send_end(int clientId) {
 	writeDirectClient(clientId, "\r\n\r\n", 4);
 }
-
-int main2(int argc, char* argv[]) {
+#define false 0
+#if HTTP == 1
+int main() {
 	message* requete;
 	printf("Serveur HTTP demarre sur le port %d\n", PORT);
 #if LEAK_CHECK == 1
@@ -92,19 +93,4 @@ int main2(int argc, char* argv[]) {
 	}
 	return (1);
 }
-
-#define false 0
-#if HTTP == 1
-int main(int argc, char* argv[]) {
-	return main2(argc, argv);
-}
 #endif
-// echo -ne 'GET /sites/www.fake.com/index.html HTTP/1.1\r\nHost: example.com\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0\r\n\r\n' | ncat -C --hex-dump out localhost 8101
-// echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: curl/7.81.0\r\nAccept: */*\r\n\r\n' | ncat -C --hex-dump out localhost 8000
-// curl -Iv http://localhost:8000/www.toto.com/index.html 2>&1 | grep -i 'connection #0'
-// echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: curl/7.81.0\r\nAccept: */*\r\nConnection: keep-alive\r\n\r\n' | ncat -C --hex-dump out localhost 8000
-
-// curl -v http://localhost:8000/www.toto.com/index.html 2>&1 | grep -i 'connection #0'
-// curl -v http://localhost:8000/www.toto.com/index.html  --next http://localhost:8000/www.toto.com/index.html 2>&1 | grep -i '#0'
-
-// echo -ne 'GET /www.toto.com/index.html HTTP/1.1\r\nHost: localhost:8000\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7:\r\nAccept-Language: en-US,en;q=0.9:\r\nCache-Control: no-cache:\r\nConnection: keep-alive:\r\nPragma: no-cache:\r\nSec-Fetch-Dest: document:\r\nSec-Fetch-Mode: navigate:\r\nSec-Fetch-Site: none:\r\nSec-Fetch-User: ?1:\r\nUpgrade-Insecure-Requests: 1:\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36:\r\nsec-ch-ua: "Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110":\r\nsec-ch-ua-mobile: ?0:\r\nsec-ch-ua-platform: "Linux"\r\n\r\n| ncat -C --hex-dump out localhost 8000

@@ -2,12 +2,9 @@ EXEC = server_test
 ARGS =
 
 CC = gcc
-CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wextra -std=c99
-# -std=c99
-# -Wall -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -fno-inline -O0 -pthread -g -ggdb -static-libasan -Wextra -O2 -ansi -std=c99
+CFLAGS = -g -Wall -Wno-int-conversio -Wextra -std=c99
 
 CFLAGS += -D HTTP=1 
-# -D HTTP=1
 # CFLAGS += -D PARSER=1 -D DEBUG
 # -D DEBUG
 # -D FORCE_IDENTITY=1
@@ -25,9 +22,7 @@ NODIR_SRC = $(notdir $(SRCS))
 OBJS = $(addprefix $(DIR_OBJ)/, $(SRCS:c=o)) # obj/xxx.o obj/folder/xxx .o
 
 INC_DIRS = -I./lib
-# -I./ $(addprefix -I, $(SUBDIR))
 
-# gcc -o ./bin/http_parse ./bin/*/*.o -L./lib -lrequest -lmagic -Wall -std=c99 -D TST=0
 LIBS = -L./lib -lrequest -lz
 
 PHONY := $(EXEC)
@@ -131,4 +126,6 @@ push:
 
 
 install:
+	sudo apt install libz-dev apache2 php-fpm
 	sudo cp www/o.com/post.php /var/www/html/post.php
+	

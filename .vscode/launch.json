@@ -36,8 +36,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/mnt/e/Cours 3A/Projet_NE302/NE302_server_web",
-      "program": "/mnt/e/Cours 3A/Projet_NE302/NE302_server_web/build/Debug/outDebug",
+      "cwd": "/home/flo/Desktop/ESISAR/PROJETS/SERVER_WEB",
+      "program": "/home/flo/Desktop/ESISAR/PROJETS/SERVER_WEB/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

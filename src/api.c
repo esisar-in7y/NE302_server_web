@@ -39,10 +39,7 @@ char *getElementTag(void *node, int *len)
 }
 char *getElementValue(void *node, unsigned int *len)
 {
-    if (node == NULL)
-    {
-        return NULL;
-    }
+    if (node == NULL) return NULL;
     tree_node* tnode = (tree_node *)node;
     return copy_sub_str(tnode->string, tnode->start_string, tnode->length_string);
 }
