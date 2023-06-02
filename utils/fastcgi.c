@@ -382,10 +382,6 @@ int sendFCGI(tree_node* root, message* requete) {
 			better_free(current);
 			current = next;
 		}
-		// for (response_data* current = response_list; current != NULL; current = current->next) {
-		// 	writeDirectClient(requete->clientId, current->data, current->length);
-		// }
-		
 	}
 	shutdown(fd, SHUT_RDWR);
 	return keepalive;

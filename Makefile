@@ -2,7 +2,7 @@ EXEC = server_test
 ARGS =
 
 CC = gcc
-CFLAGS = -g -Wall -Wno-int-conversio -Wextra -std=c99
+CFLAGS = -g -Wall -Wno-int-conversion -Wno-unused-parameter -Wextra -std=c99
 
 CFLAGS += -D HTTP=1 
 # CFLAGS += -D PARSER=1 -D DEBUG

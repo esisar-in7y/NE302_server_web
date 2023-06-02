@@ -24,7 +24,7 @@ typedef struct _tree_node {
     uint16_t length_string;
     uint16_t childs_count;
     unsigned char *string;
-    // tree_node_type type;
+    
     int type;
     struct _tree_node *parent;
     struct _tree_node **childs;

@@ -1,12 +1,6 @@
 #include "answer.h"
-#include <unistd.h>
-#include <zlib.h>
 
-#include "../utils/manip.h"
-#include "../utils/mime.h"
-#include "../utils/structures.h"
-#include "api.h"
-#include "semantic.h"
+
 #define SHOWHEAD	0
 #define BUFFER_SIZE 1024
 #define BIG_BUFFER_SIZE 10*BUFFER_SIZE
@@ -114,6 +108,7 @@ char* beautify_url(tree_node* root, _headers_request* headers_request) {
 	better_free(url_updated);
 	return return_url;
 }
+
 int compressToGzip(const char* input, int inputSize, char* output, int outputSize)
 {
     z_stream zs;
@@ -124,18 +119,12 @@ int compressToGzip(const char* input, int inputSize, char* output, int outputSiz
     zs.next_in = (Bytef *)input;
     zs.avail_out = (uInt)outputSize;
     zs.next_out = (Bytef *)output;
-
-    // hard to believe they don't have a macro for gzip encoding, "Add 16" is the best thing zlib can do:
-    // "Add 16 to windowBits to write a simple gzip header and trailer around the compressed data instead of a zlib wrapper"
     deflateInit2(&zs, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 15 | 16, 8, Z_DEFAULT_STRATEGY);
     deflate(&zs, Z_FINISH);
     deflateEnd(&zs);
     return zs.total_out;
 }
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
-#include <zlib.h>
+
 
 int deflate_data(const char *input, size_t input_length, char **output, size_t *output_length) {
     int ret;
@@ -163,7 +152,6 @@ int deflate_data(const char *input, size_t input_length, char **output, size_t *
     strm.next_out = (Bytef *)*output;
 
     ret = deflate(&strm, Z_FINISH);
-    assert(ret != Z_STREAM_ERROR);
 
     *output_length = strm.total_out;
 
@@ -244,16 +232,13 @@ void sendIdentity(FILE* file, int clientId) {
 }
 
 bool send_data(tree_node* root, _headers_request* headers_request, _Response* response) {
-	// check if it's a GET HEAD request
 	if (headers_request->methode == GET || headers_request->methode == HEAD) {
 		// check the query url
 		char* url = beautify_url(root, headers_request);
 		printf("File path: %s\n", url);
-		// check if the file exists
+		// check if the file exists and read access
 		unsigned int clientId = response->clientId;
-		if (access(url, F_OK) == 0) {
-			//!!! ATTENTION !!! could be just folder
-
+		if (access(url, F_OK | R_OK) == 0) {
 			// get the mime type
 			char* mime_type = (char*)get_mime_type(url);
 			if (!isAccepted(root, mime_type)) {
@@ -270,7 +255,7 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 			if (file == NULL) {
 				printf("Failed to open file: %s\n", url);
 				free(url);
-				return -1;
+				return false;
 			}
 			free(url);
 			if (
@@ -366,7 +351,6 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 		writeDirectClient(response->clientId,"\r\n",2);
 		return true;
 	}
-	// send_end(clientId);
 	return false;
 }
 
@@ -385,7 +369,6 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
-// printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->accept_encoding.IDENTITY == true) {
@@ -396,5 +379,4 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 		response->headers_response.transfert_encoding = IDENTITY;
 	}
 #endif
-	//
 }

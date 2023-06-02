@@ -3,10 +3,11 @@
 #include "global.h"
 #include "mime.h"
 
+// enum avec = 1 pour que unitialized = 0
 typedef enum {
-	GET = 1,  // GET
-	POST,	  // POST
-	HEAD	  // HEAD
+	GET = 1, 
+	POST,
+	HEAD
 } _Methode;
 
 typedef enum { HTTP1_0 = 1, HTTP1_1 } _HTTP_version;
@@ -69,7 +70,7 @@ typedef struct {
 	char* content_type;
 	_Encoding_resp transfert_encoding;
 
-	_Range* range;	// osef si y'en a plusieurs
+	_Range* range; // on répond qu'on prems
 	_Server_timings* server_timings;
 } _headers_response;
 
