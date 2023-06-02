@@ -389,9 +389,9 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
 	} 
-	else if(headers_request->accept_encoding.DEFLATE == true){
-		response->headers_response.transfert_encoding = DEFLATE;
-	}
+	// else if(headers_request->accept_encoding.DEFLATE == true){
+	// 	response->headers_response.transfert_encoding = DEFLATE;
+	// }
 	else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;
 	} else if (headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false) {

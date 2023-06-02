@@ -15,9 +15,9 @@ Nous avons pour cela les sites :
 
 - localhost:8000/www.toto.com/
 - localhost:8000/www.fake.com/
-- localhost:8000/www.o.com/, avec une vidéo 
+- localhost:8000/www.o.com/, avec une vidéo en streaming avec range
 - localhost:8000/game/, un site avec un petit jeu installé dessus
-- localhost:8000/post.php, un site en php utilisé pour le test de la prise en charge des fichiers php.
+- localhost:8000/post.php, un site en php utilisé pour le test de la prise en charge des fichiers php (POST/GET).
 
 ## 3. Fonctionnalités implémentées
 
