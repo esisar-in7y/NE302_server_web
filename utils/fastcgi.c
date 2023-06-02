@@ -312,9 +312,9 @@ void sendFCGI(tree_node* root, message* requete) {
 	better_free(version);
 	char* connection = get_first_value(root, "Connection");
 	if (connection != NULL) {
-		if (strcasecmp(connection, "close") != 0) {
+		if (strcasecmp(connection, "close") == 0) {
 			keepalive = false;
-		} else if (strcasecmp(connection, "keep-alive") != 0 && strcasecmp(connection, "keepalive") != 0 && strcasecmp(connection, "keep alive") != 0) {
+		} else if (strcasecmp(connection, "keep-alive") == 0 && strcasecmp(connection, "keepalive") == 0 && strcasecmp(connection, "keep alive") == 0) {
 			keepalive = true;
 		}
 	}

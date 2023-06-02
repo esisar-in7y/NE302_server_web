@@ -121,6 +121,8 @@ php:
 php2:
 	/bin/echo -e "GET /post.php HTTP/1.1\r\nHost: localhost:8000\r\nUser-Agent: M0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n"  | ncat -C --hex-dump out localhost 8000
 
+deflate:
+	curl -sH 'Accept-encoding: deflate' http://localhost:8000/www.toto.com/index.png | gunzip -
 
 push:
 	-git add *

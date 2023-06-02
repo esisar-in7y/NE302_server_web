@@ -132,28 +132,93 @@ int compressToGzip(const char* input, int inputSize, char* output, int outputSiz
     deflate(&zs, Z_FINISH);
     deflateEnd(&zs);
     return zs.total_out;
+}
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+#include <zlib.h>
+
+int deflate_data(const char *input, size_t input_length, char **output, size_t *output_length) {
+    int ret;
+    z_stream strm;
+
+    strm.zalloc = Z_NULL;
+    strm.zfree = Z_NULL;
+    strm.opaque = Z_NULL;
+
+    ret = deflateInit(&strm, Z_DEFAULT_COMPRESSION);
+    if (ret != Z_OK) {
+        return ret;
     }
+
+    *output_length = deflateBound(&strm, input_length);
+    *output = malloc(*output_length);
+    if (*output == NULL) {
+        (void)deflateEnd(&strm);
+        return Z_MEM_ERROR;
+    }
+
+    strm.avail_in = input_length;
+    strm.next_in = (Bytef *)input;
+    strm.avail_out = *output_length;
+    strm.next_out = (Bytef *)*output;
+
+    ret = deflate(&strm, Z_FINISH);
+    assert(ret != Z_STREAM_ERROR);
+
+    *output_length = strm.total_out;
+
+    (void)deflateEnd(&strm);
+    return ret == Z_STREAM_END ? Z_OK : Z_DATA_ERROR;
+}
+
+
+void sendDeflateBody(FILE* file, int clientId) {
+	printf("deflate1\n");
+    char* buffer = malloc(BUFFER_SIZE * sizeof(char));
+    int buffer_size = 0;
+    while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+		printf("deflate\n");
+        char* compressed_buffer = NULL;
+        size_t compressed_size = 0;
+        int ret = deflate_data(buffer, buffer_size, &compressed_buffer, &compressed_size);
+        if (ret != Z_OK) {
+            fprintf(stderr, "Error compressing data: %d\n", ret);
+            free(compressed_buffer);
+            break;
+        }
+
+        char size_str[30] = {0};
+        snprintf(size_str, sizeof(size_str), "%zx\r\n", compressed_size);
+        writeDirectClient(clientId, size_str, strlen(size_str));
+        writeDirectClient(clientId, compressed_buffer, compressed_size);
+        writeDirectClient(clientId, "\r\n", 2);
+
+        free(compressed_buffer);
+    }
+    writeDirectClient(clientId, "0\r\n\r\n", 5);
+    free(buffer);
+}
 
 
 void sendGzipBody(FILE* file, int clientId) {
-    char* buffer = malloc(BUFFER_SIZE * sizeof(char));
+	char* buffer = malloc(BUFFER_SIZE * sizeof(char));
 	char* compressed = malloc(BUFFER_SIZE * sizeof(char));
-	int compressed_size=0;
-	int buffer_size=0;
+	int compressed_size = 0;
+	int buffer_size = 0;
 
-    while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
-        compressed_size=compressToGzip(buffer, buffer_size, compressed, BUFFER_SIZE);
-    char size_str[30]={0};
+	while ((buffer_size = fread(buffer, 1, BUFFER_SIZE, file)) > 0) {
+		compressed_size = compressToGzip(buffer, buffer_size, compressed, BUFFER_SIZE);
+		char size_str[30] = {0};
 		snprintf(size_str, sizeof(size_str), "%x\r\n", compressed_size);
-	writeDirectClient(clientId, size_str,strlen(size_str));
+		writeDirectClient(clientId, size_str, strlen(size_str));
 		writeDirectClient(clientId, compressed, compressed_size);
-	writeDirectClient(clientId, "\r\n", 2);
-}
+		writeDirectClient(clientId, "\r\n", 2);
+	}
 	writeDirectClient(clientId, "0\r\n\r\n", 5);
-    free(compressed);
+	free(compressed);
 	free(buffer);
 }
-
 
 // Send a chunked body
 void sendChunkedBody(FILE* file, int clientId) {
@@ -283,8 +348,8 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 				// send data
 				if (response->headers_response.transfert_encoding == CHUNKED) {
 					sendChunkedBody(file, clientId);
-				} else if(response->headers_response.transfert_encoding == GZIP){
-					sendGzipBody(file, response->clientId);
+				} else if(response->headers_response.transfert_encoding == DEFLATE){
+					sendDeflateBody(file, response->clientId);
 				}else{
 					sendIdentity(file, response->clientId);
 				}
@@ -322,12 +387,12 @@ void populateRespFromReq(_headers_request* headers_request, _Response* response)
 #if FORCE_IDENTITY == 1
 	response->headers_response.transfert_encoding = IDENTITY;
 #else
-printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
+// printf("ranges:%d|%d|%d|%d\n",headers_request->ranges!=NULL,headers_request->accept_encoding.GZIP == true,headers_request->accept_encoding.IDENTITY == true,headers_request->version == HTTP1_1 && headers_request->accept_encoding.CHUNKED == false);
 	if(headers_request->ranges!=NULL){
 		response->headers_response.transfert_encoding = IDENTITY;
 	} 
-	// else if(headers_request->accept_encoding.GZIP == true){
-		//response->headers_response.transfert_encoding = GZIP;
+	// else if(headers_request->accept_encoding.DEFLATE == true){
+	// 	response->headers_response.transfert_encoding = DEFLATE;
 	// }
 	else if (headers_request->accept_encoding.IDENTITY == true) {
 		response->headers_response.transfert_encoding = IDENTITY;

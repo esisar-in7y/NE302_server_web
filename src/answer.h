@@ -7,4 +7,5 @@ bool send_data(tree_node* root, _headers_request* headers_request, _Response* re
 void send_response(_Response* reponse);
 void populateRespFromReq(_headers_request* headers_request,_Response* response);
 void sendChunkedBody(FILE * file, int clientId);
+void sendDeflateBody(FILE* file, int clientId);
 #endif
