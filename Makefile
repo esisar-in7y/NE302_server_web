@@ -67,7 +67,7 @@ run: $(EXEC)
 	-pkill -9 -f $(EXEC)
 	./$(OUTDIR)/$(EXEC) $(ARGS)
 
-bt: $(EXEC)
+backtrace: $(EXEC)
 	@reset
 	gdb -batch -ex "run" -ex "bt" --args ./$(OUTDIR)/$(EXEC) $(ARGS)
 
