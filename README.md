@@ -31,3 +31,7 @@ Nous avons pour cela les sites :
 ## 4. Leaks
 
 Il n'y a pas de leaks connus à ce jour avec Valgrind (testable avec la commande `make leaks`).
+
+## 5. Unbug
+
+La QUERY_STRING peut maitenant avoir plus de 127 caracteres

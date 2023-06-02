@@ -28,4 +28,5 @@ void writeClient(int i,char *buf);
 char* copyStringUntilSlash(char* s);
 void freeResponse(_Response* response,_headers_request* headers_request);
 void better_free(void* r);
+char *strnstr(char *s1, char *s2, size_t n);
 #endif
