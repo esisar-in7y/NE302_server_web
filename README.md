@@ -1,7 +1,7 @@
 # NE323_server_web
 
-Leprat Florian
-Moussu Nathan
+Leprat Florian  
+Moussu Nathan  
 Moncorge Lukas
 
 ## 1. Comment utiliser le serveur web
@@ -19,12 +19,12 @@ Nous avons pour cela les sites :
 
 URL Version HTTP/1.0:
 
-- localhost:8000/www.toto.com/
-- localhost:8000/www.fake.com/
-- localhost:8000/www.o.com/, avec une vidéo en streaming avec range
-- localhost:8000/game.com/, un site avec un petit jeu installé dessus
-- localhost:8000/post.php, un php utilisé pour le test de la prise en charge de fcgi php-fpm (POST/GET).
-- localhost:8000/info.php, un php utilisé pour le test de la prise en charge des fichiers longs.
+- <http://localhost:8000/www.toto.com/>
+- <http://localhost:8000/www.fake.com/>
+- <http://localhost:8000/www.o.com/> avec une vidéo en streaming avec range
+- <http://localhost:8000/game.com/> un site avec un petit jeu installé dessus
+- <http://localhost:8000/post.php> un php utilisé pour le test de la prise en charge de fcgi php-fpm (POST/GET).
+- <http://localhost:8000/info.php> un php utilisé pour le test de la prise en charge des fichiers longs.
 
 ## 3. Fonctionnalités implémentées
 
