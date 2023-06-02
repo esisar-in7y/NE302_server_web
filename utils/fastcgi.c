@@ -347,6 +347,7 @@ void sendFCGI(tree_node* root, message* requete) {
 		}
 	} while ((len != 0) && (h.type != FCGI_END_REQUEST));
 	shutdown(fd, SHUT_RDWR);
+	endWriteDirectClient(requete->clientId);
 	if(!keepalive){
 		requestShutdownSocket(requete->clientId);
 	}
